@@ -47,7 +47,7 @@ namespace SmartButler.Services
         /// </summary>
         /// <typeparam name="TView"></typeparam>
         /// <returns></returns>
-        Page Resolve<TView>()
+        TView Resolve<TView>()
             where TView : Page;
 
         /// <summary>
@@ -55,7 +55,7 @@ namespace SmartButler.Services
         /// </summary>
         /// <typeparam name="TView"></typeparam>
         /// <returns></returns>
-        Page ResolveWithParameter<TView>(NamedParameter parameter)
+        TView ResolveWithParameter<TView>(NamedParameter parameter)
             where TView : Page;
 
         /// <summary>
@@ -63,7 +63,7 @@ namespace SmartButler.Services
         /// </summary>
         /// <typeparam name="TView"></typeparam>
         /// <returns></returns>
-        Page ResolveWithParameters<TView>(params Parameter[] parameters)
+        TView ResolveWithParameters<TView>(params Parameter[] parameters)
             where TView : Page;
 
     }
@@ -96,7 +96,7 @@ namespace SmartButler.Services
         }
 
         
-        public Page Resolve<TView>() where TView : Page
+        public TView Resolve<TView>() where TView : Page
         {
 
             var vm = GetViewModel<TView>();
@@ -107,39 +107,54 @@ namespace SmartButler.Services
             return view;
         }
 
-        public Page ResolveWithParameter<TView>(NamedParameter parameter) where TView : Page
+        public TView ResolveWithParameter<TView>(NamedParameter parameter) where TView : Page
         {
-            
-            var viewModel = _componentContext.Resolve<TView>(parameter);
-            var view = this.GetPage<TView>();
-            view.BindingContext = viewModel;
+
+            var vm = GetViewModel<TView>(parameter);
+            var view = GetPage<TView>();
+
+            view.BindingContext = vm;
 
             return view;
         }
 
-        public Page ResolveWithParameters<TView>(params Parameter[] parameters) where TView : Page
+        public TView ResolveWithParameters<TView>(params Parameter[] parameters) where TView : Page
         {
-            TView viewModel = _componentContext.Resolve<TView>(parameters);
-            var view = this.GetPage<TView>();
-            view.BindingContext = viewModel;
+            var vm = GetViewModel<TView>(parameters);
+            var view = GetPage<TView>();
+
+            view.BindingContext = vm;
 
             return view;
         }
 
 
-        private Page GetPage<TView>() where TView : Page
+        private TView GetPage<TView>() where TView : Page
         {
             var index = _map.IndexOf(kvp => kvp.Key == typeof(TView));
             var viewType = _map.ElementAt(index).Key;
 
-            Page page = _componentContext.Resolve(viewType) as Page;
+            TView page = _componentContext.Resolve(viewType) as TView;
             return page;
         }
 
-        private BaseViewModel GetViewModel<TView>()
+        private BaseViewModel GetViewModel<TView>(params Parameter[] parameters)
         {
-            var vmType = _map[typeof(TView)];
-            BaseViewModel vm = _componentContext.Resolve(vmType) as BaseViewModel;
+            Type vmType = _map[typeof(TView)];
+
+            BaseViewModel vm;
+
+            if (parameters?.Length <= 0)     
+                vm = (BaseViewModel)_componentContext.Resolve(vmType);
+            else if (parameters?.Length == 1)
+                vm = (BaseViewModel) _componentContext.Resolve(vmType, parameters[0]);
+            else if (parameters?.Length > 1)
+                vm = (BaseViewModel) _componentContext.Resolve(vmType, parameters);
+            else throw new ArgumentException($"Invalid argument in:\n " +
+                                             $"Type: {this.GetType()}\n " +
+                                             $"Method: {MethodBase.GetCurrentMethod()}\n " +
+                                             $"Parameters: {parameters}");
+
             return vm;
         }
 

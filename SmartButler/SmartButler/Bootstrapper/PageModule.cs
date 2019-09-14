@@ -11,6 +11,8 @@ namespace SmartButler.Bootstrapper
     {
         protected override void Load(ContainerBuilder builder)
         {
+            base.Load(builder);
+
             builder.RegisterType<BluetoothDevicesListView>();
             builder.RegisterType<BluetoothDevicesViewModel>();
 
@@ -20,9 +22,6 @@ namespace SmartButler.Bootstrapper
             builder.RegisterType<BottlesListView>();
             builder.RegisterType<BottlesViewModel>();
 
-            
-
-            base.Load(builder);
         }
     }
 }
