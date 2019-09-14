@@ -10,6 +10,7 @@ using Autofac;
 using Autofac.Core;
 using SmartButler.Bootstrapper;
 using SmartButler.Core;
+using SmartButler.Helpers;
 using SmartButler.Interfaces;
 using SmartButler.ViewModels;
 using SmartButler.Views;
@@ -90,7 +91,7 @@ namespace SmartButler.Services
             where TViewModel : BaseViewModel
         {
             if(_map.ContainsKey(typeof(TView)))
-                ThrowDuplicateViewRegisteredException();
+               ExceptionFactory.Get<DuplicateViewRegisteredException>(new []{ "A duplicate view was registered!" });
                 
             _map[typeof(TView)] = typeof(TViewModel);
         }
@@ -134,7 +135,7 @@ namespace SmartButler.Services
             var index = _map.IndexOf(kvp => kvp.Key == typeof(TView));
             var viewType = _map.ElementAt(index).Key;
 
-            TView page = _componentContext.Resolve(viewType) as TView;
+            var page = _componentContext.Resolve(viewType) as TView;
             return page;
         }
 
@@ -142,25 +143,18 @@ namespace SmartButler.Services
         {
             Type vmType = _map[typeof(TView)];
 
-            BaseViewModel vm;
+            if (parameters is null)
+                throw ExceptionFactory.Get<ArgumentNullException>();
 
-            if (parameters?.Length <= 0)     
-                vm = (BaseViewModel)_componentContext.Resolve(vmType);
-            else if (parameters?.Length == 1)
-                vm = (BaseViewModel) _componentContext.Resolve(vmType, parameters[0]);
-            else if (parameters?.Length > 1)
-                vm = (BaseViewModel) _componentContext.Resolve(vmType, parameters);
-            else throw new ArgumentException($"Invalid argument in:\n " +
-                                             $"Type: {this.GetType()}\n " +
-                                             $"Method: {MethodBase.GetCurrentMethod()}\n " +
-                                             $"Parameters: {parameters}");
+            if (parameters.Length == 0)     
+                return (BaseViewModel)_componentContext.Resolve(vmType);
+            if (parameters.Length == 1)
+                return (BaseViewModel) _componentContext.Resolve(vmType, parameters[0]);
+            if (parameters.Length > 1)
+                return (BaseViewModel) _componentContext.Resolve(vmType, parameters);
 
-            return vm;
-        }
+            throw ExceptionFactory.Get<ArgumentException>(parameters.Select(param => param.ToString()));
 
-        private void ThrowDuplicateViewRegisteredException([CallerMemberName] string callerName = null)
-        {
-            throw new DuplicateViewRegisteredException($"A duplicate view was registered in: \n {this.GetType()} \n {callerName}");
         }
 
     }
