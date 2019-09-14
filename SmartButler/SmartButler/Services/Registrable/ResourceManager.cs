@@ -1,6 +1,6 @@
 ﻿using Autofac;
 
-namespace SmartButler.Services
+namespace SmartButler.Services.Registrable
 {
     public interface IResourceManager
     {

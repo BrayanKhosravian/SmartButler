@@ -5,6 +5,7 @@ using System.Text;
 using Autofac;
 using NUnit.Framework;
 using SmartButler.Bootstrapper;
+using SmartButler.Services.Registrable;
 using SmartButler.ViewModels;
 using SmartButler.Views;
 

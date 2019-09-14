@@ -11,8 +11,6 @@ namespace SmartButler
     public partial class App : Application
     {
 
-        private Bootstrapper.Bootstrapper _bootstrapper;
-
         public App()
         {
             InitializeComponent();
@@ -22,7 +20,11 @@ namespace SmartButler
         // pass in the dependencies as registered types
         public void InjectPlatformDependencies(IDictionary<Type, Type> types = null)
         {
-            _bootstrapper.Load(this,types);
+            //if(types == null)
+            //    types = new Dictionary<Type, Type>();
+
+            var bootstrapper = new Bootstrapper.Bootstrapper(this);
+            bootstrapper.Load(types);
         }
 
         protected override void OnStart()

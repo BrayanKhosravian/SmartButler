@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Net.Sockets;
-using System.Text;
-using System.Threading.Tasks;
-using Autofac;
-using SmartButler.ViewModels;
+﻿using System.Threading.Tasks;
 using Xamarin.Forms;
 
-namespace SmartButler.Services
+namespace SmartButler.Services.Registrable
 {
     public interface INavigationService
     {

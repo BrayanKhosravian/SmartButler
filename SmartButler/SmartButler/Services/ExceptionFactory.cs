@@ -1,11 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Runtime.CompilerServices;
-using System.Text;
-using Autofac.Core;
 
-namespace SmartButler.Helpers
+namespace SmartButler.Services
 {
     /// <summary>
     /// This is a static class which helps throwing exceptions

@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Xamarin.Forms;
 
-namespace SmartButler.Services
+namespace SmartButler.Services.Registrable
 {
     interface IUserInteraction
     {

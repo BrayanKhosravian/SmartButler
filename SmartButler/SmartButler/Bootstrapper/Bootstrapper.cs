@@ -3,12 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Autofac;
+using SmartButler.Services.Registrable;
 
 namespace SmartButler.Bootstrapper
 {
     public class Bootstrapper
     {
-        public void Load(App application, IDictionary<Type,Type> platformTypes = null)
+        private readonly App _app;
+
+        public Bootstrapper(App app)
+        {
+            _app = app;
+        }
+
+        public void Load(IDictionary<Type,Type> platformTypes = null)
         {
             var builder = new ContainerBuilder();
 
@@ -18,15 +26,12 @@ namespace SmartButler.Bootstrapper
                
             }
 
-            // register views and viewmodels
+            builder.RegisterModule<PageModule>();
+            builder.RegisterModule<ServiceModule>();
 
+            var container = builder.Build();
+            var pageRepository = container.Resolve<IPageRepository>();
 
-
-            // register services
-
-
-
-            // build container and load first page
 
 
             // application.MainPage = 

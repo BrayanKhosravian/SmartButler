@@ -1,23 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Reflection;
-using System.Runtime.CompilerServices;
-using System.Runtime.Serialization;
-using System.Text;
-using System.Windows.Input;
 using Autofac;
 using Autofac.Core;
-using SmartButler.Bootstrapper;
-using SmartButler.Core;
-using SmartButler.Helpers;
-using SmartButler.Interfaces;
 using SmartButler.ViewModels;
-using SmartButler.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Internals;
 
-namespace SmartButler.Services
+namespace SmartButler.Services.Registrable
 {
 
     /// <summary>
@@ -72,7 +62,7 @@ namespace SmartButler.Services
 
 
     /// <inheritdoc cref="IPageRepository"/>/>
-    public class PageRepository : IPageRepository
+    public sealed class PageRepository : IPageRepository
     {
         // <TView, TViewModel>
         private readonly IDictionary<Type, Type> _map = new Dictionary<Type, Type>();
