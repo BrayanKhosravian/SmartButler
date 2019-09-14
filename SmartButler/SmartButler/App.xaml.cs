@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using SmartButler.Bootstrapper;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -7,11 +10,19 @@ namespace SmartButler
 {
     public partial class App : Application
     {
+
+        private Bootstrapper.Bootstrapper _bootstrapper;
+
         public App()
         {
             InitializeComponent();
+        }
 
-            MainPage = new MainPage();
+        // Entry point of PCL // call this from every project
+        // pass in the dependencies as registered types
+        public void InjectPlatformDependencies(IDictionary<Type, Type> types = null)
+        {
+            _bootstrapper.Load(this,types);
         }
 
         protected override void OnStart()
@@ -29,4 +40,6 @@ namespace SmartButler
             // Handle when your app resumes
         }
     }
+
+   
 }
