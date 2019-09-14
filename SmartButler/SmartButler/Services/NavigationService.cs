@@ -9,12 +9,28 @@ using Xamarin.Forms;
 
 namespace SmartButler.Services
 {
+    public interface INavigationService
+    {
+        Task<Page> PopAsync(bool animated = false);
+
+        Task<Page> PopModalAsync(bool animated = false);
+
+        Task PushAsync<TView>(bool animated = false)
+            where TView : Page;
+
+        Task PushModalAsync<TView>(bool animated = false)
+            where TView : Page;
+
+    }
+
     public class NavigationService : INavigationService
     {
         private readonly IPageRepository _pageRepository;
-        private readonly IComponentContext _componentContext;
 
-
+        public NavigationService(IPageRepository pageRepository)
+        {
+            _pageRepository = pageRepository;
+        }
 
         public async Task<Page> PopAsync(bool animated = false)
         {
