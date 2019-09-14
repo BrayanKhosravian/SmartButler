@@ -4,13 +4,16 @@ using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Text;
 using ReactiveUI;
+using PropertyChangingEventArgs = System.ComponentModel.PropertyChangingEventArgs;
+using PropertyChangingEventHandler = System.ComponentModel.PropertyChangingEventHandler;
 
 namespace SmartButler.ViewModels
 {
-    public abstract class BaseViewModel : ReactiveObject, INotifyPropertyChanged
+    public abstract class BaseViewModel : ReactiveObject, INotifyPropertyChanged, System.ComponentModel.INotifyPropertyChanging
     {
         private bool _isBusy = false;
         public event PropertyChangedEventHandler PropertyChanged;
+        public event PropertyChangingEventHandler PropertyChanging;
 
 
         public bool IsBusy
@@ -18,7 +21,7 @@ namespace SmartButler.ViewModels
             get => _isBusy;
             set
             {
-                //OnPropertyChanging();
+                OnPropertyChanging();
                 _isBusy = value;
                 OnPropertyChanged();
             }
@@ -30,19 +33,21 @@ namespace SmartButler.ViewModels
             if (EqualityComparer<T>.Default.Equals(backingField, value))
                 return;
 
-            //OnPropertyChanging(callerName);
+            OnPropertyChanging(callerName);
             backingField = value;
             OnPropertyChanged(callerName);
 
         }
 
-
-        
-
-
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+
+
+        protected virtual void OnPropertyChanging([CallerMemberName] string propertyName = null)
+        {
+            PropertyChanging?.Invoke(this, new PropertyChangingEventArgs(propertyName));
         }
 
         
