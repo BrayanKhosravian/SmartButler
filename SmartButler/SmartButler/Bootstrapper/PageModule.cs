@@ -12,7 +12,7 @@ namespace SmartButler.Bootstrapper
         protected override void Load(ContainerBuilder builder)
         {
             builder.RegisterType<BluetoothDevicesListView>();
-            builder.RegisterType<BluetoothDevicesListView>();
+            builder.RegisterType<BluetoothDevicesViewModel>();
 
             builder.RegisterType<DrinkSelectionListView>();
             builder.RegisterType<DrinkSelectionViewModel>();

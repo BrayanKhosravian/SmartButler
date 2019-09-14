@@ -46,14 +46,14 @@ namespace SmartButler.Services
         {
             var page = _pageRepository.Resolve<TView>();
 
-            await Task.FromResult(((App)Application.Current).MainPage.Navigation.PushAsync(page, animated));
+            await ((App)Application.Current).MainPage.Navigation.PushAsync(page, animated);
         }
 
         public async Task PushModalAsync<TView>(bool animated = false) where TView : Page
         {
             var page = _pageRepository.Resolve<TView>();
 
-            await Task.FromResult(((App)Application.Current).MainPage.Navigation.PushModalAsync(page, animated));
+            await ((App)Application.Current).MainPage.Navigation.PushModalAsync(page, animated);
         }
 
     }

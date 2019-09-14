@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
+using System.Runtime.CompilerServices;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Windows.Input;
 using Autofac;
@@ -12,6 +14,7 @@ using SmartButler.Interfaces;
 using SmartButler.ViewModels;
 using SmartButler.Views;
 using Xamarin.Forms;
+using Xamarin.Forms.Internals;
 
 namespace SmartButler.Services
 {
@@ -86,6 +89,9 @@ namespace SmartButler.Services
             where TView : Page 
             where TViewModel : BaseViewModel
         {
+            if(_map.ContainsKey(typeof(TView)))
+                ThrowDuplicateViewRegisteredException();
+                
             _map[typeof(TView)] = typeof(TViewModel);
         }
 
@@ -93,13 +99,10 @@ namespace SmartButler.Services
         public Page Resolve<TView>() where TView : Page
         {
 
-            var test = _map[typeof(TView)];
-
-
-            var viewModel = _componentContext.Resolve<TView>();
+            var vm = GetViewModel<TView>();
             var view = GetPage<TView>();
 
-            view.BindingContext = viewModel;
+            view.BindingContext = vm;
 
             return view;
         }
@@ -126,12 +129,43 @@ namespace SmartButler.Services
 
         private Page GetPage<TView>() where TView : Page
         {
-            Type viewType = _map[typeof(TView)];
+            var index = _map.IndexOf(kvp => kvp.Key == typeof(TView));
+            var viewType = _map.ElementAt(index).Key;
 
             Page page = _componentContext.Resolve(viewType) as Page;
-
             return page;
         }
 
+        private BaseViewModel GetViewModel<TView>()
+        {
+            var vmType = _map[typeof(TView)];
+            BaseViewModel vm = _componentContext.Resolve(vmType) as BaseViewModel;
+            return vm;
+        }
+
+        private void ThrowDuplicateViewRegisteredException([CallerMemberName] string callerName = null)
+        {
+            throw new DuplicateViewRegisteredException($"A duplicate view was registered in: \n {this.GetType()} \n {callerName}");
+        }
+
     }
+
+ 
+    public class DuplicateViewRegisteredException : Exception
+    {
+       
+        public DuplicateViewRegisteredException()
+        {
+        }
+
+        public DuplicateViewRegisteredException(string message) : base(message)
+        {
+        }
+
+        public DuplicateViewRegisteredException(string message, Exception inner) : base(message, inner)
+        {
+        }
+
+    }
+
 }

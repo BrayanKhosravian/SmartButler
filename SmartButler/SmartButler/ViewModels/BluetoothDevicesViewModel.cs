@@ -1,15 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using ReactiveUI;
 using SmartButler.Core;
 
 
 namespace SmartButler.ViewModels
 {
-    class BluetoothDevicesViewModel : BaseViewModel
+    public class BluetoothDevicesViewModel : BaseViewModel
     {
 
-       // public ReactiveList<BluetoothDevice> Type { get; set; } = new ReactiveList<BluetoothDevice>();
+        public ReactiveList<BluetoothDevice> Type { get; set; } = new ReactiveList<BluetoothDevice>();
 
     }
 }
