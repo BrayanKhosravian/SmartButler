@@ -8,7 +8,7 @@ using Xamarin.Forms;
 
 namespace SmartButler.Bootstrapper
 {
-    class ServiceModule : Module
+    public class ServiceModule : Module
     {
         protected override void Load(ContainerBuilder builder)
         {
@@ -22,9 +22,6 @@ namespace SmartButler.Bootstrapper
 
             // register services lazily
             builder.Register(componentContext => ((App)Application.Current).MainPage.Navigation);
-
-            // register disposable services as single instance
-
         }
     }
 }

@@ -4,6 +4,9 @@ using System.Linq;
 using System.Text;
 using Autofac;
 using SmartButler.Services.Registrable;
+using SmartButler.ViewModels;
+using SmartButler.Views;
+using Xamarin.Forms;
 
 namespace SmartButler.Bootstrapper
 {
@@ -31,8 +34,13 @@ namespace SmartButler.Bootstrapper
 
             var container = builder.Build();
             var pageRepository = container.Resolve<IPageRepository>();
+            pageRepository.Register<BluetoothDevicesListView, BluetoothDevicesViewModel>();
+            pageRepository.Register<BottlesListView, BottlesViewModel>();
+            pageRepository.Register<DrinkSelectionListView, DrinkSelectionViewModel>();
 
+            var firstPage = pageRepository.Resolve<BluetoothDevicesListView>();
 
+            _app.MainPage = new NavigationPage(firstPage);
 
             // application.MainPage = 
         }

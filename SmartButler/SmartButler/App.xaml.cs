@@ -20,9 +20,6 @@ namespace SmartButler
         // pass in the dependencies as registered types
         public void InjectPlatformDependencies(IDictionary<Type, Type> types = null)
         {
-            //if(types == null)
-            //    types = new Dictionary<Type, Type>();
-
             var bootstrapper = new Bootstrapper.Bootstrapper(this);
             bootstrapper.Load(types);
         }

@@ -8,6 +8,7 @@ using SmartButler.Bootstrapper;
 using SmartButler.Services.Registrable;
 using SmartButler.ViewModels;
 using SmartButler.Views;
+using Android.Bluetooth;
 
 namespace SmartButler.Tests.Services
 {
@@ -51,5 +52,38 @@ namespace SmartButler.Tests.Services
             // assert
             Assert.That(view is BluetoothDevicesListView v && v.BindingContext is BluetoothDevicesViewModel);
         }
+
+        [Test]
+        public void Resolve_TwoTimes_InstancesShouldNotEqual()
+        {
+            // arrange
+            var builder = new ContainerBuilder();
+            builder.RegisterType<ResourceManager>().As<IResourceManager>();
+            var container = builder.Build();
+
+            // act
+            var instance1 = container.Resolve<IResourceManager>();
+            var instance2 = container.Resolve<IResourceManager>();
+
+            // assert
+            Assert.That(!ReferenceEquals(instance1, instance2));
+        }
+
+        [Test]
+        public void Resolve_TwoTimes_SingleInstance_InstancesShouldEqual()
+        {
+            // arrange
+            var builder = new ContainerBuilder();
+            builder.RegisterType<ResourceManager>().As<IResourceManager>().SingleInstance();
+            var container = builder.Build();
+
+            // act
+            var instance1 = container.Resolve<IResourceManager>();
+            var instance2 = container.Resolve<IResourceManager>();
+
+            // assert
+            Assert.That(ReferenceEquals(instance1, instance2));
+        }
+
     }
 }

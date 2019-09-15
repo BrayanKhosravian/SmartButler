@@ -10,7 +10,7 @@ namespace SmartButler.ViewModels
     public class BluetoothDevicesViewModel : BaseViewModel
     {
 
-        public ReactiveList<BluetoothDevice> Type { get; set; } = new ReactiveList<BluetoothDevice>();
+        public ReactiveList<BluetoothDevice> BluetoothDevices { get; private set; } = new ReactiveList<BluetoothDevice>();
 
     }
 }

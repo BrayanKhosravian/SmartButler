@@ -7,8 +7,12 @@ namespace SmartButler.Interfaces
 {
     public interface IBluetoothService : IDisposable
     {
+        void On();
+        void Off();
+        void Send(string msg);
         bool Connect(string mac);
-        IEnumerable<BluetoothDevice> GetDiscoverableDevices();
+
+        IEnumerable<BluetoothDevice> GetBondedDevices();
 
         event EventHandler<BluetoothEventArgs> CallbackReceived;
     }
