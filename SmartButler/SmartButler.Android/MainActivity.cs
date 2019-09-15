@@ -29,10 +29,10 @@ namespace SmartButler.Droid
 
             var app = new App();
 
-            IDictionary<Type, Type> types = new Dictionary<Type, Type>(); 
-            types.Add(typeof(BluetoothService), typeof(IBluetoothService));
+            IDictionary<Type, Type> map = new Dictionary<Type, Type>(); 
+            map.Add(typeof(BluetoothService), typeof(IBluetoothService));
 
-            app.InjectPlatformDependencies();
+            app.InjectPlatformDependencies(map);
 
             LoadApplication(app);
         }

@@ -66,9 +66,8 @@ namespace SmartButler.Droid.Services
         public IEnumerable<BluetoothDevice> GetBondedDevices()
         {
             Enable();
-            var bondedDevices = _bluetoothAdapter.BondedDevices;
-
-            foreach (var device in bondedDevices)
+            
+            foreach (var device in _bluetoothAdapter.BondedDevices)
                 yield return new Core.BluetoothDevice(device.Name, device.Address);
             
         }
