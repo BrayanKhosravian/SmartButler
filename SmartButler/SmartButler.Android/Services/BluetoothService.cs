@@ -32,17 +32,15 @@ namespace SmartButler.Droid.Services
             
         }
 
-        public void On()
+        public void Enable()
         {
-            if(_bluetoothAdapter == null)
-                _bluetoothAdapter = BluetoothAdapter.DefaultAdapter;
 
             if (!_bluetoothAdapter.IsEnabled)
                 _bluetoothAdapter.Enable();
             
         }
 
-        public void Off()
+        public void Disable()
         {
             if (_bluetoothAdapter.IsEnabled)
                 _bluetoothAdapter.Disable();
@@ -67,9 +65,7 @@ namespace SmartButler.Droid.Services
 
         public IEnumerable<BluetoothDevice> GetBondedDevices()
         {
-            if(!_bluetoothAdapter.IsEnabled)
-                On();
-
+            Enable();
             var bondedDevices = _bluetoothAdapter.BondedDevices;
 
             foreach (var device in bondedDevices)
@@ -81,7 +77,7 @@ namespace SmartButler.Droid.Services
 
         public override void Dispose()
         {
-            base.Dispose(_bluetoothAdapter);
+            
         }
     }
 }

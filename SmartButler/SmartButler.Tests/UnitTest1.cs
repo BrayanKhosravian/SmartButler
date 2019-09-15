@@ -1,4 +1,7 @@
+using Autofac;
 using NUnit.Framework;
+using SmartButler.Bootstrapper;
+using SmartButler.Services.Registrable;
 
 namespace Tests
 {
@@ -12,7 +15,14 @@ namespace Tests
         [Test]
         public void Test1()
         {
-            Assert.Pass();
+            var builder = new ContainerBuilder();
+            builder.RegisterModule<PageModule>();
+            builder.RegisterModule<ServiceModule>();
+            var container = builder.Build();
+
+            while (true)
+                container.Resolve<IResourceManager>();
+
         }
     }
 }

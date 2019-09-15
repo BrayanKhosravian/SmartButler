@@ -7,8 +7,8 @@ namespace SmartButler.Interfaces
 {
     public interface IBluetoothService : IDisposable
     {
-        void On();
-        void Off();
+        void Enable();
+        void Disable();
         void Send(string msg);
         bool Connect(string mac);
 

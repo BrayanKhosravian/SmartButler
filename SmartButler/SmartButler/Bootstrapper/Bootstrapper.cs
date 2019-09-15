@@ -10,7 +10,7 @@ using Xamarin.Forms;
 
 namespace SmartButler.Bootstrapper
 {
-    public class Bootstrapper
+    public sealed class Bootstrapper
     {
         private readonly App _app;
 
@@ -33,6 +33,7 @@ namespace SmartButler.Bootstrapper
             builder.RegisterModule<ServiceModule>();
 
             var container = builder.Build();
+
             var pageRepository = container.Resolve<IPageRepository>();
             pageRepository.Register<BluetoothDevicesListView, BluetoothDevicesViewModel>();
             pageRepository.Register<BottlesListView, BottlesViewModel>();
