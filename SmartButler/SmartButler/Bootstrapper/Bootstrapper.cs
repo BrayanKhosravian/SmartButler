@@ -26,7 +26,10 @@ namespace SmartButler.Bootstrapper
             // register types from other platforms to the IOC container
             if (platformTypes != null && platformTypes.Count > 0)
             {
-               
+                foreach (var kvp in platformTypes)
+                {
+                    builder.RegisterType(kvp.Key).As(kvp.Value);
+                }
             }
 
             builder.RegisterModule<PageModule>();
@@ -38,10 +41,10 @@ namespace SmartButler.Bootstrapper
             pageRepository.Register<BluetoothDevicesListView, BluetoothDevicesViewModel>();
             pageRepository.Register<BottlesListView, BottlesViewModel>();
             pageRepository.Register<DrinkSelectionListView, DrinkSelectionViewModel>();
+            pageRepository.Register<SelectionPage, SelectionPageViewModel>();
 
-            var firstPage = pageRepository.Resolve<BluetoothDevicesListView>();
-
-            _app.MainPage = new NavigationPage(firstPage);
+            var mainPage = pageRepository.Resolve<BluetoothDevicesListView>();
+            _app.MainPage = new NavigationPage(mainPage);
 
             // application.MainPage = 
         }

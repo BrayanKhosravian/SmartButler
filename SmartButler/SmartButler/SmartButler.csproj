@@ -15,4 +15,10 @@
     <PackageReference Include="ReactiveUI.XamForms" Version="8.7.2" />
     <PackageReference Include="Xamarin.Forms" Version="4.2.0.778463" />
   </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Views\SelectionPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
 </Project>

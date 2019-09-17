@@ -22,6 +22,9 @@ namespace SmartButler.Bootstrapper
             builder.RegisterType<BottlesListView>();
             builder.RegisterType<BottlesViewModel>();
 
+            builder.RegisterType<SelectionPage>();
+            builder.RegisterType<SelectionPageViewModel>();
+
         }
     }
 }

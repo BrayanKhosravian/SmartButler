@@ -3,7 +3,7 @@ using Xamarin.Forms;
 
 namespace SmartButler.Services.Registrable
 {
-    interface IUserInteraction
+    public interface IUserInteraction
     {
         Task<string> DisplayActionSheet(string title, string cancel, string destruction, params string[] buttons);
         Task DisplayAlert(string title, string message, string cancel);

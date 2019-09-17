@@ -15,13 +15,17 @@ namespace SmartButler.Bootstrapper
             base.Load(builder);
 
             // register services
-            builder.RegisterType<NavigationService>().As<INavigationService>();
-            builder.RegisterType<PageRepository>().As<IPageRepository>();
             builder.RegisterType<ResourceManager>().As<IResourceManager>();
             builder.RegisterType<UserInteraction>().As<IUserInteraction>();
 
+            // register singleton services
+            builder.RegisterType<NavigationService>().As<INavigationService>().SingleInstance();
+            builder.RegisterType<PageRepository>().As<IPageRepository>().SingleInstance();
+
             // register services lazily
             builder.Register(componentContext => ((App)Application.Current).MainPage.Navigation);
+
+
         }
     }
 }

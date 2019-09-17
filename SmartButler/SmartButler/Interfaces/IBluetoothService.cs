@@ -1,16 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 using SmartButler.Core;
 
 namespace SmartButler.Interfaces
 {
-    public interface IBluetoothService : IDisposable
+    public interface IBluetoothService
     {
-        void Enable();
+        bool Enable();
         void Disable();
-        void Send(string msg);
-        bool Connect(string mac);
+        Task<bool> ConnectAsync(string name, string mac);
+
+        Task WriteAsync(string msg);
+        Task WriteAsync(byte[] buffer, int offset, int count);
+        Task<int> ReadAsync(byte[] buffer, int offset, int count);
 
         IEnumerable<BluetoothDevice> GetBondedDevices();
 

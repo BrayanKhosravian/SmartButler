@@ -81,8 +81,7 @@ namespace SmartButler.Services.Registrable
             where TViewModel : BaseViewModel
         {
             if(_map.ContainsKey(typeof(TView)))
-               ExceptionFactory.Get<DuplicateViewRegisteredException>(new []{ "A duplicate view was registered!" });
-                
+               throw ExceptionFactory.Get<DuplicateViewRegisteredException>(new []{ "A duplicate view was registered!" });
             _map[typeof(TView)] = typeof(TViewModel);
         }
 
@@ -166,5 +165,45 @@ namespace SmartButler.Services.Registrable
         }
 
     }
+
+
+
+    interface IService
+    {
+
+    }
+
+    class Service : IService
+    {
+        private IDisposable _connection;
+    }
+
+
+    class ViewModel : BaseViewModel
+    {
+        private IService _service;
+
+        public ViewModel(IService service)
+        {
+            _service = service;
+        }
+    }
+
+    class Test
+    {
+        public void Main()
+        {
+            var vm1 = new ViewModel(new Service());
+
+            // other code and stuff going on
+            // navigation happens
+
+            var vm2 = new ViewModel(new Service());
+            // there no longer need of "vm1"
+            // would it get GC??
+
+        }
+    }
+
 
 }
