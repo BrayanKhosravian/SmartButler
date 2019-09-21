@@ -40,6 +40,8 @@ namespace SmartButler.ViewModels
 
         public async Task DeviceSelectedAsync(string mac, string name)
         {
+            IsBusy = true;
+
             var connected = await _bluetoothService.ConnectAsync(name, mac);
             if (connected)
             { 
@@ -50,6 +52,8 @@ namespace SmartButler.ViewModels
             {
                 await _userInteraction.DisplayAlert("Info", "You were not able to connect to the device!", "OK");
             }
+
+            IsBusy = false;
         }
 
         public void ConfigureViewModel()
