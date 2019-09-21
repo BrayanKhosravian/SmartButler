@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace SmartButler.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class DrinkSelectionListView : ContentPage
+    public partial class DrinksPage : ContentPage
     {
-        public DrinkSelectionListView()
+        public DrinksPage()
         {
             InitializeComponent();
         }

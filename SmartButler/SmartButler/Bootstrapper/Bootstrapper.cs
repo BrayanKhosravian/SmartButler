@@ -38,10 +38,9 @@ namespace SmartButler.Bootstrapper
             var container = builder.Build();
 
             var pageRepository = container.Resolve<IPageRepository>();
-            pageRepository.Register<BluetoothDevicesListView, BluetoothDevicesViewModel>();
-            pageRepository.Register<BottlesListView, BottlesViewModel>();
-            pageRepository.Register<DrinkSelectionListView, DrinkSelectionViewModel>();
-            pageRepository.Register<SelectionPage, SelectionPageViewModel>();
+            pageRepository.Register<BluetoothPage, BluetoothPageViewModel>();
+            pageRepository.Register<BottlesPage, BottlesPageViewModel>();
+            pageRepository.Register<DrinksPage, DrinksPageViewModel>();
             pageRepository.Register<WelcomePage, WelcomePageViewModel>();
 
             var mainPage = pageRepository.Resolve<WelcomePage>();

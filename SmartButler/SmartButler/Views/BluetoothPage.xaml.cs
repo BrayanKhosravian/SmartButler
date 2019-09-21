@@ -15,10 +15,10 @@ using BindingDirection = ReactiveUI.BindingDirection;
 namespace SmartButler.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class BluetoothDevicesListView : ContentPage, IViewFor<BluetoothDevicesViewModel>
+    public partial class BluetoothPage : ContentPage, IViewFor<BluetoothPageViewModel>
     {
 
-        public BluetoothDevicesListView()
+        public BluetoothPage()
         {
             InitializeComponent();
 
@@ -43,12 +43,12 @@ namespace SmartButler.Views
         object IViewFor.ViewModel
         {
             get => ViewModel;
-            set => ViewModel = value as BluetoothDevicesViewModel;
+            set => ViewModel = value as BluetoothPageViewModel;
         }
 
-        public BluetoothDevicesViewModel ViewModel
+        public BluetoothPageViewModel ViewModel
         {
-            get => BindingContext as BluetoothDevicesViewModel;
+            get => BindingContext as BluetoothPageViewModel;
             set => BindingContext = value;
         }
     }

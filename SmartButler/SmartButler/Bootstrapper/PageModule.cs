@@ -16,17 +16,14 @@ namespace SmartButler.Bootstrapper
             builder.RegisterType<WelcomePage>();
             builder.RegisterType<WelcomePageViewModel>();
 
-            builder.RegisterType<BluetoothDevicesListView>();
-            builder.RegisterType<BluetoothDevicesViewModel>();
+            builder.RegisterType<BluetoothPage>();
+            builder.RegisterType<BluetoothPageViewModel>();
 
-            builder.RegisterType<DrinkSelectionListView>();
-            builder.RegisterType<DrinkSelectionViewModel>();
+            builder.RegisterType<DrinksPage>();
+            builder.RegisterType<DrinksPageViewModel>();
 
-            builder.RegisterType<BottlesListView>();
-            builder.RegisterType<BottlesViewModel>();
-
-            builder.RegisterType<SelectionPage>();
-            builder.RegisterType<SelectionPageViewModel>();
+            builder.RegisterType<BottlesPage>();
+            builder.RegisterType<BottlesPageViewModel>();
 
         }
     }

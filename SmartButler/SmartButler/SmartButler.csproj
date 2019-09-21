@@ -17,7 +17,22 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Views\SelectionPage.xaml">
+    <Compile Update="Views\BluetoothPage.xaml.cs">
+      <DependentUpon>BluetoothPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\BottlesPage.xaml.cs">
+      <DependentUpon>BottlesPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\DrinksPage.xaml.cs">
+      <DependentUpon>DrinksPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Views\MakeDrinkPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\WelcomePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

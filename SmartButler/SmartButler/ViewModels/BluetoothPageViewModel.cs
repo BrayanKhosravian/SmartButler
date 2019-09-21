@@ -16,7 +16,7 @@ using Xamarin.Forms;
 namespace SmartButler.ViewModels
 {
 
-    public class BluetoothDevicesViewModel : BaseViewModel
+    public class BluetoothPageViewModel : BaseViewModel
     {
 
         //public ObservableCollection<BluetoothDevice> BluetoothDevices  { get; private set; } = new ObservableCollection<BluetoothDevice>();
@@ -29,7 +29,7 @@ namespace SmartButler.ViewModels
         private readonly IUserInteraction _userInteraction;
         
 
-        public BluetoothDevicesViewModel(IBluetoothService bluetoothService, INavigationService navigationService, IUserInteraction userInteraction)
+        public BluetoothPageViewModel(IBluetoothService bluetoothService, INavigationService navigationService, IUserInteraction userInteraction)
         {
             _bluetoothService = bluetoothService;
             _navigationService = navigationService;
@@ -40,13 +40,16 @@ namespace SmartButler.ViewModels
 
         public async Task DeviceSelectedAsync(string mac, string name)
         {
-            var result = await _bluetoothService.ConnectAsync(name, mac);
-            if (result)
-                await _navigationService.PushAsync<SelectionPage>();
+            var connected = await _bluetoothService.ConnectAsync(name, mac);
+            if (connected)
+            { 
+                await _userInteraction.DisplayAlert("Info", "Connected to device!", "OK");
+                await _navigationService.PopToRootAsync();
+            }
             else
+            {
                 await _userInteraction.DisplayAlert("Info", "You were not able to connect to the device!", "OK");
-
-
+            }
         }
 
         public void ConfigureViewModel()

@@ -10,6 +10,7 @@ namespace SmartButler.Interfaces
     {
         bool Enable();
         void Disable();
+        bool IsConnected();
         Task<bool> ConnectAsync(string name, string mac);
 
         Task<bool> WriteAsync(string msg);

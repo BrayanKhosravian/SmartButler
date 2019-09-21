@@ -9,6 +9,8 @@ namespace SmartButler.Services.Registrable
     {
         Task<Page> PopAsync(bool animated = false);
 
+        Task PopToRootAsync(bool animated = false);
+
         Task<Page> PopModalAsync(bool animated = false);
 
         Task PushAsync<TView>(bool animated = false)
@@ -33,6 +35,12 @@ namespace SmartButler.Services.Registrable
         public Task<Page> PopAsync(bool animated = false)
         {
             return _navigation.Value.PopAsync(animated);
+           
+        }
+
+        public Task PopToRootAsync(bool animated = false)
+        {
+            return _navigation.Value.PopToRootAsync(animated);
         }
 
         public Task<Page> PopModalAsync(bool animated = false)

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SmartButler.ViewModels
 {
-    class SelectionPageViewModel : BaseViewModel
+    public class BottlesPageViewModel : BaseViewModel
     {
     }
 }

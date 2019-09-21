@@ -32,11 +32,11 @@ namespace SmartButler.Tests.Services
         public void Register_SameViewTwice_ThrowsException()
         {
             // arrange
-            _pageRepository.Register<BluetoothDevicesListView, BluetoothDevicesViewModel>();
+            _pageRepository.Register<BluetoothPage, BluetoothPageViewModel>();
 
             // act // assert
             Assert.Throws<DuplicateViewRegisteredException>(() => 
-                _pageRepository.Register<BluetoothDevicesListView, BluetoothDevicesViewModel>());
+                _pageRepository.Register<BluetoothPage, BluetoothPageViewModel>());
 
         }
 
@@ -44,13 +44,13 @@ namespace SmartButler.Tests.Services
         public void Resolve_View_ViewIsResolved()
         {
             // arrange
-            _pageRepository.Register<BluetoothDevicesListView, BluetoothDevicesViewModel>();
+            _pageRepository.Register<BluetoothPage, BluetoothPageViewModel>();
 
             // act
-            var view = _pageRepository.Resolve<BluetoothDevicesListView>();
+            var view = _pageRepository.Resolve<BluetoothPage>();
 
             // assert
-            Assert.That(view is BluetoothDevicesListView v && v.BindingContext is BluetoothDevicesViewModel);
+            Assert.That(view is BluetoothPage v && v.BindingContext is BluetoothPageViewModel);
         }
 
         [Test]
