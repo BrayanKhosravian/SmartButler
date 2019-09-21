@@ -12,9 +12,9 @@ namespace SmartButler.Interfaces
         void Disable();
         Task<bool> ConnectAsync(string name, string mac);
 
-        Task WriteAsync(string msg);
-        Task WriteAsync(byte[] buffer, int offset, int count);
-        Task<int> ReadAsync(byte[] buffer, int offset, int count);
+        Task<bool> WriteAsync(string msg);
+        Task<bool> WriteAsync(byte[] buffer, int offset, int count);
+        Task<BluetoothData> ReadAsync(byte[] buffer, int offset, int count);
 
         IEnumerable<BluetoothDevice> GetBondedDevices();
 

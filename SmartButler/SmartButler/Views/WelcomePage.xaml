@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SmartButler.Views.WelcomePage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Welcome to Smart Butler"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+
+            <Button Text="Bluetooth" Command="{Binding BluetoothCommand}"/>
+            <Button Text="Bottles" Command="{Binding BottlesCommand}"/>
+            <Button Text="Drinks" Command="{Binding DrinksCommand}"/>
+            <Button Text="Make Drink" Command="{Binding MakeDrinkCommand}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -30,7 +30,10 @@ namespace SmartButler.Services
             return (TException)Activator.CreateInstance(typeof(TException), msg);
         }   
 
-        private static string BuildExceptionMsg<TException>(IEnumerable<string> parameters, string filePath, string callerName, int lineNumber)
+        public static string BuildExceptionMsg<TException>(IEnumerable<string> parameters,
+            [CallerFilePath] string filePath = "",
+            [CallerMemberName] string callerName = "",
+            [CallerLineNumber] int lineNumber = 0)
             where TException : Exception
         {
 

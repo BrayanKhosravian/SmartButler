@@ -36,7 +36,7 @@ namespace SmartButler.ViewModels
             _userInteraction = userInteraction;
         }
 
-        public ICommand SendCommand => new Command(async () => await _bluetoothService.WriteAsync("LS du HS"));
+        public ICommand SendCommand => new Command(async () => await _bluetoothService.WriteAsync("Test"));
 
         public async Task DeviceSelectedAsync(string mac, string name)
         {
@@ -53,7 +53,8 @@ namespace SmartButler.ViewModels
         {
             //BluetoothDevices.Add(new BluetoothDevice("DummyName", "DummyMac"));
 
-            foreach (var device in _bluetoothService.GetBondedDevices())
+            var devices = _bluetoothService.GetBondedDevices();
+            foreach (var device in devices)
             {
                 if (!BluetoothDevices.Any(d => d.Mac == device.Mac && d.Name == device.Name))
                     BluetoothDevices.Add(device);

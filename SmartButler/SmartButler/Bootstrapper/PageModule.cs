@@ -13,6 +13,9 @@ namespace SmartButler.Bootstrapper
         {
             base.Load(builder);
 
+            builder.RegisterType<WelcomePage>();
+            builder.RegisterType<WelcomePageViewModel>();
+
             builder.RegisterType<BluetoothDevicesListView>();
             builder.RegisterType<BluetoothDevicesViewModel>();
 

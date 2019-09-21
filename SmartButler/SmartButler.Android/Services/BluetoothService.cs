@@ -2,34 +2,40 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
-using Android.App;
 using Android.Bluetooth;
-using Android.Content;
-using Android.OS;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
 using Java.Util;
+using SmartButler.Core;
 using SmartButler.Interfaces;
-using SmartButler.Services;
-using BluetoothDevice = SmartButler.Core.BluetoothDevice;
 using Exception = System.Exception;
 using IDisposable = System.IDisposable;
 
 namespace SmartButler.Droid.Services
 {
 
+    internal enum ConnectionState
+    {
+        Null,
+        Disconnected,
+        Connected
+    }
+
     class BluetoothService : IBluetoothService
     {
         public event EventHandler<BluetoothEventArgs> CallbackReceived;
 
         private BluetoothAdapter _bluetoothAdapter = BluetoothAdapter.DefaultAdapter;
-        private Stream _outputStream;
-        private Stream _inputStream;
-        private string _connectedMac;
-       
+        private Stream _outputStream = null;
+        private Stream _inputStream = null;
+
+        private static string _connectedMac = string.Empty;
+        private static ConnectionState _connectionState = ConnectionState.Null;
+
+
+        public BluetoothService()
+        {
+            Enable();
+        }
 
         public bool Enable()
         {
@@ -55,8 +61,16 @@ namespace SmartButler.Droid.Services
         // default uuid = "00001101-0000-1000-8000-00805F9B34FB"
         public async Task<bool> ConnectAsync(string name, string mac)
         {
+            if (_connectedMac == mac)
+            {
+                if (_connectionState == ConnectionState.Connected)
+                    return true;
+                return false;
+            }
+
             _connectedMac = mac;
-            BluetoothSocket socket;
+
+            BluetoothSocket socket = null;
 
             Enable();
             var device = _bluetoothAdapter.BondedDevices.FirstOrDefault(d => d.Name == name && d.Address == mac);
@@ -64,7 +78,10 @@ namespace SmartButler.Droid.Services
             var uuids = device?.GetUuids();
 
             if (device == null)
+            {
+                _connectionState = ConnectionState.Disconnected;
                 return false;
+            }
 
             try
             {
@@ -73,69 +90,103 @@ namespace SmartButler.Droid.Services
                 await socket.ConnectAsync();
                 _inputStream = socket.InputStream;
                 _outputStream = socket.OutputStream;
+                _connectionState = ConnectionState.Connected;
 
             }
             catch (Java.IO.IOException e)
             {
                 Console.WriteLine(e);
-                throw;
+                _inputStream?.Close();
+                _outputStream?.Close();
+                _connectionState = ConnectionState.Disconnected;
+                return false;
             }
 
-            return socket.IsConnected;
+
+            if (socket == null || _inputStream == null || _outputStream == null)
+            {
+                _connectionState = ConnectionState.Disconnected;
+                return false;
+            }
+
+            if (socket.IsConnected)
+            {
+                _connectionState = ConnectionState.Connected;
+                return true;
+            }
+            else
+            {
+                _connectionState = ConnectionState.Disconnected;
+                return false;
+            }
 
         }
 
-        public Task WriteAsync(string msg)
+        public async Task<bool> WriteAsync(string msg)
         {
+            if (_connectionState == ConnectionState.Disconnected)
+                return false;
             Enable();
 
             int offset = 0;
             byte[] buffer = new Java.Lang.String(msg).GetBytes();
 
-            return WriteAsync(buffer, offset, buffer.Length);
+            return await WriteAsync(buffer, offset, buffer.Length);
+
         }
 
-        public Task WriteAsync(byte[] buffer, int offset, int count)
+        public async Task<bool> WriteAsync(byte[] buffer, int offset, int count)
+        {
+            if (_connectionState == ConnectionState.Disconnected)
+                return false;
+
+            Enable();
+
+            try
+            {
+                await _outputStream.WriteAsync(buffer, offset, buffer.Length);
+                _connectionState = ConnectionState.Connected;
+                return true;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                _connectionState = ConnectionState.Disconnected;
+                return false;
+            }
+        }
+
+        public async Task<BluetoothData> ReadAsync(byte[] buffer, int offset, int count)
         {
             Enable();
 
             try
             {
-                return _outputStream.WriteAsync(buffer, offset, buffer.Length);
+                int data = await _inputStream.ReadAsync(buffer, offset, count);
+                var result = new BluetoothData(true, data);
+                _connectionState = ConnectionState.Connected;
+                return result;
             }
             catch (Exception e)
             {
                 Console.WriteLine(e);
-                throw;
-            }
-        }
+                _connectionState = ConnectionState.Disconnected;
+                return new BluetoothData(false);
 
-        public Task<int> ReadAsync(byte[] buffer, int offset, int count)
-        {
-            Enable();
-
-            try
-            {
-                return _inputStream.ReadAsync(buffer, offset, count);
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e);
-                throw;
             }
         }
 
 
-        public IEnumerable<BluetoothDevice> GetBondedDevices()
+        public IEnumerable<Core.BluetoothDevice> GetBondedDevices()
         {
             Enable();
             
             foreach (var device in _bluetoothAdapter.BondedDevices)
-                yield return new Core.BluetoothDevice(device.Name, device.Address);
+                yield return new SmartButler.Core.BluetoothDevice(device.Name, device.Address);
             
         }
 
-      
-
     }
+
+
 }
