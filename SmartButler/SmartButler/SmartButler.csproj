@@ -10,9 +10,28 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resources\CranberryJuice.jpg" />
+    <None Remove="Resources\LemonJuice.jpg" />
+    <None Remove="Resources\OrangeJuice.jpg" />
+    <None Remove="Resources\TestPic.jpg" />
+    <None Remove="Resources\Vodka.jpg" />
+    <None Remove="Resources\Whisky.jpeg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Bottles\CranberryJuice.jpg" />
+    <EmbeddedResource Include="Resources\Bottles\LemonJuice.jpg" />
+    <EmbeddedResource Include="Resources\Bottles\OrangeJuice.jpg" />
+    <EmbeddedResource Include="Resources\Bottles\TestPic.jpg" />
+    <EmbeddedResource Include="Resources\Bottles\Vodka.jpg" />
+    <EmbeddedResource Include="Resources\Bottles\Whisky.jpeg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Autofac" Version="4.9.4" />
     <PackageReference Include="ReactiveUI" Version="8.7.2" />
     <PackageReference Include="ReactiveUI.XamForms" Version="8.7.2" />
+    <PackageReference Include="sqlite-net-pcl" Version="1.6.292" />
     <PackageReference Include="Xamarin.Forms" Version="4.2.0.778463" />
   </ItemGroup>
 
@@ -29,11 +48,18 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="Controls\BottlesViewCell.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Views\MakeDrinkPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\WelcomePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Resources\Drinks\" />
   </ItemGroup>
 </Project>

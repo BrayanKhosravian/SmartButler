@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Reflection;
 using SmartButler.Bootstrapper;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -27,6 +28,7 @@ namespace SmartButler
         protected override void OnStart()
         {
             // Handle when your app starts
+            
         }
 
         protected override void OnSleep()

@@ -4,9 +4,22 @@
              x:Class="SmartButler.Views.DrinksPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <ListView ItemsSource="{Binding Drinks}"
+                      ItemTapped="Handle_ItemTapped"
+                      CachingStrategy="RecycleElement" HasUnevenRows="true">
+
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="{Binding ActualImage}" HeightRequest="150" WidthRequest="150" />
+                                <Label Text="{Binding Name}"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Button Text="AddBottle" Command="{Binding AddBottleCommand}" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

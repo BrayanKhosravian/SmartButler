@@ -16,9 +16,11 @@ namespace SmartButler.ViewModels
         {
             BluetoothCommand = new Command(async () => await navigation.PushAsync<BluetoothPage>());
 
-            BottlesCommand = new Command(async () => await navigation.PushAsync<BottlesPage>(), bluetoothService.IsConnected);
+            BottlesCommand = new Command(async () => await navigation.PushAsync<BottlesPage>());
 
-            DrinksCommand = new Command(async () => await navigation.PushAsync<DrinksPage>(), bluetoothService.IsConnected);
+            DrinksCommand = new Command(async () => await navigation.PushAsync<DrinksPage>());
+
+            MakeDrinkCommand = new Command(async () => await navigation.PushAsync<MakeDrinkPage>(), bluetoothService.IsConnected);
         }
 
         public ICommand BluetoothCommand { get; }
@@ -27,10 +29,11 @@ namespace SmartButler.ViewModels
 
         public ICommand DrinksCommand { get; }
 
+        public ICommand MakeDrinkCommand { get; }
+
         public void Activate()
         {
-            ((Command)BottlesCommand).ChangeCanExecute();
-            ((Command)DrinksCommand).ChangeCanExecute();
+            ((Command)MakeDrinkCommand).ChangeCanExecute();
         }
 
     }
