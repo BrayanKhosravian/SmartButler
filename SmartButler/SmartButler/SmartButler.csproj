@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>7.2</LangVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -11,11 +12,23 @@
 
   <ItemGroup>
     <None Remove="Resources\CranberryJuice.jpg" />
+    <None Remove="Resources\Drinks\Blizzard.JPG" />
+    <None Remove="Resources\Drinks\BourbonSquash.JPG" />
+    <None Remove="Resources\Drinks\CapeCod.JPG" />
+    <None Remove="Resources\Drinks\HotToddy.JPG" />
+    <None Remove="Resources\Drinks\Lemondrop.JPG" />
+    <None Remove="Resources\Drinks\Madras.jpg" />
+    <None Remove="Resources\Drinks\Screwdriver.JPG" />
+    <None Remove="Resources\Drinks\WhiskySour.JPG" />
     <None Remove="Resources\LemonJuice.jpg" />
     <None Remove="Resources\OrangeJuice.jpg" />
     <None Remove="Resources\TestPic.jpg" />
     <None Remove="Resources\Vodka.jpg" />
     <None Remove="Resources\Whisky.jpeg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Drinks\Blizzard.JPG" />
   </ItemGroup>
 
   <ItemGroup>
@@ -25,6 +38,13 @@
     <EmbeddedResource Include="Resources\Bottles\TestPic.jpg" />
     <EmbeddedResource Include="Resources\Bottles\Vodka.jpg" />
     <EmbeddedResource Include="Resources\Bottles\Whisky.jpeg" />
+    <EmbeddedResource Include="Resources\Drinks\BourbonSquash.JPG" />
+    <EmbeddedResource Include="Resources\Drinks\CapeCod.JPG" />
+    <EmbeddedResource Include="Resources\Drinks\HotToddy.JPG" />
+    <EmbeddedResource Include="Resources\Drinks\Lemondrop.JPG" />
+    <EmbeddedResource Include="Resources\Drinks\Madras.jpg" />
+    <EmbeddedResource Include="Resources\Drinks\Screwdriver.JPG" />
+    <EmbeddedResource Include="Resources\Drinks\WhiskySour.JPG" />
   </ItemGroup>
 
   <ItemGroup>
@@ -36,30 +56,29 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Views\BluetoothPage.xaml.cs">
+    <Compile Update="Views\Registerable\BluetoothPage.xaml.cs">
       <DependentUpon>BluetoothPage.xaml</DependentUpon>
     </Compile>
-    <Compile Update="Views\BottlesPage.xaml.cs">
+    <Compile Update="Views\Registerable\BottlesPage.xaml.cs">
       <DependentUpon>BottlesPage.xaml</DependentUpon>
     </Compile>
-    <Compile Update="Views\DrinksPage.xaml.cs">
+    <Compile Update="Views\Registerable\DrinksPage.xaml.cs">
       <DependentUpon>DrinksPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Controls\BottlesViewCell.xaml">
+    <EmbeddedResource Update="Controls\ToolBarControl.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\MakeDrinkPage.xaml">
+    <EmbeddedResource Update="Views\Registerable\MakeDrinkPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\WelcomePage.xaml">
+    <EmbeddedResource Update="Views\Registerable\SettingsPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Resources\Drinks\" />
+    <EmbeddedResource Update="Views\Registerable\WelcomePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>

@@ -16,6 +16,8 @@ namespace SmartButler.Views
         public DrinksPage()
         {
             InitializeComponent();
+
+            this.WhenActivated(closer => { ViewModel?.Activate(); });
         }
 
         private void Handle_ItemTapped(object sender, ItemTappedEventArgs e)

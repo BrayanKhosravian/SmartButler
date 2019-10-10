@@ -11,7 +11,7 @@ using Xamarin.Forms.Xaml;
 namespace SmartButler.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class WelcomePage : ContentPage, IViewFor<WelcomePageViewModel>
+    public partial class WelcomePage : IViewFor<WelcomePageViewModel>
     {
         public WelcomePage()
         {

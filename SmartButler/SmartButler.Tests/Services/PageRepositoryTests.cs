@@ -9,34 +9,35 @@ using SmartButler.Services.Registrable;
 using SmartButler.ViewModels;
 using SmartButler.Views;
 using Android.Bluetooth;
+using SmartButler.Bootstrapper.Modules;
 
 namespace SmartButler.Tests.Services
 {
     class PageRepositoryTests
     {
-        private IPageRepository _pageRepository;
+        private IPageRegistrar _pageRegistrar;
 
         [SetUp()]
         public void Setup()
         {
             var builder = new ContainerBuilder();
             builder.RegisterModule<PageModule>();
-            builder.RegisterType<PageRepository>().As<IPageRepository>().SingleInstance();
+            builder.RegisterType<PageRegistrar>().As<IPageRegistrar>().SingleInstance();
 
             var container = builder.Build();
 
-            _pageRepository = container.Resolve<IPageRepository>();
+            _pageRegistrar = container.Resolve<IPageRegistrar>();
         }
 
         [Test]
         public void Register_SameViewTwice_ThrowsException()
         {
             // arrange
-            _pageRepository.Register<BluetoothPage, BluetoothPageViewModel>();
+            _pageRegistrar.Register<BluetoothPage, BluetoothPageViewModel>();
 
             // act // assert
             Assert.Throws<DuplicateViewRegisteredException>(() => 
-                _pageRepository.Register<BluetoothPage, BluetoothPageViewModel>());
+                _pageRegistrar.Register<BluetoothPage, BluetoothPageViewModel>());
 
         }
 
@@ -44,10 +45,10 @@ namespace SmartButler.Tests.Services
         public void Resolve_View_ViewIsResolved()
         {
             // arrange
-            _pageRepository.Register<BluetoothPage, BluetoothPageViewModel>();
+            _pageRegistrar.Register<BluetoothPage, BluetoothPageViewModel>();
 
             // act
-            var view = _pageRepository.Resolve<BluetoothPage>();
+            var view = _pageRegistrar.Resolve<BluetoothPage>();
 
             // assert
             Assert.That(view is BluetoothPage v && v.BindingContext is BluetoothPageViewModel);

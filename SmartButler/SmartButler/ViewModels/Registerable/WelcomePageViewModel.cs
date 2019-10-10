@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Windows.Input;
+using SmartButler.Core;
 using SmartButler.Interfaces;
 using SmartButler.Services.Registrable;
 using SmartButler.Views;
+using SmartButler.Views.Registerable;
 using Xamarin.Forms;
 
 namespace SmartButler.ViewModels
@@ -12,15 +14,19 @@ namespace SmartButler.ViewModels
     public class WelcomePageViewModel : BaseViewModel
     {
 
-        public WelcomePageViewModel(INavigationService navigation, IBluetoothService bluetoothService)
+        public WelcomePageViewModel(INavigationService navigation, IBluetoothService bluetoothService) 
         {
+
             BluetoothCommand = new Command(async () => await navigation.PushAsync<BluetoothPage>());
 
             BottlesCommand = new Command(async () => await navigation.PushAsync<BottlesPage>());
 
             DrinksCommand = new Command(async () => await navigation.PushAsync<DrinksPage>());
 
-            MakeDrinkCommand = new Command(async () => await navigation.PushAsync<MakeDrinkPage>(), bluetoothService.IsConnected);
+            MakeDrinkCommand = new Command(async () => await navigation.PushAsync<MakeDrinkPage>(),
+                () => bluetoothService.IsConnected() || Settings.EnableCommands);
+
+          
         }
 
         public ICommand BluetoothCommand { get; }
@@ -31,6 +37,13 @@ namespace SmartButler.ViewModels
 
         public ICommand MakeDrinkCommand { get; }
 
+
+        public ToolbarControlViewModel ToolbarControlViewModel { get; set; }
+        public void SetToolBarControlViewModel(ToolbarControlViewModel vm)
+        {
+            ToolbarControlViewModel = vm;
+        }
+      
         public void Activate()
         {
             ((Command)MakeDrinkCommand).ChangeCanExecute();

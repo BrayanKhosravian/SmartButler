@@ -1,12 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="SmartButler.Views.DrinksPage">
+             xmlns:controls="clr-namespace:SmartButler.Controls;assembly=SmartButler"
+             x:Class="SmartButler.Views.BottlesPage">
+
+    <NavigationPage.TitleView>
+        <controls:ToolBarControl BindingContext="{Binding ToolbarControlViewModel, Mode=TwoWay}"/>
+    </NavigationPage.TitleView>
+
+
     <ContentPage.Content>
         <StackLayout>
-            <ListView ItemsSource="{Binding Drinks}"
-                      ItemTapped="Handle_ItemTapped"
-                      CachingStrategy="RecycleElement" HasUnevenRows="true">
+            <ListView ItemsSource="{Binding Bottles}"
+                          ItemTapped="Handle_ItemTapped"
+                          CachingStrategy="RecycleElement" HasUnevenRows="true">
 
                 <ListView.ItemTemplate>
                     <DataTemplate>

@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Autofac;
+using SmartButler.Bootstrapper.Modules;
 using SmartButler.Services.Registrable;
 using SmartButler.ViewModels;
 using SmartButler.Views;
+using SmartButler.Views.Registerable;
 using Xamarin.Forms;
 
 namespace SmartButler.Bootstrapper
@@ -32,18 +34,26 @@ namespace SmartButler.Bootstrapper
                 }
             }
 
+            builder.RegisterType<ToolbarControlViewModel>();
+
             builder.RegisterModule<PageModule>();
             builder.RegisterModule<ServiceModule>();
 
             var container = builder.Build();
 
-            var pageRepository = container.Resolve<IPageRepository>();
-            pageRepository.Register<BluetoothPage, BluetoothPageViewModel>();
-            pageRepository.Register<BottlesPage, BottlesPageViewModel>();
-            pageRepository.Register<DrinksPage, DrinksPageViewModel>();
-            pageRepository.Register<WelcomePage, WelcomePageViewModel>();
+            var pageRegistrar = container.Resolve<IPageRegistrar>();
+            // register workspace component view models
+            
+            // register view and view model relationship
+            pageRegistrar.Register<BluetoothPage, BluetoothPageViewModel>();
+            pageRegistrar.Register<BottlesPage, BottlesPageViewModel>();
+            pageRegistrar.Register<DrinksPage, DrinksPageViewModel>();
+            pageRegistrar.Register<WelcomePage, WelcomePageViewModel>();
+            pageRegistrar.Register<MakeDrinkPage, MakeDrinkPageViewModel>();
+            pageRegistrar.Register<SettingsPage, SettingsPageViewModel>();
 
-            var mainPage = pageRepository.Resolve<WelcomePage>();
+            var mainPage = pageRegistrar.Resolve<WelcomePage>();
+          
             _app.MainPage = new NavigationPage(mainPage);
 
             // application.MainPage = 

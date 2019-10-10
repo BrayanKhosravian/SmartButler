@@ -4,6 +4,9 @@ using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Text;
 using ReactiveUI;
+using SmartButler.Core;
+using SmartButler.Services.Registrable;
+using Xamarin.Forms;
 using PropertyChangingEventArgs = System.ComponentModel.PropertyChangingEventArgs;
 using PropertyChangingEventHandler = System.ComponentModel.PropertyChangingEventHandler;
 
@@ -15,7 +18,6 @@ namespace SmartButler.ViewModels
         public event PropertyChangedEventHandler PropertyChanged;
         public event PropertyChangingEventHandler PropertyChanging;
 
-
         public bool IsBusy
         {
             get => _isBusy;
@@ -26,6 +28,8 @@ namespace SmartButler.ViewModels
                 OnPropertyChanged();
             }
         }
+
+       
 
 
         protected void SetValue<T>(ref T backingField, T value, [CallerMemberName] string callerName = null)

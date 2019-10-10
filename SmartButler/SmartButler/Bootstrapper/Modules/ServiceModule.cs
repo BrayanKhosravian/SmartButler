@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Autofac;
-using SmartButler.Services;
+﻿using Autofac;
 using SmartButler.Services.Registrable;
 using Xamarin.Forms;
 
-namespace SmartButler.Bootstrapper
+namespace SmartButler.Bootstrapper.Modules
 {
     public class ServiceModule : Module
     {
@@ -17,10 +13,12 @@ namespace SmartButler.Bootstrapper
             // register services
             builder.RegisterType<ResourceManager>().As<IResourceManager>();
             builder.RegisterType<UserInteraction>().As<IUserInteraction>();
+            builder.RegisterType<LiquidContainerFactory>().As<ILiquidContainerFactory>();
 
             // register singleton services
             builder.RegisterType<NavigationService>().As<INavigationService>().SingleInstance();
-            builder.RegisterType<PageRepository>().As<IPageRepository>().SingleInstance();
+            builder.RegisterType<PageRegistrar>().As<IPageRegistrar>().SingleInstance();
+            builder.RegisterType<UserInteraction>().As<IUserInteraction>().SingleInstance();
 
             // register services lazily
             builder.Register(componentContext => ((App)Application.Current).MainPage.Navigation);

@@ -13,15 +13,18 @@ namespace SmartButler.Views
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class BottlesPage : ContentPage, IViewFor<BottlesPageViewModel>
 	{
-		public BottlesPage ()
+	    
+
+	    public BottlesPage ()
 		{
 			InitializeComponent ();
 
 		    this.WhenActivated(closer =>
 		    {
-                ViewModel.Activate();
+                ViewModel?.Activate();
 		    });
 		}
+
 
 	    private void Handle_ItemTapped(object sender, ItemTappedEventArgs e)
 	    {

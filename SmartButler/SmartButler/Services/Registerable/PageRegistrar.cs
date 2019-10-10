@@ -19,7 +19,7 @@ namespace SmartButler.Services.Registrable
     /// Then the view is created and the views bindingcontext is set to the vm
     /// its not needed to pass in services into the view as u can pass them into the vm directly
     /// </summary>
-    public interface IPageRepository
+    public interface IPageRegistrar
     {
 
         /// <summary>
@@ -61,16 +61,17 @@ namespace SmartButler.Services.Registrable
 
 
 
-    /// <inheritdoc cref="IPageRepository"/>/>
-    public sealed class PageRepository : IPageRepository
+    /// <inheritdoc cref="IPageRegistrar"/>/>
+    public sealed class PageRegistrar : IPageRegistrar
     {
         // <TView, TViewModel>
         private readonly IDictionary<Type, Type> _map = new Dictionary<Type, Type>();
+        private readonly IList<Type> _workspaceViewModels = new List<Type>();
 
         private readonly IComponentContext _componentContext;
 
         // inject autofac containerContext // is needed for resolving views & vm
-        public PageRepository(IComponentContext componentContext)
+        public PageRegistrar(IComponentContext componentContext)
         {
             _componentContext = componentContext;
         }
@@ -81,11 +82,10 @@ namespace SmartButler.Services.Registrable
             where TViewModel : BaseViewModel
         {
             if(_map.ContainsKey(typeof(TView)))
-               throw ExceptionFactory.Get<DuplicateViewRegisteredException>(new []{ "A duplicate view was registered!" });
+               throw ExceptionFactory.Get<DuplicateViewRegisteredException>(new []{ "A duplicate view was already registered!" });
             _map[typeof(TView)] = typeof(TViewModel);
         }
 
-        
         public TView Resolve<TView>() where TView : Page
         {
 
@@ -136,7 +136,7 @@ namespace SmartButler.Services.Registrable
                 throw ExceptionFactory.Get<ArgumentNullException>();
 
             if (parameters.Length == 0)     
-                return (BaseViewModel)_componentContext.Resolve(vmType);
+                return (BaseViewModel) _componentContext.Resolve(vmType);
             if (parameters.Length == 1)
                 return (BaseViewModel) _componentContext.Resolve(vmType, parameters[0]);
             if (parameters.Length > 1)
@@ -164,45 +164,6 @@ namespace SmartButler.Services.Registrable
         {
         }
 
-    }
-
-
-
-    interface IService
-    {
-
-    }
-
-    class Service : IService
-    {
-        private IDisposable _connection;
-    }
-
-
-    class ViewModel : BaseViewModel
-    {
-        private IService _service;
-
-        public ViewModel(IService service)
-        {
-            _service = service;
-        }
-    }
-
-    class Test
-    {
-        public void Main()
-        {
-            var vm1 = new ViewModel(new Service());
-
-            // other code and stuff going on
-            // navigation happens
-
-            var vm2 = new ViewModel(new Service());
-            // there no longer need of "vm1"
-            // would it get GC??
-
-        }
     }
 
 

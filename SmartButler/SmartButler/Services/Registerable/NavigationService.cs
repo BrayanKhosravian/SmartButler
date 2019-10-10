@@ -23,12 +23,12 @@ namespace SmartButler.Services.Registrable
 
     public class NavigationService : INavigationService
     {
-        private readonly IPageRepository _pageRepository;
+        private readonly IPageRegistrar _pageRegistrar;
         private readonly Lazy<INavigation> _navigation;
 
-        public NavigationService(IPageRepository pageRepository, System.Lazy<INavigation> navigation)
+        public NavigationService(IPageRegistrar pageRegistrar, System.Lazy<INavigation> navigation)
         {
-            _pageRepository = pageRepository;
+            _pageRegistrar = pageRegistrar;
             _navigation = navigation;
         }
 
@@ -51,14 +51,14 @@ namespace SmartButler.Services.Registrable
 
         public Task PushAsync<TView>(bool animated = false) where TView : Page
         {
-            var page = _pageRepository.Resolve<TView>();
+            var page = _pageRegistrar.Resolve<TView>();
 
             return _navigation.Value.PushAsync(page, animated);
         }
 
         public Task PushModalAsync<TView>(bool animated = false) where TView : Page
         {
-            var page = _pageRepository.Resolve<TView>();
+            var page = _pageRegistrar.Resolve<TView>();
 
             return _navigation.Value.PushModalAsync(page, animated);
 

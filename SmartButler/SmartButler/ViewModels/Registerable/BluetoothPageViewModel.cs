@@ -18,18 +18,15 @@ namespace SmartButler.ViewModels
 
     public class BluetoothPageViewModel : BaseViewModel
     {
-
         //public ObservableCollection<BluetoothDevice> BluetoothDevices  { get; private set; } = new ObservableCollection<BluetoothDevice>();
         public ReactiveList<BluetoothDevice> BluetoothDevices { get; set; } = new ReactiveList<BluetoothDevice>();
-
-       
 
         private readonly IBluetoothService _bluetoothService;
         private readonly INavigationService _navigationService;
         private readonly IUserInteraction _userInteraction;
         
 
-        public BluetoothPageViewModel(IBluetoothService bluetoothService, INavigationService navigationService, IUserInteraction userInteraction)
+        public BluetoothPageViewModel(IBluetoothService bluetoothService, INavigationService navigationService, IUserInteraction userInteraction) 
         {
             _bluetoothService = bluetoothService;
             _navigationService = navigationService;
@@ -67,6 +64,12 @@ namespace SmartButler.ViewModels
                     BluetoothDevices.Add(device);
             }
 
+        }
+
+        public ToolbarControlViewModel ToolbarControlViewModel { get; set; }
+        public void SetToolBarControlViewModel(ToolbarControlViewModel vm)
+        {
+            ToolbarControlViewModel = vm;
         }
 
     }

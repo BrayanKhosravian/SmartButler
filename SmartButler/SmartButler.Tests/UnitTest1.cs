@@ -1,6 +1,7 @@
 using Autofac;
 using NUnit.Framework;
 using SmartButler.Bootstrapper;
+using SmartButler.Bootstrapper.Modules;
 using SmartButler.Services.Registrable;
 
 namespace Tests

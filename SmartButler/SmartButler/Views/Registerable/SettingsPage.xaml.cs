@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace SmartButler.Controls
+namespace SmartButler.Views.Registerable
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class BottlesViewCell : ViewCell
+	public partial class SettingsPage : ContentPage
 	{
-		public BottlesViewCell ()
+		public SettingsPage ()
 		{
 			InitializeComponent ();
 		}
