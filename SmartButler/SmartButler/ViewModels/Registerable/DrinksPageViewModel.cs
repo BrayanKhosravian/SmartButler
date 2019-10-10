@@ -43,7 +43,7 @@ namespace SmartButler.ViewModels
 
         }
 
-        public ToolbarControlViewModel ToolbarControlViewModel { get; set; }
+        public ToolbarControlViewModel ToolbarControlViewModel { get; private set; }
         public void SetToolBarControlViewModel(ToolbarControlViewModel vm)
         {
             ToolbarControlViewModel = vm;

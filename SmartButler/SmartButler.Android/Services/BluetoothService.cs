@@ -101,17 +101,17 @@ namespace SmartButler.Droid.Services
 
         }
 
-        public async Task<bool> WriteAsync(string msg)
+        public Task<bool> WriteAsync(string msg)
         {
             if (!IsConnected())
-                return false;
+                return Task.FromResult(false);
 
             Enable();
 
             int offset = 0;
             byte[] buffer = new Java.Lang.String(msg).GetBytes();
 
-            return await WriteAsync(buffer, offset, buffer.Length);
+            return WriteAsync(buffer, offset, buffer.Length);
 
         }
 

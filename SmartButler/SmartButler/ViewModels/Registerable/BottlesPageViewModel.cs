@@ -47,7 +47,7 @@ namespace SmartButler.ViewModels
             yield return _liquidContainerFactory.Get<Bottle>("NONE", "NONE", resolvingType);
         }
 
-        public ToolbarControlViewModel ToolbarControlViewModel { get; set; }
+        public ToolbarControlViewModel ToolbarControlViewModel { get; private set; }
         public void SetToolBarControlViewModel(ToolbarControlViewModel vm)
         {
             ToolbarControlViewModel = vm;

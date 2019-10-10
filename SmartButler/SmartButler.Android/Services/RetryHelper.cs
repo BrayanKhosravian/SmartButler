@@ -7,10 +7,10 @@ namespace SmartButler.Droid.Services
     internal static class RetryHelper
     {
        
-        public static async Task RetryOnExceptionAsync(
+        public static Task RetryOnExceptionAsync(
             int times, TimeSpan delay, Func<Task> operation)
         {
-            await RetryOnExceptionAsync<Exception>(times, delay, operation);
+           return RetryOnExceptionAsync<Exception>(times, delay, operation);
         }
 
         public static async Task RetryOnExceptionAsync<TException>(
