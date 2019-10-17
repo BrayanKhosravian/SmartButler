@@ -21,7 +21,7 @@ namespace SmartButler.Tests.Services
         public void Setup()
         {
             var builder = new ContainerBuilder();
-            builder.RegisterModule<PageModule>();
+            builder.RegisterModule<PageComponentsModule>();
             builder.RegisterType<PageRegistrar>().As<IPageRegistrar>().SingleInstance();
 
             var container = builder.Build();

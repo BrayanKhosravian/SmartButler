@@ -56,28 +56,31 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Views\Registerable\BluetoothPage.xaml.cs">
+    <Compile Update="Views\RegisterAble\BluetoothPage.xaml.cs">
       <DependentUpon>BluetoothPage.xaml</DependentUpon>
     </Compile>
-    <Compile Update="Views\Registerable\BottlesPage.xaml.cs">
+    <Compile Update="Views\RegisterAble\BottlesPage.xaml.cs">
       <DependentUpon>BottlesPage.xaml</DependentUpon>
     </Compile>
-    <Compile Update="Views\Registerable\DrinksPage.xaml.cs">
+    <Compile Update="Views\RegisterAble\DrinksPage.xaml.cs">
       <DependentUpon>DrinksPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="Controls\DrinkViewCell.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Controls\ToolBarControl.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\Registerable\MakeDrinkPage.xaml">
+    <EmbeddedResource Update="Views\RegisterAble\MakeDrinkPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\Registerable\SettingsPage.xaml">
+    <EmbeddedResource Update="Views\RegisterAble\SettingsPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\Registerable\WelcomePage.xaml">
+    <EmbeddedResource Update="Views\RegisterAble\WelcomePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

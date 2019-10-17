@@ -32,14 +32,28 @@ namespace SmartButler.ViewModels
         private IEnumerable<Drink> AddDefaultDrinks()
         {
             var resolvingType = typeof(DrinksPageViewModel);
-            yield return _liquidContainerFactory.Get<Drink>("Madras", "Drinks.Madras.jpg", resolvingType);
-            yield return _liquidContainerFactory.Get<Drink>("Screwdriver", "Drinks.Screwdriver.JPG", resolvingType);
-            yield return _liquidContainerFactory.Get<Drink>("Lemon Drop", "Drinks.Lemondrop.JPG", resolvingType);
-            yield return _liquidContainerFactory.Get<Drink>("Whisky Sour", "Drinks.WhiskySour.JPG", resolvingType);
-            yield return _liquidContainerFactory.Get<Drink>("Blizzard", "Drinks.Blizzard.JPG", resolvingType);
-            yield return _liquidContainerFactory.Get<Drink>("Cape Cod", "Drinks.CapeCod.JPG", resolvingType);
-            yield return _liquidContainerFactory.Get<Drink>("Hot Toddy", "Drinks.HotToddy.JPG", resolvingType);
-            yield return _liquidContainerFactory.Get<Drink>("Bourbon Squash", "Drinks.BourbonSquash.JPG", resolvingType);
+            yield return _liquidContainerFactory.Create<Drink>("Madras", "Drinks.Madras.jpg", resolvingType);
+
+
+            yield return _liquidContainerFactory.Create<Drink>("Screwdriver", "Drinks.Screwdriver.JPG", resolvingType);
+
+
+            yield return _liquidContainerFactory.Create<Drink>("Lemon Drop", "Drinks.Lemondrop.JPG", resolvingType);
+
+
+            yield return _liquidContainerFactory.Create<Drink>("Whisky Sour", "Drinks.WhiskySour.JPG", resolvingType);
+
+
+            yield return _liquidContainerFactory.Create<Drink>("Blizzard", "Drinks.Blizzard.JPG", resolvingType);
+
+
+            yield return _liquidContainerFactory.Create<Drink>("Cape Cod", "Drinks.CapeCod.JPG", resolvingType);
+
+
+            yield return _liquidContainerFactory.Create<Drink>("Hot Toddy", "Drinks.HotToddy.JPG", resolvingType);
+
+
+            yield return _liquidContainerFactory.Create<Drink>("Bourbon Squash", "Drinks.BourbonSquash.JPG", resolvingType);
 
         }
 

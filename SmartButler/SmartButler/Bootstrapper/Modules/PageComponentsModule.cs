@@ -5,11 +5,14 @@ using SmartButler.Views.Registerable;
 
 namespace SmartButler.Bootstrapper.Modules
 {
-    public class PageModule : Module
+    public class PageComponentsModule : Module
     {
         protected override void Load(ContainerBuilder builder)
         {
             base.Load(builder);
+
+            // register control-viewmodels
+            builder.RegisterType<ToolbarControlViewModel>().SingleInstance(); // single instance because settings should be saved
 
             // add pages and ViewModels
             builder.RegisterType<WelcomePage>();
@@ -20,28 +23,28 @@ namespace SmartButler.Bootstrapper.Modules
             });
 
             builder.RegisterType<BluetoothPage>();
-            builder.RegisterType<BluetoothPageViewModel>().PropertiesAutowired().OnActivating(c =>
+            builder.RegisterType<BluetoothPageViewModel>().OnActivating(c =>
             {
                 var dep = c.Context.Resolve<ToolbarControlViewModel>();
                 c.Instance.SetToolBarControlViewModel(dep);
             });
 
             builder.RegisterType<DrinksPage>();
-            builder.RegisterType<DrinksPageViewModel>().PropertiesAutowired().OnActivating(c =>
+            builder.RegisterType<DrinksPageViewModel>().OnActivating(c =>
             {
                 var dep = c.Context.Resolve<ToolbarControlViewModel>();
                 c.Instance.SetToolBarControlViewModel(dep);
             });
 
             builder.RegisterType<BottlesPage>();
-            builder.RegisterType<BottlesPageViewModel>().PropertiesAutowired().OnActivating(c =>
+            builder.RegisterType<BottlesPageViewModel>().OnActivating(c =>
             {
                 var dep = c.Context.Resolve<ToolbarControlViewModel>();
                 c.Instance.SetToolBarControlViewModel(dep);
             });
 
             builder.RegisterType<MakeDrinkPage>();
-            builder.RegisterType<MakeDrinkPageViewModel>().PropertiesAutowired().OnActivating(c =>
+            builder.RegisterType<MakeDrinkPageViewModel>().OnActivating(c =>
             {
                 var dep = c.Context.Resolve<ToolbarControlViewModel>();
                 c.Instance.SetToolBarControlViewModel(dep);

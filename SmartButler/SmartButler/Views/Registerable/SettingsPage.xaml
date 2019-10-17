@@ -6,9 +6,15 @@
 
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
+            <Label Text="Settings!"
+                VerticalOptions="Start" 
                 HorizontalOptions="CenterAndExpand" />
+  
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Enable all Buttons"/>
+                <Switch IsToggled="{Binding AreButtonsEnabled}" />
+            </StackLayout>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

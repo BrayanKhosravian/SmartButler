@@ -34,9 +34,9 @@ namespace SmartButler.Bootstrapper
                 }
             }
 
-            builder.RegisterType<ToolbarControlViewModel>();
+           
 
-            builder.RegisterModule<PageModule>();
+            builder.RegisterModule<PageComponentsModule>();
             builder.RegisterModule<ServiceModule>();
 
             var container = builder.Build();

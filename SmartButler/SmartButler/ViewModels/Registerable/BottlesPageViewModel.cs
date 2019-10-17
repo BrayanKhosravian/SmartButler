@@ -39,12 +39,12 @@ namespace SmartButler.ViewModels
         private IEnumerable<Bottle> DefaultBottles()
         {
             var resolvingType = typeof(BottlesPageViewModel);
-            yield return _liquidContainerFactory.Get<Bottle>("Whisky", "Bottles.Whisky.jpeg", resolvingType);
-            yield return _liquidContainerFactory.Get<Bottle>("Vodka", "Bottles.Vodka.jpg", resolvingType);
-            yield return _liquidContainerFactory.Get<Bottle>("Orange-Juice", "Bottles.OrangeJuice.jpg", resolvingType);
-            yield return _liquidContainerFactory.Get<Bottle>("Cranberry-Juice", "Bottles.CranberryJuice.jpg", resolvingType);
-            yield return _liquidContainerFactory.Get<Bottle>("Lemon-Juice","Bottles.LemonJuice.jpg", resolvingType);
-            yield return _liquidContainerFactory.Get<Bottle>("NONE", "NONE", resolvingType);
+            yield return _liquidContainerFactory.Create<Bottle>("Whisky", "Bottles.Whisky.jpeg", resolvingType);
+            yield return _liquidContainerFactory.Create<Bottle>("Vodka", "Bottles.Vodka.jpg", resolvingType);
+            yield return _liquidContainerFactory.Create<Bottle>("Orange-Juice", "Bottles.OrangeJuice.jpg", resolvingType);
+            yield return _liquidContainerFactory.Create<Bottle>("Cranberry-Juice", "Bottles.CranberryJuice.jpg", resolvingType);
+            yield return _liquidContainerFactory.Create<Bottle>("Lemon-Juice","Bottles.LemonJuice.jpg", resolvingType);
+            yield return _liquidContainerFactory.Create<Bottle>("NONE", "NONE", resolvingType);
         }
 
         public ToolbarControlViewModel ToolbarControlViewModel { get; private set; }

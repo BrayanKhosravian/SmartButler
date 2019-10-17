@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Reflection;
 using System.Text;
 using SmartButler.Models;
@@ -21,7 +22,7 @@ namespace SmartButler.Services.Registrable
         /// <param name="partialResource">The partial resource. Keep care to place the resources in "SmartButler.Resources"</param>
         /// <param name="resolvingType">The type where this resource is needed. (most of the time its a ViewModel)</param>
         /// <returns></returns>
-        T Get<T>(string name, string partialResource, Type resolvingType)
+        T Create<T>(string name, string partialResource, Type resolvingType)
             where T : LiquidContainer;
     }
 
@@ -29,7 +30,7 @@ namespace SmartButler.Services.Registrable
     class LiquidContainerFactory : ILiquidContainerFactory
     {
         
-        public T Get<T>(string name, string partialResource, Type resolvingType) 
+        public T Create<T>(string name, string partialResource, Type resolvingType) 
             where T : LiquidContainer
         {
             var liquidContainer = Activator.CreateInstance<T>();
@@ -42,4 +43,5 @@ namespace SmartButler.Services.Registrable
             return liquidContainer;
         }
     }
+
 }

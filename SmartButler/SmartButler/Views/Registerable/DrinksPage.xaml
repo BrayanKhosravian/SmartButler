@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:registerable="clr-namespace:SmartButler.Views.Registerable;assembly=SmartButler"
              xmlns:controls="clr-namespace:SmartButler.Controls;assembly=SmartButler"
+             xmlns:cells="clr-namespace:SmartButler.Controls"
              x:Class="SmartButler.Views.DrinksPage">
 
     <NavigationPage.TitleView>
@@ -18,12 +19,7 @@
 
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <ViewCell>
-                            <StackLayout Orientation="Horizontal">
-                                <Image Source="{Binding ActualImage}" HeightRequest="150" WidthRequest="150" />
-                                <Label Text="{Binding Name}"/>
-                            </StackLayout>
-                        </ViewCell>
+                        <cells:DrinkViewCell/>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>

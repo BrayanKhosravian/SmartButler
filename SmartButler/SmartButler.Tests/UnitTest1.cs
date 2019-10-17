@@ -17,7 +17,7 @@ namespace Tests
         public void Test1()
         {
             var builder = new ContainerBuilder();
-            builder.RegisterModule<PageModule>();
+            builder.RegisterModule<PageComponentsModule>();
             builder.RegisterModule<ServiceModule>();
             var container = builder.Build();
 

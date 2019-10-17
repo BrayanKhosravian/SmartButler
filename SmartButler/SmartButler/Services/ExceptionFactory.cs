@@ -19,29 +19,29 @@ namespace SmartButler.Services
         /// <param name="callerName"></param>
         /// <param name="lineNumber"></param>
         /// <param name="parameters"></param>
-        public static TException Get<TException>(IEnumerable<string> parameters = null, 
+        public static TException Get<TException>(string message = "", 
             [CallerFilePath] string filePath = "",
             [CallerMemberName] string callerName = "",
             [CallerLineNumber] int lineNumber = 0)
         where TException : Exception
         {
-            string msg = BuildExceptionMsg<TException>(parameters, filePath, callerName, lineNumber);
+            string msg = BuildExceptionMsg<TException>(message, filePath, callerName, lineNumber);
 
             return (TException)Activator.CreateInstance(typeof(TException), msg);
         }   
 
-        public static string BuildExceptionMsg<TException>(IEnumerable<string> parameters,
+        public static string BuildExceptionMsg<TException>(string message,
             [CallerFilePath] string filePath = "",
             [CallerMemberName] string callerName = "",
             [CallerLineNumber] int lineNumber = 0)
             where TException : Exception
         {
 
-            return $@"Exception of this type was thrown: {typeof(TException).Name} {Environment.NewLine}
+            return $@"Message: {message}
+                      Exception of this type was thrown: {typeof(TException).Name} {Environment.NewLine}
                       File path: {filePath} {Environment.NewLine}
                       Caller: {callerName} {Environment.NewLine}
-                      Line number: {lineNumber} {Environment.NewLine}
-                      Message/Parameters: {string.Join("\n", parameters)}"; 
+                      Line number: {lineNumber} {Environment.NewLine}"; 
 
         }
     }
