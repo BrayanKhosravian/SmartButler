@@ -19,7 +19,7 @@ namespace SmartButler.ViewModels
 
             BluetoothCommand = new Command(async () => await navigation.PushAsync<BluetoothPage>());
 
-            BottlesCommand = new Command(async () => await navigation.PushAsync<BottlesPage>());
+            BottlesCommand = new Command(async () => await navigation.PushAsync<IngredientsPage>());
 
             DrinksCommand = new Command(async () => await navigation.PushAsync<DrinksPage>());
 

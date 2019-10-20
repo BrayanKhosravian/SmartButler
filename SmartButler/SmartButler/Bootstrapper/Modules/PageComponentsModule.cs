@@ -36,8 +36,8 @@ namespace SmartButler.Bootstrapper.Modules
                 c.Instance.SetToolBarControlViewModel(dep);
             });
 
-            builder.RegisterType<BottlesPage>();
-            builder.RegisterType<BottlesPageViewModel>().OnActivating(c =>
+            builder.RegisterType<IngredientsPage>();
+            builder.RegisterType<IngredientsPageViewModel>().OnActivating(c =>
             {
                 var dep = c.Context.Resolve<ToolbarControlViewModel>();
                 c.Instance.SetToolBarControlViewModel(dep);

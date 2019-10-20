@@ -46,7 +46,7 @@ namespace SmartButler.Bootstrapper
             
             // register view and view model relationship
             pageRegistrar.Register<BluetoothPage, BluetoothPageViewModel>();
-            pageRegistrar.Register<BottlesPage, BottlesPageViewModel>();
+            pageRegistrar.Register<IngredientsPage, IngredientsPageViewModel>();
             pageRegistrar.Register<DrinksPage, DrinksPageViewModel>();
             pageRegistrar.Register<WelcomePage, WelcomePageViewModel>();
             pageRegistrar.Register<MakeDrinkPage, MakeDrinkPageViewModel>();

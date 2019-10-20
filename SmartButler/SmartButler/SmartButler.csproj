@@ -60,8 +60,8 @@
     <Compile Update="Views\RegisterAble\BluetoothPage.xaml.cs">
       <DependentUpon>BluetoothPage.xaml</DependentUpon>
     </Compile>
-    <Compile Update="Views\RegisterAble\BottlesPage.xaml.cs">
-      <DependentUpon>BottlesPage.xaml</DependentUpon>
+    <Compile Update="Views\RegisterAble\IngredientsPage.xaml.cs">
+      <DependentUpon>IngredientsPage.xaml</DependentUpon>
     </Compile>
     <Compile Update="Views\RegisterAble\DrinksPage.xaml.cs">
       <DependentUpon>DrinksPage.xaml</DependentUpon>

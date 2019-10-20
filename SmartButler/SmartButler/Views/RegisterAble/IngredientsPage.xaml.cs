@@ -11,11 +11,11 @@ using Xamarin.Forms.Xaml;
 namespace SmartButler.Views
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class BottlesPage : ContentPage, IViewFor<BottlesPageViewModel>
+	public partial class IngredientsPage : ContentPage, IViewFor<IngredientsPageViewModel>
 	{
 	    
 
-	    public BottlesPage ()
+	    public IngredientsPage ()
 		{
 			InitializeComponent ();
 
@@ -40,13 +40,13 @@ namespace SmartButler.Views
 	    object IViewFor.ViewModel
 	    {
 	        get => ViewModel;
-	        set => ViewModel = value as BottlesPageViewModel;
+	        set => ViewModel = value as IngredientsPageViewModel;
 	    }
 
-	    public BottlesPageViewModel ViewModel
+	    public IngredientsPageViewModel ViewModel
 	    {
-	        get => BindingContext as BottlesPageViewModel;
-	        set => BindingContext = value as BottlesPageViewModel;
+	        get => BindingContext as IngredientsPageViewModel;
+	        set => BindingContext = value as IngredientsPageViewModel;
 	    }
 	}
 }

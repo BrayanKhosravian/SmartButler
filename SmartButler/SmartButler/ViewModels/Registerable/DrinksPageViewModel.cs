@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reactive.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using ReactiveUI;
 using SmartButler.Models;
 using SmartButler.Services.RegisterAble;
@@ -14,11 +15,11 @@ namespace SmartButler.ViewModels
     {
         public ReactiveList<DrinkRecipe> Drinks { get; private set; } = new ReactiveList<DrinkRecipe>();
 
-        private readonly IDrinkBuilder _drinkBuilder;
+        private readonly IDrinkRecipeBuilder _drinkRecipeBuilder;
 
-        public DrinksPageViewModel(IDrinkBuilder drinkBuilder, INavigationService navigationService) 
+        public DrinksPageViewModel(IDrinkRecipeBuilder drinkRecipeBuilder, INavigationService navigationService) 
         {
-            _drinkBuilder = drinkBuilder;
+            _drinkRecipeBuilder = drinkRecipeBuilder;
 
         }
 
@@ -32,16 +33,18 @@ namespace SmartButler.ViewModels
         private IEnumerable<DrinkRecipe> AddDefaultDrinks()
         {
             var resolvingType = typeof(DrinksPageViewModel);
-            yield return _drinkBuilder.Default("Madras", "Drinks.Madras.jpg", resolvingType).Build();
-            yield return _drinkBuilder.Default("Screwdriver", "Drinks.Screwdriver.JPG", resolvingType).Build();
-            yield return _drinkBuilder.Default("Lemon Drop", "Drinks.Lemondrop.JPG", resolvingType).Build();
-            yield return _drinkBuilder.Default("Whisky Sour", "Drinks.WhiskySour.JPG", resolvingType).Build();
-            yield return _drinkBuilder.Default("Blizzard", "Drinks.Blizzard.JPG", resolvingType).Build();
-            yield return _drinkBuilder.Default("Cape Cod", "Drinks.CapeCod.JPG", resolvingType).Build();
-            yield return _drinkBuilder.Default("Hot Toddy", "Drinks.HotToddy.JPG", resolvingType).Build();
-            yield return _drinkBuilder.Default("Bourbon Squash", "Drinks.BourbonSquash.JPG", resolvingType).Build();
+            yield return _drinkRecipeBuilder.Default("Madras", "Drinks.Madras.jpg", resolvingType).Build();
+            yield return _drinkRecipeBuilder.Default("Screwdriver", "Drinks.Screwdriver.JPG", resolvingType).Build();
+            yield return _drinkRecipeBuilder.Default("Lemon Drop", "Drinks.Lemondrop.JPG", resolvingType).Build();
+            yield return _drinkRecipeBuilder.Default("Whisky Sour", "Drinks.WhiskySour.JPG", resolvingType).Build();
+            yield return _drinkRecipeBuilder.Default("Blizzard", "Drinks.Blizzard.JPG", resolvingType).Build();
+            yield return _drinkRecipeBuilder.Default("Cape Cod", "Drinks.CapeCod.JPG", resolvingType).Build();
+            yield return _drinkRecipeBuilder.Default("Hot Toddy", "Drinks.HotToddy.JPG", resolvingType).Build();
+            yield return _drinkRecipeBuilder.Default("Bourbon Squash", "Drinks.BourbonSquash.JPG", resolvingType).Build();
 
         }
+
+       
 
         public ToolbarControlViewModel ToolbarControlViewModel { get; private set; }
         public void SetToolBarControlViewModel(ToolbarControlViewModel vm)
