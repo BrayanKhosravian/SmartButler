@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using ReactiveUI;
 using SmartButler.Models;
 
 namespace SmartButler.Services.RegisterAble

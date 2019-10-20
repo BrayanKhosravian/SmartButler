@@ -37,5 +37,10 @@ namespace SmartButler.Views
             get => BindingContext as DrinksPageViewModel;
             set => BindingContext = value as DrinksPageViewModel;
         }
+
+        private void Tapped(object sender, EventArgs e)
+        {
+	        
+        }
     }
 }

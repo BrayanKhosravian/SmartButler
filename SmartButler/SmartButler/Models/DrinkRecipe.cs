@@ -15,7 +15,7 @@ namespace SmartButler.Models
 	    public int Id { get; set; }
 
 	    [OneToMany]
-		public ReactiveList<Ingredient> Ingredients { get; set; } = new ReactiveList<Ingredient>();
+		public List<Ingredient> Ingredients { get; set; } = new List<Ingredient>();
 
 
     }

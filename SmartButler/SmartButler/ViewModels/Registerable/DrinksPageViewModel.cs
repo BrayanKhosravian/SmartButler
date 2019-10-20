@@ -23,7 +23,6 @@ namespace SmartButler.ViewModels
 
         }
 
-
         public void Activate()
         {
             if(!Drinks.Any())
@@ -34,19 +33,50 @@ namespace SmartButler.ViewModels
         {
             var resolvingType = typeof(DrinksPageViewModel);
             yield return _drinkRecipeBuilder.Default("Madras", "Drinks.Madras.jpg", resolvingType)
-	            //.AddIngredients(new []{new Ingredient(), })
-	            .Build();
-            yield return _drinkRecipeBuilder.Default("Screwdriver", "Drinks.Screwdriver.JPG", resolvingType).Build();
-            yield return _drinkRecipeBuilder.Default("Lemon Drop", "Drinks.Lemondrop.JPG", resolvingType).Build();
-            yield return _drinkRecipeBuilder.Default("Whisky Sour", "Drinks.WhiskySour.JPG", resolvingType).Build();
-            yield return _drinkRecipeBuilder.Default("Blizzard", "Drinks.Blizzard.JPG", resolvingType).Build();
-            yield return _drinkRecipeBuilder.Default("Cape Cod", "Drinks.CapeCod.JPG", resolvingType).Build();
-            yield return _drinkRecipeBuilder.Default("Hot Toddy", "Drinks.HotToddy.JPG", resolvingType).Build();
-            yield return _drinkRecipeBuilder.Default("Bourbon Squash", "Drinks.BourbonSquash.JPG", resolvingType).Build();
+	            .AddIngredient(new Ingredient(160, "Vodka"))
+	            .AddIngredient(new Ingredient(90, "Cranberry juice"))
+				.AddIngredient(new Ingredient(30, "Orange juice"))
+				.Build();
+
+            yield return _drinkRecipeBuilder.Default("Screwdriver", "Drinks.Screwdriver.JPG", resolvingType)
+			   .AddIngredient(new Ingredient(160, "Vodka"))
+			   .AddIngredient(new Ingredient(120, "Orange juice"))
+			   .Build();
+
+            yield return _drinkRecipeBuilder.Default("Lemon Drop", "Drinks.Lemondrop.JPG", resolvingType)
+				.AddIngredient(new Ingredient(160, "Vodka"))
+				.AddIngredient(new Ingredient(30, "Lemon juice"))
+				.Build();
+
+            yield return _drinkRecipeBuilder.Default("Whisky Sour", "Drinks.WhiskySour.JPG", resolvingType)
+				.AddIngredient(new Ingredient(160, "Whisky"))
+				.AddIngredient(new Ingredient(15, "Orange juice"))
+				.AddIngredient(new Ingredient(30, "Lemon juice"))
+				.Build();
+           
+            yield return _drinkRecipeBuilder.Default("Blizzard", "Drinks.Blizzard.JPG", resolvingType)
+				.AddIngredient(new Ingredient(60, "Whisky"))
+				.AddIngredient(new Ingredient(30, "Cranberry juice"))
+				.AddIngredient(new Ingredient(15, "Lemon juice"))
+				.Build();
+            
+            yield return _drinkRecipeBuilder.Default("Cape Cod", "Drinks.CapeCod.JPG", resolvingType)
+	            .AddIngredient(new Ingredient(160, "Vodka"))
+	            .AddIngredient(new Ingredient(120, "Cranberry"))
+				.Build();
+            
+            yield return _drinkRecipeBuilder.Default("Hot Toddy", "Drinks.HotToddy.JPG", resolvingType)
+				.AddIngredient(new Ingredient(160, "Whisky"))
+				.AddIngredient(new Ingredient(15, "Lemon juice"))
+				.Build();
+            
+            yield return _drinkRecipeBuilder.Default("Bourbon Squash", "Drinks.BourbonSquash.JPG", resolvingType)
+				.AddIngredient(new Ingredient(160, "Whisky"))
+				.AddIngredient(new Ingredient(30, "Orange juice"))
+				.AddIngredient(new Ingredient(15, "Lemon juice"))
+				.Build();
 
         }
-
-       
 
         public ToolbarControlViewModel ToolbarControlViewModel { get; private set; }
         public void SetToolBarControlViewModel(ToolbarControlViewModel vm)

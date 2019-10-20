@@ -10,7 +10,6 @@
         <controls:ToolBarControl BindingContext="{Binding ToolbarControlViewModel, Mode=TwoWay}"/>
     </NavigationPage.TitleView>
 
-
     <ContentPage.Content>
         <StackLayout>
             <ListView ItemsSource="{Binding Drinks}"
@@ -19,11 +18,48 @@
 
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <cells:DrinkViewCell/>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="15" />
+                                        <ColumnDefinition Width="150" />
+                                        <ColumnDefinition Width="Auto" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <Label Text="{Binding Id}" VerticalOptions="Center" HorizontalOptions="Start"/>
+                                    <Image Source="{Binding ActualImage}" Grid.Column="1" HeightRequest="150" WidthRequest="150" HorizontalOptions="Start" />
+                                    <controls:RepeaterView Grid.Column="2" ItemsSource="{Binding Ingredients, Mode=TwoWay}">
+                                        <controls:RepeaterView.ItemTemplate>
+                                            <DataTemplate>
+                                                <ViewCell>
+                                                    <Grid Padding="5"
+                                                          Margin="5"
+                                                          BackgroundColor="DodgerBlue"
+                                                          HorizontalOptions="EndAndExpand">
+                                                        <Grid.ColumnDefinitions>
+                                                            <ColumnDefinition/>
+                                                            <ColumnDefinition/>
+                                                        </Grid.ColumnDefinitions>
+                                                        <Grid.GestureRecognizers>
+                                                            <TapGestureRecognizer Tapped="Tapped" />
+                                                        </Grid.GestureRecognizers>
+
+                                                        <Label Text="{Binding Name}"/>
+                                                        <Label Grid.Column="1" Text="{Binding Milliliter}"/>
+
+                                                    </Grid>
+                                                </ViewCell>
+                                            </DataTemplate>
+                                        </controls:RepeaterView.ItemTemplate>
+                                    </controls:RepeaterView>
+                                </Grid>
+                            </ViewCell.View>
+                        </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-            <Button Text="AddBottle" Command="{Binding AddBottleCommand}" />
+            <Button Text="AddRecipe" Command="{Binding AddRecipeCommand}" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

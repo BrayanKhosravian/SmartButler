@@ -12,9 +12,8 @@ namespace SmartButler.Bootstrapper.Modules
             base.Load(builder);
 
             // register services
-            builder.RegisterType<ResourceManager>().As<IResourceManager>();
             builder.RegisterType<UserInteraction>().As<IUserInteraction>();
-            builder.RegisterType<LiquidContainerFactory>().As<ILiquidContainerFactory>(); // delete late
+            builder.RegisterType<LiquidContainerFactory>().As<ILiquidContainerFactory>(); // delete later
             builder.RegisterType<DrinkRecipeBuilder>().As<IDrinkRecipeBuilder>();
             builder.RegisterType<IngredientBuilder>().As<IIngredientBuilder>();
 
