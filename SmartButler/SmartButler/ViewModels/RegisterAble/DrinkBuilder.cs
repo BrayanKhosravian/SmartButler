@@ -12,7 +12,7 @@ namespace SmartButler.ViewModels.RegisterAble
     public interface IDrinkBuilder
     {
         IDrinkBuilder Default();
-        IDrinkBuilder Default(Drink drink);
+        IDrinkBuilder Default(DrinkRecipe drinkRecipe);
         IDrinkBuilder Default(string name, string partialResource, Type resolvingType);
 
         IDrinkBuilder SetName(string name);
@@ -22,25 +22,25 @@ namespace SmartButler.ViewModels.RegisterAble
         IDrinkBuilder AddIngredients(params Ingredient[] ingredients);
         IDrinkBuilder AddIngredient(Ingredient ingredient);
 
-        Drink Build();
+        DrinkRecipe Build();
     }
 
     public class DrinkBuilder : IDrinkBuilder
     {
-        private Drink _drink = new Drink();
+        private DrinkRecipe _drinkRecipe = new DrinkRecipe();
 
 
         public IDrinkBuilder Default()
         {
-            _drink = new Drink();
+            _drinkRecipe = new DrinkRecipe();
             return this;
         }
 
-        public IDrinkBuilder Default(Drink drink)
+        public IDrinkBuilder Default(DrinkRecipe drinkRecipe)
         {
-            if (drink == null) ExceptionFactory.Get<ArgumentNullException>("'drink' is null!");
+            if (drinkRecipe == null) ExceptionFactory.Get<ArgumentNullException>("'drinkRecipe' is null!");
 
-            _drink = drink;
+            _drinkRecipe = drinkRecipe;
 
             return this;
         }
@@ -52,11 +52,11 @@ namespace SmartButler.ViewModels.RegisterAble
             if (string.IsNullOrWhiteSpace(partialResource))
                 throw ExceptionFactory.Get<ArgumentException>("'partialResource' is null or has whitespaces");
 
-            _drink.Name = name;
+            _drinkRecipe.Name = name;
 
             var sourceAssembly = resolvingType.GetTypeInfo().Assembly;
             var resource = string.Join(".", "SmartButler.Resources", partialResource);
-            _drink.ActualImage = ImageSource.FromResource(resource, sourceAssembly);
+            _drinkRecipe.ActualImage = ImageSource.FromResource(resource, sourceAssembly);
 
             return this;
         }
@@ -65,7 +65,7 @@ namespace SmartButler.ViewModels.RegisterAble
         {
             if (string.IsNullOrWhiteSpace(name)) throw ExceptionFactory.Get<ArgumentException>("'name' is null or has whitespaces!");
 
-            _drink.Name = name;
+            _drinkRecipe.Name = name;
             return this;
         }
 
@@ -80,7 +80,7 @@ namespace SmartButler.ViewModels.RegisterAble
 
             var imageSource = ImageSource.FromResource(resource, sourceAssembly);
 
-            _drink.ActualImage = imageSource;
+            _drinkRecipe.ActualImage = imageSource;
 
             return this;
         }
@@ -92,7 +92,7 @@ namespace SmartButler.ViewModels.RegisterAble
             if (ingredients.Any(ingredient => ingredient == null))
                 throw ExceptionFactory.Get<ArgumentNullException>("Any ingredient of 'ingredients' ins null!");
 
-            _drink.Ingredients = ingredients;
+            _drinkRecipe.Ingredients = ingredients;
             return this;
         }
 
@@ -104,7 +104,7 @@ namespace SmartButler.ViewModels.RegisterAble
                 throw ExceptionFactory.Get<ArgumentNullException>("Any ingredient of 'ingredients' ins null!");
 
             foreach (var ingredient in ingredients)
-                _drink.Ingredients.Add(ingredient);
+                _drinkRecipe.Ingredients.Add(ingredient);
 
             return this;
         }
@@ -113,15 +113,15 @@ namespace SmartButler.ViewModels.RegisterAble
         {
             if (ingredient == null) throw ExceptionFactory.Get<ArgumentNullException>("'ingredient' is null");
 
-            _drink.Ingredients.Add(ingredient);
+            _drinkRecipe.Ingredients.Add(ingredient);
             return this;
         }
 
-        public Drink Build()
+        public DrinkRecipe Build()
         {
-            if (_drink == null) throw ExceptionFactory.Get<NullReferenceException>("'_drink' is null!");
+            if (_drinkRecipe == null) throw ExceptionFactory.Get<NullReferenceException>("'_drinkRecipe' is null!");
 
-            return _drink;
+            return _drinkRecipe;
         }
     }
 }

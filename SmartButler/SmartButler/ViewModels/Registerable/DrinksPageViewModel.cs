@@ -5,21 +5,21 @@ using System.Reactive.Linq;
 using System.Text;
 using ReactiveUI;
 using SmartButler.Models;
+using SmartButler.Services.RegisterAble;
 using SmartButler.Services.Registrable;
 
 namespace SmartButler.ViewModels
 {
     public class DrinksPageViewModel : BaseViewModel
     {
-        public ReactiveList<Drink> Drinks { get; private set; } = new ReactiveList<Drink>();
+        public ReactiveList<DrinkRecipe> Drinks { get; private set; } = new ReactiveList<DrinkRecipe>();
 
-        private readonly ILiquidContainerFactory _liquidContainerFactory;
+        private readonly IDrinkBuilder _drinkBuilder;
 
-        public DrinksPageViewModel(ILiquidContainerFactory liquidContainerFactory, INavigationService navigationService) 
+        public DrinksPageViewModel(IDrinkBuilder drinkBuilder, INavigationService navigationService) 
         {
-            _liquidContainerFactory = liquidContainerFactory;
+            _drinkBuilder = drinkBuilder;
 
-           
         }
 
 
@@ -29,31 +29,17 @@ namespace SmartButler.ViewModels
                 Drinks.AddRange(AddDefaultDrinks());
         }
 
-        private IEnumerable<Drink> AddDefaultDrinks()
+        private IEnumerable<DrinkRecipe> AddDefaultDrinks()
         {
             var resolvingType = typeof(DrinksPageViewModel);
-            yield return _liquidContainerFactory.Create<Drink>("Madras", "Drinks.Madras.jpg", resolvingType);
-
-
-            yield return _liquidContainerFactory.Create<Drink>("Screwdriver", "Drinks.Screwdriver.JPG", resolvingType);
-
-
-            yield return _liquidContainerFactory.Create<Drink>("Lemon Drop", "Drinks.Lemondrop.JPG", resolvingType);
-
-
-            yield return _liquidContainerFactory.Create<Drink>("Whisky Sour", "Drinks.WhiskySour.JPG", resolvingType);
-
-
-            yield return _liquidContainerFactory.Create<Drink>("Blizzard", "Drinks.Blizzard.JPG", resolvingType);
-
-
-            yield return _liquidContainerFactory.Create<Drink>("Cape Cod", "Drinks.CapeCod.JPG", resolvingType);
-
-
-            yield return _liquidContainerFactory.Create<Drink>("Hot Toddy", "Drinks.HotToddy.JPG", resolvingType);
-
-
-            yield return _liquidContainerFactory.Create<Drink>("Bourbon Squash", "Drinks.BourbonSquash.JPG", resolvingType);
+            yield return _drinkBuilder.Default("Madras", "Drinks.Madras.jpg", resolvingType).Build();
+            yield return _drinkBuilder.Default("Screwdriver", "Drinks.Screwdriver.JPG", resolvingType).Build();
+            yield return _drinkBuilder.Default("Lemon Drop", "Drinks.Lemondrop.JPG", resolvingType).Build();
+            yield return _drinkBuilder.Default("Whisky Sour", "Drinks.WhiskySour.JPG", resolvingType).Build();
+            yield return _drinkBuilder.Default("Blizzard", "Drinks.Blizzard.JPG", resolvingType).Build();
+            yield return _drinkBuilder.Default("Cape Cod", "Drinks.CapeCod.JPG", resolvingType).Build();
+            yield return _drinkBuilder.Default("Hot Toddy", "Drinks.HotToddy.JPG", resolvingType).Build();
+            yield return _drinkBuilder.Default("Bourbon Squash", "Drinks.BourbonSquash.JPG", resolvingType).Build();
 
         }
 

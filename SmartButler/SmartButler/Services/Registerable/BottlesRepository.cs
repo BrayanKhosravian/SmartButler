@@ -19,7 +19,7 @@ namespace SmartButler.Services.Registrable
 
         public Task Configure()
         {
-            return _connection.CreateTableAsync<Bottle>();
+            return _connection.CreateTableAsync<Ingredient>();
         }
 
     }

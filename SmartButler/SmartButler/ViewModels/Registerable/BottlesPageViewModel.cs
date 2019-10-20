@@ -17,7 +17,7 @@ namespace SmartButler.ViewModels
     {
         private readonly ILiquidContainerFactory _liquidContainerFactory;
 
-        public ReactiveList<Bottle> Bottles { get; private set; } = new ReactiveList<Bottle>();
+        public ReactiveList<Ingredient> Bottles { get; private set; } = new ReactiveList<Ingredient>();
 
         public BottlesPageViewModel(ILiquidContainerFactory liquidContainerFactory, INavigationService navigationService)
         {
@@ -36,15 +36,15 @@ namespace SmartButler.ViewModels
                Bottles.AddRange(DefaultBottles());
         }
 
-        private IEnumerable<Bottle> DefaultBottles()
+        private IEnumerable<Ingredient> DefaultBottles()
         {
             var resolvingType = typeof(BottlesPageViewModel);
-            yield return _liquidContainerFactory.Create<Bottle>("Whisky", "Bottles.Whisky.jpeg", resolvingType);
-            yield return _liquidContainerFactory.Create<Bottle>("Vodka", "Bottles.Vodka.jpg", resolvingType);
-            yield return _liquidContainerFactory.Create<Bottle>("Orange-Juice", "Bottles.OrangeJuice.jpg", resolvingType);
-            yield return _liquidContainerFactory.Create<Bottle>("Cranberry-Juice", "Bottles.CranberryJuice.jpg", resolvingType);
-            yield return _liquidContainerFactory.Create<Bottle>("Lemon-Juice","Bottles.LemonJuice.jpg", resolvingType);
-            yield return _liquidContainerFactory.Create<Bottle>("NONE", "NONE", resolvingType);
+            yield return _liquidContainerFactory.Create<Ingredient>("Whisky", "Bottles.Whisky.jpeg", resolvingType);
+            yield return _liquidContainerFactory.Create<Ingredient>("Vodka", "Bottles.Vodka.jpg", resolvingType);
+            yield return _liquidContainerFactory.Create<Ingredient>("Orange-Juice", "Bottles.OrangeJuice.jpg", resolvingType);
+            yield return _liquidContainerFactory.Create<Ingredient>("Cranberry-Juice", "Bottles.CranberryJuice.jpg", resolvingType);
+            yield return _liquidContainerFactory.Create<Ingredient>("Lemon-Juice","Bottles.LemonJuice.jpg", resolvingType);
+            yield return _liquidContainerFactory.Create<Ingredient>("NONE", "NONE", resolvingType);
         }
 
         public ToolbarControlViewModel ToolbarControlViewModel { get; private set; }

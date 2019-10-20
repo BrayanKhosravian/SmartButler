@@ -9,13 +9,15 @@ using Xamarin.Forms;
 namespace SmartButler.Services.Registrable
 {
 
-    /// <summary>
-    /// This method creates either "Bottle.cs" or "Drink.cs"
-    /// </summary>
-    public interface ILiquidContainerFactory
+
+	/// <summary>
+	/// This method creates either "Ingredient.cs" or "DrinkRecipe.cs"
+	/// </summary>
+	[Obsolete]
+	public interface ILiquidContainerFactory
     {
         /// <summary>
-        /// This method creates either "Bottle.cs" or "Drink.cs"
+        /// This method creates either "Ingredient.cs" or "DrinkRecipe.cs"
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="name">The name of the drink.</param>
@@ -23,15 +25,17 @@ namespace SmartButler.Services.Registrable
         /// <param name="resolvingType">The type where this resource is needed. (most of the time its a ViewModel)</param>
         /// <returns></returns>
         T Create<T>(string name, string partialResource, Type resolvingType)
-            where T : LiquidContainer;
+            where T : LiquidBase;
     }
 
-    ///<inheritdoc cref="ILiquidContainerFactory"/>
-    class LiquidContainerFactory : ILiquidContainerFactory
+
+	///<inheritdoc cref="ILiquidContainerFactory"/>
+	[Obsolete]
+	class LiquidContainerFactory : ILiquidContainerFactory
     {
         
         public T Create<T>(string name, string partialResource, Type resolvingType) 
-            where T : LiquidContainer
+            where T : LiquidBase
         {
             var liquidContainer = Activator.CreateInstance<T>();
             var sourceAssembly = resolvingType.GetTypeInfo().Assembly;

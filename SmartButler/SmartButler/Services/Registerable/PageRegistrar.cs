@@ -82,7 +82,7 @@ namespace SmartButler.Services.Registrable
             where TViewModel : BaseViewModel
         {
             if(_map.ContainsKey(typeof(TView)))
-               throw ExceptionFactory.Get<DuplicateViewRegisteredException>(new []{ "A duplicate view was already registered!" });
+               throw ExceptionFactory.Get<DuplicateViewRegisteredException>( "A duplicate view was already registered!" );
             _map[typeof(TView)] = typeof(TViewModel);
         }
 
@@ -142,7 +142,7 @@ namespace SmartButler.Services.Registrable
             if (parameters.Length > 1)
                 return (BaseViewModel) _componentContext.Resolve(vmType, parameters);
 
-            throw ExceptionFactory.Get<ArgumentException>(parameters.Select(param => param.ToString()));
+            throw ExceptionFactory.Get<ArgumentException>(parameters.ToString());
 
         }
 
