@@ -4,24 +4,24 @@ using SmartButler.Models;
 namespace SmartButler.Services.RegisterAble
 {
 
-	public interface IIngredientBuilder : ILiquidBaseBuilder<Ingredient>
+	public interface IIngredientBuilder : IBaseLiquidBuilder<Ingredient>
 	{
 		IngredientBuilder SetMilliliter(int milliliter);
 	}
 
 
-	public class IngredientBuilder : LiquidBaseBuilder<Ingredient>, IIngredientBuilder
+	public class IngredientBuilder : BaseLiquidBuilder<Ingredient>, IIngredientBuilder
 	{
 		private Ingredient _ingredient = new Ingredient();
 
-		public override LiquidBaseBuilder<Ingredient> Default()
+		public override BaseLiquidBuilder<Ingredient> Default()
 		{
 			_ingredient = new Ingredient();
 
 			return base.Default();
 		}
 
-		public override LiquidBaseBuilder<Ingredient> Default(string name, string partialResource, Type resolvingType)
+		public override BaseLiquidBuilder<Ingredient> Default(string name, string partialResource, Type resolvingType)
 		{
 			_ingredient = new Ingredient();
 

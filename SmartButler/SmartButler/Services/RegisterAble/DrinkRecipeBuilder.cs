@@ -5,7 +5,7 @@ using SmartButler.Models;
 
 namespace SmartButler.Services.RegisterAble
 {
-	public interface IDrinkRecipeBuilder : ILiquidBaseBuilder<DrinkRecipe>
+	public interface IDrinkRecipeBuilder : IBaseLiquidBuilder<DrinkRecipe>
 	{
 		IDrinkRecipeBuilder SetIngredients(List<Ingredient> ingredients);
 		IDrinkRecipeBuilder AddIngredients(params Ingredient[] ingredients);
@@ -13,17 +13,17 @@ namespace SmartButler.Services.RegisterAble
 
 	}
 
-	public class DrinkRecipeRecipeBuilder : LiquidBaseBuilder<DrinkRecipe>, IDrinkRecipeBuilder
+	public class DrinkRecipeRecipeBuilder : BaseLiquidBuilder<DrinkRecipe>, IDrinkRecipeBuilder
 	{
 		private DrinkRecipe _drinkRecipe = new DrinkRecipe();
 
-		public override LiquidBaseBuilder<DrinkRecipe> Default()
+		public override BaseLiquidBuilder<DrinkRecipe> Default()
 		{
 			_drinkRecipe = new DrinkRecipe();
 			return base.Default();
 		}
 
-		public override LiquidBaseBuilder<DrinkRecipe> Default(string name, string partialResource, Type resolvingType)
+		public override BaseLiquidBuilder<DrinkRecipe> Default(string name, string partialResource, Type resolvingType)
 		{
 			_drinkRecipe = new DrinkRecipe();
 			return base.Default(name, partialResource, resolvingType);

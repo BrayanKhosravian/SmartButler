@@ -9,20 +9,20 @@ using Xamarin.Forms;
 
 namespace SmartButler.Services.RegisterAble
 {
-	public interface ILiquidBaseBuilder<TLiquidBase> where TLiquidBase : LiquidBase
+	public interface IBaseLiquidBuilder<TLiquidBase> where TLiquidBase : LiquidBase
 	{
-		LiquidBaseBuilder<TLiquidBase> Default();
+		BaseLiquidBuilder<TLiquidBase> Default();
 
-		LiquidBaseBuilder<TLiquidBase> Default(string name, string partialResource, Type resolvingType);
+		BaseLiquidBuilder<TLiquidBase> Default(string name, string partialResource, Type resolvingType);
 
-		LiquidBaseBuilder<TLiquidBase> SetName(string name);
-		LiquidBaseBuilder<TLiquidBase> SetImageSource(string partialResource, Type resolvingType);
+		BaseLiquidBuilder<TLiquidBase> SetName(string name);
+		BaseLiquidBuilder<TLiquidBase> SetImageSource(string partialResource, Type resolvingType);
 
 		TLiquidBase Build();
 
 	}
 
-	public abstract class LiquidBaseBuilder<TLiquidBase> 
+	public abstract class BaseLiquidBuilder<TLiquidBase> 
 		where TLiquidBase : LiquidBase
 	{
 		protected string Name;
@@ -30,7 +30,7 @@ namespace SmartButler.Services.RegisterAble
 		protected ImageSource ActualImage;
 		public abstract TLiquidBase Build();
 
-		public virtual LiquidBaseBuilder<TLiquidBase> Default()
+		public virtual BaseLiquidBuilder<TLiquidBase> Default()
 		{
 			Name = null;
 			ByteImage = null;
@@ -39,7 +39,7 @@ namespace SmartButler.Services.RegisterAble
 			return this;
 		}
 
-		public virtual LiquidBaseBuilder<TLiquidBase> Default(string name, string partialResource, Type resolvingType)
+		public virtual BaseLiquidBuilder<TLiquidBase> Default(string name, string partialResource, Type resolvingType)
 		{
 			SetName(name);
 			SetImageSource(partialResource, resolvingType);
@@ -47,13 +47,13 @@ namespace SmartButler.Services.RegisterAble
 			return this;
 		}
 
-		public LiquidBaseBuilder<TLiquidBase> SetName(string name)
+		public BaseLiquidBuilder<TLiquidBase> SetName(string name)
 		{
 			Name = name;
 			return this;
 		}
 
-		public LiquidBaseBuilder<TLiquidBase> SetImageSource(string partialResource, Type resolvingType)
+		public BaseLiquidBuilder<TLiquidBase> SetImageSource(string partialResource, Type resolvingType)
 		{
 			if (resolvingType == null) throw ExceptionFactory.Get<ArgumentNullException>("'resolvingType' is null");
 			if (string.IsNullOrWhiteSpace(partialResource))
