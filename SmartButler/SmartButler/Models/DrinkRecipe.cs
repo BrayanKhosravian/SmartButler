@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using ReactiveUI;
 using SQLite;
 using SQLiteNetExtensions.Attributes;
 using Xamarin.Forms;
@@ -14,9 +15,8 @@ namespace SmartButler.Models
 	    public int Id { get; set; }
 
 	    [OneToMany]
-		public List<Ingredient> Ingredients { get; set; } = new List<Ingredient>();
+		public ReactiveList<Ingredient> Ingredients { get; set; } = new ReactiveList<Ingredient>();
 
-		
-       
+
     }
 }
