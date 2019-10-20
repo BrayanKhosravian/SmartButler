@@ -33,7 +33,9 @@ namespace SmartButler.ViewModels
         private IEnumerable<DrinkRecipe> AddDefaultDrinks()
         {
             var resolvingType = typeof(DrinksPageViewModel);
-            yield return _drinkRecipeBuilder.Default("Madras", "Drinks.Madras.jpg", resolvingType).Build();
+            yield return _drinkRecipeBuilder.Default("Madras", "Drinks.Madras.jpg", resolvingType)
+	            //.AddIngredients(new []{new Ingredient(), })
+	            .Build();
             yield return _drinkRecipeBuilder.Default("Screwdriver", "Drinks.Screwdriver.JPG", resolvingType).Build();
             yield return _drinkRecipeBuilder.Default("Lemon Drop", "Drinks.Lemondrop.JPG", resolvingType).Build();
             yield return _drinkRecipeBuilder.Default("Whisky Sour", "Drinks.WhiskySour.JPG", resolvingType).Build();

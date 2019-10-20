@@ -42,7 +42,7 @@ namespace SmartButler.ViewModels
             var resolvingType = typeof(IngredientsPageViewModel);
 
             yield return _ingredientBuilder.Default("Whisky", "Bottles.Whisky.jpeg", resolvingType).Build();
-			yield return _ingredientBuilder.Default("Vodka", "Bottles.Vodka.jpg", resolvingType).Build();
+            yield return _ingredientBuilder.Default("Vodka", "Bottles.Vodka.jpg", resolvingType).Build();
 			yield return _ingredientBuilder.Default("Orange-Juice", "Bottles.OrangeJuice.jpg", resolvingType).Build();
 			yield return _ingredientBuilder.Default("Cranberry-Juice", "Bottles.CranberryJuice.jpg", resolvingType).Build();
 			yield return _ingredientBuilder.Default("Lemon-Juice", "Bottles.LemonJuice.jpg", resolvingType).Build();

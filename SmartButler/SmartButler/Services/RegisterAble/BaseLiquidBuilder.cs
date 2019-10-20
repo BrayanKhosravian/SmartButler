@@ -9,51 +9,55 @@ using Xamarin.Forms;
 
 namespace SmartButler.Services.RegisterAble
 {
-	public interface IBaseLiquidBuilder<TLiquidBase> where TLiquidBase : LiquidBase
-	{
-		BaseLiquidBuilder<TLiquidBase> Default();
+	//public interface IBaseLiquidBuilder<TLiquidBase> where TLiquidBase : LiquidBase
+	//{
+	//	BaseLiquidBuilder<TLiquidBase> Default();
 
-		BaseLiquidBuilder<TLiquidBase> Default(string name, string partialResource, Type resolvingType);
+	//	BaseLiquidBuilder<TLiquidBase> Default(string name, string partialResource, Type resolvingType);
 
-		BaseLiquidBuilder<TLiquidBase> SetName(string name);
-		BaseLiquidBuilder<TLiquidBase> SetImageSource(string partialResource, Type resolvingType);
+	//	BaseLiquidBuilder<TLiquidBase> SetName(string name);
+	//	BaseLiquidBuilder<TLiquidBase> SetImageSource(string partialResource, Type resolvingType);
 
-		TLiquidBase Build();
+	//	TLiquidBase Build();
 
-	}
+	//}
 
-	public abstract class BaseLiquidBuilder<TLiquidBase> 
+	public abstract class BaseLiquidBuilder<TLiquidBase, TBuilder> 
 		where TLiquidBase : LiquidBase
+		where TBuilder : BaseLiquidBuilder<TLiquidBase, TBuilder>
 	{
 		protected string Name;
 		protected byte[] ByteImage;
 		protected ImageSource ActualImage;
+
 		public abstract TLiquidBase Build();
 
-		public virtual BaseLiquidBuilder<TLiquidBase> Default()
+		protected abstract TBuilder BuilderInstance { get; }
+
+		public virtual TBuilder Default()
 		{
 			Name = null;
 			ByteImage = null;
 			ActualImage = null;
 
-			return this;
+			return BuilderInstance;
 		}
 
-		public virtual BaseLiquidBuilder<TLiquidBase> Default(string name, string partialResource, Type resolvingType)
+		public virtual TBuilder Default(string name, string partialResource, Type resolvingType)
 		{
 			SetName(name);
 			SetImageSource(partialResource, resolvingType);
 
-			return this;
+			return BuilderInstance;
 		}
 
-		public BaseLiquidBuilder<TLiquidBase> SetName(string name)
+		public TBuilder SetName(string name)
 		{
 			Name = name;
-			return this;
+			return BuilderInstance;
 		}
 
-		public BaseLiquidBuilder<TLiquidBase> SetImageSource(string partialResource, Type resolvingType)
+		public TBuilder SetImageSource(string partialResource, Type resolvingType)
 		{
 			if (resolvingType == null) throw ExceptionFactory.Get<ArgumentNullException>("'resolvingType' is null");
 			if (string.IsNullOrWhiteSpace(partialResource))
@@ -69,7 +73,7 @@ namespace SmartButler.Services.RegisterAble
 				{
 					ActualImage = null;
 					ByteImage = null;
-					return this;
+					return BuilderInstance;
 				}
 				var length = stream.Length;
 				byteImage = new byte[length];
@@ -79,7 +83,7 @@ namespace SmartButler.Services.RegisterAble
 
 			ByteImage = byteImage;
 
-			return this;
+			return BuilderInstance;
 		}
 	}
 }

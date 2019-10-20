@@ -12,7 +12,19 @@ namespace SmartButler.Models
 
 	    public byte[] ByteImage { get; set; }
 
-		[Ignore]
+	    [Ignore]
 	    public ImageSource ActualImage { get; set; }
+
+		protected LiquidBase()
+	    {
+		    
+	    }
+
+	    protected LiquidBase(string name)
+	    {
+		    Name = name;
+	    }
+
+	   
     }
 }
