@@ -2,6 +2,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Reflection;
+using System.Threading.Tasks;
+using Autofac;
 using SmartButler.Bootstrapper;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -19,10 +21,10 @@ namespace SmartButler
 
         // Entry point of PCL // call this from every project
         // pass in the dependencies as registered types
-        public void InjectPlatformDependencies(IDictionary<Type, Type> types = null)
+        public async Task InjectPlatformDependencies(ContainerBuilder builder)
         {
             var bootstrapper = new Bootstrapper.Bootstrapper(this);
-            bootstrapper.Load(types);
+            await bootstrapper.Load(builder);
         }
 
         protected override void OnStart()

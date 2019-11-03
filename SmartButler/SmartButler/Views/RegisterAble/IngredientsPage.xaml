@@ -21,6 +21,7 @@
                             <StackLayout Orientation="Horizontal">
                                 <Image Source="{Binding ActualImage}" HeightRequest="150" WidthRequest="150" />
                                 <Label Text="{Binding Name}"/>
+                                <Label Text="{Binding BottleIndex}"/>
                             </StackLayout>
                         </ViewCell>
                     </DataTemplate>

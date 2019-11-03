@@ -8,6 +8,7 @@ using System.Windows.Input;
 using ReactiveUI;
 using SmartButler.Core;
 using SmartButler.Interfaces;
+using SmartButler.Services.RegisterAble;
 using SmartButler.Services.Registrable;
 using SmartButler.Views;
 using Xamarin.Forms;

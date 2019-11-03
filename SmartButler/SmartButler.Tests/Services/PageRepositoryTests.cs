@@ -54,37 +54,6 @@ namespace SmartButler.Tests.Services
             Assert.That(view is BluetoothPage v && v.BindingContext is BluetoothPageViewModel);
         }
 
-        [Test]
-        public void Resolve_TwoTimes_InstancesShouldNotEqual()
-        {
-            // arrange
-            var builder = new ContainerBuilder();
-            builder.RegisterType<ResourceManager>().As<IResourceManager>();
-            var container = builder.Build();
-
-            // act
-            var instance1 = container.Resolve<IResourceManager>();
-            var instance2 = container.Resolve<IResourceManager>();
-
-            // assert
-            Assert.That(!ReferenceEquals(instance1, instance2));
-        }
-
-        [Test]
-        public void Resolve_TwoTimes_SingleInstance_InstancesShouldEqual()
-        {
-            // arrange
-            var builder = new ContainerBuilder();
-            builder.RegisterType<ResourceManager>().As<IResourceManager>().SingleInstance();
-            var container = builder.Build();
-
-            // act
-            var instance1 = container.Resolve<IResourceManager>();
-            var instance2 = container.Resolve<IResourceManager>();
-
-            // assert
-            Assert.That(ReferenceEquals(instance1, instance2));
-        }
 
     }
 }

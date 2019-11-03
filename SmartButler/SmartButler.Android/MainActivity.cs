@@ -10,6 +10,7 @@ using SmartButler.Droid.Services;
 using System.Collections.Generic;
 using System.IO;
 using Android.Bluetooth;
+using Autofac;
 using Java.IO;
 using Java.Lang;
 using SmartButler.Interfaces;
@@ -19,7 +20,7 @@ namespace SmartButler.Droid
     [Activity(Label = "SmartButler", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
-        protected override void OnCreate(Bundle savedInstanceState)
+        protected override async void OnCreate(Bundle savedInstanceState)
         {
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
@@ -29,10 +30,10 @@ namespace SmartButler.Droid
 
             var app = new App();
 
-            IDictionary<Type, Type> map = new Dictionary<Type, Type>(); 
-            map.Add(typeof(BluetoothService), typeof(IBluetoothService));
+            var autoFacBuilder = new ContainerBuilder();
+            autoFacBuilder.RegisterType<BluetoothService>().As<IBluetoothService>();
 
-            app.InjectPlatformDependencies(map);
+            await app.InjectPlatformDependencies(autoFacBuilder);
 
             LoadApplication(app);
         }

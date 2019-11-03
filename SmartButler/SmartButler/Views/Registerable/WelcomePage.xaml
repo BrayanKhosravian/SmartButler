@@ -17,7 +17,7 @@
                        HorizontalOptions="CenterAndExpand" />
 
             <Button Text="Bluetooth" Command="{Binding BluetoothCommand}" />
-            <Button Text="Bottles" Command="{Binding BottlesCommand}" />
+            <Button Text="Ingredients" Command="{Binding IngredientsCommand}" />
             <Button Text="DrinkRecipes" Command="{Binding DrinksCommand}" />
             <Button Text="Make DrinkRecipe" Command="{Binding MakeDrinkCommand}" />
         </StackLayout>

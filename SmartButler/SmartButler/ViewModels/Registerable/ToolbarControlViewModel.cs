@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Windows.Input;
+using SmartButler.Services.RegisterAble;
 using SmartButler.Services.Registrable;
 using SmartButler.Views.Registerable;
 using Xamarin.Forms;

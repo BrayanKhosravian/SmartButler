@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using ReactiveUI;
 using SmartButler.ViewModels;
+using SmartButler.ViewModels.RegisterAble;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -13,15 +14,13 @@ namespace SmartButler.Views
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class IngredientsPage : ContentPage, IViewFor<IngredientsPageViewModel>
 	{
-	    
-
-	    public IngredientsPage ()
+		public IngredientsPage ()
 		{
 			InitializeComponent ();
 
-		    this.WhenActivated(closer =>
+		    this.WhenActivated(  async closer =>
 		    {
-                ViewModel?.Activate();
+			    if (ViewModel != null) await ViewModel.ActivateAsync();
 		    });
 		}
 

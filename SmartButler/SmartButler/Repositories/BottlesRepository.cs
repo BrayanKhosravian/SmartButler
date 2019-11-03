@@ -4,6 +4,8 @@ using System.Text;
 using System.Threading.Tasks;
 using SmartButler.Interfaces;
 using SmartButler.Models;
+using SmartButler.Repositories;
+using SmartButler.Services.RegisterAble;
 using SQLite;
 
 namespace SmartButler.Services.Registrable
@@ -14,13 +16,12 @@ namespace SmartButler.Services.Registrable
 
         public BottlesRepository()
         {
-            _connection = GetConnection();
+            _connection = Connection;
         }
 
-        public Task Configure()
+        public Task ConfigureAsync()
         {
-            return _connection.CreateTableAsync<Ingredient>();
+	        throw new NotImplementedException();
         }
-
     }
 }

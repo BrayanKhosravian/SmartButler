@@ -19,7 +19,7 @@ namespace SmartButler.Interfaces
 
         IEnumerable<BluetoothDevice> GetBondedDevices();
 
-        event EventHandler<BluetoothEventArgs> CallbackReceived;
+       // event EventHandler<BluetoothEventArgs> CallbackReceived;
     }
 
     public class BluetoothEventArgs : EventArgs

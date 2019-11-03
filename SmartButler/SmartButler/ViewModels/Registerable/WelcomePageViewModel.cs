@@ -4,6 +4,7 @@ using System.Text;
 using System.Windows.Input;
 using SmartButler.Core;
 using SmartButler.Interfaces;
+using SmartButler.Services.RegisterAble;
 using SmartButler.Services.Registrable;
 using SmartButler.Views;
 using SmartButler.Views.Registerable;
@@ -19,7 +20,7 @@ namespace SmartButler.ViewModels
 
             BluetoothCommand = new Command(async () => await navigation.PushAsync<BluetoothPage>());
 
-            BottlesCommand = new Command(async () => await navigation.PushAsync<IngredientsPage>());
+            IngredientsCommand = new Command(async () => await navigation.PushAsync<IngredientsPage>());
 
             DrinksCommand = new Command(async () => await navigation.PushAsync<DrinksPage>());
 
@@ -31,7 +32,7 @@ namespace SmartButler.ViewModels
 
         public ICommand BluetoothCommand { get; }
 
-        public ICommand BottlesCommand { get; }
+        public ICommand IngredientsCommand { get; }
 
         public ICommand DrinksCommand { get; }
 

@@ -2,10 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using Autofac;
 using SmartButler.Bootstrapper.Modules;
+using SmartButler.Repositories;
 using SmartButler.Services.Registrable;
 using SmartButler.ViewModels;
+using SmartButler.ViewModels.RegisterAble;
 using SmartButler.Views;
 using SmartButler.Views.Registerable;
 using Xamarin.Forms;
@@ -21,29 +24,18 @@ namespace SmartButler.Bootstrapper
             _app = app;
         }
 
-        public void Load(IDictionary<Type,Type> platformTypes = null)
+        public async Task Load(ContainerBuilder builder)
         {
-            var builder = new ContainerBuilder();
-
-            // register types from other platforms to the IOC container
-            if (platformTypes != null && platformTypes.Count > 0)
-            {
-                foreach (var kvp in platformTypes)
-                {
-                    builder.RegisterType(kvp.Key).As(kvp.Value);
-                }
-            }
-
-           
-
-            builder.RegisterModule<PageComponentsModule>();
+	        builder.RegisterModule<PageComponentsModule>();
             builder.RegisterModule<ServiceModule>();
 
             var container = builder.Build();
 
+			// configure app
+			await container.Resolve<IIngredientRepository>().ConfigureAsync();
+
             var pageRegistrar = container.Resolve<IPageRegistrar>();
-            // register workspace component view models
-            
+
             // register view and view model relationship
             pageRegistrar.Register<BluetoothPage, BluetoothPageViewModel>();
             pageRegistrar.Register<IngredientsPage, IngredientsPageViewModel>();

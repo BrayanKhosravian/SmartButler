@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using SmartButler.Services.RegisterAble;
 using SmartButler.Services.Registrable;
 
 namespace SmartButler.ViewModels

@@ -1,55 +1,37 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Linq;
-using System.Reactive.Linq;
-using System.Reflection;
-using System.Text;
+﻿using System.Linq;
+using System.Threading.Tasks;
 using System.Windows.Input;
 using ReactiveUI;
 using SmartButler.Models;
+using SmartButler.Repositories;
 using SmartButler.Services.RegisterAble;
-using SmartButler.Services.Registrable;
 using Xamarin.Forms;
 
-namespace SmartButler.ViewModels
+namespace SmartButler.ViewModels.RegisterAble
 {
     public class IngredientsPageViewModel : BaseViewModel
     {
-        private readonly IIngredientBuilder _ingredientBuilder;
+        private readonly IIngredientRepository _ingredientRepository;
 
         public ReactiveList<Ingredient> Bottles { get; private set; } = new ReactiveList<Ingredient>();
 
-        public IngredientsPageViewModel(IIngredientBuilder ingredientBuilder, INavigationService navigationService)
+        public IngredientsPageViewModel(IIngredientRepository ingredientRepository, INavigationService navigationService)
         {
-            _ingredientBuilder = ingredientBuilder;
+	        _ingredientRepository = ingredientRepository;
 
             AddBottleCommand = new Command(() => { /*  Add bottle here */} );
 
         }
 
-
         public ICommand AddBottleCommand { get; set; }
 
-        public void Activate()
+        public async Task ActivateAsync()
         {
            if(!Bottles.Any())
-               Bottles.AddRange(DefaultBottles());
+               Bottles.AddRange(await _ingredientRepository.GetAllAsync());
         }
 
-        private IEnumerable<Ingredient> DefaultBottles()
-        {
-            var resolvingType = typeof(IngredientsPageViewModel);
-
-            yield return _ingredientBuilder.Default("Whisky", "Bottles.Whisky.jpeg", resolvingType).Build();
-            yield return _ingredientBuilder.Default("Vodka", "Bottles.Vodka.jpg", resolvingType).Build();
-			yield return _ingredientBuilder.Default("Orange-Juice", "Bottles.OrangeJuice.jpg", resolvingType).Build();
-			yield return _ingredientBuilder.Default("Cranberry-Juice", "Bottles.CranberryJuice.jpg", resolvingType).Build();
-			yield return _ingredientBuilder.Default("Lemon-Juice", "Bottles.LemonJuice.jpg", resolvingType).Build();
-			yield return _ingredientBuilder.Default("NONE", "NONE", resolvingType).Build();
-		}
-
-		public ToolbarControlViewModel ToolbarControlViewModel { get; private set; }
+        public ToolbarControlViewModel ToolbarControlViewModel { get; private set; }
         public void SetToolBarControlViewModel(ToolbarControlViewModel vm)
         {
             ToolbarControlViewModel = vm;

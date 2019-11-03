@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Threading.Tasks;
+using SmartButler.Services.Registrable;
 using Xamarin.Forms;
 
-
-namespace SmartButler.Services.Registrable
+namespace SmartButler.Services.RegisterAble
 {
     public interface INavigationService
     {

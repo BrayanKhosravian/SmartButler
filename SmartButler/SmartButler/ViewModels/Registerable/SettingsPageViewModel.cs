@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Windows.Input;
 using SmartButler.Core;
+using SmartButler.Services.RegisterAble;
 using SmartButler.Services.Registrable;
 using Xamarin.Forms;
 

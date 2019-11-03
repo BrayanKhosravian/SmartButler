@@ -9,19 +9,6 @@ using Xamarin.Forms;
 
 namespace SmartButler.Services.RegisterAble
 {
-	//public interface IBaseLiquidBuilder<TLiquidBase> where TLiquidBase : LiquidBase
-	//{
-	//	BaseLiquidBuilder<TLiquidBase> Default();
-
-	//	BaseLiquidBuilder<TLiquidBase> Default(string name, string partialResource, Type resolvingType);
-
-	//	BaseLiquidBuilder<TLiquidBase> SetName(string name);
-	//	BaseLiquidBuilder<TLiquidBase> SetImageSource(string partialResource, Type resolvingType);
-
-	//	TLiquidBase Build();
-
-	//}
-
 	public abstract class BaseLiquidBuilder<TLiquidBase, TBuilder> 
 		where TLiquidBase : LiquidBase
 		where TBuilder : BaseLiquidBuilder<TLiquidBase, TBuilder>

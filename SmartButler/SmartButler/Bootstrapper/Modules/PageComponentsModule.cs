@@ -1,5 +1,6 @@
 ﻿using Autofac;
 using SmartButler.ViewModels;
+using SmartButler.ViewModels.RegisterAble;
 using SmartButler.Views;
 using SmartButler.Views.Registerable;
 

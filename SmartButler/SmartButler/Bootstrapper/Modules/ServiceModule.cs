@@ -1,4 +1,5 @@
 ﻿using Autofac;
+using SmartButler.Repositories;
 using SmartButler.Services.RegisterAble;
 using SmartButler.Services.Registrable;
 using Xamarin.Forms;
@@ -13,7 +14,7 @@ namespace SmartButler.Bootstrapper.Modules
 
             // register services
             builder.RegisterType<UserInteraction>().As<IUserInteraction>();
-            builder.RegisterType<LiquidContainerFactory>().As<ILiquidContainerFactory>(); // delete later
+            builder.RegisterType<IngredientFactory>().As<IIngredientFactory>();
             builder.RegisterType<DrinkRecipeBuilder>().As<IDrinkRecipeBuilder>();
             builder.RegisterType<IngredientBuilder>().As<IIngredientBuilder>();
 
@@ -21,6 +22,7 @@ namespace SmartButler.Bootstrapper.Modules
             builder.RegisterType<NavigationService>().As<INavigationService>().SingleInstance();
             builder.RegisterType<PageRegistrar>().As<IPageRegistrar>().SingleInstance();
             builder.RegisterType<UserInteraction>().As<IUserInteraction>().SingleInstance();
+            builder.RegisterType<IngredientRepository>().As<IIngredientRepository>().SingleInstance();
 
             // register services lazily
             builder.Register(componentContext => ((App)Application.Current).MainPage.Navigation);

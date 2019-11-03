@@ -9,13 +9,14 @@ namespace SmartButler.Services.RegisterAble
 		// from Base
 		IngredientBuilder Default();
 		IngredientBuilder Default(string name, string partialResource, Type resolvingType);
+
 		IngredientBuilder SetName(string name);
 		IngredientBuilder SetImageSource(string partialResource, Type resolvingType);
 
 		// from Concretion
 		IngredientBuilder SetMilliliter(int milliliter);
+		IngredientBuilder SetBottleIndex(int index);
 		Ingredient Build();
-
 	}
 
 
@@ -44,6 +45,15 @@ namespace SmartButler.Services.RegisterAble
 			if (milliliter <= 0) throw ExceptionFactory.Get<ArgumentException>("'milliliter' cant be <= 0!");
 
 			_ingredient.Milliliter = milliliter;
+			return this;
+		}
+
+		public IngredientBuilder SetBottleIndex(int index)
+		{
+			if (index < 1 || index > 6)
+				throw ExceptionFactory.Get<ArgumentException>("'index' has to be between 1 and 6!");
+
+			_ingredient.BottleIndex = index;
 			return this;
 		}
 

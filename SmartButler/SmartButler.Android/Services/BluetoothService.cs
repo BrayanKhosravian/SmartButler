@@ -9,14 +9,13 @@ using Java.Util;
 using SmartButler.Core;
 using SmartButler.Interfaces;
 using Exception = System.Exception;
-using IDisposable = System.IDisposable;
 
 namespace SmartButler.Droid.Services
 {
 
-    class BluetoothService : IBluetoothService
+	class BluetoothService : IBluetoothService
     {
-        public event EventHandler<BluetoothEventArgs> CallbackReceived;
+       // public event EventHandler<BluetoothEventArgs> CallbackReceived;
 
         private BluetoothAdapter _bluetoothAdapter = BluetoothAdapter.DefaultAdapter;
         private static BluetoothSocket _socket = null;
