@@ -12,15 +12,14 @@ using Exception = System.Exception;
 
 namespace SmartButler.Droid.Services
 {
-
 	class BluetoothService : IBluetoothService
     {
        // public event EventHandler<BluetoothEventArgs> CallbackReceived;
 
         private BluetoothAdapter _bluetoothAdapter = BluetoothAdapter.DefaultAdapter;
-        private static BluetoothSocket _socket = null;
-        private static Stream _outputStream = null;
-        private static Stream _inputStream = null;
+        private BluetoothSocket _socket = null;
+        private Stream _outputStream = null;
+        private Stream _inputStream = null;
 
         private static string _connectedMac = string.Empty;
 

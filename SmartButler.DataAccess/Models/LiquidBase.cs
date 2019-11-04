@@ -16,20 +16,5 @@ namespace SmartButler.DataAccess.Models
 
 	    public byte[] ByteImage { get; set; }
 
-		//private ImageSource _imageSource;
-		//[Ignore]
-		//public ImageSource ActualImage
-		//{
-		//	get
-		//	{
-		//		if (_imageSource == null && ByteImage != null)
-		//			return ImageSource.FromStream(() => new MemoryStream(ByteImage));
-
-		//		return _imageSource;
-		//	}
-		//	set => _imageSource = value;
-		//}
-
-
 	}
 }

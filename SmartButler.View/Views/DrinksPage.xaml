@@ -41,7 +41,6 @@
                                                 <ViewCell>
                                                     <Grid Padding="5"
                                                           Margin="5"
-                                                          BackgroundColor="DodgerBlue"
                                                           HorizontalOptions="EndAndExpand">
                                                         <Grid.ColumnDefinitions>
                                                             <ColumnDefinition/>

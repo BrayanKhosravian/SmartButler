@@ -24,12 +24,18 @@
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <StackLayout Orientation="Horizontal">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="150"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
                                 <Image Source="{Binding ByteImage, Converter={StaticResource byteArrayToImageSource}}" 
-                                       HeightRequest="150" WidthRequest="150" />
-                                <Label Text="{Binding Name}"/>
-                                <Label Text="{Binding BottleIndex}"/>
-                            </StackLayout>
+                                       Grid.Column="0" HeightRequest="150" WidthRequest="150" />
+                                <StackLayout Grid.Column="1">
+                                    <Label Text="{Binding Name, StringFormat='Name: {0}'}"/>
+                                    <Label Text="{Binding BottleIndex, StringFormat='Bottle index: {0}'}"/>
+                                </StackLayout>
+                            </Grid>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>

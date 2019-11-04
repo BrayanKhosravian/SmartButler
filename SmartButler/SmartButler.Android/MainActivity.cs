@@ -31,7 +31,7 @@ namespace SmartButler.Droid
             var app = new App();
 
             var autoFacBuilder = new ContainerBuilder();
-            autoFacBuilder.RegisterType<BluetoothService>().As<IBluetoothService>();
+            autoFacBuilder.RegisterType<BluetoothService>().As<IBluetoothService>().SingleInstance();
 
             await app.InjectPlatformDependencies(autoFacBuilder);
 
