@@ -1,8 +1,6 @@
 ﻿using Autofac;
-using SmartButler.ViewModels;
-using SmartButler.ViewModels.RegisterAble;
-using SmartButler.Views;
-using SmartButler.Views.Registerable;
+using SmartButler.Logic.ViewModels;
+using SmartButler.View.Views;
 
 namespace SmartButler.Bootstrapper.Modules
 {

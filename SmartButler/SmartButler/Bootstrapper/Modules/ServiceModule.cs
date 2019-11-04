@@ -1,7 +1,8 @@
 ﻿using Autofac;
-using SmartButler.Repositories;
-using SmartButler.Services.RegisterAble;
-using SmartButler.Services.Registrable;
+using SmartButler.Bootstrapper.Common;
+using SmartButler.DataAccess.Repositories;
+using SmartButler.Logic.Interfaces;
+using SmartButler.Logic.Services;
 using Xamarin.Forms;
 
 namespace SmartButler.Bootstrapper.Modules
@@ -13,7 +14,6 @@ namespace SmartButler.Bootstrapper.Modules
             base.Load(builder);
 
             // register services
-            builder.RegisterType<UserInteraction>().As<IUserInteraction>();
             builder.RegisterType<IngredientFactory>().As<IIngredientFactory>();
             builder.RegisterType<DrinkRecipeBuilder>().As<IDrinkRecipeBuilder>();
             builder.RegisterType<IngredientBuilder>().As<IIngredientBuilder>();

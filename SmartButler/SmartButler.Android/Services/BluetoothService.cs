@@ -6,8 +6,8 @@ using System.Threading;
 using System.Threading.Tasks;
 using Android.Bluetooth;
 using Java.Util;
-using SmartButler.Core;
-using SmartButler.Interfaces;
+using SmartButler.Framework.Bluetooth;
+using BluetoothDevice = SmartButler.Framework.Bluetooth.BluetoothDevice;
 using Exception = System.Exception;
 
 namespace SmartButler.Droid.Services
@@ -153,12 +153,12 @@ namespace SmartButler.Droid.Services
         }
 
 
-        public IEnumerable<Core.BluetoothDevice> GetBondedDevices()
+        public IEnumerable<BluetoothDevice> GetBondedDevices()
         {
             Enable();
             
             foreach (var device in _bluetoothAdapter.BondedDevices)
-                yield return new SmartButler.Core.BluetoothDevice(device.Name, device.Address);
+                yield return new BluetoothDevice(device.Name, device.Address);
             
         }
 

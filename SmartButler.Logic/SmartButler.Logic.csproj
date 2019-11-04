@@ -1,7 +1,16 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SmartButler.DataAccess\SmartButler.DataAccess.csproj" />
+    <ProjectReference Include="..\SmartButler.Framework\SmartButler.Framework.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ReactiveUI" Version="8.7.2" />
+  </ItemGroup>
 
 </Project>

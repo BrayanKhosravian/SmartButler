@@ -51,35 +51,12 @@
     <PackageReference Include="Autofac" Version="4.9.4" />
     <PackageReference Include="ReactiveUI" Version="8.7.2" />
     <PackageReference Include="ReactiveUI.XamForms" Version="8.7.2" />
-    <PackageReference Include="sqlite-net-pcl" Version="1.6.292" />
-    <PackageReference Include="SQLiteNetExtensions" Version="2.1.0" />
     <PackageReference Include="Xamarin.Forms" Version="4.2.0.778463" />
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Views\RegisterAble\BluetoothPage.xaml.cs">
-      <DependentUpon>BluetoothPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Update="Views\RegisterAble\IngredientsPage.xaml.cs">
-      <DependentUpon>IngredientsPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Update="Views\RegisterAble\DrinksPage.xaml.cs">
-      <DependentUpon>DrinksPage.xaml</DependentUpon>
-    </Compile>
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Update="Controls\ToolBarControl.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Views\RegisterAble\MakeDrinkPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Views\RegisterAble\SettingsPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Views\RegisterAble\WelcomePage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
+    <ProjectReference Include="..\..\SmartButler.Framework\SmartButler.Framework.csproj" />
+    <ProjectReference Include="..\..\SmartButler.Logic\SmartButler.Logic.csproj" />
+    <ProjectReference Include="..\..\SmartButler.View\SmartButler.View.csproj" />
   </ItemGroup>
 </Project>

@@ -12,13 +12,11 @@
     <PackageReference Include="NUnit3TestAdapter" Version="3.15.1" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.2.0" />
     <PackageReference Include="Shouldly" Version="3.0.2" />
-    <PackageReference Include="sqlite-net-pcl" Version="1.6.292" />
+    <PackageReference Include="ReactiveUI.XamForms" Version="8.7.2" />
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="Mono.Android">
-      <HintPath>C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\ReferenceAssemblies\Microsoft\Framework\MonoAndroid\v8.1\Mono.Android.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\SmartButler.Logic\SmartButler.Logic.csproj" />
   </ItemGroup>
 
 </Project>

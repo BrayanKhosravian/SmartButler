@@ -1,7 +1,71 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>7.2</LangVersion>
   </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <!--<ItemGroup>
+    <None Remove="Controls\ToolBarControl.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\ToolBarControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>-->
+
+  <ItemGroup>
+    <PackageReference Include="ReactiveUI" Version="8.7.2" />
+    <PackageReference Include="ReactiveUI.XamForms" Version="8.7.2" />
+    <PackageReference Include="Xamarin.Forms" Version="4.2.0.778463" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SmartButler.Logic\SmartButler.Logic.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Xamarin.Forms.Core">
+      <HintPath>C:\Users\braya\.nuget\packages\xamarin.forms\4.2.0.778463\lib\MonoAndroid81\Xamarin.Forms.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Controls\ToolBarControl.xaml.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>%(Filename)</DependentUpon>
+    </Compile>
+    <Compile Update="Views\BluetoothPage.xaml.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>%(Filename)</DependentUpon>
+    </Compile>
+    <Compile Update="Views\DrinksPage.xaml.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>%(Filename)</DependentUpon>
+    </Compile>
+    <Compile Update="Views\IngredientsPage.xaml.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>%(Filename)</DependentUpon>
+    </Compile>
+    <Compile Update="Views\MakeDrinkPage.xaml.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>%(Filename)</DependentUpon>
+    </Compile>
+    <Compile Update="Views\SettingsPage.xaml.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>%(Filename)</DependentUpon>
+    </Compile>
+    <Compile Update="Views\WelcomePage.xaml.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>%(Filename)</DependentUpon>
+    </Compile>
+  </ItemGroup>
 
 </Project>

@@ -13,7 +13,7 @@ using Android.Bluetooth;
 using Autofac;
 using Java.IO;
 using Java.Lang;
-using SmartButler.Interfaces;
+using SmartButler.Framework.Bluetooth;
 
 namespace SmartButler.Droid
 {

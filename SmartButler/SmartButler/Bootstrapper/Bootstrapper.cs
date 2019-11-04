@@ -1,16 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Autofac;
+using SmartButler.Bootstrapper.Common;
 using SmartButler.Bootstrapper.Modules;
-using SmartButler.Repositories;
-using SmartButler.Services.Registrable;
-using SmartButler.ViewModels;
-using SmartButler.ViewModels.RegisterAble;
-using SmartButler.Views;
-using SmartButler.Views.Registerable;
+using SmartButler.DataAccess.Repositories;
+using SmartButler.Logic.Services;
+using SmartButler.Logic.ViewModels;
+using SmartButler.View.Views;
 using Xamarin.Forms;
 
 namespace SmartButler.Bootstrapper
@@ -31,20 +26,21 @@ namespace SmartButler.Bootstrapper
 
             var container = builder.Build();
 
-			// configure app
-			await container.Resolve<IIngredientRepository>().ConfigureAsync();
+			// configure database
+			var ingredientFactory = new IngredientFactory(new IngredientBuilder());
+			await container.Resolve<IIngredientRepository>().ConfigureAsync(ingredientFactory.GetDefaultIngredients());
 
-            var pageRegistrar = container.Resolve<IPageRegistrar>();
+			// register view and view model relationship
+			var pageRegistrar = container.Resolve<IPageRegistrar>();
 
-            // register view and view model relationship
-            pageRegistrar.Register<BluetoothPage, BluetoothPageViewModel>();
-            pageRegistrar.Register<IngredientsPage, IngredientsPageViewModel>();
-            pageRegistrar.Register<DrinksPage, DrinksPageViewModel>();
-            pageRegistrar.Register<WelcomePage, WelcomePageViewModel>();
-            pageRegistrar.Register<MakeDrinkPage, MakeDrinkPageViewModel>();
-            pageRegistrar.Register<SettingsPage, SettingsPageViewModel>();
+			pageRegistrar.Register<BluetoothPageViewModel, BluetoothPage>();
+            pageRegistrar.Register<IngredientsPageViewModel, IngredientsPage>();
+            pageRegistrar.Register<DrinksPageViewModel, DrinksPage>();
+            pageRegistrar.Register<WelcomePageViewModel, WelcomePage>();
+            pageRegistrar.Register<MakeDrinkPageViewModel, MakeDrinkPage>();
+            pageRegistrar.Register<SettingsPageViewModel, SettingsPage>();
 
-            var mainPage = pageRegistrar.Resolve<WelcomePage>();
+            var mainPage = pageRegistrar.Resolve<WelcomePageViewModel>();
           
             _app.MainPage = new NavigationPage(mainPage);
 
