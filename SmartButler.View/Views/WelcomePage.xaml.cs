@@ -13,9 +13,9 @@ namespace SmartButler.View.Views
         {
             InitializeComponent();
 
-            this.WhenActivated(disposer =>
+            this.WhenActivated(closer =>
             {
-                //ViewModel?.Activate();
+                ViewModel?.Activate();
             });
         }
 

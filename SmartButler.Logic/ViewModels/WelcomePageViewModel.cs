@@ -9,8 +9,9 @@ namespace SmartButler.Logic.ViewModels
 {
     public class WelcomePageViewModel : BaseViewModel
     {
+	    private readonly IBluetoothService _bluetoothService;
 
-        public WelcomePageViewModel(INavigationService navigation, IBluetoothService bluetoothService)
+	    public WelcomePageViewModel(INavigationService navigation, IBluetoothService bluetoothService)
         {
 
 	        BluetoothCommand = ReactiveCommand.Create(async () => await navigation.PushAsync<BluetoothPageViewModel>());
@@ -18,9 +19,9 @@ namespace SmartButler.Logic.ViewModels
             IngredientsCommand = ReactiveCommand.Create(async () => await navigation.PushAsync<IngredientsPageViewModel>());
 
             DrinksCommand = ReactiveCommand.Create(async () => await navigation.PushAsync<DrinksPageViewModel>());
-
-            MakeDrinkCommand = (ICommand)ReactiveCommand.Create(async () => await navigation.PushAsync<MakeDrinkPageViewModel>(), 
-	            Observable.Return<bool>(bluetoothService.IsConnected() || Settings.EnableCommands));
+            
+            MakeDrinkCommand = new DelegateCommand(async _ => await navigation.PushAsync<MakeDrinkPageViewModel>(),
+	            _ => bluetoothService.IsConnected() || Settings.EnableCommands);
 
         }
 
@@ -30,7 +31,7 @@ namespace SmartButler.Logic.ViewModels
 
         public ReactiveCommand DrinksCommand { get; }
 
-        public ICommand MakeDrinkCommand { get; }
+        public IDelegateCommand MakeDrinkCommand { get; }
 
 
         public ToolbarControlViewModel ToolbarControlViewModel { get; private set; }
@@ -38,11 +39,11 @@ namespace SmartButler.Logic.ViewModels
         {
             ToolbarControlViewModel = vm;
         }
-      
-        //public void Activate()
-        //{
-        //    ((ICommand)MakeDrinkCommand).ChangeCanExecute();
-        //}
 
-    }
+		public void Activate()
+		{
+			MakeDrinkCommand?.RaiseCanExecuteChanged();
+		}
+
+	}
 }
