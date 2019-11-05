@@ -13,26 +13,26 @@ namespace SmartButler.DataAccess.Tests
         {
         }
 
-        [Test]
-        public async Task CallConfigureTwice_OneTable_And_NoDuplicateIngredients()
-        {
-	        // arrange
-	        var ingredientRepository = new IngredientRepository();
-	        ingredientRepository.IsTest = true;
+		[Test]
+		public async Task CallConfigureTwice_OneTable_And_NoDuplicateIngredients()
+		{
+			// arrange
+			var ingredientRepository = new IngredientRepository(new RepositoryComponent());
+			ingredientRepository.Component.IsTest = true;
 
 			// act
-	        await ingredientRepository.ConfigureAsync(TestData.CreateDefaultIngredients());
-	        await ingredientRepository.ConfigureAsync(TestData.CreateDefaultIngredients());
+			await ingredientRepository.ConfigureAsync(TestData.CreateDefaultIngredients());
+			await ingredientRepository.ConfigureAsync(TestData.CreateDefaultIngredients());
 
 			// assert
-			var connection = ingredientRepository.Connection;
-			var tableCount = await ingredientRepository.TableCount(IngredientRepository.TableName);
+			var connection = ingredientRepository.Component.Connection;
+			var tableCount = await ingredientRepository.Component.Connection.TableCount(IngredientRepository.TableName);
 			var items = await connection.Table<Ingredient>().ToListAsync();
 
 			tableCount.ShouldBe(1);
 			items.Count.ShouldBe(6);
 
-        }
-    }
+		}
+	}
 
 }

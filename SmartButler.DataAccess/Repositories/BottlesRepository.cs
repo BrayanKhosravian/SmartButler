@@ -4,16 +4,20 @@ using SQLite;
 
 namespace SmartButler.DataAccess.Repositories
 {
-    class BottlesRepository : BaseRepository, IRepository
+	public interface IBottlesRepository
+	{
+	}
+
+	public class BottlesRepository : IBottlesRepository
     {
-        private readonly SQLiteAsyncConnection _connection;
+	    public RepositoryComponent RepositoryComponent { get; }
 
-        public BottlesRepository()
-        {
-            _connection = Connection;
-        }
+	    public BottlesRepository(RepositoryComponent repositoryComponent)
+	    {
+		    RepositoryComponent = repositoryComponent;
+	    }
 
-        public Task ConfigureAsync()
+	    public Task ConfigureAsync()
         {
 	        throw new NotImplementedException();
         }

@@ -23,6 +23,7 @@ namespace SmartButler.Bootstrapper
         {
 	        builder.RegisterModule<PageComponentsModule>();
             builder.RegisterModule<ServiceModule>();
+            builder.RegisterModule<RepositoryModule>();
 
             var container = builder.Build();
 
@@ -44,7 +45,6 @@ namespace SmartButler.Bootstrapper
           
             _app.MainPage = new NavigationPage(mainPage);
 
-            // application.MainPage = 
         }
 
     }

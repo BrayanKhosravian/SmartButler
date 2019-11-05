@@ -17,12 +17,11 @@ namespace SmartButler.Bootstrapper.Modules
             builder.RegisterType<IngredientFactory>().As<IIngredientFactory>();
             builder.RegisterType<DrinkRecipeBuilder>().As<IDrinkRecipeBuilder>();
             builder.RegisterType<IngredientBuilder>().As<IIngredientBuilder>();
+            builder.RegisterType<UserInteraction>().As<IUserInteraction>();
 
-            // register singleton services
-            builder.RegisterType<NavigationService>().As<INavigationService>().SingleInstance();
+			// register singleton services
+			builder.RegisterType<NavigationService>().As<INavigationService>().SingleInstance();
             builder.RegisterType<PageRegistrar>().As<IPageRegistrar>().SingleInstance();
-            builder.RegisterType<UserInteraction>().As<IUserInteraction>().SingleInstance();
-            builder.RegisterType<IngredientRepository>().As<IIngredientRepository>().SingleInstance();
 
             // register services lazily
             builder.Register(componentContext => ((App)Application.Current).MainPage.Navigation);
