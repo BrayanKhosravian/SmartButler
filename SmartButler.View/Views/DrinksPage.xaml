@@ -35,7 +35,7 @@
                                     <Label Text="{Binding Id}" VerticalOptions="Center" HorizontalOptions="Start"/>
                                     <Image Source="{Binding ByteImage, Converter={StaticResource byteArrayToImageSource}}"
                                            Grid.Column="1" HeightRequest="150" WidthRequest="150" HorizontalOptions="Start" />
-                                    <controls:RepeaterView Grid.Column="2" ItemsSource="{Binding Ingredients, Mode=TwoWay}">
+                                    <controls:RepeaterView Grid.Column="2" ItemsSource="{Binding DrinkIngredients, Mode=TwoWay}">
                                         <controls:RepeaterView.ItemTemplate>
                                             <DataTemplate>
                                                 <ViewCell>

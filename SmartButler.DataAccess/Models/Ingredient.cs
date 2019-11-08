@@ -20,10 +20,7 @@ namespace SmartButler.DataAccess.Models
 	    [PrimaryKey, AutoIncrement]
 	    public int Id { get; set; }
 
-	    //[ForeignKey(typeof(DrinkRecipe))]
-	    //public int DrinkId { get; set; }
-
-		[Obsolete("Bridge table is in use - multistep refactoring")]
+	    [Obsolete("Bridge table is in use - multistep refactoring")]
 	    public int Milliliter { get; set; }
 
 		public int BottleIndex { get; set; }

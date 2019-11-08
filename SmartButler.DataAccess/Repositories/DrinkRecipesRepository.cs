@@ -39,8 +39,19 @@ namespace SmartButler.DataAccess.Repositories
 	    {
 		    await Component.ConfigureAsync();
 
-			foreach (var drink in drinks)
-				await InsertWithChildrenAsync(drink);
+		    foreach (var drink in drinks)
+		    {
+			    foreach (var ingredient in drink.IngredientsForMapping)
+			    {
+				    drink.DrinkIngredients.Add(new DrinkIngredient()
+				    {
+						ByteImage = ingredient.ByteImage,
+						Milliliter = ingredient.Milliliter,
+						Name = ingredient.Name
+				    });
+			    }
+			    await InsertWithChildrenAsync(drink);
+		    }
 	    }
 
 	    public async Task<bool> InsertWithChildrenAsync(DrinkRecipe drink)
