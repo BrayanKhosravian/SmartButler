@@ -1,11 +1,10 @@
 ﻿using System;
-using System.IO;
 using System.Linq;
 using System.Reflection;
 using SmartButler.DataAccess.Models;
 using SmartButler.Framework.Common;
 
-namespace SmartButler.Logic.Services
+namespace SmartButler.Logic.Common
 {
 	public abstract class BaseLiquidBuilder<TLiquidBase, TBuilder> 
 		where TLiquidBase : LiquidBase

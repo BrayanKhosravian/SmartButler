@@ -18,8 +18,8 @@ namespace SmartButler.Bootstrapper.Modules
 			// I used this class as a base class of the concrete Repositories but the repositories resolved didnt share the same state of the base
 			builder.RegisterType<RepositoryComponent>().AsSelf().SingleInstance();
 
-			builder.RegisterType<BottlesRepository>().As<IBottlesRepository>();
-			builder.RegisterType<IngredientRepository>().As<IIngredientRepository>();
+			builder.RegisterType<DrinkRecipesRepository>().As<IDrinkRecipesRepository>();
+			builder.RegisterType<IngredientsRepository>().As<IIngredientsRepository>();
 		}
 	}
 }

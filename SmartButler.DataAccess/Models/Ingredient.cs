@@ -24,8 +24,8 @@ namespace SmartButler.DataAccess.Models
 
 	    public int Milliliter { get; set; }
 
-		public int? BottleIndex { get; set; } = null;
+		public int BottleIndex { get; set; }
 
-		[Ignore] public bool IsAvailable => BottleIndex != null;
+		[Ignore] public bool IsAvailable => BottleIndex >= 1 && BottleIndex <= 6;
 	}
 }

@@ -12,6 +12,9 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Autofac;
+using SmartButler.Framework.Bluetooth;
+using Moq;
 
 namespace SmartButler.UWP
 {
@@ -21,7 +24,16 @@ namespace SmartButler.UWP
         {
             this.InitializeComponent();
 
-            LoadApplication(new SmartButler.App());
+			var app= new SmartButler.App();
+
+			var builder = new ContainerBuilder();
+			builder.RegisterInstance(new Mock<IBluetoothService>().Object).As<IBluetoothService>();
+
+			app.InjectPlatformDependencies(builder);
+
+			LoadApplication(app);
+
+
         }
     }
 }

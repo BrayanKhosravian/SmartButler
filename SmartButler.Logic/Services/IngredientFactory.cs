@@ -23,24 +23,23 @@ namespace SmartButler.Logic.Services
 
 		public IEnumerable<Ingredient> GetDefaultIngredients()
 		{
-			var resolvingType = typeof(IngredientsPageViewModel);
 
-			yield return _ingredientBuilder.Default("Whisky", "Bottles.Whisky.jpeg", resolvingType)
+			yield return _ingredientBuilder.Default("Whisky", "Bottles.Whisky.jpeg")
 				.SetBottleIndex(1).Build();
 
-			yield return _ingredientBuilder.Default("Vodka", "Bottles.Vodka.jpg", resolvingType)
+			yield return _ingredientBuilder.Default("Vodka", "Bottles.Vodka.jpg")
 				.SetBottleIndex(2).Build();
 
-			yield return _ingredientBuilder.Default("Orange-Juice", "Bottles.OrangeJuice.jpg", resolvingType)
+			yield return _ingredientBuilder.Default("Orange-Juice", "Bottles.OrangeJuice.jpg")
 				.SetBottleIndex(3).Build();
 
-			yield return _ingredientBuilder.Default("Cranberry-Juice", "Bottles.CranberryJuice.jpg", resolvingType)
+			yield return _ingredientBuilder.Default("Cranberry-Juice", "Bottles.CranberryJuice.jpg")
 				.SetBottleIndex(4).Build();
 
-			yield return _ingredientBuilder.Default("Lemon-Juice", "Bottles.LemonJuice.jpg", resolvingType)
+			yield return _ingredientBuilder.Default("Lemon-Juice", "Bottles.LemonJuice.jpg")
 				.SetBottleIndex(5).Build();
 
-			yield return _ingredientBuilder.Default("NONE", "NONE", resolvingType)
+			yield return _ingredientBuilder.Default("NONE", "NONE")
 				.SetBottleIndex(6).Build();
 		}
 	}

@@ -13,7 +13,10 @@ namespace SmartButler.View.Views
         {
             InitializeComponent();
 
-            this.WhenActivated(closer => { ViewModel?.Activate(); });
+            this.WhenActivated(async closer =>
+            {
+	            if (ViewModel != null) await ViewModel?.Activate();
+            });
         }
 
         private void Handle_ItemTapped(object sender, ItemTappedEventArgs e)

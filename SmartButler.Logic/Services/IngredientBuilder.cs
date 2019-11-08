@@ -2,6 +2,7 @@
 using SmartButler.DataAccess.Models;
 using SmartButler.Framework.Common;
 
+
 namespace SmartButler.Logic.Services
 {
 
@@ -9,10 +10,10 @@ namespace SmartButler.Logic.Services
 	{
 		// from Base
 		IngredientBuilder Default();
-		IngredientBuilder Default(string name, string partialResource, Type resolvingType);
+		IngredientBuilder Default(string name, string partialResource);
 
 		IngredientBuilder SetName(string name);
-		IngredientBuilder SetByteImage(string partialResource, Type resolvingType);
+		IngredientBuilder SetByteImage(string partialResource);
 
 		// from Concretion
 		IngredientBuilder SetMilliliter(int milliliter);
@@ -34,11 +35,11 @@ namespace SmartButler.Logic.Services
 			return base.Default();
 		}
 
-		public override IngredientBuilder Default(string name, string partialResource, Type resolvingType)
+		public override IngredientBuilder Default(string name, string partialResource)
 		{
 			_ingredient = new Ingredient();
 
-			return base.Default(name, partialResource, resolvingType);
+			return base.Default(name, partialResource);
 		}
 
 		public IngredientBuilder SetMilliliter(int milliliter)

@@ -1,13 +1,16 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq.Expressions;
 using System.Threading.Tasks;
+using SmartButler.DataAccess.Common;
 using SmartButler.DataAccess.Models;
 
 namespace SmartButler.DataAccess.Repositories
 {
-	public interface IIngredientRepository : IRepository
+	public interface IIngredientsRepository //: IRepository
 	{
 		Task ConfigureAsync(IEnumerable<Ingredient> ingredients);
-		Task InsertAsync(Ingredient ingredient);
+		Task<bool> InsertAsync(Ingredient ingredient);
 		Task UpdateAsync(Ingredient ingredient);
 
 		Task DeleteAsync(Ingredient ingredient);
@@ -20,32 +23,32 @@ namespace SmartButler.DataAccess.Repositories
 
 	}
 
-	public class IngredientRepository : IIngredientRepository
+	public class IngredientsRepository : IIngredientsRepository
 	{
-		public const string TableName = "Ingredients";
+		public const string TableName = TableNames.IngredientsTable;
 
-		public RepositoryComponent Component { get; }
+		internal readonly RepositoryComponent Component;
 
-		public IngredientRepository(RepositoryComponent component)
+		public IngredientsRepository(RepositoryComponent component)
 		{
 			Component = component;
 		}
 
+
 		public async Task ConfigureAsync(IEnumerable<Ingredient> ingredients)
 		{
-			if (await Component.Connection.TableCount(TableName) <= 0)
-				Component.Connection.CreateTableAsync<Ingredient>().Wait();
+			await Component.ConfigureAsync();
 
 			foreach (var ingredient in ingredients)
-			{
-				if(await Component.Connection.Table<Ingredient>().CountAsync(i => i.Name == ingredient.Name && i.Milliliter == ingredient.Milliliter) == 0)
-					await Component.Connection.InsertAsync(ingredient);
-			}
+				await InsertAsync(ingredient);
 		}
 
-		public Task InsertAsync(Ingredient ingredient)
+		public async Task<bool> InsertAsync(Ingredient ingredient)
 		{
-			return Component.Connection.InsertAsync(ingredient);
+			if (await IsInserted(ingredient)) return false;
+
+			await Component.Connection.InsertAsync(ingredient);
+			return true;
 		}
 
 		public Task UpdateAsync(Ingredient ingredient)
@@ -78,7 +81,13 @@ namespace SmartButler.DataAccess.Repositories
 			return Component.Connection.Table<Ingredient>().Where(i => i.IsAvailable).ToListAsync();
 		}
 
-		
+		private async Task<bool> IsInserted(Ingredient ingredient)
+		{
+			var isInserted = await Component.Connection.Table<Ingredient>().CountAsync(i =>
+				                 i.Name == ingredient.Name && i.Milliliter == ingredient.Milliliter) > 0;
+
+			return isInserted;
+		}
 
 	}
 }

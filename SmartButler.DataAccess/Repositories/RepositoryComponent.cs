@@ -1,4 +1,8 @@
 ﻿using System;
+using System.ComponentModel;
+using System.Threading.Tasks;
+using SmartButler.DataAccess.Common;
+using SmartButler.DataAccess.Models;
 using SQLite;
 
 namespace SmartButler.DataAccess.Repositories
@@ -27,6 +31,18 @@ namespace SmartButler.DataAccess.Repositories
 				return _connection;
 			}
         }
+
+		internal async Task ConfigureAsync()
+		{
+			await ConfigureTableAsync<Ingredient>(TableNames.IngredientsTable);
+			await ConfigureTableAsync<DrinkRecipe>(TableNames.DrinkRecipeTable);
+		}
+
+		private async Task ConfigureTableAsync<TTable>(string tableName) where TTable : class, new()
+		{
+			if (await Connection.TableCount(tableName) <= 0)
+				await Connection.CreateTableAsync<TTable>();
+		}
 
 	}
 }

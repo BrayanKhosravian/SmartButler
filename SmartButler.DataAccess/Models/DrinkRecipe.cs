@@ -10,7 +10,7 @@ namespace SmartButler.DataAccess.Models
 	    [PrimaryKey, AutoIncrement]
 	    public int Id { get; set; }
 
-	    [OneToMany]
+	    [OneToMany(CascadeOperations = CascadeOperation.All)]
 		public List<Ingredient> Ingredients { get; set; } = new List<Ingredient>();
 
 

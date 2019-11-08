@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel;
 using Autofac;
 using NUnit.Framework;
 using Shouldly;
-using SmartButler.DataAccess.Models;
 using SmartButler.DataAccess.Repositories;
 
 namespace SmartButler.DataAccess.Tests
@@ -23,17 +19,17 @@ namespace SmartButler.DataAccess.Tests
 			// arrange
 			var builder = new ContainerBuilder();
 			builder.RegisterType<RepositoryComponent>().AsSelf().SingleInstance();
-			builder.RegisterType<IngredientRepository>().As<IIngredientRepository>();
-			builder.RegisterType<BottlesRepository>().As<IBottlesRepository>();
+			builder.RegisterType<IngredientsRepository>().As<IIngredientsRepository>();
+			builder.RegisterType<DrinkRecipesRepository>().As<IDrinkRecipesRepository>();
 			var container = builder.Build();
-			var ingredientRepository = container.Resolve<IIngredientRepository>();
-			((IngredientRepository)ingredientRepository).Component.IsTest = true;
+			var ingredientRepository = container.Resolve<IIngredientsRepository>();
+			((IngredientsRepository) ingredientRepository).Component.IsTest = true;
 
 			// act
-			var bottlesRepository = container.Resolve<IBottlesRepository>();
+			var drinkRecipesRepository = container.Resolve<IDrinkRecipesRepository>();
 
 			// assert
-			((IngredientRepository)ingredientRepository).Component.IsTest.ShouldBe(true);
+			((DrinkRecipesRepository)drinkRecipesRepository).Component.IsTest.ShouldBe(true);
 
 		}
 

@@ -12,13 +12,13 @@ namespace SmartButler.Logic.ViewModels
 {
     public class IngredientsPageViewModel : BaseViewModel
     {
-        private readonly IIngredientRepository _ingredientRepository;
+        private readonly IIngredientsRepository _ingredientsRepository;
 
         public ReactiveList<Ingredient> Bottles { get; private set; } = new ReactiveList<Ingredient>();
 
-        public IngredientsPageViewModel(IIngredientRepository ingredientRepository, INavigationService navigationService)
+        public IngredientsPageViewModel(IIngredientsRepository ingredientsRepository, INavigationService navigationService)
         {
-	        _ingredientRepository = ingredientRepository;
+	        _ingredientsRepository = ingredientsRepository;
 
             AddBottleCommand =  ReactiveCommand.Create(() => { /*  Add bottle here */} );
 
@@ -29,7 +29,7 @@ namespace SmartButler.Logic.ViewModels
         public async Task ActivateAsync()
         {
            if(!Bottles.Any())
-               Bottles.AddRange(await _ingredientRepository.GetAllAsync());
+               Bottles.AddRange(await _ingredientsRepository.GetAllAsync());
         }
 
         public ToolbarControlViewModel ToolbarControlViewModel { get; private set; }
