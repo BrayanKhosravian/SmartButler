@@ -7,6 +7,7 @@ namespace SmartButler.DataAccess.Common
 	public static class TableNames
 	{
 		public const string DrinkRecipeTable = "DrinkRecipes";
+		public const string DrinkIngredientsTable = "DrinkIngredients";
 		public const string IngredientsTable = "Ingredients";
 	}
 }

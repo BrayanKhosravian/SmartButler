@@ -11,7 +11,10 @@ namespace SmartButler.DataAccess.Models
 	    public int Id { get; set; }
 
 	    [OneToMany(CascadeOperations = CascadeOperation.All)]
-		public List<Ingredient> Ingredients { get; set; } = new List<Ingredient>();
+	    public List<DrinkIngredient> DrinkIngredients { get; set; }
+
+		[Ignore]
+		public List<Ingredient> IngredientsForMapping { get; set; } = new List<Ingredient>();
 
 
     }

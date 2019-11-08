@@ -143,10 +143,17 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Moq">
+      <Version>4.13.1</Version>
+    </PackageReference>
     <PackageReference Include="Xamarin.Forms" Version="4.2.0.778463" />
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform" Version="6.2.9" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\SmartButler.Framework\SmartButler.Framework.csproj">
+      <Project>{22B9F84D-18BB-4A22-832B-7ECF33AA1D3F}</Project>
+      <Name>SmartButler.Framework</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SmartButler\SmartButler.csproj">
       <Project>{5C4AF7B3-3B55-4992-B50A-E8F4DB489573}</Project>
       <Name>SmartButler</Name>

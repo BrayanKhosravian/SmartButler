@@ -79,7 +79,7 @@ namespace SmartButler.DataAccess.Repositories
 		public Task<List<DrinkRecipe>> GetAllAvailableAsync()
 		{
 			return Component.Connection.Table<DrinkRecipe>()
-				.Where(d => d.Ingredients.All(i => i.IsAvailable)).ToListAsync();
+				.Where(d => d.IngredientsForMapping.All(i => i.IsAvailable)).ToListAsync();
 		}
 
 		private async Task<bool> IsInserted(DrinkRecipe drink)

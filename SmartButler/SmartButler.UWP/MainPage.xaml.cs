@@ -13,8 +13,8 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using Autofac;
-using SmartButler.Framework.Bluetooth;
 using Moq;
+using SmartButler.Framework.Bluetooth;
 
 namespace SmartButler.UWP
 {

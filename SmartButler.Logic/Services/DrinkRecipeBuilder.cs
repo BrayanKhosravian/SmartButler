@@ -46,7 +46,7 @@ namespace SmartButler.Logic.Services
 			if (ingredients.Any(ingredient => ingredient == null))
 				throw ExceptionFactory.Get<ArgumentNullException>("Any ingredient of 'ingredients' ins null!");
 
-			_drinkRecipe.Ingredients = ingredients;
+			_drinkRecipe.IngredientsForMapping = ingredients;
 			return this;
 		}
 
@@ -58,7 +58,7 @@ namespace SmartButler.Logic.Services
 				throw ExceptionFactory.Get<ArgumentNullException>("Any ingredient of 'ingredients' ins null!");
 
 			foreach (var ingredient in ingredients)
-				_drinkRecipe.Ingredients.Add(ingredient);
+				_drinkRecipe.IngredientsForMapping.Add(ingredient);
 
 			return this;
 		}
@@ -67,7 +67,7 @@ namespace SmartButler.Logic.Services
 		{
 			if (ingredient == null) throw ExceptionFactory.Get<ArgumentNullException>("'ingredient' is null");
 
-			_drinkRecipe.Ingredients.Add(ingredient);
+			_drinkRecipe.IngredientsForMapping.Add(ingredient);
 			return this;
 		}
 

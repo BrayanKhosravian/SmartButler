@@ -36,6 +36,8 @@ namespace SmartButler.DataAccess.Repositories
 		{
 			await ConfigureTableAsync<Ingredient>(TableNames.IngredientsTable);
 			await ConfigureTableAsync<DrinkRecipe>(TableNames.DrinkRecipeTable);
+			await ConfigureTableAsync<DrinkIngredient>(TableNames.DrinkIngredientsTable);
+
 		}
 
 		private async Task ConfigureTableAsync<TTable>(string tableName) where TTable : class, new()

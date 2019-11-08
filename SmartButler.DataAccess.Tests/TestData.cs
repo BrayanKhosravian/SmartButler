@@ -11,33 +11,33 @@ namespace SmartButler.DataAccess.Tests
 		{
 			yield return new Ingredient()
 			{
-				DrinkId = 1,
+				BottleIndex = 1,
 				Name = "I1"
 			};
 
 			yield return new Ingredient()
 			{
-				DrinkId = 2,
+				BottleIndex = 2,
 				Name = "I2"
 			};
 			yield return new Ingredient()
 			{
-				DrinkId = 3,
+				BottleIndex = 3,
 				Name = "I3"
 			};
 			yield return new Ingredient()
 			{
-				DrinkId = 4,
+				BottleIndex = 4,
 				Name = "I4"
 			};
 			yield return new Ingredient()
 			{
-				DrinkId = 5,
+				BottleIndex = 5,
 				Name = "I5"
 			};
 			yield return new Ingredient()
 			{
-				DrinkId = 6,
+				BottleIndex = 6,
 				Name = "I6"
 			};
 		}
