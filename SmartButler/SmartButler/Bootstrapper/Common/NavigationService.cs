@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Reactive.Threading.Tasks;
 using System.Threading.Tasks;
+using ReactiveUI;
 using SmartButler.Logic.Common;
 using SmartButler.Logic.Interfaces;
 using Xamarin.Forms;
@@ -38,7 +40,7 @@ namespace SmartButler.Bootstrapper.Common
         {
             var page = _pageRegistrar.Resolve<TViewModel>();
 
-            return _navigation.Value.PushAsync(page, animated);
+            return _navigation.Value.PushAsync(page, animated).ToObservable(RxApp.MainThreadScheduler).ToTask();
         }
 
         public Task PushModalAsync<TViewModel>(bool animated = false) where TViewModel : BaseViewModel

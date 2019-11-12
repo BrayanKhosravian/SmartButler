@@ -39,16 +39,25 @@ namespace SmartButler.DataAccess.Repositories
 	    {
 		    await Component.ConfigureAsync();
 
+			// do database mapping
 		    foreach (var drink in drinks)
 		    {
 			    foreach (var ingredient in drink.IngredientsForMapping)
 			    {
-				    drink.DrinkIngredients.Add(new DrinkIngredient()
-				    {
-						ByteImage = ingredient.ByteImage,
-						Milliliter = ingredient.Milliliter,
-						Name = ingredient.Name
-				    });
+					var drinkIngredient = new DrinkIngredient();
+					drinkIngredient.ByteImage = ingredient.ByteImage;
+					drinkIngredient.Milliliter = ingredient.Milliliter;
+					drinkIngredient.Name = ingredient.Name;
+
+					var t = await Component.Connection.Table<Ingredient>()
+						.Where(i => i.Name == ingredient.Name)
+						.FirstOrDefaultAsync();
+
+					drinkIngredient.Ingredient = t;
+					drinkIngredient.IngredientId = drinkIngredient.Ingredient.Id;
+
+				    drink.DrinkIngredients.Add(drinkIngredient);
+				    
 			    }
 			    await InsertWithChildrenAsync(drink);
 		    }

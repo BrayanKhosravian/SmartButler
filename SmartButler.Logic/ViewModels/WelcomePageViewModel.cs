@@ -16,7 +16,7 @@ namespace SmartButler.Logic.ViewModels
 
 	        BluetoothCommand = ReactiveCommand.Create(async () => await navigation.PushAsync<BluetoothPageViewModel>());
 
-            IngredientsCommand = ReactiveCommand.Create(async () => await navigation.PushAsync<IngredientsPageViewModel>());
+            IngredientsCommand = ReactiveCommand.Create( () =>  navigation.PushAsync<IngredientsPageViewModel>());
 
             DrinksCommand = ReactiveCommand.Create(async () => await navigation.PushAsync<DrinksPageViewModel>());
             

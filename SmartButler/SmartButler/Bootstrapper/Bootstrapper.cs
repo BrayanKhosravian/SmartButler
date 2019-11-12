@@ -28,7 +28,7 @@ namespace SmartButler.Bootstrapper
             var container = builder.Build();
 
 			// configure database
-			var ingredientFactory = new IngredientFactory(new IngredientBuilder());
+			var ingredientFactory = new IngredientsFactory(new IngredientBuilder());
 			await container.Resolve<IIngredientsRepository>().ConfigureAsync(ingredientFactory.GetDefaultIngredients());
 
 			var drinkRecipesFactory = new DrinkRecipeFactory(new DrinkRecipeBuilder());
