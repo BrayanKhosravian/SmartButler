@@ -3,6 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:controls="clr-namespace:SmartButler.View.Controls"
              xmlns:converters="clr-namespace:SmartButler.View.Converters;assembly=SmartButler.View"
+             xmlns:viewModels="clr-namespace:SmartButler.Logic.ViewModels;assembly=SmartButler.Logic"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             d:DataContext="{d:DesignInstance viewModels:IngredientsPageViewModel}"
              x:Class="SmartButler.View.Views.IngredientsPage">
     
     <ContentPage.Resources>
@@ -40,7 +43,6 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-            <Button Text="AddBottle" Command="{Binding AddBottleCommand}" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

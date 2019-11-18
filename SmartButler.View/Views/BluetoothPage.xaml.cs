@@ -23,7 +23,7 @@ namespace SmartButler.View.Views
 
         }
 
-		async void Handle_ItemTapped(object sender, ItemTappedEventArgs e)
+		async void Handle_ItemTapped(object sender, SelectedItemChangedEventArgs selectedItemChangedEventArgs)
 		{
 			if (e.Item == null)
 				return;
