@@ -1,9 +1,11 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using ReactiveUI;
 using SmartButler.DataAccess.Models;
 using SmartButler.DataAccess.Repositories;
+using SmartButler.Framework.Bluetooth;
 using SmartButler.Logic.Common;
 using SmartButler.Logic.Interfaces;
 using SmartButler.Logic.Services;
@@ -15,10 +17,12 @@ namespace SmartButler.Logic.ViewModels
         public ReactiveList<DrinkRecipe> Drinks { get; private set; } = new ReactiveList<DrinkRecipe>();
 
         private readonly IDrinkRecipesRepository _drinkRecipeRepository;
+        private readonly IBluetoothService _bluetoothService;
 
-        public DrinksPageViewModel(IDrinkRecipesRepository drinkRecipeRepository, INavigationService navigationService) 
+        public DrinksPageViewModel(IDrinkRecipesRepository drinkRecipeRepository, INavigationService navigationService, IBluetoothService bluetoothService) 
         {
             _drinkRecipeRepository = drinkRecipeRepository;
+            _bluetoothService = bluetoothService;
 
         }
 
@@ -37,5 +41,12 @@ namespace SmartButler.Logic.ViewModels
             ToolbarControlViewModel = vm;
         }
 
-    }
+		public void Transmit(DrinkRecipe drink)
+		{
+			//var data = drink.ToByteArray();
+			if (_bluetoothService.IsConnected())
+				_bluetoothService.WriteAsync(new byte[]{0xFF}, 0, 0);
+		}
+
+	}
 }

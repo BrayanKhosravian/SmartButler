@@ -19,7 +19,9 @@
         <StackLayout>
             <ListView ItemsSource="{Binding Drinks}"
                       ItemTapped="Handle_ItemTapped"
-                      CachingStrategy="RecycleElement" HasUnevenRows="true">
+                      CachingStrategy="RecycleElement"
+                      ItemSelected="ListView_OnItemSelected"
+                      HasUnevenRows="true">
 
                 <ListView.ItemTemplate>
                     <DataTemplate>

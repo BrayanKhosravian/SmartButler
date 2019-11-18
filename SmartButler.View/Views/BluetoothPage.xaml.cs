@@ -1,5 +1,6 @@
 ﻿using Xamarin.Forms;
 using ReactiveUI;
+using SmartButler.Framework.Bluetooth;
 using SmartButler.Logic.ViewModels;
 using Xamarin.Forms.Xaml;
 
@@ -22,16 +23,16 @@ namespace SmartButler.View.Views
 
         }
 
-        //async void Handle_ItemTapped(object sender, ItemTappedEventArgs e)
-        //{
-        //    if (e.Item == null)
-        //        return;
+		async void Handle_ItemTapped(object sender, ItemTappedEventArgs e)
+		{
+			if (e.Item == null)
+				return;
 
-        //    var device = ((ListView) sender).SelectedItem as BluetoothDevice;
-        //    await ViewModel.DeviceSelectedAsync(device.Mac, device.Name);
-        //}
+			var device = ((ListView)sender).SelectedItem as BluetoothDevice;
+			await ViewModel?.DeviceSelectedAsync(device.Mac, device.Name);
+		}
 
-        object IViewFor.ViewModel
+		object IViewFor.ViewModel
         {
             get => ViewModel;
             set => ViewModel = value as BluetoothPageViewModel;

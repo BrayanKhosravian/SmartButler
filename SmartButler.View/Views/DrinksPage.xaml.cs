@@ -2,6 +2,7 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using ReactiveUI;
+using SmartButler.DataAccess.Models;
 using SmartButler.Logic.ViewModels;
 
 namespace SmartButler.View.Views
@@ -40,6 +41,11 @@ namespace SmartButler.View.Views
         private void Tapped(object sender, EventArgs e)
         {
 	        
+        }
+
+        private void ListView_OnItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+	        ViewModel?.Transmit((DrinkRecipe)e.SelectedItem);
         }
     }
 }

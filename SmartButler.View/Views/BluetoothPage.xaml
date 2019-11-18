@@ -16,7 +16,8 @@
             IsEnabled="{Binding IsBusy}"/>
         <StackLayout>
             <ListView ItemsSource="{Binding BluetoothDevices}"
-                      CachingStrategy="RecycleElement">
+                      CachingStrategy="RecycleElement"
+                      ItemSelected="Handle_ItemTapped">
 
                 <!--Built in Cells-->
                 <ListView.ItemTemplate>
