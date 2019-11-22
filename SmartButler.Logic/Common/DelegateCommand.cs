@@ -10,7 +10,7 @@ namespace SmartButler.Logic.Common
 		void RaiseCanExecuteChanged();
 	}
 
-	class DelegateCommand : IDelegateCommand
+	public class DelegateCommand : IDelegateCommand
 	{
 		public event EventHandler CanExecuteChanged;
 

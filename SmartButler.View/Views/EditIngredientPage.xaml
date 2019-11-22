@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:viewModels="clr-namespace:SmartButler.Logic.ViewModels;assembly=SmartButler.Logic"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:converters="clr-namespace:SmartButler.View.Converters;assembly=SmartButler.View"
+             xmlns:system="clr-namespace:System;assembly=netstandard"
+             d:DataContext="{d:DesignInstance viewModels:EditIngredientPageViewModel}"             
+             x:Class="SmartButler.View.Views.EditIngredientPage"
+             mc:Ignorable="d">
+
+    <ContentPage.Resources>
+        <converters:Converters/>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Edit your ingredient!"
+                VerticalOptions="StartAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+
+            <Image Source="{Binding IngredientImage, Converter={StaticResource ByteArrayToImageSource}}"/>
+
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Ingredient name: "/>
+                <Entry Placeholder="Ingredient name" Text="{Binding IngredientName}" />
+            </StackLayout>
+
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Bottle position: "/>
+                <Picker Title="Bottle position"
+                        x:Name="IngredientPositionPicker"
+                        SelectedItem="{Binding IngredientPosition}"/>
+            </StackLayout>
+            
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Abort" Command="{Binding AbortCommand}"/>
+                <Button Text="Accept" Command="{Binding AcceptCommand}"/>
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

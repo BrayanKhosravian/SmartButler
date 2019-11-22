@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Reactive.Threading.Tasks;
 using System.Threading.Tasks;
+using Autofac;
+using Autofac.Core;
 using ReactiveUI;
 using SmartButler.Logic.Common;
 using SmartButler.Logic.Interfaces;
@@ -40,7 +42,14 @@ namespace SmartButler.Bootstrapper.Common
         {
             var page = _pageRegistrar.Resolve<TViewModel>();
 
-            return _navigation.Value.PushAsync(page, animated).ToObservable(RxApp.MainThreadScheduler).ToTask();
+            return _navigation.Value.PushAsync(page, animated);
+        }
+
+        public Task PushAsync<TViewModel>(Parameter parameter, bool animated = false) where TViewModel : BaseViewModel
+        {
+	        var page = _pageRegistrar.Resolve<TViewModel>(parameter);
+
+	        return _navigation.Value.PushAsync(page, animated);
         }
 
         public Task PushModalAsync<TViewModel>(bool animated = false) where TViewModel : BaseViewModel

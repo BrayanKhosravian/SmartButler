@@ -17,6 +17,7 @@ namespace SmartButler.DataAccess.Models
 		[Ignore]
 		public List<Ingredient> IngredientsForMapping { get; set; } = new List<Ingredient>();
 
+
 		public byte[] ToByteArray()
 		{
 			byte[] result = new byte[23];

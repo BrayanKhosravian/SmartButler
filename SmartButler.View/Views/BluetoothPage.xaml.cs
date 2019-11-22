@@ -25,7 +25,7 @@ namespace SmartButler.View.Views
 
 		async void Handle_ItemTapped(object sender, SelectedItemChangedEventArgs selectedItemChangedEventArgs)
 		{
-			if (e.Item == null)
+			if (selectedItemChangedEventArgs == null)
 				return;
 
 			var device = ((ListView)sender).SelectedItem as BluetoothDevice;

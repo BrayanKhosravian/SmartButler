@@ -43,13 +43,13 @@ namespace SmartButler.Bootstrapper.Common
 		/// <summary>
 		/// Resolve the view using 1 parameter
 		/// </summary>
-		Page ResolveWithParameter<TViewModel>(NamedParameter parameter)
+		Page Resolve<TViewModel>(TypedParameter parameter)
             where TViewModel : BaseViewModel;
 
 		/// <summary>
 		/// Resolve the view without using more parameters
 		/// </summary>
-		Page ResolveWithParameters<TViewModel>(params Parameter[] parameters)
+		Page Resolve<TViewModel>(params Parameter[] parameters)
             where TViewModel : BaseViewModel;
     }
 
@@ -91,7 +91,7 @@ namespace SmartButler.Bootstrapper.Common
             return page;
         }
 
-        public Page ResolveWithParameter<TViewModel>(NamedParameter parameter)
+        public Page Resolve<TViewModel>(TypedParameter parameter)
 	        where TViewModel : BaseViewModel
         {
 
@@ -103,7 +103,7 @@ namespace SmartButler.Bootstrapper.Common
             return page;
         }
 
-        public Page ResolveWithParameters<TViewModel>(params Parameter[] parameters) 
+        public Page Resolve<TViewModel>(params Parameter[] parameters) 
 	        where TViewModel : BaseViewModel
         {
             var vm = GetViewModel<TViewModel>(parameters);

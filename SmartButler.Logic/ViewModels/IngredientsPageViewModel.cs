@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Linq;
+using System.Reactive.Linq;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using Autofac;
 using SmartButler.DataAccess.Models;
 using SmartButler.DataAccess.Repositories;
 using SmartButler.Logic.Common;
@@ -12,21 +14,49 @@ namespace SmartButler.Logic.ViewModels
 {
     public class IngredientsPageViewModel : BaseViewModel
     {
-        private readonly IIngredientsRepository _ingredientsRepository;
+	    public ReactiveList<Ingredient> Bottles { get; private set; } = new ReactiveList<Ingredient>();
 
-        public ReactiveList<Ingredient> Bottles { get; private set; } = new ReactiveList<Ingredient>();
+	    private Ingredient _selectedIngredient;
 
-        public IngredientsPageViewModel(IIngredientsRepository ingredientsRepository, INavigationService navigationService)
+	    private readonly IIngredientsRepository _ingredientsRepository;
+	    private readonly INavigationService _navigationService;
+	    private readonly IUserInteraction _userInteraction;
+
+	    public IngredientsPageViewModel(IIngredientsRepository ingredientsRepository, 
+		    INavigationService navigationService,
+		    IUserInteraction userInteraction)
         {
 	        _ingredientsRepository = ingredientsRepository;
+	        _navigationService = navigationService;
+	        _userInteraction = userInteraction;
 
-            AddBottleCommand =  ReactiveCommand.Create(() => { /*  Add bottle here */} );
+	        this.WhenAnyValue(vm => vm.SelectedIngredient).Skip(1)
+		        .Where(ingredient => ingredient != null)
+		        .Subscribe( async ingredient =>
+		        {
+			       var result = await _userInteraction.DisplayActionSheetAsync($"{ingredient.Name} selected!",
+				        "Cancel",
+				        string.Empty,
+				        "Edit");
+
+			       if (result == "Edit")
+				       await _navigationService.PushAsync<EditIngredientPageViewModel>(new TypedParameter(typeof(Ingredient), ingredient));
+
+		        });
+
 
         }
 
-        public ReactiveCommand AddBottleCommand { get; set; }
+	    public ReactiveCommand AddBottleCommand { get; set; }
 
-        public async Task ActivateAsync()
+
+        public Ingredient SelectedIngredient
+        {
+	        get => _selectedIngredient;
+	        set => this.RaiseAndSetIfChanged(ref _selectedIngredient, value);
+        }
+
+		public async Task ActivateAsync()
         {
            if(!Bottles.Any())
                Bottles.AddRange(await _ingredientsRepository.GetAllAsync());

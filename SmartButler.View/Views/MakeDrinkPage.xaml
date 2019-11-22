@@ -4,8 +4,10 @@
              xmlns:controls="clr-namespace:SmartButler.View.Controls"
              xmlns:viewModels="clr-namespace:SmartButler.Logic.ViewModels;assembly=SmartButler.Logic"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              d:DataContext="{d:DesignInstance viewModels:MakeDrinkPageViewModel}"
-             x:Class="SmartButler.View.Views.MakeDrinkPage">
+             x:Class="SmartButler.View.Views.MakeDrinkPage"
+             mc:Ignorable="d">
 
     <NavigationPage.TitleView>
         <controls:ToolBarControl BindingContext="{Binding ToolbarControlViewModel, Mode=TwoWay}"/>

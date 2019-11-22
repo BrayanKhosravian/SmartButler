@@ -35,18 +35,18 @@ namespace SmartButler.Logic.ViewModels
 	        }
         }
 
-        public ToolbarControlViewModel ToolbarControlViewModel { get; private set; }
-        public void SetToolBarControlViewModel(ToolbarControlViewModel vm)
-        {
-            ToolbarControlViewModel = vm;
-        }
-
-		public void Transmit(DrinkRecipe drink)
+        public void Transmit(DrinkRecipe drink)
 		{
 			//var data = drink.ToByteArray();
 			if (_bluetoothService.IsConnected())
 				_bluetoothService.WriteAsync(new byte[]{0xFF}, 0, 0);
 		}
 
-	}
+        public ToolbarControlViewModel ToolbarControlViewModel { get; private set; }
+        public void SetToolBarControlViewModel(ToolbarControlViewModel vm)
+        {
+	        ToolbarControlViewModel = vm;
+        }
+
+    }
 }

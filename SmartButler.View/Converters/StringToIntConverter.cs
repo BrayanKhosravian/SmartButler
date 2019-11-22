@@ -1,25 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Globalization;
-using System.IO;
 using System.Text;
 using Xamarin.Forms;
 
 namespace SmartButler.View.Converters
 {
-	public class ByteArrayToImageSourceConverter : IValueConverter
+	public class StringToIntConverter : IValueConverter
 	{
 		public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
 		{
-			var byteImage = value as byte[];
-			if (byteImage == null) return null;
-
-			return ImageSource.FromStream(() => new MemoryStream(byteImage));
+			int.TryParse(value.ToString(), out var number);
+			return number;
 		}
 
 		public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
 		{
-			throw new NotImplementedException();
+			return value?.ToString();
 		}
 	}
 }

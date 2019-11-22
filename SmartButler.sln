@@ -25,7 +25,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartButler.DataAccess", "S
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartButler.DataAccess.Tests", "SmartButler.DataAccess.Tests\SmartButler.DataAccess.Tests.csproj", "{1B84E690-F176-445E-B811-7A47E92B8449}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Integration.Tests", "Integration.Tests\Integration.Tests.csproj", "{AA42A8E6-E0A2-43E9-8E4D-4BAE5D5E0B85}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Integration.Tests", "Integration.Tests\Integration.Tests.csproj", "{AA42A8E6-E0A2-43E9-8E4D-4BAE5D5E0B85}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

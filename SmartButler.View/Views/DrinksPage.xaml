@@ -5,13 +5,13 @@
              xmlns:converters="clr-namespace:SmartButler.View.Converters;assembly=SmartButler.View"
              xmlns:viewModels="clr-namespace:SmartButler.Logic.ViewModels;assembly=SmartButler.Logic"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              d:DataContext="{d:DesignInstance viewModels:DrinksPageViewModel}"
-             x:Class="SmartButler.View.Views.DrinksPage">
+             x:Class="SmartButler.View.Views.DrinksPage"
+             mc:Ignorable="d">
 
     <ContentPage.Resources>
-        <ResourceDictionary>
-            <converters:ByteArrayToImageSourceConverter x:Key="byteArrayToImageSource"/>
-        </ResourceDictionary>
+        <converters:Converters/>
     </ContentPage.Resources>
 
     <NavigationPage.TitleView>
@@ -38,7 +38,7 @@
                                     </Grid.ColumnDefinitions>
 
                                     <Label Text="{Binding Id}" VerticalOptions="Center" HorizontalOptions="Start"/>
-                                    <Image Source="{Binding ByteImage, Converter={StaticResource byteArrayToImageSource}}"
+                                    <Image Source="{Binding ByteImage, Converter={StaticResource ByteArrayToImageSource}}"
                                            Grid.Column="1" HeightRequest="150" WidthRequest="150" HorizontalOptions="Start" />
                                     <controls:RepeaterView Grid.Column="2" ItemsSource="{Binding DrinkIngredients, Mode=TwoWay}">
                                         <controls:RepeaterView.ItemTemplate>
@@ -51,9 +51,6 @@
                                                             <ColumnDefinition/>
                                                             <ColumnDefinition/>
                                                         </Grid.ColumnDefinitions>
-                                                        <Grid.GestureRecognizers>
-                                                            <TapGestureRecognizer Tapped="Tapped" />
-                                                        </Grid.GestureRecognizers>
 
                                                         <Label Text="{Binding Name}"/>
                                                         <Label Grid.Column="1" Text="{Binding Milliliter}"/>

@@ -2,6 +2,7 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using ReactiveUI;
+using SmartButler.DataAccess.Models;
 using SmartButler.Logic.ViewModels;
 
 namespace SmartButler.View.Views
@@ -19,19 +20,7 @@ namespace SmartButler.View.Views
 		    });
 		}
 
-
-	    private void Handle_ItemTapped(object sender, ItemTappedEventArgs e)
-	    {
-	        
-
-	    }
-
-	    protected override void OnBindingContextChanged()
-	    {
-	        base.OnBindingContextChanged();
-	    }
-
-	    object IViewFor.ViewModel
+		object IViewFor.ViewModel
 	    {
 	        get => ViewModel;
 	        set => ViewModel = value as IngredientsPageViewModel;
@@ -41,6 +30,19 @@ namespace SmartButler.View.Views
 	    {
 	        get => BindingContext as IngredientsPageViewModel;
 	        set => BindingContext = value as IngredientsPageViewModel;
+	    }
+
+	    private void IngredientSelected(object sender, SelectedItemChangedEventArgs e)
+	    {
+			if(e is null) return;
+
+		    var ingredient = e.SelectedItem as Ingredient;
+
+		    ViewModel.SelectedIngredient = ingredient;
+
+		    ((ListView) sender).SelectedItem = null;
+
+
 	    }
 	}
 }

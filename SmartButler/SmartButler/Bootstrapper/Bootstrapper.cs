@@ -43,6 +43,7 @@ namespace SmartButler.Bootstrapper
             pageRegistrar.Register<WelcomePageViewModel, WelcomePage>();
             pageRegistrar.Register<MakeDrinkPageViewModel, MakeDrinkPage>();
             pageRegistrar.Register<SettingsPageViewModel, SettingsPage>();
+			pageRegistrar.Register<EditIngredientPageViewModel, EditIngredientPage>();
 
             var mainPage = pageRegistrar.Resolve<WelcomePageViewModel>();
           

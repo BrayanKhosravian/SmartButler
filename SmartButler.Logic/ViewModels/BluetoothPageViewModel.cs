@@ -36,12 +36,12 @@ namespace SmartButler.Logic.ViewModels
             var connected = await _bluetoothService.ConnectAsync(name, mac);
             if (connected)
             { 
-                await _userInteraction.DisplayAlert("Info", "Connected to device!", "OK");
+                await _userInteraction.DisplayAlertAsync("Info", "Connected to device!", "OK");
                 await _navigationService.PopToRootAsync();
             }
             else
             {
-                await _userInteraction.DisplayAlert("Info", "You were not able to connect to the device!", "OK");
+                await _userInteraction.DisplayAlertAsync("Info", "You were not able to connect to the device!", "OK");
             }
 
             IsBusy = false;
