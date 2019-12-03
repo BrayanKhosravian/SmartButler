@@ -14,11 +14,11 @@ namespace SmartButler.Logic.ViewModels
 	    public WelcomePageViewModel(INavigationService navigation, IBluetoothService bluetoothService)
         {
 
-	        BluetoothCommand = ReactiveCommand.Create(async () => await navigation.PushAsync<BluetoothPageViewModel>());
+	        BluetoothCommand = ReactiveCommand.CreateFromTask(async () => await navigation.PushAsync<BluetoothPageViewModel>());
 
-            IngredientsCommand = ReactiveCommand.Create( () =>  navigation.PushAsync<IngredientsPageViewModel>());
+            IngredientsCommand = ReactiveCommand.CreateFromTask(async () => await navigation.PushAsync<IngredientsPageViewModel>());
 
-            DrinksCommand = ReactiveCommand.Create(async () => await navigation.PushAsync<DrinksPageViewModel>());
+            DrinksCommand = ReactiveCommand.CreateFromTask(async () => await navigation.PushAsync<DrinksPageViewModel>());
             
             MakeDrinkCommand = new DelegateCommand(async _ => await navigation.PushAsync<MakeDrinkPageViewModel>(),
 	            _ => bluetoothService.IsConnected() || Settings.EnableCommands);

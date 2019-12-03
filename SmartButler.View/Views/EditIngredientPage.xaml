@@ -22,7 +22,6 @@
 
             <Image Source="{Binding IngredientImage, Converter={StaticResource ByteArrayToImageSource}}"/>
 
-
             <StackLayout Orientation="Horizontal">
                 <Label Text="Ingredient name: "/>
                 <Entry Placeholder="Ingredient name" Text="{Binding IngredientName}" />

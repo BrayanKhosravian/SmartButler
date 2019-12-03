@@ -40,7 +40,12 @@ namespace SmartButler.Logic.ViewModels
 			{
 				if (!await IsInputValidAsync()) return;
 
-				// update repository
+				Ingredient.Name = _ingredientName;
+				Ingredient.ByteImage = _ingredientImage;
+				Ingredient.BottleIndex = _ingredientPosition;
+
+				await _ingredientsRepository.UpdateAsync(Ingredient);
+				await _navigationService.PopAsync();
 			});
 		}
 

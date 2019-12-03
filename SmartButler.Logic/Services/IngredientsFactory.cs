@@ -22,19 +22,19 @@ namespace SmartButler.Logic.Services
 		public IEnumerable<Ingredient> GetDefaultIngredients()
 		{
 
-			yield return _ingredientBuilder.Default(IngredientNames.Whisky, "Bottles.Whisky.jpeg")
+			yield return _ingredientBuilder.Default(IngredientNames.Whisky, "Ingredients.Whisky.jpeg")
 				.SetBottleIndex(1).Build();
 
-			yield return _ingredientBuilder.Default(IngredientNames.Vodka, "Bottles.Vodka.jpg")
+			yield return _ingredientBuilder.Default(IngredientNames.Vodka, "Ingredients.Vodka.jpg")
 				.SetBottleIndex(2).Build();
 
-			yield return _ingredientBuilder.Default(IngredientNames.OrangeJuice, "Bottles.OrangeJuice.jpg")
+			yield return _ingredientBuilder.Default(IngredientNames.OrangeJuice, "Ingredients.OrangeJuice.jpg")
 				.SetBottleIndex(3).Build();
 
-			yield return _ingredientBuilder.Default(IngredientNames.CranberryJuice, "Bottles.CranberryJuice.jpg")
+			yield return _ingredientBuilder.Default(IngredientNames.CranberryJuice, "Ingredients.CranberryJuice.jpg")
 				.SetBottleIndex(4).Build();
 
-			yield return _ingredientBuilder.Default(IngredientNames.LemonJuice, "Bottles.LemonJuice.jpg")
+			yield return _ingredientBuilder.Default(IngredientNames.LemonJuice, "Ingredients.LemonJuice.jpg")
 				.SetBottleIndex(5).Build();
 
 			yield return _ingredientBuilder.Default(IngredientNames.None, "NONE")

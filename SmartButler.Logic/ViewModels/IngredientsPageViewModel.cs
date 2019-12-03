@@ -14,7 +14,7 @@ namespace SmartButler.Logic.ViewModels
 {
     public class IngredientsPageViewModel : BaseViewModel
     {
-	    public ReactiveList<Ingredient> Bottles { get; private set; } = new ReactiveList<Ingredient>();
+	    public ReactiveList<Ingredient> Ingredients { get; private set; } = new ReactiveList<Ingredient>();
 
 	    private Ingredient _selectedIngredient;
 
@@ -50,19 +50,22 @@ namespace SmartButler.Logic.ViewModels
 	    public ReactiveCommand AddBottleCommand { get; set; }
 
 
-        public Ingredient SelectedIngredient
+	    public async Task ActivateAsync()
+	    {
+		    using (Ingredients.SuppressChangeNotifications())
+		    {
+				Ingredients.Clear();
+				Ingredients.AddRange(await _ingredientsRepository.GetAllAsync());
+			}
+	    }
+
+	    public Ingredient SelectedIngredient
         {
 	        get => _selectedIngredient;
 	        set => this.RaiseAndSetIfChanged(ref _selectedIngredient, value);
         }
 
-		public async Task ActivateAsync()
-        {
-           if(!Bottles.Any())
-               Bottles.AddRange(await _ingredientsRepository.GetAllAsync());
-        }
-
-        public ToolbarControlViewModel ToolbarControlViewModel { get; private set; }
+	    public ToolbarControlViewModel ToolbarControlViewModel { get; private set; }
         public void SetToolBarControlViewModel(ToolbarControlViewModel vm)
         {
             ToolbarControlViewModel = vm;

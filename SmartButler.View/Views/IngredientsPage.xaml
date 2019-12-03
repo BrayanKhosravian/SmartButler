@@ -22,7 +22,7 @@
 
     <ContentPage.Content>
         <StackLayout>
-            <ListView ItemsSource="{Binding Bottles}"
+            <ListView ItemsSource="{Binding Ingredients}"
                       ItemSelected="IngredientSelected"
                       CachingStrategy="RecycleElement" 
                       HasUnevenRows="true">
