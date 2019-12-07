@@ -26,8 +26,6 @@ namespace SmartButler.Logic.Services
 	{
 		private DrinkRecipe _drinkRecipe = new DrinkRecipe();
 
-		public DrinkRecipeBuilder(IResourceManager resourceManager) : base(resourceManager) { }
-
 		protected override DrinkRecipeBuilder BuilderInstance => this;
 
 		public override DrinkRecipeBuilder Default()

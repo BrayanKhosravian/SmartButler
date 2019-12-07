@@ -29,10 +29,10 @@ namespace SmartButler.Bootstrapper
             var container = builder.Build();
 
 			// configure database
-			var ingredientFactory = new IngredientsFactory(new IngredientBuilder(new ResourceManager()));
+			var ingredientFactory = new IngredientsFactory(new IngredientBuilder());
 			await container.Resolve<IIngredientsRepository>().ConfigureAsync(ingredientFactory.GetDefaultIngredients());
 
-			var drinkRecipesFactory = new DrinkRecipeFactory(new DrinkRecipeBuilder(new ResourceManager()));
+			var drinkRecipesFactory = new DrinkRecipeFactory(new DrinkRecipeBuilder());
 			await container.Resolve<IDrinkRecipesRepository>().ConfigureAsync(drinkRecipesFactory.GetDefaultDrinks());
 
 			// register view and view model relationship

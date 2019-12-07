@@ -26,8 +26,6 @@ namespace SmartButler.Logic.Services
 	public class IngredientBuilder : BaseLiquidBuilder<Ingredient, IngredientBuilder>, IIngredientBuilder
 	{
 		private Ingredient _ingredient = new Ingredient();
-		public IngredientBuilder(IResourceManager resourceManager) : base(resourceManager) { }
-
 		protected override IngredientBuilder BuilderInstance => this;
 
 		public override IngredientBuilder Default()

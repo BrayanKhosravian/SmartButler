@@ -6,15 +6,9 @@ using SmartButler.Framework.Common;
 
 namespace SmartButler.Framework.Resources
 {
-
-	public interface IResourceManager
+	public static class ResourceManager
 	{
-		byte[] GetImageAsBytes(string resourcePath);
-	}
-
-	public class ResourceManager : IResourceManager
-	{
-		public byte[] GetImageAsBytes(string resourcePath)
+		public static byte[] GetImageAsBytes(string resourcePath)
 		{
 			if (string.IsNullOrWhiteSpace(resourcePath))
 				throw ExceptionFactory.Get<ArgumentException>("'resourcePath' is null or has whitespaces");

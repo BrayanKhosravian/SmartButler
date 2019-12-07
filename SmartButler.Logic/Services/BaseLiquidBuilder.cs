@@ -9,12 +9,6 @@ namespace SmartButler.Logic.Services
 		where TLiquidBase : LiquidBase
 		where TBuilder : BaseLiquidBuilder<TLiquidBase, TBuilder>
 	{
-		private readonly IResourceManager _resourceManager;
-
-		protected BaseLiquidBuilder(IResourceManager resourceManager)
-		{
-			_resourceManager = resourceManager;
-		}
 
 		protected string Name;
 		protected byte[] ByteImage;
@@ -50,7 +44,7 @@ namespace SmartButler.Logic.Services
 			if (string.IsNullOrWhiteSpace(resourcePath))
 				throw ExceptionFactory.Get<ArgumentException>("'resourcePath' is null or has whitespaces");
 
-			var byteImage = _resourceManager.GetImageAsBytes(resourcePath);
+			var byteImage = ResourceManager.GetImageAsBytes(resourcePath);
 			ByteImage = byteImage;
 
 			return BuilderInstance;

@@ -19,9 +19,8 @@ namespace SmartButler.Bootstrapper.Modules
             builder.RegisterType<DrinkRecipeBuilder>().As<IDrinkRecipeBuilder>();
             builder.RegisterType<IngredientBuilder>().As<IIngredientBuilder>();
             builder.RegisterType<UserInteraction>().As<IUserInteraction>();
-            builder.RegisterType<ResourceManager>().As<IResourceManager>();
 
-			// register singleton services
+            // register singleton services
 			builder.RegisterType<NavigationService>().As<INavigationService>().SingleInstance();
             builder.RegisterType<PageRegistrar>().As<IPageRegistrar>().SingleInstance();
 
