@@ -3,6 +3,7 @@ using Autofac;
 using SmartButler.Bootstrapper.Common;
 using SmartButler.Bootstrapper.Modules;
 using SmartButler.DataAccess.Repositories;
+using SmartButler.Framework.Resources;
 using SmartButler.Logic.Services;
 using SmartButler.Logic.ViewModels;
 using SmartButler.View.Views;
@@ -28,10 +29,10 @@ namespace SmartButler.Bootstrapper
             var container = builder.Build();
 
 			// configure database
-			var ingredientFactory = new IngredientsFactory(new IngredientBuilder());
+			var ingredientFactory = new IngredientsFactory(new IngredientBuilder(new ResourceManager()));
 			await container.Resolve<IIngredientsRepository>().ConfigureAsync(ingredientFactory.GetDefaultIngredients());
 
-			var drinkRecipesFactory = new DrinkRecipeFactory(new DrinkRecipeBuilder());
+			var drinkRecipesFactory = new DrinkRecipeFactory(new DrinkRecipeBuilder(new ResourceManager()));
 			await container.Resolve<IDrinkRecipesRepository>().ConfigureAsync(drinkRecipesFactory.GetDefaultDrinks());
 
 			// register view and view model relationship

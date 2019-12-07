@@ -1,6 +1,7 @@
 ﻿using Autofac;
 using SmartButler.Bootstrapper.Common;
 using SmartButler.DataAccess.Repositories;
+using SmartButler.Framework.Resources;
 using SmartButler.Logic.Interfaces;
 using SmartButler.Logic.Services;
 using Xamarin.Forms;
@@ -18,6 +19,7 @@ namespace SmartButler.Bootstrapper.Modules
             builder.RegisterType<DrinkRecipeBuilder>().As<IDrinkRecipeBuilder>();
             builder.RegisterType<IngredientBuilder>().As<IIngredientBuilder>();
             builder.RegisterType<UserInteraction>().As<IUserInteraction>();
+            builder.RegisterType<ResourceManager>().As<IResourceManager>();
 
 			// register singleton services
 			builder.RegisterType<NavigationService>().As<INavigationService>().SingleInstance();

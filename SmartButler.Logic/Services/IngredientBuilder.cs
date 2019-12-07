@@ -1,6 +1,7 @@
 ﻿using System;
 using SmartButler.DataAccess.Models;
 using SmartButler.Framework.Common;
+using SmartButler.Framework.Resources;
 
 
 namespace SmartButler.Logic.Services
@@ -25,6 +26,7 @@ namespace SmartButler.Logic.Services
 	public class IngredientBuilder : BaseLiquidBuilder<Ingredient, IngredientBuilder>, IIngredientBuilder
 	{
 		private Ingredient _ingredient = new Ingredient();
+		public IngredientBuilder(IResourceManager resourceManager) : base(resourceManager) { }
 
 		protected override IngredientBuilder BuilderInstance => this;
 

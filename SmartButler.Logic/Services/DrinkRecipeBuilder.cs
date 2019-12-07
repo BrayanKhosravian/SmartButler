@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using SmartButler.DataAccess.Models;
 using SmartButler.Framework.Common;
+using SmartButler.Framework.Resources;
 
 namespace SmartButler.Logic.Services
 {
@@ -24,6 +25,8 @@ namespace SmartButler.Logic.Services
 	public class DrinkRecipeBuilder : BaseLiquidBuilder<DrinkRecipe, DrinkRecipeBuilder>, IDrinkRecipeBuilder
 	{
 		private DrinkRecipe _drinkRecipe = new DrinkRecipe();
+
+		public DrinkRecipeBuilder(IResourceManager resourceManager) : base(resourceManager) { }
 
 		protected override DrinkRecipeBuilder BuilderInstance => this;
 

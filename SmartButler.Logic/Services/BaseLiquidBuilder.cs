@@ -1,9 +1,7 @@
 ﻿using System;
-using System.IO;
-using System.Linq;
-using System.Reflection;
 using SmartButler.DataAccess.Models;
 using SmartButler.Framework.Common;
+using SmartButler.Framework.Resources;
 
 namespace SmartButler.Logic.Services
 {
@@ -11,6 +9,13 @@ namespace SmartButler.Logic.Services
 		where TLiquidBase : LiquidBase
 		where TBuilder : BaseLiquidBuilder<TLiquidBase, TBuilder>
 	{
+		private readonly IResourceManager _resourceManager;
+
+		protected BaseLiquidBuilder(IResourceManager resourceManager)
+		{
+			_resourceManager = resourceManager;
+		}
+
 		protected string Name;
 		protected byte[] ByteImage;
 
@@ -45,21 +50,7 @@ namespace SmartButler.Logic.Services
 			if (string.IsNullOrWhiteSpace(resourcePath))
 				throw ExceptionFactory.Get<ArgumentException>("'resourcePath' is null or has whitespaces");
 
-			var assembly = AppDomain.CurrentDomain.GetAssemblies().SingleOrDefault(a => a.GetName().Name == "SmartButler.Framework");
-
-			byte[] byteImage;
-			using (var stream = assembly?.GetManifestResourceStream(resourcePath))
-			{
-				if (stream == null)
-				{
-					ByteImage = null;
-					return BuilderInstance;
-				}
-				var length = stream.Length;
-				byteImage = new byte[length];
-				stream.Read(byteImage, 0, (int)length);
-			}
-
+			var byteImage = _resourceManager.GetImageAsBytes(resourcePath);
 			ByteImage = byteImage;
 
 			return BuilderInstance;
