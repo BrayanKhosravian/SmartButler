@@ -10,7 +10,7 @@ namespace SmartButler.Logic.Services
 	{
 		// from Base
 		DrinkRecipeBuilder Default();
-		DrinkRecipeBuilder Default(string name, string partialResource);
+		DrinkRecipeBuilder Default(string name, string resourcePath);
 		DrinkRecipeBuilder SetName(string name);
 		DrinkRecipeBuilder SetByteImage(string partialResource);
 
@@ -33,10 +33,10 @@ namespace SmartButler.Logic.Services
 			return base.Default();
 		}
 
-		public override DrinkRecipeBuilder Default(string name, string partialResource)
+		public override DrinkRecipeBuilder Default(string name, string resourcePath)
 		{
 			_drinkRecipe = new DrinkRecipe();
-			return base.Default(name, partialResource);
+			return base.Default(name, resourcePath);
 		}
 
 		public DrinkRecipeBuilder SetIngredients(List<Ingredient> ingredients)

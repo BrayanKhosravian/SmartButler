@@ -4,4 +4,38 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Resources\Drinks\Blizzard.JPG" />
+    <None Remove="Resources\Drinks\BourbonSquash.JPG" />
+    <None Remove="Resources\Drinks\CapeCod.JPG" />
+    <None Remove="Resources\Drinks\HotToddy.JPG" />
+    <None Remove="Resources\Drinks\Lemondrop.JPG" />
+    <None Remove="Resources\Drinks\Madras.jpg" />
+    <None Remove="Resources\Drinks\Screwdriver.JPG" />
+    <None Remove="Resources\Drinks\WhiskySour.JPG" />
+    <None Remove="Resources\Ingredients\CranberryJuice.jpg" />
+    <None Remove="Resources\Ingredients\LemonJuice.jpg" />
+    <None Remove="Resources\Ingredients\None.jpg" />
+    <None Remove="Resources\Ingredients\OrangeJuice.jpg" />
+    <None Remove="Resources\Ingredients\Vodka.jpg" />
+    <None Remove="Resources\Ingredients\Whisky.jpeg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Drinks\Blizzard.JPG" />
+    <EmbeddedResource Include="Resources\Drinks\BourbonSquash.JPG" />
+    <EmbeddedResource Include="Resources\Drinks\CapeCod.JPG" />
+    <EmbeddedResource Include="Resources\Drinks\HotToddy.JPG" />
+    <EmbeddedResource Include="Resources\Drinks\Lemondrop.JPG" />
+    <EmbeddedResource Include="Resources\Drinks\Madras.jpg" />
+    <EmbeddedResource Include="Resources\Drinks\Screwdriver.JPG" />
+    <EmbeddedResource Include="Resources\Drinks\WhiskySour.JPG" />
+    <EmbeddedResource Include="Resources\Ingredients\CranberryJuice.jpg" />
+    <EmbeddedResource Include="Resources\Ingredients\LemonJuice.jpg" />
+    <EmbeddedResource Include="Resources\Ingredients\OrangeJuice.jpg" />
+    <EmbeddedResource Include="Resources\Ingredients\None.jpg" />
+    <EmbeddedResource Include="Resources\Ingredients\Vodka.jpg" />
+    <EmbeddedResource Include="Resources\Ingredients\Whisky.jpeg" />
+  </ItemGroup>
+
 </Project>

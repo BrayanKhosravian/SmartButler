@@ -26,10 +26,10 @@ namespace SmartButler.Logic.Services
 			return BuilderInstance;
 		}
 
-		public virtual TBuilder Default(string name, string partialResource)
+		public virtual TBuilder Default(string name, string resourcePath)
 		{
 			SetName(name);
-			SetByteImage(partialResource);
+			SetByteImage(resourcePath);
 
 			return BuilderInstance;
 		}
@@ -40,16 +40,15 @@ namespace SmartButler.Logic.Services
 			return BuilderInstance;
 		}
 
-		public TBuilder SetByteImage(string partialResource)
+		public TBuilder SetByteImage(string resourcePath)
 		{
-			if (string.IsNullOrWhiteSpace(partialResource))
-				throw ExceptionFactory.Get<ArgumentException>("'partialResource' is null or has whitespaces");
+			if (string.IsNullOrWhiteSpace(resourcePath))
+				throw ExceptionFactory.Get<ArgumentException>("'resourcePath' is null or has whitespaces");
 
-			var assembly = AppDomain.CurrentDomain.GetAssemblies().SingleOrDefault(a => a.GetName().Name == "SmartButler");
-			var resource = string.Join(".", "SmartButler.Resources", partialResource);
+			var assembly = AppDomain.CurrentDomain.GetAssemblies().SingleOrDefault(a => a.GetName().Name == "SmartButler.Framework");
 
 			byte[] byteImage;
-			using (var stream = assembly?.GetManifestResourceStream(resource))
+			using (var stream = assembly?.GetManifestResourceStream(resourcePath))
 			{
 				if (stream == null)
 				{
