@@ -18,6 +18,8 @@ namespace SmartButler.DataAccess.Models
 		[Ignore]
 		public List<Ingredient> IngredientsForMapping { get; set; } = new List<Ingredient>();
 
+		[Ignore] public bool IsAvailable => DrinkIngredients.All(i => i.Ingredient.BottleIndex != 0);
+
 
 		public byte[] ToByteArray()
 		{

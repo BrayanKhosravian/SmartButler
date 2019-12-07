@@ -42,10 +42,11 @@
                                     <controls:RepeaterView Grid.Column="2" ItemsSource="{Binding DrinkIngredients, Mode=TwoWay}">
                                         <controls:RepeaterView.ItemTemplate>
                                             <DataTemplate>
-                                                <ViewCell>
+                                                <ViewCell IsEnabled="{Binding IsAvailable}">
                                                     <Grid Padding="5"
                                                           Margin="5"
-                                                          HorizontalOptions="EndAndExpand">
+                                                          HorizontalOptions="EndAndExpand"
+                                                          BackgroundColor="{Binding IsAvailable, Converter={StaticResource BoolToColorConverter}}">
                                                         <Grid.ColumnDefinitions>
                                                             <ColumnDefinition/>
                                                             <ColumnDefinition/>

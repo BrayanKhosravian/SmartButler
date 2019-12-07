@@ -10,5 +10,6 @@
     <converters:StringToIntConverter x:Key="StringToIntConverter"/>
     <converters:ByteArrayToImageSourceConverter x:Key="ByteArrayToImageSourceConverter"/>
     <converters:BottleIndexToStringConverter x:Key="BottleIndexToStringConverter"/>
+    <converters:BoolToColorConverter x:Key="BoolToColorConverter"/>
 
 </ResourceDictionary>
