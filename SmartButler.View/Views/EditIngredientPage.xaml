@@ -20,7 +20,7 @@
                 VerticalOptions="StartAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
 
-            <Image Source="{Binding IngredientImage, Converter={StaticResource ByteArrayToImageSource}}"/>
+            <Image Source="{Binding IngredientImage, Converter={StaticResource ByteArrayToImageSourceConverter}}"/>
 
             <StackLayout Orientation="Horizontal">
                 <Label Text="Ingredient name: "/>
@@ -28,11 +28,13 @@
             </StackLayout>
 
 
-            <StackLayout Orientation="Horizontal">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand">
                 <Label Text="Bottle position: "/>
-                <Picker Title="Bottle position"
-                        x:Name="IngredientPositionPicker"
-                        SelectedItem="{Binding IngredientPosition}"/>
+                <Picker x:Name="IngredientPositionPicker"
+                        ItemsSource="{Binding AvailablePositions}"
+                        SelectedItem="{Binding SelectedBottleIndex}"
+                        ItemDisplayBinding="{Binding Value}"
+                        SelectedIndexChanged="IngredientPosition_OnSelectedIndexChanged"/>
             </StackLayout>
             
             <StackLayout Orientation="Horizontal">

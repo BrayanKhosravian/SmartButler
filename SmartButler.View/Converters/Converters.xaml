@@ -7,7 +7,8 @@
              mc:Ignorable="d"
              x:Class="SmartButler.View.Converters.Converters">
 
-    <converters:StringToIntConverter x:Key="StringToInt"/>
-    <converters:ByteArrayToImageSourceConverter x:Key="ByteArrayToImageSource"/>
+    <converters:StringToIntConverter x:Key="StringToIntConverter"/>
+    <converters:ByteArrayToImageSourceConverter x:Key="ByteArrayToImageSourceConverter"/>
+    <converters:BottleIndexToStringConverter x:Key="BottleIndexToStringConverter"/>
 
 </ResourceDictionary>

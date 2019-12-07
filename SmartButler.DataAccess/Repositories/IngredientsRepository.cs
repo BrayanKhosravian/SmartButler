@@ -12,15 +12,11 @@ namespace SmartButler.DataAccess.Repositories
 		Task ConfigureAsync(IEnumerable<Ingredient> ingredients);
 		Task<bool> InsertAsync(Ingredient ingredient);
 		Task UpdateAsync(Ingredient ingredient);
-
 		Task DeleteAsync(Ingredient ingredient);
 		Task DeleteAsync(int id);
-
 		Task<Ingredient> GetAsync(int id);
 		Task<List<Ingredient>> GetAllAsync();
 		Task<List<Ingredient>> GetAllAvailableAsync();
-
-
 	}
 
 	public class IngredientsRepository : IIngredientsRepository
@@ -39,6 +35,9 @@ namespace SmartButler.DataAccess.Repositories
 		{
 			await Component.ConfigureAsync();
 
+			if (await Component.Connection.Table<Ingredient>().CountAsync() > 0)
+				return;
+
 			foreach (var ingredient in ingredients)
 				await InsertAsync(ingredient);
 		}
@@ -51,9 +50,34 @@ namespace SmartButler.DataAccess.Repositories
 			return true;
 		}
 
-		public Task UpdateAsync(Ingredient ingredient)
+		public async Task UpdateAsync(Ingredient ingredient)
 		{
-			return Component.Connection.UpdateAsync(ingredient);
+			// if another Ingredient has same SelectedIndex => then set it to 0 (unselected)
+			var shouldBeUnselected = await Component.Connection.Table<Ingredient>()
+				.Where(i => i.BottleIndex != 0 && i.BottleIndex == ingredient.BottleIndex)
+				.ToListAsync();
+
+			if (shouldBeUnselected.Count > 0)
+			{
+				foreach (var unselect in shouldBeUnselected)
+					unselect.BottleIndex = 0;
+			}
+
+			await Component.Connection.UpdateAllAsync(shouldBeUnselected);
+
+			// update ingredient
+			await Component.Connection.UpdateAsync(ingredient);
+
+			// update adapter table "DrinkIngredient"
+			var toBeUpdated = await Component.Connection.Table<DrinkIngredient>().Where(di => di.IngredientId == ingredient.Id).ToListAsync();
+
+			for (int i = 0; i < toBeUpdated.Count; i++)
+				toBeUpdated[i].Name = ingredient.Name;
+
+			await Component.Connection.UpdateAllAsync(toBeUpdated);
+
+
+
 		}
 
 		public Task DeleteAsync(Ingredient ingredient)

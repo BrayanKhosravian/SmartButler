@@ -9,11 +9,9 @@
              d:DataContext="{d:DesignInstance viewModels:IngredientsPageViewModel}"
              x:Class="SmartButler.View.Views.IngredientsPage"
              mc:Ignorable="d">
-    
+
     <ContentPage.Resources>
-        <ResourceDictionary>
-            <converters:ByteArrayToImageSourceConverter x:Key="ByteArrayToImageSource"/>
-        </ResourceDictionary>
+        <converters:Converters/>
     </ContentPage.Resources>
 
     <NavigationPage.TitleView>
@@ -35,11 +33,11 @@
                                     <ColumnDefinition Width="150"/>
                                     <ColumnDefinition Width="Auto"/>
                                 </Grid.ColumnDefinitions>
-                                <Image Source="{Binding ByteImage, Converter={StaticResource ByteArrayToImageSource}}" 
+                                <Image Source="{Binding ByteImage, Converter={StaticResource ByteArrayToImageSourceConverter}}" 
                                        Grid.Column="0" HeightRequest="150" WidthRequest="150" />
                                 <StackLayout Grid.Column="1">
                                     <Label Text="{Binding Name, StringFormat='Name: {0}'}"/>
-                                    <Label Text="{Binding BottleIndex, StringFormat='Bottle index: {0}'}"/>
+                                    <Label Text="{Binding BottleIndex, Converter={StaticResource BottleIndexToStringConverter}}"/>
                                 </StackLayout>
                             </Grid>
                         </ViewCell>

@@ -20,12 +20,6 @@ namespace SmartButler.View.Views
             });
         }
 
-        private void Handle_ItemTapped(object sender, ItemTappedEventArgs e)
-        {
-            
-
-        }
-
         object IViewFor.ViewModel
         {
             get => ViewModel;
@@ -36,11 +30,6 @@ namespace SmartButler.View.Views
         {
             get => BindingContext as DrinksPageViewModel;
             set => BindingContext = value as DrinksPageViewModel;
-        }
-
-        private void Tapped(object sender, EventArgs e)
-        {
-	        
         }
 
         private void ListView_OnItemSelected(object sender, SelectedItemChangedEventArgs e)

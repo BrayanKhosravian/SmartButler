@@ -17,15 +17,10 @@ namespace SmartButler.View.Views
 		{
 			InitializeComponent();
 
-			var positions = new List<int>() {1, 2, 3, 4, 5, 6};
-
 			this.WhenActivated(cleaner =>
 			{
-				IngredientPositionPicker.ItemsSource = positions;
-
-				var pos = ViewModel.IngredientPosition;
-				IngredientPositionPicker.SelectedIndex = pos - 1;
-
+				var position = ViewModel.BottleIndex;
+				IngredientPositionPicker.SelectedIndex = position;
 			});
 		}
 
@@ -43,18 +38,12 @@ namespace SmartButler.View.Views
 
 		private void IngredientPosition_OnSelectedIndexChanged(object sender, EventArgs e)
 		{
-			var picker = (Picker) sender;
+			var picker = (Picker)sender;
 			int selectedIndex = picker.SelectedIndex;
 
 			if (selectedIndex != -1)
-			{
-				//picker.SelectedItem = picker.ItemsSource[selectedIndex];
-			}
+				ViewModel.BottleIndex = selectedIndex;
 		}
 
-		private void Picker_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
-		{
-
-		}
 	}
 }

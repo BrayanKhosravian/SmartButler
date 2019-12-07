@@ -14,12 +14,12 @@ namespace SmartButler.Logic.ViewModels
 	{
 		private byte[] _ingredientImage;
 		private string _ingredientName;
-		private int _ingredientPosition;
+		private int _selectedBottleIndex;
 
 		private readonly IIngredientsRepository _ingredientsRepository;
 		private readonly INavigationService _navigationService;
 		private readonly IUserInteraction _userInteraction;
-		private Ingredient Ingredient { get; }
+		private int _bottleIndex;
 
 		public EditIngredientPageViewModel(IIngredientsRepository ingredientsRepository,
 			INavigationService navigationService,
@@ -33,22 +33,25 @@ namespace SmartButler.Logic.ViewModels
 
 			IngredientImage = ingredient.ByteImage;
 			IngredientName = ingredient.Name;
-			IngredientPosition = ingredient.BottleIndex;
+			BottleIndex = ingredient.BottleIndex;
+			SelectedBottleIndex = ingredient.BottleIndex;
 
-			AbortCommand = new DelegateCommand( async _=> await _navigationService.PopAsync());
+			AbortCommand = new DelegateCommand( async _ => await _navigationService.PopAsync());
 			AcceptCommand = new DelegateCommand(async _ =>
 			{
 				if (!await IsInputValidAsync()) return;
 
 				Ingredient.Name = _ingredientName;
 				Ingredient.ByteImage = _ingredientImage;
-				Ingredient.BottleIndex = _ingredientPosition;
+				Ingredient.BottleIndex = _bottleIndex;
 
 				await _ingredientsRepository.UpdateAsync(Ingredient);
 				await _navigationService.PopAsync();
 			});
 		}
 
+		public Ingredient Ingredient { get; }
+		public List<AvailablePosition> AvailablePositions { get; } = new List<AvailablePosition>(GetAvailablePositions());
 		public DelegateCommand AbortCommand { get; }
 		public DelegateCommand AcceptCommand { get; }
 
@@ -65,10 +68,16 @@ namespace SmartButler.Logic.ViewModels
 			set => SetValue(ref _ingredientName, value.Trim());
 		}
 
-		public int IngredientPosition
+		public int SelectedBottleIndex
 		{
-			get => _ingredientPosition;
-			set => SetValue(ref _ingredientPosition, value);
+			get => _selectedBottleIndex;
+			set => _selectedBottleIndex = value;
+		}
+
+		public int BottleIndex
+		{
+			get => _bottleIndex;
+			set => SetValue(ref _bottleIndex, value);
 		}
 
 
@@ -77,8 +86,6 @@ namespace SmartButler.Logic.ViewModels
 			var result = false;
 			var msgBuilder = new StringBuilder();
 
-			if (IngredientPosition < 1 || IngredientPosition > 6)
-				msgBuilder.Append("The Bottle position should be between 1 and 6!\n");
 			if (string.IsNullOrEmpty(IngredientName) || IngredientName.Length < 3 || IngredientName.Length > 255)
 				msgBuilder.Append("The name of the ingredient should have more then 3 or less then 255 characters!\n");
 			else
@@ -91,9 +98,33 @@ namespace SmartButler.Logic.ViewModels
 
 
 		public ToolbarControlViewModel ToolbarControlViewModel { get; private set; }
+
 		public void SetToolBarControlViewModel(ToolbarControlViewModel toolbar)
 		{
 			ToolbarControlViewModel = toolbar;
+		}
+
+		private static IEnumerable<AvailablePosition> GetAvailablePositions()
+		{
+			yield return new AvailablePosition(0, "Not selected");
+			yield return new AvailablePosition(1, "1");
+			yield return new AvailablePosition(2, "2");
+			yield return new AvailablePosition(3, "3");
+			yield return new AvailablePosition(4, "4");
+			yield return new AvailablePosition(5, "5");
+			yield return new AvailablePosition(6, "6");
+		}
+
+		public class AvailablePosition
+		{
+			public AvailablePosition(int key, string value)
+			{
+				Key = key;
+				Value = value;
+			}
+
+			public int Key { get; set; }
+			public string Value { get; set; }
 		}
 	}
 }
