@@ -17,6 +17,12 @@ namespace SmartButler.DataAccess.Models
 		    Milliliter = milliliter;
 	    }
 
+	    public Ingredient(int milliliter)
+	    {
+		    Milliliter = milliliter;
+	    }
+
+
 	    [PrimaryKey, AutoIncrement]
 	    public int Id { get; set; }
 

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using SQLite;
 using SQLiteNetExtensions.Attributes;
 
@@ -24,31 +25,34 @@ namespace SmartButler.DataAccess.Models
 			result[0] = 0xFF;
 			result[1] = 0xFF;
 
-			int i;
-			for (i = 0; i < DrinkIngredients.Count; i++)
-			{
-				if (i % 2 == 0) // drink index
-				{
-					result[i] = (byte)DrinkIngredients[i].Ingredient.BottleIndex;
-				}
-				else // ingredient ml
-				{
-					int ml = DrinkIngredients[i].Milliliter;
-					byte[] mlBytes = BitConverter.GetBytes(ml);
-					Array.Reverse(mlBytes);
-					if (mlBytes[0] == 0xFF)
-						mlBytes[0] =  (byte)(mlBytes[0] - 1);
-					if (mlBytes[1] == 0xFF)
-						mlBytes[1] = (byte)(mlBytes[1] - 1);
+			var sorted = DrinkIngredients.OrderBy(drinkIngredient => drinkIngredient.Ingredient.BottleIndex).ToList();
 
-					result[i] = mlBytes[0];
-					result[i+1] = mlBytes[1];
-				}
+			int i;
+			var ingredientCount = 0;
+			for (i = 2; i < result.Length - 3; i++)
+			{
+				var drinkIngredient = sorted.ElementAtOrDefault(ingredientCount);
+				if (drinkIngredient == null) break;
+
+				var ml = drinkIngredient.Milliliter;
+				byte[] mlBytes = BitConverter.GetBytes(ml);
+				Array.Reverse(mlBytes);
+				if (mlBytes[2] == 0xFF)
+					mlBytes[2] =  (byte)(mlBytes[2] - 1);
+				if (mlBytes[3] == 0xFF)
+					mlBytes[3] = (byte)(mlBytes[2] - 1);
+
+				result[i] = (byte) drinkIngredient.Ingredient.BottleIndex;
+				result[++i] = mlBytes[2];
+				result[++i] = mlBytes[3];
+
+				ingredientCount++;
 			}
 
-			result[i] = 0xFF;
-			result[i + 1] = 0xFF;
-
+			result[result.Length - 3] = 0xFF;
+			result[result.Length - 2] = 0xFF;
+			result[result.Length - 1] = 0x00;
+			
 			return result;
 
 		}
