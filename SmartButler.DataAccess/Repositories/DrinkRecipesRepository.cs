@@ -45,23 +45,23 @@ namespace SmartButler.DataAccess.Repositories
 			// do database mapping
 		    foreach (var drink in drinks)
 		    {
-			    foreach (var ingredientForMapping in drink.IngredientsForMapping)
-			    {
-					var drinkIngredient = new DrinkIngredient();
-					drinkIngredient.ByteImage = ingredientForMapping.ByteImage;
-					drinkIngredient.Milliliter = ingredientForMapping.Milliliter;
-					drinkIngredient.Name = ingredientForMapping.Name;
+			  //  foreach (var drinkIngredient in drink.DrinkIngredients)
+			  //  {
+					//var newDrinkIngredient = new DrinkIngredient();
+					////drinkIngredient.ByteImage = ingredientForMapping.ByteImage;
+					//newDrinkIngredient.Milliliter = newDrinkIngredient.Milliliter;
+					////drinkIngredient.Name = ingredientForMapping.Name;
 
-					var ingredient = await Component.Connection.Table<Ingredient>()
-						.Where(i => i.Name == ingredientForMapping.Name)
-						.FirstOrDefaultAsync();
+					////var ingredient = await Component.Connection.Table<Ingredient>()
+					////	.Where(i => i.Name == newDrinkIngredient.Ingredient.Name)
+					////	.FirstOrDefaultAsync();
 
-					drinkIngredient.Ingredient = ingredient;
-					drinkIngredient.IngredientId = drinkIngredient.Ingredient.Id;
+					////newDrinkIngredient.Ingredient = ingredient;
+					//newDrinkIngredient.IngredientId = newDrinkIngredient.Ingredient.Id;
 
-				    drink.DrinkIngredients.Add(drinkIngredient);
+				 //   drink.DrinkIngredients.Add(newDrinkIngredient);
 				    
-			    }
+			  //  }
 			    await InsertWithChildrenAsync(drink);
 		    }
 	    }
@@ -70,7 +70,7 @@ namespace SmartButler.DataAccess.Repositories
 	    {
 		    if (await IsInserted(drink)) return false;
 
-			await Component.Connection.InsertWithChildrenAsync(drink);
+			await Component.Connection.InsertWithChildrenAsync(drink, true);
 			return true;
 	    }
 
@@ -96,13 +96,13 @@ namespace SmartButler.DataAccess.Repositories
 
 		public Task<List<DrinkRecipe>> GetAllAsync()
 		{
-			return Component.Connection.GetAllWithChildrenAsync<DrinkRecipe>();
+			return Component.Connection.GetAllWithChildrenAsync<DrinkRecipe>(recursive: true);
 		}
 
 		public Task<List<DrinkRecipe>> GetAllAvailableAsync()
 		{
 			return Component.Connection.Table<DrinkRecipe>()
-				.Where(d => d.IngredientsForMapping.All(i => i.IsAvailable)).ToListAsync();
+				.Where(d => d.DrinkIngredients.All(i => i.Ingredient.IsAvailable)).ToListAsync();
 		}
 
 		private async Task<bool> IsInserted(DrinkRecipe drink)

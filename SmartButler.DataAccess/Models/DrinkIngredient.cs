@@ -7,8 +7,18 @@ using SQLiteNetExtensions.Attributes;
 namespace SmartButler.DataAccess.Models
 {
 	[Table("DrinkIngredients")]
-	public class DrinkIngredient : LiquidBase
+	public class DrinkIngredient
 	{
+		public DrinkIngredient()
+		{
+			
+		}
+
+		public DrinkIngredient(int milliliter)
+		{
+			Milliliter = milliliter;
+		}
+
 		[PrimaryKey, AutoIncrement]
 		public int Id { get; set; }
 

@@ -16,9 +16,9 @@ namespace SmartButler.Logic.Services
 		DrinkRecipeBuilder SetByteImage(string partialResource);
 
 		// from concretion
-		DrinkRecipeBuilder SetIngredients(List<Ingredient> ingredients);
-		DrinkRecipeBuilder AddIngredients(params Ingredient[] ingredients);
-		DrinkRecipeBuilder AddIngredient(Ingredient ingredient);
+		DrinkRecipeBuilder SetIngredients(List<DrinkIngredient> ingredients);
+		DrinkRecipeBuilder AddIngredients(params DrinkIngredient[] ingredients);
+		DrinkRecipeBuilder AddIngredient(DrinkIngredient ingredient);
 
 	}
 
@@ -40,18 +40,18 @@ namespace SmartButler.Logic.Services
 			return base.Default(name, resourcePath);
 		}
 
-		public DrinkRecipeBuilder SetIngredients(List<Ingredient> ingredients)
+		public DrinkRecipeBuilder SetIngredients(List<DrinkIngredient> ingredients)
 		{
 			if (ingredients == null) throw ExceptionFactory.Get<ArgumentNullException>("'ingredients' is null!");
 			if (ingredients.Count <= 0) throw ExceptionFactory.Get<ArgumentException>("'ingredients' is empty!");
 			if (ingredients.Any(ingredient => ingredient == null))
 				throw ExceptionFactory.Get<ArgumentNullException>("Any ingredient of 'ingredients' ins null!");
 
-			_drinkRecipe.IngredientsForMapping = ingredients;
+			_drinkRecipe.DrinkIngredients = ingredients;
 			return this;
 		}
 
-		public DrinkRecipeBuilder AddIngredients(params Ingredient[] ingredients)
+		public DrinkRecipeBuilder AddIngredients(params DrinkIngredient[] ingredients)
 		{
 			if (ingredients == null) throw ExceptionFactory.Get<ArgumentNullException>("'ingredients' is null!");
 			if (ingredients.Length <= 0) throw ExceptionFactory.Get<ArgumentException>("'ingredients' is empty!");
@@ -59,16 +59,16 @@ namespace SmartButler.Logic.Services
 				throw ExceptionFactory.Get<ArgumentNullException>("Any ingredient of 'ingredients' ins null!");
 
 			foreach (var ingredient in ingredients)
-				_drinkRecipe.IngredientsForMapping.Add(ingredient);
+				_drinkRecipe.DrinkIngredients.Add(ingredient);
 
 			return this;
 		}
 
-		public DrinkRecipeBuilder AddIngredient(Ingredient ingredient)
+		public DrinkRecipeBuilder AddIngredient(DrinkIngredient ingredient)
 		{
 			if (ingredient == null) throw ExceptionFactory.Get<ArgumentNullException>("'ingredient' is null");
 
-			_drinkRecipe.IngredientsForMapping.Add(ingredient);
+			_drinkRecipe.DrinkIngredients.Add(ingredient);
 			return this;
 		}
 

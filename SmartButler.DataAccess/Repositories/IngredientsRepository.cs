@@ -68,13 +68,13 @@ namespace SmartButler.DataAccess.Repositories
 			// update ingredient
 			await Component.Connection.UpdateAsync(ingredient);
 
-			// update adapter table "DrinkIngredient"
-			var toBeUpdated = await Component.Connection.Table<DrinkIngredient>().Where(di => di.IngredientId == ingredient.Id).ToListAsync();
+			//// update adapter table "DrinkIngredient"
+			//var toBeUpdated = await Component.Connection.Table<DrinkIngredient>().Where(di => di.IngredientId == ingredient.Id).ToListAsync();
 
-			for (int i = 0; i < toBeUpdated.Count; i++)
-				toBeUpdated[i].Name = ingredient.Name;
+			//for (int i = 0; i < toBeUpdated.Count; i++)
+			//	toBeUpdated[i].Name = ingredient.Name;
 
-			await Component.Connection.UpdateAllAsync(toBeUpdated);
+			//await Component.Connection.UpdateAllAsync(toBeUpdated);
 
 
 
@@ -108,7 +108,7 @@ namespace SmartButler.DataAccess.Repositories
 		private async Task<bool> IsInserted(Ingredient ingredient)
 		{
 			var isInserted = await Component.Connection.Table<Ingredient>().CountAsync(i =>
-				                 i.Name == ingredient.Name && i.Milliliter == ingredient.Milliliter) > 0;
+				                 i.Name == ingredient.Name) > 0;
 
 			return isInserted;
 		}

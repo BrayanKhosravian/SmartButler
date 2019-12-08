@@ -12,22 +12,22 @@ namespace SmartButler.DataAccess.Models
 
 	    }
 
-	    public Ingredient(int milliliter, string name) : base(name)
+	    public Ingredient(/*int milliliter,*/ string name) : base(name)
 	    {
-		    Milliliter = milliliter;
+		    //Milliliter = milliliter;
 	    }
 
-	    public Ingredient(int milliliter)
-	    {
-		    Milliliter = milliliter;
-	    }
+	    //public Ingredient(int milliliter)
+	    //{
+		   // Milliliter = milliliter;
+	    //}
 
 
 	    [PrimaryKey, AutoIncrement]
 	    public int Id { get; set; }
 
-	    [Obsolete("Bridge table is in use - multistep refactoring")]
-	    public int Milliliter { get; set; }
+	    //[Obsolete("Bridge table is in use - multistep refactoring")]
+	    //public int Milliliter { get; set; }
 
 		public int BottleIndex { get; set; }
 

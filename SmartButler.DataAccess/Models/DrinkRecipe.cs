@@ -15,8 +15,8 @@ namespace SmartButler.DataAccess.Models
 		[OneToMany(CascadeOperations = CascadeOperation.All)]
 		public List<DrinkIngredient> DrinkIngredients { get; set; } = new List<DrinkIngredient>();
 
-		[Ignore]
-		public List<Ingredient> IngredientsForMapping { get; set; } = new List<Ingredient>();
+		//[Ignore]
+		//public List<Ingredient> IngredientsForMapping { get; set; } = new List<Ingredient>();
 
 		[Ignore] public bool IsAvailable => DrinkIngredients.All(i => i.Ingredient.BottleIndex != 0);
 

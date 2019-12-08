@@ -32,48 +32,48 @@ namespace SmartButler.Logic.Services
 		public IEnumerable<DrinkRecipe> GetDefaultDrinks()
 		{
 			yield return _drinkRecipeBuilder.Default(DrinkNames.Madras, Paths.Drinks.Madras)
-				.AddIngredient(new Ingredient(160, IngredientNames.Vodka))
-				.AddIngredient(new Ingredient(90, IngredientNames.CranberryJuice))
-				.AddIngredient(new Ingredient(30, IngredientNames.OrangeJuice))
+				.AddIngredient(new DrinkIngredient(160) { Ingredient =  new Ingredient(IngredientNames.Vodka) })
+				.AddIngredient(new DrinkIngredient(160) { Ingredient =  new Ingredient(IngredientNames.CranberryJuice) })
+				.AddIngredient(new DrinkIngredient(30){Ingredient = new Ingredient(IngredientNames.OrangeJuice) })
 				.Build();
 
-			yield return _drinkRecipeBuilder.Default(DrinkNames.Screwdriver, Paths.Drinks.Screwdriver)
-			   .AddIngredient(new Ingredient(160, IngredientNames.Vodka))
-			   .AddIngredient(new Ingredient(120, IngredientNames.OrangeJuice))
-			   .Build();
+			//yield return _drinkRecipeBuilder.Default(DrinkNames.Screwdriver, Paths.Drinks.Screwdriver)
+			//   .AddIngredient(new Ingredient(160, IngredientNames.Vodka))
+			//   .AddIngredient(new Ingredient(120, IngredientNames.OrangeJuice))
+			//   .Build();
 
-			yield return _drinkRecipeBuilder.Default(DrinkNames.LemonDrop, Paths.Drinks.Lemondrop)
-				.AddIngredient(new Ingredient(160, IngredientNames.Vodka))
-				.AddIngredient(new Ingredient(30, IngredientNames.LemonJuice))
-				.Build();
+			//yield return _drinkRecipeBuilder.Default(DrinkNames.LemonDrop, Paths.Drinks.Lemondrop)
+			//	.AddIngredient(new Ingredient(160, IngredientNames.Vodka))
+			//	.AddIngredient(new Ingredient(30, IngredientNames.LemonJuice))
+			//	.Build();
 
-			yield return _drinkRecipeBuilder.Default(DrinkNames.WhiskySour, Paths.Drinks.WhiskySour)
-				.AddIngredient(new Ingredient(160, IngredientNames.Whisky))
-				.AddIngredient(new Ingredient(15, IngredientNames.OrangeJuice))
-				.AddIngredient(new Ingredient(30, IngredientNames.LemonJuice))
-				.Build();
+			//yield return _drinkRecipeBuilder.Default(DrinkNames.WhiskySour, Paths.Drinks.WhiskySour)
+			//	.AddIngredient(new Ingredient(160, IngredientNames.Whisky))
+			//	.AddIngredient(new Ingredient(15, IngredientNames.OrangeJuice))
+			//	.AddIngredient(new Ingredient(30, IngredientNames.LemonJuice))
+			//	.Build();
 
-			yield return _drinkRecipeBuilder.Default(DrinkNames.Blizzard, Paths.Drinks.Blizzard)
-				.AddIngredient(new Ingredient(60, IngredientNames.Whisky))
-				.AddIngredient(new Ingredient(30, IngredientNames.CranberryJuice))
-				.AddIngredient(new Ingredient(15, IngredientNames.LemonJuice))
-				.Build();
+			//yield return _drinkRecipeBuilder.Default(DrinkNames.Blizzard, Paths.Drinks.Blizzard)
+			//	.AddIngredient(new Ingredient(60, IngredientNames.Whisky))
+			//	.AddIngredient(new Ingredient(30, IngredientNames.CranberryJuice))
+			//	.AddIngredient(new Ingredient(15, IngredientNames.LemonJuice))
+			//	.Build();
 
-			yield return _drinkRecipeBuilder.Default(DrinkNames.CapeCod, Paths.Drinks.CapeCod)
-				.AddIngredient(new Ingredient(160, IngredientNames.Vodka))
-				.AddIngredient(new Ingredient(120, IngredientNames.CranberryJuice))
-				.Build();
+			//yield return _drinkRecipeBuilder.Default(DrinkNames.CapeCod, Paths.Drinks.CapeCod)
+			//	.AddIngredient(new Ingredient(160, IngredientNames.Vodka))
+			//	.AddIngredient(new Ingredient(120, IngredientNames.CranberryJuice))
+			//	.Build();
 
-			yield return _drinkRecipeBuilder.Default(DrinkNames.CapeCod, Paths.Drinks.HotToddy)
-				.AddIngredient(new Ingredient(160, IngredientNames.Whisky))
-				.AddIngredient(new Ingredient(15, IngredientNames.LemonJuice))
-				.Build();
+			//yield return _drinkRecipeBuilder.Default(DrinkNames.CapeCod, Paths.Drinks.HotToddy)
+			//	.AddIngredient(new Ingredient(160, IngredientNames.Whisky))
+			//	.AddIngredient(new Ingredient(15, IngredientNames.LemonJuice))
+			//	.Build();
 
-			yield return _drinkRecipeBuilder.Default(DrinkNames.BourbonSquash, Paths.Drinks.BourbonSquash)
-				.AddIngredient(new Ingredient(160, IngredientNames.Whisky))
-				.AddIngredient(new Ingredient(30, IngredientNames.OrangeJuice))
-				.AddIngredient(new Ingredient(15, IngredientNames.LemonJuice))
-				.Build();
+			//yield return _drinkRecipeBuilder.Default(DrinkNames.BourbonSquash, Paths.Drinks.BourbonSquash)
+			//	.AddIngredient(new Ingredient(160, IngredientNames.Whisky))
+			//	.AddIngredient(new Ingredient(30, IngredientNames.OrangeJuice))
+			//	.AddIngredient(new Ingredient(15, IngredientNames.LemonJuice))
+			//	.Build();
 
 		}
 

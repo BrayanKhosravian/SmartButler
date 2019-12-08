@@ -46,7 +46,7 @@ namespace SmartButler.Logic.Services
 		{
 			if (milliliter <= 0) throw ExceptionFactory.Get<ArgumentException>("'milliliter' cant be <= 0!");
 
-			_ingredient.Milliliter = milliliter;
+			//_ingredient.Milliliter = milliliter;
 			return this;
 		}
 

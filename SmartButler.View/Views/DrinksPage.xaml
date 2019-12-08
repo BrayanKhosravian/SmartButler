@@ -39,14 +39,14 @@
                                     <Label Text="{Binding Id}" VerticalOptions="Center" HorizontalOptions="Start"/>
                                     <Image Source="{Binding ByteImage, Converter={StaticResource ByteArrayToImageSourceConverter}}"
                                            Grid.Column="1" HeightRequest="150" WidthRequest="150" HorizontalOptions="Start" />
-                                    <controls:RepeaterView Grid.Column="2" ItemsSource="{Binding DrinkIngredients, Mode=TwoWay}">
+
+                                    <controls:RepeaterView Grid.Column="2" ItemsSource="{Binding IngrientViewModels, Mode=TwoWay}">
                                         <controls:RepeaterView.ItemTemplate>
                                             <DataTemplate>
-                                                <ViewCell IsEnabled="{Binding IsAvailable}">
+                                                <ViewCell>
                                                     <Grid Padding="5"
                                                           Margin="5"
-                                                          HorizontalOptions="EndAndExpand"
-                                                          BackgroundColor="{Binding IsAvailable, Converter={StaticResource BoolToColorConverter}}">
+                                                          HorizontalOptions="EndAndExpand">
                                                         <Grid.ColumnDefinitions>
                                                             <ColumnDefinition/>
                                                             <ColumnDefinition/>
