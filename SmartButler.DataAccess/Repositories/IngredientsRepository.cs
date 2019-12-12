@@ -4,6 +4,7 @@ using System.Linq.Expressions;
 using System.Threading.Tasks;
 using SmartButler.DataAccess.Common;
 using SmartButler.DataAccess.Models;
+using SQLiteNetExtensionsAsync.Extensions;
 
 namespace SmartButler.DataAccess.Repositories
 {
@@ -38,8 +39,13 @@ namespace SmartButler.DataAccess.Repositories
 			if (await Component.Connection.Table<Ingredient>().CountAsync() > 0)
 				return;
 
-			foreach (var ingredient in ingredients)
-				await InsertAsync(ingredient);
+			if (ingredients == null)
+				return;
+
+			await Component.Connection.InsertOrReplaceAllWithChildrenAsync(ingredients, true);
+
+			//foreach (var ingredient in ingredients)
+			//	await InsertAsync(ingredient);
 		}
 
 		public async Task<bool> InsertAsync(Ingredient ingredient)
@@ -102,7 +108,8 @@ namespace SmartButler.DataAccess.Repositories
 
 		public Task<List<Ingredient>> GetAllAvailableAsync()
 		{
-			return Component.Connection.Table<Ingredient>().Where(i => i.IsAvailable).ToListAsync();
+			throw new NotImplementedException();
+			// return Component.Connection.Table<Ingredient>().Where(i => i.IsAvailable).ToListAsync();
 		}
 
 		private async Task<bool> IsInserted(Ingredient ingredient)

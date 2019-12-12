@@ -3,6 +3,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using ReactiveUI;
 using SmartButler.DataAccess.Models;
+using SmartButler.Logic.ModelViewModels;
 using SmartButler.Logic.ViewModels;
 
 namespace SmartButler.View.Views
@@ -36,9 +37,9 @@ namespace SmartButler.View.Views
 	    {
 			if(e is null) return;
 
-		    var ingredient = e.SelectedItem as Ingredient;
+		    var ingredientViewModel = e.SelectedItem as IngredientViewModel;
 
-		    ViewModel.SelectedIngredient = ingredient;
+		    ViewModel.SelectedIngredient = ingredientViewModel;
 
 		    ((ListView) sender).SelectedItem = null;
 

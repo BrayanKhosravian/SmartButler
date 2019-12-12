@@ -1,9 +1,14 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using Autofac;
 using SmartButler.Bootstrapper.Common;
 using SmartButler.Bootstrapper.Modules;
+using SmartButler.DataAccess.Models;
 using SmartButler.DataAccess.Repositories;
 using SmartButler.Framework.Resources;
+using SmartButler.Logic.ModelTemplates.Drinks;
 using SmartButler.Logic.Services;
 using SmartButler.Logic.ViewModels;
 using SmartButler.View.Views;
@@ -33,7 +38,22 @@ namespace SmartButler.Bootstrapper
 			await container.Resolve<IIngredientsRepository>().ConfigureAsync(ingredientFactory.GetDefaultIngredients());
 
 			var drinkRecipesFactory = new DrinkRecipeFactory(new DrinkRecipeBuilder());
-			await container.Resolve<IDrinkRecipesRepository>().ConfigureAsync(drinkRecipesFactory.GetDefaultDrinks());
+
+			var drinks = drinkRecipesFactory.GetDefaultDrinks().ToList();
+			var test = new List<DrinkRecipe>() {new Madras()};
+
+			var defaults = drinkRecipesFactory.GetDefaultDrinks();
+
+
+			try
+			{
+				await container.Resolve<IDrinkRecipesRepository>().ConfigureAsync(defaults);
+			}
+			catch (Exception e)
+			{
+				Console.WriteLine(e);
+				throw;
+			}
 
 			// register view and view model relationship
 			var pageRegistrar = container.Resolve<IPageRegistrar>();

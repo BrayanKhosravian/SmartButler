@@ -10,9 +10,9 @@ namespace SmartButler.View.Converters
 	{
 		public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
 		{
-			var isAvailable = (bool) value;
+			var isGreen = (bool) value;
 
-			return isAvailable ? Color.LightGreen : Color.LightCoral;
+			return isGreen ? Color.LightGreen : Color.LightCoral;
 
 		}
 

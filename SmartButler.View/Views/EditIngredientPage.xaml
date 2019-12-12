@@ -20,11 +20,12 @@
                 VerticalOptions="StartAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
 
-            <Image Source="{Binding IngredientImage, Converter={StaticResource ByteArrayToImageSourceConverter}}"/>
+            <Image Source="{Binding IngredientImage, Converter={StaticResource ByteArrayToImageSourceConverter}}"
+                   HeightRequest="350" WidthRequest="350"/>
 
             <StackLayout Orientation="Horizontal">
-                <Label Text="Ingredient name: "/>
-                <Entry Placeholder="Ingredient name" Text="{Binding IngredientName}" />
+                <Label Text="IngredientViewModel name: "/>
+                <Entry Placeholder="IngredientViewModel name" Text="{Binding IngredientName}" />
             </StackLayout>
 
 

@@ -29,7 +29,7 @@
                     <DataTemplate>
                         <ViewCell>
                             <ViewCell.View>
-                                <Grid>
+                                <Grid BackgroundColor="{Binding IsAvailable, Converter={StaticResource BoolToColorConverter}}">
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="15" />
                                         <ColumnDefinition Width="150" />
@@ -40,7 +40,7 @@
                                     <Image Source="{Binding ByteImage, Converter={StaticResource ByteArrayToImageSourceConverter}}"
                                            Grid.Column="1" HeightRequest="150" WidthRequest="150" HorizontalOptions="Start" />
 
-                                    <controls:RepeaterView Grid.Column="2" ItemsSource="{Binding IngrientViewModels, Mode=TwoWay}">
+                                    <controls:RepeaterView Grid.Column="2" ItemsSource="{Binding IngredientViewModels, Mode=TwoWay}">
                                         <controls:RepeaterView.ItemTemplate>
                                             <DataTemplate>
                                                 <ViewCell>

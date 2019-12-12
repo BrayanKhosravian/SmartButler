@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using SmartButler.DataAccess.Common;
 using SQLite;
 using SQLiteNetExtensions.Attributes;
 
 namespace SmartButler.DataAccess.Models
 {
-	[Table("DrinkIngredients")]
+	[Table(TableNames.DrinkIngredientsTable)]
 	public class DrinkIngredient
 	{
 		public DrinkIngredient()
@@ -30,7 +31,7 @@ namespace SmartButler.DataAccess.Models
 		[ForeignKey(typeof(Ingredient))]
 		public int IngredientId { get; set; }
 
-		[ManyToOne(CascadeOperations = CascadeOperation.All)]
+		[ManyToOne(CascadeOperations = CascadeOperation.CascadeInsert | CascadeOperation.CascadeRead)]
 		public Ingredient Ingredient { get; set; }
 	}
 }

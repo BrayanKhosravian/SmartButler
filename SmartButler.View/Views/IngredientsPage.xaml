@@ -27,8 +27,8 @@
 
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <ViewCell>
-                            <Grid>
+                        <ViewCell >
+                            <Grid BackgroundColor="{Binding IsAvailable, Converter={StaticResource BoolToColorConverter}}">
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="150"/>
                                     <ColumnDefinition Width="Auto"/>

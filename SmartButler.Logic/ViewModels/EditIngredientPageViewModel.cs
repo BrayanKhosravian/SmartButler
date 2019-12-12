@@ -7,6 +7,7 @@ using SmartButler.DataAccess.Models;
 using SmartButler.DataAccess.Repositories;
 using SmartButler.Logic.Common;
 using SmartButler.Logic.Interfaces;
+using SmartButler.Logic.ModelViewModels;
 
 namespace SmartButler.Logic.ViewModels
 {
@@ -24,33 +25,35 @@ namespace SmartButler.Logic.ViewModels
 		public EditIngredientPageViewModel(IIngredientsRepository ingredientsRepository,
 			INavigationService navigationService,
 			IUserInteraction userInteraction,
-			Ingredient ingredient)
+			IngredientViewModel ingredientViewModel)
 		{
 			_ingredientsRepository = ingredientsRepository;
 			_navigationService = navigationService;
 			_userInteraction = userInteraction;
-			Ingredient = ingredient;
+			IngredientViewModel = ingredientViewModel;
 
-			IngredientImage = ingredient.ByteImage;
-			IngredientName = ingredient.Name;
-			BottleIndex = ingredient.BottleIndex;
-			SelectedBottleIndex = ingredient.BottleIndex;
+			IngredientImage = ingredientViewModel.ByteImage;
+			IngredientName = ingredientViewModel.Name;
+			BottleIndex = ingredientViewModel.BottleIndex;
+			SelectedBottleIndex = ingredientViewModel.BottleIndex;
 
 			AbortCommand = new DelegateCommand( async _ => await _navigationService.PopAsync());
 			AcceptCommand = new DelegateCommand(async _ =>
 			{
 				if (!await IsInputValidAsync()) return;
 
-				Ingredient.Name = _ingredientName;
-				Ingredient.ByteImage = _ingredientImage;
-				Ingredient.BottleIndex = _bottleIndex;
+				IngredientViewModel.Name = _ingredientName;
+				IngredientViewModel.ByteImage = _ingredientImage;
+				IngredientViewModel.BottleIndex = _bottleIndex;
 
-				await _ingredientsRepository.UpdateAsync(Ingredient);
+				IngredientViewModel.UpdateIngredientModel();
+
+				await _ingredientsRepository.UpdateAsync(IngredientViewModel.Ingredient);
 				await _navigationService.PopAsync();
 			});
 		}
 
-		public Ingredient Ingredient { get; }
+		public IngredientViewModel IngredientViewModel { get; }
 		public List<AvailablePosition> AvailablePositions { get; } = new List<AvailablePosition>(GetAvailablePositions());
 		public DelegateCommand AbortCommand { get; }
 		public DelegateCommand AcceptCommand { get; }

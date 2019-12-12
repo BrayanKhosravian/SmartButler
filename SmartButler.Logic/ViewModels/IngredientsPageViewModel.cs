@@ -9,14 +9,15 @@ using SmartButler.DataAccess.Repositories;
 using SmartButler.Logic.Common;
 using SmartButler.Logic.Interfaces;
 using ReactiveUI;
+using SmartButler.Logic.ModelViewModels;
 
 namespace SmartButler.Logic.ViewModels
 {
     public class IngredientsPageViewModel : BaseViewModel
     {
-	    public ReactiveList<Ingredient> Ingredients { get; private set; } = new ReactiveList<Ingredient>();
+	    public ReactiveList<IngredientViewModel> Ingredients { get; private set; } = new ReactiveList<IngredientViewModel>();
 
-	    private Ingredient _selectedIngredient;
+	    private IngredientViewModel _selectedIngredient;
 
 	    private readonly IIngredientsRepository _ingredientsRepository;
 	    private readonly INavigationService _navigationService;
@@ -32,34 +33,36 @@ namespace SmartButler.Logic.ViewModels
 
 	        this.WhenAnyValue(vm => vm.SelectedIngredient).Skip(1)
 		        .Where(ingredient => ingredient != null)
-		        .Subscribe( async ingredient =>
+		        .Subscribe( async ingredientViewModel =>
 		        {
-			       var result = await _userInteraction.DisplayActionSheetAsync($"{ingredient.Name} selected!",
+			       var result = await _userInteraction.DisplayActionSheetAsync($"{ingredientViewModel.Name} selected!",
 				        "Cancel",
 				        string.Empty,
 				        "Edit");
 
 			       if (result == "Edit")
-				       await _navigationService.PushAsync<EditIngredientPageViewModel>(new TypedParameter(typeof(Ingredient), ingredient));
+				       await _navigationService.PushAsync<EditIngredientPageViewModel>(new TypedParameter(typeof(IngredientViewModel), ingredientViewModel));
 
 		        });
-
 
         }
 
 	    public ReactiveCommand AddBottleCommand { get; set; }
-
 
 	    public async Task ActivateAsync()
 	    {
 		    using (Ingredients.SuppressChangeNotifications())
 		    {
 				Ingredients.Clear();
-				Ingredients.AddRange(await _ingredientsRepository.GetAllAsync());
+
+				var ingredients = await _ingredientsRepository.GetAllAsync();
+				var ingredientViewModels = ingredients.Select(ingredient => new IngredientViewModel(ingredient));
+
+				Ingredients.AddRange(ingredientViewModels);
 			}
 	    }
 
-	    public Ingredient SelectedIngredient
+	    public IngredientViewModel SelectedIngredient
         {
 	        get => _selectedIngredient;
 	        set => this.RaiseAndSetIfChanged(ref _selectedIngredient, value);

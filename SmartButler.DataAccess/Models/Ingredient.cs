@@ -1,10 +1,11 @@
 ﻿using System;
+using SmartButler.DataAccess.Common;
 using SQLite;
 using SQLiteNetExtensions.Attributes;
 
 namespace SmartButler.DataAccess.Models
 {
-	[Table("Ingredients")]
+	[Table(TableNames.IngredientsTable)]
 	public class Ingredient : LiquidBase
     {
 	    public Ingredient()
@@ -12,25 +13,8 @@ namespace SmartButler.DataAccess.Models
 
 	    }
 
-	    public Ingredient(/*int milliliter,*/ string name) : base(name)
-	    {
-		    //Milliliter = milliliter;
-	    }
-
-	    //public Ingredient(int milliliter)
-	    //{
-		   // Milliliter = milliliter;
-	    //}
-
-
 	    [PrimaryKey, AutoIncrement]
-	    public int Id { get; set; }
-
-	    //[Obsolete("Bridge table is in use - multistep refactoring")]
-	    //public int Milliliter { get; set; }
-
-		public int BottleIndex { get; set; }
-
-		[Ignore] public bool IsAvailable => BottleIndex >= 1 && BottleIndex <= 6;
-	}
+	    public virtual int Id { get; set; }
+	    public virtual int BottleIndex { get; set; }
+    }
 }

@@ -34,7 +34,7 @@ namespace SmartButler.View.Views
 
         private void ListView_OnItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-	        ViewModel?.Transmit((DrinkRecipe)e.SelectedItem);
+	        //ViewModel?.Transmit((DrinkRecipe)e.SelectedItem);
         }
     }
 }
