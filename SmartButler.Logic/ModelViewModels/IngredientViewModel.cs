@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Windows.Input;
+using Plugin.Media;
 using SmartButler.DataAccess.Models;
 using SmartButler.Logic.Common;
 
@@ -65,6 +67,7 @@ namespace SmartButler.Logic.ModelViewModels
 		{
 			Ingredient.Name = Name;
 			Ingredient.BottleIndex = BottleIndex;
+			Ingredient.ByteImage = ByteImage;
 		}
 
 		public void UpdateDrinkIngredientModel()

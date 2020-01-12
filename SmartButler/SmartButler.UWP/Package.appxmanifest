@@ -51,5 +51,8 @@
 
   <Capabilities>
     <Capability Name="internetClient" />
+    <DeviceCapability Name="bluetooth"/>
+    <DeviceCapability Name="webcam"/>
+    <DeviceCapability Name="microphone"/>
   </Capabilities>
 </Package>

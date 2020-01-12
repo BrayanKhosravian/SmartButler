@@ -16,30 +16,33 @@
 
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Edit your ingredient!"
+            <Label Text="{Binding Title}"
                 VerticalOptions="StartAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
 
-            <Image Source="{Binding IngredientImage, Converter={StaticResource ByteArrayToImageSourceConverter}}"
-                   HeightRequest="350" WidthRequest="350"/>
+            <Frame BorderColor="Red">
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding ImageTappedCommand}"/>
+                </Frame.GestureRecognizers>
+                <Image Source="{Binding IngredientImage, Converter={StaticResource ByteArrayToImageSourceConverter}}"
+                       HeightRequest="350" WidthRequest="350"/>
+            </Frame>
 
             <StackLayout Orientation="Horizontal">
-                <Label Text="IngredientViewModel name: "/>
-                <Entry Placeholder="IngredientViewModel name" Text="{Binding IngredientName}" />
+                <Label Text="Ingredient name: "/>
+                <Entry Placeholder="Ingredient name" Text="{Binding IngredientName}" />
             </StackLayout>
-
 
             <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand">
                 <Label Text="Bottle position: "/>
                 <Picker x:Name="IngredientPositionPicker"
-                        ItemsSource="{Binding AvailablePositions}"
                         SelectedItem="{Binding SelectedBottleIndex}"
                         ItemDisplayBinding="{Binding Value}"
                         SelectedIndexChanged="IngredientPosition_OnSelectedIndexChanged"/>
             </StackLayout>
             
             <StackLayout Orientation="Horizontal">
-                <Button Text="Abort" Command="{Binding AbortCommand}"/>
+                <Button Text="Abort" Command="{Binding AbortCommand.Value}"/>
                 <Button Text="Accept" Command="{Binding AcceptCommand}"/>
             </StackLayout>
 

@@ -3,6 +3,8 @@ using System.Threading.Tasks;
 
 namespace SmartButler.Framework.Bluetooth
 {
+
+
 	public interface IBluetoothService
 	{
 		bool Enable();

@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using Plugin.Media;
+using Plugin.Media.Abstractions;
 using SmartButler.DataAccess.Models;
 using SmartButler.DataAccess.Repositories;
 using SmartButler.Logic.Common;
@@ -16,16 +18,18 @@ namespace SmartButler.Logic.ViewModels
 		private byte[] _ingredientImage;
 		private string _ingredientName;
 		private int _selectedBottleIndex;
+		private string _title;
 
 		private readonly IIngredientsRepository _ingredientsRepository;
 		private readonly INavigationService _navigationService;
 		private readonly IUserInteraction _userInteraction;
 		private int _bottleIndex;
 
+		// edit an ingredient
 		public EditIngredientPageViewModel(IIngredientsRepository ingredientsRepository,
 			INavigationService navigationService,
 			IUserInteraction userInteraction,
-			IngredientViewModel ingredientViewModel)
+			IngredientViewModel ingredientViewModel) : this()
 		{
 			_ingredientsRepository = ingredientsRepository;
 			_navigationService = navigationService;
@@ -37,7 +41,6 @@ namespace SmartButler.Logic.ViewModels
 			BottleIndex = ingredientViewModel.BottleIndex;
 			SelectedBottleIndex = ingredientViewModel.BottleIndex;
 
-			AbortCommand = new DelegateCommand( async _ => await _navigationService.PopAsync());
 			AcceptCommand = new DelegateCommand(async _ =>
 			{
 				if (!await IsInputValidAsync()) return;
@@ -51,13 +54,87 @@ namespace SmartButler.Logic.ViewModels
 				await _ingredientsRepository.UpdateAsync(IngredientViewModel.Ingredient);
 				await _navigationService.PopAsync();
 			});
+
+			Title = "Edit your Ingredient!";
+		}
+
+		// create and add an ingredient
+		public EditIngredientPageViewModel(IIngredientsRepository ingredientsRepository,
+			INavigationService navigationService,
+			IUserInteraction userInteraction) : this()
+		{
+			_ingredientsRepository = ingredientsRepository;
+			_navigationService = navigationService;
+			_userInteraction = userInteraction;
+
+			IngredientViewModel = new IngredientViewModel(new Ingredient());
+
+			AcceptCommand = new DelegateCommand(async _ =>
+			{
+				if (!await IsInputValidAsync()) return;
+
+				IngredientViewModel.Name = _ingredientName;
+				IngredientViewModel.ByteImage = _ingredientImage;
+				IngredientViewModel.BottleIndex = _bottleIndex;
+
+				IngredientViewModel.UpdateIngredientModel();
+
+				await _ingredientsRepository.InsertAsync(IngredientViewModel.Ingredient);
+				await _navigationService.PopAsync();
+
+			});
+
+			Title = "Create an Ingredient!";
+		}
+
+		// shared default ctor
+		private EditIngredientPageViewModel()
+		{
+			AbortCommand = new Lazy<DelegateCommand>(() => 
+				new DelegateCommand( async _ => await _navigationService.PopAsync()));
+			
+			ImageTappedCommand = new DelegateCommand(async _ =>
+			{
+				await CrossMedia.Current.Initialize();
+
+				var galleryOrCamera = await _userInteraction.DisplayActionSheetAsync("How to pick an image", 
+					"cancel", "destruction", "gallery", "camera");
+
+				MediaFile file = null;
+				switch (galleryOrCamera)
+				{
+					case "gallery":
+						file = await CrossMedia.Current.PickPhotoAsync();
+						break;
+					case "camera":
+						file = await CrossMedia.Current.TakePhotoAsync(new StoreCameraMediaOptions());
+						break;
+					default:
+						return;
+				}
+				
+				if(file == null) return;
+
+				var s = file.GetStream();
+				_ingredientImage = new byte[s.Length];
+				s.Read(_ingredientImage, 0, (int) s.Length);
+				OnPropertyChanged(nameof(IngredientImage));
+				file.Dispose();
+			});
 		}
 
 		public IngredientViewModel IngredientViewModel { get; }
-		public List<AvailablePosition> AvailablePositions { get; } = new List<AvailablePosition>(GetAvailablePositions());
-		public DelegateCommand AbortCommand { get; }
+		
+		public Lazy<DelegateCommand> AbortCommand { get; } 
 		public DelegateCommand AcceptCommand { get; }
+		public IDelegateCommand ImageTappedCommand { get; }
 
+
+		public string Title
+		{
+			get => _title;
+			set => SetValue(ref _title, value);
+		}
 
 		public byte[] IngredientImage
 		{
@@ -67,8 +144,8 @@ namespace SmartButler.Logic.ViewModels
 
 		public string IngredientName
 		{
-			get => _ingredientName.Trim();
-			set => SetValue(ref _ingredientName, value.Trim());
+			get => _ingredientName?.Trim();
+			set => SetValue(ref _ingredientName, value?.Trim());
 		}
 
 		public int SelectedBottleIndex
@@ -101,33 +178,9 @@ namespace SmartButler.Logic.ViewModels
 
 
 		public ToolbarControlViewModel ToolbarControlViewModel { get; private set; }
-
 		public void SetToolBarControlViewModel(ToolbarControlViewModel toolbar)
 		{
 			ToolbarControlViewModel = toolbar;
-		}
-
-		private static IEnumerable<AvailablePosition> GetAvailablePositions()
-		{
-			yield return new AvailablePosition(0, "Not selected");
-			yield return new AvailablePosition(1, "1");
-			yield return new AvailablePosition(2, "2");
-			yield return new AvailablePosition(3, "3");
-			yield return new AvailablePosition(4, "4");
-			yield return new AvailablePosition(5, "5");
-			yield return new AvailablePosition(6, "6");
-		}
-
-		public class AvailablePosition
-		{
-			public AvailablePosition(int key, string value)
-			{
-				Key = key;
-				Value = value;
-			}
-
-			public int Key { get; set; }
-			public string Value { get; set; }
 		}
 	}
 }

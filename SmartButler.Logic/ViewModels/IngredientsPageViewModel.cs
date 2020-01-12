@@ -45,9 +45,11 @@ namespace SmartButler.Logic.ViewModels
 
 		        });
 
-        }
+	        AddIngredientCommand = ReactiveCommand.CreateFromTask(async _ =>
+		        await _navigationService.PushAsync<EditIngredientPageViewModel>());
 
-	    public ReactiveCommand AddBottleCommand { get; set; }
+        }
+	    public ReactiveCommand AddIngredientCommand { get; }
 
 	    public async Task ActivateAsync()
 	    {
@@ -69,7 +71,9 @@ namespace SmartButler.Logic.ViewModels
         }
 
 	    public ToolbarControlViewModel ToolbarControlViewModel { get; private set; }
-        public void SetToolBarControlViewModel(ToolbarControlViewModel vm)
+
+
+	    public void SetToolBarControlViewModel(ToolbarControlViewModel vm)
         {
             ToolbarControlViewModel = vm;
         }

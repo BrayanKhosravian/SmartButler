@@ -17,6 +17,8 @@ namespace SmartButler.View.Views
 		{
 			InitializeComponent();
 
+			IngredientPositionPicker.ItemsSource = AvailablePositions;
+
 			this.WhenActivated(cleaner =>
 			{
 				var position = ViewModel.BottleIndex;
@@ -45,5 +47,29 @@ namespace SmartButler.View.Views
 				ViewModel.BottleIndex = selectedIndex;
 		}
 
+		private List<AvailablePosition> AvailablePositions { get; } = new List<AvailablePosition>(GetAvailablePositions());
+
+		private static IEnumerable<AvailablePosition> GetAvailablePositions()
+		{
+			yield return new AvailablePosition(0, "Not selected");
+			yield return new AvailablePosition(1, "1");
+			yield return new AvailablePosition(2, "2");
+			yield return new AvailablePosition(3, "3");
+			yield return new AvailablePosition(4, "4");
+			yield return new AvailablePosition(5, "5");
+			yield return new AvailablePosition(6, "6");
+		}
+
+		internal class AvailablePosition
+		{
+			public AvailablePosition(int key, string value)
+			{
+				Key = key;
+				Value = value;
+			}
+
+			public int Key { get; set; }
+			public string Value { get; set; }
+		}
 	}
 }

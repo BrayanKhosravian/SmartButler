@@ -151,7 +151,6 @@ namespace SmartButler.Droid.Services
             }
         }
 
-
         public IEnumerable<BluetoothDevice> GetBondedDevices()
         {
             Enable();
@@ -160,9 +159,6 @@ namespace SmartButler.Droid.Services
                 yield return new BluetoothDevice(device.Name, device.Address);
             
         }
-
-
-
         public void Close()
         {
             _socket?.Close();

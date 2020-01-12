@@ -12,7 +12,7 @@ namespace SmartButler.Logic.ModelTemplates.Ingredients
 		public override int Id => 2;
 		public override string Name => IngredientNames.Vodka;
 		public override byte[] ByteImage =>
-			SmartButler.Framework.Resources.ResourceManager.GetImageAsBytes(Paths.Ingredients.Vodka);
+			ResourceManager.GetImageAsBytes(Paths.Ingredients.Vodka);
 		public override int BottleIndex => 2;
 	}
 }

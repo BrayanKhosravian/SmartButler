@@ -1,6 +1,7 @@
 ﻿using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using Plugin.BLE;
 using ReactiveUI;
 using SmartButler.Framework.Bluetooth;
 using SmartButler.Logic.Common;
@@ -49,11 +50,13 @@ namespace SmartButler.Logic.ViewModels
 
         public void ConfigureViewModel()
         {
-	        var devices = _bluetoothService.GetBondedDevices();
+	        var devices = CrossBluetoothLE.Current.Adapter.GetSystemConnectedOrPairedDevices();
+
+	        // var devices = _bluetoothService.GetBondedDevices();
             foreach (var device in devices)
             {
-                if (!BluetoothDevices.Any(d => d.Mac == device.Mac && d.Name == device.Name))
-                    BluetoothDevices.Add(device);
+                if (!BluetoothDevices.Any(d => d.Mac == device.Id.ToString() && d.Name == device.Name))
+                    BluetoothDevices.Add(new BluetoothDevice(device.Name, device.Id.ToString()));
             }
 
         }

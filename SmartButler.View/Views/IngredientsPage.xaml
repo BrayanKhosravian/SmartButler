@@ -33,8 +33,11 @@
                                     <ColumnDefinition Width="150"/>
                                     <ColumnDefinition Width="Auto"/>
                                 </Grid.ColumnDefinitions>
-                                <Image Source="{Binding ByteImage, Converter={StaticResource ByteArrayToImageSourceConverter}}" 
-                                       Grid.Column="0" HeightRequest="150" WidthRequest="150" />
+
+                                <Image
+                                    Source="{Binding ByteImage, Converter={StaticResource ByteArrayToImageSourceConverter}}"
+                                    HeightRequest="150" WidthRequest="150" />
+
                                 <StackLayout Grid.Column="1">
                                     <Label Text="{Binding Name, StringFormat='Name: {0}'}"/>
                                     <Label Text="{Binding BottleIndex, Converter={StaticResource BottleIndexToStringConverter}}"/>
@@ -44,6 +47,9 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
+
+            <Button Text="Add Ingredient" Command="{Binding AddIngredientCommand}"/>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

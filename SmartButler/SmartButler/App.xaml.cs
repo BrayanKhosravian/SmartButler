@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Reflection;
 using System.Threading.Tasks;
 using Autofac;
+using Plugin.Media;
 using SmartButler.Bootstrapper;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -22,6 +23,8 @@ namespace SmartButler
         // pass in the dependencies as registered types
         public async Task InjectPlatformDependencies(ContainerBuilder builder)
         {
+	        await CrossMedia.Current.Initialize();
+
             var bootstrapper = new Bootstrapper.Bootstrapper(this);
             await bootstrapper.Load(builder);
         }

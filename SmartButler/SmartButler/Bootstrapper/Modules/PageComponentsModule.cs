@@ -49,7 +49,7 @@ namespace SmartButler.Bootstrapper.Modules
                 c.Instance.SetToolBarControlViewModel(dep);
             });
 
-            builder.RegisterType<EditIngredientPage>();
+	        builder.RegisterType<EditIngredientPage>();
             builder.RegisterType<EditIngredientPageViewModel>().OnActivated(c =>
             {
 	            var dep = c.Context.Resolve<ToolbarControlViewModel>();
@@ -57,10 +57,9 @@ namespace SmartButler.Bootstrapper.Modules
 
             });
 
+
             builder.RegisterType<SettingsPage>();
             builder.RegisterType<SettingsPageViewModel>();
-
-
 
         }
     }

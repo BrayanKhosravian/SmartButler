@@ -35,26 +35,13 @@ namespace SmartButler.Bootstrapper
 
 			// configure database
 			var ingredientFactory = new IngredientsFactory(new IngredientBuilder());
-			await container.Resolve<IIngredientsRepository>().ConfigureAsync(ingredientFactory.GetDefaultIngredients());
+			var defaultIngredients = ingredientFactory.GetDefaultIngredients();
+			await container.Resolve<IIngredientsRepository>().ConfigureAsync(defaultIngredients);
 
 			var drinkRecipesFactory = new DrinkRecipeFactory(new DrinkRecipeBuilder());
-
-			var drinks = drinkRecipesFactory.GetDefaultDrinks().ToList();
-			var test = new List<DrinkRecipe>() {new Madras()};
-
-			var defaults = drinkRecipesFactory.GetDefaultDrinks();
-
-
-			try
-			{
-				await container.Resolve<IDrinkRecipesRepository>().ConfigureAsync(defaults);
-			}
-			catch (Exception e)
-			{
-				Console.WriteLine(e);
-				throw;
-			}
-
+			var defaultDrinks = drinkRecipesFactory.GetDefaultDrinks();
+			await container.Resolve<IDrinkRecipesRepository>().ConfigureAsync(defaultDrinks);
+			
 			// register view and view model relationship
 			var pageRegistrar = container.Resolve<IPageRegistrar>();
 
@@ -66,7 +53,7 @@ namespace SmartButler.Bootstrapper
             pageRegistrar.Register<SettingsPageViewModel, SettingsPage>();
 			pageRegistrar.Register<EditIngredientPageViewModel, EditIngredientPage>();
 
-            var mainPage = pageRegistrar.Resolve<WelcomePageViewModel>();
+			var mainPage = pageRegistrar.Resolve<WelcomePageViewModel>();
           
             _app.MainPage = new NavigationPage(mainPage);
 

@@ -44,6 +44,30 @@ namespace SmartButler.Logic.Services
 				.AddIngredient(new DrinkIngredient(30){Ingredient = new OrangeJuice()})
 				.Build();
 
+			yield return _drinkRecipeBuilder.Default(DrinkNames.Madras, Paths.Drinks.Madras)
+				.AddIngredient(new DrinkIngredient(160) {Ingredient = new Ingredient()
+				{
+					Id = 2, 
+					Name = IngredientNames.Vodka, 
+					BottleIndex = 2,
+					ByteImage = ResourceManager.GetImageAsBytes(Paths.Ingredients.Vodka)
+				}})
+				.AddIngredient(new DrinkIngredient(160) {Ingredient = new Ingredient()
+				{
+					Id = 4, 
+					Name = IngredientNames.CranberryJuice, 
+					BottleIndex = 4,
+					ByteImage = ResourceManager.GetImageAsBytes(Paths.Ingredients.CranberryJuice)
+				}})
+				.AddIngredient(new DrinkIngredient(30){Ingredient = new OrangeJuice()
+				{
+					Id = 3, 
+					Name = IngredientNames.CranberryJuice, 
+					BottleIndex = 3,
+					ByteImage = ResourceManager.GetImageAsBytes(Paths.Ingredients.CranberryJuice)
+				}})
+				.Build();
+
 			yield return _drinkRecipeBuilder.Default(DrinkNames.Screwdriver, Paths.Drinks.Screwdriver)
 				.AddIngredient(new DrinkIngredient(160) {Ingredient = new Vodka()})
 				.AddIngredient(new DrinkIngredient(120){Ingredient = new OrangeJuice()})
