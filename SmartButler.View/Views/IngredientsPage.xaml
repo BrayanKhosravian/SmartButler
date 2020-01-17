@@ -21,6 +21,9 @@
             <DataTemplate x:Key="IngredientTemplate" >
                 <ViewCell d:DataContext="{d:DesignInstance modelViewModels:DrinkIngredientViewModel}">
                     <Grid BackgroundColor="{Binding IsAvailable, Converter={StaticResource BoolToColorConverter}}">
+                        <Grid.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="IngredientTappedRecognizer"/>
+                        </Grid.GestureRecognizers>
                         <Grid.Resources>
                             <converters:Converters/>
                         </Grid.Resources>

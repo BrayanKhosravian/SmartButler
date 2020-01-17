@@ -6,6 +6,7 @@ using ReactiveUI;
 using SmartButler.DataAccess.Models;
 using SmartButler.Logic.ModelViewModels;
 using SmartButler.Logic.ViewModels;
+using SmartButler.View.Common;
 
 namespace SmartButler.View.Views
 {
@@ -47,5 +48,12 @@ namespace SmartButler.View.Views
 
 	    }
 
+	    private async void IngredientTappedRecognizer(object sender, EventArgs e)
+	    {
+		    var visual = sender as VisualElement;
+		    if (visual is null) return;
+
+		    await AnimationService.Refade(visual);
+	    }
 	}
 }
