@@ -25,6 +25,7 @@ namespace SmartButler.Logic.ViewModels
             _bluetoothService = bluetoothService;
 
         }
+        public ReactiveCommand AddRecipeCommand { get; }
 
         public async Task Activate()
         {

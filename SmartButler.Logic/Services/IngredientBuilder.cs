@@ -7,7 +7,7 @@ using SmartButler.Framework.Resources;
 namespace SmartButler.Logic.Services
 {
 
-	public interface IIngredientBuilder //: IBaseLiquidBuilder<IngredientViewModel>
+	public interface IIngredientBuilder //: IBaseLiquidBuilder<DrinkIngredientViewModel>
 	{
 		// from Base
 		IngredientBuilder Default();

@@ -16,5 +16,6 @@ namespace SmartButler.DataAccess.Models
 	    [PrimaryKey, AutoIncrement]
 	    public virtual int Id { get; set; }
 	    public virtual int BottleIndex { get; set; }
+
     }
 }

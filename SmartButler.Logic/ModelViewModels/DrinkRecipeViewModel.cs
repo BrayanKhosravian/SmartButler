@@ -11,12 +11,13 @@ namespace SmartButler.Logic.ModelViewModels
 {
 	public class DrinkRecipeViewModel : BaseViewModel
 	{
-		private ObservableCollection<IngredientViewModel> _ingredientViewModels;
+		private ObservableCollection<DrinkIngredientViewModel> _ingredientViewModels;
 
 		private readonly DrinkRecipe _drinkRecipe;
 		private string _name;
 		private int _id;
 		private byte[] _byteImage;
+		private bool _isDefault;
 
 		public DrinkRecipeViewModel(DrinkRecipe drinkRecipe)
 		{
@@ -31,14 +32,15 @@ namespace SmartButler.Logic.ModelViewModels
 			Id = drinkRecipe.Id;
 			Name = drinkRecipe.Name;
 			ByteImage = drinkRecipe.ByteImage;
+			IsDefault = drinkRecipe.IsDefault;
 
 			_drinkRecipe = drinkRecipe;
 
 			MapModelWithViewModel(drinkRecipe);
 		}
 
-		public ObservableCollection<IngredientViewModel> IngredientViewModels => 
-			_ingredientViewModels ?? new ObservableCollection<IngredientViewModel>(MapModelWithViewModel(_drinkRecipe));
+		public ObservableCollection<DrinkIngredientViewModel> IngredientViewModels => 
+			_ingredientViewModels ?? new ObservableCollection<DrinkIngredientViewModel>(MapModelWithViewModel(_drinkRecipe));
 
 		public bool IsAvailable => IngredientViewModels.All(i => i.IsAvailable);
 
@@ -60,13 +62,19 @@ namespace SmartButler.Logic.ModelViewModels
 			set => SetValue(ref _byteImage, value);
 		}
 
-		private IEnumerable<IngredientViewModel> MapModelWithViewModel(DrinkRecipe drinkRecipe)
+		public bool IsDefault
 		{
-			var ingredientViewModels = new ObservableCollection<IngredientViewModel>();
+			get => _isDefault;
+			set => SetValue(ref _isDefault, value);
+		}
+
+		private IEnumerable<DrinkIngredientViewModel> MapModelWithViewModel(DrinkRecipe drinkRecipe)
+		{
+			var ingredientViewModels = new ObservableCollection<DrinkIngredientViewModel>();
 
 			foreach (var drinkDrinkIngredient in drinkRecipe.DrinkIngredients)
 			{
-				var ingredientViewModel = new IngredientViewModel(drinkDrinkIngredient.Ingredient, drinkDrinkIngredient);
+				var ingredientViewModel = new DrinkIngredientViewModel(drinkDrinkIngredient.Ingredient, drinkDrinkIngredient);
 				ingredientViewModels.Add(ingredientViewModel);
 			}
 

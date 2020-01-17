@@ -37,74 +37,65 @@ namespace SmartButler.Logic.Services
 
 		public IEnumerable<DrinkRecipe> GetDefaultDrinks()
 		{
-
-			yield return _drinkRecipeBuilder.Default(DrinkNames.Madras, Paths.Drinks.Madras)
+			var madras = _drinkRecipeBuilder.Default(DrinkNames.Madras, Paths.Drinks.Madras)
 				.AddIngredient(new DrinkIngredient(160) {Ingredient = new Vodka()})
 				.AddIngredient(new DrinkIngredient(160) {Ingredient = new CranberryJuice()})
 				.AddIngredient(new DrinkIngredient(30){Ingredient = new OrangeJuice()})
 				.Build();
+			madras.IsDefault = true;
+			yield return madras;
 
-			yield return _drinkRecipeBuilder.Default(DrinkNames.Madras, Paths.Drinks.Madras)
-				.AddIngredient(new DrinkIngredient(160) {Ingredient = new Ingredient()
-				{
-					Id = 2, 
-					Name = IngredientNames.Vodka, 
-					BottleIndex = 2,
-					ByteImage = ResourceManager.GetImageAsBytes(Paths.Ingredients.Vodka)
-				}})
-				.AddIngredient(new DrinkIngredient(160) {Ingredient = new Ingredient()
-				{
-					Id = 4, 
-					Name = IngredientNames.CranberryJuice, 
-					BottleIndex = 4,
-					ByteImage = ResourceManager.GetImageAsBytes(Paths.Ingredients.CranberryJuice)
-				}})
-				.AddIngredient(new DrinkIngredient(30){Ingredient = new OrangeJuice()
-				{
-					Id = 3, 
-					Name = IngredientNames.CranberryJuice, 
-					BottleIndex = 3,
-					ByteImage = ResourceManager.GetImageAsBytes(Paths.Ingredients.CranberryJuice)
-				}})
-				.Build();
-
-			yield return _drinkRecipeBuilder.Default(DrinkNames.Screwdriver, Paths.Drinks.Screwdriver)
+			var screwdriver = _drinkRecipeBuilder.Default(DrinkNames.Screwdriver, Paths.Drinks.Screwdriver)
 				.AddIngredient(new DrinkIngredient(160) {Ingredient = new Vodka()})
 				.AddIngredient(new DrinkIngredient(120){Ingredient = new OrangeJuice()})
 				.Build();
+			screwdriver.IsDefault = true;
+			yield return screwdriver;
 
-			yield return _drinkRecipeBuilder.Default(DrinkNames.LemonDrop, Paths.Drinks.Lemondrop)
+			var lemonDrop = _drinkRecipeBuilder.Default(DrinkNames.LemonDrop, Paths.Drinks.Lemondrop)
 				.AddIngredient(new DrinkIngredient(160) {Ingredient = new Vodka()})
 				.AddIngredient(new DrinkIngredient(30){Ingredient = new LemonJuice()})
 				.Build();
+			lemonDrop.IsDefault = true;
+			yield return lemonDrop;
 
-			yield return _drinkRecipeBuilder.Default(DrinkNames.WhiskySour, Paths.Drinks.WhiskySour)
+			var whiskySour = _drinkRecipeBuilder.Default(DrinkNames.WhiskySour, Paths.Drinks.WhiskySour)
 				.AddIngredient(new DrinkIngredient(160) {Ingredient = new Whisky()})
 				.AddIngredient(new DrinkIngredient(15) {Ingredient = new OrangeJuice()})
 				.AddIngredient(new DrinkIngredient(30){Ingredient = new LemonJuice()})
 				.Build();
+			whiskySour.IsDefault = true;
+			yield return whiskySour;
 
-			yield return _drinkRecipeBuilder.Default(DrinkNames.Blizzard, Paths.Drinks.Blizzard)
+			var blizzard = _drinkRecipeBuilder.Default(DrinkNames.Blizzard, Paths.Drinks.Blizzard)
 				.AddIngredient(new DrinkIngredient(60) {Ingredient = new Whisky()})
 				.AddIngredient(new DrinkIngredient(30) {Ingredient = new CranberryJuice()})
 				.AddIngredient(new DrinkIngredient(15) {Ingredient = new LemonJuice()})
 				.Build();
+			blizzard.IsDefault = true;
+			yield return blizzard;
 
-			yield return _drinkRecipeBuilder.Default(DrinkNames.CapeCod, Paths.Drinks.CapeCod)
+			var capeCod = _drinkRecipeBuilder.Default(DrinkNames.CapeCod, Paths.Drinks.CapeCod)
 				.AddIngredient(new DrinkIngredient(160) {Ingredient = new Vodka()})
 				.AddIngredient(new DrinkIngredient(120) {Ingredient = new CranberryJuice()})
 				.Build();
+			capeCod.IsDefault = true;
+			yield return capeCod;
 			
-			yield return _drinkRecipeBuilder.Default(DrinkNames.HotToddy, Paths.Drinks.HotToddy)
+			var hotToddy = _drinkRecipeBuilder.Default(DrinkNames.HotToddy, Paths.Drinks.HotToddy)
 				.AddIngredient(new DrinkIngredient(160) {Ingredient = new Whisky()})
 				.AddIngredient(new DrinkIngredient(15) {Ingredient = new LemonJuice()})
 				.Build();
+			hotToddy.IsDefault = true;
+			yield return hotToddy;
 
-			yield return _drinkRecipeBuilder.Default(DrinkNames.BourbonSquash, Paths.Drinks.BourbonSquash)
+			var bourbonSquash = _drinkRecipeBuilder.Default(DrinkNames.BourbonSquash, Paths.Drinks.BourbonSquash)
 				.AddIngredient(new DrinkIngredient(160) {Ingredient = new Whisky()})
 				.AddIngredient(new DrinkIngredient(30) {Ingredient = new OrangeJuice()})
 				.AddIngredient(new DrinkIngredient(15){Ingredient = new LemonJuice()})
 				.Build();
+			bourbonSquash.IsDefault = true;
+			yield return bourbonSquash;
 
 			//yield return Get<Madras>();
 			//yield return Get<Screwdriver>();
@@ -115,7 +106,7 @@ namespace SmartButler.Logic.Services
 			//yield return Get<HotToddy>();
 			//yield return Get<BourbonSquash>();
 
-			
+
 
 		}
 	}

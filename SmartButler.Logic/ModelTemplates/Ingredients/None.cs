@@ -14,5 +14,6 @@ namespace SmartButler.Logic.ModelTemplates.Ingredients
 		public override byte[] ByteImage =>
 			ResourceManager.GetImageAsBytes(Paths.Ingredients.None);
 		public override int BottleIndex => 6;
+		public override bool IsDefault => true;
 	}
 }
