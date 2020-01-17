@@ -40,26 +40,29 @@
                                     <Image Source="{Binding ByteImage, Converter={StaticResource ByteArrayToImageSourceConverter}}"
                                            Grid.Column="1" HeightRequest="150" WidthRequest="150" HorizontalOptions="Start" />
 
-                                    <controls:RepeaterView Grid.Column="2" ItemsSource="{Binding IngredientViewModels, Mode=TwoWay}">
-                                        <controls:RepeaterView.ItemTemplate>
-                                            <DataTemplate>
-                                                <ViewCell>
-                                                    <Grid Padding="5"
-                                                          Margin="5"
-                                                          HorizontalOptions="EndAndExpand">
-                                                        <Grid.ColumnDefinitions>
-                                                            <ColumnDefinition/>
-                                                            <ColumnDefinition/>
-                                                        </Grid.ColumnDefinitions>
+                                    <StackLayout Grid.Column="2">
+                                        <Label Text="{Binding Name}"/>
+                                        <controls:RepeaterView ItemsSource="{Binding IngredientViewModels, Mode=TwoWay}">
+                                            <controls:RepeaterView.ItemTemplate>
+                                                <DataTemplate>
+                                                    <ViewCell>
+                                                        <Grid Padding="5"
+                                                              Margin="5"
+                                                              HorizontalOptions="EndAndExpand">
+                                                            <Grid.ColumnDefinitions>
+                                                                <ColumnDefinition />
+                                                                <ColumnDefinition />
+                                                            </Grid.ColumnDefinitions>
 
-                                                        <Label Text="{Binding Name}"/>
-                                                        <Label Grid.Column="1" Text="{Binding Milliliter}"/>
+                                                            <Label Text="{Binding Name}" />
+                                                            <Label Grid.Column="1" Text="{Binding Milliliter}" />
 
-                                                    </Grid>
-                                                </ViewCell>
-                                            </DataTemplate>
-                                        </controls:RepeaterView.ItemTemplate>
-                                    </controls:RepeaterView>
+                                                        </Grid>
+                                                    </ViewCell>
+                                                </DataTemplate>
+                                            </controls:RepeaterView.ItemTemplate>
+                                        </controls:RepeaterView>
+                                    </StackLayout>
                                 </Grid>
                             </ViewCell.View>
                         </ViewCell>

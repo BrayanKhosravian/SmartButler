@@ -6,7 +6,7 @@ using Xamarin.Forms;
 
 namespace SmartButler.View.Converters
 {
-	class BoolToColorConverter : IValueConverter
+	public class BoolToColorConverter : IValueConverter
 	{
 		public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
 		{

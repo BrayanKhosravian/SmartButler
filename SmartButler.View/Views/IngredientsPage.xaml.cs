@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using ReactiveUI;
@@ -37,13 +38,14 @@ namespace SmartButler.View.Views
 	    {
 			if(e is null) return;
 
-		    var ingredientViewModel = e.SelectedItem as IngredientViewModel;
+		    var ingredientViewModel = e.SelectedItem as DrinkIngredientViewModel;
 
-		    ViewModel.SelectedIngredient = ingredientViewModel;
+		    ViewModel.SelectedDrinkIngredient = ingredientViewModel;
 
 		    ((ListView) sender).SelectedItem = null;
 
 
 	    }
+
 	}
 }

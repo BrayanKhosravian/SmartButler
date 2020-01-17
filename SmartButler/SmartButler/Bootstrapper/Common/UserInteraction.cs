@@ -16,9 +16,9 @@ namespace SmartButler.Bootstrapper.Common
 			return ((App)Application.Current).MainPage.DisplayAlert(title, message, accept, cancel);
 		}
 
-		public Task<string> DisplayActionSheetAsync(string title, string cancel, string destruction, params string[] buttons)
+		public async Task<string> DisplayActionSheetAsync(string title, string cancel, string destruction, params string[] buttons)
 		{
-			return ((App)Application.Current).MainPage.DisplayActionSheet(title, cancel, destruction, buttons);
+			return await ((App)Application.Current).MainPage.DisplayActionSheet(title, cancel, destruction, buttons);
 		}
 
 	}

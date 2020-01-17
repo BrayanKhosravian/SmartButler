@@ -5,7 +5,7 @@
              x:Class="SmartButler.App">
     <Application.Resources>
         <ResourceDictionary>
-    
+            
         </ResourceDictionary>
     </Application.Resources>
 </Application>

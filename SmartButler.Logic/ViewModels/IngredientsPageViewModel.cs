@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Reactive.Linq;
 using System.Threading.Tasks;
@@ -15,9 +16,9 @@ namespace SmartButler.Logic.ViewModels
 {
     public class IngredientsPageViewModel : BaseViewModel
     {
-	    public ReactiveList<IngredientViewModel> Ingredients { get; private set; } = new ReactiveList<IngredientViewModel>();
+	    public ReactiveList<DrinkIngredientBaseViewModel> Ingredients { get; private set; } = new ReactiveList<DrinkIngredientBaseViewModel>();
 
-	    private IngredientViewModel _selectedIngredient;
+	    private DrinkIngredientViewModel _selectedDrinkIngredient;
 
 	    private readonly IIngredientsRepository _ingredientsRepository;
 	    private readonly INavigationService _navigationService;
@@ -31,20 +32,28 @@ namespace SmartButler.Logic.ViewModels
 	        _navigationService = navigationService;
 	        _userInteraction = userInteraction;
 
-	        this.WhenAnyValue(vm => vm.SelectedIngredient).Skip(1)
+	        this.WhenAnyValue(vm => vm.SelectedDrinkIngredient)
 		        .Where(ingredient => ingredient != null)
+		        .ObserveOn(RxApp.MainThreadScheduler)
 		        .Subscribe( async ingredientViewModel =>
 		        {
-			       var result = await _userInteraction.DisplayActionSheetAsync($"{ingredientViewModel.Name} selected!",
+			        if (ingredientViewModel.IsDefault)
+				        return;
+
+			        var result = await _userInteraction.DisplayActionSheetAsync($"{ingredientViewModel.Name} selected!",
 				        "Cancel",
-				        string.Empty,
-				        "Edit");
+				        null,
+				        "Edit", "Delete");
 
-			       if (result == "Edit")
-				       await _navigationService.PushAsync<EditIngredientPageViewModel>(new TypedParameter(typeof(IngredientViewModel), ingredientViewModel));
+			        if (result == "Edit")
+				        await _navigationService.PushAsync<EditIngredientPageViewModel>(new TypedParameter(typeof(DrinkIngredientViewModel), ingredientViewModel));
 
+			        else if (result == "Delete")
+			        {
+				        await _ingredientsRepository.DeleteAsync(ingredientViewModel.Ingredient);
+				        await ActivateAsync();
+			        }
 		        });
-
 	        AddIngredientCommand = ReactiveCommand.CreateFromTask(async _ =>
 		        await _navigationService.PushAsync<EditIngredientPageViewModel>());
 
@@ -55,24 +64,34 @@ namespace SmartButler.Logic.ViewModels
 	    {
 		    using (Ingredients.SuppressChangeNotifications())
 		    {
-				Ingredients.Clear();
+			    Ingredients.Clear();
 
-				var ingredients = await _ingredientsRepository.GetAllAsync();
-				var ingredientViewModels = ingredients.Select(ingredient => new IngredientViewModel(ingredient));
+			    var ingredients = await _ingredientsRepository.GetAllAsync();
+			    var ingredientViewModels =
+				    ingredients.Select(ingredient => new DrinkIngredientViewModel(ingredient)).ToList();
 
-				Ingredients.AddRange(ingredientViewModels);
-			}
+			    var orderedIngredients = ingredientViewModels.OrderBy(i => i.IsDefault).ToList();
+
+			    Ingredients.Add(new DrinkIngredientInfoViewModel() {InfoText = "Default Ingredients"});
+			    Ingredients.AddRange(orderedIngredients.Where(i => i.IsDefault));
+
+			    Ingredients.Add(new DrinkIngredientInfoViewModel() {InfoText = "Custom Ingredients"});
+			    Ingredients.AddRange(orderedIngredients.Where(i => !i.IsDefault));
+		    }
+
 	    }
 
-	    public IngredientViewModel SelectedIngredient
-        {
-	        get => _selectedIngredient;
-	        set => this.RaiseAndSetIfChanged(ref _selectedIngredient, value);
-        }
+	    public DrinkIngredientViewModel SelectedDrinkIngredient
+	    {
+		    get => _selectedDrinkIngredient;
+		    set
+		    {
+			    _selectedDrinkIngredient = value;
+				this.RaisePropertyChanged();
+		    }
+	    }
 
 	    public ToolbarControlViewModel ToolbarControlViewModel { get; private set; }
-
-
 	    public void SetToolBarControlViewModel(ToolbarControlViewModel vm)
         {
             ToolbarControlViewModel = vm;

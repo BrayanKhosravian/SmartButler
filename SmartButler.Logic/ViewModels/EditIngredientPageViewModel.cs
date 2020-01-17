@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 using Plugin.Media;
 using Plugin.Media.Abstractions;
+using ReactiveUI;
 using SmartButler.DataAccess.Models;
 using SmartButler.DataAccess.Repositories;
 using SmartButler.Logic.Common;
@@ -25,80 +26,18 @@ namespace SmartButler.Logic.ViewModels
 		private readonly IUserInteraction _userInteraction;
 		private int _bottleIndex;
 
-		// edit an ingredient
-		public EditIngredientPageViewModel(IIngredientsRepository ingredientsRepository,
-			INavigationService navigationService,
-			IUserInteraction userInteraction,
-			IngredientViewModel ingredientViewModel) : this()
-		{
-			_ingredientsRepository = ingredientsRepository;
-			_navigationService = navigationService;
-			_userInteraction = userInteraction;
-			IngredientViewModel = ingredientViewModel;
-
-			IngredientImage = ingredientViewModel.ByteImage;
-			IngredientName = ingredientViewModel.Name;
-			BottleIndex = ingredientViewModel.BottleIndex;
-			SelectedBottleIndex = ingredientViewModel.BottleIndex;
-
-			AcceptCommand = new DelegateCommand(async _ =>
-			{
-				if (!await IsInputValidAsync()) return;
-
-				IngredientViewModel.Name = _ingredientName;
-				IngredientViewModel.ByteImage = _ingredientImage;
-				IngredientViewModel.BottleIndex = _bottleIndex;
-
-				IngredientViewModel.UpdateIngredientModel();
-
-				await _ingredientsRepository.UpdateAsync(IngredientViewModel.Ingredient);
-				await _navigationService.PopAsync();
-			});
-
-			Title = "Edit your Ingredient!";
-		}
-
-		// create and add an ingredient
-		public EditIngredientPageViewModel(IIngredientsRepository ingredientsRepository,
-			INavigationService navigationService,
-			IUserInteraction userInteraction) : this()
-		{
-			_ingredientsRepository = ingredientsRepository;
-			_navigationService = navigationService;
-			_userInteraction = userInteraction;
-
-			IngredientViewModel = new IngredientViewModel(new Ingredient());
-
-			AcceptCommand = new DelegateCommand(async _ =>
-			{
-				if (!await IsInputValidAsync()) return;
-
-				IngredientViewModel.Name = _ingredientName;
-				IngredientViewModel.ByteImage = _ingredientImage;
-				IngredientViewModel.BottleIndex = _bottleIndex;
-
-				IngredientViewModel.UpdateIngredientModel();
-
-				await _ingredientsRepository.InsertAsync(IngredientViewModel.Ingredient);
-				await _navigationService.PopAsync();
-
-			});
-
-			Title = "Create an Ingredient!";
-		}
-
 		// shared default ctor
 		private EditIngredientPageViewModel()
 		{
-			AbortCommand = new Lazy<DelegateCommand>(() => 
-				new DelegateCommand( async _ => await _navigationService.PopAsync()));
+			AbortCommand = new Lazy<ReactiveCommand>(() => 
+				ReactiveCommand.CreateFromTask( async _ => await _navigationService.PopAsync()));
 			
-			ImageTappedCommand = new DelegateCommand(async _ =>
+			ImageTappedCommand = ReactiveCommand.CreateFromTask(async _ =>
 			{
 				await CrossMedia.Current.Initialize();
 
 				var galleryOrCamera = await _userInteraction.DisplayActionSheetAsync("How to pick an image", 
-					"cancel", "destruction", "gallery", "camera");
+					"cancel", null, "gallery", "camera");
 
 				MediaFile file = null;
 				switch (galleryOrCamera)
@@ -123,11 +62,72 @@ namespace SmartButler.Logic.ViewModels
 			});
 		}
 
-		public IngredientViewModel IngredientViewModel { get; }
-		
-		public Lazy<DelegateCommand> AbortCommand { get; } 
-		public DelegateCommand AcceptCommand { get; }
-		public IDelegateCommand ImageTappedCommand { get; }
+		// edit an ingredient
+		public EditIngredientPageViewModel(IIngredientsRepository ingredientsRepository,
+			INavigationService navigationService,
+			IUserInteraction userInteraction,
+			DrinkIngredientViewModel drinkIngredientViewModel) : this()
+		{
+			_ingredientsRepository = ingredientsRepository;
+			_navigationService = navigationService;
+			_userInteraction = userInteraction;
+			DrinkIngredientViewModel = drinkIngredientViewModel;
+
+			IngredientImage = drinkIngredientViewModel.ByteImage;
+			IngredientName = drinkIngredientViewModel.Name;
+			BottleIndex = drinkIngredientViewModel.BottleIndex;
+			SelectedBottleIndex = drinkIngredientViewModel.BottleIndex;
+
+			AcceptCommand = ReactiveCommand.CreateFromTask(async _ =>
+			{
+				if (!await IsInputValidAsync()) return;
+
+				DrinkIngredientViewModel.Name = _ingredientName;
+				DrinkIngredientViewModel.ByteImage = _ingredientImage;
+				DrinkIngredientViewModel.BottleIndex = _bottleIndex;
+
+				DrinkIngredientViewModel.UpdateIngredientModel();
+
+				await _ingredientsRepository.UpdateAsync(DrinkIngredientViewModel.Ingredient);
+				await _navigationService.PopAsync();
+			});
+
+			Title = "Edit your Ingredient!";
+		}
+
+		// create and add an ingredient
+		public EditIngredientPageViewModel(IIngredientsRepository ingredientsRepository,
+			INavigationService navigationService,
+			IUserInteraction userInteraction) : this()
+		{
+			_ingredientsRepository = ingredientsRepository;
+			_navigationService = navigationService;
+			_userInteraction = userInteraction;
+
+			DrinkIngredientViewModel = new DrinkIngredientViewModel(new Ingredient());
+
+			AcceptCommand = ReactiveCommand.CreateFromTask(async _ =>
+			{
+				if (!await IsInputValidAsync()) return;
+
+				DrinkIngredientViewModel.Name = _ingredientName;
+				DrinkIngredientViewModel.ByteImage = _ingredientImage;
+				DrinkIngredientViewModel.BottleIndex = _bottleIndex;
+
+				DrinkIngredientViewModel.UpdateIngredientModel();
+
+				await _ingredientsRepository.InsertAsync(DrinkIngredientViewModel.Ingredient);
+				await _navigationService.PopAsync();
+
+			});
+
+			Title = "Create an Ingredient!";
+		}
+
+		public DrinkIngredientViewModel DrinkIngredientViewModel { get; }
+		public Lazy<ReactiveCommand> AbortCommand { get; } 
+		public ReactiveCommand AcceptCommand { get; }
+		public ReactiveCommand ImageTappedCommand { get; }
 
 
 		public string Title
@@ -151,7 +151,7 @@ namespace SmartButler.Logic.ViewModels
 		public int SelectedBottleIndex
 		{
 			get => _selectedBottleIndex;
-			set => _selectedBottleIndex = value;
+			set => SetValue(ref _selectedBottleIndex, value);
 		}
 
 		public int BottleIndex
@@ -159,7 +159,6 @@ namespace SmartButler.Logic.ViewModels
 			get => _bottleIndex;
 			set => SetValue(ref _bottleIndex, value);
 		}
-
 
 		private async Task<bool> IsInputValidAsync()
 		{
@@ -175,7 +174,6 @@ namespace SmartButler.Logic.ViewModels
 
 			return result;
 		}
-
 
 		public ToolbarControlViewModel ToolbarControlViewModel { get; private set; }
 		public void SetToolBarControlViewModel(ToolbarControlViewModel toolbar)
