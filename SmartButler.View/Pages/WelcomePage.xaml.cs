@@ -1,10 +1,8 @@
-﻿using System;
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
-using ReactiveUI;
+﻿using ReactiveUI;
 using SmartButler.Logic.ViewModels;
+using Xamarin.Forms.Xaml;
 
-namespace SmartButler.View.Views
+namespace SmartButler.View.Pages
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class WelcomePage : IViewFor<WelcomePageViewModel>

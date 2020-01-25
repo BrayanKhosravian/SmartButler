@@ -1,9 +1,13 @@
-﻿using System.Reactive.Linq;
+﻿using System;
+using System.Collections.Generic;
+using System.Reactive.Linq;
 using System.Windows.Input;
+using Autofac;
 using ReactiveUI;
 using SmartButler.Framework.Bluetooth;
 using SmartButler.Logic.Common;
 using SmartButler.Logic.Interfaces;
+using SmartButler.Logic.ModelViewModels;
 
 namespace SmartButler.Logic.ViewModels
 {
@@ -16,7 +20,14 @@ namespace SmartButler.Logic.ViewModels
 
 	        BluetoothCommand = ReactiveCommand.CreateFromTask(async () => await navigation.PushAsync<BluetoothPageViewModel>());
 
-            IngredientsCommand = ReactiveCommand.CreateFromTask(async () => await navigation.PushAsync<IngredientsPageViewModel>());
+            IngredientsCommand = ReactiveCommand.CreateFromTask(async () =>
+            {
+	            var navigationParameter = new TypedParameter(typeof(IngredientsPageViewModel.Parameter),
+                new IngredientsPageViewModel.Parameter(IngredientsPageViewModel.NavigationMode.Add));
+
+                await navigation.PushAsync<IngredientsPageViewModel>(navigationParameter);
+                
+            });
 
             DrinksCommand = ReactiveCommand.CreateFromTask(async () => await navigation.PushAsync<DrinksPageViewModel>());
             

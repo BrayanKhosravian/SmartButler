@@ -17,4 +17,8 @@
     <PackageReference Include="Xam.Plugin.Media" Version="4.0.1.5" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="EqualityComperers\" />
+  </ItemGroup>
+
 </Project>

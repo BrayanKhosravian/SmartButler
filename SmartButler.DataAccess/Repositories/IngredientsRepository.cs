@@ -74,16 +74,6 @@ namespace SmartButler.DataAccess.Repositories
 			// update ingredient
 			await Component.Connection.UpdateAsync(ingredient);
 
-			//// update adapter table "DrinkIngredient"
-			//var toBeUpdated = await Component.Connection.Table<DrinkIngredient>().Where(di => di.IngredientId == ingredient.Id).ToListAsync();
-
-			//for (int i = 0; i < toBeUpdated.Count; i++)
-			//	toBeUpdated[i].Name = ingredient.Name;
-
-			//await Component.Connection.UpdateAllAsync(toBeUpdated);
-
-
-
 		}
 
 		public Task DeleteAsync(Ingredient ingredient)

@@ -20,11 +20,12 @@ namespace SmartButler.Logic.ViewModels
 		private string _ingredientName;
 		private int _selectedBottleIndex;
 		private string _title;
+		private int _bottleIndex;
 
 		private readonly IIngredientsRepository _ingredientsRepository;
 		private readonly INavigationService _navigationService;
 		private readonly IUserInteraction _userInteraction;
-		private int _bottleIndex;
+		
 
 		// shared default ctor
 		private EditIngredientPageViewModel()

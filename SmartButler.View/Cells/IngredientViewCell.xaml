@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ViewCell xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:converters="clr-namespace:SmartButler.View.Converters;assembly=SmartButler.View"
+             mc:Ignorable="d"
+             x:Class="SmartButler.View.Cells.IngredientViewCell"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:modelViewModels="clr-namespace:SmartButler.Logic.ModelViewModels;assembly=SmartButler.Logic"
+             d:DataContext="{d:DesignInstance modelViewModels:DrinkIngredientViewModel}"
+             Appearing="Cell_OnAppearing"
+             Disappearing="Cell_OnDisappearing" PropertyChanged="IngredientViewCell_OnPropertyChanged">
+
+    <Grid BackgroundColor="{Binding IsAvailable, Converter={StaticResource BoolToColorConverter}}">
+        <Grid.Resources>
+            <converters:Converters/>
+        </Grid.Resources>
+        <Grid.GestureRecognizers>
+            <TapGestureRecognizer Tapped="IngredientTappedRecognizer"/>
+        </Grid.GestureRecognizers>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+
+        <Image
+            Source="{Binding ByteImage, Converter={StaticResource ByteArrayToImageSourceConverter}}"
+            HeightRequest="150" WidthRequest="150" />
+
+        <StackLayout Grid.Column="1">
+            <Label Text="{Binding Name, StringFormat='Name: {0}'}"/>
+            <Label Text="{Binding BottleIndex, Converter={StaticResource BottleIndexToStringConverter}}"/>
+            <Label Text="{Binding IsDefault, Converter={StaticResource IsDefaultToStringConverter}}" 
+                   Margin="0,15,0,0" FontSize="Micro"/>
+        </StackLayout>
+        </Grid>
+</ViewCell>

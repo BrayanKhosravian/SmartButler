@@ -1,14 +1,12 @@
 ﻿using System;
-using System.ComponentModel;
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 using ReactiveUI;
-using SmartButler.DataAccess.Models;
 using SmartButler.Logic.ModelViewModels;
 using SmartButler.Logic.ViewModels;
 using SmartButler.View.Common;
+using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
 
-namespace SmartButler.View.Views
+namespace SmartButler.View.Pages
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class IngredientsPage : ContentPage, IViewFor<IngredientsPageViewModel>
@@ -39,21 +37,22 @@ namespace SmartButler.View.Views
 	    {
 			if(e is null) return;
 
-		    var ingredientViewModel = e.SelectedItem as DrinkIngredientViewModel;
+			//EditIngredientView.IsVisible = true;
 
-		    ViewModel.SelectedDrinkIngredient = ingredientViewModel;
+			// TODO: Uncomment if animating didnt work
+			var ingredientViewModel = e.SelectedItem as DrinkIngredientViewModel;
 
-		    ((ListView) sender).SelectedItem = null;
+			ViewModel.SelectedDrinkIngredient = ingredientViewModel;
+
+			((ListView)sender).SelectedItem = null;
 
 
-	    }
+		}
 
-	    private async void IngredientTappedRecognizer(object sender, EventArgs e)
-	    {
-		    var visual = sender as VisualElement;
-		    if (visual is null) return;
 
-		    await AnimationService.Refade(visual);
-	    }
+	    //private void TapGestureRecognizer_OnTapped(object sender, EventArgs e)
+	    //{
+		   // EditIngredientView.IsVisible = false;
+	    //}
 	}
 }

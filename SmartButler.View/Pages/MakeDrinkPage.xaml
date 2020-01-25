@@ -5,24 +5,20 @@
              xmlns:viewModels="clr-namespace:SmartButler.Logic.ViewModels;assembly=SmartButler.Logic"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             d:DataContext="{d:DesignInstance viewModels:WelcomePageViewModel}"
-             x:Class="SmartButler.View.Views.WelcomePage"
+             d:DataContext="{d:DesignInstance viewModels:MakeDrinkPageViewModel}"
+             x:Class="SmartButler.View.Pages.MakeDrinkPage"
              mc:Ignorable="d">
 
     <NavigationPage.TitleView>
         <controls:ToolBarControl BindingContext="{Binding ToolbarControlViewModel, Mode=TwoWay}"/>
     </NavigationPage.TitleView>
 
+
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Smart Butler"
-                       VerticalOptions="CenterAndExpand"
-                       HorizontalOptions="CenterAndExpand" />
-
-            <Button Text="Bluetooth" Command="{Binding BluetoothCommand}" />
-            <Button Text="Ingredients" Command="{Binding IngredientsCommand}" />
-            <Button Text="DrinkRecipes" Command="{Binding DrinksCommand}" />
-            <Button Text="Make DrinkRecipe" Command="{Binding MakeDrinkCommand}" />
+            <Label Text="Welcome to Xamarin.Forms!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

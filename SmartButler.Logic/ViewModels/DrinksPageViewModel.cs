@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Autofac;
 using ReactiveUI;
 using SmartButler.DataAccess.Models;
 using SmartButler.DataAccess.Repositories;
@@ -18,12 +19,18 @@ namespace SmartButler.Logic.ViewModels
 
         private readonly IDrinkRecipesRepository _drinkRecipeRepository;
         private readonly IBluetoothService _bluetoothService;
+        private readonly INavigationService _navigationService;
 
-        public DrinksPageViewModel(IDrinkRecipesRepository drinkRecipeRepository, INavigationService navigationService, IBluetoothService bluetoothService) 
+        public DrinksPageViewModel(IDrinkRecipesRepository drinkRecipeRepository, 
+	        INavigationService navigationService, 
+	        IBluetoothService bluetoothService) 
         {
             _drinkRecipeRepository = drinkRecipeRepository;
             _bluetoothService = bluetoothService;
+            _navigationService = navigationService;
 
+            AddRecipeCommand = ReactiveCommand.CreateFromTask(async _ =>
+                await _navigationService.PushAsync<EditDrinkRecipePageViewModel>());
         }
         public ReactiveCommand AddRecipeCommand { get; }
 

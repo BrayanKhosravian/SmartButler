@@ -6,7 +6,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              d:DataContext="{d:DesignInstance viewModels:BluetoothPageViewModel}"
-             x:Class="SmartButler.View.Views.BluetoothPage"
+             x:Class="SmartButler.View.Pages.BluetoothPage"
              mc:Ignorable="d">
 
     <NavigationPage.TitleView>

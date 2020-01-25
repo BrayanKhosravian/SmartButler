@@ -19,6 +19,8 @@ namespace SmartButler.Logic.ViewModels
 			get => _infoText;
 			set => SetValue(ref _infoText, value);
 		}
+
+		
 	}
 
 	public abstract class DrinkIngredientBaseViewModel : BaseViewModel

@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
-using Autofac;
 using Autofac.Core;
 using SmartButler.Logic.Common;
 
@@ -20,6 +19,9 @@ namespace SmartButler.Logic.Interfaces
 			where TViewModel : BaseViewModel;
 
 		Task PushAsync<TViewModel>(Parameter parameter, bool animated = false)
+			where TViewModel : BaseViewModel;
+
+		Task PushAsync<TViewModel>(Parameter[] parameters, bool animated = false)
 			where TViewModel : BaseViewModel;
 
 		Task PushModalAsync<TViewModel>(bool animated = false)

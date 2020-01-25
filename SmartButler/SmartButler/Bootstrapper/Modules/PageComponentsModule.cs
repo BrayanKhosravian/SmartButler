@@ -1,6 +1,12 @@
-﻿using Autofac;
+﻿using System.Collections.Generic;
+using Autofac;
+using SmartButler.DataAccess.Repositories;
+using SmartButler.Logic.Interfaces;
+using SmartButler.Logic.ModelViewModels;
+using SmartButler.Logic.Services;
 using SmartButler.Logic.ViewModels;
-using SmartButler.View.Views;
+using SmartButler.View.Pages;
+using Xamarin.Forms;
 
 namespace SmartButler.Bootstrapper.Modules
 {
@@ -51,6 +57,14 @@ namespace SmartButler.Bootstrapper.Modules
 
 	        builder.RegisterType<EditIngredientPage>();
             builder.RegisterType<EditIngredientPageViewModel>().OnActivated(c =>
+            {
+	            var dep = c.Context.Resolve<ToolbarControlViewModel>();
+	            c.Instance.SetToolBarControlViewModel(dep);
+
+            });
+
+            builder.RegisterType<EditDrinkRecipePage>();
+            builder.RegisterType<EditDrinkRecipePageViewModel>().OnActivated(c =>
             {
 	            var dep = c.Context.Resolve<ToolbarControlViewModel>();
 	            c.Instance.SetToolBarControlViewModel(dep);

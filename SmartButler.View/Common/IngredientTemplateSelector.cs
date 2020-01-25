@@ -4,6 +4,7 @@ using System.Text;
 using SmartButler.Framework.Common;
 using SmartButler.Logic.ModelViewModels;
 using SmartButler.Logic.ViewModels;
+using SmartButler.View.Cells;
 using Xamarin.Forms;
 
 namespace SmartButler.View.Common
@@ -12,14 +13,18 @@ namespace SmartButler.View.Common
 	{
 		protected override DataTemplate OnSelectTemplate(object item, BindableObject container)
 		{
-			if (item is DrinkIngredientInfoViewModel)
-				return DrinkIngredientInfoTemplate;
-			else if (item is DrinkIngredientViewModel)
-				return DrinkIngredientTemplate;
-			else throw ExceptionFactory.Get<NotImplementedException>("Datatemplate not implemented!");
+			switch (item)
+			{
+				case DrinkIngredientInfoViewModel _:
+					return DrinkIngredientInfoTemplate;
+				case DrinkIngredientViewModel _:
+					return DrinkIngredientTemplate;
+				default:
+					throw ExceptionFactory.Get<NotImplementedException>("DataTemplate not implemented!");
+			}
 		}
 
-		public DataTemplate DrinkIngredientTemplate { get; set; }
-		public DataTemplate DrinkIngredientInfoTemplate { get; set; }
+		public DataTemplate DrinkIngredientTemplate => new DataTemplate(typeof(IngredientViewCell));
+		public DataTemplate DrinkIngredientInfoTemplate => new DataTemplate(typeof(IngredientInfoViewCell));
 	}
 }

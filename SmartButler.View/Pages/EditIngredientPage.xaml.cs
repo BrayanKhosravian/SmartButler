@@ -1,14 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using ReactiveUI;
 using SmartButler.Logic.ViewModels;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace SmartButler.View.Views
+namespace SmartButler.View.Pages
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class EditIngredientPage : ContentPage, IViewFor<EditIngredientPageViewModel>

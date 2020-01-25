@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:SmartButler.View.Controls"
+             xmlns:converters="clr-namespace:SmartButler.View.Converters;assembly=SmartButler.View"
+             xmlns:viewModels="clr-namespace:SmartButler.Logic.ViewModels;assembly=SmartButler.Logic"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:common="clr-namespace:SmartButler.View.Common;assembly=SmartButler.View"
+             xmlns:modelViewModels="clr-namespace:SmartButler.Logic.ModelViewModels;assembly=SmartButler.Logic"
+             d:DataContext="{d:DesignInstance viewModels:IngredientsPageViewModel}"
+             x:Class="SmartButler.View.Pages.IngredientsPage"
+             mc:Ignorable="d">
+
+    <NavigationPage.TitleView>
+        <controls:ToolBarControl BindingContext="{Binding ToolbarControlViewModel, Mode=TwoWay}"/>
+    </NavigationPage.TitleView>
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <common:IngredientTemplateSelector x:Key="IngredientTemplateSelector"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <Grid>
+            <StackLayout>
+                <ListView x:Name="IngredientCollectionView"
+                          ItemsSource="{Binding Ingredients}"
+                          SelectedItem="{Binding SelectedDrinkIngredient}"
+                          ItemTemplate="{StaticResource IngredientTemplateSelector}" 
+                          ItemSelected="IngredientSelected"
+                          CachingStrategy="RecycleElementAndDataTemplate"/>
+
+                <Button Text="Add Ingredient" Command="{Binding AddIngredientCommand}" 
+                        IsVisible="{Binding IsAddIngredientButtonVisible}"/>
+            </StackLayout>
+
+            <!--<ContentView x:Name="EditIngredientView" IsVisible="False">
+                <StackLayout>
+                    <BoxView HeightRequest="200" BackgroundColor="Yellow">
+                        <BoxView.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_OnTapped"/>
+                        </BoxView.GestureRecognizers>
+                    </BoxView>
+
+                    <Frame BorderColor="Red">
+                        <Image Source=""
+                               HeightRequest="150" WidthRequest="150"/>
+                    </Frame>
+
+                    <Label Text="Title" BackgroundColor="Orange"
+                           VerticalOptions="StartAndExpand" 
+                           HorizontalOptions="CenterAndExpand" />
+
+                    <StackLayout Orientation="Horizontal" BackgroundColor="Green">
+                        <Label Text="Ingredient name: "/>
+                        <Entry Placeholder="Ingredient name" />
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" 
+                                 BackgroundColor="Blue">
+                        <Label Text="Bottle position: "/>
+                        <Picker x:Name="IngredientPositionPicker"/>
+                    </StackLayout>
+                
+                    <StackLayout Orientation="Horizontal" BackgroundColor="Black">
+                        <Button Text="Abort"/>
+                        <Button Text="Accept"/>
+                    </StackLayout>
+
+                </StackLayout>
+            </ContentView>-->
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,11 +1,9 @@
-﻿using System;
+﻿using ReactiveUI;
+using SmartButler.Logic.ViewModels;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using ReactiveUI;
-using SmartButler.DataAccess.Models;
-using SmartButler.Logic.ViewModels;
 
-namespace SmartButler.View.Views
+namespace SmartButler.View.Pages
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class DrinksPage : ContentPage, IViewFor<DrinksPageViewModel>

@@ -7,7 +7,7 @@
              xmlns:converters="clr-namespace:SmartButler.View.Converters;assembly=SmartButler.View"
              xmlns:system="clr-namespace:System;assembly=netstandard"
              d:DataContext="{d:DesignInstance viewModels:EditIngredientPageViewModel}"             
-             x:Class="SmartButler.View.Views.EditIngredientPage"
+             x:Class="SmartButler.View.Pages.EditIngredientPage"
              mc:Ignorable="d">
 
     <ContentPage.Resources>

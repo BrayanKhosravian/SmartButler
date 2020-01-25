@@ -11,7 +11,7 @@ using SmartButler.Framework.Resources;
 using SmartButler.Logic.ModelTemplates.Drinks;
 using SmartButler.Logic.Services;
 using SmartButler.Logic.ViewModels;
-using SmartButler.View.Views;
+using SmartButler.View.Pages;
 using Xamarin.Forms;
 
 namespace SmartButler.Bootstrapper
@@ -52,6 +52,7 @@ namespace SmartButler.Bootstrapper
             pageRegistrar.Register<MakeDrinkPageViewModel, MakeDrinkPage>();
             pageRegistrar.Register<SettingsPageViewModel, SettingsPage>();
 			pageRegistrar.Register<EditIngredientPageViewModel, EditIngredientPage>();
+			pageRegistrar.Register<EditDrinkRecipePageViewModel, EditDrinkRecipePage>();
 
 			var mainPage = pageRegistrar.Resolve<WelcomePageViewModel>();
           

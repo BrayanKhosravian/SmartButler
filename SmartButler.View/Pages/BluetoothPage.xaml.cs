@@ -1,10 +1,10 @@
-﻿using Xamarin.Forms;
-using ReactiveUI;
+﻿using ReactiveUI;
 using SmartButler.Framework.Bluetooth;
 using SmartButler.Logic.ViewModels;
+using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace SmartButler.View.Views
+namespace SmartButler.View.Pages
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class BluetoothPage : ContentPage, IViewFor<BluetoothPageViewModel>

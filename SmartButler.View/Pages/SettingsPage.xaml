@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              d:DataContext="{d:DesignInstance viewModels:SettingsPageViewModel}"
-             x:Class="SmartButler.View.Views.SettingsPage"
+             x:Class="SmartButler.View.Pages.SettingsPage"
              mc:Ignorable="d">
 
     <ContentPage.Content>

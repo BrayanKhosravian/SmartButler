@@ -13,5 +13,11 @@ namespace SmartButler.View.Common
 			await visualElement.FadeTo(0.5, 200, Easing.SinIn);
 			await visualElement.FadeTo(1, 450, Easing.SinIn);
 		}
+
+		public static async Task MakeVisibleAsync(VisualElement visualElement)
+		{
+			await visualElement.FadeTo(0, 0, Easing.SinIn);
+			await visualElement.FadeTo(1, 450, Easing.SinIn);
+		}
 	}
 }

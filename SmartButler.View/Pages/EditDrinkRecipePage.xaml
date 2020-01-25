@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:SmartButler.View.Controls;assembly=SmartButler.View"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:viewModels="clr-namespace:SmartButler.Logic.ViewModels;assembly=SmartButler.Logic"
+             d:DataContext="{d:DesignInstance viewModels:EditDrinkRecipePageViewModel}"
+             mc:Ignorable="d"
+             x:Class="SmartButler.View.Pages.EditDrinkRecipePage">
+    
+    <NavigationPage.TitleView>
+        <controls:ToolBarControl BindingContext="{Binding ToolbarControlViewModel, Mode=TwoWay}"/>
+    </NavigationPage.TitleView>
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="{Binding Title}"
+                VerticalOptions="Start" 
+                HorizontalOptions="CenterAndExpand" />
+
+            <ListView ItemsSource="{Binding DrinkIngredients}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+
+                                <Label Text="DrinkName" Grid.Row="0" Grid.Column="0"/>
+                                <Label Text="Milliliter" Grid.Row="1" Grid.Column="0"/>
+                                <Label Text="{Binding Name}" Grid.Row="0" Grid.Column="1"/>
+                                <Entry Text="{Binding Milliliter}" Grid.Row="1" Grid.Column="1"/>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            
+            <Button Text="Add Drink" Command="{Binding AddDrinkCommand}"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
