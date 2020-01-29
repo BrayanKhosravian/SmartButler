@@ -7,6 +7,7 @@ using ReactiveUI;
 using SmartButler.Logic.Common;
 using SmartButler.Logic.Interfaces;
 using SmartButler.Logic.ModelViewModels;
+using SmartButler.Logic.Services;
 
 namespace SmartButler.Logic.ViewModels.BaseViewModels
 {
@@ -21,41 +22,16 @@ namespace SmartButler.Logic.ViewModels.BaseViewModels
 
 		protected ConfigureIngredientPageViewModelBase(
 			INavigationService navigationService, 
-			IUserInteraction userInteraction)
+			IUserInteraction userInteraction,
+			ICrossMediaService crossMediaService)
 		{
 			_userInteraction = userInteraction;
 
 			AbortCommand = new Lazy<ReactiveCommand>(() => 
 				ReactiveCommand.CreateFromTask( async _ => await navigationService.PopAsync()));
 			
-			ImageTappedCommand = ReactiveCommand.CreateFromTask(async _ =>
-			{
-				await CrossMedia.Current.Initialize();
-
-				var galleryOrCamera = await userInteraction.DisplayActionSheetAsync("How to pick an image", 
-					"cancel", null, "gallery", "camera");
-
-				MediaFile file = null;
-				switch (galleryOrCamera)
-				{
-					case "gallery":
-						file = await CrossMedia.Current.PickPhotoAsync();
-						break;
-					case "camera":
-						file = await CrossMedia.Current.TakePhotoAsync(new StoreCameraMediaOptions());
-						break;
-					default:
-						return;
-				}
-
-				if(file == null) return;
-
-				var s = file.GetStream();
-				_ingredientImage = new byte[s.Length];
-				s.Read(_ingredientImage, 0, (int) s.Length);
-				OnPropertyChanged(nameof(IngredientImage));
-				file.Dispose();
-			});
+			ImageTappedCommand = ReactiveCommand.CreateFromTask(async _ => 
+				IngredientImage = await crossMediaService.GetPhotoAsync());
 		}
 
 		public DrinkIngredientViewModel DrinkIngredientViewModel { get; protected set; }

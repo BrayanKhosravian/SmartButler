@@ -3,6 +3,7 @@ using SmartButler.DataAccess.Models;
 using SmartButler.DataAccess.Repositories;
 using SmartButler.Logic.Interfaces;
 using SmartButler.Logic.ModelViewModels;
+using SmartButler.Logic.Services;
 using SmartButler.Logic.ViewModels.BaseViewModels;
 
 namespace SmartButler.Logic.ViewModels
@@ -12,8 +13,9 @@ namespace SmartButler.Logic.ViewModels
 		public AddIngredientPageViewModel(
 			IIngredientsRepository ingredientsRepository,
 			INavigationService navigationService,
-			IUserInteraction userInteraction) 
-			: base(navigationService, userInteraction)
+			IUserInteraction userInteraction,
+			ICrossMediaService crossMediaService) 
+			: base(navigationService, userInteraction, crossMediaService)
 		{
 			DrinkIngredientViewModel = new DrinkIngredientViewModel(new Ingredient());
 

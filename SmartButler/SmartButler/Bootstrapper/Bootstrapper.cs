@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using Autofac;
+using Plugin.Media;
 using SmartButler.Bootstrapper.Common;
 using SmartButler.Bootstrapper.Modules;
-using SmartButler.DataAccess.Models;
 using SmartButler.DataAccess.Repositories;
-using SmartButler.Framework.Resources;
-using SmartButler.Logic.ModelTemplates.Drinks;
 using SmartButler.Logic.Services;
 using SmartButler.Logic.ViewModels;
 using SmartButler.View.Pages;
@@ -25,8 +21,10 @@ namespace SmartButler.Bootstrapper
             _app = app;
         }
 
-        public async Task Load(ContainerBuilder builder)
+        public async Task LoadAsync(ContainerBuilder builder)
         {
+	        await InitializeThirdPartyFrameworks();
+
 	        builder.RegisterModule<PageComponentsModule>();
             builder.RegisterModule<ServiceModule>();
             builder.RegisterModule<RepositoryModule>();
@@ -52,11 +50,11 @@ namespace SmartButler.Bootstrapper
 
         private void RegisterPages(IPageRegistrar pageRegistrar)
         {
-	        pageRegistrar.Register<WelcomePageViewModel, View.Pages.WelcomePage>();
-	        pageRegistrar.Register<SettingsPageViewModel, View.Pages.SettingsPage>();
-	        pageRegistrar.Register<BluetoothPageViewModel, View.Pages.BluetoothPage>();
-	        pageRegistrar.Register<DrinksPageViewModel, View.Pages.DrinksPage>();
-	        pageRegistrar.Register<MakeDrinkPageViewModel, View.Pages.MakeDrinkPage>();
+	        pageRegistrar.Register<WelcomePageViewModel, WelcomePage>();
+	        pageRegistrar.Register<SettingsPageViewModel, SettingsPage>();
+	        pageRegistrar.Register<BluetoothPageViewModel, BluetoothPage>();
+	        pageRegistrar.Register<DrinksPageViewModel, DrinksPage>();
+	        pageRegistrar.Register<MakeDrinkPageViewModel, MakeDrinkPage>();
 
 	        pageRegistrar.Register<ShowIngredientsPageViewModel, IngredientsPage>();
 	        pageRegistrar.Register<SelectIngredientsPageViewModel, IngredientsPage>();
@@ -64,7 +62,16 @@ namespace SmartButler.Bootstrapper
 	        pageRegistrar.Register<EditIngredientPageViewModel, ConfigureIngredientPage>();
 	        pageRegistrar.Register<AddIngredientPageViewModel, ConfigureIngredientPage>();
 
-	        pageRegistrar.Register<EditDrinkRecipePageViewModel, View.Pages.EditDrinkRecipePage>();
+	        pageRegistrar.Register<EditDrinkRecipePageViewModel, EditDrinkRecipePage>();
+        }
+
+        private Task InitializeThirdPartyFrameworks()
+        {
+	        var tasks = new List<Task>();
+            tasks.Add(CrossMedia.Current.Initialize());
+            // add other frameworks Inits to 'tasks'
+
+	        return Task.WhenAll(tasks);
         }
 
     }

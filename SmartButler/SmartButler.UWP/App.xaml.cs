@@ -56,7 +56,7 @@ namespace SmartButler.UWP
 
                 if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)
                 {
-                    //TODO: Load state from previously suspended application
+                    //TODO: LoadAsync state from previously suspended application
                 }
 
                 // Place the frame in the current Window

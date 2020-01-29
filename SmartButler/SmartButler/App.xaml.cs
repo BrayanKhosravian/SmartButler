@@ -26,7 +26,7 @@ namespace SmartButler
 	        await CrossMedia.Current.Initialize();
 
             var bootstrapper = new Bootstrapper.Bootstrapper(this);
-            await bootstrapper.Load(builder);
+            await bootstrapper.LoadAsync(builder);
         }
 
         protected override void OnStart()

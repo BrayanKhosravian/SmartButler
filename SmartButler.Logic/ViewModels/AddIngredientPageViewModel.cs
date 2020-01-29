@@ -4,6 +4,7 @@ using ReactiveUI;
 using SmartButler.DataAccess.Repositories;
 using SmartButler.Logic.Interfaces;
 using SmartButler.Logic.ModelViewModels;
+using SmartButler.Logic.Services;
 using SmartButler.Logic.ViewModels.BaseViewModels;
 
 namespace SmartButler.Logic.ViewModels
@@ -15,8 +16,9 @@ namespace SmartButler.Logic.ViewModels
 			IIngredientsRepository ingredientsRepository,
 			INavigationService navigationService,
 			IUserInteraction userInteraction,
+			ICrossMediaService crossMediaService,
 			DrinkIngredientViewModel drinkIngredientViewModel) 
-			: base(navigationService, userInteraction)
+			: base(navigationService, userInteraction, crossMediaService)
 		{
 			DrinkIngredientViewModel = drinkIngredientViewModel;
 
