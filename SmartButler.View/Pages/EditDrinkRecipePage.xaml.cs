@@ -1,5 +1,6 @@
 ﻿using ReactiveUI;
 using SmartButler.Logic.ViewModels;
+using SmartButler.Logic.ViewModels.BaseViewModels;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 

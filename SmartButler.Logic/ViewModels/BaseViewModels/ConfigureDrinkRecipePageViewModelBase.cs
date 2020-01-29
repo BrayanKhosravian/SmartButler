@@ -10,9 +10,8 @@ using SmartButler.DataAccess.Models;
 using SmartButler.Logic.Interfaces;
 using SmartButler.Logic.ModelViewModels;
 using SmartButler.Logic.Services;
-using SmartButler.Logic.ViewModels.BaseViewModels;
 
-namespace SmartButler.Logic.ViewModels
+namespace SmartButler.Logic.ViewModels.BaseViewModels
 {
 	public abstract class ConfigureDrinkRecipePageViewModelBase : ToolBarPageViewModelBase
 	{
