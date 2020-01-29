@@ -12,7 +12,6 @@ namespace SmartButler.Logic.ModelViewModels
 	{
 		private ObservableCollection<DrinkIngredientViewModel> _ingredientViewModels;
 
-		private readonly DrinkRecipe _drinkRecipe;
 		private string _name;
 		private int _id;
 		private byte[] _byteImage;
@@ -33,13 +32,13 @@ namespace SmartButler.Logic.ModelViewModels
 			ByteImage = drinkRecipe.ByteImage;
 			IsDefault = drinkRecipe.IsDefault;
 
-			_drinkRecipe = drinkRecipe;
+			DrinkRecipe = drinkRecipe;
 
 			MapModelWithViewModel(drinkRecipe);
 		}
 
 		public ObservableCollection<DrinkIngredientViewModel> IngredientViewModels => 
-			_ingredientViewModels ?? new ObservableCollection<DrinkIngredientViewModel>(MapModelWithViewModel(_drinkRecipe));
+			_ingredientViewModels ?? new ObservableCollection<DrinkIngredientViewModel>(MapModelWithViewModel(DrinkRecipe));
 
 		public bool IsAvailable => IngredientViewModels.All(i => i.IsAvailable);
 
@@ -67,7 +66,7 @@ namespace SmartButler.Logic.ModelViewModels
 			set => SetValue(ref _isDefault, value);
 		}
 
-		public DrinkRecipe DrinkRecipe => _drinkRecipe;
+		public DrinkRecipe DrinkRecipe { get; }
 
 		private IEnumerable<DrinkIngredientViewModel> MapModelWithViewModel(DrinkRecipe drinkRecipe)
 		{

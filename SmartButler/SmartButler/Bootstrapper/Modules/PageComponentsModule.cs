@@ -37,6 +37,7 @@ namespace SmartButler.Bootstrapper.Modules
 
             builder.RegisterType<EditDrinkRecipePage>();
             builder.RegisterType<EditDrinkRecipePageViewModel>();
+            builder.RegisterType<AddDrinkRecipePageViewModel>();
 
             builder.RegisterType<SettingsPage>();
             builder.RegisterType<SettingsPageViewModel>();

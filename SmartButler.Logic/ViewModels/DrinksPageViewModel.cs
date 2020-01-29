@@ -17,7 +17,7 @@ namespace SmartButler.Logic.ViewModels
 {
 	public class DrinksPageViewModel : ToolBarPageViewModelBase
     {
-        public ReactiveList<DrinkRecipeViewModel> Drinks { get; private set; } = new ReactiveList<DrinkRecipeViewModel>();
+        public ReactiveList<DrinkRecipeViewModel> Drinks { get; } = new ReactiveList<DrinkRecipeViewModel>();
 
         private readonly IDrinkRecipesRepository _drinkRecipeRepository;
         private readonly IBluetoothService _bluetoothService;
@@ -36,7 +36,7 @@ namespace SmartButler.Logic.ViewModels
             _userInteraction = userInteraction;
 
             AddRecipeCommand = ReactiveCommand.CreateFromTask(async _ =>
-                await _navigationService.PushAsync<EditDrinkRecipePageViewModel>());
+                await _navigationService.PushAsync<AddDrinkRecipePageViewModel>());
         }
         public ReactiveCommand AddRecipeCommand { get; }
 
@@ -46,14 +46,14 @@ namespace SmartButler.Logic.ViewModels
 	        {
 		        Drinks.Clear();
 
-		        List<DataAccess.Models.DrinkRecipe> drinkRecipes = await _drinkRecipeRepository.GetAllAsync(); // list of my models 
+		        var drinkRecipes = await _drinkRecipeRepository.GetAllAsync(); 
 		        var result = drinkRecipes.Select(drinkRecipe => new DrinkRecipeViewModel(drinkRecipe)).ToList();
 
 				Drinks.AddRange(result);
 	        }
         }
 
-        public void Transmit(DataAccess.Models.DrinkRecipe drink)
+        public void Transmit(DrinkRecipe drink)
 		{
 			//var data = drink.ToByteArray();
 			if (_bluetoothService.IsConnected())

@@ -32,15 +32,8 @@ namespace SmartButler.Bootstrapper
             var container = builder.Build();
             var pageRegistrar = container.Resolve<IPageRegistrar>();
             RegisterPages(pageRegistrar);
-
-            // configure database
-			var ingredientFactory = new IngredientsFactory(new IngredientBuilder());
-			var defaultIngredients = ingredientFactory.GetDefaultIngredients();
-			await container.Resolve<IIngredientsRepository>().ConfigureAsync(defaultIngredients);
-
-			var drinkRecipesFactory = new DrinkRecipeFactory(new DrinkRecipeBuilder());
-			var defaultDrinks = drinkRecipesFactory.GetDefaultDrinks();
-			await container.Resolve<IDrinkRecipesRepository>().ConfigureAsync(defaultDrinks);
+            
+			await InitializeDataBaseAsync(container);
 
 			var mainPage = pageRegistrar.Resolve<WelcomePageViewModel>();
           
@@ -48,7 +41,27 @@ namespace SmartButler.Bootstrapper
 
         }
 
-        private void RegisterPages(IPageRegistrar pageRegistrar)
+        private static Task InitializeThirdPartyFrameworks()
+        {
+	        var tasks = new List<Task>();
+	        tasks.Add(CrossMedia.Current.Initialize());
+	        // add other frameworks Inits to 'tasks'
+
+	        return Task.WhenAll(tasks);
+        }
+
+        private static async Task InitializeDataBaseAsync(IContainer container)
+        {
+	        var ingredientFactory = new IngredientsFactory(new IngredientBuilder());
+	        var defaultIngredients = ingredientFactory.GetDefaultIngredients();
+	        await container.Resolve<IIngredientsRepository>().ConfigureAsync(defaultIngredients);
+
+	        var drinkRecipesFactory = new DrinkRecipeFactory(new DrinkRecipeBuilder());
+	        var defaultDrinks = drinkRecipesFactory.GetDefaultDrinks();
+	        await container.Resolve<IDrinkRecipesRepository>().ConfigureAsync(defaultDrinks);
+        }
+
+        private static void RegisterPages(IPageRegistrar pageRegistrar)
         {
 	        pageRegistrar.Register<WelcomePageViewModel, WelcomePage>();
 	        pageRegistrar.Register<SettingsPageViewModel, SettingsPage>();
@@ -63,16 +76,10 @@ namespace SmartButler.Bootstrapper
 	        pageRegistrar.Register<AddIngredientPageViewModel, ConfigureIngredientPage>();
 
 	        pageRegistrar.Register<EditDrinkRecipePageViewModel, EditDrinkRecipePage>();
+	        pageRegistrar.Register<AddDrinkRecipePageViewModel, EditDrinkRecipePage>();
         }
 
-        private Task InitializeThirdPartyFrameworks()
-        {
-	        var tasks = new List<Task>();
-            tasks.Add(CrossMedia.Current.Initialize());
-            // add other frameworks Inits to 'tasks'
-
-	        return Task.WhenAll(tasks);
-        }
+        
 
     }
 }

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reactive.Disposables;
-using System.Text;
-using System.Threading.Tasks;
-using ReactiveUI;
+﻿using ReactiveUI;
 using SmartButler.Logic.ViewModels;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -12,7 +6,7 @@ using Xamarin.Forms.Xaml;
 namespace SmartButler.View.Pages
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class EditDrinkRecipePage : ContentPage, IViewFor<Logic.ViewModels.EditDrinkRecipePageViewModel>
+	public partial class EditDrinkRecipePage : ContentPage, IViewFor<ConfigureDrinkRecipePageViewModelBase>
 	{
 		public EditDrinkRecipePage()
 		{
@@ -27,12 +21,12 @@ namespace SmartButler.View.Pages
 		object IViewFor.ViewModel
 		{
 			get => ViewModel;
-			set => ViewModel = value as Logic.ViewModels.EditDrinkRecipePageViewModel;
+			set => ViewModel = value as ConfigureDrinkRecipePageViewModelBase;
 		}
 
-		public Logic.ViewModels.EditDrinkRecipePageViewModel ViewModel
+		public ConfigureDrinkRecipePageViewModelBase ViewModel
 		{
-			get => BindingContext as Logic.ViewModels.EditDrinkRecipePageViewModel; 
+			get => BindingContext as ConfigureDrinkRecipePageViewModelBase; 
 			set => BindingContext = value;
 		}
 

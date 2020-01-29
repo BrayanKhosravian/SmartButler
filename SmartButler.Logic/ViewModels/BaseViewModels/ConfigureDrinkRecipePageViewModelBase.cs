@@ -5,12 +5,8 @@ using System.Reactive.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Autofac;
-using Autofac.Core;
 using ReactiveUI;
 using SmartButler.DataAccess.Models;
-using SmartButler.DataAccess.Repositories;
-using SmartButler.Framework.Bluetooth;
-using SmartButler.Logic.Common;
 using SmartButler.Logic.Interfaces;
 using SmartButler.Logic.ModelViewModels;
 using SmartButler.Logic.Services;
@@ -107,79 +103,5 @@ namespace SmartButler.Logic.ViewModels
 			set => this.SetValue(ref _drinkName, value);
 		}
 
-	}
-
-	public class AddDrinkRecipePageViewModel : ConfigureDrinkRecipePageViewModelBase
-	{
-		private readonly IUserInteraction _userInteraction;
-		private readonly IDrinkRecipeBuilder _drinkRecipeBuilder;
-		private readonly IDrinkRecipesRepository _drinkRecipesRepository;
-
-		public AddDrinkRecipePageViewModel(
-			IUserInteraction userInteraction, 
-			INavigationService navigationService, 
-			IDrinkRecipeBuilder drinkRecipeBuilder,
-			IDrinkRecipesRepository drinkRecipesRepository, 
-			ISelectionHost<DrinkIngredientViewModel> selectionHost) 
-			: base(userInteraction, navigationService, drinkRecipeBuilder, selectionHost)
-		{
-			_userInteraction = userInteraction;
-			_drinkRecipeBuilder = drinkRecipeBuilder;
-			_drinkRecipesRepository = drinkRecipesRepository;
-		}
-
-		protected override async Task CompletedTemplateMethod(IDrinkRecipeBuilder drinkRecipeBuilder,
-			IList<DrinkIngredient> ingredients)
-		{
-			var drink = _drinkRecipeBuilder // TODO: Add ByteImage!
-				.Default()
-				.SetName(DrinkName)
-				.AddIngredients(ingredients.ToArray())
-				.Build();
-
-			await _drinkRecipesRepository.InsertWithChildrenAsync(drink);
-			await _userInteraction.DisplayAlertAsync("Info", "Drink Added to the Database!", "Ok");
-		}
-	}
-
-
-	public class EditDrinkRecipePageViewModel : ConfigureDrinkRecipePageViewModelBase
-	{
-		private readonly IUserInteraction _userInteraction;
-		private readonly IDrinkRecipeBuilder _drinkRecipeBuilder;
-		private readonly IDrinkRecipesRepository _drinkRecipesRepository;
-		private readonly DrinkRecipeViewModel _drinkIngredient;
-
-		public EditDrinkRecipePageViewModel(
-			IUserInteraction userInteraction, 
-			IDrinkRecipeBuilder drinkRecipeBuilder, 
-			INavigationService navigationService, 
-			IDrinkRecipesRepository drinkRecipesRepository,
-			ISelectionHost<DrinkIngredientViewModel> selectionHost,
-			DrinkRecipeViewModel drinkRecipeViewModel) 
-			: base(userInteraction, navigationService, drinkRecipeBuilder, selectionHost)
-		{
-			_userInteraction = userInteraction;
-			_drinkRecipeBuilder = drinkRecipeBuilder;
-			_drinkRecipesRepository = drinkRecipesRepository;
-			_drinkIngredient = drinkRecipeViewModel;
-
-			DrinkName = drinkRecipeViewModel.Name;
-			DrinkIngredients.AddRange(drinkRecipeViewModel.IngredientViewModels);
-		}
-
-		protected override async Task CompletedTemplateMethod(IDrinkRecipeBuilder drinkRecipeBuilder,
-			IList<DrinkIngredient> ingredients)
-		{
-			var drink = _drinkRecipeBuilder // TODO: Add ByteImage!
-				.TakeDefault(_drinkIngredient.DrinkRecipe)
-				.ClearIngredients()
-				.SetName(DrinkName)
-				.AddIngredients(ingredients.ToArray())
-				.Build();
-
-			await _drinkRecipesRepository.UpdateWithChildrenAsync(drink);
-			await _userInteraction.DisplayAlertAsync("Info", "Drink updated in the Database!", "Ok");
-		}
 	}
 }

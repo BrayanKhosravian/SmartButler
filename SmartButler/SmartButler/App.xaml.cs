@@ -23,9 +23,7 @@ namespace SmartButler
         // pass in the dependencies as registered types
         public async Task InjectPlatformDependencies(ContainerBuilder builder)
         {
-	        await CrossMedia.Current.Initialize();
-
-            var bootstrapper = new Bootstrapper.Bootstrapper(this);
+	        var bootstrapper = new Bootstrapper.Bootstrapper(this);
             await bootstrapper.LoadAsync(builder);
         }
 
