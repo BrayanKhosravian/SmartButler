@@ -6,7 +6,8 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:viewModels="clr-namespace:SmartButler.Logic.ViewModels;assembly=SmartButler.Logic"
-             d:DataContext="{d:DesignInstance viewModels:DrinkIngredientInfoViewModel}"
+             xmlns:modelViewModels="clr-namespace:SmartButler.Logic.ModelViewModels;assembly=SmartButler.Logic"
+             d:DataContext="{d:DesignInstance modelViewModels:DrinkIngredientInfoViewModel}"
              Height="100">
     <Frame BackgroundColor="Red">
             <Label Text="{Binding InfoText}"

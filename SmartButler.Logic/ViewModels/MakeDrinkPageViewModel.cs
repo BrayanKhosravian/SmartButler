@@ -3,7 +3,7 @@ using SmartButler.Logic.Interfaces;
 
 namespace SmartButler.Logic.ViewModels
 {
-	public class MakeDrinkPageViewModel : BaseViewModel
+	public class MakeDrinkPageViewModel : BaseViewModel, IHasToolBarViewModel
     {
         public MakeDrinkPageViewModel(INavigationService navigationService)
         { 

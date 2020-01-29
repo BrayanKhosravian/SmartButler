@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using SmartButler.Logic.Common;
-
-namespace SmartButler.Logic.ViewModels
+﻿namespace SmartButler.Logic.ModelViewModels
 {
 	public class DrinkIngredientInfoViewModel : DrinkIngredientBaseViewModel
 	{
@@ -21,10 +16,5 @@ namespace SmartButler.Logic.ViewModels
 		}
 
 		
-	}
-
-	public abstract class DrinkIngredientBaseViewModel : BaseViewModel
-	{
-
 	}
 }

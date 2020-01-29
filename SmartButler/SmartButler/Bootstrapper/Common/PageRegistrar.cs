@@ -5,6 +5,7 @@ using Autofac;
 using Autofac.Core;
 using SmartButler.Framework.Common;
 using SmartButler.Logic.Common;
+using SmartButler.Logic.ViewModels;
 using Xamarin.Forms;
 using Xamarin.Forms.Internals;
 
@@ -131,16 +132,28 @@ namespace SmartButler.Bootstrapper.Common
             if (parameters is null)
                 throw ExceptionFactory.Get<ArgumentNullException>();
 
+            BaseViewModel vm = null;
+
             if (parameters.Length == 0)     
-                return (BaseViewModel) _componentContext.Resolve(vmType);
+                vm = (BaseViewModel) _componentContext.Resolve(vmType);
             if (parameters.Length == 1)
-                return (BaseViewModel) _componentContext.Resolve(vmType, parameters[0]);
+                vm = (BaseViewModel) _componentContext.Resolve(vmType, parameters[0]);
             if (parameters.Length > 1)
-                return (BaseViewModel) _componentContext.Resolve(vmType, parameters);
+                vm = (BaseViewModel) _componentContext.Resolve(vmType, parameters);
 
-            throw ExceptionFactory.Get<ArgumentException>(parameters.ToString());
+            TrySetToolBarViewModel(vm);
 
+            return vm;
         }
+
+        private void TrySetToolBarViewModel(BaseViewModel vm)
+        {
+	        if (!(vm is IHasToolBarViewModel hasToolBarViewModel)) return;
+
+	        var toolBar = _componentContext.Resolve<ToolbarControlViewModel>();
+	        hasToolBarViewModel.SetToolBarControlViewModel(toolBar);
+        }
+
     }
 
  

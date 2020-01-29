@@ -14,7 +14,7 @@ using SmartButler.Logic.Services;
 
 namespace SmartButler.Logic.ViewModels
 {
-	public class DrinksPageViewModel : BaseViewModel
+	public class DrinksPageViewModel : BaseViewModel, IHasToolBarViewModel
     {
         public ReactiveList<DrinkRecipeViewModel> Drinks { get; private set; } = new ReactiveList<DrinkRecipeViewModel>();
 

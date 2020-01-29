@@ -11,13 +11,13 @@ using SmartButler.Logic.Common;
 using SmartButler.Logic.Interfaces;
 using SmartButler.Logic.ModelViewModels;
 using SmartButler.Logic.Services;
+using SmartButler.Logic.ViewModels.BaseViewModels;
 
 namespace SmartButler.Logic.ViewModels
 {
-	public class SelectIngredientsPageViewModel : IngredientsPageViewModelBase
+	public class SelectIngredientsPageViewModel : IngredientsPageViewModelBase, IHasToolBarViewModel
 	{
 		private readonly IEnumerable<DrinkIngredientViewModel> _excludedIngredients;
-
 		public SelectIngredientsPageViewModel(
 			IIngredientsRepository ingredientsRepository,
 			INavigationService navigationService,

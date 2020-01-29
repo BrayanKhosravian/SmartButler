@@ -21,61 +21,26 @@ namespace SmartButler.Bootstrapper.Modules
 
             // add pages and ViewModels
             builder.RegisterType<WelcomePage>();
-            builder.RegisterType<WelcomePageViewModel>().OnActivating(c =>
-            {
-                var dep = c.Context.Resolve<ToolbarControlViewModel>();
-                c.Instance.SetToolBarControlViewModel(dep);
-            });
+            builder.RegisterType<WelcomePageViewModel>();
 
             builder.RegisterType<BluetoothPage>();
-            builder.RegisterType<BluetoothPageViewModel>().OnActivating(c =>
-            {
-                var dep = c.Context.Resolve<ToolbarControlViewModel>();
-                c.Instance.SetToolBarControlViewModel(dep);
-            });
+            builder.RegisterType<BluetoothPageViewModel>();
 
             builder.RegisterType<DrinksPage>();
-            builder.RegisterType<DrinksPageViewModel>().OnActivating(c =>
-            {
-                var dep = c.Context.Resolve<ToolbarControlViewModel>();
-                c.Instance.SetToolBarControlViewModel(dep);
-            });
+            builder.RegisterType<DrinksPageViewModel>();
 
             builder.RegisterType<IngredientsPage>();
-            builder.RegisterType<ShowIngredientsPageViewModel>().OnActivating(c =>
-            {
-                var dep = c.Context.Resolve<ToolbarControlViewModel>();
-                c.Instance.SetToolBarControlViewModel(dep);
-            });
-            builder.RegisterType<SelectIngredientsPageViewModel>().OnActivating(c =>
-            {
-	            var dep = c.Context.Resolve<ToolbarControlViewModel>();
-	            c.Instance.SetToolBarControlViewModel(dep);
-            });
+            builder.RegisterType<ShowIngredientsPageViewModel>();
+            builder.RegisterType<SelectIngredientsPageViewModel>();
 
             builder.RegisterType<MakeDrinkPage>();
-            builder.RegisterType<MakeDrinkPageViewModel>().OnActivating(c =>
-            {
-                var dep = c.Context.Resolve<ToolbarControlViewModel>();
-                c.Instance.SetToolBarControlViewModel(dep);
-            });
+            builder.RegisterType<MakeDrinkPageViewModel>();
 
 	        builder.RegisterType<ConfigureIngredientPage>();
-            builder.RegisterType<EditIngredientPageViewModel>().OnActivated(c =>
-            {
-	            var dep = c.Context.Resolve<ToolbarControlViewModel>();
-	            c.Instance.SetToolBarControlViewModel(dep);
-
-            });
+            builder.RegisterType<EditIngredientPageViewModel>();
 
             builder.RegisterType<EditDrinkRecipePage>();
-            builder.RegisterType<EditDrinkRecipePageViewModel>().OnActivated(c =>
-            {
-	            var dep = c.Context.Resolve<ToolbarControlViewModel>();
-	            c.Instance.SetToolBarControlViewModel(dep);
-
-            });
-
+            builder.RegisterType<EditDrinkRecipePageViewModel>();
 
             builder.RegisterType<SettingsPage>();
             builder.RegisterType<SettingsPageViewModel>();

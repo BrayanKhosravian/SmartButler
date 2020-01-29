@@ -9,6 +9,7 @@ using SmartButler.DataAccess.Repositories;
 using SmartButler.Logic.Interfaces;
 using ReactiveUI;
 using SmartButler.Framework.Common;
+using SmartButler.Logic.Common;
 using SmartButler.Logic.ModelViewModels;
 using SmartButler.Logic.Services;
 using SmartButler.Logic.ViewModels.BaseViewModels;

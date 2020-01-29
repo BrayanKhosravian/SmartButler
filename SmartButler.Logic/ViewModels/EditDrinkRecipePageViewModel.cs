@@ -14,7 +14,7 @@ using SmartButler.Logic.Services;
 
 namespace SmartButler.Logic.ViewModels
 {
-	public class EditDrinkRecipePageViewModel : BaseViewModel
+	public class EditDrinkRecipePageViewModel : BaseViewModel, IHasToolBarViewModel
 	{
 		private string _title;
 

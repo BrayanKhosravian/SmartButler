@@ -11,7 +11,7 @@ using SmartButler.Logic.ModelViewModels;
 
 namespace SmartButler.Logic.ViewModels
 {
-    public class WelcomePageViewModel : BaseViewModel
+    public class WelcomePageViewModel : BaseViewModel, IHasToolBarViewModel
     {
 	    private readonly IBluetoothService _bluetoothService;
 

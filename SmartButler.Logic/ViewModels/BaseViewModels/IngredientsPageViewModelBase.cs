@@ -8,9 +8,9 @@ using SmartButler.Logic.Common;
 using SmartButler.Logic.Interfaces;
 using SmartButler.Logic.ModelViewModels;
 
-namespace SmartButler.Logic.ViewModels
+namespace SmartButler.Logic.ViewModels.BaseViewModels
 {
-	public abstract class IngredientsPageViewModelBase : BaseViewModel
+	public abstract class IngredientsPageViewModelBase : BaseViewModel, IHasToolBarViewModel
 	{
 		private DrinkIngredientViewModel _selectedDrinkIngredient;
 

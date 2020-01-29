@@ -14,7 +14,7 @@ using SmartButler.Logic.ModelViewModels;
 
 namespace SmartButler.Logic.ViewModels
 {
-	public class EditIngredientPageViewModel : BaseViewModel
+	public class EditIngredientPageViewModel : BaseViewModel, IHasToolBarViewModel
 	{
 		private byte[] _ingredientImage;
 		private string _ingredientName;

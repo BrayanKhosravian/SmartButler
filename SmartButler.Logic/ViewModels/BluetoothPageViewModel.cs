@@ -10,7 +10,7 @@ using SmartButler.Logic.Interfaces;
 namespace SmartButler.Logic.ViewModels
 {
 
-    public class BluetoothPageViewModel : BaseViewModel
+    public class BluetoothPageViewModel : BaseViewModel, IHasToolBarViewModel
     {
 	    public ReactiveList<BluetoothDevice> BluetoothDevices { get; set; } = new ReactiveList<BluetoothDevice>();
 
