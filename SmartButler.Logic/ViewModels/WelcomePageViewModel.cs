@@ -8,13 +8,12 @@ using SmartButler.Framework.Bluetooth;
 using SmartButler.Logic.Common;
 using SmartButler.Logic.Interfaces;
 using SmartButler.Logic.ModelViewModels;
+using SmartButler.Logic.ViewModels.BaseViewModels;
 
 namespace SmartButler.Logic.ViewModels
 {
-    public class WelcomePageViewModel : BaseViewModel, IHasToolBarViewModel
+    public class WelcomePageViewModel : ToolBarPageViewModelBase
     {
-	    private readonly IBluetoothService _bluetoothService;
-
 	    public WelcomePageViewModel(INavigationService navigation, IBluetoothService bluetoothService)
         {
 
@@ -33,19 +32,9 @@ namespace SmartButler.Logic.ViewModels
         }
 
         public ReactiveCommand BluetoothCommand { get; }
-
         public ReactiveCommand IngredientsCommand { get; }
-
         public ReactiveCommand DrinksCommand { get; }
-
         public IDelegateCommand MakeDrinkCommand { get; }
-
-
-        public ToolbarControlViewModel ToolbarControlViewModel { get; private set; }
-        public void SetToolBarControlViewModel(ToolbarControlViewModel vm)
-        {
-            ToolbarControlViewModel = vm;
-        }
 
 		public void Activate()
 		{

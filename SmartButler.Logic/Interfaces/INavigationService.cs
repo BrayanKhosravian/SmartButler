@@ -16,16 +16,16 @@ namespace SmartButler.Logic.Interfaces
 		Task PopModalAsync(bool animated = false);
 
 		Task PushAsync<TViewModel>(bool animated = false)
-			where TViewModel : BaseViewModel;
+			where TViewModel : ViewModelBase;
 
 		Task PushAsync<TViewModel>(Parameter parameter, bool animated = false)
-			where TViewModel : BaseViewModel;
+			where TViewModel : ViewModelBase;
 
 		Task PushAsync<TViewModel>(Parameter[] parameters, bool animated = false)
-			where TViewModel : BaseViewModel;
+			where TViewModel : ViewModelBase;
 
 		Task PushModalAsync<TViewModel>(bool animated = false)
-			where TViewModel : BaseViewModel;
+			where TViewModel : ViewModelBase;
 
 	}
 }

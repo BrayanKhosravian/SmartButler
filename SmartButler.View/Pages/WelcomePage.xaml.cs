@@ -5,7 +5,7 @@ using Xamarin.Forms.Xaml;
 namespace SmartButler.View.Pages
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class WelcomePage : IViewFor<WelcomePageViewModel>
+    public partial class WelcomePage : IViewFor<Logic.ViewModels.WelcomePageViewModel>
     {
         public WelcomePage()
         {
@@ -20,12 +20,12 @@ namespace SmartButler.View.Pages
         object IViewFor.ViewModel
         {
             get => ViewModel;
-            set => ViewModel = value as WelcomePageViewModel;
+            set => ViewModel = value as Logic.ViewModels.WelcomePageViewModel;
         }
 
-        public WelcomePageViewModel ViewModel
+        public Logic.ViewModels.WelcomePageViewModel ViewModel
         {
-            get => BindingContext as WelcomePageViewModel;
+            get => BindingContext as Logic.ViewModels.WelcomePageViewModel;
             set => BindingContext = value;
         }
     }

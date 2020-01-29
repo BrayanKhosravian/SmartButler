@@ -7,7 +7,7 @@ using PropertyChangingEventHandler = System.ComponentModel.PropertyChangingEvent
 
 namespace SmartButler.Logic.Common
 {
-    public abstract class BaseViewModel : ReactiveObject, INotifyPropertyChanged, System.ComponentModel.INotifyPropertyChanging
+    public abstract class ViewModelBase : ReactiveObject, INotifyPropertyChanged, System.ComponentModel.INotifyPropertyChanging
     {
         private bool _isBusy = false;
         public new event PropertyChangedEventHandler PropertyChanged;

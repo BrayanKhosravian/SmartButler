@@ -41,7 +41,7 @@ namespace SmartButler.Bootstrapper.Common
 
         }
 
-        public Task PushAsync<TViewModel>(bool animated = false) where TViewModel : BaseViewModel
+        public Task PushAsync<TViewModel>(bool animated = false) where TViewModel : ViewModelBase
         {
             var page = _pageRegistrar.Resolve<TViewModel>();
 
@@ -49,7 +49,7 @@ namespace SmartButler.Bootstrapper.Common
         }
 
         public Task PushAsync<TViewModel>(Parameter parameter, bool animated = false) 
-	        where TViewModel : BaseViewModel
+	        where TViewModel : ViewModelBase
         {
 	        var page = _pageRegistrar.Resolve<TViewModel>(parameter);
 
@@ -57,7 +57,7 @@ namespace SmartButler.Bootstrapper.Common
         }
 
         public Task PushAsync<TViewModel>(Parameter[] parameters, bool animated = false) 
-	        where TViewModel : BaseViewModel
+	        where TViewModel : ViewModelBase
         {
 	        if(parameters == null || parameters.Length == 0)
                 throw ExceptionFactory.Get<ArgumentNullException>("'paremters' was null or empty");
@@ -69,7 +69,7 @@ namespace SmartButler.Bootstrapper.Common
             return _navigation.Value.PushAsync(page, animated);
         }
 
-        public Task PushModalAsync<TViewModel>(bool animated = false) where TViewModel : BaseViewModel
+        public Task PushModalAsync<TViewModel>(bool animated = false) where TViewModel : ViewModelBase
         {
             var page = _pageRegistrar.Resolve<TViewModel>();
 

@@ -6,7 +6,7 @@ using Xamarin.Forms.Xaml;
 namespace SmartButler.View.Pages
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class SettingsPage : ContentPage, IViewFor<SettingsPageViewModel>
+	public partial class SettingsPage : ContentPage, IViewFor<Logic.ViewModels.SettingsPageViewModel>
 	{
 		public SettingsPage ()
 		{
@@ -16,12 +16,12 @@ namespace SmartButler.View.Pages
 	    object IViewFor.ViewModel
 	    {
 	        get => ViewModel;
-	        set => ViewModel = value as SettingsPageViewModel;
+	        set => ViewModel = value as Logic.ViewModels.SettingsPageViewModel;
 	    }
 
-	    public SettingsPageViewModel ViewModel
+	    public Logic.ViewModels.SettingsPageViewModel ViewModel
 	    {
-	        get => BindingContext as SettingsPageViewModel;
+	        get => BindingContext as Logic.ViewModels.SettingsPageViewModel;
 	        set => BindingContext = value;
 	    }
 	}

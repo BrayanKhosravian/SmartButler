@@ -22,7 +22,7 @@
             <Button Text="Bluetooth" Command="{Binding BluetoothCommand}" />
             <Button Text="Ingredients" Command="{Binding IngredientsCommand}" />
             <Button Text="DrinkRecipes" Command="{Binding DrinksCommand}" />
-            <Button Text="Make DrinkRecipe" Command="{Binding MakeDrinkCommand}" />
+            <Button Text="Make Drink" Command="{Binding MakeDrinkCommand}" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

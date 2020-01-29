@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using ReactiveUI;
 using SmartButler.Logic.ViewModels;
+using SmartButler.Logic.ViewModels.BaseViewModels;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace SmartButler.View.Pages
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class ConfigureIngredientPage : ContentPage, IViewFor<EditIngredientPageViewModel>
+	public partial class ConfigureIngredientPage : ContentPage, IViewFor<ConfigureIngredientPageViewModelBase>
 	{
 		public ConfigureIngredientPage()
 		{
@@ -26,12 +27,12 @@ namespace SmartButler.View.Pages
 		object IViewFor.ViewModel
 		{
 			get => ViewModel;
-			set => ViewModel = value as EditIngredientPageViewModel;
+			set => ViewModel = value as ConfigureIngredientPageViewModelBase;
 		}
 
-		public EditIngredientPageViewModel ViewModel
+		public ConfigureIngredientPageViewModelBase ViewModel
 		{
-			get => BindingContext as EditIngredientPageViewModel;
+			get => BindingContext as ConfigureIngredientPageViewModelBase;
 			set => BindingContext = value;
 		}
 

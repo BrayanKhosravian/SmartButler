@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 using SQLite;
 
 namespace SmartButler.DataAccess.Models
@@ -7,10 +8,8 @@ namespace SmartButler.DataAccess.Models
     {
 	    protected LiquidBase() { }
 
-	    protected LiquidBase(string name)
-	    {
-		    Name = name;
-	    }
+		[Obsolete]
+	    protected LiquidBase(string name) => Name = name;
 
 	    public virtual string Name { get; set; }
 

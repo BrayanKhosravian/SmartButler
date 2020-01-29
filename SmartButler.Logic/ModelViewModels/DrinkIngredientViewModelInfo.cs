@@ -1,10 +1,10 @@
 ﻿namespace SmartButler.Logic.ModelViewModels
 {
-	public class DrinkIngredientInfoViewModel : DrinkIngredientBaseViewModel
+	public class DrinkIngredientViewModelInfo : DrinkIngredientViewModelBase
 	{
 		private string _infoText;
 
-		public DrinkIngredientInfoViewModel()
+		public DrinkIngredientViewModelInfo()
 		{
 			
 		}

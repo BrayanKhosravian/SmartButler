@@ -52,21 +52,19 @@ namespace SmartButler.Bootstrapper
 
         private void RegisterPages(IPageRegistrar pageRegistrar)
         {
-	        pageRegistrar.Register<WelcomePageViewModel, WelcomePage>();
-	        pageRegistrar.Register<SettingsPageViewModel, SettingsPage>();
-	        pageRegistrar.Register<BluetoothPageViewModel, BluetoothPage>();
-	        pageRegistrar.Register<DrinksPageViewModel, DrinksPage>();
-	        pageRegistrar.Register<MakeDrinkPageViewModel, MakeDrinkPage>();
+	        pageRegistrar.Register<WelcomePageViewModel, View.Pages.WelcomePage>();
+	        pageRegistrar.Register<SettingsPageViewModel, View.Pages.SettingsPage>();
+	        pageRegistrar.Register<BluetoothPageViewModel, View.Pages.BluetoothPage>();
+	        pageRegistrar.Register<DrinksPageViewModel, View.Pages.DrinksPage>();
+	        pageRegistrar.Register<MakeDrinkPageViewModel, View.Pages.MakeDrinkPage>();
 
 	        pageRegistrar.Register<ShowIngredientsPageViewModel, IngredientsPage>();
 	        pageRegistrar.Register<SelectIngredientsPageViewModel, IngredientsPage>();
 
-
-	        // same view but different viewmodels // each vm has a different behaviour 
 	        pageRegistrar.Register<EditIngredientPageViewModel, ConfigureIngredientPage>();
-	        //pageRegistrar.Register<AddIngredientPageViewModel, ConfigureIngredientPage>();
+	        pageRegistrar.Register<AddIngredientPageViewModel, ConfigureIngredientPage>();
 
-	        pageRegistrar.Register<EditDrinkRecipePageViewModel, EditDrinkRecipePage>();
+	        pageRegistrar.Register<EditDrinkRecipePageViewModel, View.Pages.EditDrinkRecipePage>();
         }
 
     }

@@ -37,17 +37,17 @@ namespace Integration.Tests
 		//{
 		//	var connection = _repositoryComponent.Connection;
 
-		//	var drinks = await connection.Table<DrinkRecipe>().ToListAsync();
+		//	var drinks = await connection.Table<DrinkRecipeViewModel>().ToListAsync();
 
 		//	var results = await QueryValuations(connection, drinks.First());
 
 		//	Assert.Pass();
 		//}
 
-		//public async Task<IEnumerable<DrinkIngredient>> QueryValuations(SQLiteAsyncConnection db, DrinkRecipe drink)
+		//public async Task<IEnumerable<DrinkIngredient>> QueryValuations(SQLiteAsyncConnection db, DrinkRecipeViewModel drink)
 		//{
 
-		//	//return await db.QueryAsync(new TableMapping(typeof(DrinkRecipe)), drink.Id.ToString());
+		//	//return await db.QueryAsync(new TableMapping(typeof(DrinkRecipeViewModel)), drink.Id.ToString());
 		//	//return await db.QueryAsync("select * from Valuation where StockId = ?", new object[]{drink.Id});
 		//}
 	}

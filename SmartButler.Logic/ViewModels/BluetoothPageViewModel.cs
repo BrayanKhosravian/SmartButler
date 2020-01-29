@@ -6,11 +6,12 @@ using ReactiveUI;
 using SmartButler.Framework.Bluetooth;
 using SmartButler.Logic.Common;
 using SmartButler.Logic.Interfaces;
+using SmartButler.Logic.ViewModels.BaseViewModels;
 
 namespace SmartButler.Logic.ViewModels
 {
 
-    public class BluetoothPageViewModel : BaseViewModel, IHasToolBarViewModel
+    public class BluetoothPageViewModel : ToolBarPageViewModelBase
     {
 	    public ReactiveList<BluetoothDevice> BluetoothDevices { get; set; } = new ReactiveList<BluetoothDevice>();
 
@@ -50,21 +51,15 @@ namespace SmartButler.Logic.ViewModels
 
         public void ConfigureViewModel()
         {
-	        var devices = CrossBluetoothLE.Current.Adapter.GetSystemConnectedOrPairedDevices();
+	        //var devices = CrossBluetoothLE.Current.Adapter.GetSystemConnectedOrPairedDevices();
 
-	        // var devices = _bluetoothService.GetBondedDevices();
-            foreach (var device in devices)
-            {
-                if (!BluetoothDevices.Any(d => d.Mac == device.Id.ToString() && d.Name == device.Name))
-                    BluetoothDevices.Add(new BluetoothDevice(device.Name, device.Id.ToString()));
-            }
+	        //// var devices = _bluetoothService.GetBondedDevices();
+         //   foreach (var device in devices)
+         //   {
+         //       if (!BluetoothDevices.Any(d => d.Mac == device.Id.ToString() && d.Name == device.Name))
+         //           BluetoothDevices.Add(new BluetoothDevice(device.Name, device.Id.ToString()));
+         //   }
 
-        }
-
-        public ToolbarControlViewModel ToolbarControlViewModel { get; private set; }
-        public void SetToolBarControlViewModel(ToolbarControlViewModel vm)
-        {
-            ToolbarControlViewModel = vm;
         }
 
     }

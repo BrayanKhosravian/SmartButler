@@ -12,7 +12,7 @@ using Xamarin.Forms.Xaml;
 namespace SmartButler.View.Pages
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class EditDrinkRecipePage : ContentPage, IViewFor<EditDrinkRecipePageViewModel>
+	public partial class EditDrinkRecipePage : ContentPage, IViewFor<Logic.ViewModels.EditDrinkRecipePageViewModel>
 	{
 		public EditDrinkRecipePage()
 		{
@@ -27,12 +27,12 @@ namespace SmartButler.View.Pages
 		object IViewFor.ViewModel
 		{
 			get => ViewModel;
-			set => ViewModel = value as EditDrinkRecipePageViewModel;
+			set => ViewModel = value as Logic.ViewModels.EditDrinkRecipePageViewModel;
 		}
 
-		public EditDrinkRecipePageViewModel ViewModel
+		public Logic.ViewModels.EditDrinkRecipePageViewModel ViewModel
 		{
-			get => BindingContext as EditDrinkRecipePageViewModel; 
+			get => BindingContext as Logic.ViewModels.EditDrinkRecipePageViewModel; 
 			set => BindingContext = value;
 		}
 

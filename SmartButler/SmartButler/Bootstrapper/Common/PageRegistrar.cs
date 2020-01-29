@@ -32,26 +32,26 @@ namespace SmartButler.Bootstrapper.Common
         /// <typeparam name="TView"></typeparam>
         /// <typeparam name="TViewModel"></typeparam>
         void Register<TViewModel, TView>()
-	        where TViewModel : BaseViewModel
+	        where TViewModel : ViewModelBase
 	        where TView : Page;
 
         /// <summary>
         /// Resolve the view without using any parameters
         /// </summary>
         Page Resolve<TViewModel>()
-	        where TViewModel : BaseViewModel;
+	        where TViewModel : ViewModelBase;
 
 		/// <summary>
 		/// Resolve the view using 1 parameter
 		/// </summary>
 		Page Resolve<TViewModel>(TypedParameter parameter)
-            where TViewModel : BaseViewModel;
+            where TViewModel : ViewModelBase;
 
 		/// <summary>
 		/// Resolve the view without using more parameters
 		/// </summary>
 		Page Resolve<TViewModel>(params Parameter[] parameters)
-            where TViewModel : BaseViewModel;
+            where TViewModel : ViewModelBase;
     }
 
 
@@ -72,7 +72,7 @@ namespace SmartButler.Bootstrapper.Common
 
        
         public void Register<TViewModel, TView>()
-	        where TViewModel : BaseViewModel
+	        where TViewModel : ViewModelBase
 	        where TView : Page
 		{
             if(_map.ContainsKey(typeof(TView)))
@@ -81,7 +81,7 @@ namespace SmartButler.Bootstrapper.Common
         }
 
         public Page Resolve<TViewModel>() 
-	        where TViewModel : BaseViewModel
+	        where TViewModel : ViewModelBase
         {
 
             var vm = GetViewModel<TViewModel>();
@@ -93,7 +93,7 @@ namespace SmartButler.Bootstrapper.Common
         }
 
         public Page Resolve<TViewModel>(TypedParameter parameter)
-	        where TViewModel : BaseViewModel
+	        where TViewModel : ViewModelBase
         {
 
             var vm = GetViewModel<TViewModel>(parameter);
@@ -105,7 +105,7 @@ namespace SmartButler.Bootstrapper.Common
         }
 
         public Page Resolve<TViewModel>(params Parameter[] parameters) 
-	        where TViewModel : BaseViewModel
+	        where TViewModel : ViewModelBase
         {
             var vm = GetViewModel<TViewModel>(parameters);
             var page = GetPage<TViewModel>();
@@ -116,7 +116,7 @@ namespace SmartButler.Bootstrapper.Common
         }
 
 
-        private Page GetPage<TViewModel>() where TViewModel : BaseViewModel
+        private Page GetPage<TViewModel>() where TViewModel : ViewModelBase
         {
 	        var pageType = _map[typeof(TViewModel)];
 
@@ -124,7 +124,7 @@ namespace SmartButler.Bootstrapper.Common
             return page;
         }
 
-        private BaseViewModel GetViewModel<TViewModel>(params Parameter[] parameters)
+        private ViewModelBase GetViewModel<TViewModel>(params Parameter[] parameters)
         {
 			var index = _map.IndexOf(kvp => kvp.Key == typeof(TViewModel));
 			var vmType = _map.ElementAt(index).Key;
@@ -132,21 +132,21 @@ namespace SmartButler.Bootstrapper.Common
             if (parameters is null)
                 throw ExceptionFactory.Get<ArgumentNullException>();
 
-            BaseViewModel vm = null;
+            ViewModelBase vm = null;
 
             if (parameters.Length == 0)     
-                vm = (BaseViewModel) _componentContext.Resolve(vmType);
+                vm = (ViewModelBase) _componentContext.Resolve(vmType);
             if (parameters.Length == 1)
-                vm = (BaseViewModel) _componentContext.Resolve(vmType, parameters[0]);
+                vm = (ViewModelBase) _componentContext.Resolve(vmType, parameters[0]);
             if (parameters.Length > 1)
-                vm = (BaseViewModel) _componentContext.Resolve(vmType, parameters);
+                vm = (ViewModelBase) _componentContext.Resolve(vmType, parameters);
 
             TrySetToolBarViewModel(vm);
 
             return vm;
         }
 
-        private void TrySetToolBarViewModel(BaseViewModel vm)
+        private void TrySetToolBarViewModel(ViewModelBase vm)
         {
 	        if (!(vm is IHasToolBarViewModel hasToolBarViewModel)) return;
 

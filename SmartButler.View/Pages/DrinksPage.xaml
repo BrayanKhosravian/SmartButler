@@ -31,9 +31,9 @@
                             <ViewCell.View>
                                 <Grid BackgroundColor="{Binding IsAvailable, Converter={StaticResource BoolToColorConverter}}">
                                     <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="15" />
-                                        <ColumnDefinition Width="150" />
                                         <ColumnDefinition Width="Auto" />
+                                        <ColumnDefinition Width="150" />
+                                        <ColumnDefinition Width="*" />
                                     </Grid.ColumnDefinitions>
 
                                     <Grid.GestureRecognizers>

@@ -5,7 +5,7 @@ using SmartButler.Logic.Interfaces;
 
 namespace SmartButler.Logic.ViewModels
 {
-    public class ToolbarControlViewModel : BaseViewModel
+    public class ToolbarControlViewModel : ViewModelBase
     {
 
         public ToolbarControlViewModel(INavigationService navigationService)

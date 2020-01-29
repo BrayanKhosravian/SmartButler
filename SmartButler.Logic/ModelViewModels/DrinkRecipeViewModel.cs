@@ -5,11 +5,10 @@ using System.Linq;
 using SmartButler.DataAccess.Models;
 using SmartButler.Framework.Common;
 using SmartButler.Logic.Common;
-using SmartButler.Logic.ViewModels;
 
 namespace SmartButler.Logic.ModelViewModels
 {
-	public class DrinkRecipeViewModel : BaseViewModel
+	public class DrinkRecipeViewModel : ViewModelBase
 	{
 		private ObservableCollection<DrinkIngredientViewModel> _ingredientViewModels;
 

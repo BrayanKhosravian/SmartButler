@@ -7,7 +7,7 @@ using Xamarin.Forms.Xaml;
 namespace SmartButler.View.Pages
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class BluetoothPage : ContentPage, IViewFor<BluetoothPageViewModel>
+    public partial class BluetoothPage : ContentPage, IViewFor<Logic.ViewModels.BluetoothPageViewModel>
     {
 
         public BluetoothPage()
@@ -35,12 +35,12 @@ namespace SmartButler.View.Pages
 		object IViewFor.ViewModel
         {
             get => ViewModel;
-            set => ViewModel = value as BluetoothPageViewModel;
+            set => ViewModel = value as Logic.ViewModels.BluetoothPageViewModel;
         }
 
-        public BluetoothPageViewModel ViewModel
+        public Logic.ViewModels.BluetoothPageViewModel ViewModel
         {
-            get => BindingContext as BluetoothPageViewModel;
+            get => BindingContext as Logic.ViewModels.BluetoothPageViewModel;
             set => BindingContext = value;
         }
     }

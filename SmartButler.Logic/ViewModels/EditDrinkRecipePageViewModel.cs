@@ -11,10 +11,11 @@ using SmartButler.Logic.Common;
 using SmartButler.Logic.Interfaces;
 using SmartButler.Logic.ModelViewModels;
 using SmartButler.Logic.Services;
+using SmartButler.Logic.ViewModels.BaseViewModels;
 
 namespace SmartButler.Logic.ViewModels
 {
-	public class EditDrinkRecipePageViewModel : BaseViewModel, IHasToolBarViewModel
+	public class EditDrinkRecipePageViewModel : ToolBarPageViewModelBase
 	{
 		private string _title;
 
@@ -22,7 +23,7 @@ namespace SmartButler.Logic.ViewModels
 		private readonly IDrinkRecipeBuilder _drinkRecipeBuilder;
 		private readonly INavigationService _navigationService;
 		private readonly IDrinkRecipesRepository _drinkRecipesRepository;
-		private readonly DrinkRecipeViewModel _drinkIngredientViewModel;
+		private readonly DrinkRecipeViewModel _drinkIngredient;
 		private string _drinkName;
 		public ISelectionHost<DrinkIngredientViewModel> SelectionHost { get; }
 
@@ -77,7 +78,7 @@ namespace SmartButler.Logic.ViewModels
 				else if (_editMode == EditMode.Edit)
 				{
 					var drink = _drinkRecipeBuilder // TODO: Add ByteImage!
-						.TakeDefault(_drinkIngredientViewModel.DrinkRecipe)
+						.TakeDefault(_drinkIngredient.DrinkRecipe)
 						.ClearIngredients()
 						.SetName(DrinkName)
 						.AddIngredients(ingredients.ToArray())
@@ -108,7 +109,7 @@ namespace SmartButler.Logic.ViewModels
 			_navigationService = navigationService;
 			_drinkRecipesRepository = drinkRecipesRepository;
 			SelectionHost = selectionHost;
-			_drinkIngredientViewModel = drinkRecipeViewModel;
+			_drinkIngredient = drinkRecipeViewModel;
 
 			DrinkName = drinkRecipeViewModel.Name;
 			DrinkIngredients.AddRange(drinkRecipeViewModel.IngredientViewModels);
@@ -168,12 +169,6 @@ namespace SmartButler.Logic.ViewModels
 		{
 			get => _drinkName;
 			set => this.SetValue(ref _drinkName, value);
-		}
-
-		public ToolbarControlViewModel ToolbarControlViewModel { get; private set; }
-		public void SetToolBarControlViewModel(ToolbarControlViewModel vm)
-		{
-			ToolbarControlViewModel = vm;
 		}
 
 	}

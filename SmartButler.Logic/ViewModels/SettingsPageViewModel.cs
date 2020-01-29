@@ -3,7 +3,7 @@ using SmartButler.Logic.Interfaces;
 
 namespace SmartButler.Logic.ViewModels
 {
-    public class SettingsPageViewModel : BaseViewModel
+    public class SettingsPageViewModel : ViewModelBase
     {
        
         public SettingsPageViewModel(INavigationService navigationService)

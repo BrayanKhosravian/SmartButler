@@ -1,12 +1,6 @@
-﻿using System.Collections.Generic;
-using Autofac;
-using SmartButler.DataAccess.Repositories;
-using SmartButler.Logic.Interfaces;
-using SmartButler.Logic.ModelViewModels;
-using SmartButler.Logic.Services;
+﻿using Autofac;
 using SmartButler.Logic.ViewModels;
 using SmartButler.View.Pages;
-using Xamarin.Forms;
 
 namespace SmartButler.Bootstrapper.Modules
 {
@@ -17,7 +11,8 @@ namespace SmartButler.Bootstrapper.Modules
             base.Load(builder);
 
             // register control-viewmodels
-            builder.RegisterType<ToolbarControlViewModel>().SingleInstance(); // single instance because settings should be saved
+            builder.RegisterType<ToolbarControlViewModel>()
+	            .SingleInstance(); // single instance because settings should be saved
 
             // add pages and ViewModels
             builder.RegisterType<WelcomePage>();
@@ -38,6 +33,7 @@ namespace SmartButler.Bootstrapper.Modules
 
 	        builder.RegisterType<ConfigureIngredientPage>();
             builder.RegisterType<EditIngredientPageViewModel>();
+            builder.RegisterType<AddIngredientPageViewModel>();
 
             builder.RegisterType<EditDrinkRecipePage>();
             builder.RegisterType<EditDrinkRecipePageViewModel>();

@@ -9,7 +9,7 @@ using Xamarin.Forms.Xaml;
 namespace SmartButler.View.Pages
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class DrinksPage : ContentPage, IViewFor<DrinksPageViewModel>
+    public partial class DrinksPage : ContentPage, IViewFor<Logic.ViewModels.DrinksPageViewModel>
     {
         public DrinksPage()
         {
@@ -24,18 +24,18 @@ namespace SmartButler.View.Pages
         object IViewFor.ViewModel
         {
             get => ViewModel;
-            set => ViewModel = value as DrinksPageViewModel;
+            set => ViewModel = value as Logic.ViewModels.DrinksPageViewModel;
         }
 
-        public DrinksPageViewModel ViewModel
+        public Logic.ViewModels.DrinksPageViewModel ViewModel
         {
-            get => BindingContext as DrinksPageViewModel;
-            set => BindingContext = value as DrinksPageViewModel;
+            get => BindingContext as Logic.ViewModels.DrinksPageViewModel;
+            set => BindingContext = value as Logic.ViewModels.DrinksPageViewModel;
         }
 
         private void ListView_OnItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-	        //ViewModel?.Transmit((DrinkRecipe)e.SelectedItem);
+	        //ViewModel?.Transmit((DrinkRecipeViewModel)e.SelectedItem);
         }
 
         private async void DrinkTappedRecognizer(object sender, EventArgs e)

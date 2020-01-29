@@ -2,7 +2,7 @@
 
 namespace SmartButler.Logic.ModelViewModels
 {
-	public abstract class DrinkIngredientBaseViewModel : BaseViewModel
+	public abstract class DrinkIngredientViewModelBase : ViewModelBase
 	{
 
 	}

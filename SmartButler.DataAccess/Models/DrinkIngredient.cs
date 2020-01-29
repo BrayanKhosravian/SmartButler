@@ -14,15 +14,10 @@ namespace SmartButler.DataAccess.Models
 		{
 			
 		}
-
-		public DrinkIngredient(int milliliter)
-		{
-			Milliliter = milliliter;
-		}
+		public DrinkIngredient(int milliliter) => Milliliter = milliliter;
 
 		[PrimaryKey, AutoIncrement]
 		public int Id { get; set; }
-
 		public int Milliliter { get; set; }
 
 		[ForeignKey(typeof(DrinkRecipe))]

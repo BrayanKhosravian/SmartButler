@@ -15,7 +15,7 @@ namespace SmartButler.View.Common
 		{
 			switch (item)
 			{
-				case DrinkIngredientInfoViewModel _:
+				case DrinkIngredientViewModelInfo _:
 					return DrinkIngredientInfoTemplate;
 				case DrinkIngredientViewModel _:
 					return DrinkIngredientTemplate;

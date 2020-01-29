@@ -10,7 +10,7 @@ using SmartButler.Logic.ViewModels;
 
 namespace SmartButler.Logic.ModelViewModels
 {
-	public class DrinkIngredientViewModel : DrinkIngredientBaseViewModel
+	public class DrinkIngredientViewModel : DrinkIngredientViewModelBase
 	{
 		private string _name;
 		private int _milliliter;

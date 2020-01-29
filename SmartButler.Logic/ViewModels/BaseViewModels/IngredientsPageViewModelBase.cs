@@ -10,7 +10,7 @@ using SmartButler.Logic.ModelViewModels;
 
 namespace SmartButler.Logic.ViewModels.BaseViewModels
 {
-	public abstract class IngredientsPageViewModelBase : BaseViewModel, IHasToolBarViewModel
+	public abstract class IngredientsPageViewModelBase : ToolBarPageViewModelBase
 	{
 		private DrinkIngredientViewModel _selectedDrinkIngredient;
 
@@ -21,10 +21,10 @@ namespace SmartButler.Logic.ViewModels.BaseViewModels
 			_ingredientsRepository = ingredientsRepository;
 
 			AddIngredientCommand = ReactiveCommand.CreateFromTask(async _ =>
-				await navigationService.PushAsync<EditIngredientPageViewModel>());
+				await navigationService.PushAsync<AddIngredientPageViewModel>());
 		}
 
-		public ReactiveList<DrinkIngredientBaseViewModel> Ingredients { get; } = new ReactiveList<DrinkIngredientBaseViewModel>();
+		public ReactiveList<DrinkIngredientViewModelBase> Ingredients { get; } = new ReactiveList<DrinkIngredientViewModelBase>();
 		public ReactiveCommand AddIngredientCommand { get; }
 
 		public abstract bool IsAddIngredientButtonVisible { get; }
@@ -41,10 +41,10 @@ namespace SmartButler.Logic.ViewModels.BaseViewModels
 
 				var orderedIngredients = ingredientViewModels.OrderBy(i => i.IsDefault).ToList();
 
-				Ingredients.Add(new DrinkIngredientInfoViewModel() {InfoText = "Default Ingredients"});
+				Ingredients.Add(new DrinkIngredientViewModelInfo() {InfoText = "Default Ingredients"});
 				Ingredients.AddRange(orderedIngredients.Where(i => i.IsDefault));
 
-				Ingredients.Add(new DrinkIngredientInfoViewModel() {InfoText = "Custom Ingredients"});
+				Ingredients.Add(new DrinkIngredientViewModelInfo() {InfoText = "Custom Ingredients"});
 				Ingredients.AddRange(orderedIngredients.Where(i => !i.IsDefault));
 			}
 		}
@@ -53,12 +53,6 @@ namespace SmartButler.Logic.ViewModels.BaseViewModels
 		{
 			get => _selectedDrinkIngredient;
 			set => this.RaiseAndSetIfChanged(ref _selectedDrinkIngredient, value);
-		}
-
-		public ToolbarControlViewModel ToolbarControlViewModel { get; private set; }
-		public void SetToolBarControlViewModel(ToolbarControlViewModel vm)
-		{
-			ToolbarControlViewModel = vm;
 		}
 
 	}

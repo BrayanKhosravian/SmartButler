@@ -15,7 +15,7 @@ using SmartButler.Logic.ViewModels.BaseViewModels;
 
 namespace SmartButler.Logic.ViewModels
 {
-	public class SelectIngredientsPageViewModel : IngredientsPageViewModelBase, IHasToolBarViewModel
+	public class SelectIngredientsPageViewModel : IngredientsPageViewModelBase
 	{
 		private readonly IEnumerable<DrinkIngredientViewModel> _excludedIngredients;
 		public SelectIngredientsPageViewModel(
