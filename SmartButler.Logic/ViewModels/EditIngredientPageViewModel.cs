@@ -97,7 +97,8 @@ namespace SmartButler.Logic.ViewModels
 		}
 
 		// create and add an ingredient
-		public EditIngredientPageViewModel(IIngredientsRepository ingredientsRepository,
+		public EditIngredientPageViewModel(
+			IIngredientsRepository ingredientsRepository,
 			INavigationService navigationService,
 			IUserInteraction userInteraction) : this()
 		{

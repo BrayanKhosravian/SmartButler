@@ -9,7 +9,7 @@ using Xamarin.Forms.Xaml;
 namespace SmartButler.View.Pages
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class IngredientsPage : ContentPage, IViewFor<IngredientsPageViewModel>
+	public partial class IngredientsPage : ContentPage, IViewFor<IngredientsPageViewModelBase>
 	{
 		public IngredientsPage ()
 		{
@@ -24,13 +24,13 @@ namespace SmartButler.View.Pages
 		object IViewFor.ViewModel
 	    {
 	        get => ViewModel;
-	        set => ViewModel = value as IngredientsPageViewModel;
+	        set => ViewModel = value as IngredientsPageViewModelBase;
 	    }
 
-	    public IngredientsPageViewModel ViewModel
+	    public IngredientsPageViewModelBase ViewModel
 	    {
-	        get => BindingContext as IngredientsPageViewModel;
-	        set => BindingContext = value as IngredientsPageViewModel;
+	        get => BindingContext as IngredientsPageViewModelBase;
+	        set => BindingContext = value as IngredientsPageViewModelBase;
 	    }
 
 	    private void IngredientSelected(object sender, SelectedItemChangedEventArgs e)

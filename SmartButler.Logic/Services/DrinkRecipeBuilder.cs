@@ -10,10 +10,12 @@ namespace SmartButler.Logic.Services
 	public interface IDrinkRecipeBuilder 
 	{
 		// from Base
+		DrinkRecipeBuilder TakeDefault(DrinkRecipe drinkRecipe);
 		DrinkRecipeBuilder Default();
 		DrinkRecipeBuilder Default(string name, string resourcePath);
 		DrinkRecipeBuilder SetName(string name);
 		DrinkRecipeBuilder SetByteImage(string partialResource);
+		DrinkRecipeBuilder ClearIngredients();
 
 		// from concretion
 		DrinkRecipeBuilder SetIngredients(List<DrinkIngredient> ingredients);
@@ -28,6 +30,12 @@ namespace SmartButler.Logic.Services
 
 		protected override DrinkRecipeBuilder BuilderInstance => this;
 
+		public DrinkRecipeBuilder TakeDefault(DrinkRecipe drinkRecipe)
+		{
+			_drinkRecipe = drinkRecipe;
+			return base.TakeDefault(drinkRecipe);
+		}
+
 		public override DrinkRecipeBuilder Default()
 		{
 			_drinkRecipe = new DrinkRecipe();
@@ -38,6 +46,12 @@ namespace SmartButler.Logic.Services
 		{
 			_drinkRecipe = new DrinkRecipe();
 			return base.Default(name, resourcePath);
+		}
+
+		public DrinkRecipeBuilder ClearIngredients()
+		{
+			_drinkRecipe.DrinkIngredients.Clear();
+			return this;
 		}
 
 		public DrinkRecipeBuilder SetIngredients(List<DrinkIngredient> ingredients)

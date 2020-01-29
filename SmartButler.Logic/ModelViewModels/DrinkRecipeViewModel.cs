@@ -68,6 +68,8 @@ namespace SmartButler.Logic.ModelViewModels
 			set => SetValue(ref _isDefault, value);
 		}
 
+		public DrinkRecipe DrinkRecipe => _drinkRecipe;
+
 		private IEnumerable<DrinkIngredientViewModel> MapModelWithViewModel(DrinkRecipe drinkRecipe)
 		{
 			var ingredientViewModels = new ObservableCollection<DrinkIngredientViewModel>();

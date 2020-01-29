@@ -30,10 +30,12 @@ namespace SmartButler.Bootstrapper
 	        builder.RegisterModule<PageComponentsModule>();
             builder.RegisterModule<ServiceModule>();
             builder.RegisterModule<RepositoryModule>();
-
+			
             var container = builder.Build();
+            var pageRegistrar = container.Resolve<IPageRegistrar>();
+            RegisterPages(pageRegistrar);
 
-			// configure database
+            // configure database
 			var ingredientFactory = new IngredientsFactory(new IngredientBuilder());
 			var defaultIngredients = ingredientFactory.GetDefaultIngredients();
 			await container.Resolve<IIngredientsRepository>().ConfigureAsync(defaultIngredients);
@@ -41,23 +43,30 @@ namespace SmartButler.Bootstrapper
 			var drinkRecipesFactory = new DrinkRecipeFactory(new DrinkRecipeBuilder());
 			var defaultDrinks = drinkRecipesFactory.GetDefaultDrinks();
 			await container.Resolve<IDrinkRecipesRepository>().ConfigureAsync(defaultDrinks);
-			
-			// register view and view model relationship
-			var pageRegistrar = container.Resolve<IPageRegistrar>();
-
-			pageRegistrar.Register<BluetoothPageViewModel, BluetoothPage>();
-            pageRegistrar.Register<IngredientsPageViewModel, IngredientsPage>();
-            pageRegistrar.Register<DrinksPageViewModel, DrinksPage>();
-            pageRegistrar.Register<WelcomePageViewModel, WelcomePage>();
-            pageRegistrar.Register<MakeDrinkPageViewModel, MakeDrinkPage>();
-            pageRegistrar.Register<SettingsPageViewModel, SettingsPage>();
-			pageRegistrar.Register<EditIngredientPageViewModel, EditIngredientPage>();
-			pageRegistrar.Register<EditDrinkRecipePageViewModel, EditDrinkRecipePage>();
 
 			var mainPage = pageRegistrar.Resolve<WelcomePageViewModel>();
           
-            _app.MainPage = new NavigationPage(mainPage);
+            _app.MainPage = new NavigationPage(mainPage);	
 
+        }
+
+        private void RegisterPages(IPageRegistrar pageRegistrar)
+        {
+	        pageRegistrar.Register<WelcomePageViewModel, WelcomePage>();
+	        pageRegistrar.Register<SettingsPageViewModel, SettingsPage>();
+	        pageRegistrar.Register<BluetoothPageViewModel, BluetoothPage>();
+	        pageRegistrar.Register<DrinksPageViewModel, DrinksPage>();
+	        pageRegistrar.Register<MakeDrinkPageViewModel, MakeDrinkPage>();
+
+	        pageRegistrar.Register<ShowIngredientsPageViewModel, IngredientsPage>();
+	        pageRegistrar.Register<SelectIngredientsPageViewModel, IngredientsPage>();
+
+
+	        // same view but different viewmodels // each vm has a different behaviour 
+	        pageRegistrar.Register<EditIngredientPageViewModel, ConfigureIngredientPage>();
+	        //pageRegistrar.Register<AddIngredientPageViewModel, ConfigureIngredientPage>();
+
+	        pageRegistrar.Register<EditDrinkRecipePageViewModel, EditDrinkRecipePage>();
         }
 
     }

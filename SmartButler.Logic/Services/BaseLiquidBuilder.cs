@@ -12,10 +12,20 @@ namespace SmartButler.Logic.Services
 
 		protected string Name;
 		protected byte[] ByteImage;
+		private bool _isDefault;
 
 		public abstract TLiquidBase Build();
 
 		protected abstract TBuilder BuilderInstance { get; }
+
+		public virtual TBuilder TakeDefault(LiquidBase liquidBase)
+		{
+			Name = liquidBase.Name;
+			ByteImage = liquidBase.ByteImage;
+			_isDefault = liquidBase.IsDefault;
+
+			return BuilderInstance;
+		}
 
 		public virtual TBuilder Default()
 		{

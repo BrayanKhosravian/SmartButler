@@ -5,6 +5,7 @@ using Plugin.Media;
 using ReactiveUI;
 using SmartButler.DataAccess.Models;
 using SmartButler.Logic.Common;
+using SmartButler.Logic.EqualityComparer;
 using SmartButler.Logic.ViewModels;
 
 namespace SmartButler.Logic.ModelViewModels
@@ -42,7 +43,7 @@ namespace SmartButler.Logic.ModelViewModels
 		}
 
 		public Ingredient Ingredient { get; }
-		public DrinkIngredient DrinkIngredient { get; }
+		public DrinkIngredient DrinkIngredient { get; private set; }
 
 		public string Name
 		{
@@ -86,7 +87,40 @@ namespace SmartButler.Logic.ModelViewModels
 
 		public void UpdateDrinkIngredientModel()
 		{
+			if(DrinkIngredient == null)
+				DrinkIngredient = new DrinkIngredient();
 			DrinkIngredient.Milliliter = Milliliter;
+			DrinkIngredient.Ingredient = Ingredient;
+			// map adapter table to adapter // adapter table = DrinkIngredient, adapter = Ingredient 
+			DrinkIngredient.IngredientId = Ingredient.Id; 
+		}
+
+		public static IEqualityComparer<DrinkIngredientViewModel> DrinkIngredientViewModelComparer { get; } = new DrinkIngredientViewModelEqualityComparer();
+		internal static readonly ArrayEqualityComparer<byte> ByteArrayEqualityComparer = new ArrayEqualityComparer<byte>();
+
+		private sealed class DrinkIngredientViewModelEqualityComparer : IEqualityComparer<DrinkIngredientViewModel>
+		{
+			public bool Equals(DrinkIngredientViewModel x, DrinkIngredientViewModel y)
+			{
+				if (ReferenceEquals(x, y)) return true;
+				if (ReferenceEquals(x, null)) return false;
+				if (ReferenceEquals(y, null)) return false;
+				if (x.GetType() != y.GetType()) return false;
+				return x._name == y._name &&
+				       ByteArrayEqualityComparer.Equals(x.ByteImage, y.ByteImage) && 
+				       x._isDefault == y._isDefault;
+			}
+
+			public int GetHashCode(DrinkIngredientViewModel obj)
+			{
+				unchecked
+				{
+					var hashCode = (obj._name != null ? obj._name.GetHashCode() : 0);
+					hashCode = (hashCode * 397) ^ ByteArrayEqualityComparer.GetHashCode(obj.ByteImage);
+					hashCode = (hashCode * 397) ^ obj._isDefault.GetHashCode();
+					return hashCode;
+				}
+			}
 		}
 
 	}

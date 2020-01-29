@@ -8,9 +8,9 @@ using Xamarin.Forms.Xaml;
 namespace SmartButler.View.Pages
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class EditIngredientPage : ContentPage, IViewFor<EditIngredientPageViewModel>
+	public partial class ConfigureIngredientPage : ContentPage, IViewFor<EditIngredientPageViewModel>
 	{
-		public EditIngredientPage()
+		public ConfigureIngredientPage()
 		{
 			InitializeComponent();
 

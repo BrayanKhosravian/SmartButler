@@ -53,6 +53,7 @@ namespace SmartButler.DataAccess.Repositories
 			if (await IsInserted(ingredient)) return false;
 
 			await Component.Connection.InsertAsync(ingredient);
+			await UpdateAsync(ingredient); // if any other is also selected, it will get unselected with this call
 			return true;
 		}
 

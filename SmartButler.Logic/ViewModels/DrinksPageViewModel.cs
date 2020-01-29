@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Autofac;
@@ -20,14 +21,18 @@ namespace SmartButler.Logic.ViewModels
         private readonly IDrinkRecipesRepository _drinkRecipeRepository;
         private readonly IBluetoothService _bluetoothService;
         private readonly INavigationService _navigationService;
+        private readonly IUserInteraction _userInteraction;
 
-        public DrinksPageViewModel(IDrinkRecipesRepository drinkRecipeRepository, 
+        public DrinksPageViewModel(
+	        IDrinkRecipesRepository drinkRecipeRepository, 
 	        INavigationService navigationService, 
-	        IBluetoothService bluetoothService) 
+	        IBluetoothService bluetoothService,
+	        IUserInteraction userInteraction) 
         {
             _drinkRecipeRepository = drinkRecipeRepository;
             _bluetoothService = bluetoothService;
             _navigationService = navigationService;
+            _userInteraction = userInteraction;
 
             AddRecipeCommand = ReactiveCommand.CreateFromTask(async _ =>
                 await _navigationService.PushAsync<EditDrinkRecipePageViewModel>());
@@ -60,5 +65,26 @@ namespace SmartButler.Logic.ViewModels
 	        ToolbarControlViewModel = vm;
         }
 
+        public async Task DrinkSelectedAsync(DrinkRecipeViewModel drinkRecipeViewModel)
+        {
+			var selection = new List<string>(){"Edit"};
+            if(!drinkRecipeViewModel.IsDefault)
+                selection.Add("Delete");
+
+            var result = await _userInteraction.DisplayActionSheetAsync($"{drinkRecipeViewModel.Name} selected!",
+	            "Cancel", null, selection.ToArray());
+
+            if (result == null) return;
+	        if (result.Equals("Edit"))
+            {
+	            var parmeter = new TypedParameter(typeof(DrinkRecipeViewModel), drinkRecipeViewModel);
+	            await _navigationService.PushAsync<EditDrinkRecipePageViewModel>(parmeter);
+            }
+            else if (result.Equals("Delete"))
+            {
+	            await _drinkRecipeRepository.DeleteAsync(drinkRecipeViewModel.DrinkRecipe);
+	            Drinks.Remove(drinkRecipeViewModel);
+            }
+        }
     }
 }

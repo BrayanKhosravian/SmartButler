@@ -8,7 +8,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:common="clr-namespace:SmartButler.View.Common;assembly=SmartButler.View"
              xmlns:modelViewModels="clr-namespace:SmartButler.Logic.ModelViewModels;assembly=SmartButler.Logic"
-             d:DataContext="{d:DesignInstance viewModels:IngredientsPageViewModel}"
+             d:DataContext="{d:DesignInstance viewModels:ShowIngredientsPageViewModel}"
              x:Class="SmartButler.View.Pages.IngredientsPage"
              mc:Ignorable="d">
 

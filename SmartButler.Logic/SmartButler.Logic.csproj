@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="EqualityComperers\" />
+    <Folder Include="ViewModels\BaseViewModels\" />
   </ItemGroup>
 
 </Project>

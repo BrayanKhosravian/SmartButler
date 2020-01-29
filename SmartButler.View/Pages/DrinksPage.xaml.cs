@@ -1,4 +1,7 @@
-﻿using ReactiveUI;
+﻿using System;
+using System.Threading.Tasks;
+using ReactiveUI;
+using SmartButler.Logic.ModelViewModels;
 using SmartButler.Logic.ViewModels;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -33,6 +36,28 @@ namespace SmartButler.View.Pages
         private void ListView_OnItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
 	        //ViewModel?.Transmit((DrinkRecipe)e.SelectedItem);
+        }
+
+        private async void DrinkTappedRecognizer(object sender, EventArgs e)
+        {
+            if(sender is null) return;
+	        var drinkRecipeViewModel = (DrinkRecipeViewModel)((BindableObject) sender).BindingContext;
+	        // await ViewModel.DrinkSelectedAsync(drinkIngredientViewModel);
+	        await ExecuteSafeASync(async () => await ViewModel.DrinkSelectedAsync(drinkRecipeViewModel));
+
+        }
+
+        private async Task ExecuteSafeASync(Func<Task> task)
+        {
+	        try
+	        {
+		        await task.Invoke();
+	        }
+	        catch (Exception e)
+	        {
+		        Console.WriteLine(e);
+		        throw;
+	        }
         }
     }
 }

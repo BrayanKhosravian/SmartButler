@@ -36,6 +36,10 @@
                                         <ColumnDefinition Width="Auto" />
                                     </Grid.ColumnDefinitions>
 
+                                    <Grid.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="DrinkTappedRecognizer" />
+                                    </Grid.GestureRecognizers>
+
                                     <Label Text="{Binding Id}" VerticalOptions="Center" HorizontalOptions="Start"/>
                                     <Image Source="{Binding ByteImage, Converter={StaticResource ByteArrayToImageSourceConverter}}"
                                            Grid.Column="1" HeightRequest="150" WidthRequest="150" HorizontalOptions="Start" />

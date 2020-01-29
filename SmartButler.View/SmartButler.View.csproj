@@ -50,6 +50,9 @@
       <SubType>Code</SubType>
       <DependentUpon>%(Filename)</DependentUpon>
     </Compile>
+    <Compile Update="Pages\ConfigureIngredientPage.xaml.cs">
+      <DependentUpon>ConfigureIngredientPage.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Pages\IngredientsPage.xaml.cs">
       <SubType>Code</SubType>
       <DependentUpon>%(Filename)</DependentUpon>
@@ -81,7 +84,7 @@
     <EmbeddedResource Update="Pages\EditDrinkRecipePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Pages\EditIngredientPage.xaml">
+    <EmbeddedResource Update="Pages\ConfigureIngredientPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

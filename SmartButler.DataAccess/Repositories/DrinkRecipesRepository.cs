@@ -16,7 +16,7 @@ namespace SmartButler.DataAccess.Repositories
 		Task<bool> InsertWithChildrenAsync(DrinkRecipe ingredient);
 		Task UpdateWithChildrenAsync(DrinkRecipe ingredient);
 
-		Task DeleteAsync(DrinkRecipe ingredient);
+		Task DeleteAsync(DrinkRecipe drinkRecipe);
 		Task DeleteAsync(int id);
 
 		Task<DrinkRecipe> GetAsync(int id);
@@ -42,28 +42,6 @@ namespace SmartButler.DataAccess.Repositories
 		    if (await Component.Connection.Table<DrinkRecipe>().CountAsync() > 0)
 			    return;
 
-			// do database mapping
-		   // foreach (var drink in drinks)
-		   // {
-			  ////  foreach (var drinkIngredient in drink.DrinkIngredients)
-			  ////  {
-					////var newDrinkIngredient = new DrinkIngredient();
-					//////drinkIngredient.ByteImage = ingredientForMapping.ByteImage;
-					////newDrinkIngredient.Milliliter = newDrinkIngredient.Milliliter;
-					//////drinkIngredient.Name = ingredientForMapping.Name;
-
-					//////var ingredient = await Component.Connection.Table<Ingredient>()
-					//////	.Where(i => i.Name == newDrinkIngredient.Ingredient.Name)
-					//////	.FirstOrDefaultAsync();
-
-					//////newDrinkIngredient.Ingredient = ingredient;
-					////newDrinkIngredient.IngredientId = newDrinkIngredient.Ingredient.Id;
-
-				 ////   drink.DrinkIngredients.Add(newDrinkIngredient);
-				    
-			  ////  }
-			  //  await InsertWithChildrenAsync(drink);
-		   // }
 		   await Component.Connection.InsertOrReplaceAllWithChildrenAsync(drinks, true);
 	    }
 
@@ -77,7 +55,7 @@ namespace SmartButler.DataAccess.Repositories
 
 	    public Task UpdateWithChildrenAsync(DrinkRecipe drink)
 	    {
-			return Component.Connection.UpdateWithChildrenAsync(drink);
+		    return Component.Connection.UpdateWithChildrenAsync(drink);
 		}
 
 	    public Task DeleteAsync(DrinkRecipe drink)

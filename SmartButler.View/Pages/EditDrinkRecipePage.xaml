@@ -15,9 +15,20 @@
 
     <ContentPage.Content>
         <StackLayout>
+
             <Label Text="{Binding Title}"
                 VerticalOptions="Start" 
                 HorizontalOptions="CenterAndExpand" />
+
+            <Grid MinimumHeightRequest="50">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Drink name"/>
+                <Entry Grid.Column="1" Text="{Binding DrinkName}"/>
+            </Grid>
 
             <ListView ItemsSource="{Binding DrinkIngredients}">
                 <ListView.ItemTemplate>
@@ -33,7 +44,7 @@
                                     <ColumnDefinition/>
                                 </Grid.ColumnDefinitions>
 
-                                <Label Text="DrinkName" Grid.Row="0" Grid.Column="0"/>
+                                <Label Text="Ingredient name" Grid.Row="0" Grid.Column="0"/>
                                 <Label Text="Milliliter" Grid.Row="1" Grid.Column="0"/>
                                 <Label Text="{Binding Name}" Grid.Row="0" Grid.Column="1"/>
                                 <Entry Text="{Binding Milliliter}" Grid.Row="1" Grid.Column="1"/>
@@ -42,8 +53,10 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-            
-            <Button Text="Add Drink" Command="{Binding AddDrinkCommand}"/>
+
+            <Button Text="Add Ingredient" Command="{Binding AddIngredientCommand}"/>
+            <Button Text="Complete" Command="{Binding CompleteCommand}"/>
+            <Button Text="Abort" Command="{Binding AbortCommand}"/>
 
         </StackLayout>
     </ContentPage.Content>

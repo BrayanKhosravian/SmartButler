@@ -42,10 +42,15 @@ namespace SmartButler.Bootstrapper.Modules
             });
 
             builder.RegisterType<IngredientsPage>();
-            builder.RegisterType<IngredientsPageViewModel>().OnActivating(c =>
+            builder.RegisterType<ShowIngredientsPageViewModel>().OnActivating(c =>
             {
                 var dep = c.Context.Resolve<ToolbarControlViewModel>();
                 c.Instance.SetToolBarControlViewModel(dep);
+            });
+            builder.RegisterType<SelectIngredientsPageViewModel>().OnActivating(c =>
+            {
+	            var dep = c.Context.Resolve<ToolbarControlViewModel>();
+	            c.Instance.SetToolBarControlViewModel(dep);
             });
 
             builder.RegisterType<MakeDrinkPage>();
@@ -55,7 +60,7 @@ namespace SmartButler.Bootstrapper.Modules
                 c.Instance.SetToolBarControlViewModel(dep);
             });
 
-	        builder.RegisterType<EditIngredientPage>();
+	        builder.RegisterType<ConfigureIngredientPage>();
             builder.RegisterType<EditIngredientPageViewModel>().OnActivated(c =>
             {
 	            var dep = c.Context.Resolve<ToolbarControlViewModel>();
