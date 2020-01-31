@@ -13,13 +13,13 @@
 
     <Frame CornerRadius="20" Margin="10,5" Padding="10"
            BackgroundColor="{Binding IsAvailable, Converter={StaticResource BoolToColorConverter}}">
+        <Frame.GestureRecognizers>
+            <TapGestureRecognizer Tapped="IngredientTappedRecognizer" />
+        </Frame.GestureRecognizers>
         <Frame.Resources>
             <converters:Converters />
         </Frame.Resources>
         <Grid >
-            <Grid.GestureRecognizers>
-                <TapGestureRecognizer Tapped="IngredientTappedRecognizer" />
-            </Grid.GestureRecognizers>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="75" />
                 <ColumnDefinition Width="Auto" />

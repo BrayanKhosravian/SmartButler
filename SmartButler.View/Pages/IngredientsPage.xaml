@@ -27,8 +27,10 @@
             <StackLayout>
                 <ListView x:Name="IngredientCollectionView"
                           ItemsSource="{Binding Ingredients}"
+                          SelectedItem="{Binding SelectedDrinkIngredient}"
                           ItemTemplate="{StaticResource IngredientTemplateSelector}" 
-                          CachingStrategy="RecycleElementAndDataTemplate" SelectionMode="None" />
+                          ItemSelected="IngredientSelected"
+                          CachingStrategy="RecycleElementAndDataTemplate"/>
 
                 <Button Text="Add Ingredient" Command="{Binding AddIngredientCommand}" 
                         IsVisible="{Binding IsAddIngredientButtonVisible}"/>

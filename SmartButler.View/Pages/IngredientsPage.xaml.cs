@@ -34,7 +34,7 @@ namespace SmartButler.View.Pages
 	        set => BindingContext = value as IngredientsPageViewModelBase;
 	    }
 
-	    private void IngredientSelectedHandler(object sender, SelectedItemChangedEventArgs e)
+	    private void IngredientSelected(object sender, SelectedItemChangedEventArgs e)
 	    {
 			if(e is null) return;
 

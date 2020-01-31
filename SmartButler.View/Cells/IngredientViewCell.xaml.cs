@@ -29,7 +29,7 @@ namespace SmartButler.View.Cells
 			var visual = sender as VisualElement;
 			if (visual is null) return;
 
-			await AnimationService.ReFadeAsync(visual);
+			await AnimationService.VisualElementClicked(visual);
 		}
 
 		private async void Cell_OnAppearing(object sender, EventArgs e)
