@@ -9,10 +9,12 @@ using Android.OS;
 using SmartButler.Droid.Services;
 using System.Collections.Generic;
 using System.IO;
+using Acr.UserDialogs;
 using Android.Bluetooth;
 using Autofac;
 using Java.IO;
 using Java.Lang;
+using Plugin.CurrentActivity;
 using SmartButler.Framework.Bluetooth;
 
 namespace SmartButler.Droid
@@ -29,16 +31,18 @@ namespace SmartButler.Droid
         {
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
-
             base.OnCreate(savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
+
+            UserDialogs.Init(this);
+            CrossCurrentActivity.Current.Init(this, savedInstanceState);
 
             var app = new App();
 
             var autoFacBuilder = new ContainerBuilder();
             autoFacBuilder.RegisterType<BluetoothService>().As<IBluetoothService>().SingleInstance();
 
-            await app.InjectPlatformDependencies(autoFacBuilder);
+            await app.InjectPlatformDependenciesAsync(autoFacBuilder);
 
             LoadApplication(app);
         }

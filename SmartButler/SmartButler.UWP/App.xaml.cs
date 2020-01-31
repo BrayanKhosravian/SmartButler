@@ -37,11 +37,9 @@ namespace SmartButler.UWP
         /// will be used such as when the application is launched to open a specific file.
         /// </summary>
         /// <param name="e">Details about the launch request and process.</param>
-        protected override void OnLaunched(LaunchActivatedEventArgs e)
+        protected override async void OnLaunched(LaunchActivatedEventArgs e)
         {
-
-
-            Frame rootFrame = Window.Current.Content as Frame;
+	        Frame rootFrame = Window.Current.Content as Frame;
 
             // Do not repeat app initialization when the Window already has content,
             // just ensure that the window is active
@@ -69,9 +67,26 @@ namespace SmartButler.UWP
                 // configuring the new page by passing required information as a navigation
                 // parameter
                 rootFrame.Navigate(typeof(MainPage), e.Arguments);
+                if(rootFrame.Content is MainPage mainPage)
+                {
+	                await mainPage.ActivateAsync();
+                }
             }
             // Ensure the current window is active
             Window.Current.Activate();
+        }
+
+        // Creates the MainPage if it isn't already created.  Also activates
+        // the window so it takes foreground and input focus.
+        private MainPage EnsurePageCreatedAndActivate()
+        {
+	        if (Window.Current.Content == null)
+	        {
+		        Window.Current.Content = new MainPage();
+	        }
+
+	        Window.Current.Activate();
+	        return Window.Current.Content as MainPage;
         }
 
         /// <summary>

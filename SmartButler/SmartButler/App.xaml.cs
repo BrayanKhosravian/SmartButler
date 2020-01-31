@@ -21,7 +21,7 @@ namespace SmartButler
 
         // Entry point of PCL // call this from every project
         // pass in the dependencies as registered types
-        public async Task InjectPlatformDependencies(ContainerBuilder builder)
+        public async Task InjectPlatformDependenciesAsync(ContainerBuilder builder)
         {
 	        var bootstrapper = new Bootstrapper.Bootstrapper(this);
             await bootstrapper.LoadAsync(builder);

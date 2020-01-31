@@ -26,6 +26,2012 @@ namespace SmartButler.Droid
 		
 		public static void UpdateIdValues()
 		{
+			global::Acr.UserDialogs.Resource.Animation.abc_fade_in = global::SmartButler.Droid.Resource.Animation.abc_fade_in;
+			global::Acr.UserDialogs.Resource.Animation.abc_fade_out = global::SmartButler.Droid.Resource.Animation.abc_fade_out;
+			global::Acr.UserDialogs.Resource.Animation.abc_grow_fade_in_from_bottom = global::SmartButler.Droid.Resource.Animation.abc_grow_fade_in_from_bottom;
+			global::Acr.UserDialogs.Resource.Animation.abc_popup_enter = global::SmartButler.Droid.Resource.Animation.abc_popup_enter;
+			global::Acr.UserDialogs.Resource.Animation.abc_popup_exit = global::SmartButler.Droid.Resource.Animation.abc_popup_exit;
+			global::Acr.UserDialogs.Resource.Animation.abc_shrink_fade_out_from_bottom = global::SmartButler.Droid.Resource.Animation.abc_shrink_fade_out_from_bottom;
+			global::Acr.UserDialogs.Resource.Animation.abc_slide_in_bottom = global::SmartButler.Droid.Resource.Animation.abc_slide_in_bottom;
+			global::Acr.UserDialogs.Resource.Animation.abc_slide_in_top = global::SmartButler.Droid.Resource.Animation.abc_slide_in_top;
+			global::Acr.UserDialogs.Resource.Animation.abc_slide_out_bottom = global::SmartButler.Droid.Resource.Animation.abc_slide_out_bottom;
+			global::Acr.UserDialogs.Resource.Animation.abc_slide_out_top = global::SmartButler.Droid.Resource.Animation.abc_slide_out_top;
+			global::Acr.UserDialogs.Resource.Animation.design_bottom_sheet_slide_in = global::SmartButler.Droid.Resource.Animation.design_bottom_sheet_slide_in;
+			global::Acr.UserDialogs.Resource.Animation.design_bottom_sheet_slide_out = global::SmartButler.Droid.Resource.Animation.design_bottom_sheet_slide_out;
+			global::Acr.UserDialogs.Resource.Animation.design_snackbar_in = global::SmartButler.Droid.Resource.Animation.design_snackbar_in;
+			global::Acr.UserDialogs.Resource.Animation.design_snackbar_out = global::SmartButler.Droid.Resource.Animation.design_snackbar_out;
+			global::Acr.UserDialogs.Resource.Animation.tooltip_enter = global::SmartButler.Droid.Resource.Animation.tooltip_enter;
+			global::Acr.UserDialogs.Resource.Animation.tooltip_exit = global::SmartButler.Droid.Resource.Animation.tooltip_exit;
+			global::Acr.UserDialogs.Resource.Animator.design_appbar_state_list_animator = global::SmartButler.Droid.Resource.Animator.design_appbar_state_list_animator;
+			global::Acr.UserDialogs.Resource.Attribute.actionBarDivider = global::SmartButler.Droid.Resource.Attribute.actionBarDivider;
+			global::Acr.UserDialogs.Resource.Attribute.actionBarItemBackground = global::SmartButler.Droid.Resource.Attribute.actionBarItemBackground;
+			global::Acr.UserDialogs.Resource.Attribute.actionBarPopupTheme = global::SmartButler.Droid.Resource.Attribute.actionBarPopupTheme;
+			global::Acr.UserDialogs.Resource.Attribute.actionBarSize = global::SmartButler.Droid.Resource.Attribute.actionBarSize;
+			global::Acr.UserDialogs.Resource.Attribute.actionBarSplitStyle = global::SmartButler.Droid.Resource.Attribute.actionBarSplitStyle;
+			global::Acr.UserDialogs.Resource.Attribute.actionBarStyle = global::SmartButler.Droid.Resource.Attribute.actionBarStyle;
+			global::Acr.UserDialogs.Resource.Attribute.actionBarTabBarStyle = global::SmartButler.Droid.Resource.Attribute.actionBarTabBarStyle;
+			global::Acr.UserDialogs.Resource.Attribute.actionBarTabStyle = global::SmartButler.Droid.Resource.Attribute.actionBarTabStyle;
+			global::Acr.UserDialogs.Resource.Attribute.actionBarTabTextStyle = global::SmartButler.Droid.Resource.Attribute.actionBarTabTextStyle;
+			global::Acr.UserDialogs.Resource.Attribute.actionBarTheme = global::SmartButler.Droid.Resource.Attribute.actionBarTheme;
+			global::Acr.UserDialogs.Resource.Attribute.actionBarWidgetTheme = global::SmartButler.Droid.Resource.Attribute.actionBarWidgetTheme;
+			global::Acr.UserDialogs.Resource.Attribute.actionButtonStyle = global::SmartButler.Droid.Resource.Attribute.actionButtonStyle;
+			global::Acr.UserDialogs.Resource.Attribute.actionDropDownStyle = global::SmartButler.Droid.Resource.Attribute.actionDropDownStyle;
+			global::Acr.UserDialogs.Resource.Attribute.actionLayout = global::SmartButler.Droid.Resource.Attribute.actionLayout;
+			global::Acr.UserDialogs.Resource.Attribute.actionMenuTextAppearance = global::SmartButler.Droid.Resource.Attribute.actionMenuTextAppearance;
+			global::Acr.UserDialogs.Resource.Attribute.actionMenuTextColor = global::SmartButler.Droid.Resource.Attribute.actionMenuTextColor;
+			global::Acr.UserDialogs.Resource.Attribute.actionModeBackground = global::SmartButler.Droid.Resource.Attribute.actionModeBackground;
+			global::Acr.UserDialogs.Resource.Attribute.actionModeCloseButtonStyle = global::SmartButler.Droid.Resource.Attribute.actionModeCloseButtonStyle;
+			global::Acr.UserDialogs.Resource.Attribute.actionModeCloseDrawable = global::SmartButler.Droid.Resource.Attribute.actionModeCloseDrawable;
+			global::Acr.UserDialogs.Resource.Attribute.actionModeCopyDrawable = global::SmartButler.Droid.Resource.Attribute.actionModeCopyDrawable;
+			global::Acr.UserDialogs.Resource.Attribute.actionModeCutDrawable = global::SmartButler.Droid.Resource.Attribute.actionModeCutDrawable;
+			global::Acr.UserDialogs.Resource.Attribute.actionModeFindDrawable = global::SmartButler.Droid.Resource.Attribute.actionModeFindDrawable;
+			global::Acr.UserDialogs.Resource.Attribute.actionModePasteDrawable = global::SmartButler.Droid.Resource.Attribute.actionModePasteDrawable;
+			global::Acr.UserDialogs.Resource.Attribute.actionModePopupWindowStyle = global::SmartButler.Droid.Resource.Attribute.actionModePopupWindowStyle;
+			global::Acr.UserDialogs.Resource.Attribute.actionModeSelectAllDrawable = global::SmartButler.Droid.Resource.Attribute.actionModeSelectAllDrawable;
+			global::Acr.UserDialogs.Resource.Attribute.actionModeShareDrawable = global::SmartButler.Droid.Resource.Attribute.actionModeShareDrawable;
+			global::Acr.UserDialogs.Resource.Attribute.actionModeSplitBackground = global::SmartButler.Droid.Resource.Attribute.actionModeSplitBackground;
+			global::Acr.UserDialogs.Resource.Attribute.actionModeStyle = global::SmartButler.Droid.Resource.Attribute.actionModeStyle;
+			global::Acr.UserDialogs.Resource.Attribute.actionModeWebSearchDrawable = global::SmartButler.Droid.Resource.Attribute.actionModeWebSearchDrawable;
+			global::Acr.UserDialogs.Resource.Attribute.actionOverflowButtonStyle = global::SmartButler.Droid.Resource.Attribute.actionOverflowButtonStyle;
+			global::Acr.UserDialogs.Resource.Attribute.actionOverflowMenuStyle = global::SmartButler.Droid.Resource.Attribute.actionOverflowMenuStyle;
+			global::Acr.UserDialogs.Resource.Attribute.actionProviderClass = global::SmartButler.Droid.Resource.Attribute.actionProviderClass;
+			global::Acr.UserDialogs.Resource.Attribute.actionViewClass = global::SmartButler.Droid.Resource.Attribute.actionViewClass;
+			global::Acr.UserDialogs.Resource.Attribute.activityChooserViewStyle = global::SmartButler.Droid.Resource.Attribute.activityChooserViewStyle;
+			global::Acr.UserDialogs.Resource.Attribute.ahBarColor = global::SmartButler.Droid.Resource.Attribute.ahBarColor;
+			global::Acr.UserDialogs.Resource.Attribute.ahBarLength = global::SmartButler.Droid.Resource.Attribute.ahBarLength;
+			global::Acr.UserDialogs.Resource.Attribute.ahBarWidth = global::SmartButler.Droid.Resource.Attribute.ahBarWidth;
+			global::Acr.UserDialogs.Resource.Attribute.ahCircleColor = global::SmartButler.Droid.Resource.Attribute.ahCircleColor;
+			global::Acr.UserDialogs.Resource.Attribute.ahDelayMillis = global::SmartButler.Droid.Resource.Attribute.ahDelayMillis;
+			global::Acr.UserDialogs.Resource.Attribute.ahRadius = global::SmartButler.Droid.Resource.Attribute.ahRadius;
+			global::Acr.UserDialogs.Resource.Attribute.ahRimColor = global::SmartButler.Droid.Resource.Attribute.ahRimColor;
+			global::Acr.UserDialogs.Resource.Attribute.ahRimWidth = global::SmartButler.Droid.Resource.Attribute.ahRimWidth;
+			global::Acr.UserDialogs.Resource.Attribute.ahSpinSpeed = global::SmartButler.Droid.Resource.Attribute.ahSpinSpeed;
+			global::Acr.UserDialogs.Resource.Attribute.ahText = global::SmartButler.Droid.Resource.Attribute.ahText;
+			global::Acr.UserDialogs.Resource.Attribute.ahTextColor = global::SmartButler.Droid.Resource.Attribute.ahTextColor;
+			global::Acr.UserDialogs.Resource.Attribute.ahTextSize = global::SmartButler.Droid.Resource.Attribute.ahTextSize;
+			global::Acr.UserDialogs.Resource.Attribute.alertDialogButtonGroupStyle = global::SmartButler.Droid.Resource.Attribute.alertDialogButtonGroupStyle;
+			global::Acr.UserDialogs.Resource.Attribute.alertDialogCenterButtons = global::SmartButler.Droid.Resource.Attribute.alertDialogCenterButtons;
+			global::Acr.UserDialogs.Resource.Attribute.alertDialogStyle = global::SmartButler.Droid.Resource.Attribute.alertDialogStyle;
+			global::Acr.UserDialogs.Resource.Attribute.alertDialogTheme = global::SmartButler.Droid.Resource.Attribute.alertDialogTheme;
+			global::Acr.UserDialogs.Resource.Attribute.allowStacking = global::SmartButler.Droid.Resource.Attribute.allowStacking;
+			global::Acr.UserDialogs.Resource.Attribute.alpha = global::SmartButler.Droid.Resource.Attribute.alpha;
+			global::Acr.UserDialogs.Resource.Attribute.alphabeticModifiers = global::SmartButler.Droid.Resource.Attribute.alphabeticModifiers;
+			global::Acr.UserDialogs.Resource.Attribute.arrowHeadLength = global::SmartButler.Droid.Resource.Attribute.arrowHeadLength;
+			global::Acr.UserDialogs.Resource.Attribute.arrowShaftLength = global::SmartButler.Droid.Resource.Attribute.arrowShaftLength;
+			global::Acr.UserDialogs.Resource.Attribute.autoCompleteTextViewStyle = global::SmartButler.Droid.Resource.Attribute.autoCompleteTextViewStyle;
+			global::Acr.UserDialogs.Resource.Attribute.autoSizeMaxTextSize = global::SmartButler.Droid.Resource.Attribute.autoSizeMaxTextSize;
+			global::Acr.UserDialogs.Resource.Attribute.autoSizeMinTextSize = global::SmartButler.Droid.Resource.Attribute.autoSizeMinTextSize;
+			global::Acr.UserDialogs.Resource.Attribute.autoSizePresetSizes = global::SmartButler.Droid.Resource.Attribute.autoSizePresetSizes;
+			global::Acr.UserDialogs.Resource.Attribute.autoSizeStepGranularity = global::SmartButler.Droid.Resource.Attribute.autoSizeStepGranularity;
+			global::Acr.UserDialogs.Resource.Attribute.autoSizeTextType = global::SmartButler.Droid.Resource.Attribute.autoSizeTextType;
+			global::Acr.UserDialogs.Resource.Attribute.background = global::SmartButler.Droid.Resource.Attribute.background;
+			global::Acr.UserDialogs.Resource.Attribute.backgroundSplit = global::SmartButler.Droid.Resource.Attribute.backgroundSplit;
+			global::Acr.UserDialogs.Resource.Attribute.backgroundStacked = global::SmartButler.Droid.Resource.Attribute.backgroundStacked;
+			global::Acr.UserDialogs.Resource.Attribute.backgroundTint = global::SmartButler.Droid.Resource.Attribute.backgroundTint;
+			global::Acr.UserDialogs.Resource.Attribute.backgroundTintMode = global::SmartButler.Droid.Resource.Attribute.backgroundTintMode;
+			global::Acr.UserDialogs.Resource.Attribute.barLength = global::SmartButler.Droid.Resource.Attribute.barLength;
+			global::Acr.UserDialogs.Resource.Attribute.behavior_autoHide = global::SmartButler.Droid.Resource.Attribute.behavior_autoHide;
+			global::Acr.UserDialogs.Resource.Attribute.behavior_hideable = global::SmartButler.Droid.Resource.Attribute.behavior_hideable;
+			global::Acr.UserDialogs.Resource.Attribute.behavior_overlapTop = global::SmartButler.Droid.Resource.Attribute.behavior_overlapTop;
+			global::Acr.UserDialogs.Resource.Attribute.behavior_peekHeight = global::SmartButler.Droid.Resource.Attribute.behavior_peekHeight;
+			global::Acr.UserDialogs.Resource.Attribute.behavior_skipCollapsed = global::SmartButler.Droid.Resource.Attribute.behavior_skipCollapsed;
+			global::Acr.UserDialogs.Resource.Attribute.borderlessButtonStyle = global::SmartButler.Droid.Resource.Attribute.borderlessButtonStyle;
+			global::Acr.UserDialogs.Resource.Attribute.borderWidth = global::SmartButler.Droid.Resource.Attribute.borderWidth;
+			global::Acr.UserDialogs.Resource.Attribute.bottomSheetDialogTheme = global::SmartButler.Droid.Resource.Attribute.bottomSheetDialogTheme;
+			global::Acr.UserDialogs.Resource.Attribute.bottomSheetStyle = global::SmartButler.Droid.Resource.Attribute.bottomSheetStyle;
+			global::Acr.UserDialogs.Resource.Attribute.buttonBarButtonStyle = global::SmartButler.Droid.Resource.Attribute.buttonBarButtonStyle;
+			global::Acr.UserDialogs.Resource.Attribute.buttonBarNegativeButtonStyle = global::SmartButler.Droid.Resource.Attribute.buttonBarNegativeButtonStyle;
+			global::Acr.UserDialogs.Resource.Attribute.buttonBarNeutralButtonStyle = global::SmartButler.Droid.Resource.Attribute.buttonBarNeutralButtonStyle;
+			global::Acr.UserDialogs.Resource.Attribute.buttonBarPositiveButtonStyle = global::SmartButler.Droid.Resource.Attribute.buttonBarPositiveButtonStyle;
+			global::Acr.UserDialogs.Resource.Attribute.buttonBarStyle = global::SmartButler.Droid.Resource.Attribute.buttonBarStyle;
+			global::Acr.UserDialogs.Resource.Attribute.buttonGravity = global::SmartButler.Droid.Resource.Attribute.buttonGravity;
+			global::Acr.UserDialogs.Resource.Attribute.buttonPanelSideLayout = global::SmartButler.Droid.Resource.Attribute.buttonPanelSideLayout;
+			global::Acr.UserDialogs.Resource.Attribute.buttonStyle = global::SmartButler.Droid.Resource.Attribute.buttonStyle;
+			global::Acr.UserDialogs.Resource.Attribute.buttonStyleSmall = global::SmartButler.Droid.Resource.Attribute.buttonStyleSmall;
+			global::Acr.UserDialogs.Resource.Attribute.buttonTint = global::SmartButler.Droid.Resource.Attribute.buttonTint;
+			global::Acr.UserDialogs.Resource.Attribute.buttonTintMode = global::SmartButler.Droid.Resource.Attribute.buttonTintMode;
+			global::Acr.UserDialogs.Resource.Attribute.checkboxStyle = global::SmartButler.Droid.Resource.Attribute.checkboxStyle;
+			global::Acr.UserDialogs.Resource.Attribute.checkedTextViewStyle = global::SmartButler.Droid.Resource.Attribute.checkedTextViewStyle;
+			global::Acr.UserDialogs.Resource.Attribute.closeIcon = global::SmartButler.Droid.Resource.Attribute.closeIcon;
+			global::Acr.UserDialogs.Resource.Attribute.closeItemLayout = global::SmartButler.Droid.Resource.Attribute.closeItemLayout;
+			global::Acr.UserDialogs.Resource.Attribute.collapseContentDescription = global::SmartButler.Droid.Resource.Attribute.collapseContentDescription;
+			global::Acr.UserDialogs.Resource.Attribute.collapsedTitleGravity = global::SmartButler.Droid.Resource.Attribute.collapsedTitleGravity;
+			global::Acr.UserDialogs.Resource.Attribute.collapsedTitleTextAppearance = global::SmartButler.Droid.Resource.Attribute.collapsedTitleTextAppearance;
+			global::Acr.UserDialogs.Resource.Attribute.collapseIcon = global::SmartButler.Droid.Resource.Attribute.collapseIcon;
+			global::Acr.UserDialogs.Resource.Attribute.color = global::SmartButler.Droid.Resource.Attribute.color;
+			global::Acr.UserDialogs.Resource.Attribute.colorAccent = global::SmartButler.Droid.Resource.Attribute.colorAccent;
+			global::Acr.UserDialogs.Resource.Attribute.colorBackgroundFloating = global::SmartButler.Droid.Resource.Attribute.colorBackgroundFloating;
+			global::Acr.UserDialogs.Resource.Attribute.colorButtonNormal = global::SmartButler.Droid.Resource.Attribute.colorButtonNormal;
+			global::Acr.UserDialogs.Resource.Attribute.colorControlActivated = global::SmartButler.Droid.Resource.Attribute.colorControlActivated;
+			global::Acr.UserDialogs.Resource.Attribute.colorControlHighlight = global::SmartButler.Droid.Resource.Attribute.colorControlHighlight;
+			global::Acr.UserDialogs.Resource.Attribute.colorControlNormal = global::SmartButler.Droid.Resource.Attribute.colorControlNormal;
+			global::Acr.UserDialogs.Resource.Attribute.colorError = global::SmartButler.Droid.Resource.Attribute.colorError;
+			global::Acr.UserDialogs.Resource.Attribute.colorPrimary = global::SmartButler.Droid.Resource.Attribute.colorPrimary;
+			global::Acr.UserDialogs.Resource.Attribute.colorPrimaryDark = global::SmartButler.Droid.Resource.Attribute.colorPrimaryDark;
+			global::Acr.UserDialogs.Resource.Attribute.colorSwitchThumbNormal = global::SmartButler.Droid.Resource.Attribute.colorSwitchThumbNormal;
+			global::Acr.UserDialogs.Resource.Attribute.commitIcon = global::SmartButler.Droid.Resource.Attribute.commitIcon;
+			global::Acr.UserDialogs.Resource.Attribute.contentDescription = global::SmartButler.Droid.Resource.Attribute.contentDescription;
+			global::Acr.UserDialogs.Resource.Attribute.contentInsetEnd = global::SmartButler.Droid.Resource.Attribute.contentInsetEnd;
+			global::Acr.UserDialogs.Resource.Attribute.contentInsetEndWithActions = global::SmartButler.Droid.Resource.Attribute.contentInsetEndWithActions;
+			global::Acr.UserDialogs.Resource.Attribute.contentInsetLeft = global::SmartButler.Droid.Resource.Attribute.contentInsetLeft;
+			global::Acr.UserDialogs.Resource.Attribute.contentInsetRight = global::SmartButler.Droid.Resource.Attribute.contentInsetRight;
+			global::Acr.UserDialogs.Resource.Attribute.contentInsetStart = global::SmartButler.Droid.Resource.Attribute.contentInsetStart;
+			global::Acr.UserDialogs.Resource.Attribute.contentInsetStartWithNavigation = global::SmartButler.Droid.Resource.Attribute.contentInsetStartWithNavigation;
+			global::Acr.UserDialogs.Resource.Attribute.contentScrim = global::SmartButler.Droid.Resource.Attribute.contentScrim;
+			global::Acr.UserDialogs.Resource.Attribute.controlBackground = global::SmartButler.Droid.Resource.Attribute.controlBackground;
+			global::Acr.UserDialogs.Resource.Attribute.counterEnabled = global::SmartButler.Droid.Resource.Attribute.counterEnabled;
+			global::Acr.UserDialogs.Resource.Attribute.counterMaxLength = global::SmartButler.Droid.Resource.Attribute.counterMaxLength;
+			global::Acr.UserDialogs.Resource.Attribute.counterOverflowTextAppearance = global::SmartButler.Droid.Resource.Attribute.counterOverflowTextAppearance;
+			global::Acr.UserDialogs.Resource.Attribute.counterTextAppearance = global::SmartButler.Droid.Resource.Attribute.counterTextAppearance;
+			global::Acr.UserDialogs.Resource.Attribute.customNavigationLayout = global::SmartButler.Droid.Resource.Attribute.customNavigationLayout;
+			global::Acr.UserDialogs.Resource.Attribute.defaultQueryHint = global::SmartButler.Droid.Resource.Attribute.defaultQueryHint;
+			global::Acr.UserDialogs.Resource.Attribute.dialogPreferredPadding = global::SmartButler.Droid.Resource.Attribute.dialogPreferredPadding;
+			global::Acr.UserDialogs.Resource.Attribute.dialogTheme = global::SmartButler.Droid.Resource.Attribute.dialogTheme;
+			global::Acr.UserDialogs.Resource.Attribute.displayOptions = global::SmartButler.Droid.Resource.Attribute.displayOptions;
+			global::Acr.UserDialogs.Resource.Attribute.divider = global::SmartButler.Droid.Resource.Attribute.divider;
+			global::Acr.UserDialogs.Resource.Attribute.dividerHorizontal = global::SmartButler.Droid.Resource.Attribute.dividerHorizontal;
+			global::Acr.UserDialogs.Resource.Attribute.dividerPadding = global::SmartButler.Droid.Resource.Attribute.dividerPadding;
+			global::Acr.UserDialogs.Resource.Attribute.dividerVertical = global::SmartButler.Droid.Resource.Attribute.dividerVertical;
+			global::Acr.UserDialogs.Resource.Attribute.drawableSize = global::SmartButler.Droid.Resource.Attribute.drawableSize;
+			global::Acr.UserDialogs.Resource.Attribute.drawerArrowStyle = global::SmartButler.Droid.Resource.Attribute.drawerArrowStyle;
+			global::Acr.UserDialogs.Resource.Attribute.dropdownListPreferredItemHeight = global::SmartButler.Droid.Resource.Attribute.dropdownListPreferredItemHeight;
+			global::Acr.UserDialogs.Resource.Attribute.dropDownListViewStyle = global::SmartButler.Droid.Resource.Attribute.dropDownListViewStyle;
+			global::Acr.UserDialogs.Resource.Attribute.editTextBackground = global::SmartButler.Droid.Resource.Attribute.editTextBackground;
+			global::Acr.UserDialogs.Resource.Attribute.editTextColor = global::SmartButler.Droid.Resource.Attribute.editTextColor;
+			global::Acr.UserDialogs.Resource.Attribute.editTextStyle = global::SmartButler.Droid.Resource.Attribute.editTextStyle;
+			global::Acr.UserDialogs.Resource.Attribute.elevation = global::SmartButler.Droid.Resource.Attribute.elevation;
+			global::Acr.UserDialogs.Resource.Attribute.errorEnabled = global::SmartButler.Droid.Resource.Attribute.errorEnabled;
+			global::Acr.UserDialogs.Resource.Attribute.errorTextAppearance = global::SmartButler.Droid.Resource.Attribute.errorTextAppearance;
+			global::Acr.UserDialogs.Resource.Attribute.expandActivityOverflowButtonDrawable = global::SmartButler.Droid.Resource.Attribute.expandActivityOverflowButtonDrawable;
+			global::Acr.UserDialogs.Resource.Attribute.expanded = global::SmartButler.Droid.Resource.Attribute.expanded;
+			global::Acr.UserDialogs.Resource.Attribute.expandedTitleGravity = global::SmartButler.Droid.Resource.Attribute.expandedTitleGravity;
+			global::Acr.UserDialogs.Resource.Attribute.expandedTitleMargin = global::SmartButler.Droid.Resource.Attribute.expandedTitleMargin;
+			global::Acr.UserDialogs.Resource.Attribute.expandedTitleMarginBottom = global::SmartButler.Droid.Resource.Attribute.expandedTitleMarginBottom;
+			global::Acr.UserDialogs.Resource.Attribute.expandedTitleMarginEnd = global::SmartButler.Droid.Resource.Attribute.expandedTitleMarginEnd;
+			global::Acr.UserDialogs.Resource.Attribute.expandedTitleMarginStart = global::SmartButler.Droid.Resource.Attribute.expandedTitleMarginStart;
+			global::Acr.UserDialogs.Resource.Attribute.expandedTitleMarginTop = global::SmartButler.Droid.Resource.Attribute.expandedTitleMarginTop;
+			global::Acr.UserDialogs.Resource.Attribute.expandedTitleTextAppearance = global::SmartButler.Droid.Resource.Attribute.expandedTitleTextAppearance;
+			global::Acr.UserDialogs.Resource.Attribute.fabSize = global::SmartButler.Droid.Resource.Attribute.fabSize;
+			global::Acr.UserDialogs.Resource.Attribute.fastScrollEnabled = global::SmartButler.Droid.Resource.Attribute.fastScrollEnabled;
+			global::Acr.UserDialogs.Resource.Attribute.fastScrollHorizontalThumbDrawable = global::SmartButler.Droid.Resource.Attribute.fastScrollHorizontalThumbDrawable;
+			global::Acr.UserDialogs.Resource.Attribute.fastScrollHorizontalTrackDrawable = global::SmartButler.Droid.Resource.Attribute.fastScrollHorizontalTrackDrawable;
+			global::Acr.UserDialogs.Resource.Attribute.fastScrollVerticalThumbDrawable = global::SmartButler.Droid.Resource.Attribute.fastScrollVerticalThumbDrawable;
+			global::Acr.UserDialogs.Resource.Attribute.fastScrollVerticalTrackDrawable = global::SmartButler.Droid.Resource.Attribute.fastScrollVerticalTrackDrawable;
+			global::Acr.UserDialogs.Resource.Attribute.font = global::SmartButler.Droid.Resource.Attribute.font;
+			global::Acr.UserDialogs.Resource.Attribute.fontFamily = global::SmartButler.Droid.Resource.Attribute.fontFamily;
+			global::Acr.UserDialogs.Resource.Attribute.fontProviderAuthority = global::SmartButler.Droid.Resource.Attribute.fontProviderAuthority;
+			global::Acr.UserDialogs.Resource.Attribute.fontProviderCerts = global::SmartButler.Droid.Resource.Attribute.fontProviderCerts;
+			global::Acr.UserDialogs.Resource.Attribute.fontProviderFetchStrategy = global::SmartButler.Droid.Resource.Attribute.fontProviderFetchStrategy;
+			global::Acr.UserDialogs.Resource.Attribute.fontProviderFetchTimeout = global::SmartButler.Droid.Resource.Attribute.fontProviderFetchTimeout;
+			global::Acr.UserDialogs.Resource.Attribute.fontProviderPackage = global::SmartButler.Droid.Resource.Attribute.fontProviderPackage;
+			global::Acr.UserDialogs.Resource.Attribute.fontProviderQuery = global::SmartButler.Droid.Resource.Attribute.fontProviderQuery;
+			global::Acr.UserDialogs.Resource.Attribute.fontStyle = global::SmartButler.Droid.Resource.Attribute.fontStyle;
+			global::Acr.UserDialogs.Resource.Attribute.fontWeight = global::SmartButler.Droid.Resource.Attribute.fontWeight;
+			global::Acr.UserDialogs.Resource.Attribute.foregroundInsidePadding = global::SmartButler.Droid.Resource.Attribute.foregroundInsidePadding;
+			global::Acr.UserDialogs.Resource.Attribute.gapBetweenBars = global::SmartButler.Droid.Resource.Attribute.gapBetweenBars;
+			global::Acr.UserDialogs.Resource.Attribute.goIcon = global::SmartButler.Droid.Resource.Attribute.goIcon;
+			global::Acr.UserDialogs.Resource.Attribute.headerLayout = global::SmartButler.Droid.Resource.Attribute.headerLayout;
+			global::Acr.UserDialogs.Resource.Attribute.height = global::SmartButler.Droid.Resource.Attribute.height;
+			global::Acr.UserDialogs.Resource.Attribute.hideOnContentScroll = global::SmartButler.Droid.Resource.Attribute.hideOnContentScroll;
+			global::Acr.UserDialogs.Resource.Attribute.hintAnimationEnabled = global::SmartButler.Droid.Resource.Attribute.hintAnimationEnabled;
+			global::Acr.UserDialogs.Resource.Attribute.hintEnabled = global::SmartButler.Droid.Resource.Attribute.hintEnabled;
+			global::Acr.UserDialogs.Resource.Attribute.hintTextAppearance = global::SmartButler.Droid.Resource.Attribute.hintTextAppearance;
+			global::Acr.UserDialogs.Resource.Attribute.homeAsUpIndicator = global::SmartButler.Droid.Resource.Attribute.homeAsUpIndicator;
+			global::Acr.UserDialogs.Resource.Attribute.homeLayout = global::SmartButler.Droid.Resource.Attribute.homeLayout;
+			global::Acr.UserDialogs.Resource.Attribute.icon = global::SmartButler.Droid.Resource.Attribute.icon;
+			global::Acr.UserDialogs.Resource.Attribute.iconifiedByDefault = global::SmartButler.Droid.Resource.Attribute.iconifiedByDefault;
+			global::Acr.UserDialogs.Resource.Attribute.iconTint = global::SmartButler.Droid.Resource.Attribute.iconTint;
+			global::Acr.UserDialogs.Resource.Attribute.iconTintMode = global::SmartButler.Droid.Resource.Attribute.iconTintMode;
+			global::Acr.UserDialogs.Resource.Attribute.imageButtonStyle = global::SmartButler.Droid.Resource.Attribute.imageButtonStyle;
+			global::Acr.UserDialogs.Resource.Attribute.indeterminateProgressStyle = global::SmartButler.Droid.Resource.Attribute.indeterminateProgressStyle;
+			global::Acr.UserDialogs.Resource.Attribute.initialActivityCount = global::SmartButler.Droid.Resource.Attribute.initialActivityCount;
+			global::Acr.UserDialogs.Resource.Attribute.insetForeground = global::SmartButler.Droid.Resource.Attribute.insetForeground;
+			global::Acr.UserDialogs.Resource.Attribute.isLightTheme = global::SmartButler.Droid.Resource.Attribute.isLightTheme;
+			global::Acr.UserDialogs.Resource.Attribute.itemBackground = global::SmartButler.Droid.Resource.Attribute.itemBackground;
+			global::Acr.UserDialogs.Resource.Attribute.itemIconTint = global::SmartButler.Droid.Resource.Attribute.itemIconTint;
+			global::Acr.UserDialogs.Resource.Attribute.itemPadding = global::SmartButler.Droid.Resource.Attribute.itemPadding;
+			global::Acr.UserDialogs.Resource.Attribute.itemTextAppearance = global::SmartButler.Droid.Resource.Attribute.itemTextAppearance;
+			global::Acr.UserDialogs.Resource.Attribute.itemTextColor = global::SmartButler.Droid.Resource.Attribute.itemTextColor;
+			global::Acr.UserDialogs.Resource.Attribute.keylines = global::SmartButler.Droid.Resource.Attribute.keylines;
+			global::Acr.UserDialogs.Resource.Attribute.layout = global::SmartButler.Droid.Resource.Attribute.layout;
+			global::Acr.UserDialogs.Resource.Attribute.layoutManager = global::SmartButler.Droid.Resource.Attribute.layoutManager;
+			global::Acr.UserDialogs.Resource.Attribute.layout_anchor = global::SmartButler.Droid.Resource.Attribute.layout_anchor;
+			global::Acr.UserDialogs.Resource.Attribute.layout_anchorGravity = global::SmartButler.Droid.Resource.Attribute.layout_anchorGravity;
+			global::Acr.UserDialogs.Resource.Attribute.layout_behavior = global::SmartButler.Droid.Resource.Attribute.layout_behavior;
+			global::Acr.UserDialogs.Resource.Attribute.layout_collapseMode = global::SmartButler.Droid.Resource.Attribute.layout_collapseMode;
+			global::Acr.UserDialogs.Resource.Attribute.layout_collapseParallaxMultiplier = global::SmartButler.Droid.Resource.Attribute.layout_collapseParallaxMultiplier;
+			global::Acr.UserDialogs.Resource.Attribute.layout_dodgeInsetEdges = global::SmartButler.Droid.Resource.Attribute.layout_dodgeInsetEdges;
+			global::Acr.UserDialogs.Resource.Attribute.layout_insetEdge = global::SmartButler.Droid.Resource.Attribute.layout_insetEdge;
+			global::Acr.UserDialogs.Resource.Attribute.layout_keyline = global::SmartButler.Droid.Resource.Attribute.layout_keyline;
+			global::Acr.UserDialogs.Resource.Attribute.layout_scrollFlags = global::SmartButler.Droid.Resource.Attribute.layout_scrollFlags;
+			global::Acr.UserDialogs.Resource.Attribute.layout_scrollInterpolator = global::SmartButler.Droid.Resource.Attribute.layout_scrollInterpolator;
+			global::Acr.UserDialogs.Resource.Attribute.listChoiceBackgroundIndicator = global::SmartButler.Droid.Resource.Attribute.listChoiceBackgroundIndicator;
+			global::Acr.UserDialogs.Resource.Attribute.listDividerAlertDialog = global::SmartButler.Droid.Resource.Attribute.listDividerAlertDialog;
+			global::Acr.UserDialogs.Resource.Attribute.listItemLayout = global::SmartButler.Droid.Resource.Attribute.listItemLayout;
+			global::Acr.UserDialogs.Resource.Attribute.listLayout = global::SmartButler.Droid.Resource.Attribute.listLayout;
+			global::Acr.UserDialogs.Resource.Attribute.listMenuViewStyle = global::SmartButler.Droid.Resource.Attribute.listMenuViewStyle;
+			global::Acr.UserDialogs.Resource.Attribute.listPopupWindowStyle = global::SmartButler.Droid.Resource.Attribute.listPopupWindowStyle;
+			global::Acr.UserDialogs.Resource.Attribute.listPreferredItemHeight = global::SmartButler.Droid.Resource.Attribute.listPreferredItemHeight;
+			global::Acr.UserDialogs.Resource.Attribute.listPreferredItemHeightLarge = global::SmartButler.Droid.Resource.Attribute.listPreferredItemHeightLarge;
+			global::Acr.UserDialogs.Resource.Attribute.listPreferredItemHeightSmall = global::SmartButler.Droid.Resource.Attribute.listPreferredItemHeightSmall;
+			global::Acr.UserDialogs.Resource.Attribute.listPreferredItemPaddingLeft = global::SmartButler.Droid.Resource.Attribute.listPreferredItemPaddingLeft;
+			global::Acr.UserDialogs.Resource.Attribute.listPreferredItemPaddingRight = global::SmartButler.Droid.Resource.Attribute.listPreferredItemPaddingRight;
+			global::Acr.UserDialogs.Resource.Attribute.logo = global::SmartButler.Droid.Resource.Attribute.logo;
+			global::Acr.UserDialogs.Resource.Attribute.logoDescription = global::SmartButler.Droid.Resource.Attribute.logoDescription;
+			global::Acr.UserDialogs.Resource.Attribute.maxActionInlineWidth = global::SmartButler.Droid.Resource.Attribute.maxActionInlineWidth;
+			global::Acr.UserDialogs.Resource.Attribute.maxButtonHeight = global::SmartButler.Droid.Resource.Attribute.maxButtonHeight;
+			global::Acr.UserDialogs.Resource.Attribute.measureWithLargestChild = global::SmartButler.Droid.Resource.Attribute.measureWithLargestChild;
+			global::Acr.UserDialogs.Resource.Attribute.menu = global::SmartButler.Droid.Resource.Attribute.menu;
+			global::Acr.UserDialogs.Resource.Attribute.multiChoiceItemLayout = global::SmartButler.Droid.Resource.Attribute.multiChoiceItemLayout;
+			global::Acr.UserDialogs.Resource.Attribute.navigationContentDescription = global::SmartButler.Droid.Resource.Attribute.navigationContentDescription;
+			global::Acr.UserDialogs.Resource.Attribute.navigationIcon = global::SmartButler.Droid.Resource.Attribute.navigationIcon;
+			global::Acr.UserDialogs.Resource.Attribute.navigationMode = global::SmartButler.Droid.Resource.Attribute.navigationMode;
+			global::Acr.UserDialogs.Resource.Attribute.numericModifiers = global::SmartButler.Droid.Resource.Attribute.numericModifiers;
+			global::Acr.UserDialogs.Resource.Attribute.overlapAnchor = global::SmartButler.Droid.Resource.Attribute.overlapAnchor;
+			global::Acr.UserDialogs.Resource.Attribute.paddingBottomNoButtons = global::SmartButler.Droid.Resource.Attribute.paddingBottomNoButtons;
+			global::Acr.UserDialogs.Resource.Attribute.paddingEnd = global::SmartButler.Droid.Resource.Attribute.paddingEnd;
+			global::Acr.UserDialogs.Resource.Attribute.paddingStart = global::SmartButler.Droid.Resource.Attribute.paddingStart;
+			global::Acr.UserDialogs.Resource.Attribute.paddingTopNoTitle = global::SmartButler.Droid.Resource.Attribute.paddingTopNoTitle;
+			global::Acr.UserDialogs.Resource.Attribute.panelBackground = global::SmartButler.Droid.Resource.Attribute.panelBackground;
+			global::Acr.UserDialogs.Resource.Attribute.panelMenuListTheme = global::SmartButler.Droid.Resource.Attribute.panelMenuListTheme;
+			global::Acr.UserDialogs.Resource.Attribute.panelMenuListWidth = global::SmartButler.Droid.Resource.Attribute.panelMenuListWidth;
+			global::Acr.UserDialogs.Resource.Attribute.passwordToggleContentDescription = global::SmartButler.Droid.Resource.Attribute.passwordToggleContentDescription;
+			global::Acr.UserDialogs.Resource.Attribute.passwordToggleDrawable = global::SmartButler.Droid.Resource.Attribute.passwordToggleDrawable;
+			global::Acr.UserDialogs.Resource.Attribute.passwordToggleEnabled = global::SmartButler.Droid.Resource.Attribute.passwordToggleEnabled;
+			global::Acr.UserDialogs.Resource.Attribute.passwordToggleTint = global::SmartButler.Droid.Resource.Attribute.passwordToggleTint;
+			global::Acr.UserDialogs.Resource.Attribute.passwordToggleTintMode = global::SmartButler.Droid.Resource.Attribute.passwordToggleTintMode;
+			global::Acr.UserDialogs.Resource.Attribute.popupMenuStyle = global::SmartButler.Droid.Resource.Attribute.popupMenuStyle;
+			global::Acr.UserDialogs.Resource.Attribute.popupTheme = global::SmartButler.Droid.Resource.Attribute.popupTheme;
+			global::Acr.UserDialogs.Resource.Attribute.popupWindowStyle = global::SmartButler.Droid.Resource.Attribute.popupWindowStyle;
+			global::Acr.UserDialogs.Resource.Attribute.preserveIconSpacing = global::SmartButler.Droid.Resource.Attribute.preserveIconSpacing;
+			global::Acr.UserDialogs.Resource.Attribute.pressedTranslationZ = global::SmartButler.Droid.Resource.Attribute.pressedTranslationZ;
+			global::Acr.UserDialogs.Resource.Attribute.progressBarPadding = global::SmartButler.Droid.Resource.Attribute.progressBarPadding;
+			global::Acr.UserDialogs.Resource.Attribute.progressBarStyle = global::SmartButler.Droid.Resource.Attribute.progressBarStyle;
+			global::Acr.UserDialogs.Resource.Attribute.queryBackground = global::SmartButler.Droid.Resource.Attribute.queryBackground;
+			global::Acr.UserDialogs.Resource.Attribute.queryHint = global::SmartButler.Droid.Resource.Attribute.queryHint;
+			global::Acr.UserDialogs.Resource.Attribute.radioButtonStyle = global::SmartButler.Droid.Resource.Attribute.radioButtonStyle;
+			global::Acr.UserDialogs.Resource.Attribute.ratingBarStyle = global::SmartButler.Droid.Resource.Attribute.ratingBarStyle;
+			global::Acr.UserDialogs.Resource.Attribute.ratingBarStyleIndicator = global::SmartButler.Droid.Resource.Attribute.ratingBarStyleIndicator;
+			global::Acr.UserDialogs.Resource.Attribute.ratingBarStyleSmall = global::SmartButler.Droid.Resource.Attribute.ratingBarStyleSmall;
+			global::Acr.UserDialogs.Resource.Attribute.reverseLayout = global::SmartButler.Droid.Resource.Attribute.reverseLayout;
+			global::Acr.UserDialogs.Resource.Attribute.rippleColor = global::SmartButler.Droid.Resource.Attribute.rippleColor;
+			global::Acr.UserDialogs.Resource.Attribute.scrimAnimationDuration = global::SmartButler.Droid.Resource.Attribute.scrimAnimationDuration;
+			global::Acr.UserDialogs.Resource.Attribute.scrimVisibleHeightTrigger = global::SmartButler.Droid.Resource.Attribute.scrimVisibleHeightTrigger;
+			global::Acr.UserDialogs.Resource.Attribute.searchHintIcon = global::SmartButler.Droid.Resource.Attribute.searchHintIcon;
+			global::Acr.UserDialogs.Resource.Attribute.searchIcon = global::SmartButler.Droid.Resource.Attribute.searchIcon;
+			global::Acr.UserDialogs.Resource.Attribute.searchViewStyle = global::SmartButler.Droid.Resource.Attribute.searchViewStyle;
+			global::Acr.UserDialogs.Resource.Attribute.seekBarStyle = global::SmartButler.Droid.Resource.Attribute.seekBarStyle;
+			global::Acr.UserDialogs.Resource.Attribute.selectableItemBackground = global::SmartButler.Droid.Resource.Attribute.selectableItemBackground;
+			global::Acr.UserDialogs.Resource.Attribute.selectableItemBackgroundBorderless = global::SmartButler.Droid.Resource.Attribute.selectableItemBackgroundBorderless;
+			global::Acr.UserDialogs.Resource.Attribute.showAsAction = global::SmartButler.Droid.Resource.Attribute.showAsAction;
+			global::Acr.UserDialogs.Resource.Attribute.showDividers = global::SmartButler.Droid.Resource.Attribute.showDividers;
+			global::Acr.UserDialogs.Resource.Attribute.showText = global::SmartButler.Droid.Resource.Attribute.showText;
+			global::Acr.UserDialogs.Resource.Attribute.showTitle = global::SmartButler.Droid.Resource.Attribute.showTitle;
+			global::Acr.UserDialogs.Resource.Attribute.singleChoiceItemLayout = global::SmartButler.Droid.Resource.Attribute.singleChoiceItemLayout;
+			global::Acr.UserDialogs.Resource.Attribute.spanCount = global::SmartButler.Droid.Resource.Attribute.spanCount;
+			global::Acr.UserDialogs.Resource.Attribute.spinBars = global::SmartButler.Droid.Resource.Attribute.spinBars;
+			global::Acr.UserDialogs.Resource.Attribute.spinnerDropDownItemStyle = global::SmartButler.Droid.Resource.Attribute.spinnerDropDownItemStyle;
+			global::Acr.UserDialogs.Resource.Attribute.spinnerStyle = global::SmartButler.Droid.Resource.Attribute.spinnerStyle;
+			global::Acr.UserDialogs.Resource.Attribute.splitTrack = global::SmartButler.Droid.Resource.Attribute.splitTrack;
+			global::Acr.UserDialogs.Resource.Attribute.srcCompat = global::SmartButler.Droid.Resource.Attribute.srcCompat;
+			global::Acr.UserDialogs.Resource.Attribute.stackFromEnd = global::SmartButler.Droid.Resource.Attribute.stackFromEnd;
+			global::Acr.UserDialogs.Resource.Attribute.state_above_anchor = global::SmartButler.Droid.Resource.Attribute.state_above_anchor;
+			global::Acr.UserDialogs.Resource.Attribute.state_collapsed = global::SmartButler.Droid.Resource.Attribute.state_collapsed;
+			global::Acr.UserDialogs.Resource.Attribute.state_collapsible = global::SmartButler.Droid.Resource.Attribute.state_collapsible;
+			global::Acr.UserDialogs.Resource.Attribute.statusBarBackground = global::SmartButler.Droid.Resource.Attribute.statusBarBackground;
+			global::Acr.UserDialogs.Resource.Attribute.statusBarScrim = global::SmartButler.Droid.Resource.Attribute.statusBarScrim;
+			global::Acr.UserDialogs.Resource.Attribute.subMenuArrow = global::SmartButler.Droid.Resource.Attribute.subMenuArrow;
+			global::Acr.UserDialogs.Resource.Attribute.submitBackground = global::SmartButler.Droid.Resource.Attribute.submitBackground;
+			global::Acr.UserDialogs.Resource.Attribute.subtitle = global::SmartButler.Droid.Resource.Attribute.subtitle;
+			global::Acr.UserDialogs.Resource.Attribute.subtitleTextAppearance = global::SmartButler.Droid.Resource.Attribute.subtitleTextAppearance;
+			global::Acr.UserDialogs.Resource.Attribute.subtitleTextColor = global::SmartButler.Droid.Resource.Attribute.subtitleTextColor;
+			global::Acr.UserDialogs.Resource.Attribute.subtitleTextStyle = global::SmartButler.Droid.Resource.Attribute.subtitleTextStyle;
+			global::Acr.UserDialogs.Resource.Attribute.suggestionRowLayout = global::SmartButler.Droid.Resource.Attribute.suggestionRowLayout;
+			global::Acr.UserDialogs.Resource.Attribute.switchMinWidth = global::SmartButler.Droid.Resource.Attribute.switchMinWidth;
+			global::Acr.UserDialogs.Resource.Attribute.switchPadding = global::SmartButler.Droid.Resource.Attribute.switchPadding;
+			global::Acr.UserDialogs.Resource.Attribute.switchStyle = global::SmartButler.Droid.Resource.Attribute.switchStyle;
+			global::Acr.UserDialogs.Resource.Attribute.switchTextAppearance = global::SmartButler.Droid.Resource.Attribute.switchTextAppearance;
+			global::Acr.UserDialogs.Resource.Attribute.tabBackground = global::SmartButler.Droid.Resource.Attribute.tabBackground;
+			global::Acr.UserDialogs.Resource.Attribute.tabContentStart = global::SmartButler.Droid.Resource.Attribute.tabContentStart;
+			global::Acr.UserDialogs.Resource.Attribute.tabGravity = global::SmartButler.Droid.Resource.Attribute.tabGravity;
+			global::Acr.UserDialogs.Resource.Attribute.tabIndicatorColor = global::SmartButler.Droid.Resource.Attribute.tabIndicatorColor;
+			global::Acr.UserDialogs.Resource.Attribute.tabIndicatorHeight = global::SmartButler.Droid.Resource.Attribute.tabIndicatorHeight;
+			global::Acr.UserDialogs.Resource.Attribute.tabMaxWidth = global::SmartButler.Droid.Resource.Attribute.tabMaxWidth;
+			global::Acr.UserDialogs.Resource.Attribute.tabMinWidth = global::SmartButler.Droid.Resource.Attribute.tabMinWidth;
+			global::Acr.UserDialogs.Resource.Attribute.tabMode = global::SmartButler.Droid.Resource.Attribute.tabMode;
+			global::Acr.UserDialogs.Resource.Attribute.tabPadding = global::SmartButler.Droid.Resource.Attribute.tabPadding;
+			global::Acr.UserDialogs.Resource.Attribute.tabPaddingBottom = global::SmartButler.Droid.Resource.Attribute.tabPaddingBottom;
+			global::Acr.UserDialogs.Resource.Attribute.tabPaddingEnd = global::SmartButler.Droid.Resource.Attribute.tabPaddingEnd;
+			global::Acr.UserDialogs.Resource.Attribute.tabPaddingStart = global::SmartButler.Droid.Resource.Attribute.tabPaddingStart;
+			global::Acr.UserDialogs.Resource.Attribute.tabPaddingTop = global::SmartButler.Droid.Resource.Attribute.tabPaddingTop;
+			global::Acr.UserDialogs.Resource.Attribute.tabSelectedTextColor = global::SmartButler.Droid.Resource.Attribute.tabSelectedTextColor;
+			global::Acr.UserDialogs.Resource.Attribute.tabTextAppearance = global::SmartButler.Droid.Resource.Attribute.tabTextAppearance;
+			global::Acr.UserDialogs.Resource.Attribute.tabTextColor = global::SmartButler.Droid.Resource.Attribute.tabTextColor;
+			global::Acr.UserDialogs.Resource.Attribute.textAllCaps = global::SmartButler.Droid.Resource.Attribute.textAllCaps;
+			global::Acr.UserDialogs.Resource.Attribute.textAppearanceLargePopupMenu = global::SmartButler.Droid.Resource.Attribute.textAppearanceLargePopupMenu;
+			global::Acr.UserDialogs.Resource.Attribute.textAppearanceListItem = global::SmartButler.Droid.Resource.Attribute.textAppearanceListItem;
+			global::Acr.UserDialogs.Resource.Attribute.textAppearanceListItemSecondary = global::SmartButler.Droid.Resource.Attribute.textAppearanceListItemSecondary;
+			global::Acr.UserDialogs.Resource.Attribute.textAppearanceListItemSmall = global::SmartButler.Droid.Resource.Attribute.textAppearanceListItemSmall;
+			global::Acr.UserDialogs.Resource.Attribute.textAppearancePopupMenuHeader = global::SmartButler.Droid.Resource.Attribute.textAppearancePopupMenuHeader;
+			global::Acr.UserDialogs.Resource.Attribute.textAppearanceSearchResultSubtitle = global::SmartButler.Droid.Resource.Attribute.textAppearanceSearchResultSubtitle;
+			global::Acr.UserDialogs.Resource.Attribute.textAppearanceSearchResultTitle = global::SmartButler.Droid.Resource.Attribute.textAppearanceSearchResultTitle;
+			global::Acr.UserDialogs.Resource.Attribute.textAppearanceSmallPopupMenu = global::SmartButler.Droid.Resource.Attribute.textAppearanceSmallPopupMenu;
+			global::Acr.UserDialogs.Resource.Attribute.textColorAlertDialogListItem = global::SmartButler.Droid.Resource.Attribute.textColorAlertDialogListItem;
+			global::Acr.UserDialogs.Resource.Attribute.textColorError = global::SmartButler.Droid.Resource.Attribute.textColorError;
+			global::Acr.UserDialogs.Resource.Attribute.textColorSearchUrl = global::SmartButler.Droid.Resource.Attribute.textColorSearchUrl;
+			global::Acr.UserDialogs.Resource.Attribute.theme = global::SmartButler.Droid.Resource.Attribute.theme;
+			global::Acr.UserDialogs.Resource.Attribute.thickness = global::SmartButler.Droid.Resource.Attribute.thickness;
+			global::Acr.UserDialogs.Resource.Attribute.thumbTextPadding = global::SmartButler.Droid.Resource.Attribute.thumbTextPadding;
+			global::Acr.UserDialogs.Resource.Attribute.thumbTint = global::SmartButler.Droid.Resource.Attribute.thumbTint;
+			global::Acr.UserDialogs.Resource.Attribute.thumbTintMode = global::SmartButler.Droid.Resource.Attribute.thumbTintMode;
+			global::Acr.UserDialogs.Resource.Attribute.tickMark = global::SmartButler.Droid.Resource.Attribute.tickMark;
+			global::Acr.UserDialogs.Resource.Attribute.tickMarkTint = global::SmartButler.Droid.Resource.Attribute.tickMarkTint;
+			global::Acr.UserDialogs.Resource.Attribute.tickMarkTintMode = global::SmartButler.Droid.Resource.Attribute.tickMarkTintMode;
+			global::Acr.UserDialogs.Resource.Attribute.tint = global::SmartButler.Droid.Resource.Attribute.tint;
+			global::Acr.UserDialogs.Resource.Attribute.tintMode = global::SmartButler.Droid.Resource.Attribute.tintMode;
+			global::Acr.UserDialogs.Resource.Attribute.title = global::SmartButler.Droid.Resource.Attribute.title;
+			global::Acr.UserDialogs.Resource.Attribute.titleEnabled = global::SmartButler.Droid.Resource.Attribute.titleEnabled;
+			global::Acr.UserDialogs.Resource.Attribute.titleMargin = global::SmartButler.Droid.Resource.Attribute.titleMargin;
+			global::Acr.UserDialogs.Resource.Attribute.titleMarginBottom = global::SmartButler.Droid.Resource.Attribute.titleMarginBottom;
+			global::Acr.UserDialogs.Resource.Attribute.titleMarginEnd = global::SmartButler.Droid.Resource.Attribute.titleMarginEnd;
+			global::Acr.UserDialogs.Resource.Attribute.titleMargins = global::SmartButler.Droid.Resource.Attribute.titleMargins;
+			global::Acr.UserDialogs.Resource.Attribute.titleMarginStart = global::SmartButler.Droid.Resource.Attribute.titleMarginStart;
+			global::Acr.UserDialogs.Resource.Attribute.titleMarginTop = global::SmartButler.Droid.Resource.Attribute.titleMarginTop;
+			global::Acr.UserDialogs.Resource.Attribute.titleTextAppearance = global::SmartButler.Droid.Resource.Attribute.titleTextAppearance;
+			global::Acr.UserDialogs.Resource.Attribute.titleTextColor = global::SmartButler.Droid.Resource.Attribute.titleTextColor;
+			global::Acr.UserDialogs.Resource.Attribute.titleTextStyle = global::SmartButler.Droid.Resource.Attribute.titleTextStyle;
+			global::Acr.UserDialogs.Resource.Attribute.toolbarId = global::SmartButler.Droid.Resource.Attribute.toolbarId;
+			global::Acr.UserDialogs.Resource.Attribute.toolbarNavigationButtonStyle = global::SmartButler.Droid.Resource.Attribute.toolbarNavigationButtonStyle;
+			global::Acr.UserDialogs.Resource.Attribute.toolbarStyle = global::SmartButler.Droid.Resource.Attribute.toolbarStyle;
+			global::Acr.UserDialogs.Resource.Attribute.tooltipForegroundColor = global::SmartButler.Droid.Resource.Attribute.tooltipForegroundColor;
+			global::Acr.UserDialogs.Resource.Attribute.tooltipFrameBackground = global::SmartButler.Droid.Resource.Attribute.tooltipFrameBackground;
+			global::Acr.UserDialogs.Resource.Attribute.tooltipText = global::SmartButler.Droid.Resource.Attribute.tooltipText;
+			global::Acr.UserDialogs.Resource.Attribute.track = global::SmartButler.Droid.Resource.Attribute.track;
+			global::Acr.UserDialogs.Resource.Attribute.trackTint = global::SmartButler.Droid.Resource.Attribute.trackTint;
+			global::Acr.UserDialogs.Resource.Attribute.trackTintMode = global::SmartButler.Droid.Resource.Attribute.trackTintMode;
+			global::Acr.UserDialogs.Resource.Attribute.useCompatPadding = global::SmartButler.Droid.Resource.Attribute.useCompatPadding;
+			global::Acr.UserDialogs.Resource.Attribute.voiceIcon = global::SmartButler.Droid.Resource.Attribute.voiceIcon;
+			global::Acr.UserDialogs.Resource.Attribute.windowActionBar = global::SmartButler.Droid.Resource.Attribute.windowActionBar;
+			global::Acr.UserDialogs.Resource.Attribute.windowActionBarOverlay = global::SmartButler.Droid.Resource.Attribute.windowActionBarOverlay;
+			global::Acr.UserDialogs.Resource.Attribute.windowActionModeOverlay = global::SmartButler.Droid.Resource.Attribute.windowActionModeOverlay;
+			global::Acr.UserDialogs.Resource.Attribute.windowFixedHeightMajor = global::SmartButler.Droid.Resource.Attribute.windowFixedHeightMajor;
+			global::Acr.UserDialogs.Resource.Attribute.windowFixedHeightMinor = global::SmartButler.Droid.Resource.Attribute.windowFixedHeightMinor;
+			global::Acr.UserDialogs.Resource.Attribute.windowFixedWidthMajor = global::SmartButler.Droid.Resource.Attribute.windowFixedWidthMajor;
+			global::Acr.UserDialogs.Resource.Attribute.windowFixedWidthMinor = global::SmartButler.Droid.Resource.Attribute.windowFixedWidthMinor;
+			global::Acr.UserDialogs.Resource.Attribute.windowMinWidthMajor = global::SmartButler.Droid.Resource.Attribute.windowMinWidthMajor;
+			global::Acr.UserDialogs.Resource.Attribute.windowMinWidthMinor = global::SmartButler.Droid.Resource.Attribute.windowMinWidthMinor;
+			global::Acr.UserDialogs.Resource.Attribute.windowNoTitle = global::SmartButler.Droid.Resource.Attribute.windowNoTitle;
+			global::Acr.UserDialogs.Resource.Boolean.abc_action_bar_embed_tabs = global::SmartButler.Droid.Resource.Boolean.abc_action_bar_embed_tabs;
+			global::Acr.UserDialogs.Resource.Boolean.abc_allow_stacked_button_bar = global::SmartButler.Droid.Resource.Boolean.abc_allow_stacked_button_bar;
+			global::Acr.UserDialogs.Resource.Boolean.abc_config_actionMenuItemAllCaps = global::SmartButler.Droid.Resource.Boolean.abc_config_actionMenuItemAllCaps;
+			global::Acr.UserDialogs.Resource.Boolean.abc_config_closeDialogWhenTouchOutside = global::SmartButler.Droid.Resource.Boolean.abc_config_closeDialogWhenTouchOutside;
+			global::Acr.UserDialogs.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent = global::SmartButler.Droid.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent;
+			global::Acr.UserDialogs.Resource.Color.abc_background_cache_hint_selector_material_dark = global::SmartButler.Droid.Resource.Color.abc_background_cache_hint_selector_material_dark;
+			global::Acr.UserDialogs.Resource.Color.abc_background_cache_hint_selector_material_light = global::SmartButler.Droid.Resource.Color.abc_background_cache_hint_selector_material_light;
+			global::Acr.UserDialogs.Resource.Color.abc_btn_colored_borderless_text_material = global::SmartButler.Droid.Resource.Color.abc_btn_colored_borderless_text_material;
+			global::Acr.UserDialogs.Resource.Color.abc_btn_colored_text_material = global::SmartButler.Droid.Resource.Color.abc_btn_colored_text_material;
+			global::Acr.UserDialogs.Resource.Color.abc_color_highlight_material = global::SmartButler.Droid.Resource.Color.abc_color_highlight_material;
+			global::Acr.UserDialogs.Resource.Color.abc_hint_foreground_material_dark = global::SmartButler.Droid.Resource.Color.abc_hint_foreground_material_dark;
+			global::Acr.UserDialogs.Resource.Color.abc_hint_foreground_material_light = global::SmartButler.Droid.Resource.Color.abc_hint_foreground_material_light;
+			global::Acr.UserDialogs.Resource.Color.abc_input_method_navigation_guard = global::SmartButler.Droid.Resource.Color.abc_input_method_navigation_guard;
+			global::Acr.UserDialogs.Resource.Color.abc_primary_text_disable_only_material_dark = global::SmartButler.Droid.Resource.Color.abc_primary_text_disable_only_material_dark;
+			global::Acr.UserDialogs.Resource.Color.abc_primary_text_disable_only_material_light = global::SmartButler.Droid.Resource.Color.abc_primary_text_disable_only_material_light;
+			global::Acr.UserDialogs.Resource.Color.abc_primary_text_material_dark = global::SmartButler.Droid.Resource.Color.abc_primary_text_material_dark;
+			global::Acr.UserDialogs.Resource.Color.abc_primary_text_material_light = global::SmartButler.Droid.Resource.Color.abc_primary_text_material_light;
+			global::Acr.UserDialogs.Resource.Color.abc_search_url_text = global::SmartButler.Droid.Resource.Color.abc_search_url_text;
+			global::Acr.UserDialogs.Resource.Color.abc_search_url_text_normal = global::SmartButler.Droid.Resource.Color.abc_search_url_text_normal;
+			global::Acr.UserDialogs.Resource.Color.abc_search_url_text_pressed = global::SmartButler.Droid.Resource.Color.abc_search_url_text_pressed;
+			global::Acr.UserDialogs.Resource.Color.abc_search_url_text_selected = global::SmartButler.Droid.Resource.Color.abc_search_url_text_selected;
+			global::Acr.UserDialogs.Resource.Color.abc_secondary_text_material_dark = global::SmartButler.Droid.Resource.Color.abc_secondary_text_material_dark;
+			global::Acr.UserDialogs.Resource.Color.abc_secondary_text_material_light = global::SmartButler.Droid.Resource.Color.abc_secondary_text_material_light;
+			global::Acr.UserDialogs.Resource.Color.abc_tint_btn_checkable = global::SmartButler.Droid.Resource.Color.abc_tint_btn_checkable;
+			global::Acr.UserDialogs.Resource.Color.abc_tint_default = global::SmartButler.Droid.Resource.Color.abc_tint_default;
+			global::Acr.UserDialogs.Resource.Color.abc_tint_edittext = global::SmartButler.Droid.Resource.Color.abc_tint_edittext;
+			global::Acr.UserDialogs.Resource.Color.abc_tint_seek_thumb = global::SmartButler.Droid.Resource.Color.abc_tint_seek_thumb;
+			global::Acr.UserDialogs.Resource.Color.abc_tint_spinner = global::SmartButler.Droid.Resource.Color.abc_tint_spinner;
+			global::Acr.UserDialogs.Resource.Color.abc_tint_switch_track = global::SmartButler.Droid.Resource.Color.abc_tint_switch_track;
+			global::Acr.UserDialogs.Resource.Color.accent_material_dark = global::SmartButler.Droid.Resource.Color.accent_material_dark;
+			global::Acr.UserDialogs.Resource.Color.accent_material_light = global::SmartButler.Droid.Resource.Color.accent_material_light;
+			global::Acr.UserDialogs.Resource.Color.background_floating_material_dark = global::SmartButler.Droid.Resource.Color.background_floating_material_dark;
+			global::Acr.UserDialogs.Resource.Color.background_floating_material_light = global::SmartButler.Droid.Resource.Color.background_floating_material_light;
+			global::Acr.UserDialogs.Resource.Color.background_material_dark = global::SmartButler.Droid.Resource.Color.background_material_dark;
+			global::Acr.UserDialogs.Resource.Color.background_material_light = global::SmartButler.Droid.Resource.Color.background_material_light;
+			global::Acr.UserDialogs.Resource.Color.bright_foreground_disabled_material_dark = global::SmartButler.Droid.Resource.Color.bright_foreground_disabled_material_dark;
+			global::Acr.UserDialogs.Resource.Color.bright_foreground_disabled_material_light = global::SmartButler.Droid.Resource.Color.bright_foreground_disabled_material_light;
+			global::Acr.UserDialogs.Resource.Color.bright_foreground_inverse_material_dark = global::SmartButler.Droid.Resource.Color.bright_foreground_inverse_material_dark;
+			global::Acr.UserDialogs.Resource.Color.bright_foreground_inverse_material_light = global::SmartButler.Droid.Resource.Color.bright_foreground_inverse_material_light;
+			global::Acr.UserDialogs.Resource.Color.bright_foreground_material_dark = global::SmartButler.Droid.Resource.Color.bright_foreground_material_dark;
+			global::Acr.UserDialogs.Resource.Color.bright_foreground_material_light = global::SmartButler.Droid.Resource.Color.bright_foreground_material_light;
+			global::Acr.UserDialogs.Resource.Color.button_material_dark = global::SmartButler.Droid.Resource.Color.button_material_dark;
+			global::Acr.UserDialogs.Resource.Color.button_material_light = global::SmartButler.Droid.Resource.Color.button_material_light;
+			global::Acr.UserDialogs.Resource.Color.design_bottom_navigation_shadow_color = global::SmartButler.Droid.Resource.Color.design_bottom_navigation_shadow_color;
+			global::Acr.UserDialogs.Resource.Color.design_error = global::SmartButler.Droid.Resource.Color.design_error;
+			global::Acr.UserDialogs.Resource.Color.design_fab_shadow_end_color = global::SmartButler.Droid.Resource.Color.design_fab_shadow_end_color;
+			global::Acr.UserDialogs.Resource.Color.design_fab_shadow_mid_color = global::SmartButler.Droid.Resource.Color.design_fab_shadow_mid_color;
+			global::Acr.UserDialogs.Resource.Color.design_fab_shadow_start_color = global::SmartButler.Droid.Resource.Color.design_fab_shadow_start_color;
+			global::Acr.UserDialogs.Resource.Color.design_fab_stroke_end_inner_color = global::SmartButler.Droid.Resource.Color.design_fab_stroke_end_inner_color;
+			global::Acr.UserDialogs.Resource.Color.design_fab_stroke_end_outer_color = global::SmartButler.Droid.Resource.Color.design_fab_stroke_end_outer_color;
+			global::Acr.UserDialogs.Resource.Color.design_fab_stroke_top_inner_color = global::SmartButler.Droid.Resource.Color.design_fab_stroke_top_inner_color;
+			global::Acr.UserDialogs.Resource.Color.design_fab_stroke_top_outer_color = global::SmartButler.Droid.Resource.Color.design_fab_stroke_top_outer_color;
+			global::Acr.UserDialogs.Resource.Color.design_snackbar_background_color = global::SmartButler.Droid.Resource.Color.design_snackbar_background_color;
+			global::Acr.UserDialogs.Resource.Color.design_tint_password_toggle = global::SmartButler.Droid.Resource.Color.design_tint_password_toggle;
+			global::Acr.UserDialogs.Resource.Color.dim_foreground_disabled_material_dark = global::SmartButler.Droid.Resource.Color.dim_foreground_disabled_material_dark;
+			global::Acr.UserDialogs.Resource.Color.dim_foreground_disabled_material_light = global::SmartButler.Droid.Resource.Color.dim_foreground_disabled_material_light;
+			global::Acr.UserDialogs.Resource.Color.dim_foreground_material_dark = global::SmartButler.Droid.Resource.Color.dim_foreground_material_dark;
+			global::Acr.UserDialogs.Resource.Color.dim_foreground_material_light = global::SmartButler.Droid.Resource.Color.dim_foreground_material_light;
+			global::Acr.UserDialogs.Resource.Color.error_color_material = global::SmartButler.Droid.Resource.Color.error_color_material;
+			global::Acr.UserDialogs.Resource.Color.foreground_material_dark = global::SmartButler.Droid.Resource.Color.foreground_material_dark;
+			global::Acr.UserDialogs.Resource.Color.foreground_material_light = global::SmartButler.Droid.Resource.Color.foreground_material_light;
+			global::Acr.UserDialogs.Resource.Color.highlighted_text_material_dark = global::SmartButler.Droid.Resource.Color.highlighted_text_material_dark;
+			global::Acr.UserDialogs.Resource.Color.highlighted_text_material_light = global::SmartButler.Droid.Resource.Color.highlighted_text_material_light;
+			global::Acr.UserDialogs.Resource.Color.material_blue_grey_800 = global::SmartButler.Droid.Resource.Color.material_blue_grey_800;
+			global::Acr.UserDialogs.Resource.Color.material_blue_grey_900 = global::SmartButler.Droid.Resource.Color.material_blue_grey_900;
+			global::Acr.UserDialogs.Resource.Color.material_blue_grey_950 = global::SmartButler.Droid.Resource.Color.material_blue_grey_950;
+			global::Acr.UserDialogs.Resource.Color.material_deep_teal_200 = global::SmartButler.Droid.Resource.Color.material_deep_teal_200;
+			global::Acr.UserDialogs.Resource.Color.material_deep_teal_500 = global::SmartButler.Droid.Resource.Color.material_deep_teal_500;
+			global::Acr.UserDialogs.Resource.Color.material_grey_100 = global::SmartButler.Droid.Resource.Color.material_grey_100;
+			global::Acr.UserDialogs.Resource.Color.material_grey_300 = global::SmartButler.Droid.Resource.Color.material_grey_300;
+			global::Acr.UserDialogs.Resource.Color.material_grey_50 = global::SmartButler.Droid.Resource.Color.material_grey_50;
+			global::Acr.UserDialogs.Resource.Color.material_grey_600 = global::SmartButler.Droid.Resource.Color.material_grey_600;
+			global::Acr.UserDialogs.Resource.Color.material_grey_800 = global::SmartButler.Droid.Resource.Color.material_grey_800;
+			global::Acr.UserDialogs.Resource.Color.material_grey_850 = global::SmartButler.Droid.Resource.Color.material_grey_850;
+			global::Acr.UserDialogs.Resource.Color.material_grey_900 = global::SmartButler.Droid.Resource.Color.material_grey_900;
+			global::Acr.UserDialogs.Resource.Color.notification_action_color_filter = global::SmartButler.Droid.Resource.Color.notification_action_color_filter;
+			global::Acr.UserDialogs.Resource.Color.notification_icon_bg_color = global::SmartButler.Droid.Resource.Color.notification_icon_bg_color;
+			global::Acr.UserDialogs.Resource.Color.notification_material_background_media_default_color = global::SmartButler.Droid.Resource.Color.notification_material_background_media_default_color;
+			global::Acr.UserDialogs.Resource.Color.primary_dark_material_dark = global::SmartButler.Droid.Resource.Color.primary_dark_material_dark;
+			global::Acr.UserDialogs.Resource.Color.primary_dark_material_light = global::SmartButler.Droid.Resource.Color.primary_dark_material_light;
+			global::Acr.UserDialogs.Resource.Color.primary_material_dark = global::SmartButler.Droid.Resource.Color.primary_material_dark;
+			global::Acr.UserDialogs.Resource.Color.primary_material_light = global::SmartButler.Droid.Resource.Color.primary_material_light;
+			global::Acr.UserDialogs.Resource.Color.primary_text_default_material_dark = global::SmartButler.Droid.Resource.Color.primary_text_default_material_dark;
+			global::Acr.UserDialogs.Resource.Color.primary_text_default_material_light = global::SmartButler.Droid.Resource.Color.primary_text_default_material_light;
+			global::Acr.UserDialogs.Resource.Color.primary_text_disabled_material_dark = global::SmartButler.Droid.Resource.Color.primary_text_disabled_material_dark;
+			global::Acr.UserDialogs.Resource.Color.primary_text_disabled_material_light = global::SmartButler.Droid.Resource.Color.primary_text_disabled_material_light;
+			global::Acr.UserDialogs.Resource.Color.ripple_material_dark = global::SmartButler.Droid.Resource.Color.ripple_material_dark;
+			global::Acr.UserDialogs.Resource.Color.ripple_material_light = global::SmartButler.Droid.Resource.Color.ripple_material_light;
+			global::Acr.UserDialogs.Resource.Color.secondary_text_default_material_dark = global::SmartButler.Droid.Resource.Color.secondary_text_default_material_dark;
+			global::Acr.UserDialogs.Resource.Color.secondary_text_default_material_light = global::SmartButler.Droid.Resource.Color.secondary_text_default_material_light;
+			global::Acr.UserDialogs.Resource.Color.secondary_text_disabled_material_dark = global::SmartButler.Droid.Resource.Color.secondary_text_disabled_material_dark;
+			global::Acr.UserDialogs.Resource.Color.secondary_text_disabled_material_light = global::SmartButler.Droid.Resource.Color.secondary_text_disabled_material_light;
+			global::Acr.UserDialogs.Resource.Color.switch_thumb_disabled_material_dark = global::SmartButler.Droid.Resource.Color.switch_thumb_disabled_material_dark;
+			global::Acr.UserDialogs.Resource.Color.switch_thumb_disabled_material_light = global::SmartButler.Droid.Resource.Color.switch_thumb_disabled_material_light;
+			global::Acr.UserDialogs.Resource.Color.switch_thumb_material_dark = global::SmartButler.Droid.Resource.Color.switch_thumb_material_dark;
+			global::Acr.UserDialogs.Resource.Color.switch_thumb_material_light = global::SmartButler.Droid.Resource.Color.switch_thumb_material_light;
+			global::Acr.UserDialogs.Resource.Color.switch_thumb_normal_material_dark = global::SmartButler.Droid.Resource.Color.switch_thumb_normal_material_dark;
+			global::Acr.UserDialogs.Resource.Color.switch_thumb_normal_material_light = global::SmartButler.Droid.Resource.Color.switch_thumb_normal_material_light;
+			global::Acr.UserDialogs.Resource.Color.tooltip_background_dark = global::SmartButler.Droid.Resource.Color.tooltip_background_dark;
+			global::Acr.UserDialogs.Resource.Color.tooltip_background_light = global::SmartButler.Droid.Resource.Color.tooltip_background_light;
+			global::Acr.UserDialogs.Resource.Dimension.abc_action_bar_content_inset_material = global::SmartButler.Droid.Resource.Dimension.abc_action_bar_content_inset_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_action_bar_content_inset_with_nav = global::SmartButler.Droid.Resource.Dimension.abc_action_bar_content_inset_with_nav;
+			global::Acr.UserDialogs.Resource.Dimension.abc_action_bar_default_height_material = global::SmartButler.Droid.Resource.Dimension.abc_action_bar_default_height_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_action_bar_default_padding_end_material = global::SmartButler.Droid.Resource.Dimension.abc_action_bar_default_padding_end_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_action_bar_default_padding_start_material = global::SmartButler.Droid.Resource.Dimension.abc_action_bar_default_padding_start_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_action_bar_elevation_material = global::SmartButler.Droid.Resource.Dimension.abc_action_bar_elevation_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_action_bar_icon_vertical_padding_material = global::SmartButler.Droid.Resource.Dimension.abc_action_bar_icon_vertical_padding_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_action_bar_overflow_padding_end_material = global::SmartButler.Droid.Resource.Dimension.abc_action_bar_overflow_padding_end_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_action_bar_overflow_padding_start_material = global::SmartButler.Droid.Resource.Dimension.abc_action_bar_overflow_padding_start_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_action_bar_progress_bar_size = global::SmartButler.Droid.Resource.Dimension.abc_action_bar_progress_bar_size;
+			global::Acr.UserDialogs.Resource.Dimension.abc_action_bar_stacked_max_height = global::SmartButler.Droid.Resource.Dimension.abc_action_bar_stacked_max_height;
+			global::Acr.UserDialogs.Resource.Dimension.abc_action_bar_stacked_tab_max_width = global::SmartButler.Droid.Resource.Dimension.abc_action_bar_stacked_tab_max_width;
+			global::Acr.UserDialogs.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material = global::SmartButler.Droid.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_action_bar_subtitle_top_margin_material = global::SmartButler.Droid.Resource.Dimension.abc_action_bar_subtitle_top_margin_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_action_button_min_height_material = global::SmartButler.Droid.Resource.Dimension.abc_action_button_min_height_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_action_button_min_width_material = global::SmartButler.Droid.Resource.Dimension.abc_action_button_min_width_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_action_button_min_width_overflow_material = global::SmartButler.Droid.Resource.Dimension.abc_action_button_min_width_overflow_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_alert_dialog_button_bar_height = global::SmartButler.Droid.Resource.Dimension.abc_alert_dialog_button_bar_height;
+			global::Acr.UserDialogs.Resource.Dimension.abc_button_inset_horizontal_material = global::SmartButler.Droid.Resource.Dimension.abc_button_inset_horizontal_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_button_inset_vertical_material = global::SmartButler.Droid.Resource.Dimension.abc_button_inset_vertical_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_button_padding_horizontal_material = global::SmartButler.Droid.Resource.Dimension.abc_button_padding_horizontal_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_button_padding_vertical_material = global::SmartButler.Droid.Resource.Dimension.abc_button_padding_vertical_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_cascading_menus_min_smallest_width = global::SmartButler.Droid.Resource.Dimension.abc_cascading_menus_min_smallest_width;
+			global::Acr.UserDialogs.Resource.Dimension.abc_config_prefDialogWidth = global::SmartButler.Droid.Resource.Dimension.abc_config_prefDialogWidth;
+			global::Acr.UserDialogs.Resource.Dimension.abc_control_corner_material = global::SmartButler.Droid.Resource.Dimension.abc_control_corner_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_control_inset_material = global::SmartButler.Droid.Resource.Dimension.abc_control_inset_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_control_padding_material = global::SmartButler.Droid.Resource.Dimension.abc_control_padding_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_dialog_fixed_height_major = global::SmartButler.Droid.Resource.Dimension.abc_dialog_fixed_height_major;
+			global::Acr.UserDialogs.Resource.Dimension.abc_dialog_fixed_height_minor = global::SmartButler.Droid.Resource.Dimension.abc_dialog_fixed_height_minor;
+			global::Acr.UserDialogs.Resource.Dimension.abc_dialog_fixed_width_major = global::SmartButler.Droid.Resource.Dimension.abc_dialog_fixed_width_major;
+			global::Acr.UserDialogs.Resource.Dimension.abc_dialog_fixed_width_minor = global::SmartButler.Droid.Resource.Dimension.abc_dialog_fixed_width_minor;
+			global::Acr.UserDialogs.Resource.Dimension.abc_dialog_list_padding_bottom_no_buttons = global::SmartButler.Droid.Resource.Dimension.abc_dialog_list_padding_bottom_no_buttons;
+			global::Acr.UserDialogs.Resource.Dimension.abc_dialog_list_padding_top_no_title = global::SmartButler.Droid.Resource.Dimension.abc_dialog_list_padding_top_no_title;
+			global::Acr.UserDialogs.Resource.Dimension.abc_dialog_min_width_major = global::SmartButler.Droid.Resource.Dimension.abc_dialog_min_width_major;
+			global::Acr.UserDialogs.Resource.Dimension.abc_dialog_min_width_minor = global::SmartButler.Droid.Resource.Dimension.abc_dialog_min_width_minor;
+			global::Acr.UserDialogs.Resource.Dimension.abc_dialog_padding_material = global::SmartButler.Droid.Resource.Dimension.abc_dialog_padding_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_dialog_padding_top_material = global::SmartButler.Droid.Resource.Dimension.abc_dialog_padding_top_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_dialog_title_divider_material = global::SmartButler.Droid.Resource.Dimension.abc_dialog_title_divider_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_disabled_alpha_material_dark = global::SmartButler.Droid.Resource.Dimension.abc_disabled_alpha_material_dark;
+			global::Acr.UserDialogs.Resource.Dimension.abc_disabled_alpha_material_light = global::SmartButler.Droid.Resource.Dimension.abc_disabled_alpha_material_light;
+			global::Acr.UserDialogs.Resource.Dimension.abc_dropdownitem_icon_width = global::SmartButler.Droid.Resource.Dimension.abc_dropdownitem_icon_width;
+			global::Acr.UserDialogs.Resource.Dimension.abc_dropdownitem_text_padding_left = global::SmartButler.Droid.Resource.Dimension.abc_dropdownitem_text_padding_left;
+			global::Acr.UserDialogs.Resource.Dimension.abc_dropdownitem_text_padding_right = global::SmartButler.Droid.Resource.Dimension.abc_dropdownitem_text_padding_right;
+			global::Acr.UserDialogs.Resource.Dimension.abc_edit_text_inset_bottom_material = global::SmartButler.Droid.Resource.Dimension.abc_edit_text_inset_bottom_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_edit_text_inset_horizontal_material = global::SmartButler.Droid.Resource.Dimension.abc_edit_text_inset_horizontal_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_edit_text_inset_top_material = global::SmartButler.Droid.Resource.Dimension.abc_edit_text_inset_top_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_floating_window_z = global::SmartButler.Droid.Resource.Dimension.abc_floating_window_z;
+			global::Acr.UserDialogs.Resource.Dimension.abc_list_item_padding_horizontal_material = global::SmartButler.Droid.Resource.Dimension.abc_list_item_padding_horizontal_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_panel_menu_list_width = global::SmartButler.Droid.Resource.Dimension.abc_panel_menu_list_width;
+			global::Acr.UserDialogs.Resource.Dimension.abc_progress_bar_height_material = global::SmartButler.Droid.Resource.Dimension.abc_progress_bar_height_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_search_view_preferred_height = global::SmartButler.Droid.Resource.Dimension.abc_search_view_preferred_height;
+			global::Acr.UserDialogs.Resource.Dimension.abc_search_view_preferred_width = global::SmartButler.Droid.Resource.Dimension.abc_search_view_preferred_width;
+			global::Acr.UserDialogs.Resource.Dimension.abc_seekbar_track_background_height_material = global::SmartButler.Droid.Resource.Dimension.abc_seekbar_track_background_height_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_seekbar_track_progress_height_material = global::SmartButler.Droid.Resource.Dimension.abc_seekbar_track_progress_height_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_select_dialog_padding_start_material = global::SmartButler.Droid.Resource.Dimension.abc_select_dialog_padding_start_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_switch_padding = global::SmartButler.Droid.Resource.Dimension.abc_switch_padding;
+			global::Acr.UserDialogs.Resource.Dimension.abc_text_size_body_1_material = global::SmartButler.Droid.Resource.Dimension.abc_text_size_body_1_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_text_size_body_2_material = global::SmartButler.Droid.Resource.Dimension.abc_text_size_body_2_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_text_size_button_material = global::SmartButler.Droid.Resource.Dimension.abc_text_size_button_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_text_size_caption_material = global::SmartButler.Droid.Resource.Dimension.abc_text_size_caption_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_text_size_display_1_material = global::SmartButler.Droid.Resource.Dimension.abc_text_size_display_1_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_text_size_display_2_material = global::SmartButler.Droid.Resource.Dimension.abc_text_size_display_2_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_text_size_display_3_material = global::SmartButler.Droid.Resource.Dimension.abc_text_size_display_3_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_text_size_display_4_material = global::SmartButler.Droid.Resource.Dimension.abc_text_size_display_4_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_text_size_headline_material = global::SmartButler.Droid.Resource.Dimension.abc_text_size_headline_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_text_size_large_material = global::SmartButler.Droid.Resource.Dimension.abc_text_size_large_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_text_size_medium_material = global::SmartButler.Droid.Resource.Dimension.abc_text_size_medium_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_text_size_menu_header_material = global::SmartButler.Droid.Resource.Dimension.abc_text_size_menu_header_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_text_size_menu_material = global::SmartButler.Droid.Resource.Dimension.abc_text_size_menu_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_text_size_small_material = global::SmartButler.Droid.Resource.Dimension.abc_text_size_small_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_text_size_subhead_material = global::SmartButler.Droid.Resource.Dimension.abc_text_size_subhead_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_text_size_subtitle_material_toolbar = global::SmartButler.Droid.Resource.Dimension.abc_text_size_subtitle_material_toolbar;
+			global::Acr.UserDialogs.Resource.Dimension.abc_text_size_title_material = global::SmartButler.Droid.Resource.Dimension.abc_text_size_title_material;
+			global::Acr.UserDialogs.Resource.Dimension.abc_text_size_title_material_toolbar = global::SmartButler.Droid.Resource.Dimension.abc_text_size_title_material_toolbar;
+			global::Acr.UserDialogs.Resource.Dimension.compat_button_inset_horizontal_material = global::SmartButler.Droid.Resource.Dimension.compat_button_inset_horizontal_material;
+			global::Acr.UserDialogs.Resource.Dimension.compat_button_inset_vertical_material = global::SmartButler.Droid.Resource.Dimension.compat_button_inset_vertical_material;
+			global::Acr.UserDialogs.Resource.Dimension.compat_button_padding_horizontal_material = global::SmartButler.Droid.Resource.Dimension.compat_button_padding_horizontal_material;
+			global::Acr.UserDialogs.Resource.Dimension.compat_button_padding_vertical_material = global::SmartButler.Droid.Resource.Dimension.compat_button_padding_vertical_material;
+			global::Acr.UserDialogs.Resource.Dimension.compat_control_corner_material = global::SmartButler.Droid.Resource.Dimension.compat_control_corner_material;
+			global::Acr.UserDialogs.Resource.Dimension.design_appbar_elevation = global::SmartButler.Droid.Resource.Dimension.design_appbar_elevation;
+			global::Acr.UserDialogs.Resource.Dimension.design_bottom_navigation_active_item_max_width = global::SmartButler.Droid.Resource.Dimension.design_bottom_navigation_active_item_max_width;
+			global::Acr.UserDialogs.Resource.Dimension.design_bottom_navigation_active_text_size = global::SmartButler.Droid.Resource.Dimension.design_bottom_navigation_active_text_size;
+			global::Acr.UserDialogs.Resource.Dimension.design_bottom_navigation_elevation = global::SmartButler.Droid.Resource.Dimension.design_bottom_navigation_elevation;
+			global::Acr.UserDialogs.Resource.Dimension.design_bottom_navigation_height = global::SmartButler.Droid.Resource.Dimension.design_bottom_navigation_height;
+			global::Acr.UserDialogs.Resource.Dimension.design_bottom_navigation_item_max_width = global::SmartButler.Droid.Resource.Dimension.design_bottom_navigation_item_max_width;
+			global::Acr.UserDialogs.Resource.Dimension.design_bottom_navigation_item_min_width = global::SmartButler.Droid.Resource.Dimension.design_bottom_navigation_item_min_width;
+			global::Acr.UserDialogs.Resource.Dimension.design_bottom_navigation_margin = global::SmartButler.Droid.Resource.Dimension.design_bottom_navigation_margin;
+			global::Acr.UserDialogs.Resource.Dimension.design_bottom_navigation_shadow_height = global::SmartButler.Droid.Resource.Dimension.design_bottom_navigation_shadow_height;
+			global::Acr.UserDialogs.Resource.Dimension.design_bottom_navigation_text_size = global::SmartButler.Droid.Resource.Dimension.design_bottom_navigation_text_size;
+			global::Acr.UserDialogs.Resource.Dimension.design_bottom_sheet_modal_elevation = global::SmartButler.Droid.Resource.Dimension.design_bottom_sheet_modal_elevation;
+			global::Acr.UserDialogs.Resource.Dimension.design_bottom_sheet_peek_height_min = global::SmartButler.Droid.Resource.Dimension.design_bottom_sheet_peek_height_min;
+			global::Acr.UserDialogs.Resource.Dimension.design_fab_border_width = global::SmartButler.Droid.Resource.Dimension.design_fab_border_width;
+			global::Acr.UserDialogs.Resource.Dimension.design_fab_elevation = global::SmartButler.Droid.Resource.Dimension.design_fab_elevation;
+			global::Acr.UserDialogs.Resource.Dimension.design_fab_image_size = global::SmartButler.Droid.Resource.Dimension.design_fab_image_size;
+			global::Acr.UserDialogs.Resource.Dimension.design_fab_size_mini = global::SmartButler.Droid.Resource.Dimension.design_fab_size_mini;
+			global::Acr.UserDialogs.Resource.Dimension.design_fab_size_normal = global::SmartButler.Droid.Resource.Dimension.design_fab_size_normal;
+			global::Acr.UserDialogs.Resource.Dimension.design_fab_translation_z_pressed = global::SmartButler.Droid.Resource.Dimension.design_fab_translation_z_pressed;
+			global::Acr.UserDialogs.Resource.Dimension.design_navigation_elevation = global::SmartButler.Droid.Resource.Dimension.design_navigation_elevation;
+			global::Acr.UserDialogs.Resource.Dimension.design_navigation_icon_padding = global::SmartButler.Droid.Resource.Dimension.design_navigation_icon_padding;
+			global::Acr.UserDialogs.Resource.Dimension.design_navigation_icon_size = global::SmartButler.Droid.Resource.Dimension.design_navigation_icon_size;
+			global::Acr.UserDialogs.Resource.Dimension.design_navigation_max_width = global::SmartButler.Droid.Resource.Dimension.design_navigation_max_width;
+			global::Acr.UserDialogs.Resource.Dimension.design_navigation_padding_bottom = global::SmartButler.Droid.Resource.Dimension.design_navigation_padding_bottom;
+			global::Acr.UserDialogs.Resource.Dimension.design_navigation_separator_vertical_padding = global::SmartButler.Droid.Resource.Dimension.design_navigation_separator_vertical_padding;
+			global::Acr.UserDialogs.Resource.Dimension.design_snackbar_action_inline_max_width = global::SmartButler.Droid.Resource.Dimension.design_snackbar_action_inline_max_width;
+			global::Acr.UserDialogs.Resource.Dimension.design_snackbar_background_corner_radius = global::SmartButler.Droid.Resource.Dimension.design_snackbar_background_corner_radius;
+			global::Acr.UserDialogs.Resource.Dimension.design_snackbar_elevation = global::SmartButler.Droid.Resource.Dimension.design_snackbar_elevation;
+			global::Acr.UserDialogs.Resource.Dimension.design_snackbar_extra_spacing_horizontal = global::SmartButler.Droid.Resource.Dimension.design_snackbar_extra_spacing_horizontal;
+			global::Acr.UserDialogs.Resource.Dimension.design_snackbar_max_width = global::SmartButler.Droid.Resource.Dimension.design_snackbar_max_width;
+			global::Acr.UserDialogs.Resource.Dimension.design_snackbar_min_width = global::SmartButler.Droid.Resource.Dimension.design_snackbar_min_width;
+			global::Acr.UserDialogs.Resource.Dimension.design_snackbar_padding_horizontal = global::SmartButler.Droid.Resource.Dimension.design_snackbar_padding_horizontal;
+			global::Acr.UserDialogs.Resource.Dimension.design_snackbar_padding_vertical = global::SmartButler.Droid.Resource.Dimension.design_snackbar_padding_vertical;
+			global::Acr.UserDialogs.Resource.Dimension.design_snackbar_padding_vertical_2lines = global::SmartButler.Droid.Resource.Dimension.design_snackbar_padding_vertical_2lines;
+			global::Acr.UserDialogs.Resource.Dimension.design_snackbar_text_size = global::SmartButler.Droid.Resource.Dimension.design_snackbar_text_size;
+			global::Acr.UserDialogs.Resource.Dimension.design_tab_max_width = global::SmartButler.Droid.Resource.Dimension.design_tab_max_width;
+			global::Acr.UserDialogs.Resource.Dimension.design_tab_scrollable_min_width = global::SmartButler.Droid.Resource.Dimension.design_tab_scrollable_min_width;
+			global::Acr.UserDialogs.Resource.Dimension.design_tab_text_size = global::SmartButler.Droid.Resource.Dimension.design_tab_text_size;
+			global::Acr.UserDialogs.Resource.Dimension.design_tab_text_size_2line = global::SmartButler.Droid.Resource.Dimension.design_tab_text_size_2line;
+			global::Acr.UserDialogs.Resource.Dimension.disabled_alpha_material_dark = global::SmartButler.Droid.Resource.Dimension.disabled_alpha_material_dark;
+			global::Acr.UserDialogs.Resource.Dimension.disabled_alpha_material_light = global::SmartButler.Droid.Resource.Dimension.disabled_alpha_material_light;
+			global::Acr.UserDialogs.Resource.Dimension.fastscroll_default_thickness = global::SmartButler.Droid.Resource.Dimension.fastscroll_default_thickness;
+			global::Acr.UserDialogs.Resource.Dimension.fastscroll_margin = global::SmartButler.Droid.Resource.Dimension.fastscroll_margin;
+			global::Acr.UserDialogs.Resource.Dimension.fastscroll_minimum_range = global::SmartButler.Droid.Resource.Dimension.fastscroll_minimum_range;
+			global::Acr.UserDialogs.Resource.Dimension.highlight_alpha_material_colored = global::SmartButler.Droid.Resource.Dimension.highlight_alpha_material_colored;
+			global::Acr.UserDialogs.Resource.Dimension.highlight_alpha_material_dark = global::SmartButler.Droid.Resource.Dimension.highlight_alpha_material_dark;
+			global::Acr.UserDialogs.Resource.Dimension.highlight_alpha_material_light = global::SmartButler.Droid.Resource.Dimension.highlight_alpha_material_light;
+			global::Acr.UserDialogs.Resource.Dimension.hint_alpha_material_dark = global::SmartButler.Droid.Resource.Dimension.hint_alpha_material_dark;
+			global::Acr.UserDialogs.Resource.Dimension.hint_alpha_material_light = global::SmartButler.Droid.Resource.Dimension.hint_alpha_material_light;
+			global::Acr.UserDialogs.Resource.Dimension.hint_pressed_alpha_material_dark = global::SmartButler.Droid.Resource.Dimension.hint_pressed_alpha_material_dark;
+			global::Acr.UserDialogs.Resource.Dimension.hint_pressed_alpha_material_light = global::SmartButler.Droid.Resource.Dimension.hint_pressed_alpha_material_light;
+			global::Acr.UserDialogs.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame = global::SmartButler.Droid.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame;
+			global::Acr.UserDialogs.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity = global::SmartButler.Droid.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity;
+			global::Acr.UserDialogs.Resource.Dimension.item_touch_helper_swipe_escape_velocity = global::SmartButler.Droid.Resource.Dimension.item_touch_helper_swipe_escape_velocity;
+			global::Acr.UserDialogs.Resource.Dimension.notification_action_icon_size = global::SmartButler.Droid.Resource.Dimension.notification_action_icon_size;
+			global::Acr.UserDialogs.Resource.Dimension.notification_action_text_size = global::SmartButler.Droid.Resource.Dimension.notification_action_text_size;
+			global::Acr.UserDialogs.Resource.Dimension.notification_big_circle_margin = global::SmartButler.Droid.Resource.Dimension.notification_big_circle_margin;
+			global::Acr.UserDialogs.Resource.Dimension.notification_content_margin_start = global::SmartButler.Droid.Resource.Dimension.notification_content_margin_start;
+			global::Acr.UserDialogs.Resource.Dimension.notification_large_icon_height = global::SmartButler.Droid.Resource.Dimension.notification_large_icon_height;
+			global::Acr.UserDialogs.Resource.Dimension.notification_large_icon_width = global::SmartButler.Droid.Resource.Dimension.notification_large_icon_width;
+			global::Acr.UserDialogs.Resource.Dimension.notification_main_column_padding_top = global::SmartButler.Droid.Resource.Dimension.notification_main_column_padding_top;
+			global::Acr.UserDialogs.Resource.Dimension.notification_media_narrow_margin = global::SmartButler.Droid.Resource.Dimension.notification_media_narrow_margin;
+			global::Acr.UserDialogs.Resource.Dimension.notification_right_icon_size = global::SmartButler.Droid.Resource.Dimension.notification_right_icon_size;
+			global::Acr.UserDialogs.Resource.Dimension.notification_right_side_padding_top = global::SmartButler.Droid.Resource.Dimension.notification_right_side_padding_top;
+			global::Acr.UserDialogs.Resource.Dimension.notification_small_icon_background_padding = global::SmartButler.Droid.Resource.Dimension.notification_small_icon_background_padding;
+			global::Acr.UserDialogs.Resource.Dimension.notification_small_icon_size_as_large = global::SmartButler.Droid.Resource.Dimension.notification_small_icon_size_as_large;
+			global::Acr.UserDialogs.Resource.Dimension.notification_subtext_size = global::SmartButler.Droid.Resource.Dimension.notification_subtext_size;
+			global::Acr.UserDialogs.Resource.Dimension.notification_top_pad = global::SmartButler.Droid.Resource.Dimension.notification_top_pad;
+			global::Acr.UserDialogs.Resource.Dimension.notification_top_pad_large_text = global::SmartButler.Droid.Resource.Dimension.notification_top_pad_large_text;
+			global::Acr.UserDialogs.Resource.Dimension.tooltip_corner_radius = global::SmartButler.Droid.Resource.Dimension.tooltip_corner_radius;
+			global::Acr.UserDialogs.Resource.Dimension.tooltip_horizontal_padding = global::SmartButler.Droid.Resource.Dimension.tooltip_horizontal_padding;
+			global::Acr.UserDialogs.Resource.Dimension.tooltip_margin = global::SmartButler.Droid.Resource.Dimension.tooltip_margin;
+			global::Acr.UserDialogs.Resource.Dimension.tooltip_precise_anchor_extra_offset = global::SmartButler.Droid.Resource.Dimension.tooltip_precise_anchor_extra_offset;
+			global::Acr.UserDialogs.Resource.Dimension.tooltip_precise_anchor_threshold = global::SmartButler.Droid.Resource.Dimension.tooltip_precise_anchor_threshold;
+			global::Acr.UserDialogs.Resource.Dimension.tooltip_vertical_padding = global::SmartButler.Droid.Resource.Dimension.tooltip_vertical_padding;
+			global::Acr.UserDialogs.Resource.Dimension.tooltip_y_offset_non_touch = global::SmartButler.Droid.Resource.Dimension.tooltip_y_offset_non_touch;
+			global::Acr.UserDialogs.Resource.Dimension.tooltip_y_offset_touch = global::SmartButler.Droid.Resource.Dimension.tooltip_y_offset_touch;
+			global::Acr.UserDialogs.Resource.Drawable.abc_ab_share_pack_mtrl_alpha = global::SmartButler.Droid.Resource.Drawable.abc_ab_share_pack_mtrl_alpha;
+			global::Acr.UserDialogs.Resource.Drawable.abc_action_bar_item_background_material = global::SmartButler.Droid.Resource.Drawable.abc_action_bar_item_background_material;
+			global::Acr.UserDialogs.Resource.Drawable.abc_btn_borderless_material = global::SmartButler.Droid.Resource.Drawable.abc_btn_borderless_material;
+			global::Acr.UserDialogs.Resource.Drawable.abc_btn_check_material = global::SmartButler.Droid.Resource.Drawable.abc_btn_check_material;
+			global::Acr.UserDialogs.Resource.Drawable.abc_btn_check_to_on_mtrl_000 = global::SmartButler.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_000;
+			global::Acr.UserDialogs.Resource.Drawable.abc_btn_check_to_on_mtrl_015 = global::SmartButler.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_015;
+			global::Acr.UserDialogs.Resource.Drawable.abc_btn_colored_material = global::SmartButler.Droid.Resource.Drawable.abc_btn_colored_material;
+			global::Acr.UserDialogs.Resource.Drawable.abc_btn_default_mtrl_shape = global::SmartButler.Droid.Resource.Drawable.abc_btn_default_mtrl_shape;
+			global::Acr.UserDialogs.Resource.Drawable.abc_btn_radio_material = global::SmartButler.Droid.Resource.Drawable.abc_btn_radio_material;
+			global::Acr.UserDialogs.Resource.Drawable.abc_btn_radio_to_on_mtrl_000 = global::SmartButler.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_000;
+			global::Acr.UserDialogs.Resource.Drawable.abc_btn_radio_to_on_mtrl_015 = global::SmartButler.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_015;
+			global::Acr.UserDialogs.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001 = global::SmartButler.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001;
+			global::Acr.UserDialogs.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012 = global::SmartButler.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012;
+			global::Acr.UserDialogs.Resource.Drawable.abc_cab_background_internal_bg = global::SmartButler.Droid.Resource.Drawable.abc_cab_background_internal_bg;
+			global::Acr.UserDialogs.Resource.Drawable.abc_cab_background_top_material = global::SmartButler.Droid.Resource.Drawable.abc_cab_background_top_material;
+			global::Acr.UserDialogs.Resource.Drawable.abc_cab_background_top_mtrl_alpha = global::SmartButler.Droid.Resource.Drawable.abc_cab_background_top_mtrl_alpha;
+			global::Acr.UserDialogs.Resource.Drawable.abc_control_background_material = global::SmartButler.Droid.Resource.Drawable.abc_control_background_material;
+			global::Acr.UserDialogs.Resource.Drawable.abc_dialog_material_background = global::SmartButler.Droid.Resource.Drawable.abc_dialog_material_background;
+			global::Acr.UserDialogs.Resource.Drawable.abc_edit_text_material = global::SmartButler.Droid.Resource.Drawable.abc_edit_text_material;
+			global::Acr.UserDialogs.Resource.Drawable.abc_ic_ab_back_material = global::SmartButler.Droid.Resource.Drawable.abc_ic_ab_back_material;
+			global::Acr.UserDialogs.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp = global::SmartButler.Droid.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp;
+			global::Acr.UserDialogs.Resource.Drawable.abc_ic_clear_material = global::SmartButler.Droid.Resource.Drawable.abc_ic_clear_material;
+			global::Acr.UserDialogs.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha = global::SmartButler.Droid.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha;
+			global::Acr.UserDialogs.Resource.Drawable.abc_ic_go_search_api_material = global::SmartButler.Droid.Resource.Drawable.abc_ic_go_search_api_material;
+			global::Acr.UserDialogs.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha = global::SmartButler.Droid.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha;
+			global::Acr.UserDialogs.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha = global::SmartButler.Droid.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha;
+			global::Acr.UserDialogs.Resource.Drawable.abc_ic_menu_overflow_material = global::SmartButler.Droid.Resource.Drawable.abc_ic_menu_overflow_material;
+			global::Acr.UserDialogs.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha = global::SmartButler.Droid.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha;
+			global::Acr.UserDialogs.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha = global::SmartButler.Droid.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha;
+			global::Acr.UserDialogs.Resource.Drawable.abc_ic_menu_share_mtrl_alpha = global::SmartButler.Droid.Resource.Drawable.abc_ic_menu_share_mtrl_alpha;
+			global::Acr.UserDialogs.Resource.Drawable.abc_ic_search_api_material = global::SmartButler.Droid.Resource.Drawable.abc_ic_search_api_material;
+			global::Acr.UserDialogs.Resource.Drawable.abc_ic_star_black_16dp = global::SmartButler.Droid.Resource.Drawable.abc_ic_star_black_16dp;
+			global::Acr.UserDialogs.Resource.Drawable.abc_ic_star_black_36dp = global::SmartButler.Droid.Resource.Drawable.abc_ic_star_black_36dp;
+			global::Acr.UserDialogs.Resource.Drawable.abc_ic_star_black_48dp = global::SmartButler.Droid.Resource.Drawable.abc_ic_star_black_48dp;
+			global::Acr.UserDialogs.Resource.Drawable.abc_ic_star_half_black_16dp = global::SmartButler.Droid.Resource.Drawable.abc_ic_star_half_black_16dp;
+			global::Acr.UserDialogs.Resource.Drawable.abc_ic_star_half_black_36dp = global::SmartButler.Droid.Resource.Drawable.abc_ic_star_half_black_36dp;
+			global::Acr.UserDialogs.Resource.Drawable.abc_ic_star_half_black_48dp = global::SmartButler.Droid.Resource.Drawable.abc_ic_star_half_black_48dp;
+			global::Acr.UserDialogs.Resource.Drawable.abc_ic_voice_search_api_material = global::SmartButler.Droid.Resource.Drawable.abc_ic_voice_search_api_material;
+			global::Acr.UserDialogs.Resource.Drawable.abc_item_background_holo_dark = global::SmartButler.Droid.Resource.Drawable.abc_item_background_holo_dark;
+			global::Acr.UserDialogs.Resource.Drawable.abc_item_background_holo_light = global::SmartButler.Droid.Resource.Drawable.abc_item_background_holo_light;
+			global::Acr.UserDialogs.Resource.Drawable.abc_list_divider_mtrl_alpha = global::SmartButler.Droid.Resource.Drawable.abc_list_divider_mtrl_alpha;
+			global::Acr.UserDialogs.Resource.Drawable.abc_list_focused_holo = global::SmartButler.Droid.Resource.Drawable.abc_list_focused_holo;
+			global::Acr.UserDialogs.Resource.Drawable.abc_list_longpressed_holo = global::SmartButler.Droid.Resource.Drawable.abc_list_longpressed_holo;
+			global::Acr.UserDialogs.Resource.Drawable.abc_list_pressed_holo_dark = global::SmartButler.Droid.Resource.Drawable.abc_list_pressed_holo_dark;
+			global::Acr.UserDialogs.Resource.Drawable.abc_list_pressed_holo_light = global::SmartButler.Droid.Resource.Drawable.abc_list_pressed_holo_light;
+			global::Acr.UserDialogs.Resource.Drawable.abc_list_selector_background_transition_holo_dark = global::SmartButler.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_dark;
+			global::Acr.UserDialogs.Resource.Drawable.abc_list_selector_background_transition_holo_light = global::SmartButler.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_light;
+			global::Acr.UserDialogs.Resource.Drawable.abc_list_selector_disabled_holo_dark = global::SmartButler.Droid.Resource.Drawable.abc_list_selector_disabled_holo_dark;
+			global::Acr.UserDialogs.Resource.Drawable.abc_list_selector_disabled_holo_light = global::SmartButler.Droid.Resource.Drawable.abc_list_selector_disabled_holo_light;
+			global::Acr.UserDialogs.Resource.Drawable.abc_list_selector_holo_dark = global::SmartButler.Droid.Resource.Drawable.abc_list_selector_holo_dark;
+			global::Acr.UserDialogs.Resource.Drawable.abc_list_selector_holo_light = global::SmartButler.Droid.Resource.Drawable.abc_list_selector_holo_light;
+			global::Acr.UserDialogs.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult = global::SmartButler.Droid.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult;
+			global::Acr.UserDialogs.Resource.Drawable.abc_popup_background_mtrl_mult = global::SmartButler.Droid.Resource.Drawable.abc_popup_background_mtrl_mult;
+			global::Acr.UserDialogs.Resource.Drawable.abc_ratingbar_indicator_material = global::SmartButler.Droid.Resource.Drawable.abc_ratingbar_indicator_material;
+			global::Acr.UserDialogs.Resource.Drawable.abc_ratingbar_material = global::SmartButler.Droid.Resource.Drawable.abc_ratingbar_material;
+			global::Acr.UserDialogs.Resource.Drawable.abc_ratingbar_small_material = global::SmartButler.Droid.Resource.Drawable.abc_ratingbar_small_material;
+			global::Acr.UserDialogs.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha = global::SmartButler.Droid.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha;
+			global::Acr.UserDialogs.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000 = global::SmartButler.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000;
+			global::Acr.UserDialogs.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005 = global::SmartButler.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005;
+			global::Acr.UserDialogs.Resource.Drawable.abc_scrubber_primary_mtrl_alpha = global::SmartButler.Droid.Resource.Drawable.abc_scrubber_primary_mtrl_alpha;
+			global::Acr.UserDialogs.Resource.Drawable.abc_scrubber_track_mtrl_alpha = global::SmartButler.Droid.Resource.Drawable.abc_scrubber_track_mtrl_alpha;
+			global::Acr.UserDialogs.Resource.Drawable.abc_seekbar_thumb_material = global::SmartButler.Droid.Resource.Drawable.abc_seekbar_thumb_material;
+			global::Acr.UserDialogs.Resource.Drawable.abc_seekbar_tick_mark_material = global::SmartButler.Droid.Resource.Drawable.abc_seekbar_tick_mark_material;
+			global::Acr.UserDialogs.Resource.Drawable.abc_seekbar_track_material = global::SmartButler.Droid.Resource.Drawable.abc_seekbar_track_material;
+			global::Acr.UserDialogs.Resource.Drawable.abc_spinner_mtrl_am_alpha = global::SmartButler.Droid.Resource.Drawable.abc_spinner_mtrl_am_alpha;
+			global::Acr.UserDialogs.Resource.Drawable.abc_spinner_textfield_background_material = global::SmartButler.Droid.Resource.Drawable.abc_spinner_textfield_background_material;
+			global::Acr.UserDialogs.Resource.Drawable.abc_switch_thumb_material = global::SmartButler.Droid.Resource.Drawable.abc_switch_thumb_material;
+			global::Acr.UserDialogs.Resource.Drawable.abc_switch_track_mtrl_alpha = global::SmartButler.Droid.Resource.Drawable.abc_switch_track_mtrl_alpha;
+			global::Acr.UserDialogs.Resource.Drawable.abc_tab_indicator_material = global::SmartButler.Droid.Resource.Drawable.abc_tab_indicator_material;
+			global::Acr.UserDialogs.Resource.Drawable.abc_tab_indicator_mtrl_alpha = global::SmartButler.Droid.Resource.Drawable.abc_tab_indicator_mtrl_alpha;
+			global::Acr.UserDialogs.Resource.Drawable.abc_textfield_activated_mtrl_alpha = global::SmartButler.Droid.Resource.Drawable.abc_textfield_activated_mtrl_alpha;
+			global::Acr.UserDialogs.Resource.Drawable.abc_textfield_default_mtrl_alpha = global::SmartButler.Droid.Resource.Drawable.abc_textfield_default_mtrl_alpha;
+			global::Acr.UserDialogs.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha = global::SmartButler.Droid.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha;
+			global::Acr.UserDialogs.Resource.Drawable.abc_textfield_search_default_mtrl_alpha = global::SmartButler.Droid.Resource.Drawable.abc_textfield_search_default_mtrl_alpha;
+			global::Acr.UserDialogs.Resource.Drawable.abc_textfield_search_material = global::SmartButler.Droid.Resource.Drawable.abc_textfield_search_material;
+			global::Acr.UserDialogs.Resource.Drawable.abc_text_cursor_material = global::SmartButler.Droid.Resource.Drawable.abc_text_cursor_material;
+			global::Acr.UserDialogs.Resource.Drawable.abc_text_select_handle_left_mtrl_dark = global::SmartButler.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_dark;
+			global::Acr.UserDialogs.Resource.Drawable.abc_text_select_handle_left_mtrl_light = global::SmartButler.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_light;
+			global::Acr.UserDialogs.Resource.Drawable.abc_text_select_handle_middle_mtrl_dark = global::SmartButler.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_dark;
+			global::Acr.UserDialogs.Resource.Drawable.abc_text_select_handle_middle_mtrl_light = global::SmartButler.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_light;
+			global::Acr.UserDialogs.Resource.Drawable.abc_text_select_handle_right_mtrl_dark = global::SmartButler.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_dark;
+			global::Acr.UserDialogs.Resource.Drawable.abc_text_select_handle_right_mtrl_light = global::SmartButler.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_light;
+			global::Acr.UserDialogs.Resource.Drawable.abc_vector_test = global::SmartButler.Droid.Resource.Drawable.abc_vector_test;
+			global::Acr.UserDialogs.Resource.Drawable.avd_hide_password = global::SmartButler.Droid.Resource.Drawable.avd_hide_password;
+			global::Acr.UserDialogs.Resource.Drawable.avd_show_password = global::SmartButler.Droid.Resource.Drawable.avd_show_password;
+			global::Acr.UserDialogs.Resource.Drawable.design_bottom_navigation_item_background = global::SmartButler.Droid.Resource.Drawable.design_bottom_navigation_item_background;
+			global::Acr.UserDialogs.Resource.Drawable.design_fab_background = global::SmartButler.Droid.Resource.Drawable.design_fab_background;
+			global::Acr.UserDialogs.Resource.Drawable.design_ic_visibility = global::SmartButler.Droid.Resource.Drawable.design_ic_visibility;
+			global::Acr.UserDialogs.Resource.Drawable.design_ic_visibility_off = global::SmartButler.Droid.Resource.Drawable.design_ic_visibility_off;
+			global::Acr.UserDialogs.Resource.Drawable.design_password_eye = global::SmartButler.Droid.Resource.Drawable.design_password_eye;
+			global::Acr.UserDialogs.Resource.Drawable.design_snackbar_background = global::SmartButler.Droid.Resource.Drawable.design_snackbar_background;
+			global::Acr.UserDialogs.Resource.Drawable.ic_errorstatus = global::SmartButler.Droid.Resource.Drawable.ic_errorstatus;
+			global::Acr.UserDialogs.Resource.Drawable.ic_successstatus = global::SmartButler.Droid.Resource.Drawable.ic_successstatus;
+			global::Acr.UserDialogs.Resource.Drawable.navigation_empty_icon = global::SmartButler.Droid.Resource.Drawable.navigation_empty_icon;
+			global::Acr.UserDialogs.Resource.Drawable.notification_action_background = global::SmartButler.Droid.Resource.Drawable.notification_action_background;
+			global::Acr.UserDialogs.Resource.Drawable.notification_bg = global::SmartButler.Droid.Resource.Drawable.notification_bg;
+			global::Acr.UserDialogs.Resource.Drawable.notification_bg_low = global::SmartButler.Droid.Resource.Drawable.notification_bg_low;
+			global::Acr.UserDialogs.Resource.Drawable.notification_bg_low_normal = global::SmartButler.Droid.Resource.Drawable.notification_bg_low_normal;
+			global::Acr.UserDialogs.Resource.Drawable.notification_bg_low_pressed = global::SmartButler.Droid.Resource.Drawable.notification_bg_low_pressed;
+			global::Acr.UserDialogs.Resource.Drawable.notification_bg_normal = global::SmartButler.Droid.Resource.Drawable.notification_bg_normal;
+			global::Acr.UserDialogs.Resource.Drawable.notification_bg_normal_pressed = global::SmartButler.Droid.Resource.Drawable.notification_bg_normal_pressed;
+			global::Acr.UserDialogs.Resource.Drawable.notification_icon_background = global::SmartButler.Droid.Resource.Drawable.notification_icon_background;
+			global::Acr.UserDialogs.Resource.Drawable.notification_template_icon_bg = global::SmartButler.Droid.Resource.Drawable.notification_template_icon_bg;
+			global::Acr.UserDialogs.Resource.Drawable.notification_template_icon_low_bg = global::SmartButler.Droid.Resource.Drawable.notification_template_icon_low_bg;
+			global::Acr.UserDialogs.Resource.Drawable.notification_tile_bg = global::SmartButler.Droid.Resource.Drawable.notification_tile_bg;
+			global::Acr.UserDialogs.Resource.Drawable.notify_panel_notification_icon_bg = global::SmartButler.Droid.Resource.Drawable.notify_panel_notification_icon_bg;
+			global::Acr.UserDialogs.Resource.Drawable.roundedbg = global::SmartButler.Droid.Resource.Drawable.roundedbg;
+			global::Acr.UserDialogs.Resource.Drawable.roundedbgdark = global::SmartButler.Droid.Resource.Drawable.roundedbgdark;
+			global::Acr.UserDialogs.Resource.Drawable.tooltip_frame_dark = global::SmartButler.Droid.Resource.Drawable.tooltip_frame_dark;
+			global::Acr.UserDialogs.Resource.Drawable.tooltip_frame_light = global::SmartButler.Droid.Resource.Drawable.tooltip_frame_light;
+			global::Acr.UserDialogs.Resource.Id.action0 = global::SmartButler.Droid.Resource.Id.action0;
+			global::Acr.UserDialogs.Resource.Id.actions = global::SmartButler.Droid.Resource.Id.actions;
+			global::Acr.UserDialogs.Resource.Id.action_bar = global::SmartButler.Droid.Resource.Id.action_bar;
+			global::Acr.UserDialogs.Resource.Id.action_bar_activity_content = global::SmartButler.Droid.Resource.Id.action_bar_activity_content;
+			global::Acr.UserDialogs.Resource.Id.action_bar_container = global::SmartButler.Droid.Resource.Id.action_bar_container;
+			global::Acr.UserDialogs.Resource.Id.action_bar_root = global::SmartButler.Droid.Resource.Id.action_bar_root;
+			global::Acr.UserDialogs.Resource.Id.action_bar_spinner = global::SmartButler.Droid.Resource.Id.action_bar_spinner;
+			global::Acr.UserDialogs.Resource.Id.action_bar_subtitle = global::SmartButler.Droid.Resource.Id.action_bar_subtitle;
+			global::Acr.UserDialogs.Resource.Id.action_bar_title = global::SmartButler.Droid.Resource.Id.action_bar_title;
+			global::Acr.UserDialogs.Resource.Id.action_container = global::SmartButler.Droid.Resource.Id.action_container;
+			global::Acr.UserDialogs.Resource.Id.action_context_bar = global::SmartButler.Droid.Resource.Id.action_context_bar;
+			global::Acr.UserDialogs.Resource.Id.action_divider = global::SmartButler.Droid.Resource.Id.action_divider;
+			global::Acr.UserDialogs.Resource.Id.action_image = global::SmartButler.Droid.Resource.Id.action_image;
+			global::Acr.UserDialogs.Resource.Id.action_menu_divider = global::SmartButler.Droid.Resource.Id.action_menu_divider;
+			global::Acr.UserDialogs.Resource.Id.action_menu_presenter = global::SmartButler.Droid.Resource.Id.action_menu_presenter;
+			global::Acr.UserDialogs.Resource.Id.action_mode_bar = global::SmartButler.Droid.Resource.Id.action_mode_bar;
+			global::Acr.UserDialogs.Resource.Id.action_mode_bar_stub = global::SmartButler.Droid.Resource.Id.action_mode_bar_stub;
+			global::Acr.UserDialogs.Resource.Id.action_mode_close_button = global::SmartButler.Droid.Resource.Id.action_mode_close_button;
+			global::Acr.UserDialogs.Resource.Id.action_text = global::SmartButler.Droid.Resource.Id.action_text;
+			global::Acr.UserDialogs.Resource.Id.activity_chooser_view_content = global::SmartButler.Droid.Resource.Id.activity_chooser_view_content;
+			global::Acr.UserDialogs.Resource.Id.add = global::SmartButler.Droid.Resource.Id.add;
+			global::Acr.UserDialogs.Resource.Id.alertTitle = global::SmartButler.Droid.Resource.Id.alertTitle;
+			global::Acr.UserDialogs.Resource.Id.all = global::SmartButler.Droid.Resource.Id.all;
+			global::Acr.UserDialogs.Resource.Id.ALT = global::SmartButler.Droid.Resource.Id.ALT;
+			global::Acr.UserDialogs.Resource.Id.always = global::SmartButler.Droid.Resource.Id.always;
+			global::Acr.UserDialogs.Resource.Id.async = global::SmartButler.Droid.Resource.Id.async;
+			global::Acr.UserDialogs.Resource.Id.auto = global::SmartButler.Droid.Resource.Id.auto;
+			global::Acr.UserDialogs.Resource.Id.beginning = global::SmartButler.Droid.Resource.Id.beginning;
+			global::Acr.UserDialogs.Resource.Id.blocking = global::SmartButler.Droid.Resource.Id.blocking;
+			global::Acr.UserDialogs.Resource.Id.bottom = global::SmartButler.Droid.Resource.Id.bottom;
+			global::Acr.UserDialogs.Resource.Id.buttonPanel = global::SmartButler.Droid.Resource.Id.buttonPanel;
+			global::Acr.UserDialogs.Resource.Id.cancel_action = global::SmartButler.Droid.Resource.Id.cancel_action;
+			global::Acr.UserDialogs.Resource.Id.center = global::SmartButler.Droid.Resource.Id.center;
+			global::Acr.UserDialogs.Resource.Id.center_horizontal = global::SmartButler.Droid.Resource.Id.center_horizontal;
+			global::Acr.UserDialogs.Resource.Id.center_vertical = global::SmartButler.Droid.Resource.Id.center_vertical;
+			global::Acr.UserDialogs.Resource.Id.checkbox = global::SmartButler.Droid.Resource.Id.checkbox;
+			global::Acr.UserDialogs.Resource.Id.chronometer = global::SmartButler.Droid.Resource.Id.chronometer;
+			global::Acr.UserDialogs.Resource.Id.clip_horizontal = global::SmartButler.Droid.Resource.Id.clip_horizontal;
+			global::Acr.UserDialogs.Resource.Id.clip_vertical = global::SmartButler.Droid.Resource.Id.clip_vertical;
+			global::Acr.UserDialogs.Resource.Id.collapseActionView = global::SmartButler.Droid.Resource.Id.collapseActionView;
+			global::Acr.UserDialogs.Resource.Id.container = global::SmartButler.Droid.Resource.Id.container;
+			global::Acr.UserDialogs.Resource.Id.contentPanel = global::SmartButler.Droid.Resource.Id.contentPanel;
+			global::Acr.UserDialogs.Resource.Id.coordinator = global::SmartButler.Droid.Resource.Id.coordinator;
+			global::Acr.UserDialogs.Resource.Id.CTRL = global::SmartButler.Droid.Resource.Id.CTRL;
+			global::Acr.UserDialogs.Resource.Id.custom = global::SmartButler.Droid.Resource.Id.custom;
+			global::Acr.UserDialogs.Resource.Id.customPanel = global::SmartButler.Droid.Resource.Id.customPanel;
+			global::Acr.UserDialogs.Resource.Id.decor_content_parent = global::SmartButler.Droid.Resource.Id.decor_content_parent;
+			global::Acr.UserDialogs.Resource.Id.default_activity_button = global::SmartButler.Droid.Resource.Id.default_activity_button;
+			global::Acr.UserDialogs.Resource.Id.design_bottom_sheet = global::SmartButler.Droid.Resource.Id.design_bottom_sheet;
+			global::Acr.UserDialogs.Resource.Id.design_menu_item_action_area = global::SmartButler.Droid.Resource.Id.design_menu_item_action_area;
+			global::Acr.UserDialogs.Resource.Id.design_menu_item_action_area_stub = global::SmartButler.Droid.Resource.Id.design_menu_item_action_area_stub;
+			global::Acr.UserDialogs.Resource.Id.design_menu_item_text = global::SmartButler.Droid.Resource.Id.design_menu_item_text;
+			global::Acr.UserDialogs.Resource.Id.design_navigation_view = global::SmartButler.Droid.Resource.Id.design_navigation_view;
+			global::Acr.UserDialogs.Resource.Id.disableHome = global::SmartButler.Droid.Resource.Id.disableHome;
+			global::Acr.UserDialogs.Resource.Id.edit_query = global::SmartButler.Droid.Resource.Id.edit_query;
+			global::Acr.UserDialogs.Resource.Id.end = global::SmartButler.Droid.Resource.Id.end;
+			global::Acr.UserDialogs.Resource.Id.end_padder = global::SmartButler.Droid.Resource.Id.end_padder;
+			global::Acr.UserDialogs.Resource.Id.enterAlways = global::SmartButler.Droid.Resource.Id.enterAlways;
+			global::Acr.UserDialogs.Resource.Id.enterAlwaysCollapsed = global::SmartButler.Droid.Resource.Id.enterAlwaysCollapsed;
+			global::Acr.UserDialogs.Resource.Id.exitUntilCollapsed = global::SmartButler.Droid.Resource.Id.exitUntilCollapsed;
+			global::Acr.UserDialogs.Resource.Id.expanded_menu = global::SmartButler.Droid.Resource.Id.expanded_menu;
+			global::Acr.UserDialogs.Resource.Id.expand_activities_button = global::SmartButler.Droid.Resource.Id.expand_activities_button;
+			global::Acr.UserDialogs.Resource.Id.fill = global::SmartButler.Droid.Resource.Id.fill;
+			global::Acr.UserDialogs.Resource.Id.fill_horizontal = global::SmartButler.Droid.Resource.Id.fill_horizontal;
+			global::Acr.UserDialogs.Resource.Id.fill_vertical = global::SmartButler.Droid.Resource.Id.fill_vertical;
+			global::Acr.UserDialogs.Resource.Id.@fixed = global::SmartButler.Droid.Resource.Id.@fixed;
+			global::Acr.UserDialogs.Resource.Id.forever = global::SmartButler.Droid.Resource.Id.forever;
+			global::Acr.UserDialogs.Resource.Id.FUNCTION = global::SmartButler.Droid.Resource.Id.FUNCTION;
+			global::Acr.UserDialogs.Resource.Id.ghost_view = global::SmartButler.Droid.Resource.Id.ghost_view;
+			global::Acr.UserDialogs.Resource.Id.home = global::SmartButler.Droid.Resource.Id.home;
+			global::Acr.UserDialogs.Resource.Id.homeAsUp = global::SmartButler.Droid.Resource.Id.homeAsUp;
+			global::Acr.UserDialogs.Resource.Id.icon = global::SmartButler.Droid.Resource.Id.icon;
+			global::Acr.UserDialogs.Resource.Id.icon_group = global::SmartButler.Droid.Resource.Id.icon_group;
+			global::Acr.UserDialogs.Resource.Id.ifRoom = global::SmartButler.Droid.Resource.Id.ifRoom;
+			global::Acr.UserDialogs.Resource.Id.image = global::SmartButler.Droid.Resource.Id.image;
+			global::Acr.UserDialogs.Resource.Id.info = global::SmartButler.Droid.Resource.Id.info;
+			global::Acr.UserDialogs.Resource.Id.italic = global::SmartButler.Droid.Resource.Id.italic;
+			global::Acr.UserDialogs.Resource.Id.item_touch_helper_previous_elevation = global::SmartButler.Droid.Resource.Id.item_touch_helper_previous_elevation;
+			global::Acr.UserDialogs.Resource.Id.largeLabel = global::SmartButler.Droid.Resource.Id.largeLabel;
+			global::Acr.UserDialogs.Resource.Id.left = global::SmartButler.Droid.Resource.Id.left;
+			global::Acr.UserDialogs.Resource.Id.line1 = global::SmartButler.Droid.Resource.Id.line1;
+			global::Acr.UserDialogs.Resource.Id.line3 = global::SmartButler.Droid.Resource.Id.line3;
+			global::Acr.UserDialogs.Resource.Id.listMode = global::SmartButler.Droid.Resource.Id.listMode;
+			global::Acr.UserDialogs.Resource.Id.list_item = global::SmartButler.Droid.Resource.Id.list_item;
+			global::Acr.UserDialogs.Resource.Id.loadingImage = global::SmartButler.Droid.Resource.Id.loadingImage;
+			global::Acr.UserDialogs.Resource.Id.loadingProgressBar = global::SmartButler.Droid.Resource.Id.loadingProgressBar;
+			global::Acr.UserDialogs.Resource.Id.loadingProgressWheel = global::SmartButler.Droid.Resource.Id.loadingProgressWheel;
+			global::Acr.UserDialogs.Resource.Id.masked = global::SmartButler.Droid.Resource.Id.masked;
+			global::Acr.UserDialogs.Resource.Id.media_actions = global::SmartButler.Droid.Resource.Id.media_actions;
+			global::Acr.UserDialogs.Resource.Id.message = global::SmartButler.Droid.Resource.Id.message;
+			global::Acr.UserDialogs.Resource.Id.META = global::SmartButler.Droid.Resource.Id.META;
+			global::Acr.UserDialogs.Resource.Id.middle = global::SmartButler.Droid.Resource.Id.middle;
+			global::Acr.UserDialogs.Resource.Id.mini = global::SmartButler.Droid.Resource.Id.mini;
+			global::Acr.UserDialogs.Resource.Id.multiply = global::SmartButler.Droid.Resource.Id.multiply;
+			global::Acr.UserDialogs.Resource.Id.navigation_header_container = global::SmartButler.Droid.Resource.Id.navigation_header_container;
+			global::Acr.UserDialogs.Resource.Id.never = global::SmartButler.Droid.Resource.Id.never;
+			global::Acr.UserDialogs.Resource.Id.none = global::SmartButler.Droid.Resource.Id.none;
+			global::Acr.UserDialogs.Resource.Id.normal = global::SmartButler.Droid.Resource.Id.normal;
+			global::Acr.UserDialogs.Resource.Id.notification_background = global::SmartButler.Droid.Resource.Id.notification_background;
+			global::Acr.UserDialogs.Resource.Id.notification_main_column = global::SmartButler.Droid.Resource.Id.notification_main_column;
+			global::Acr.UserDialogs.Resource.Id.notification_main_column_container = global::SmartButler.Droid.Resource.Id.notification_main_column_container;
+			global::Acr.UserDialogs.Resource.Id.parallax = global::SmartButler.Droid.Resource.Id.parallax;
+			global::Acr.UserDialogs.Resource.Id.parentPanel = global::SmartButler.Droid.Resource.Id.parentPanel;
+			global::Acr.UserDialogs.Resource.Id.parent_matrix = global::SmartButler.Droid.Resource.Id.parent_matrix;
+			global::Acr.UserDialogs.Resource.Id.pin = global::SmartButler.Droid.Resource.Id.pin;
+			global::Acr.UserDialogs.Resource.Id.progress_circular = global::SmartButler.Droid.Resource.Id.progress_circular;
+			global::Acr.UserDialogs.Resource.Id.progress_horizontal = global::SmartButler.Droid.Resource.Id.progress_horizontal;
+			global::Acr.UserDialogs.Resource.Id.radio = global::SmartButler.Droid.Resource.Id.radio;
+			global::Acr.UserDialogs.Resource.Id.right = global::SmartButler.Droid.Resource.Id.right;
+			global::Acr.UserDialogs.Resource.Id.right_icon = global::SmartButler.Droid.Resource.Id.right_icon;
+			global::Acr.UserDialogs.Resource.Id.right_side = global::SmartButler.Droid.Resource.Id.right_side;
+			global::Acr.UserDialogs.Resource.Id.save_image_matrix = global::SmartButler.Droid.Resource.Id.save_image_matrix;
+			global::Acr.UserDialogs.Resource.Id.save_non_transition_alpha = global::SmartButler.Droid.Resource.Id.save_non_transition_alpha;
+			global::Acr.UserDialogs.Resource.Id.save_scale_type = global::SmartButler.Droid.Resource.Id.save_scale_type;
+			global::Acr.UserDialogs.Resource.Id.screen = global::SmartButler.Droid.Resource.Id.screen;
+			global::Acr.UserDialogs.Resource.Id.scroll = global::SmartButler.Droid.Resource.Id.scroll;
+			global::Acr.UserDialogs.Resource.Id.scrollable = global::SmartButler.Droid.Resource.Id.scrollable;
+			global::Acr.UserDialogs.Resource.Id.scrollIndicatorDown = global::SmartButler.Droid.Resource.Id.scrollIndicatorDown;
+			global::Acr.UserDialogs.Resource.Id.scrollIndicatorUp = global::SmartButler.Droid.Resource.Id.scrollIndicatorUp;
+			global::Acr.UserDialogs.Resource.Id.scrollView = global::SmartButler.Droid.Resource.Id.scrollView;
+			global::Acr.UserDialogs.Resource.Id.search_badge = global::SmartButler.Droid.Resource.Id.search_badge;
+			global::Acr.UserDialogs.Resource.Id.search_bar = global::SmartButler.Droid.Resource.Id.search_bar;
+			global::Acr.UserDialogs.Resource.Id.search_button = global::SmartButler.Droid.Resource.Id.search_button;
+			global::Acr.UserDialogs.Resource.Id.search_close_btn = global::SmartButler.Droid.Resource.Id.search_close_btn;
+			global::Acr.UserDialogs.Resource.Id.search_edit_frame = global::SmartButler.Droid.Resource.Id.search_edit_frame;
+			global::Acr.UserDialogs.Resource.Id.search_go_btn = global::SmartButler.Droid.Resource.Id.search_go_btn;
+			global::Acr.UserDialogs.Resource.Id.search_mag_icon = global::SmartButler.Droid.Resource.Id.search_mag_icon;
+			global::Acr.UserDialogs.Resource.Id.search_plate = global::SmartButler.Droid.Resource.Id.search_plate;
+			global::Acr.UserDialogs.Resource.Id.search_src_text = global::SmartButler.Droid.Resource.Id.search_src_text;
+			global::Acr.UserDialogs.Resource.Id.search_voice_btn = global::SmartButler.Droid.Resource.Id.search_voice_btn;
+			global::Acr.UserDialogs.Resource.Id.select_dialog_listview = global::SmartButler.Droid.Resource.Id.select_dialog_listview;
+			global::Acr.UserDialogs.Resource.Id.SHIFT = global::SmartButler.Droid.Resource.Id.SHIFT;
+			global::Acr.UserDialogs.Resource.Id.shortcut = global::SmartButler.Droid.Resource.Id.shortcut;
+			global::Acr.UserDialogs.Resource.Id.showCustom = global::SmartButler.Droid.Resource.Id.showCustom;
+			global::Acr.UserDialogs.Resource.Id.showHome = global::SmartButler.Droid.Resource.Id.showHome;
+			global::Acr.UserDialogs.Resource.Id.showTitle = global::SmartButler.Droid.Resource.Id.showTitle;
+			global::Acr.UserDialogs.Resource.Id.smallLabel = global::SmartButler.Droid.Resource.Id.smallLabel;
+			global::Acr.UserDialogs.Resource.Id.snackbar_action = global::SmartButler.Droid.Resource.Id.snackbar_action;
+			global::Acr.UserDialogs.Resource.Id.snackbar_text = global::SmartButler.Droid.Resource.Id.snackbar_text;
+			global::Acr.UserDialogs.Resource.Id.snap = global::SmartButler.Droid.Resource.Id.snap;
+			global::Acr.UserDialogs.Resource.Id.spacer = global::SmartButler.Droid.Resource.Id.spacer;
+			global::Acr.UserDialogs.Resource.Id.split_action_bar = global::SmartButler.Droid.Resource.Id.split_action_bar;
+			global::Acr.UserDialogs.Resource.Id.src_atop = global::SmartButler.Droid.Resource.Id.src_atop;
+			global::Acr.UserDialogs.Resource.Id.src_in = global::SmartButler.Droid.Resource.Id.src_in;
+			global::Acr.UserDialogs.Resource.Id.src_over = global::SmartButler.Droid.Resource.Id.src_over;
+			global::Acr.UserDialogs.Resource.Id.start = global::SmartButler.Droid.Resource.Id.start;
+			global::Acr.UserDialogs.Resource.Id.status_bar_latest_event_content = global::SmartButler.Droid.Resource.Id.status_bar_latest_event_content;
+			global::Acr.UserDialogs.Resource.Id.submenuarrow = global::SmartButler.Droid.Resource.Id.submenuarrow;
+			global::Acr.UserDialogs.Resource.Id.submit_area = global::SmartButler.Droid.Resource.Id.submit_area;
+			global::Acr.UserDialogs.Resource.Id.SYM = global::SmartButler.Droid.Resource.Id.SYM;
+			global::Acr.UserDialogs.Resource.Id.tabMode = global::SmartButler.Droid.Resource.Id.tabMode;
+			global::Acr.UserDialogs.Resource.Id.tag_transition_group = global::SmartButler.Droid.Resource.Id.tag_transition_group;
+			global::Acr.UserDialogs.Resource.Id.text = global::SmartButler.Droid.Resource.Id.text;
+			global::Acr.UserDialogs.Resource.Id.text2 = global::SmartButler.Droid.Resource.Id.text2;
+			global::Acr.UserDialogs.Resource.Id.textinput_counter = global::SmartButler.Droid.Resource.Id.textinput_counter;
+			global::Acr.UserDialogs.Resource.Id.textinput_error = global::SmartButler.Droid.Resource.Id.textinput_error;
+			global::Acr.UserDialogs.Resource.Id.textSpacerNoButtons = global::SmartButler.Droid.Resource.Id.textSpacerNoButtons;
+			global::Acr.UserDialogs.Resource.Id.textSpacerNoTitle = global::SmartButler.Droid.Resource.Id.textSpacerNoTitle;
+			global::Acr.UserDialogs.Resource.Id.textViewStatus = global::SmartButler.Droid.Resource.Id.textViewStatus;
+			global::Acr.UserDialogs.Resource.Id.text_input_password_toggle = global::SmartButler.Droid.Resource.Id.text_input_password_toggle;
+			global::Acr.UserDialogs.Resource.Id.time = global::SmartButler.Droid.Resource.Id.time;
+			global::Acr.UserDialogs.Resource.Id.title = global::SmartButler.Droid.Resource.Id.title;
+			global::Acr.UserDialogs.Resource.Id.titleDividerNoCustom = global::SmartButler.Droid.Resource.Id.titleDividerNoCustom;
+			global::Acr.UserDialogs.Resource.Id.title_template = global::SmartButler.Droid.Resource.Id.title_template;
+			global::Acr.UserDialogs.Resource.Id.top = global::SmartButler.Droid.Resource.Id.top;
+			global::Acr.UserDialogs.Resource.Id.topPanel = global::SmartButler.Droid.Resource.Id.topPanel;
+			global::Acr.UserDialogs.Resource.Id.touch_outside = global::SmartButler.Droid.Resource.Id.touch_outside;
+			global::Acr.UserDialogs.Resource.Id.transition_current_scene = global::SmartButler.Droid.Resource.Id.transition_current_scene;
+			global::Acr.UserDialogs.Resource.Id.transition_layout_save = global::SmartButler.Droid.Resource.Id.transition_layout_save;
+			global::Acr.UserDialogs.Resource.Id.transition_position = global::SmartButler.Droid.Resource.Id.transition_position;
+			global::Acr.UserDialogs.Resource.Id.transition_scene_layoutid_cache = global::SmartButler.Droid.Resource.Id.transition_scene_layoutid_cache;
+			global::Acr.UserDialogs.Resource.Id.transition_transform = global::SmartButler.Droid.Resource.Id.transition_transform;
+			global::Acr.UserDialogs.Resource.Id.uniform = global::SmartButler.Droid.Resource.Id.uniform;
+			global::Acr.UserDialogs.Resource.Id.up = global::SmartButler.Droid.Resource.Id.up;
+			global::Acr.UserDialogs.Resource.Id.useLogo = global::SmartButler.Droid.Resource.Id.useLogo;
+			global::Acr.UserDialogs.Resource.Id.view_offset_helper = global::SmartButler.Droid.Resource.Id.view_offset_helper;
+			global::Acr.UserDialogs.Resource.Id.visible = global::SmartButler.Droid.Resource.Id.visible;
+			global::Acr.UserDialogs.Resource.Id.withText = global::SmartButler.Droid.Resource.Id.withText;
+			global::Acr.UserDialogs.Resource.Id.wrap_content = global::SmartButler.Droid.Resource.Id.wrap_content;
+			global::Acr.UserDialogs.Resource.Integer.abc_config_activityDefaultDur = global::SmartButler.Droid.Resource.Integer.abc_config_activityDefaultDur;
+			global::Acr.UserDialogs.Resource.Integer.abc_config_activityShortDur = global::SmartButler.Droid.Resource.Integer.abc_config_activityShortDur;
+			global::Acr.UserDialogs.Resource.Integer.app_bar_elevation_anim_duration = global::SmartButler.Droid.Resource.Integer.app_bar_elevation_anim_duration;
+			global::Acr.UserDialogs.Resource.Integer.bottom_sheet_slide_duration = global::SmartButler.Droid.Resource.Integer.bottom_sheet_slide_duration;
+			global::Acr.UserDialogs.Resource.Integer.cancel_button_image_alpha = global::SmartButler.Droid.Resource.Integer.cancel_button_image_alpha;
+			global::Acr.UserDialogs.Resource.Integer.config_tooltipAnimTime = global::SmartButler.Droid.Resource.Integer.config_tooltipAnimTime;
+			global::Acr.UserDialogs.Resource.Integer.design_snackbar_text_max_lines = global::SmartButler.Droid.Resource.Integer.design_snackbar_text_max_lines;
+			global::Acr.UserDialogs.Resource.Integer.hide_password_duration = global::SmartButler.Droid.Resource.Integer.hide_password_duration;
+			global::Acr.UserDialogs.Resource.Integer.show_password_duration = global::SmartButler.Droid.Resource.Integer.show_password_duration;
+			global::Acr.UserDialogs.Resource.Integer.status_bar_notification_info_maxnum = global::SmartButler.Droid.Resource.Integer.status_bar_notification_info_maxnum;
+			global::Acr.UserDialogs.Resource.Layout.abc_action_bar_title_item = global::SmartButler.Droid.Resource.Layout.abc_action_bar_title_item;
+			global::Acr.UserDialogs.Resource.Layout.abc_action_bar_up_container = global::SmartButler.Droid.Resource.Layout.abc_action_bar_up_container;
+			global::Acr.UserDialogs.Resource.Layout.abc_action_menu_item_layout = global::SmartButler.Droid.Resource.Layout.abc_action_menu_item_layout;
+			global::Acr.UserDialogs.Resource.Layout.abc_action_menu_layout = global::SmartButler.Droid.Resource.Layout.abc_action_menu_layout;
+			global::Acr.UserDialogs.Resource.Layout.abc_action_mode_bar = global::SmartButler.Droid.Resource.Layout.abc_action_mode_bar;
+			global::Acr.UserDialogs.Resource.Layout.abc_action_mode_close_item_material = global::SmartButler.Droid.Resource.Layout.abc_action_mode_close_item_material;
+			global::Acr.UserDialogs.Resource.Layout.abc_activity_chooser_view = global::SmartButler.Droid.Resource.Layout.abc_activity_chooser_view;
+			global::Acr.UserDialogs.Resource.Layout.abc_activity_chooser_view_list_item = global::SmartButler.Droid.Resource.Layout.abc_activity_chooser_view_list_item;
+			global::Acr.UserDialogs.Resource.Layout.abc_alert_dialog_button_bar_material = global::SmartButler.Droid.Resource.Layout.abc_alert_dialog_button_bar_material;
+			global::Acr.UserDialogs.Resource.Layout.abc_alert_dialog_material = global::SmartButler.Droid.Resource.Layout.abc_alert_dialog_material;
+			global::Acr.UserDialogs.Resource.Layout.abc_alert_dialog_title_material = global::SmartButler.Droid.Resource.Layout.abc_alert_dialog_title_material;
+			global::Acr.UserDialogs.Resource.Layout.abc_dialog_title_material = global::SmartButler.Droid.Resource.Layout.abc_dialog_title_material;
+			global::Acr.UserDialogs.Resource.Layout.abc_expanded_menu_layout = global::SmartButler.Droid.Resource.Layout.abc_expanded_menu_layout;
+			global::Acr.UserDialogs.Resource.Layout.abc_list_menu_item_checkbox = global::SmartButler.Droid.Resource.Layout.abc_list_menu_item_checkbox;
+			global::Acr.UserDialogs.Resource.Layout.abc_list_menu_item_icon = global::SmartButler.Droid.Resource.Layout.abc_list_menu_item_icon;
+			global::Acr.UserDialogs.Resource.Layout.abc_list_menu_item_layout = global::SmartButler.Droid.Resource.Layout.abc_list_menu_item_layout;
+			global::Acr.UserDialogs.Resource.Layout.abc_list_menu_item_radio = global::SmartButler.Droid.Resource.Layout.abc_list_menu_item_radio;
+			global::Acr.UserDialogs.Resource.Layout.abc_popup_menu_header_item_layout = global::SmartButler.Droid.Resource.Layout.abc_popup_menu_header_item_layout;
+			global::Acr.UserDialogs.Resource.Layout.abc_popup_menu_item_layout = global::SmartButler.Droid.Resource.Layout.abc_popup_menu_item_layout;
+			global::Acr.UserDialogs.Resource.Layout.abc_screen_content_include = global::SmartButler.Droid.Resource.Layout.abc_screen_content_include;
+			global::Acr.UserDialogs.Resource.Layout.abc_screen_simple = global::SmartButler.Droid.Resource.Layout.abc_screen_simple;
+			global::Acr.UserDialogs.Resource.Layout.abc_screen_simple_overlay_action_mode = global::SmartButler.Droid.Resource.Layout.abc_screen_simple_overlay_action_mode;
+			global::Acr.UserDialogs.Resource.Layout.abc_screen_toolbar = global::SmartButler.Droid.Resource.Layout.abc_screen_toolbar;
+			global::Acr.UserDialogs.Resource.Layout.abc_search_dropdown_item_icons_2line = global::SmartButler.Droid.Resource.Layout.abc_search_dropdown_item_icons_2line;
+			global::Acr.UserDialogs.Resource.Layout.abc_search_view = global::SmartButler.Droid.Resource.Layout.abc_search_view;
+			global::Acr.UserDialogs.Resource.Layout.abc_select_dialog_material = global::SmartButler.Droid.Resource.Layout.abc_select_dialog_material;
+			global::Acr.UserDialogs.Resource.Layout.design_bottom_navigation_item = global::SmartButler.Droid.Resource.Layout.design_bottom_navigation_item;
+			global::Acr.UserDialogs.Resource.Layout.design_bottom_sheet_dialog = global::SmartButler.Droid.Resource.Layout.design_bottom_sheet_dialog;
+			global::Acr.UserDialogs.Resource.Layout.design_layout_snackbar = global::SmartButler.Droid.Resource.Layout.design_layout_snackbar;
+			global::Acr.UserDialogs.Resource.Layout.design_layout_snackbar_include = global::SmartButler.Droid.Resource.Layout.design_layout_snackbar_include;
+			global::Acr.UserDialogs.Resource.Layout.design_layout_tab_icon = global::SmartButler.Droid.Resource.Layout.design_layout_tab_icon;
+			global::Acr.UserDialogs.Resource.Layout.design_layout_tab_text = global::SmartButler.Droid.Resource.Layout.design_layout_tab_text;
+			global::Acr.UserDialogs.Resource.Layout.design_menu_item_action_area = global::SmartButler.Droid.Resource.Layout.design_menu_item_action_area;
+			global::Acr.UserDialogs.Resource.Layout.design_navigation_item = global::SmartButler.Droid.Resource.Layout.design_navigation_item;
+			global::Acr.UserDialogs.Resource.Layout.design_navigation_item_header = global::SmartButler.Droid.Resource.Layout.design_navigation_item_header;
+			global::Acr.UserDialogs.Resource.Layout.design_navigation_item_separator = global::SmartButler.Droid.Resource.Layout.design_navigation_item_separator;
+			global::Acr.UserDialogs.Resource.Layout.design_navigation_item_subheader = global::SmartButler.Droid.Resource.Layout.design_navigation_item_subheader;
+			global::Acr.UserDialogs.Resource.Layout.design_navigation_menu = global::SmartButler.Droid.Resource.Layout.design_navigation_menu;
+			global::Acr.UserDialogs.Resource.Layout.design_navigation_menu_item = global::SmartButler.Droid.Resource.Layout.design_navigation_menu_item;
+			global::Acr.UserDialogs.Resource.Layout.design_text_input_password_icon = global::SmartButler.Droid.Resource.Layout.design_text_input_password_icon;
+			global::Acr.UserDialogs.Resource.Layout.loading = global::SmartButler.Droid.Resource.Layout.loading;
+			global::Acr.UserDialogs.Resource.Layout.loadingimage = global::SmartButler.Droid.Resource.Layout.loadingimage;
+			global::Acr.UserDialogs.Resource.Layout.loadingprogress = global::SmartButler.Droid.Resource.Layout.loadingprogress;
+			global::Acr.UserDialogs.Resource.Layout.notification_action = global::SmartButler.Droid.Resource.Layout.notification_action;
+			global::Acr.UserDialogs.Resource.Layout.notification_action_tombstone = global::SmartButler.Droid.Resource.Layout.notification_action_tombstone;
+			global::Acr.UserDialogs.Resource.Layout.notification_media_action = global::SmartButler.Droid.Resource.Layout.notification_media_action;
+			global::Acr.UserDialogs.Resource.Layout.notification_media_cancel_action = global::SmartButler.Droid.Resource.Layout.notification_media_cancel_action;
+			global::Acr.UserDialogs.Resource.Layout.notification_template_big_media = global::SmartButler.Droid.Resource.Layout.notification_template_big_media;
+			global::Acr.UserDialogs.Resource.Layout.notification_template_big_media_custom = global::SmartButler.Droid.Resource.Layout.notification_template_big_media_custom;
+			global::Acr.UserDialogs.Resource.Layout.notification_template_big_media_narrow = global::SmartButler.Droid.Resource.Layout.notification_template_big_media_narrow;
+			global::Acr.UserDialogs.Resource.Layout.notification_template_big_media_narrow_custom = global::SmartButler.Droid.Resource.Layout.notification_template_big_media_narrow_custom;
+			global::Acr.UserDialogs.Resource.Layout.notification_template_custom_big = global::SmartButler.Droid.Resource.Layout.notification_template_custom_big;
+			global::Acr.UserDialogs.Resource.Layout.notification_template_icon_group = global::SmartButler.Droid.Resource.Layout.notification_template_icon_group;
+			global::Acr.UserDialogs.Resource.Layout.notification_template_lines_media = global::SmartButler.Droid.Resource.Layout.notification_template_lines_media;
+			global::Acr.UserDialogs.Resource.Layout.notification_template_media = global::SmartButler.Droid.Resource.Layout.notification_template_media;
+			global::Acr.UserDialogs.Resource.Layout.notification_template_media_custom = global::SmartButler.Droid.Resource.Layout.notification_template_media_custom;
+			global::Acr.UserDialogs.Resource.Layout.notification_template_part_chronometer = global::SmartButler.Droid.Resource.Layout.notification_template_part_chronometer;
+			global::Acr.UserDialogs.Resource.Layout.notification_template_part_time = global::SmartButler.Droid.Resource.Layout.notification_template_part_time;
+			global::Acr.UserDialogs.Resource.Layout.select_dialog_item_material = global::SmartButler.Droid.Resource.Layout.select_dialog_item_material;
+			global::Acr.UserDialogs.Resource.Layout.select_dialog_multichoice_material = global::SmartButler.Droid.Resource.Layout.select_dialog_multichoice_material;
+			global::Acr.UserDialogs.Resource.Layout.select_dialog_singlechoice_material = global::SmartButler.Droid.Resource.Layout.select_dialog_singlechoice_material;
+			global::Acr.UserDialogs.Resource.Layout.support_simple_spinner_dropdown_item = global::SmartButler.Droid.Resource.Layout.support_simple_spinner_dropdown_item;
+			global::Acr.UserDialogs.Resource.Layout.tooltip = global::SmartButler.Droid.Resource.Layout.tooltip;
+			global::Acr.UserDialogs.Resource.String.abc_action_bar_home_description = global::SmartButler.Droid.Resource.String.abc_action_bar_home_description;
+			global::Acr.UserDialogs.Resource.String.abc_action_bar_up_description = global::SmartButler.Droid.Resource.String.abc_action_bar_up_description;
+			global::Acr.UserDialogs.Resource.String.abc_action_menu_overflow_description = global::SmartButler.Droid.Resource.String.abc_action_menu_overflow_description;
+			global::Acr.UserDialogs.Resource.String.abc_action_mode_done = global::SmartButler.Droid.Resource.String.abc_action_mode_done;
+			global::Acr.UserDialogs.Resource.String.abc_activitychooserview_choose_application = global::SmartButler.Droid.Resource.String.abc_activitychooserview_choose_application;
+			global::Acr.UserDialogs.Resource.String.abc_activity_chooser_view_see_all = global::SmartButler.Droid.Resource.String.abc_activity_chooser_view_see_all;
+			global::Acr.UserDialogs.Resource.String.abc_capital_off = global::SmartButler.Droid.Resource.String.abc_capital_off;
+			global::Acr.UserDialogs.Resource.String.abc_capital_on = global::SmartButler.Droid.Resource.String.abc_capital_on;
+			global::Acr.UserDialogs.Resource.String.abc_font_family_body_1_material = global::SmartButler.Droid.Resource.String.abc_font_family_body_1_material;
+			global::Acr.UserDialogs.Resource.String.abc_font_family_body_2_material = global::SmartButler.Droid.Resource.String.abc_font_family_body_2_material;
+			global::Acr.UserDialogs.Resource.String.abc_font_family_button_material = global::SmartButler.Droid.Resource.String.abc_font_family_button_material;
+			global::Acr.UserDialogs.Resource.String.abc_font_family_caption_material = global::SmartButler.Droid.Resource.String.abc_font_family_caption_material;
+			global::Acr.UserDialogs.Resource.String.abc_font_family_display_1_material = global::SmartButler.Droid.Resource.String.abc_font_family_display_1_material;
+			global::Acr.UserDialogs.Resource.String.abc_font_family_display_2_material = global::SmartButler.Droid.Resource.String.abc_font_family_display_2_material;
+			global::Acr.UserDialogs.Resource.String.abc_font_family_display_3_material = global::SmartButler.Droid.Resource.String.abc_font_family_display_3_material;
+			global::Acr.UserDialogs.Resource.String.abc_font_family_display_4_material = global::SmartButler.Droid.Resource.String.abc_font_family_display_4_material;
+			global::Acr.UserDialogs.Resource.String.abc_font_family_headline_material = global::SmartButler.Droid.Resource.String.abc_font_family_headline_material;
+			global::Acr.UserDialogs.Resource.String.abc_font_family_menu_material = global::SmartButler.Droid.Resource.String.abc_font_family_menu_material;
+			global::Acr.UserDialogs.Resource.String.abc_font_family_subhead_material = global::SmartButler.Droid.Resource.String.abc_font_family_subhead_material;
+			global::Acr.UserDialogs.Resource.String.abc_font_family_title_material = global::SmartButler.Droid.Resource.String.abc_font_family_title_material;
+			global::Acr.UserDialogs.Resource.String.abc_searchview_description_clear = global::SmartButler.Droid.Resource.String.abc_searchview_description_clear;
+			global::Acr.UserDialogs.Resource.String.abc_searchview_description_query = global::SmartButler.Droid.Resource.String.abc_searchview_description_query;
+			global::Acr.UserDialogs.Resource.String.abc_searchview_description_search = global::SmartButler.Droid.Resource.String.abc_searchview_description_search;
+			global::Acr.UserDialogs.Resource.String.abc_searchview_description_submit = global::SmartButler.Droid.Resource.String.abc_searchview_description_submit;
+			global::Acr.UserDialogs.Resource.String.abc_searchview_description_voice = global::SmartButler.Droid.Resource.String.abc_searchview_description_voice;
+			global::Acr.UserDialogs.Resource.String.abc_search_hint = global::SmartButler.Droid.Resource.String.abc_search_hint;
+			global::Acr.UserDialogs.Resource.String.abc_shareactionprovider_share_with = global::SmartButler.Droid.Resource.String.abc_shareactionprovider_share_with;
+			global::Acr.UserDialogs.Resource.String.abc_shareactionprovider_share_with_application = global::SmartButler.Droid.Resource.String.abc_shareactionprovider_share_with_application;
+			global::Acr.UserDialogs.Resource.String.abc_toolbar_collapse_description = global::SmartButler.Droid.Resource.String.abc_toolbar_collapse_description;
+			global::Acr.UserDialogs.Resource.String.appbar_scrolling_view_behavior = global::SmartButler.Droid.Resource.String.appbar_scrolling_view_behavior;
+			global::Acr.UserDialogs.Resource.String.bottom_sheet_behavior = global::SmartButler.Droid.Resource.String.bottom_sheet_behavior;
+			global::Acr.UserDialogs.Resource.String.character_counter_pattern = global::SmartButler.Droid.Resource.String.character_counter_pattern;
+			global::Acr.UserDialogs.Resource.String.library_name = global::SmartButler.Droid.Resource.String.library_name;
+			global::Acr.UserDialogs.Resource.String.password_toggle_content_description = global::SmartButler.Droid.Resource.String.password_toggle_content_description;
+			global::Acr.UserDialogs.Resource.String.path_password_eye = global::SmartButler.Droid.Resource.String.path_password_eye;
+			global::Acr.UserDialogs.Resource.String.path_password_eye_mask_strike_through = global::SmartButler.Droid.Resource.String.path_password_eye_mask_strike_through;
+			global::Acr.UserDialogs.Resource.String.path_password_eye_mask_visible = global::SmartButler.Droid.Resource.String.path_password_eye_mask_visible;
+			global::Acr.UserDialogs.Resource.String.path_password_strike_through = global::SmartButler.Droid.Resource.String.path_password_strike_through;
+			global::Acr.UserDialogs.Resource.String.search_menu_title = global::SmartButler.Droid.Resource.String.search_menu_title;
+			global::Acr.UserDialogs.Resource.String.status_bar_notification_info_overflow = global::SmartButler.Droid.Resource.String.status_bar_notification_info_overflow;
+			global::Acr.UserDialogs.Resource.Style.AlertDialog_AppCompat = global::SmartButler.Droid.Resource.Style.AlertDialog_AppCompat;
+			global::Acr.UserDialogs.Resource.Style.AlertDialog_AppCompat_Light = global::SmartButler.Droid.Resource.Style.AlertDialog_AppCompat_Light;
+			global::Acr.UserDialogs.Resource.Style.Animation_AppCompat_Dialog = global::SmartButler.Droid.Resource.Style.Animation_AppCompat_Dialog;
+			global::Acr.UserDialogs.Resource.Style.Animation_AppCompat_DropDownUp = global::SmartButler.Droid.Resource.Style.Animation_AppCompat_DropDownUp;
+			global::Acr.UserDialogs.Resource.Style.Animation_AppCompat_Tooltip = global::SmartButler.Droid.Resource.Style.Animation_AppCompat_Tooltip;
+			global::Acr.UserDialogs.Resource.Style.Animation_Design_BottomSheetDialog = global::SmartButler.Droid.Resource.Style.Animation_Design_BottomSheetDialog;
+			global::Acr.UserDialogs.Resource.Style.Base_AlertDialog_AppCompat = global::SmartButler.Droid.Resource.Style.Base_AlertDialog_AppCompat;
+			global::Acr.UserDialogs.Resource.Style.Base_AlertDialog_AppCompat_Light = global::SmartButler.Droid.Resource.Style.Base_AlertDialog_AppCompat_Light;
+			global::Acr.UserDialogs.Resource.Style.Base_Animation_AppCompat_Dialog = global::SmartButler.Droid.Resource.Style.Base_Animation_AppCompat_Dialog;
+			global::Acr.UserDialogs.Resource.Style.Base_Animation_AppCompat_DropDownUp = global::SmartButler.Droid.Resource.Style.Base_Animation_AppCompat_DropDownUp;
+			global::Acr.UserDialogs.Resource.Style.Base_Animation_AppCompat_Tooltip = global::SmartButler.Droid.Resource.Style.Base_Animation_AppCompat_Tooltip;
+			global::Acr.UserDialogs.Resource.Style.Base_DialogWindowTitleBackground_AppCompat = global::SmartButler.Droid.Resource.Style.Base_DialogWindowTitleBackground_AppCompat;
+			global::Acr.UserDialogs.Resource.Style.Base_DialogWindowTitle_AppCompat = global::SmartButler.Droid.Resource.Style.Base_DialogWindowTitle_AppCompat;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat = global::SmartButler.Droid.Resource.Style.Base_TextAppearance_AppCompat;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Body1 = global::SmartButler.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body1;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Body2 = global::SmartButler.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body2;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Button = global::SmartButler.Droid.Resource.Style.Base_TextAppearance_AppCompat_Button;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Caption = global::SmartButler.Droid.Resource.Style.Base_TextAppearance_AppCompat_Caption;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Display1 = global::SmartButler.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display1;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Display2 = global::SmartButler.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display2;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Display3 = global::SmartButler.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display3;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Display4 = global::SmartButler.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display4;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Headline = global::SmartButler.Droid.Resource.Style.Base_TextAppearance_AppCompat_Headline;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Inverse = global::SmartButler.Droid.Resource.Style.Base_TextAppearance_AppCompat_Inverse;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Large = global::SmartButler.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse = global::SmartButler.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::SmartButler.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::SmartButler.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Medium = global::SmartButler.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse = global::SmartButler.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Menu = global::SmartButler.Droid.Resource.Style.Base_TextAppearance_AppCompat_Menu;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_SearchResult = global::SmartButler.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle = global::SmartButler.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title = global::SmartButler.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Small = global::SmartButler.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse = global::SmartButler.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Subhead = global::SmartButler.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse = global::SmartButler.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Title = global::SmartButler.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse = global::SmartButler.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Tooltip = global::SmartButler.Droid.Resource.Style.Base_TextAppearance_AppCompat_Tooltip;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu = global::SmartButler.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::SmartButler.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::SmartButler.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title = global::SmartButler.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::SmartButler.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::SmartButler.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title = global::SmartButler.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button = global::SmartButler.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored = global::SmartButler.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Colored = global::SmartButler.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Colored;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse = global::SmartButler.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem = global::SmartButler.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header = global::SmartButler.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large = global::SmartButler.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small = global::SmartButler.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch = global::SmartButler.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::SmartButler.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::SmartButler.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::SmartButler.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::Acr.UserDialogs.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title = global::SmartButler.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::Acr.UserDialogs.Resource.Style.Base_ThemeOverlay_AppCompat = global::SmartButler.Droid.Resource.Style.Base_ThemeOverlay_AppCompat;
+			global::Acr.UserDialogs.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar = global::SmartButler.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar;
+			global::Acr.UserDialogs.Resource.Style.Base_ThemeOverlay_AppCompat_Dark = global::SmartButler.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark;
+			global::Acr.UserDialogs.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar = global::SmartButler.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::Acr.UserDialogs.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog = global::SmartButler.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog;
+			global::Acr.UserDialogs.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert = global::SmartButler.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert;
+			global::Acr.UserDialogs.Resource.Style.Base_ThemeOverlay_AppCompat_Light = global::SmartButler.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Light;
+			global::Acr.UserDialogs.Resource.Style.Base_Theme_AppCompat = global::SmartButler.Droid.Resource.Style.Base_Theme_AppCompat;
+			global::Acr.UserDialogs.Resource.Style.Base_Theme_AppCompat_CompactMenu = global::SmartButler.Droid.Resource.Style.Base_Theme_AppCompat_CompactMenu;
+			global::Acr.UserDialogs.Resource.Style.Base_Theme_AppCompat_Dialog = global::SmartButler.Droid.Resource.Style.Base_Theme_AppCompat_Dialog;
+			global::Acr.UserDialogs.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge = global::SmartButler.Droid.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge;
+			global::Acr.UserDialogs.Resource.Style.Base_Theme_AppCompat_Dialog_Alert = global::SmartButler.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_Alert;
+			global::Acr.UserDialogs.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize = global::SmartButler.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize;
+			global::Acr.UserDialogs.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth = global::SmartButler.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth;
+			global::Acr.UserDialogs.Resource.Style.Base_Theme_AppCompat_Light = global::SmartButler.Droid.Resource.Style.Base_Theme_AppCompat_Light;
+			global::Acr.UserDialogs.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar = global::SmartButler.Droid.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar;
+			global::Acr.UserDialogs.Resource.Style.Base_Theme_AppCompat_Light_Dialog = global::SmartButler.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog;
+			global::Acr.UserDialogs.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge = global::SmartButler.Droid.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge;
+			global::Acr.UserDialogs.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert = global::SmartButler.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert;
+			global::Acr.UserDialogs.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize = global::SmartButler.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize;
+			global::Acr.UserDialogs.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth = global::SmartButler.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth;
+			global::Acr.UserDialogs.Resource.Style.Base_V11_ThemeOverlay_AppCompat_Dialog = global::SmartButler.Droid.Resource.Style.Base_V11_ThemeOverlay_AppCompat_Dialog;
+			global::Acr.UserDialogs.Resource.Style.Base_V11_Theme_AppCompat_Dialog = global::SmartButler.Droid.Resource.Style.Base_V11_Theme_AppCompat_Dialog;
+			global::Acr.UserDialogs.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog = global::SmartButler.Droid.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog;
+			global::Acr.UserDialogs.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView = global::SmartButler.Droid.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView;
+			global::Acr.UserDialogs.Resource.Style.Base_V12_Widget_AppCompat_EditText = global::SmartButler.Droid.Resource.Style.Base_V12_Widget_AppCompat_EditText;
+			global::Acr.UserDialogs.Resource.Style.Base_V14_Widget_Design_AppBarLayout = global::SmartButler.Droid.Resource.Style.Base_V14_Widget_Design_AppBarLayout;
+			global::Acr.UserDialogs.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog = global::SmartButler.Droid.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog;
+			global::Acr.UserDialogs.Resource.Style.Base_V21_Theme_AppCompat = global::SmartButler.Droid.Resource.Style.Base_V21_Theme_AppCompat;
+			global::Acr.UserDialogs.Resource.Style.Base_V21_Theme_AppCompat_Dialog = global::SmartButler.Droid.Resource.Style.Base_V21_Theme_AppCompat_Dialog;
+			global::Acr.UserDialogs.Resource.Style.Base_V21_Theme_AppCompat_Light = global::SmartButler.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light;
+			global::Acr.UserDialogs.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog = global::SmartButler.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog;
+			global::Acr.UserDialogs.Resource.Style.Base_V21_Widget_Design_AppBarLayout = global::SmartButler.Droid.Resource.Style.Base_V21_Widget_Design_AppBarLayout;
+			global::Acr.UserDialogs.Resource.Style.Base_V22_Theme_AppCompat = global::SmartButler.Droid.Resource.Style.Base_V22_Theme_AppCompat;
+			global::Acr.UserDialogs.Resource.Style.Base_V22_Theme_AppCompat_Light = global::SmartButler.Droid.Resource.Style.Base_V22_Theme_AppCompat_Light;
+			global::Acr.UserDialogs.Resource.Style.Base_V23_Theme_AppCompat = global::SmartButler.Droid.Resource.Style.Base_V23_Theme_AppCompat;
+			global::Acr.UserDialogs.Resource.Style.Base_V23_Theme_AppCompat_Light = global::SmartButler.Droid.Resource.Style.Base_V23_Theme_AppCompat_Light;
+			global::Acr.UserDialogs.Resource.Style.Base_V26_Theme_AppCompat = global::SmartButler.Droid.Resource.Style.Base_V26_Theme_AppCompat;
+			global::Acr.UserDialogs.Resource.Style.Base_V26_Theme_AppCompat_Light = global::SmartButler.Droid.Resource.Style.Base_V26_Theme_AppCompat_Light;
+			global::Acr.UserDialogs.Resource.Style.Base_V26_Widget_AppCompat_Toolbar = global::SmartButler.Droid.Resource.Style.Base_V26_Widget_AppCompat_Toolbar;
+			global::Acr.UserDialogs.Resource.Style.Base_V26_Widget_Design_AppBarLayout = global::SmartButler.Droid.Resource.Style.Base_V26_Widget_Design_AppBarLayout;
+			global::Acr.UserDialogs.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog = global::SmartButler.Droid.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog;
+			global::Acr.UserDialogs.Resource.Style.Base_V7_Theme_AppCompat = global::SmartButler.Droid.Resource.Style.Base_V7_Theme_AppCompat;
+			global::Acr.UserDialogs.Resource.Style.Base_V7_Theme_AppCompat_Dialog = global::SmartButler.Droid.Resource.Style.Base_V7_Theme_AppCompat_Dialog;
+			global::Acr.UserDialogs.Resource.Style.Base_V7_Theme_AppCompat_Light = global::SmartButler.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light;
+			global::Acr.UserDialogs.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog = global::SmartButler.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog;
+			global::Acr.UserDialogs.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView = global::SmartButler.Droid.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView;
+			global::Acr.UserDialogs.Resource.Style.Base_V7_Widget_AppCompat_EditText = global::SmartButler.Droid.Resource.Style.Base_V7_Widget_AppCompat_EditText;
+			global::Acr.UserDialogs.Resource.Style.Base_V7_Widget_AppCompat_Toolbar = global::SmartButler.Droid.Resource.Style.Base_V7_Widget_AppCompat_Toolbar;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_ActionBar = global::SmartButler.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid = global::SmartButler.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar = global::SmartButler.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText = global::SmartButler.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView = global::SmartButler.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_ActionButton = global::SmartButler.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode = global::SmartButler.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow = global::SmartButler.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_ActionMode = global::SmartButler.Droid.Resource.Style.Base_Widget_AppCompat_ActionMode;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_ActivityChooserView = global::SmartButler.Droid.Resource.Style.Base_Widget_AppCompat_ActivityChooserView;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView = global::SmartButler.Droid.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_Button = global::SmartButler.Droid.Resource.Style.Base_Widget_AppCompat_Button;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_ButtonBar = global::SmartButler.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog = global::SmartButler.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_Button_Borderless = global::SmartButler.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored = global::SmartButler.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog = global::SmartButler.Droid.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_Button_Colored = global::SmartButler.Droid.Resource.Style.Base_Widget_AppCompat_Button_Colored;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_Button_Small = global::SmartButler.Droid.Resource.Style.Base_Widget_AppCompat_Button_Small;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox = global::SmartButler.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton = global::SmartButler.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch = global::SmartButler.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle = global::SmartButler.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common = global::SmartButler.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner = global::SmartButler.Droid.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_EditText = global::SmartButler.Droid.Resource.Style.Base_Widget_AppCompat_EditText;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_ImageButton = global::SmartButler.Droid.Resource.Style.Base_Widget_AppCompat_ImageButton;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_Light_ActionBar = global::SmartButler.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid = global::SmartButler.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar = global::SmartButler.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText = global::SmartButler.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::SmartButler.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView = global::SmartButler.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu = global::SmartButler.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow = global::SmartButler.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_ListMenuView = global::SmartButler.Droid.Resource.Style.Base_Widget_AppCompat_ListMenuView;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_ListPopupWindow = global::SmartButler.Droid.Resource.Style.Base_Widget_AppCompat_ListPopupWindow;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_ListView = global::SmartButler.Droid.Resource.Style.Base_Widget_AppCompat_ListView;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_ListView_DropDown = global::SmartButler.Droid.Resource.Style.Base_Widget_AppCompat_ListView_DropDown;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_ListView_Menu = global::SmartButler.Droid.Resource.Style.Base_Widget_AppCompat_ListView_Menu;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_PopupMenu = global::SmartButler.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow = global::SmartButler.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_PopupWindow = global::SmartButler.Droid.Resource.Style.Base_Widget_AppCompat_PopupWindow;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_ProgressBar = global::SmartButler.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal = global::SmartButler.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_RatingBar = global::SmartButler.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator = global::SmartButler.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_RatingBar_Small = global::SmartButler.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Small;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_SearchView = global::SmartButler.Droid.Resource.Style.Base_Widget_AppCompat_SearchView;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar = global::SmartButler.Droid.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_SeekBar = global::SmartButler.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete = global::SmartButler.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_Spinner = global::SmartButler.Droid.Resource.Style.Base_Widget_AppCompat_Spinner;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined = global::SmartButler.Droid.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem = global::SmartButler.Droid.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_Toolbar = global::SmartButler.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::SmartButler.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_Design_AppBarLayout = global::SmartButler.Droid.Resource.Style.Base_Widget_Design_AppBarLayout;
+			global::Acr.UserDialogs.Resource.Style.Base_Widget_Design_TabLayout = global::SmartButler.Droid.Resource.Style.Base_Widget_Design_TabLayout;
+			global::Acr.UserDialogs.Resource.Style.Platform_AppCompat = global::SmartButler.Droid.Resource.Style.Platform_AppCompat;
+			global::Acr.UserDialogs.Resource.Style.Platform_AppCompat_Light = global::SmartButler.Droid.Resource.Style.Platform_AppCompat_Light;
+			global::Acr.UserDialogs.Resource.Style.Platform_ThemeOverlay_AppCompat = global::SmartButler.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat;
+			global::Acr.UserDialogs.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark = global::SmartButler.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark;
+			global::Acr.UserDialogs.Resource.Style.Platform_ThemeOverlay_AppCompat_Light = global::SmartButler.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Light;
+			global::Acr.UserDialogs.Resource.Style.Platform_V11_AppCompat = global::SmartButler.Droid.Resource.Style.Platform_V11_AppCompat;
+			global::Acr.UserDialogs.Resource.Style.Platform_V11_AppCompat_Light = global::SmartButler.Droid.Resource.Style.Platform_V11_AppCompat_Light;
+			global::Acr.UserDialogs.Resource.Style.Platform_V14_AppCompat = global::SmartButler.Droid.Resource.Style.Platform_V14_AppCompat;
+			global::Acr.UserDialogs.Resource.Style.Platform_V14_AppCompat_Light = global::SmartButler.Droid.Resource.Style.Platform_V14_AppCompat_Light;
+			global::Acr.UserDialogs.Resource.Style.Platform_V21_AppCompat = global::SmartButler.Droid.Resource.Style.Platform_V21_AppCompat;
+			global::Acr.UserDialogs.Resource.Style.Platform_V21_AppCompat_Light = global::SmartButler.Droid.Resource.Style.Platform_V21_AppCompat_Light;
+			global::Acr.UserDialogs.Resource.Style.Platform_V25_AppCompat = global::SmartButler.Droid.Resource.Style.Platform_V25_AppCompat;
+			global::Acr.UserDialogs.Resource.Style.Platform_V25_AppCompat_Light = global::SmartButler.Droid.Resource.Style.Platform_V25_AppCompat_Light;
+			global::Acr.UserDialogs.Resource.Style.Platform_Widget_AppCompat_Spinner = global::SmartButler.Droid.Resource.Style.Platform_Widget_AppCompat_Spinner;
+			global::Acr.UserDialogs.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat = global::SmartButler.Droid.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat;
+			global::Acr.UserDialogs.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem = global::SmartButler.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem;
+			global::Acr.UserDialogs.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon = global::SmartButler.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon;
+			global::Acr.UserDialogs.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem = global::SmartButler.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem;
+			global::Acr.UserDialogs.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup = global::SmartButler.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup;
+			global::Acr.UserDialogs.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = global::SmartButler.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text;
+			global::Acr.UserDialogs.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon = global::SmartButler.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon;
+			global::Acr.UserDialogs.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown = global::SmartButler.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown;
+			global::Acr.UserDialogs.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = global::SmartButler.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1;
+			global::Acr.UserDialogs.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = global::SmartButler.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2;
+			global::Acr.UserDialogs.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query = global::SmartButler.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query;
+			global::Acr.UserDialogs.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text = global::SmartButler.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text;
+			global::Acr.UserDialogs.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton = global::SmartButler.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton;
+			global::Acr.UserDialogs.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = global::SmartButler.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat = global::SmartButler.Droid.Resource.Style.TextAppearance_AppCompat;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Body1 = global::SmartButler.Droid.Resource.Style.TextAppearance_AppCompat_Body1;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Body2 = global::SmartButler.Droid.Resource.Style.TextAppearance_AppCompat_Body2;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Button = global::SmartButler.Droid.Resource.Style.TextAppearance_AppCompat_Button;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Caption = global::SmartButler.Droid.Resource.Style.TextAppearance_AppCompat_Caption;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Display1 = global::SmartButler.Droid.Resource.Style.TextAppearance_AppCompat_Display1;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Display2 = global::SmartButler.Droid.Resource.Style.TextAppearance_AppCompat_Display2;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Display3 = global::SmartButler.Droid.Resource.Style.TextAppearance_AppCompat_Display3;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Display4 = global::SmartButler.Droid.Resource.Style.TextAppearance_AppCompat_Display4;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Headline = global::SmartButler.Droid.Resource.Style.TextAppearance_AppCompat_Headline;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Inverse = global::SmartButler.Droid.Resource.Style.TextAppearance_AppCompat_Inverse;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Large = global::SmartButler.Droid.Resource.Style.TextAppearance_AppCompat_Large;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Large_Inverse = global::SmartButler.Droid.Resource.Style.TextAppearance_AppCompat_Large_Inverse;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle = global::SmartButler.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title = global::SmartButler.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::SmartButler.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::SmartButler.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Medium = global::SmartButler.Droid.Resource.Style.TextAppearance_AppCompat_Medium;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Medium_Inverse = global::SmartButler.Droid.Resource.Style.TextAppearance_AppCompat_Medium_Inverse;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Menu = global::SmartButler.Droid.Resource.Style.TextAppearance_AppCompat_Menu;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle = global::SmartButler.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_SearchResult_Title = global::SmartButler.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Title;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Small = global::SmartButler.Droid.Resource.Style.TextAppearance_AppCompat_Small;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Small_Inverse = global::SmartButler.Droid.Resource.Style.TextAppearance_AppCompat_Small_Inverse;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Subhead = global::SmartButler.Droid.Resource.Style.TextAppearance_AppCompat_Subhead;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse = global::SmartButler.Droid.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Title = global::SmartButler.Droid.Resource.Style.TextAppearance_AppCompat_Title;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Title_Inverse = global::SmartButler.Droid.Resource.Style.TextAppearance_AppCompat_Title_Inverse;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Tooltip = global::SmartButler.Droid.Resource.Style.TextAppearance_AppCompat_Tooltip;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu = global::SmartButler.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::SmartButler.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::SmartButler.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title = global::SmartButler.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::SmartButler.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::SmartButler.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse = global::SmartButler.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title = global::SmartButler.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse = global::SmartButler.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Widget_Button = global::SmartButler.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Widget_Button_Borderless_Colored = global::SmartButler.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Borderless_Colored;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Widget_Button_Colored = global::SmartButler.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Colored;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse = global::SmartButler.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem = global::SmartButler.Droid.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header = global::SmartButler.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large = global::SmartButler.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small = global::SmartButler.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Widget_Switch = global::SmartButler.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Switch;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::SmartButler.Droid.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_Compat_Notification = global::SmartButler.Droid.Resource.Style.TextAppearance_Compat_Notification;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_Compat_Notification_Info = global::SmartButler.Droid.Resource.Style.TextAppearance_Compat_Notification_Info;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_Compat_Notification_Info_Media = global::SmartButler.Droid.Resource.Style.TextAppearance_Compat_Notification_Info_Media;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_Compat_Notification_Line2 = global::SmartButler.Droid.Resource.Style.TextAppearance_Compat_Notification_Line2;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_Compat_Notification_Line2_Media = global::SmartButler.Droid.Resource.Style.TextAppearance_Compat_Notification_Line2_Media;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_Compat_Notification_Media = global::SmartButler.Droid.Resource.Style.TextAppearance_Compat_Notification_Media;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_Compat_Notification_Time = global::SmartButler.Droid.Resource.Style.TextAppearance_Compat_Notification_Time;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_Compat_Notification_Time_Media = global::SmartButler.Droid.Resource.Style.TextAppearance_Compat_Notification_Time_Media;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_Compat_Notification_Title = global::SmartButler.Droid.Resource.Style.TextAppearance_Compat_Notification_Title;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_Compat_Notification_Title_Media = global::SmartButler.Droid.Resource.Style.TextAppearance_Compat_Notification_Title_Media;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded = global::SmartButler.Droid.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_Design_Counter = global::SmartButler.Droid.Resource.Style.TextAppearance_Design_Counter;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_Design_Counter_Overflow = global::SmartButler.Droid.Resource.Style.TextAppearance_Design_Counter_Overflow;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_Design_Error = global::SmartButler.Droid.Resource.Style.TextAppearance_Design_Error;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_Design_Hint = global::SmartButler.Droid.Resource.Style.TextAppearance_Design_Hint;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_Design_Snackbar_Message = global::SmartButler.Droid.Resource.Style.TextAppearance_Design_Snackbar_Message;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_Design_Tab = global::SmartButler.Droid.Resource.Style.TextAppearance_Design_Tab;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::SmartButler.Droid.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::SmartButler.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::Acr.UserDialogs.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title = global::SmartButler.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::Acr.UserDialogs.Resource.Style.ThemeOverlay_AppCompat = global::SmartButler.Droid.Resource.Style.ThemeOverlay_AppCompat;
+			global::Acr.UserDialogs.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::SmartButler.Droid.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
+			global::Acr.UserDialogs.Resource.Style.ThemeOverlay_AppCompat_Dark = global::SmartButler.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark;
+			global::Acr.UserDialogs.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar = global::SmartButler.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::Acr.UserDialogs.Resource.Style.ThemeOverlay_AppCompat_Dialog = global::SmartButler.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog;
+			global::Acr.UserDialogs.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert = global::SmartButler.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert;
+			global::Acr.UserDialogs.Resource.Style.ThemeOverlay_AppCompat_Light = global::SmartButler.Droid.Resource.Style.ThemeOverlay_AppCompat_Light;
+			global::Acr.UserDialogs.Resource.Style.Theme_AppCompat = global::SmartButler.Droid.Resource.Style.Theme_AppCompat;
+			global::Acr.UserDialogs.Resource.Style.Theme_AppCompat_CompactMenu = global::SmartButler.Droid.Resource.Style.Theme_AppCompat_CompactMenu;
+			global::Acr.UserDialogs.Resource.Style.Theme_AppCompat_DayNight = global::SmartButler.Droid.Resource.Style.Theme_AppCompat_DayNight;
+			global::Acr.UserDialogs.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar = global::SmartButler.Droid.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar;
+			global::Acr.UserDialogs.Resource.Style.Theme_AppCompat_DayNight_Dialog = global::SmartButler.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog;
+			global::Acr.UserDialogs.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge = global::SmartButler.Droid.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge;
+			global::Acr.UserDialogs.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert = global::SmartButler.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert;
+			global::Acr.UserDialogs.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth = global::SmartButler.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth;
+			global::Acr.UserDialogs.Resource.Style.Theme_AppCompat_DayNight_NoActionBar = global::SmartButler.Droid.Resource.Style.Theme_AppCompat_DayNight_NoActionBar;
+			global::Acr.UserDialogs.Resource.Style.Theme_AppCompat_Dialog = global::SmartButler.Droid.Resource.Style.Theme_AppCompat_Dialog;
+			global::Acr.UserDialogs.Resource.Style.Theme_AppCompat_DialogWhenLarge = global::SmartButler.Droid.Resource.Style.Theme_AppCompat_DialogWhenLarge;
+			global::Acr.UserDialogs.Resource.Style.Theme_AppCompat_Dialog_Alert = global::SmartButler.Droid.Resource.Style.Theme_AppCompat_Dialog_Alert;
+			global::Acr.UserDialogs.Resource.Style.Theme_AppCompat_Dialog_MinWidth = global::SmartButler.Droid.Resource.Style.Theme_AppCompat_Dialog_MinWidth;
+			global::Acr.UserDialogs.Resource.Style.Theme_AppCompat_Light = global::SmartButler.Droid.Resource.Style.Theme_AppCompat_Light;
+			global::Acr.UserDialogs.Resource.Style.Theme_AppCompat_Light_DarkActionBar = global::SmartButler.Droid.Resource.Style.Theme_AppCompat_Light_DarkActionBar;
+			global::Acr.UserDialogs.Resource.Style.Theme_AppCompat_Light_Dialog = global::SmartButler.Droid.Resource.Style.Theme_AppCompat_Light_Dialog;
+			global::Acr.UserDialogs.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge = global::SmartButler.Droid.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge;
+			global::Acr.UserDialogs.Resource.Style.Theme_AppCompat_Light_Dialog_Alert = global::SmartButler.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_Alert;
+			global::Acr.UserDialogs.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth = global::SmartButler.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth;
+			global::Acr.UserDialogs.Resource.Style.Theme_AppCompat_Light_NoActionBar = global::SmartButler.Droid.Resource.Style.Theme_AppCompat_Light_NoActionBar;
+			global::Acr.UserDialogs.Resource.Style.Theme_AppCompat_NoActionBar = global::SmartButler.Droid.Resource.Style.Theme_AppCompat_NoActionBar;
+			global::Acr.UserDialogs.Resource.Style.Theme_Design = global::SmartButler.Droid.Resource.Style.Theme_Design;
+			global::Acr.UserDialogs.Resource.Style.Theme_Design_BottomSheetDialog = global::SmartButler.Droid.Resource.Style.Theme_Design_BottomSheetDialog;
+			global::Acr.UserDialogs.Resource.Style.Theme_Design_Light = global::SmartButler.Droid.Resource.Style.Theme_Design_Light;
+			global::Acr.UserDialogs.Resource.Style.Theme_Design_Light_BottomSheetDialog = global::SmartButler.Droid.Resource.Style.Theme_Design_Light_BottomSheetDialog;
+			global::Acr.UserDialogs.Resource.Style.Theme_Design_Light_NoActionBar = global::SmartButler.Droid.Resource.Style.Theme_Design_Light_NoActionBar;
+			global::Acr.UserDialogs.Resource.Style.Theme_Design_NoActionBar = global::SmartButler.Droid.Resource.Style.Theme_Design_NoActionBar;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_ActionBar = global::SmartButler.Droid.Resource.Style.Widget_AppCompat_ActionBar;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_ActionBar_Solid = global::SmartButler.Droid.Resource.Style.Widget_AppCompat_ActionBar_Solid;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_ActionBar_TabBar = global::SmartButler.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabBar;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_ActionBar_TabText = global::SmartButler.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabText;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_ActionBar_TabView = global::SmartButler.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabView;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_ActionButton = global::SmartButler.Droid.Resource.Style.Widget_AppCompat_ActionButton;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_ActionButton_CloseMode = global::SmartButler.Droid.Resource.Style.Widget_AppCompat_ActionButton_CloseMode;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_ActionButton_Overflow = global::SmartButler.Droid.Resource.Style.Widget_AppCompat_ActionButton_Overflow;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_ActionMode = global::SmartButler.Droid.Resource.Style.Widget_AppCompat_ActionMode;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_ActivityChooserView = global::SmartButler.Droid.Resource.Style.Widget_AppCompat_ActivityChooserView;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_AutoCompleteTextView = global::SmartButler.Droid.Resource.Style.Widget_AppCompat_AutoCompleteTextView;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_Button = global::SmartButler.Droid.Resource.Style.Widget_AppCompat_Button;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_ButtonBar = global::SmartButler.Droid.Resource.Style.Widget_AppCompat_ButtonBar;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog = global::SmartButler.Droid.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_Button_Borderless = global::SmartButler.Droid.Resource.Style.Widget_AppCompat_Button_Borderless;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_Button_Borderless_Colored = global::SmartButler.Droid.Resource.Style.Widget_AppCompat_Button_Borderless_Colored;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog = global::SmartButler.Droid.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_Button_Colored = global::SmartButler.Droid.Resource.Style.Widget_AppCompat_Button_Colored;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_Button_Small = global::SmartButler.Droid.Resource.Style.Widget_AppCompat_Button_Small;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox = global::SmartButler.Droid.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton = global::SmartButler.Droid.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_CompoundButton_Switch = global::SmartButler.Droid.Resource.Style.Widget_AppCompat_CompoundButton_Switch;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_DrawerArrowToggle = global::SmartButler.Droid.Resource.Style.Widget_AppCompat_DrawerArrowToggle;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_DropDownItem_Spinner = global::SmartButler.Droid.Resource.Style.Widget_AppCompat_DropDownItem_Spinner;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_EditText = global::SmartButler.Droid.Resource.Style.Widget_AppCompat_EditText;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_ImageButton = global::SmartButler.Droid.Resource.Style.Widget_AppCompat_ImageButton;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_Light_ActionBar = global::SmartButler.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid = global::SmartButler.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse = global::SmartButler.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar = global::SmartButler.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse = global::SmartButler.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText = global::SmartButler.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::SmartButler.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView = global::SmartButler.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse = global::SmartButler.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_Light_ActionButton = global::SmartButler.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode = global::SmartButler.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow = global::SmartButler.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse = global::SmartButler.Droid.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_Light_ActivityChooserView = global::SmartButler.Droid.Resource.Style.Widget_AppCompat_Light_ActivityChooserView;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView = global::SmartButler.Droid.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner = global::SmartButler.Droid.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_Light_ListPopupWindow = global::SmartButler.Droid.Resource.Style.Widget_AppCompat_Light_ListPopupWindow;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_Light_ListView_DropDown = global::SmartButler.Droid.Resource.Style.Widget_AppCompat_Light_ListView_DropDown;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_Light_PopupMenu = global::SmartButler.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow = global::SmartButler.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_Light_SearchView = global::SmartButler.Droid.Resource.Style.Widget_AppCompat_Light_SearchView;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar = global::SmartButler.Droid.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_ListMenuView = global::SmartButler.Droid.Resource.Style.Widget_AppCompat_ListMenuView;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_ListPopupWindow = global::SmartButler.Droid.Resource.Style.Widget_AppCompat_ListPopupWindow;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_ListView = global::SmartButler.Droid.Resource.Style.Widget_AppCompat_ListView;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_ListView_DropDown = global::SmartButler.Droid.Resource.Style.Widget_AppCompat_ListView_DropDown;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_ListView_Menu = global::SmartButler.Droid.Resource.Style.Widget_AppCompat_ListView_Menu;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_PopupMenu = global::SmartButler.Droid.Resource.Style.Widget_AppCompat_PopupMenu;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_PopupMenu_Overflow = global::SmartButler.Droid.Resource.Style.Widget_AppCompat_PopupMenu_Overflow;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_PopupWindow = global::SmartButler.Droid.Resource.Style.Widget_AppCompat_PopupWindow;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_ProgressBar = global::SmartButler.Droid.Resource.Style.Widget_AppCompat_ProgressBar;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal = global::SmartButler.Droid.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_RatingBar = global::SmartButler.Droid.Resource.Style.Widget_AppCompat_RatingBar;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_RatingBar_Indicator = global::SmartButler.Droid.Resource.Style.Widget_AppCompat_RatingBar_Indicator;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_RatingBar_Small = global::SmartButler.Droid.Resource.Style.Widget_AppCompat_RatingBar_Small;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_SearchView = global::SmartButler.Droid.Resource.Style.Widget_AppCompat_SearchView;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_SearchView_ActionBar = global::SmartButler.Droid.Resource.Style.Widget_AppCompat_SearchView_ActionBar;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_SeekBar = global::SmartButler.Droid.Resource.Style.Widget_AppCompat_SeekBar;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_SeekBar_Discrete = global::SmartButler.Droid.Resource.Style.Widget_AppCompat_SeekBar_Discrete;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_Spinner = global::SmartButler.Droid.Resource.Style.Widget_AppCompat_Spinner;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_Spinner_DropDown = global::SmartButler.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar = global::SmartButler.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_Spinner_Underlined = global::SmartButler.Droid.Resource.Style.Widget_AppCompat_Spinner_Underlined;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_TextView_SpinnerItem = global::SmartButler.Droid.Resource.Style.Widget_AppCompat_TextView_SpinnerItem;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_Toolbar = global::SmartButler.Droid.Resource.Style.Widget_AppCompat_Toolbar;
+			global::Acr.UserDialogs.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation = global::SmartButler.Droid.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation;
+			global::Acr.UserDialogs.Resource.Style.Widget_Compat_NotificationActionContainer = global::SmartButler.Droid.Resource.Style.Widget_Compat_NotificationActionContainer;
+			global::Acr.UserDialogs.Resource.Style.Widget_Compat_NotificationActionText = global::SmartButler.Droid.Resource.Style.Widget_Compat_NotificationActionText;
+			global::Acr.UserDialogs.Resource.Style.Widget_Design_AppBarLayout = global::SmartButler.Droid.Resource.Style.Widget_Design_AppBarLayout;
+			global::Acr.UserDialogs.Resource.Style.Widget_Design_BottomNavigationView = global::SmartButler.Droid.Resource.Style.Widget_Design_BottomNavigationView;
+			global::Acr.UserDialogs.Resource.Style.Widget_Design_BottomSheet_Modal = global::SmartButler.Droid.Resource.Style.Widget_Design_BottomSheet_Modal;
+			global::Acr.UserDialogs.Resource.Style.Widget_Design_CollapsingToolbar = global::SmartButler.Droid.Resource.Style.Widget_Design_CollapsingToolbar;
+			global::Acr.UserDialogs.Resource.Style.Widget_Design_CoordinatorLayout = global::SmartButler.Droid.Resource.Style.Widget_Design_CoordinatorLayout;
+			global::Acr.UserDialogs.Resource.Style.Widget_Design_FloatingActionButton = global::SmartButler.Droid.Resource.Style.Widget_Design_FloatingActionButton;
+			global::Acr.UserDialogs.Resource.Style.Widget_Design_NavigationView = global::SmartButler.Droid.Resource.Style.Widget_Design_NavigationView;
+			global::Acr.UserDialogs.Resource.Style.Widget_Design_ScrimInsetsFrameLayout = global::SmartButler.Droid.Resource.Style.Widget_Design_ScrimInsetsFrameLayout;
+			global::Acr.UserDialogs.Resource.Style.Widget_Design_Snackbar = global::SmartButler.Droid.Resource.Style.Widget_Design_Snackbar;
+			global::Acr.UserDialogs.Resource.Style.Widget_Design_TabLayout = global::SmartButler.Droid.Resource.Style.Widget_Design_TabLayout;
+			global::Acr.UserDialogs.Resource.Style.Widget_Design_TextInputLayout = global::SmartButler.Droid.Resource.Style.Widget_Design_TextInputLayout;
+			global::Acr.UserDialogs.Resource.Styleable.ActionBar = global::SmartButler.Droid.Resource.Styleable.ActionBar;
+			global::Acr.UserDialogs.Resource.Styleable.ActionBarLayout = global::SmartButler.Droid.Resource.Styleable.ActionBarLayout;
+			global::Acr.UserDialogs.Resource.Styleable.ActionBarLayout_android_layout_gravity = global::SmartButler.Droid.Resource.Styleable.ActionBarLayout_android_layout_gravity;
+			global::Acr.UserDialogs.Resource.Styleable.ActionBar_background = global::SmartButler.Droid.Resource.Styleable.ActionBar_background;
+			global::Acr.UserDialogs.Resource.Styleable.ActionBar_backgroundSplit = global::SmartButler.Droid.Resource.Styleable.ActionBar_backgroundSplit;
+			global::Acr.UserDialogs.Resource.Styleable.ActionBar_backgroundStacked = global::SmartButler.Droid.Resource.Styleable.ActionBar_backgroundStacked;
+			global::Acr.UserDialogs.Resource.Styleable.ActionBar_contentInsetEnd = global::SmartButler.Droid.Resource.Styleable.ActionBar_contentInsetEnd;
+			global::Acr.UserDialogs.Resource.Styleable.ActionBar_contentInsetEndWithActions = global::SmartButler.Droid.Resource.Styleable.ActionBar_contentInsetEndWithActions;
+			global::Acr.UserDialogs.Resource.Styleable.ActionBar_contentInsetLeft = global::SmartButler.Droid.Resource.Styleable.ActionBar_contentInsetLeft;
+			global::Acr.UserDialogs.Resource.Styleable.ActionBar_contentInsetRight = global::SmartButler.Droid.Resource.Styleable.ActionBar_contentInsetRight;
+			global::Acr.UserDialogs.Resource.Styleable.ActionBar_contentInsetStart = global::SmartButler.Droid.Resource.Styleable.ActionBar_contentInsetStart;
+			global::Acr.UserDialogs.Resource.Styleable.ActionBar_contentInsetStartWithNavigation = global::SmartButler.Droid.Resource.Styleable.ActionBar_contentInsetStartWithNavigation;
+			global::Acr.UserDialogs.Resource.Styleable.ActionBar_customNavigationLayout = global::SmartButler.Droid.Resource.Styleable.ActionBar_customNavigationLayout;
+			global::Acr.UserDialogs.Resource.Styleable.ActionBar_displayOptions = global::SmartButler.Droid.Resource.Styleable.ActionBar_displayOptions;
+			global::Acr.UserDialogs.Resource.Styleable.ActionBar_divider = global::SmartButler.Droid.Resource.Styleable.ActionBar_divider;
+			global::Acr.UserDialogs.Resource.Styleable.ActionBar_elevation = global::SmartButler.Droid.Resource.Styleable.ActionBar_elevation;
+			global::Acr.UserDialogs.Resource.Styleable.ActionBar_height = global::SmartButler.Droid.Resource.Styleable.ActionBar_height;
+			global::Acr.UserDialogs.Resource.Styleable.ActionBar_hideOnContentScroll = global::SmartButler.Droid.Resource.Styleable.ActionBar_hideOnContentScroll;
+			global::Acr.UserDialogs.Resource.Styleable.ActionBar_homeAsUpIndicator = global::SmartButler.Droid.Resource.Styleable.ActionBar_homeAsUpIndicator;
+			global::Acr.UserDialogs.Resource.Styleable.ActionBar_homeLayout = global::SmartButler.Droid.Resource.Styleable.ActionBar_homeLayout;
+			global::Acr.UserDialogs.Resource.Styleable.ActionBar_icon = global::SmartButler.Droid.Resource.Styleable.ActionBar_icon;
+			global::Acr.UserDialogs.Resource.Styleable.ActionBar_indeterminateProgressStyle = global::SmartButler.Droid.Resource.Styleable.ActionBar_indeterminateProgressStyle;
+			global::Acr.UserDialogs.Resource.Styleable.ActionBar_itemPadding = global::SmartButler.Droid.Resource.Styleable.ActionBar_itemPadding;
+			global::Acr.UserDialogs.Resource.Styleable.ActionBar_logo = global::SmartButler.Droid.Resource.Styleable.ActionBar_logo;
+			global::Acr.UserDialogs.Resource.Styleable.ActionBar_navigationMode = global::SmartButler.Droid.Resource.Styleable.ActionBar_navigationMode;
+			global::Acr.UserDialogs.Resource.Styleable.ActionBar_popupTheme = global::SmartButler.Droid.Resource.Styleable.ActionBar_popupTheme;
+			global::Acr.UserDialogs.Resource.Styleable.ActionBar_progressBarPadding = global::SmartButler.Droid.Resource.Styleable.ActionBar_progressBarPadding;
+			global::Acr.UserDialogs.Resource.Styleable.ActionBar_progressBarStyle = global::SmartButler.Droid.Resource.Styleable.ActionBar_progressBarStyle;
+			global::Acr.UserDialogs.Resource.Styleable.ActionBar_subtitle = global::SmartButler.Droid.Resource.Styleable.ActionBar_subtitle;
+			global::Acr.UserDialogs.Resource.Styleable.ActionBar_subtitleTextStyle = global::SmartButler.Droid.Resource.Styleable.ActionBar_subtitleTextStyle;
+			global::Acr.UserDialogs.Resource.Styleable.ActionBar_title = global::SmartButler.Droid.Resource.Styleable.ActionBar_title;
+			global::Acr.UserDialogs.Resource.Styleable.ActionBar_titleTextStyle = global::SmartButler.Droid.Resource.Styleable.ActionBar_titleTextStyle;
+			global::Acr.UserDialogs.Resource.Styleable.ActionMenuItemView = global::SmartButler.Droid.Resource.Styleable.ActionMenuItemView;
+			global::Acr.UserDialogs.Resource.Styleable.ActionMenuItemView_android_minWidth = global::SmartButler.Droid.Resource.Styleable.ActionMenuItemView_android_minWidth;
+			global::Acr.UserDialogs.Resource.Styleable.ActionMenuView = global::SmartButler.Droid.Resource.Styleable.ActionMenuView;
+			global::Acr.UserDialogs.Resource.Styleable.ActionMode = global::SmartButler.Droid.Resource.Styleable.ActionMode;
+			global::Acr.UserDialogs.Resource.Styleable.ActionMode_background = global::SmartButler.Droid.Resource.Styleable.ActionMode_background;
+			global::Acr.UserDialogs.Resource.Styleable.ActionMode_backgroundSplit = global::SmartButler.Droid.Resource.Styleable.ActionMode_backgroundSplit;
+			global::Acr.UserDialogs.Resource.Styleable.ActionMode_closeItemLayout = global::SmartButler.Droid.Resource.Styleable.ActionMode_closeItemLayout;
+			global::Acr.UserDialogs.Resource.Styleable.ActionMode_height = global::SmartButler.Droid.Resource.Styleable.ActionMode_height;
+			global::Acr.UserDialogs.Resource.Styleable.ActionMode_subtitleTextStyle = global::SmartButler.Droid.Resource.Styleable.ActionMode_subtitleTextStyle;
+			global::Acr.UserDialogs.Resource.Styleable.ActionMode_titleTextStyle = global::SmartButler.Droid.Resource.Styleable.ActionMode_titleTextStyle;
+			global::Acr.UserDialogs.Resource.Styleable.ActivityChooserView = global::SmartButler.Droid.Resource.Styleable.ActivityChooserView;
+			global::Acr.UserDialogs.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable = global::SmartButler.Droid.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable;
+			global::Acr.UserDialogs.Resource.Styleable.ActivityChooserView_initialActivityCount = global::SmartButler.Droid.Resource.Styleable.ActivityChooserView_initialActivityCount;
+			global::Acr.UserDialogs.Resource.Styleable.AlertDialog = global::SmartButler.Droid.Resource.Styleable.AlertDialog;
+			global::Acr.UserDialogs.Resource.Styleable.AlertDialog_android_layout = global::SmartButler.Droid.Resource.Styleable.AlertDialog_android_layout;
+			global::Acr.UserDialogs.Resource.Styleable.AlertDialog_buttonPanelSideLayout = global::SmartButler.Droid.Resource.Styleable.AlertDialog_buttonPanelSideLayout;
+			global::Acr.UserDialogs.Resource.Styleable.AlertDialog_listItemLayout = global::SmartButler.Droid.Resource.Styleable.AlertDialog_listItemLayout;
+			global::Acr.UserDialogs.Resource.Styleable.AlertDialog_listLayout = global::SmartButler.Droid.Resource.Styleable.AlertDialog_listLayout;
+			global::Acr.UserDialogs.Resource.Styleable.AlertDialog_multiChoiceItemLayout = global::SmartButler.Droid.Resource.Styleable.AlertDialog_multiChoiceItemLayout;
+			global::Acr.UserDialogs.Resource.Styleable.AlertDialog_showTitle = global::SmartButler.Droid.Resource.Styleable.AlertDialog_showTitle;
+			global::Acr.UserDialogs.Resource.Styleable.AlertDialog_singleChoiceItemLayout = global::SmartButler.Droid.Resource.Styleable.AlertDialog_singleChoiceItemLayout;
+			global::Acr.UserDialogs.Resource.Styleable.AppBarLayout = global::SmartButler.Droid.Resource.Styleable.AppBarLayout;
+			global::Acr.UserDialogs.Resource.Styleable.AppBarLayoutStates = global::SmartButler.Droid.Resource.Styleable.AppBarLayoutStates;
+			global::Acr.UserDialogs.Resource.Styleable.AppBarLayoutStates_state_collapsed = global::SmartButler.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsed;
+			global::Acr.UserDialogs.Resource.Styleable.AppBarLayoutStates_state_collapsible = global::SmartButler.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsible;
+			global::Acr.UserDialogs.Resource.Styleable.AppBarLayout_android_background = global::SmartButler.Droid.Resource.Styleable.AppBarLayout_android_background;
+			global::Acr.UserDialogs.Resource.Styleable.AppBarLayout_android_keyboardNavigationCluster = global::SmartButler.Droid.Resource.Styleable.AppBarLayout_android_keyboardNavigationCluster;
+			global::Acr.UserDialogs.Resource.Styleable.AppBarLayout_android_touchscreenBlocksFocus = global::SmartButler.Droid.Resource.Styleable.AppBarLayout_android_touchscreenBlocksFocus;
+			global::Acr.UserDialogs.Resource.Styleable.AppBarLayout_elevation = global::SmartButler.Droid.Resource.Styleable.AppBarLayout_elevation;
+			global::Acr.UserDialogs.Resource.Styleable.AppBarLayout_expanded = global::SmartButler.Droid.Resource.Styleable.AppBarLayout_expanded;
+			global::Acr.UserDialogs.Resource.Styleable.AppBarLayout_Layout = global::SmartButler.Droid.Resource.Styleable.AppBarLayout_Layout;
+			global::Acr.UserDialogs.Resource.Styleable.AppBarLayout_Layout_layout_scrollFlags = global::SmartButler.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollFlags;
+			global::Acr.UserDialogs.Resource.Styleable.AppBarLayout_Layout_layout_scrollInterpolator = global::SmartButler.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollInterpolator;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatImageView = global::SmartButler.Droid.Resource.Styleable.AppCompatImageView;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatImageView_android_src = global::SmartButler.Droid.Resource.Styleable.AppCompatImageView_android_src;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatImageView_srcCompat = global::SmartButler.Droid.Resource.Styleable.AppCompatImageView_srcCompat;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatImageView_tint = global::SmartButler.Droid.Resource.Styleable.AppCompatImageView_tint;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatImageView_tintMode = global::SmartButler.Droid.Resource.Styleable.AppCompatImageView_tintMode;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatSeekBar = global::SmartButler.Droid.Resource.Styleable.AppCompatSeekBar;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatSeekBar_android_thumb = global::SmartButler.Droid.Resource.Styleable.AppCompatSeekBar_android_thumb;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatSeekBar_tickMark = global::SmartButler.Droid.Resource.Styleable.AppCompatSeekBar_tickMark;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatSeekBar_tickMarkTint = global::SmartButler.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTint;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode = global::SmartButler.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTextHelper = global::SmartButler.Droid.Resource.Styleable.AppCompatTextHelper;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTextHelper_android_drawableBottom = global::SmartButler.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableBottom;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTextHelper_android_drawableEnd = global::SmartButler.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableEnd;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTextHelper_android_drawableLeft = global::SmartButler.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableLeft;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTextHelper_android_drawableRight = global::SmartButler.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableRight;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTextHelper_android_drawableStart = global::SmartButler.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableStart;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTextHelper_android_drawableTop = global::SmartButler.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableTop;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTextHelper_android_textAppearance = global::SmartButler.Droid.Resource.Styleable.AppCompatTextHelper_android_textAppearance;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTextView = global::SmartButler.Droid.Resource.Styleable.AppCompatTextView;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTextView_android_textAppearance = global::SmartButler.Droid.Resource.Styleable.AppCompatTextView_android_textAppearance;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTextView_autoSizeMaxTextSize = global::SmartButler.Droid.Resource.Styleable.AppCompatTextView_autoSizeMaxTextSize;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTextView_autoSizeMinTextSize = global::SmartButler.Droid.Resource.Styleable.AppCompatTextView_autoSizeMinTextSize;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTextView_autoSizePresetSizes = global::SmartButler.Droid.Resource.Styleable.AppCompatTextView_autoSizePresetSizes;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity = global::SmartButler.Droid.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTextView_autoSizeTextType = global::SmartButler.Droid.Resource.Styleable.AppCompatTextView_autoSizeTextType;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTextView_fontFamily = global::SmartButler.Droid.Resource.Styleable.AppCompatTextView_fontFamily;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTextView_textAllCaps = global::SmartButler.Droid.Resource.Styleable.AppCompatTextView_textAllCaps;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_actionBarDivider = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_actionBarDivider;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_actionBarItemBackground = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_actionBarItemBackground;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_actionBarPopupTheme = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_actionBarPopupTheme;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_actionBarSize = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_actionBarSize;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_actionBarSplitStyle = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_actionBarSplitStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_actionBarStyle = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_actionBarStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_actionBarTabStyle = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_actionBarTabStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_actionBarTheme = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_actionBarTheme;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_actionButtonStyle = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_actionButtonStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_actionDropDownStyle = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_actionDropDownStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_actionMenuTextColor = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextColor;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_actionModeBackground = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_actionModeBackground;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_actionModeCutDrawable = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_actionModeCutDrawable;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_actionModeFindDrawable = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_actionModeFindDrawable;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_actionModePasteDrawable = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_actionModePasteDrawable;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_actionModeShareDrawable = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_actionModeShareDrawable;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_actionModeSplitBackground = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_actionModeSplitBackground;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_actionModeStyle = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_actionModeStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_activityChooserViewStyle = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_activityChooserViewStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_alertDialogStyle = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_alertDialogStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_alertDialogTheme = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_alertDialogTheme;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_android_windowIsFloating = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_android_windowIsFloating;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_borderlessButtonStyle = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_borderlessButtonStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_buttonBarStyle = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_buttonBarStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_buttonStyle = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_buttonStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_buttonStyleSmall = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_buttonStyleSmall;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_checkboxStyle = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_checkboxStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_checkedTextViewStyle = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_checkedTextViewStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_colorAccent = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_colorAccent;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_colorBackgroundFloating = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_colorBackgroundFloating;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_colorButtonNormal = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_colorButtonNormal;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_colorControlActivated = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_colorControlActivated;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_colorControlHighlight = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_colorControlHighlight;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_colorControlNormal = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_colorControlNormal;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_colorError = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_colorError;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_colorPrimary = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_colorPrimary;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_colorPrimaryDark = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_colorPrimaryDark;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_controlBackground = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_controlBackground;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_dialogPreferredPadding = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_dialogPreferredPadding;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_dialogTheme = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_dialogTheme;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_dividerHorizontal = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_dividerHorizontal;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_dividerVertical = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_dividerVertical;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_dropDownListViewStyle = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_dropDownListViewStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_editTextBackground = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_editTextBackground;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_editTextColor = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_editTextColor;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_editTextStyle = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_editTextStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_homeAsUpIndicator = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_homeAsUpIndicator;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_imageButtonStyle = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_imageButtonStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_listDividerAlertDialog = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_listDividerAlertDialog;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_listMenuViewStyle = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_listMenuViewStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_listPopupWindowStyle = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_listPopupWindowStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_listPreferredItemHeight = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeight;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_panelBackground = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_panelBackground;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_panelMenuListTheme = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_panelMenuListTheme;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_panelMenuListWidth = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_panelMenuListWidth;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_popupMenuStyle = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_popupMenuStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_popupWindowStyle = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_popupWindowStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_radioButtonStyle = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_radioButtonStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_ratingBarStyle = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_searchViewStyle = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_searchViewStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_seekBarStyle = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_seekBarStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_selectableItemBackground = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackground;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_spinnerStyle = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_spinnerStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_switchStyle = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_switchStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_textAppearanceListItem = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItem;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_textAppearanceListItemSecondary = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSecondary;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_textColorSearchUrl = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_textColorSearchUrl;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_toolbarStyle = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_toolbarStyle;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_tooltipForegroundColor = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_tooltipForegroundColor;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_tooltipFrameBackground = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_tooltipFrameBackground;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_windowActionBar = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_windowActionBar;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_windowActionBarOverlay = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_windowActionBarOverlay;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_windowActionModeOverlay = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_windowActionModeOverlay;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_windowMinWidthMajor = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMajor;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_windowMinWidthMinor = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMinor;
+			global::Acr.UserDialogs.Resource.Styleable.AppCompatTheme_windowNoTitle = global::SmartButler.Droid.Resource.Styleable.AppCompatTheme_windowNoTitle;
+			global::Acr.UserDialogs.Resource.Styleable.BottomNavigationView = global::SmartButler.Droid.Resource.Styleable.BottomNavigationView;
+			global::Acr.UserDialogs.Resource.Styleable.BottomNavigationView_elevation = global::SmartButler.Droid.Resource.Styleable.BottomNavigationView_elevation;
+			global::Acr.UserDialogs.Resource.Styleable.BottomNavigationView_itemBackground = global::SmartButler.Droid.Resource.Styleable.BottomNavigationView_itemBackground;
+			global::Acr.UserDialogs.Resource.Styleable.BottomNavigationView_itemIconTint = global::SmartButler.Droid.Resource.Styleable.BottomNavigationView_itemIconTint;
+			global::Acr.UserDialogs.Resource.Styleable.BottomNavigationView_itemTextColor = global::SmartButler.Droid.Resource.Styleable.BottomNavigationView_itemTextColor;
+			global::Acr.UserDialogs.Resource.Styleable.BottomNavigationView_menu = global::SmartButler.Droid.Resource.Styleable.BottomNavigationView_menu;
+			global::Acr.UserDialogs.Resource.Styleable.BottomSheetBehavior_Layout = global::SmartButler.Droid.Resource.Styleable.BottomSheetBehavior_Layout;
+			global::Acr.UserDialogs.Resource.Styleable.BottomSheetBehavior_Layout_behavior_hideable = global::SmartButler.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_hideable;
+			global::Acr.UserDialogs.Resource.Styleable.BottomSheetBehavior_Layout_behavior_peekHeight = global::SmartButler.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_peekHeight;
+			global::Acr.UserDialogs.Resource.Styleable.BottomSheetBehavior_Layout_behavior_skipCollapsed = global::SmartButler.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_skipCollapsed;
+			global::Acr.UserDialogs.Resource.Styleable.ButtonBarLayout = global::SmartButler.Droid.Resource.Styleable.ButtonBarLayout;
+			global::Acr.UserDialogs.Resource.Styleable.ButtonBarLayout_allowStacking = global::SmartButler.Droid.Resource.Styleable.ButtonBarLayout_allowStacking;
+			global::Acr.UserDialogs.Resource.Styleable.CollapsingToolbarLayout = global::SmartButler.Droid.Resource.Styleable.CollapsingToolbarLayout;
+			global::Acr.UserDialogs.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity = global::SmartButler.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity;
+			global::Acr.UserDialogs.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance = global::SmartButler.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance;
+			global::Acr.UserDialogs.Resource.Styleable.CollapsingToolbarLayout_contentScrim = global::SmartButler.Droid.Resource.Styleable.CollapsingToolbarLayout_contentScrim;
+			global::Acr.UserDialogs.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity = global::SmartButler.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity;
+			global::Acr.UserDialogs.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin = global::SmartButler.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin;
+			global::Acr.UserDialogs.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom = global::SmartButler.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom;
+			global::Acr.UserDialogs.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd = global::SmartButler.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd;
+			global::Acr.UserDialogs.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart = global::SmartButler.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart;
+			global::Acr.UserDialogs.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop = global::SmartButler.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop;
+			global::Acr.UserDialogs.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance = global::SmartButler.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance;
+			global::Acr.UserDialogs.Resource.Styleable.CollapsingToolbarLayout_Layout = global::SmartButler.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout;
+			global::Acr.UserDialogs.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode = global::SmartButler.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode;
+			global::Acr.UserDialogs.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier = global::SmartButler.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier;
+			global::Acr.UserDialogs.Resource.Styleable.CollapsingToolbarLayout_scrimAnimationDuration = global::SmartButler.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimAnimationDuration;
+			global::Acr.UserDialogs.Resource.Styleable.CollapsingToolbarLayout_scrimVisibleHeightTrigger = global::SmartButler.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimVisibleHeightTrigger;
+			global::Acr.UserDialogs.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim = global::SmartButler.Droid.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim;
+			global::Acr.UserDialogs.Resource.Styleable.CollapsingToolbarLayout_title = global::SmartButler.Droid.Resource.Styleable.CollapsingToolbarLayout_title;
+			global::Acr.UserDialogs.Resource.Styleable.CollapsingToolbarLayout_titleEnabled = global::SmartButler.Droid.Resource.Styleable.CollapsingToolbarLayout_titleEnabled;
+			global::Acr.UserDialogs.Resource.Styleable.CollapsingToolbarLayout_toolbarId = global::SmartButler.Droid.Resource.Styleable.CollapsingToolbarLayout_toolbarId;
+			global::Acr.UserDialogs.Resource.Styleable.ColorStateListItem = global::SmartButler.Droid.Resource.Styleable.ColorStateListItem;
+			global::Acr.UserDialogs.Resource.Styleable.ColorStateListItem_alpha = global::SmartButler.Droid.Resource.Styleable.ColorStateListItem_alpha;
+			global::Acr.UserDialogs.Resource.Styleable.ColorStateListItem_android_alpha = global::SmartButler.Droid.Resource.Styleable.ColorStateListItem_android_alpha;
+			global::Acr.UserDialogs.Resource.Styleable.ColorStateListItem_android_color = global::SmartButler.Droid.Resource.Styleable.ColorStateListItem_android_color;
+			global::Acr.UserDialogs.Resource.Styleable.CompoundButton = global::SmartButler.Droid.Resource.Styleable.CompoundButton;
+			global::Acr.UserDialogs.Resource.Styleable.CompoundButton_android_button = global::SmartButler.Droid.Resource.Styleable.CompoundButton_android_button;
+			global::Acr.UserDialogs.Resource.Styleable.CompoundButton_buttonTint = global::SmartButler.Droid.Resource.Styleable.CompoundButton_buttonTint;
+			global::Acr.UserDialogs.Resource.Styleable.CompoundButton_buttonTintMode = global::SmartButler.Droid.Resource.Styleable.CompoundButton_buttonTintMode;
+			global::Acr.UserDialogs.Resource.Styleable.CoordinatorLayout = global::SmartButler.Droid.Resource.Styleable.CoordinatorLayout;
+			global::Acr.UserDialogs.Resource.Styleable.CoordinatorLayout_keylines = global::SmartButler.Droid.Resource.Styleable.CoordinatorLayout_keylines;
+			global::Acr.UserDialogs.Resource.Styleable.CoordinatorLayout_Layout = global::SmartButler.Droid.Resource.Styleable.CoordinatorLayout_Layout;
+			global::Acr.UserDialogs.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity = global::SmartButler.Droid.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity;
+			global::Acr.UserDialogs.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor = global::SmartButler.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor;
+			global::Acr.UserDialogs.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity = global::SmartButler.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity;
+			global::Acr.UserDialogs.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior = global::SmartButler.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior;
+			global::Acr.UserDialogs.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges = global::SmartButler.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges;
+			global::Acr.UserDialogs.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge = global::SmartButler.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge;
+			global::Acr.UserDialogs.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline = global::SmartButler.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline;
+			global::Acr.UserDialogs.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::SmartButler.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground;
+			global::Acr.UserDialogs.Resource.Styleable.DesignTheme = global::SmartButler.Droid.Resource.Styleable.DesignTheme;
+			global::Acr.UserDialogs.Resource.Styleable.DesignTheme_bottomSheetDialogTheme = global::SmartButler.Droid.Resource.Styleable.DesignTheme_bottomSheetDialogTheme;
+			global::Acr.UserDialogs.Resource.Styleable.DesignTheme_bottomSheetStyle = global::SmartButler.Droid.Resource.Styleable.DesignTheme_bottomSheetStyle;
+			global::Acr.UserDialogs.Resource.Styleable.DesignTheme_textColorError = global::SmartButler.Droid.Resource.Styleable.DesignTheme_textColorError;
+			global::Acr.UserDialogs.Resource.Styleable.DrawerArrowToggle = global::SmartButler.Droid.Resource.Styleable.DrawerArrowToggle;
+			global::Acr.UserDialogs.Resource.Styleable.DrawerArrowToggle_arrowHeadLength = global::SmartButler.Droid.Resource.Styleable.DrawerArrowToggle_arrowHeadLength;
+			global::Acr.UserDialogs.Resource.Styleable.DrawerArrowToggle_arrowShaftLength = global::SmartButler.Droid.Resource.Styleable.DrawerArrowToggle_arrowShaftLength;
+			global::Acr.UserDialogs.Resource.Styleable.DrawerArrowToggle_barLength = global::SmartButler.Droid.Resource.Styleable.DrawerArrowToggle_barLength;
+			global::Acr.UserDialogs.Resource.Styleable.DrawerArrowToggle_color = global::SmartButler.Droid.Resource.Styleable.DrawerArrowToggle_color;
+			global::Acr.UserDialogs.Resource.Styleable.DrawerArrowToggle_drawableSize = global::SmartButler.Droid.Resource.Styleable.DrawerArrowToggle_drawableSize;
+			global::Acr.UserDialogs.Resource.Styleable.DrawerArrowToggle_gapBetweenBars = global::SmartButler.Droid.Resource.Styleable.DrawerArrowToggle_gapBetweenBars;
+			global::Acr.UserDialogs.Resource.Styleable.DrawerArrowToggle_spinBars = global::SmartButler.Droid.Resource.Styleable.DrawerArrowToggle_spinBars;
+			global::Acr.UserDialogs.Resource.Styleable.DrawerArrowToggle_thickness = global::SmartButler.Droid.Resource.Styleable.DrawerArrowToggle_thickness;
+			global::Acr.UserDialogs.Resource.Styleable.FloatingActionButton = global::SmartButler.Droid.Resource.Styleable.FloatingActionButton;
+			global::Acr.UserDialogs.Resource.Styleable.FloatingActionButton_backgroundTint = global::SmartButler.Droid.Resource.Styleable.FloatingActionButton_backgroundTint;
+			global::Acr.UserDialogs.Resource.Styleable.FloatingActionButton_backgroundTintMode = global::SmartButler.Droid.Resource.Styleable.FloatingActionButton_backgroundTintMode;
+			global::Acr.UserDialogs.Resource.Styleable.FloatingActionButton_Behavior_Layout = global::SmartButler.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout;
+			global::Acr.UserDialogs.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide = global::SmartButler.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide;
+			global::Acr.UserDialogs.Resource.Styleable.FloatingActionButton_borderWidth = global::SmartButler.Droid.Resource.Styleable.FloatingActionButton_borderWidth;
+			global::Acr.UserDialogs.Resource.Styleable.FloatingActionButton_elevation = global::SmartButler.Droid.Resource.Styleable.FloatingActionButton_elevation;
+			global::Acr.UserDialogs.Resource.Styleable.FloatingActionButton_fabSize = global::SmartButler.Droid.Resource.Styleable.FloatingActionButton_fabSize;
+			global::Acr.UserDialogs.Resource.Styleable.FloatingActionButton_pressedTranslationZ = global::SmartButler.Droid.Resource.Styleable.FloatingActionButton_pressedTranslationZ;
+			global::Acr.UserDialogs.Resource.Styleable.FloatingActionButton_rippleColor = global::SmartButler.Droid.Resource.Styleable.FloatingActionButton_rippleColor;
+			global::Acr.UserDialogs.Resource.Styleable.FloatingActionButton_useCompatPadding = global::SmartButler.Droid.Resource.Styleable.FloatingActionButton_useCompatPadding;
+			global::Acr.UserDialogs.Resource.Styleable.FontFamily = global::SmartButler.Droid.Resource.Styleable.FontFamily;
+			global::Acr.UserDialogs.Resource.Styleable.FontFamilyFont = global::SmartButler.Droid.Resource.Styleable.FontFamilyFont;
+			global::Acr.UserDialogs.Resource.Styleable.FontFamilyFont_android_font = global::SmartButler.Droid.Resource.Styleable.FontFamilyFont_android_font;
+			global::Acr.UserDialogs.Resource.Styleable.FontFamilyFont_android_fontStyle = global::SmartButler.Droid.Resource.Styleable.FontFamilyFont_android_fontStyle;
+			global::Acr.UserDialogs.Resource.Styleable.FontFamilyFont_android_fontWeight = global::SmartButler.Droid.Resource.Styleable.FontFamilyFont_android_fontWeight;
+			global::Acr.UserDialogs.Resource.Styleable.FontFamilyFont_font = global::SmartButler.Droid.Resource.Styleable.FontFamilyFont_font;
+			global::Acr.UserDialogs.Resource.Styleable.FontFamilyFont_fontStyle = global::SmartButler.Droid.Resource.Styleable.FontFamilyFont_fontStyle;
+			global::Acr.UserDialogs.Resource.Styleable.FontFamilyFont_fontWeight = global::SmartButler.Droid.Resource.Styleable.FontFamilyFont_fontWeight;
+			global::Acr.UserDialogs.Resource.Styleable.FontFamily_fontProviderAuthority = global::SmartButler.Droid.Resource.Styleable.FontFamily_fontProviderAuthority;
+			global::Acr.UserDialogs.Resource.Styleable.FontFamily_fontProviderCerts = global::SmartButler.Droid.Resource.Styleable.FontFamily_fontProviderCerts;
+			global::Acr.UserDialogs.Resource.Styleable.FontFamily_fontProviderFetchStrategy = global::SmartButler.Droid.Resource.Styleable.FontFamily_fontProviderFetchStrategy;
+			global::Acr.UserDialogs.Resource.Styleable.FontFamily_fontProviderFetchTimeout = global::SmartButler.Droid.Resource.Styleable.FontFamily_fontProviderFetchTimeout;
+			global::Acr.UserDialogs.Resource.Styleable.FontFamily_fontProviderPackage = global::SmartButler.Droid.Resource.Styleable.FontFamily_fontProviderPackage;
+			global::Acr.UserDialogs.Resource.Styleable.FontFamily_fontProviderQuery = global::SmartButler.Droid.Resource.Styleable.FontFamily_fontProviderQuery;
+			global::Acr.UserDialogs.Resource.Styleable.ForegroundLinearLayout = global::SmartButler.Droid.Resource.Styleable.ForegroundLinearLayout;
+			global::Acr.UserDialogs.Resource.Styleable.ForegroundLinearLayout_android_foreground = global::SmartButler.Droid.Resource.Styleable.ForegroundLinearLayout_android_foreground;
+			global::Acr.UserDialogs.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity = global::SmartButler.Droid.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity;
+			global::Acr.UserDialogs.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding = global::SmartButler.Droid.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding;
+			global::Acr.UserDialogs.Resource.Styleable.LinearLayoutCompat = global::SmartButler.Droid.Resource.Styleable.LinearLayoutCompat;
+			global::Acr.UserDialogs.Resource.Styleable.LinearLayoutCompat_android_baselineAligned = global::SmartButler.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAligned;
+			global::Acr.UserDialogs.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex = global::SmartButler.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex;
+			global::Acr.UserDialogs.Resource.Styleable.LinearLayoutCompat_android_gravity = global::SmartButler.Droid.Resource.Styleable.LinearLayoutCompat_android_gravity;
+			global::Acr.UserDialogs.Resource.Styleable.LinearLayoutCompat_android_orientation = global::SmartButler.Droid.Resource.Styleable.LinearLayoutCompat_android_orientation;
+			global::Acr.UserDialogs.Resource.Styleable.LinearLayoutCompat_android_weightSum = global::SmartButler.Droid.Resource.Styleable.LinearLayoutCompat_android_weightSum;
+			global::Acr.UserDialogs.Resource.Styleable.LinearLayoutCompat_divider = global::SmartButler.Droid.Resource.Styleable.LinearLayoutCompat_divider;
+			global::Acr.UserDialogs.Resource.Styleable.LinearLayoutCompat_dividerPadding = global::SmartButler.Droid.Resource.Styleable.LinearLayoutCompat_dividerPadding;
+			global::Acr.UserDialogs.Resource.Styleable.LinearLayoutCompat_Layout = global::SmartButler.Droid.Resource.Styleable.LinearLayoutCompat_Layout;
+			global::Acr.UserDialogs.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity = global::SmartButler.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity;
+			global::Acr.UserDialogs.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height = global::SmartButler.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height;
+			global::Acr.UserDialogs.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight = global::SmartButler.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight;
+			global::Acr.UserDialogs.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width = global::SmartButler.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width;
+			global::Acr.UserDialogs.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild = global::SmartButler.Droid.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild;
+			global::Acr.UserDialogs.Resource.Styleable.LinearLayoutCompat_showDividers = global::SmartButler.Droid.Resource.Styleable.LinearLayoutCompat_showDividers;
+			global::Acr.UserDialogs.Resource.Styleable.ListPopupWindow = global::SmartButler.Droid.Resource.Styleable.ListPopupWindow;
+			global::Acr.UserDialogs.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset = global::SmartButler.Droid.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset;
+			global::Acr.UserDialogs.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset = global::SmartButler.Droid.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset;
+			global::Acr.UserDialogs.Resource.Styleable.MenuGroup = global::SmartButler.Droid.Resource.Styleable.MenuGroup;
+			global::Acr.UserDialogs.Resource.Styleable.MenuGroup_android_checkableBehavior = global::SmartButler.Droid.Resource.Styleable.MenuGroup_android_checkableBehavior;
+			global::Acr.UserDialogs.Resource.Styleable.MenuGroup_android_enabled = global::SmartButler.Droid.Resource.Styleable.MenuGroup_android_enabled;
+			global::Acr.UserDialogs.Resource.Styleable.MenuGroup_android_id = global::SmartButler.Droid.Resource.Styleable.MenuGroup_android_id;
+			global::Acr.UserDialogs.Resource.Styleable.MenuGroup_android_menuCategory = global::SmartButler.Droid.Resource.Styleable.MenuGroup_android_menuCategory;
+			global::Acr.UserDialogs.Resource.Styleable.MenuGroup_android_orderInCategory = global::SmartButler.Droid.Resource.Styleable.MenuGroup_android_orderInCategory;
+			global::Acr.UserDialogs.Resource.Styleable.MenuGroup_android_visible = global::SmartButler.Droid.Resource.Styleable.MenuGroup_android_visible;
+			global::Acr.UserDialogs.Resource.Styleable.MenuItem = global::SmartButler.Droid.Resource.Styleable.MenuItem;
+			global::Acr.UserDialogs.Resource.Styleable.MenuItem_actionLayout = global::SmartButler.Droid.Resource.Styleable.MenuItem_actionLayout;
+			global::Acr.UserDialogs.Resource.Styleable.MenuItem_actionProviderClass = global::SmartButler.Droid.Resource.Styleable.MenuItem_actionProviderClass;
+			global::Acr.UserDialogs.Resource.Styleable.MenuItem_actionViewClass = global::SmartButler.Droid.Resource.Styleable.MenuItem_actionViewClass;
+			global::Acr.UserDialogs.Resource.Styleable.MenuItem_alphabeticModifiers = global::SmartButler.Droid.Resource.Styleable.MenuItem_alphabeticModifiers;
+			global::Acr.UserDialogs.Resource.Styleable.MenuItem_android_alphabeticShortcut = global::SmartButler.Droid.Resource.Styleable.MenuItem_android_alphabeticShortcut;
+			global::Acr.UserDialogs.Resource.Styleable.MenuItem_android_checkable = global::SmartButler.Droid.Resource.Styleable.MenuItem_android_checkable;
+			global::Acr.UserDialogs.Resource.Styleable.MenuItem_android_checked = global::SmartButler.Droid.Resource.Styleable.MenuItem_android_checked;
+			global::Acr.UserDialogs.Resource.Styleable.MenuItem_android_enabled = global::SmartButler.Droid.Resource.Styleable.MenuItem_android_enabled;
+			global::Acr.UserDialogs.Resource.Styleable.MenuItem_android_icon = global::SmartButler.Droid.Resource.Styleable.MenuItem_android_icon;
+			global::Acr.UserDialogs.Resource.Styleable.MenuItem_android_id = global::SmartButler.Droid.Resource.Styleable.MenuItem_android_id;
+			global::Acr.UserDialogs.Resource.Styleable.MenuItem_android_menuCategory = global::SmartButler.Droid.Resource.Styleable.MenuItem_android_menuCategory;
+			global::Acr.UserDialogs.Resource.Styleable.MenuItem_android_numericShortcut = global::SmartButler.Droid.Resource.Styleable.MenuItem_android_numericShortcut;
+			global::Acr.UserDialogs.Resource.Styleable.MenuItem_android_onClick = global::SmartButler.Droid.Resource.Styleable.MenuItem_android_onClick;
+			global::Acr.UserDialogs.Resource.Styleable.MenuItem_android_orderInCategory = global::SmartButler.Droid.Resource.Styleable.MenuItem_android_orderInCategory;
+			global::Acr.UserDialogs.Resource.Styleable.MenuItem_android_title = global::SmartButler.Droid.Resource.Styleable.MenuItem_android_title;
+			global::Acr.UserDialogs.Resource.Styleable.MenuItem_android_titleCondensed = global::SmartButler.Droid.Resource.Styleable.MenuItem_android_titleCondensed;
+			global::Acr.UserDialogs.Resource.Styleable.MenuItem_android_visible = global::SmartButler.Droid.Resource.Styleable.MenuItem_android_visible;
+			global::Acr.UserDialogs.Resource.Styleable.MenuItem_contentDescription = global::SmartButler.Droid.Resource.Styleable.MenuItem_contentDescription;
+			global::Acr.UserDialogs.Resource.Styleable.MenuItem_iconTint = global::SmartButler.Droid.Resource.Styleable.MenuItem_iconTint;
+			global::Acr.UserDialogs.Resource.Styleable.MenuItem_iconTintMode = global::SmartButler.Droid.Resource.Styleable.MenuItem_iconTintMode;
+			global::Acr.UserDialogs.Resource.Styleable.MenuItem_numericModifiers = global::SmartButler.Droid.Resource.Styleable.MenuItem_numericModifiers;
+			global::Acr.UserDialogs.Resource.Styleable.MenuItem_showAsAction = global::SmartButler.Droid.Resource.Styleable.MenuItem_showAsAction;
+			global::Acr.UserDialogs.Resource.Styleable.MenuItem_tooltipText = global::SmartButler.Droid.Resource.Styleable.MenuItem_tooltipText;
+			global::Acr.UserDialogs.Resource.Styleable.MenuView = global::SmartButler.Droid.Resource.Styleable.MenuView;
+			global::Acr.UserDialogs.Resource.Styleable.MenuView_android_headerBackground = global::SmartButler.Droid.Resource.Styleable.MenuView_android_headerBackground;
+			global::Acr.UserDialogs.Resource.Styleable.MenuView_android_horizontalDivider = global::SmartButler.Droid.Resource.Styleable.MenuView_android_horizontalDivider;
+			global::Acr.UserDialogs.Resource.Styleable.MenuView_android_itemBackground = global::SmartButler.Droid.Resource.Styleable.MenuView_android_itemBackground;
+			global::Acr.UserDialogs.Resource.Styleable.MenuView_android_itemIconDisabledAlpha = global::SmartButler.Droid.Resource.Styleable.MenuView_android_itemIconDisabledAlpha;
+			global::Acr.UserDialogs.Resource.Styleable.MenuView_android_itemTextAppearance = global::SmartButler.Droid.Resource.Styleable.MenuView_android_itemTextAppearance;
+			global::Acr.UserDialogs.Resource.Styleable.MenuView_android_verticalDivider = global::SmartButler.Droid.Resource.Styleable.MenuView_android_verticalDivider;
+			global::Acr.UserDialogs.Resource.Styleable.MenuView_android_windowAnimationStyle = global::SmartButler.Droid.Resource.Styleable.MenuView_android_windowAnimationStyle;
+			global::Acr.UserDialogs.Resource.Styleable.MenuView_preserveIconSpacing = global::SmartButler.Droid.Resource.Styleable.MenuView_preserveIconSpacing;
+			global::Acr.UserDialogs.Resource.Styleable.MenuView_subMenuArrow = global::SmartButler.Droid.Resource.Styleable.MenuView_subMenuArrow;
+			global::Acr.UserDialogs.Resource.Styleable.NavigationView = global::SmartButler.Droid.Resource.Styleable.NavigationView;
+			global::Acr.UserDialogs.Resource.Styleable.NavigationView_android_background = global::SmartButler.Droid.Resource.Styleable.NavigationView_android_background;
+			global::Acr.UserDialogs.Resource.Styleable.NavigationView_android_fitsSystemWindows = global::SmartButler.Droid.Resource.Styleable.NavigationView_android_fitsSystemWindows;
+			global::Acr.UserDialogs.Resource.Styleable.NavigationView_android_maxWidth = global::SmartButler.Droid.Resource.Styleable.NavigationView_android_maxWidth;
+			global::Acr.UserDialogs.Resource.Styleable.NavigationView_elevation = global::SmartButler.Droid.Resource.Styleable.NavigationView_elevation;
+			global::Acr.UserDialogs.Resource.Styleable.NavigationView_headerLayout = global::SmartButler.Droid.Resource.Styleable.NavigationView_headerLayout;
+			global::Acr.UserDialogs.Resource.Styleable.NavigationView_itemBackground = global::SmartButler.Droid.Resource.Styleable.NavigationView_itemBackground;
+			global::Acr.UserDialogs.Resource.Styleable.NavigationView_itemIconTint = global::SmartButler.Droid.Resource.Styleable.NavigationView_itemIconTint;
+			global::Acr.UserDialogs.Resource.Styleable.NavigationView_itemTextAppearance = global::SmartButler.Droid.Resource.Styleable.NavigationView_itemTextAppearance;
+			global::Acr.UserDialogs.Resource.Styleable.NavigationView_itemTextColor = global::SmartButler.Droid.Resource.Styleable.NavigationView_itemTextColor;
+			global::Acr.UserDialogs.Resource.Styleable.NavigationView_menu = global::SmartButler.Droid.Resource.Styleable.NavigationView_menu;
+			global::Acr.UserDialogs.Resource.Styleable.PopupWindow = global::SmartButler.Droid.Resource.Styleable.PopupWindow;
+			global::Acr.UserDialogs.Resource.Styleable.PopupWindowBackgroundState = global::SmartButler.Droid.Resource.Styleable.PopupWindowBackgroundState;
+			global::Acr.UserDialogs.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor = global::SmartButler.Droid.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor;
+			global::Acr.UserDialogs.Resource.Styleable.PopupWindow_android_popupAnimationStyle = global::SmartButler.Droid.Resource.Styleable.PopupWindow_android_popupAnimationStyle;
+			global::Acr.UserDialogs.Resource.Styleable.PopupWindow_android_popupBackground = global::SmartButler.Droid.Resource.Styleable.PopupWindow_android_popupBackground;
+			global::Acr.UserDialogs.Resource.Styleable.PopupWindow_overlapAnchor = global::SmartButler.Droid.Resource.Styleable.PopupWindow_overlapAnchor;
+			global::Acr.UserDialogs.Resource.Styleable.ProgressWheel = global::SmartButler.Droid.Resource.Styleable.ProgressWheel;
+			global::Acr.UserDialogs.Resource.Styleable.ProgressWheel_ahBarColor = global::SmartButler.Droid.Resource.Styleable.ProgressWheel_ahBarColor;
+			global::Acr.UserDialogs.Resource.Styleable.ProgressWheel_ahBarLength = global::SmartButler.Droid.Resource.Styleable.ProgressWheel_ahBarLength;
+			global::Acr.UserDialogs.Resource.Styleable.ProgressWheel_ahBarWidth = global::SmartButler.Droid.Resource.Styleable.ProgressWheel_ahBarWidth;
+			global::Acr.UserDialogs.Resource.Styleable.ProgressWheel_ahCircleColor = global::SmartButler.Droid.Resource.Styleable.ProgressWheel_ahCircleColor;
+			global::Acr.UserDialogs.Resource.Styleable.ProgressWheel_ahDelayMillis = global::SmartButler.Droid.Resource.Styleable.ProgressWheel_ahDelayMillis;
+			global::Acr.UserDialogs.Resource.Styleable.ProgressWheel_ahRadius = global::SmartButler.Droid.Resource.Styleable.ProgressWheel_ahRadius;
+			global::Acr.UserDialogs.Resource.Styleable.ProgressWheel_ahRimColor = global::SmartButler.Droid.Resource.Styleable.ProgressWheel_ahRimColor;
+			global::Acr.UserDialogs.Resource.Styleable.ProgressWheel_ahRimWidth = global::SmartButler.Droid.Resource.Styleable.ProgressWheel_ahRimWidth;
+			global::Acr.UserDialogs.Resource.Styleable.ProgressWheel_ahSpinSpeed = global::SmartButler.Droid.Resource.Styleable.ProgressWheel_ahSpinSpeed;
+			global::Acr.UserDialogs.Resource.Styleable.ProgressWheel_ahText = global::SmartButler.Droid.Resource.Styleable.ProgressWheel_ahText;
+			global::Acr.UserDialogs.Resource.Styleable.ProgressWheel_ahTextColor = global::SmartButler.Droid.Resource.Styleable.ProgressWheel_ahTextColor;
+			global::Acr.UserDialogs.Resource.Styleable.ProgressWheel_ahTextSize = global::SmartButler.Droid.Resource.Styleable.ProgressWheel_ahTextSize;
+			global::Acr.UserDialogs.Resource.Styleable.RecycleListView = global::SmartButler.Droid.Resource.Styleable.RecycleListView;
+			global::Acr.UserDialogs.Resource.Styleable.RecycleListView_paddingBottomNoButtons = global::SmartButler.Droid.Resource.Styleable.RecycleListView_paddingBottomNoButtons;
+			global::Acr.UserDialogs.Resource.Styleable.RecycleListView_paddingTopNoTitle = global::SmartButler.Droid.Resource.Styleable.RecycleListView_paddingTopNoTitle;
+			global::Acr.UserDialogs.Resource.Styleable.RecyclerView = global::SmartButler.Droid.Resource.Styleable.RecyclerView;
+			global::Acr.UserDialogs.Resource.Styleable.RecyclerView_android_descendantFocusability = global::SmartButler.Droid.Resource.Styleable.RecyclerView_android_descendantFocusability;
+			global::Acr.UserDialogs.Resource.Styleable.RecyclerView_android_orientation = global::SmartButler.Droid.Resource.Styleable.RecyclerView_android_orientation;
+			global::Acr.UserDialogs.Resource.Styleable.RecyclerView_fastScrollEnabled = global::SmartButler.Droid.Resource.Styleable.RecyclerView_fastScrollEnabled;
+			global::Acr.UserDialogs.Resource.Styleable.RecyclerView_fastScrollHorizontalThumbDrawable = global::SmartButler.Droid.Resource.Styleable.RecyclerView_fastScrollHorizontalThumbDrawable;
+			global::Acr.UserDialogs.Resource.Styleable.RecyclerView_fastScrollHorizontalTrackDrawable = global::SmartButler.Droid.Resource.Styleable.RecyclerView_fastScrollHorizontalTrackDrawable;
+			global::Acr.UserDialogs.Resource.Styleable.RecyclerView_fastScrollVerticalThumbDrawable = global::SmartButler.Droid.Resource.Styleable.RecyclerView_fastScrollVerticalThumbDrawable;
+			global::Acr.UserDialogs.Resource.Styleable.RecyclerView_fastScrollVerticalTrackDrawable = global::SmartButler.Droid.Resource.Styleable.RecyclerView_fastScrollVerticalTrackDrawable;
+			global::Acr.UserDialogs.Resource.Styleable.RecyclerView_layoutManager = global::SmartButler.Droid.Resource.Styleable.RecyclerView_layoutManager;
+			global::Acr.UserDialogs.Resource.Styleable.RecyclerView_reverseLayout = global::SmartButler.Droid.Resource.Styleable.RecyclerView_reverseLayout;
+			global::Acr.UserDialogs.Resource.Styleable.RecyclerView_spanCount = global::SmartButler.Droid.Resource.Styleable.RecyclerView_spanCount;
+			global::Acr.UserDialogs.Resource.Styleable.RecyclerView_stackFromEnd = global::SmartButler.Droid.Resource.Styleable.RecyclerView_stackFromEnd;
+			global::Acr.UserDialogs.Resource.Styleable.ScrimInsetsFrameLayout = global::SmartButler.Droid.Resource.Styleable.ScrimInsetsFrameLayout;
+			global::Acr.UserDialogs.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground = global::SmartButler.Droid.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground;
+			global::Acr.UserDialogs.Resource.Styleable.ScrollingViewBehavior_Layout = global::SmartButler.Droid.Resource.Styleable.ScrollingViewBehavior_Layout;
+			global::Acr.UserDialogs.Resource.Styleable.ScrollingViewBehavior_Layout_behavior_overlapTop = global::SmartButler.Droid.Resource.Styleable.ScrollingViewBehavior_Layout_behavior_overlapTop;
+			global::Acr.UserDialogs.Resource.Styleable.SearchView = global::SmartButler.Droid.Resource.Styleable.SearchView;
+			global::Acr.UserDialogs.Resource.Styleable.SearchView_android_focusable = global::SmartButler.Droid.Resource.Styleable.SearchView_android_focusable;
+			global::Acr.UserDialogs.Resource.Styleable.SearchView_android_imeOptions = global::SmartButler.Droid.Resource.Styleable.SearchView_android_imeOptions;
+			global::Acr.UserDialogs.Resource.Styleable.SearchView_android_inputType = global::SmartButler.Droid.Resource.Styleable.SearchView_android_inputType;
+			global::Acr.UserDialogs.Resource.Styleable.SearchView_android_maxWidth = global::SmartButler.Droid.Resource.Styleable.SearchView_android_maxWidth;
+			global::Acr.UserDialogs.Resource.Styleable.SearchView_closeIcon = global::SmartButler.Droid.Resource.Styleable.SearchView_closeIcon;
+			global::Acr.UserDialogs.Resource.Styleable.SearchView_commitIcon = global::SmartButler.Droid.Resource.Styleable.SearchView_commitIcon;
+			global::Acr.UserDialogs.Resource.Styleable.SearchView_defaultQueryHint = global::SmartButler.Droid.Resource.Styleable.SearchView_defaultQueryHint;
+			global::Acr.UserDialogs.Resource.Styleable.SearchView_goIcon = global::SmartButler.Droid.Resource.Styleable.SearchView_goIcon;
+			global::Acr.UserDialogs.Resource.Styleable.SearchView_iconifiedByDefault = global::SmartButler.Droid.Resource.Styleable.SearchView_iconifiedByDefault;
+			global::Acr.UserDialogs.Resource.Styleable.SearchView_layout = global::SmartButler.Droid.Resource.Styleable.SearchView_layout;
+			global::Acr.UserDialogs.Resource.Styleable.SearchView_queryBackground = global::SmartButler.Droid.Resource.Styleable.SearchView_queryBackground;
+			global::Acr.UserDialogs.Resource.Styleable.SearchView_queryHint = global::SmartButler.Droid.Resource.Styleable.SearchView_queryHint;
+			global::Acr.UserDialogs.Resource.Styleable.SearchView_searchHintIcon = global::SmartButler.Droid.Resource.Styleable.SearchView_searchHintIcon;
+			global::Acr.UserDialogs.Resource.Styleable.SearchView_searchIcon = global::SmartButler.Droid.Resource.Styleable.SearchView_searchIcon;
+			global::Acr.UserDialogs.Resource.Styleable.SearchView_submitBackground = global::SmartButler.Droid.Resource.Styleable.SearchView_submitBackground;
+			global::Acr.UserDialogs.Resource.Styleable.SearchView_suggestionRowLayout = global::SmartButler.Droid.Resource.Styleable.SearchView_suggestionRowLayout;
+			global::Acr.UserDialogs.Resource.Styleable.SearchView_voiceIcon = global::SmartButler.Droid.Resource.Styleable.SearchView_voiceIcon;
+			global::Acr.UserDialogs.Resource.Styleable.SnackbarLayout = global::SmartButler.Droid.Resource.Styleable.SnackbarLayout;
+			global::Acr.UserDialogs.Resource.Styleable.SnackbarLayout_android_maxWidth = global::SmartButler.Droid.Resource.Styleable.SnackbarLayout_android_maxWidth;
+			global::Acr.UserDialogs.Resource.Styleable.SnackbarLayout_elevation = global::SmartButler.Droid.Resource.Styleable.SnackbarLayout_elevation;
+			global::Acr.UserDialogs.Resource.Styleable.SnackbarLayout_maxActionInlineWidth = global::SmartButler.Droid.Resource.Styleable.SnackbarLayout_maxActionInlineWidth;
+			global::Acr.UserDialogs.Resource.Styleable.Spinner = global::SmartButler.Droid.Resource.Styleable.Spinner;
+			global::Acr.UserDialogs.Resource.Styleable.Spinner_android_dropDownWidth = global::SmartButler.Droid.Resource.Styleable.Spinner_android_dropDownWidth;
+			global::Acr.UserDialogs.Resource.Styleable.Spinner_android_entries = global::SmartButler.Droid.Resource.Styleable.Spinner_android_entries;
+			global::Acr.UserDialogs.Resource.Styleable.Spinner_android_popupBackground = global::SmartButler.Droid.Resource.Styleable.Spinner_android_popupBackground;
+			global::Acr.UserDialogs.Resource.Styleable.Spinner_android_prompt = global::SmartButler.Droid.Resource.Styleable.Spinner_android_prompt;
+			global::Acr.UserDialogs.Resource.Styleable.Spinner_popupTheme = global::SmartButler.Droid.Resource.Styleable.Spinner_popupTheme;
+			global::Acr.UserDialogs.Resource.Styleable.SwitchCompat = global::SmartButler.Droid.Resource.Styleable.SwitchCompat;
+			global::Acr.UserDialogs.Resource.Styleable.SwitchCompat_android_textOff = global::SmartButler.Droid.Resource.Styleable.SwitchCompat_android_textOff;
+			global::Acr.UserDialogs.Resource.Styleable.SwitchCompat_android_textOn = global::SmartButler.Droid.Resource.Styleable.SwitchCompat_android_textOn;
+			global::Acr.UserDialogs.Resource.Styleable.SwitchCompat_android_thumb = global::SmartButler.Droid.Resource.Styleable.SwitchCompat_android_thumb;
+			global::Acr.UserDialogs.Resource.Styleable.SwitchCompat_showText = global::SmartButler.Droid.Resource.Styleable.SwitchCompat_showText;
+			global::Acr.UserDialogs.Resource.Styleable.SwitchCompat_splitTrack = global::SmartButler.Droid.Resource.Styleable.SwitchCompat_splitTrack;
+			global::Acr.UserDialogs.Resource.Styleable.SwitchCompat_switchMinWidth = global::SmartButler.Droid.Resource.Styleable.SwitchCompat_switchMinWidth;
+			global::Acr.UserDialogs.Resource.Styleable.SwitchCompat_switchPadding = global::SmartButler.Droid.Resource.Styleable.SwitchCompat_switchPadding;
+			global::Acr.UserDialogs.Resource.Styleable.SwitchCompat_switchTextAppearance = global::SmartButler.Droid.Resource.Styleable.SwitchCompat_switchTextAppearance;
+			global::Acr.UserDialogs.Resource.Styleable.SwitchCompat_thumbTextPadding = global::SmartButler.Droid.Resource.Styleable.SwitchCompat_thumbTextPadding;
+			global::Acr.UserDialogs.Resource.Styleable.SwitchCompat_thumbTint = global::SmartButler.Droid.Resource.Styleable.SwitchCompat_thumbTint;
+			global::Acr.UserDialogs.Resource.Styleable.SwitchCompat_thumbTintMode = global::SmartButler.Droid.Resource.Styleable.SwitchCompat_thumbTintMode;
+			global::Acr.UserDialogs.Resource.Styleable.SwitchCompat_track = global::SmartButler.Droid.Resource.Styleable.SwitchCompat_track;
+			global::Acr.UserDialogs.Resource.Styleable.SwitchCompat_trackTint = global::SmartButler.Droid.Resource.Styleable.SwitchCompat_trackTint;
+			global::Acr.UserDialogs.Resource.Styleable.SwitchCompat_trackTintMode = global::SmartButler.Droid.Resource.Styleable.SwitchCompat_trackTintMode;
+			global::Acr.UserDialogs.Resource.Styleable.TabItem = global::SmartButler.Droid.Resource.Styleable.TabItem;
+			global::Acr.UserDialogs.Resource.Styleable.TabItem_android_icon = global::SmartButler.Droid.Resource.Styleable.TabItem_android_icon;
+			global::Acr.UserDialogs.Resource.Styleable.TabItem_android_layout = global::SmartButler.Droid.Resource.Styleable.TabItem_android_layout;
+			global::Acr.UserDialogs.Resource.Styleable.TabItem_android_text = global::SmartButler.Droid.Resource.Styleable.TabItem_android_text;
+			global::Acr.UserDialogs.Resource.Styleable.TabLayout = global::SmartButler.Droid.Resource.Styleable.TabLayout;
+			global::Acr.UserDialogs.Resource.Styleable.TabLayout_tabBackground = global::SmartButler.Droid.Resource.Styleable.TabLayout_tabBackground;
+			global::Acr.UserDialogs.Resource.Styleable.TabLayout_tabContentStart = global::SmartButler.Droid.Resource.Styleable.TabLayout_tabContentStart;
+			global::Acr.UserDialogs.Resource.Styleable.TabLayout_tabGravity = global::SmartButler.Droid.Resource.Styleable.TabLayout_tabGravity;
+			global::Acr.UserDialogs.Resource.Styleable.TabLayout_tabIndicatorColor = global::SmartButler.Droid.Resource.Styleable.TabLayout_tabIndicatorColor;
+			global::Acr.UserDialogs.Resource.Styleable.TabLayout_tabIndicatorHeight = global::SmartButler.Droid.Resource.Styleable.TabLayout_tabIndicatorHeight;
+			global::Acr.UserDialogs.Resource.Styleable.TabLayout_tabMaxWidth = global::SmartButler.Droid.Resource.Styleable.TabLayout_tabMaxWidth;
+			global::Acr.UserDialogs.Resource.Styleable.TabLayout_tabMinWidth = global::SmartButler.Droid.Resource.Styleable.TabLayout_tabMinWidth;
+			global::Acr.UserDialogs.Resource.Styleable.TabLayout_tabMode = global::SmartButler.Droid.Resource.Styleable.TabLayout_tabMode;
+			global::Acr.UserDialogs.Resource.Styleable.TabLayout_tabPadding = global::SmartButler.Droid.Resource.Styleable.TabLayout_tabPadding;
+			global::Acr.UserDialogs.Resource.Styleable.TabLayout_tabPaddingBottom = global::SmartButler.Droid.Resource.Styleable.TabLayout_tabPaddingBottom;
+			global::Acr.UserDialogs.Resource.Styleable.TabLayout_tabPaddingEnd = global::SmartButler.Droid.Resource.Styleable.TabLayout_tabPaddingEnd;
+			global::Acr.UserDialogs.Resource.Styleable.TabLayout_tabPaddingStart = global::SmartButler.Droid.Resource.Styleable.TabLayout_tabPaddingStart;
+			global::Acr.UserDialogs.Resource.Styleable.TabLayout_tabPaddingTop = global::SmartButler.Droid.Resource.Styleable.TabLayout_tabPaddingTop;
+			global::Acr.UserDialogs.Resource.Styleable.TabLayout_tabSelectedTextColor = global::SmartButler.Droid.Resource.Styleable.TabLayout_tabSelectedTextColor;
+			global::Acr.UserDialogs.Resource.Styleable.TabLayout_tabTextAppearance = global::SmartButler.Droid.Resource.Styleable.TabLayout_tabTextAppearance;
+			global::Acr.UserDialogs.Resource.Styleable.TabLayout_tabTextColor = global::SmartButler.Droid.Resource.Styleable.TabLayout_tabTextColor;
+			global::Acr.UserDialogs.Resource.Styleable.TextAppearance = global::SmartButler.Droid.Resource.Styleable.TextAppearance;
+			global::Acr.UserDialogs.Resource.Styleable.TextAppearance_android_fontFamily = global::SmartButler.Droid.Resource.Styleable.TextAppearance_android_fontFamily;
+			global::Acr.UserDialogs.Resource.Styleable.TextAppearance_android_shadowColor = global::SmartButler.Droid.Resource.Styleable.TextAppearance_android_shadowColor;
+			global::Acr.UserDialogs.Resource.Styleable.TextAppearance_android_shadowDx = global::SmartButler.Droid.Resource.Styleable.TextAppearance_android_shadowDx;
+			global::Acr.UserDialogs.Resource.Styleable.TextAppearance_android_shadowDy = global::SmartButler.Droid.Resource.Styleable.TextAppearance_android_shadowDy;
+			global::Acr.UserDialogs.Resource.Styleable.TextAppearance_android_shadowRadius = global::SmartButler.Droid.Resource.Styleable.TextAppearance_android_shadowRadius;
+			global::Acr.UserDialogs.Resource.Styleable.TextAppearance_android_textColor = global::SmartButler.Droid.Resource.Styleable.TextAppearance_android_textColor;
+			global::Acr.UserDialogs.Resource.Styleable.TextAppearance_android_textColorHint = global::SmartButler.Droid.Resource.Styleable.TextAppearance_android_textColorHint;
+			global::Acr.UserDialogs.Resource.Styleable.TextAppearance_android_textColorLink = global::SmartButler.Droid.Resource.Styleable.TextAppearance_android_textColorLink;
+			global::Acr.UserDialogs.Resource.Styleable.TextAppearance_android_textSize = global::SmartButler.Droid.Resource.Styleable.TextAppearance_android_textSize;
+			global::Acr.UserDialogs.Resource.Styleable.TextAppearance_android_textStyle = global::SmartButler.Droid.Resource.Styleable.TextAppearance_android_textStyle;
+			global::Acr.UserDialogs.Resource.Styleable.TextAppearance_android_typeface = global::SmartButler.Droid.Resource.Styleable.TextAppearance_android_typeface;
+			global::Acr.UserDialogs.Resource.Styleable.TextAppearance_fontFamily = global::SmartButler.Droid.Resource.Styleable.TextAppearance_fontFamily;
+			global::Acr.UserDialogs.Resource.Styleable.TextAppearance_textAllCaps = global::SmartButler.Droid.Resource.Styleable.TextAppearance_textAllCaps;
+			global::Acr.UserDialogs.Resource.Styleable.TextInputLayout = global::SmartButler.Droid.Resource.Styleable.TextInputLayout;
+			global::Acr.UserDialogs.Resource.Styleable.TextInputLayout_android_hint = global::SmartButler.Droid.Resource.Styleable.TextInputLayout_android_hint;
+			global::Acr.UserDialogs.Resource.Styleable.TextInputLayout_android_textColorHint = global::SmartButler.Droid.Resource.Styleable.TextInputLayout_android_textColorHint;
+			global::Acr.UserDialogs.Resource.Styleable.TextInputLayout_counterEnabled = global::SmartButler.Droid.Resource.Styleable.TextInputLayout_counterEnabled;
+			global::Acr.UserDialogs.Resource.Styleable.TextInputLayout_counterMaxLength = global::SmartButler.Droid.Resource.Styleable.TextInputLayout_counterMaxLength;
+			global::Acr.UserDialogs.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance = global::SmartButler.Droid.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance;
+			global::Acr.UserDialogs.Resource.Styleable.TextInputLayout_counterTextAppearance = global::SmartButler.Droid.Resource.Styleable.TextInputLayout_counterTextAppearance;
+			global::Acr.UserDialogs.Resource.Styleable.TextInputLayout_errorEnabled = global::SmartButler.Droid.Resource.Styleable.TextInputLayout_errorEnabled;
+			global::Acr.UserDialogs.Resource.Styleable.TextInputLayout_errorTextAppearance = global::SmartButler.Droid.Resource.Styleable.TextInputLayout_errorTextAppearance;
+			global::Acr.UserDialogs.Resource.Styleable.TextInputLayout_hintAnimationEnabled = global::SmartButler.Droid.Resource.Styleable.TextInputLayout_hintAnimationEnabled;
+			global::Acr.UserDialogs.Resource.Styleable.TextInputLayout_hintEnabled = global::SmartButler.Droid.Resource.Styleable.TextInputLayout_hintEnabled;
+			global::Acr.UserDialogs.Resource.Styleable.TextInputLayout_hintTextAppearance = global::SmartButler.Droid.Resource.Styleable.TextInputLayout_hintTextAppearance;
+			global::Acr.UserDialogs.Resource.Styleable.TextInputLayout_passwordToggleContentDescription = global::SmartButler.Droid.Resource.Styleable.TextInputLayout_passwordToggleContentDescription;
+			global::Acr.UserDialogs.Resource.Styleable.TextInputLayout_passwordToggleDrawable = global::SmartButler.Droid.Resource.Styleable.TextInputLayout_passwordToggleDrawable;
+			global::Acr.UserDialogs.Resource.Styleable.TextInputLayout_passwordToggleEnabled = global::SmartButler.Droid.Resource.Styleable.TextInputLayout_passwordToggleEnabled;
+			global::Acr.UserDialogs.Resource.Styleable.TextInputLayout_passwordToggleTint = global::SmartButler.Droid.Resource.Styleable.TextInputLayout_passwordToggleTint;
+			global::Acr.UserDialogs.Resource.Styleable.TextInputLayout_passwordToggleTintMode = global::SmartButler.Droid.Resource.Styleable.TextInputLayout_passwordToggleTintMode;
+			global::Acr.UserDialogs.Resource.Styleable.Toolbar = global::SmartButler.Droid.Resource.Styleable.Toolbar;
+			global::Acr.UserDialogs.Resource.Styleable.Toolbar_android_gravity = global::SmartButler.Droid.Resource.Styleable.Toolbar_android_gravity;
+			global::Acr.UserDialogs.Resource.Styleable.Toolbar_android_minHeight = global::SmartButler.Droid.Resource.Styleable.Toolbar_android_minHeight;
+			global::Acr.UserDialogs.Resource.Styleable.Toolbar_buttonGravity = global::SmartButler.Droid.Resource.Styleable.Toolbar_buttonGravity;
+			global::Acr.UserDialogs.Resource.Styleable.Toolbar_collapseContentDescription = global::SmartButler.Droid.Resource.Styleable.Toolbar_collapseContentDescription;
+			global::Acr.UserDialogs.Resource.Styleable.Toolbar_collapseIcon = global::SmartButler.Droid.Resource.Styleable.Toolbar_collapseIcon;
+			global::Acr.UserDialogs.Resource.Styleable.Toolbar_contentInsetEnd = global::SmartButler.Droid.Resource.Styleable.Toolbar_contentInsetEnd;
+			global::Acr.UserDialogs.Resource.Styleable.Toolbar_contentInsetEndWithActions = global::SmartButler.Droid.Resource.Styleable.Toolbar_contentInsetEndWithActions;
+			global::Acr.UserDialogs.Resource.Styleable.Toolbar_contentInsetLeft = global::SmartButler.Droid.Resource.Styleable.Toolbar_contentInsetLeft;
+			global::Acr.UserDialogs.Resource.Styleable.Toolbar_contentInsetRight = global::SmartButler.Droid.Resource.Styleable.Toolbar_contentInsetRight;
+			global::Acr.UserDialogs.Resource.Styleable.Toolbar_contentInsetStart = global::SmartButler.Droid.Resource.Styleable.Toolbar_contentInsetStart;
+			global::Acr.UserDialogs.Resource.Styleable.Toolbar_contentInsetStartWithNavigation = global::SmartButler.Droid.Resource.Styleable.Toolbar_contentInsetStartWithNavigation;
+			global::Acr.UserDialogs.Resource.Styleable.Toolbar_logo = global::SmartButler.Droid.Resource.Styleable.Toolbar_logo;
+			global::Acr.UserDialogs.Resource.Styleable.Toolbar_logoDescription = global::SmartButler.Droid.Resource.Styleable.Toolbar_logoDescription;
+			global::Acr.UserDialogs.Resource.Styleable.Toolbar_maxButtonHeight = global::SmartButler.Droid.Resource.Styleable.Toolbar_maxButtonHeight;
+			global::Acr.UserDialogs.Resource.Styleable.Toolbar_navigationContentDescription = global::SmartButler.Droid.Resource.Styleable.Toolbar_navigationContentDescription;
+			global::Acr.UserDialogs.Resource.Styleable.Toolbar_navigationIcon = global::SmartButler.Droid.Resource.Styleable.Toolbar_navigationIcon;
+			global::Acr.UserDialogs.Resource.Styleable.Toolbar_popupTheme = global::SmartButler.Droid.Resource.Styleable.Toolbar_popupTheme;
+			global::Acr.UserDialogs.Resource.Styleable.Toolbar_subtitle = global::SmartButler.Droid.Resource.Styleable.Toolbar_subtitle;
+			global::Acr.UserDialogs.Resource.Styleable.Toolbar_subtitleTextAppearance = global::SmartButler.Droid.Resource.Styleable.Toolbar_subtitleTextAppearance;
+			global::Acr.UserDialogs.Resource.Styleable.Toolbar_subtitleTextColor = global::SmartButler.Droid.Resource.Styleable.Toolbar_subtitleTextColor;
+			global::Acr.UserDialogs.Resource.Styleable.Toolbar_title = global::SmartButler.Droid.Resource.Styleable.Toolbar_title;
+			global::Acr.UserDialogs.Resource.Styleable.Toolbar_titleMargin = global::SmartButler.Droid.Resource.Styleable.Toolbar_titleMargin;
+			global::Acr.UserDialogs.Resource.Styleable.Toolbar_titleMarginBottom = global::SmartButler.Droid.Resource.Styleable.Toolbar_titleMarginBottom;
+			global::Acr.UserDialogs.Resource.Styleable.Toolbar_titleMarginEnd = global::SmartButler.Droid.Resource.Styleable.Toolbar_titleMarginEnd;
+			global::Acr.UserDialogs.Resource.Styleable.Toolbar_titleMargins = global::SmartButler.Droid.Resource.Styleable.Toolbar_titleMargins;
+			global::Acr.UserDialogs.Resource.Styleable.Toolbar_titleMarginStart = global::SmartButler.Droid.Resource.Styleable.Toolbar_titleMarginStart;
+			global::Acr.UserDialogs.Resource.Styleable.Toolbar_titleMarginTop = global::SmartButler.Droid.Resource.Styleable.Toolbar_titleMarginTop;
+			global::Acr.UserDialogs.Resource.Styleable.Toolbar_titleTextAppearance = global::SmartButler.Droid.Resource.Styleable.Toolbar_titleTextAppearance;
+			global::Acr.UserDialogs.Resource.Styleable.Toolbar_titleTextColor = global::SmartButler.Droid.Resource.Styleable.Toolbar_titleTextColor;
+			global::Acr.UserDialogs.Resource.Styleable.View = global::SmartButler.Droid.Resource.Styleable.View;
+			global::Acr.UserDialogs.Resource.Styleable.ViewBackgroundHelper = global::SmartButler.Droid.Resource.Styleable.ViewBackgroundHelper;
+			global::Acr.UserDialogs.Resource.Styleable.ViewBackgroundHelper_android_background = global::SmartButler.Droid.Resource.Styleable.ViewBackgroundHelper_android_background;
+			global::Acr.UserDialogs.Resource.Styleable.ViewBackgroundHelper_backgroundTint = global::SmartButler.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTint;
+			global::Acr.UserDialogs.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode = global::SmartButler.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode;
+			global::Acr.UserDialogs.Resource.Styleable.ViewStubCompat = global::SmartButler.Droid.Resource.Styleable.ViewStubCompat;
+			global::Acr.UserDialogs.Resource.Styleable.ViewStubCompat_android_id = global::SmartButler.Droid.Resource.Styleable.ViewStubCompat_android_id;
+			global::Acr.UserDialogs.Resource.Styleable.ViewStubCompat_android_inflatedId = global::SmartButler.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId;
+			global::Acr.UserDialogs.Resource.Styleable.ViewStubCompat_android_layout = global::SmartButler.Droid.Resource.Styleable.ViewStubCompat_android_layout;
+			global::Acr.UserDialogs.Resource.Styleable.View_android_focusable = global::SmartButler.Droid.Resource.Styleable.View_android_focusable;
+			global::Acr.UserDialogs.Resource.Styleable.View_android_theme = global::SmartButler.Droid.Resource.Styleable.View_android_theme;
+			global::Acr.UserDialogs.Resource.Styleable.View_paddingEnd = global::SmartButler.Droid.Resource.Styleable.View_paddingEnd;
+			global::Acr.UserDialogs.Resource.Styleable.View_paddingStart = global::SmartButler.Droid.Resource.Styleable.View_paddingStart;
+			global::Acr.UserDialogs.Resource.Styleable.View_theme = global::SmartButler.Droid.Resource.Styleable.View_theme;
+			global::AndroidHUD.Resource.Attribute.ahBarColor = global::SmartButler.Droid.Resource.Attribute.ahBarColor;
+			global::AndroidHUD.Resource.Attribute.ahBarLength = global::SmartButler.Droid.Resource.Attribute.ahBarLength;
+			global::AndroidHUD.Resource.Attribute.ahBarWidth = global::SmartButler.Droid.Resource.Attribute.ahBarWidth;
+			global::AndroidHUD.Resource.Attribute.ahCircleColor = global::SmartButler.Droid.Resource.Attribute.ahCircleColor;
+			global::AndroidHUD.Resource.Attribute.ahDelayMillis = global::SmartButler.Droid.Resource.Attribute.ahDelayMillis;
+			global::AndroidHUD.Resource.Attribute.ahRadius = global::SmartButler.Droid.Resource.Attribute.ahRadius;
+			global::AndroidHUD.Resource.Attribute.ahRimColor = global::SmartButler.Droid.Resource.Attribute.ahRimColor;
+			global::AndroidHUD.Resource.Attribute.ahRimWidth = global::SmartButler.Droid.Resource.Attribute.ahRimWidth;
+			global::AndroidHUD.Resource.Attribute.ahSpinSpeed = global::SmartButler.Droid.Resource.Attribute.ahSpinSpeed;
+			global::AndroidHUD.Resource.Attribute.ahText = global::SmartButler.Droid.Resource.Attribute.ahText;
+			global::AndroidHUD.Resource.Attribute.ahTextColor = global::SmartButler.Droid.Resource.Attribute.ahTextColor;
+			global::AndroidHUD.Resource.Attribute.ahTextSize = global::SmartButler.Droid.Resource.Attribute.ahTextSize;
+			global::AndroidHUD.Resource.Drawable.ic_errorstatus = global::SmartButler.Droid.Resource.Drawable.ic_errorstatus;
+			global::AndroidHUD.Resource.Drawable.ic_successstatus = global::SmartButler.Droid.Resource.Drawable.ic_successstatus;
+			global::AndroidHUD.Resource.Drawable.roundedbg = global::SmartButler.Droid.Resource.Drawable.roundedbg;
+			global::AndroidHUD.Resource.Drawable.roundedbgdark = global::SmartButler.Droid.Resource.Drawable.roundedbgdark;
+			global::AndroidHUD.Resource.Id.loadingImage = global::SmartButler.Droid.Resource.Id.loadingImage;
+			global::AndroidHUD.Resource.Id.loadingProgressBar = global::SmartButler.Droid.Resource.Id.loadingProgressBar;
+			global::AndroidHUD.Resource.Id.loadingProgressWheel = global::SmartButler.Droid.Resource.Id.loadingProgressWheel;
+			global::AndroidHUD.Resource.Id.textViewStatus = global::SmartButler.Droid.Resource.Id.textViewStatus;
+			global::AndroidHUD.Resource.Layout.loading = global::SmartButler.Droid.Resource.Layout.loading;
+			global::AndroidHUD.Resource.Layout.loadingimage = global::SmartButler.Droid.Resource.Layout.loadingimage;
+			global::AndroidHUD.Resource.Layout.loadingprogress = global::SmartButler.Droid.Resource.Layout.loadingprogress;
+			global::AndroidHUD.Resource.String.library_name = global::SmartButler.Droid.Resource.String.library_name;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel = global::SmartButler.Droid.Resource.Styleable.ProgressWheel;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahBarColor = global::SmartButler.Droid.Resource.Styleable.ProgressWheel_ahBarColor;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahBarLength = global::SmartButler.Droid.Resource.Styleable.ProgressWheel_ahBarLength;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahBarWidth = global::SmartButler.Droid.Resource.Styleable.ProgressWheel_ahBarWidth;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahCircleColor = global::SmartButler.Droid.Resource.Styleable.ProgressWheel_ahCircleColor;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahDelayMillis = global::SmartButler.Droid.Resource.Styleable.ProgressWheel_ahDelayMillis;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahRadius = global::SmartButler.Droid.Resource.Styleable.ProgressWheel_ahRadius;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahRimColor = global::SmartButler.Droid.Resource.Styleable.ProgressWheel_ahRimColor;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahRimWidth = global::SmartButler.Droid.Resource.Styleable.ProgressWheel_ahRimWidth;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahSpinSpeed = global::SmartButler.Droid.Resource.Styleable.ProgressWheel_ahSpinSpeed;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahText = global::SmartButler.Droid.Resource.Styleable.ProgressWheel_ahText;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahTextColor = global::SmartButler.Droid.Resource.Styleable.ProgressWheel_ahTextColor;
+			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahTextSize = global::SmartButler.Droid.Resource.Styleable.ProgressWheel_ahTextSize;
+			global::Splat.Resource.String.library_name = global::SmartButler.Droid.Resource.String.library_name;
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_fade_in = global::SmartButler.Droid.Resource.Animation.abc_fade_in;
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_fade_out = global::SmartButler.Droid.Resource.Animation.abc_fade_out;
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_grow_fade_in_from_bottom = global::SmartButler.Droid.Resource.Animation.abc_grow_fade_in_from_bottom;
@@ -2210,1015 +4216,1051 @@ namespace SmartButler.Droid
 			public const int activityChooserViewStyle = 2130903073;
 			
 			// aapt resource value: 0x7F030022
-			public const int alertDialogButtonGroupStyle = 2130903074;
+			public const int ahBarColor = 2130903074;
 			
 			// aapt resource value: 0x7F030023
-			public const int alertDialogCenterButtons = 2130903075;
+			public const int ahBarLength = 2130903075;
 			
 			// aapt resource value: 0x7F030024
-			public const int alertDialogStyle = 2130903076;
+			public const int ahBarWidth = 2130903076;
 			
 			// aapt resource value: 0x7F030025
-			public const int alertDialogTheme = 2130903077;
+			public const int ahCircleColor = 2130903077;
 			
 			// aapt resource value: 0x7F030026
-			public const int allowStacking = 2130903078;
+			public const int ahDelayMillis = 2130903078;
 			
 			// aapt resource value: 0x7F030027
-			public const int alpha = 2130903079;
+			public const int ahRadius = 2130903079;
 			
 			// aapt resource value: 0x7F030028
-			public const int alphabeticModifiers = 2130903080;
+			public const int ahRimColor = 2130903080;
 			
 			// aapt resource value: 0x7F030029
-			public const int arrowHeadLength = 2130903081;
+			public const int ahRimWidth = 2130903081;
 			
 			// aapt resource value: 0x7F03002A
-			public const int arrowShaftLength = 2130903082;
+			public const int ahSpinSpeed = 2130903082;
 			
 			// aapt resource value: 0x7F03002B
-			public const int autoCompleteTextViewStyle = 2130903083;
+			public const int ahText = 2130903083;
 			
 			// aapt resource value: 0x7F03002C
-			public const int autoSizeMaxTextSize = 2130903084;
+			public const int ahTextColor = 2130903084;
 			
 			// aapt resource value: 0x7F03002D
-			public const int autoSizeMinTextSize = 2130903085;
+			public const int ahTextSize = 2130903085;
 			
 			// aapt resource value: 0x7F03002E
-			public const int autoSizePresetSizes = 2130903086;
+			public const int alertDialogButtonGroupStyle = 2130903086;
 			
 			// aapt resource value: 0x7F03002F
-			public const int autoSizeStepGranularity = 2130903087;
+			public const int alertDialogCenterButtons = 2130903087;
 			
 			// aapt resource value: 0x7F030030
-			public const int autoSizeTextType = 2130903088;
+			public const int alertDialogStyle = 2130903088;
 			
 			// aapt resource value: 0x7F030031
-			public const int background = 2130903089;
+			public const int alertDialogTheme = 2130903089;
 			
 			// aapt resource value: 0x7F030032
-			public const int backgroundSplit = 2130903090;
+			public const int allowStacking = 2130903090;
 			
 			// aapt resource value: 0x7F030033
-			public const int backgroundStacked = 2130903091;
+			public const int alpha = 2130903091;
 			
 			// aapt resource value: 0x7F030034
-			public const int backgroundTint = 2130903092;
+			public const int alphabeticModifiers = 2130903092;
 			
 			// aapt resource value: 0x7F030035
-			public const int backgroundTintMode = 2130903093;
+			public const int arrowHeadLength = 2130903093;
 			
 			// aapt resource value: 0x7F030036
-			public const int barLength = 2130903094;
+			public const int arrowShaftLength = 2130903094;
 			
 			// aapt resource value: 0x7F030037
-			public const int behavior_autoHide = 2130903095;
+			public const int autoCompleteTextViewStyle = 2130903095;
 			
 			// aapt resource value: 0x7F030038
-			public const int behavior_hideable = 2130903096;
+			public const int autoSizeMaxTextSize = 2130903096;
 			
 			// aapt resource value: 0x7F030039
-			public const int behavior_overlapTop = 2130903097;
+			public const int autoSizeMinTextSize = 2130903097;
 			
 			// aapt resource value: 0x7F03003A
-			public const int behavior_peekHeight = 2130903098;
+			public const int autoSizePresetSizes = 2130903098;
 			
 			// aapt resource value: 0x7F03003B
-			public const int behavior_skipCollapsed = 2130903099;
-			
-			// aapt resource value: 0x7F03003D
-			public const int borderlessButtonStyle = 2130903101;
+			public const int autoSizeStepGranularity = 2130903099;
 			
 			// aapt resource value: 0x7F03003C
-			public const int borderWidth = 2130903100;
+			public const int autoSizeTextType = 2130903100;
+			
+			// aapt resource value: 0x7F03003D
+			public const int background = 2130903101;
 			
 			// aapt resource value: 0x7F03003E
-			public const int bottomSheetDialogTheme = 2130903102;
+			public const int backgroundSplit = 2130903102;
 			
 			// aapt resource value: 0x7F03003F
-			public const int bottomSheetStyle = 2130903103;
+			public const int backgroundStacked = 2130903103;
 			
 			// aapt resource value: 0x7F030040
-			public const int buttonBarButtonStyle = 2130903104;
+			public const int backgroundTint = 2130903104;
 			
 			// aapt resource value: 0x7F030041
-			public const int buttonBarNegativeButtonStyle = 2130903105;
+			public const int backgroundTintMode = 2130903105;
 			
 			// aapt resource value: 0x7F030042
-			public const int buttonBarNeutralButtonStyle = 2130903106;
+			public const int barLength = 2130903106;
 			
 			// aapt resource value: 0x7F030043
-			public const int buttonBarPositiveButtonStyle = 2130903107;
+			public const int behavior_autoHide = 2130903107;
 			
 			// aapt resource value: 0x7F030044
-			public const int buttonBarStyle = 2130903108;
+			public const int behavior_hideable = 2130903108;
 			
 			// aapt resource value: 0x7F030045
-			public const int buttonGravity = 2130903109;
+			public const int behavior_overlapTop = 2130903109;
 			
 			// aapt resource value: 0x7F030046
-			public const int buttonPanelSideLayout = 2130903110;
+			public const int behavior_peekHeight = 2130903110;
 			
 			// aapt resource value: 0x7F030047
-			public const int buttonStyle = 2130903111;
-			
-			// aapt resource value: 0x7F030048
-			public const int buttonStyleSmall = 2130903112;
+			public const int behavior_skipCollapsed = 2130903111;
 			
 			// aapt resource value: 0x7F030049
-			public const int buttonTint = 2130903113;
+			public const int borderlessButtonStyle = 2130903113;
+			
+			// aapt resource value: 0x7F030048
+			public const int borderWidth = 2130903112;
 			
 			// aapt resource value: 0x7F03004A
-			public const int buttonTintMode = 2130903114;
+			public const int bottomSheetDialogTheme = 2130903114;
 			
 			// aapt resource value: 0x7F03004B
-			public const int cardBackgroundColor = 2130903115;
+			public const int bottomSheetStyle = 2130903115;
 			
 			// aapt resource value: 0x7F03004C
-			public const int cardCornerRadius = 2130903116;
+			public const int buttonBarButtonStyle = 2130903116;
 			
 			// aapt resource value: 0x7F03004D
-			public const int cardElevation = 2130903117;
+			public const int buttonBarNegativeButtonStyle = 2130903117;
 			
 			// aapt resource value: 0x7F03004E
-			public const int cardMaxElevation = 2130903118;
+			public const int buttonBarNeutralButtonStyle = 2130903118;
 			
 			// aapt resource value: 0x7F03004F
-			public const int cardPreventCornerOverlap = 2130903119;
+			public const int buttonBarPositiveButtonStyle = 2130903119;
 			
 			// aapt resource value: 0x7F030050
-			public const int cardUseCompatPadding = 2130903120;
+			public const int buttonBarStyle = 2130903120;
 			
 			// aapt resource value: 0x7F030051
-			public const int checkboxStyle = 2130903121;
+			public const int buttonGravity = 2130903121;
 			
 			// aapt resource value: 0x7F030052
-			public const int checkedTextViewStyle = 2130903122;
+			public const int buttonPanelSideLayout = 2130903122;
 			
 			// aapt resource value: 0x7F030053
-			public const int closeIcon = 2130903123;
+			public const int buttonStyle = 2130903123;
 			
 			// aapt resource value: 0x7F030054
-			public const int closeItemLayout = 2130903124;
+			public const int buttonStyleSmall = 2130903124;
 			
 			// aapt resource value: 0x7F030055
-			public const int collapseContentDescription = 2130903125;
-			
-			// aapt resource value: 0x7F030057
-			public const int collapsedTitleGravity = 2130903127;
-			
-			// aapt resource value: 0x7F030058
-			public const int collapsedTitleTextAppearance = 2130903128;
+			public const int buttonTint = 2130903125;
 			
 			// aapt resource value: 0x7F030056
-			public const int collapseIcon = 2130903126;
+			public const int buttonTintMode = 2130903126;
+			
+			// aapt resource value: 0x7F030057
+			public const int cardBackgroundColor = 2130903127;
+			
+			// aapt resource value: 0x7F030058
+			public const int cardCornerRadius = 2130903128;
 			
 			// aapt resource value: 0x7F030059
-			public const int color = 2130903129;
+			public const int cardElevation = 2130903129;
 			
 			// aapt resource value: 0x7F03005A
-			public const int colorAccent = 2130903130;
+			public const int cardMaxElevation = 2130903130;
 			
 			// aapt resource value: 0x7F03005B
-			public const int colorBackgroundFloating = 2130903131;
+			public const int cardPreventCornerOverlap = 2130903131;
 			
 			// aapt resource value: 0x7F03005C
-			public const int colorButtonNormal = 2130903132;
+			public const int cardUseCompatPadding = 2130903132;
 			
 			// aapt resource value: 0x7F03005D
-			public const int colorControlActivated = 2130903133;
+			public const int checkboxStyle = 2130903133;
 			
 			// aapt resource value: 0x7F03005E
-			public const int colorControlHighlight = 2130903134;
+			public const int checkedTextViewStyle = 2130903134;
 			
 			// aapt resource value: 0x7F03005F
-			public const int colorControlNormal = 2130903135;
+			public const int closeIcon = 2130903135;
 			
 			// aapt resource value: 0x7F030060
-			public const int colorError = 2130903136;
+			public const int closeItemLayout = 2130903136;
 			
 			// aapt resource value: 0x7F030061
-			public const int colorPrimary = 2130903137;
-			
-			// aapt resource value: 0x7F030062
-			public const int colorPrimaryDark = 2130903138;
+			public const int collapseContentDescription = 2130903137;
 			
 			// aapt resource value: 0x7F030063
-			public const int colorSwitchThumbNormal = 2130903139;
+			public const int collapsedTitleGravity = 2130903139;
 			
 			// aapt resource value: 0x7F030064
-			public const int commitIcon = 2130903140;
+			public const int collapsedTitleTextAppearance = 2130903140;
+			
+			// aapt resource value: 0x7F030062
+			public const int collapseIcon = 2130903138;
 			
 			// aapt resource value: 0x7F030065
-			public const int contentDescription = 2130903141;
+			public const int color = 2130903141;
 			
 			// aapt resource value: 0x7F030066
-			public const int contentInsetEnd = 2130903142;
+			public const int colorAccent = 2130903142;
 			
 			// aapt resource value: 0x7F030067
-			public const int contentInsetEndWithActions = 2130903143;
+			public const int colorBackgroundFloating = 2130903143;
 			
 			// aapt resource value: 0x7F030068
-			public const int contentInsetLeft = 2130903144;
+			public const int colorButtonNormal = 2130903144;
 			
 			// aapt resource value: 0x7F030069
-			public const int contentInsetRight = 2130903145;
+			public const int colorControlActivated = 2130903145;
 			
 			// aapt resource value: 0x7F03006A
-			public const int contentInsetStart = 2130903146;
+			public const int colorControlHighlight = 2130903146;
 			
 			// aapt resource value: 0x7F03006B
-			public const int contentInsetStartWithNavigation = 2130903147;
+			public const int colorControlNormal = 2130903147;
 			
 			// aapt resource value: 0x7F03006C
-			public const int contentPadding = 2130903148;
+			public const int colorError = 2130903148;
 			
 			// aapt resource value: 0x7F03006D
-			public const int contentPaddingBottom = 2130903149;
+			public const int colorPrimary = 2130903149;
 			
 			// aapt resource value: 0x7F03006E
-			public const int contentPaddingLeft = 2130903150;
+			public const int colorPrimaryDark = 2130903150;
 			
 			// aapt resource value: 0x7F03006F
-			public const int contentPaddingRight = 2130903151;
+			public const int colorSwitchThumbNormal = 2130903151;
 			
 			// aapt resource value: 0x7F030070
-			public const int contentPaddingTop = 2130903152;
+			public const int commitIcon = 2130903152;
 			
 			// aapt resource value: 0x7F030071
-			public const int contentScrim = 2130903153;
+			public const int contentDescription = 2130903153;
 			
 			// aapt resource value: 0x7F030072
-			public const int controlBackground = 2130903154;
+			public const int contentInsetEnd = 2130903154;
 			
 			// aapt resource value: 0x7F030073
-			public const int counterEnabled = 2130903155;
+			public const int contentInsetEndWithActions = 2130903155;
 			
 			// aapt resource value: 0x7F030074
-			public const int counterMaxLength = 2130903156;
+			public const int contentInsetLeft = 2130903156;
 			
 			// aapt resource value: 0x7F030075
-			public const int counterOverflowTextAppearance = 2130903157;
+			public const int contentInsetRight = 2130903157;
 			
 			// aapt resource value: 0x7F030076
-			public const int counterTextAppearance = 2130903158;
+			public const int contentInsetStart = 2130903158;
 			
 			// aapt resource value: 0x7F030077
-			public const int customNavigationLayout = 2130903159;
+			public const int contentInsetStartWithNavigation = 2130903159;
 			
 			// aapt resource value: 0x7F030078
-			public const int defaultQueryHint = 2130903160;
+			public const int contentPadding = 2130903160;
 			
 			// aapt resource value: 0x7F030079
-			public const int dialogPreferredPadding = 2130903161;
+			public const int contentPaddingBottom = 2130903161;
 			
 			// aapt resource value: 0x7F03007A
-			public const int dialogTheme = 2130903162;
+			public const int contentPaddingLeft = 2130903162;
 			
 			// aapt resource value: 0x7F03007B
-			public const int displayOptions = 2130903163;
+			public const int contentPaddingRight = 2130903163;
 			
 			// aapt resource value: 0x7F03007C
-			public const int divider = 2130903164;
+			public const int contentPaddingTop = 2130903164;
 			
 			// aapt resource value: 0x7F03007D
-			public const int dividerHorizontal = 2130903165;
+			public const int contentScrim = 2130903165;
 			
 			// aapt resource value: 0x7F03007E
-			public const int dividerPadding = 2130903166;
+			public const int controlBackground = 2130903166;
 			
 			// aapt resource value: 0x7F03007F
-			public const int dividerVertical = 2130903167;
+			public const int counterEnabled = 2130903167;
 			
 			// aapt resource value: 0x7F030080
-			public const int drawableSize = 2130903168;
+			public const int counterMaxLength = 2130903168;
 			
 			// aapt resource value: 0x7F030081
-			public const int drawerArrowStyle = 2130903169;
-			
-			// aapt resource value: 0x7F030083
-			public const int dropdownListPreferredItemHeight = 2130903171;
+			public const int counterOverflowTextAppearance = 2130903169;
 			
 			// aapt resource value: 0x7F030082
-			public const int dropDownListViewStyle = 2130903170;
+			public const int counterTextAppearance = 2130903170;
+			
+			// aapt resource value: 0x7F030083
+			public const int customNavigationLayout = 2130903171;
 			
 			// aapt resource value: 0x7F030084
-			public const int editTextBackground = 2130903172;
+			public const int defaultQueryHint = 2130903172;
 			
 			// aapt resource value: 0x7F030085
-			public const int editTextColor = 2130903173;
+			public const int dialogPreferredPadding = 2130903173;
 			
 			// aapt resource value: 0x7F030086
-			public const int editTextStyle = 2130903174;
+			public const int dialogTheme = 2130903174;
 			
 			// aapt resource value: 0x7F030087
-			public const int elevation = 2130903175;
+			public const int displayOptions = 2130903175;
 			
 			// aapt resource value: 0x7F030088
-			public const int errorEnabled = 2130903176;
+			public const int divider = 2130903176;
 			
 			// aapt resource value: 0x7F030089
-			public const int errorTextAppearance = 2130903177;
+			public const int dividerHorizontal = 2130903177;
 			
 			// aapt resource value: 0x7F03008A
-			public const int expandActivityOverflowButtonDrawable = 2130903178;
+			public const int dividerPadding = 2130903178;
 			
 			// aapt resource value: 0x7F03008B
-			public const int expanded = 2130903179;
+			public const int dividerVertical = 2130903179;
 			
 			// aapt resource value: 0x7F03008C
-			public const int expandedTitleGravity = 2130903180;
+			public const int drawableSize = 2130903180;
 			
 			// aapt resource value: 0x7F03008D
-			public const int expandedTitleMargin = 2130903181;
-			
-			// aapt resource value: 0x7F03008E
-			public const int expandedTitleMarginBottom = 2130903182;
+			public const int drawerArrowStyle = 2130903181;
 			
 			// aapt resource value: 0x7F03008F
-			public const int expandedTitleMarginEnd = 2130903183;
+			public const int dropdownListPreferredItemHeight = 2130903183;
+			
+			// aapt resource value: 0x7F03008E
+			public const int dropDownListViewStyle = 2130903182;
 			
 			// aapt resource value: 0x7F030090
-			public const int expandedTitleMarginStart = 2130903184;
+			public const int editTextBackground = 2130903184;
 			
 			// aapt resource value: 0x7F030091
-			public const int expandedTitleMarginTop = 2130903185;
+			public const int editTextColor = 2130903185;
 			
 			// aapt resource value: 0x7F030092
-			public const int expandedTitleTextAppearance = 2130903186;
+			public const int editTextStyle = 2130903186;
 			
 			// aapt resource value: 0x7F030093
-			public const int externalRouteEnabledDrawable = 2130903187;
+			public const int elevation = 2130903187;
 			
 			// aapt resource value: 0x7F030094
-			public const int fabSize = 2130903188;
+			public const int errorEnabled = 2130903188;
 			
 			// aapt resource value: 0x7F030095
-			public const int fastScrollEnabled = 2130903189;
+			public const int errorTextAppearance = 2130903189;
 			
 			// aapt resource value: 0x7F030096
-			public const int fastScrollHorizontalThumbDrawable = 2130903190;
+			public const int expandActivityOverflowButtonDrawable = 2130903190;
 			
 			// aapt resource value: 0x7F030097
-			public const int fastScrollHorizontalTrackDrawable = 2130903191;
+			public const int expanded = 2130903191;
 			
 			// aapt resource value: 0x7F030098
-			public const int fastScrollVerticalThumbDrawable = 2130903192;
+			public const int expandedTitleGravity = 2130903192;
 			
 			// aapt resource value: 0x7F030099
-			public const int fastScrollVerticalTrackDrawable = 2130903193;
+			public const int expandedTitleMargin = 2130903193;
 			
 			// aapt resource value: 0x7F03009A
-			public const int font = 2130903194;
+			public const int expandedTitleMarginBottom = 2130903194;
 			
 			// aapt resource value: 0x7F03009B
-			public const int fontFamily = 2130903195;
+			public const int expandedTitleMarginEnd = 2130903195;
 			
 			// aapt resource value: 0x7F03009C
-			public const int fontProviderAuthority = 2130903196;
+			public const int expandedTitleMarginStart = 2130903196;
 			
 			// aapt resource value: 0x7F03009D
-			public const int fontProviderCerts = 2130903197;
+			public const int expandedTitleMarginTop = 2130903197;
 			
 			// aapt resource value: 0x7F03009E
-			public const int fontProviderFetchStrategy = 2130903198;
+			public const int expandedTitleTextAppearance = 2130903198;
 			
 			// aapt resource value: 0x7F03009F
-			public const int fontProviderFetchTimeout = 2130903199;
+			public const int externalRouteEnabledDrawable = 2130903199;
 			
 			// aapt resource value: 0x7F0300A0
-			public const int fontProviderPackage = 2130903200;
+			public const int fabSize = 2130903200;
 			
 			// aapt resource value: 0x7F0300A1
-			public const int fontProviderQuery = 2130903201;
+			public const int fastScrollEnabled = 2130903201;
 			
 			// aapt resource value: 0x7F0300A2
-			public const int fontStyle = 2130903202;
+			public const int fastScrollHorizontalThumbDrawable = 2130903202;
 			
 			// aapt resource value: 0x7F0300A3
-			public const int fontWeight = 2130903203;
+			public const int fastScrollHorizontalTrackDrawable = 2130903203;
 			
 			// aapt resource value: 0x7F0300A4
-			public const int foregroundInsidePadding = 2130903204;
+			public const int fastScrollVerticalThumbDrawable = 2130903204;
 			
 			// aapt resource value: 0x7F0300A5
-			public const int gapBetweenBars = 2130903205;
+			public const int fastScrollVerticalTrackDrawable = 2130903205;
 			
 			// aapt resource value: 0x7F0300A6
-			public const int goIcon = 2130903206;
+			public const int font = 2130903206;
 			
 			// aapt resource value: 0x7F0300A7
-			public const int headerLayout = 2130903207;
+			public const int fontFamily = 2130903207;
 			
 			// aapt resource value: 0x7F0300A8
-			public const int height = 2130903208;
+			public const int fontProviderAuthority = 2130903208;
 			
 			// aapt resource value: 0x7F0300A9
-			public const int hideOnContentScroll = 2130903209;
+			public const int fontProviderCerts = 2130903209;
 			
 			// aapt resource value: 0x7F0300AA
-			public const int hintAnimationEnabled = 2130903210;
+			public const int fontProviderFetchStrategy = 2130903210;
 			
 			// aapt resource value: 0x7F0300AB
-			public const int hintEnabled = 2130903211;
+			public const int fontProviderFetchTimeout = 2130903211;
 			
 			// aapt resource value: 0x7F0300AC
-			public const int hintTextAppearance = 2130903212;
+			public const int fontProviderPackage = 2130903212;
 			
 			// aapt resource value: 0x7F0300AD
-			public const int homeAsUpIndicator = 2130903213;
+			public const int fontProviderQuery = 2130903213;
 			
 			// aapt resource value: 0x7F0300AE
-			public const int homeLayout = 2130903214;
+			public const int fontStyle = 2130903214;
 			
 			// aapt resource value: 0x7F0300AF
-			public const int icon = 2130903215;
-			
-			// aapt resource value: 0x7F0300B2
-			public const int iconifiedByDefault = 2130903218;
+			public const int fontWeight = 2130903215;
 			
 			// aapt resource value: 0x7F0300B0
-			public const int iconTint = 2130903216;
+			public const int foregroundInsidePadding = 2130903216;
 			
 			// aapt resource value: 0x7F0300B1
-			public const int iconTintMode = 2130903217;
+			public const int gapBetweenBars = 2130903217;
+			
+			// aapt resource value: 0x7F0300B2
+			public const int goIcon = 2130903218;
 			
 			// aapt resource value: 0x7F0300B3
-			public const int imageButtonStyle = 2130903219;
+			public const int headerLayout = 2130903219;
 			
 			// aapt resource value: 0x7F0300B4
-			public const int indeterminateProgressStyle = 2130903220;
+			public const int height = 2130903220;
 			
 			// aapt resource value: 0x7F0300B5
-			public const int initialActivityCount = 2130903221;
+			public const int hideOnContentScroll = 2130903221;
 			
 			// aapt resource value: 0x7F0300B6
-			public const int insetForeground = 2130903222;
+			public const int hintAnimationEnabled = 2130903222;
 			
 			// aapt resource value: 0x7F0300B7
-			public const int isLightTheme = 2130903223;
+			public const int hintEnabled = 2130903223;
 			
 			// aapt resource value: 0x7F0300B8
-			public const int itemBackground = 2130903224;
+			public const int hintTextAppearance = 2130903224;
 			
 			// aapt resource value: 0x7F0300B9
-			public const int itemIconTint = 2130903225;
+			public const int homeAsUpIndicator = 2130903225;
 			
 			// aapt resource value: 0x7F0300BA
-			public const int itemPadding = 2130903226;
+			public const int homeLayout = 2130903226;
 			
 			// aapt resource value: 0x7F0300BB
-			public const int itemTextAppearance = 2130903227;
-			
-			// aapt resource value: 0x7F0300BC
-			public const int itemTextColor = 2130903228;
-			
-			// aapt resource value: 0x7F0300BD
-			public const int keylines = 2130903229;
+			public const int icon = 2130903227;
 			
 			// aapt resource value: 0x7F0300BE
-			public const int layout = 2130903230;
+			public const int iconifiedByDefault = 2130903230;
+			
+			// aapt resource value: 0x7F0300BC
+			public const int iconTint = 2130903228;
+			
+			// aapt resource value: 0x7F0300BD
+			public const int iconTintMode = 2130903229;
 			
 			// aapt resource value: 0x7F0300BF
-			public const int layoutManager = 2130903231;
+			public const int imageButtonStyle = 2130903231;
 			
 			// aapt resource value: 0x7F0300C0
-			public const int layout_anchor = 2130903232;
+			public const int indeterminateProgressStyle = 2130903232;
 			
 			// aapt resource value: 0x7F0300C1
-			public const int layout_anchorGravity = 2130903233;
+			public const int initialActivityCount = 2130903233;
 			
 			// aapt resource value: 0x7F0300C2
-			public const int layout_behavior = 2130903234;
+			public const int insetForeground = 2130903234;
 			
 			// aapt resource value: 0x7F0300C3
-			public const int layout_collapseMode = 2130903235;
+			public const int isLightTheme = 2130903235;
 			
 			// aapt resource value: 0x7F0300C4
-			public const int layout_collapseParallaxMultiplier = 2130903236;
+			public const int itemBackground = 2130903236;
 			
 			// aapt resource value: 0x7F0300C5
-			public const int layout_dodgeInsetEdges = 2130903237;
+			public const int itemIconTint = 2130903237;
 			
 			// aapt resource value: 0x7F0300C6
-			public const int layout_insetEdge = 2130903238;
+			public const int itemPadding = 2130903238;
 			
 			// aapt resource value: 0x7F0300C7
-			public const int layout_keyline = 2130903239;
+			public const int itemTextAppearance = 2130903239;
 			
 			// aapt resource value: 0x7F0300C8
-			public const int layout_scrollFlags = 2130903240;
+			public const int itemTextColor = 2130903240;
 			
 			// aapt resource value: 0x7F0300C9
-			public const int layout_scrollInterpolator = 2130903241;
+			public const int keylines = 2130903241;
 			
 			// aapt resource value: 0x7F0300CA
-			public const int listChoiceBackgroundIndicator = 2130903242;
+			public const int layout = 2130903242;
 			
 			// aapt resource value: 0x7F0300CB
-			public const int listDividerAlertDialog = 2130903243;
+			public const int layoutManager = 2130903243;
 			
 			// aapt resource value: 0x7F0300CC
-			public const int listItemLayout = 2130903244;
+			public const int layout_anchor = 2130903244;
 			
 			// aapt resource value: 0x7F0300CD
-			public const int listLayout = 2130903245;
+			public const int layout_anchorGravity = 2130903245;
 			
 			// aapt resource value: 0x7F0300CE
-			public const int listMenuViewStyle = 2130903246;
+			public const int layout_behavior = 2130903246;
 			
 			// aapt resource value: 0x7F0300CF
-			public const int listPopupWindowStyle = 2130903247;
+			public const int layout_collapseMode = 2130903247;
 			
 			// aapt resource value: 0x7F0300D0
-			public const int listPreferredItemHeight = 2130903248;
+			public const int layout_collapseParallaxMultiplier = 2130903248;
 			
 			// aapt resource value: 0x7F0300D1
-			public const int listPreferredItemHeightLarge = 2130903249;
+			public const int layout_dodgeInsetEdges = 2130903249;
 			
 			// aapt resource value: 0x7F0300D2
-			public const int listPreferredItemHeightSmall = 2130903250;
+			public const int layout_insetEdge = 2130903250;
 			
 			// aapt resource value: 0x7F0300D3
-			public const int listPreferredItemPaddingLeft = 2130903251;
+			public const int layout_keyline = 2130903251;
 			
 			// aapt resource value: 0x7F0300D4
-			public const int listPreferredItemPaddingRight = 2130903252;
+			public const int layout_scrollFlags = 2130903252;
 			
 			// aapt resource value: 0x7F0300D5
-			public const int logo = 2130903253;
+			public const int layout_scrollInterpolator = 2130903253;
 			
 			// aapt resource value: 0x7F0300D6
-			public const int logoDescription = 2130903254;
+			public const int listChoiceBackgroundIndicator = 2130903254;
 			
 			// aapt resource value: 0x7F0300D7
-			public const int maxActionInlineWidth = 2130903255;
+			public const int listDividerAlertDialog = 2130903255;
 			
 			// aapt resource value: 0x7F0300D8
-			public const int maxButtonHeight = 2130903256;
+			public const int listItemLayout = 2130903256;
 			
 			// aapt resource value: 0x7F0300D9
-			public const int measureWithLargestChild = 2130903257;
+			public const int listLayout = 2130903257;
 			
 			// aapt resource value: 0x7F0300DA
-			public const int mediaRouteAudioTrackDrawable = 2130903258;
+			public const int listMenuViewStyle = 2130903258;
 			
 			// aapt resource value: 0x7F0300DB
-			public const int mediaRouteButtonStyle = 2130903259;
+			public const int listPopupWindowStyle = 2130903259;
 			
 			// aapt resource value: 0x7F0300DC
-			public const int mediaRouteButtonTint = 2130903260;
+			public const int listPreferredItemHeight = 2130903260;
 			
 			// aapt resource value: 0x7F0300DD
-			public const int mediaRouteCloseDrawable = 2130903261;
+			public const int listPreferredItemHeightLarge = 2130903261;
 			
 			// aapt resource value: 0x7F0300DE
-			public const int mediaRouteControlPanelThemeOverlay = 2130903262;
+			public const int listPreferredItemHeightSmall = 2130903262;
 			
 			// aapt resource value: 0x7F0300DF
-			public const int mediaRouteDefaultIconDrawable = 2130903263;
+			public const int listPreferredItemPaddingLeft = 2130903263;
 			
 			// aapt resource value: 0x7F0300E0
-			public const int mediaRoutePauseDrawable = 2130903264;
+			public const int listPreferredItemPaddingRight = 2130903264;
 			
 			// aapt resource value: 0x7F0300E1
-			public const int mediaRoutePlayDrawable = 2130903265;
+			public const int logo = 2130903265;
 			
 			// aapt resource value: 0x7F0300E2
-			public const int mediaRouteSpeakerGroupIconDrawable = 2130903266;
+			public const int logoDescription = 2130903266;
 			
 			// aapt resource value: 0x7F0300E3
-			public const int mediaRouteSpeakerIconDrawable = 2130903267;
+			public const int maxActionInlineWidth = 2130903267;
 			
 			// aapt resource value: 0x7F0300E4
-			public const int mediaRouteStopDrawable = 2130903268;
+			public const int maxButtonHeight = 2130903268;
 			
 			// aapt resource value: 0x7F0300E5
-			public const int mediaRouteTheme = 2130903269;
+			public const int measureWithLargestChild = 2130903269;
 			
 			// aapt resource value: 0x7F0300E6
-			public const int mediaRouteTvIconDrawable = 2130903270;
+			public const int mediaRouteAudioTrackDrawable = 2130903270;
 			
 			// aapt resource value: 0x7F0300E7
-			public const int menu = 2130903271;
+			public const int mediaRouteButtonStyle = 2130903271;
 			
 			// aapt resource value: 0x7F0300E8
-			public const int multiChoiceItemLayout = 2130903272;
+			public const int mediaRouteButtonTint = 2130903272;
 			
 			// aapt resource value: 0x7F0300E9
-			public const int navigationContentDescription = 2130903273;
+			public const int mediaRouteCloseDrawable = 2130903273;
 			
 			// aapt resource value: 0x7F0300EA
-			public const int navigationIcon = 2130903274;
+			public const int mediaRouteControlPanelThemeOverlay = 2130903274;
 			
 			// aapt resource value: 0x7F0300EB
-			public const int navigationMode = 2130903275;
+			public const int mediaRouteDefaultIconDrawable = 2130903275;
 			
 			// aapt resource value: 0x7F0300EC
-			public const int numericModifiers = 2130903276;
+			public const int mediaRoutePauseDrawable = 2130903276;
 			
 			// aapt resource value: 0x7F0300ED
-			public const int overlapAnchor = 2130903277;
+			public const int mediaRoutePlayDrawable = 2130903277;
 			
 			// aapt resource value: 0x7F0300EE
-			public const int paddingBottomNoButtons = 2130903278;
+			public const int mediaRouteSpeakerGroupIconDrawable = 2130903278;
 			
 			// aapt resource value: 0x7F0300EF
-			public const int paddingEnd = 2130903279;
+			public const int mediaRouteSpeakerIconDrawable = 2130903279;
 			
 			// aapt resource value: 0x7F0300F0
-			public const int paddingStart = 2130903280;
+			public const int mediaRouteStopDrawable = 2130903280;
 			
 			// aapt resource value: 0x7F0300F1
-			public const int paddingTopNoTitle = 2130903281;
+			public const int mediaRouteTheme = 2130903281;
 			
 			// aapt resource value: 0x7F0300F2
-			public const int panelBackground = 2130903282;
+			public const int mediaRouteTvIconDrawable = 2130903282;
 			
 			// aapt resource value: 0x7F0300F3
-			public const int panelMenuListTheme = 2130903283;
+			public const int menu = 2130903283;
 			
 			// aapt resource value: 0x7F0300F4
-			public const int panelMenuListWidth = 2130903284;
+			public const int multiChoiceItemLayout = 2130903284;
 			
 			// aapt resource value: 0x7F0300F5
-			public const int passwordToggleContentDescription = 2130903285;
+			public const int navigationContentDescription = 2130903285;
 			
 			// aapt resource value: 0x7F0300F6
-			public const int passwordToggleDrawable = 2130903286;
+			public const int navigationIcon = 2130903286;
 			
 			// aapt resource value: 0x7F0300F7
-			public const int passwordToggleEnabled = 2130903287;
+			public const int navigationMode = 2130903287;
 			
 			// aapt resource value: 0x7F0300F8
-			public const int passwordToggleTint = 2130903288;
+			public const int numericModifiers = 2130903288;
 			
 			// aapt resource value: 0x7F0300F9
-			public const int passwordToggleTintMode = 2130903289;
+			public const int overlapAnchor = 2130903289;
 			
 			// aapt resource value: 0x7F0300FA
-			public const int popupMenuStyle = 2130903290;
+			public const int paddingBottomNoButtons = 2130903290;
 			
 			// aapt resource value: 0x7F0300FB
-			public const int popupTheme = 2130903291;
+			public const int paddingEnd = 2130903291;
 			
 			// aapt resource value: 0x7F0300FC
-			public const int popupWindowStyle = 2130903292;
+			public const int paddingStart = 2130903292;
 			
 			// aapt resource value: 0x7F0300FD
-			public const int preserveIconSpacing = 2130903293;
+			public const int paddingTopNoTitle = 2130903293;
 			
 			// aapt resource value: 0x7F0300FE
-			public const int pressedTranslationZ = 2130903294;
+			public const int panelBackground = 2130903294;
 			
 			// aapt resource value: 0x7F0300FF
-			public const int progressBarPadding = 2130903295;
+			public const int panelMenuListTheme = 2130903295;
 			
 			// aapt resource value: 0x7F030100
-			public const int progressBarStyle = 2130903296;
+			public const int panelMenuListWidth = 2130903296;
 			
 			// aapt resource value: 0x7F030101
-			public const int queryBackground = 2130903297;
+			public const int passwordToggleContentDescription = 2130903297;
 			
 			// aapt resource value: 0x7F030102
-			public const int queryHint = 2130903298;
+			public const int passwordToggleDrawable = 2130903298;
 			
 			// aapt resource value: 0x7F030103
-			public const int radioButtonStyle = 2130903299;
+			public const int passwordToggleEnabled = 2130903299;
 			
 			// aapt resource value: 0x7F030104
-			public const int ratingBarStyle = 2130903300;
+			public const int passwordToggleTint = 2130903300;
 			
 			// aapt resource value: 0x7F030105
-			public const int ratingBarStyleIndicator = 2130903301;
+			public const int passwordToggleTintMode = 2130903301;
 			
 			// aapt resource value: 0x7F030106
-			public const int ratingBarStyleSmall = 2130903302;
+			public const int popupMenuStyle = 2130903302;
 			
 			// aapt resource value: 0x7F030107
-			public const int reverseLayout = 2130903303;
+			public const int popupTheme = 2130903303;
 			
 			// aapt resource value: 0x7F030108
-			public const int rippleColor = 2130903304;
+			public const int popupWindowStyle = 2130903304;
 			
 			// aapt resource value: 0x7F030109
-			public const int scrimAnimationDuration = 2130903305;
+			public const int preserveIconSpacing = 2130903305;
 			
 			// aapt resource value: 0x7F03010A
-			public const int scrimVisibleHeightTrigger = 2130903306;
+			public const int pressedTranslationZ = 2130903306;
 			
 			// aapt resource value: 0x7F03010B
-			public const int searchHintIcon = 2130903307;
+			public const int progressBarPadding = 2130903307;
 			
 			// aapt resource value: 0x7F03010C
-			public const int searchIcon = 2130903308;
+			public const int progressBarStyle = 2130903308;
 			
 			// aapt resource value: 0x7F03010D
-			public const int searchViewStyle = 2130903309;
+			public const int queryBackground = 2130903309;
 			
 			// aapt resource value: 0x7F03010E
-			public const int seekBarStyle = 2130903310;
+			public const int queryHint = 2130903310;
 			
 			// aapt resource value: 0x7F03010F
-			public const int selectableItemBackground = 2130903311;
+			public const int radioButtonStyle = 2130903311;
 			
 			// aapt resource value: 0x7F030110
-			public const int selectableItemBackgroundBorderless = 2130903312;
+			public const int ratingBarStyle = 2130903312;
 			
 			// aapt resource value: 0x7F030111
-			public const int showAsAction = 2130903313;
+			public const int ratingBarStyleIndicator = 2130903313;
 			
 			// aapt resource value: 0x7F030112
-			public const int showDividers = 2130903314;
+			public const int ratingBarStyleSmall = 2130903314;
 			
 			// aapt resource value: 0x7F030113
-			public const int showText = 2130903315;
+			public const int reverseLayout = 2130903315;
 			
 			// aapt resource value: 0x7F030114
-			public const int showTitle = 2130903316;
+			public const int rippleColor = 2130903316;
 			
 			// aapt resource value: 0x7F030115
-			public const int singleChoiceItemLayout = 2130903317;
+			public const int scrimAnimationDuration = 2130903317;
 			
 			// aapt resource value: 0x7F030116
-			public const int spanCount = 2130903318;
+			public const int scrimVisibleHeightTrigger = 2130903318;
 			
 			// aapt resource value: 0x7F030117
-			public const int spinBars = 2130903319;
+			public const int searchHintIcon = 2130903319;
 			
 			// aapt resource value: 0x7F030118
-			public const int spinnerDropDownItemStyle = 2130903320;
+			public const int searchIcon = 2130903320;
 			
 			// aapt resource value: 0x7F030119
-			public const int spinnerStyle = 2130903321;
+			public const int searchViewStyle = 2130903321;
 			
 			// aapt resource value: 0x7F03011A
-			public const int splitTrack = 2130903322;
+			public const int seekBarStyle = 2130903322;
 			
 			// aapt resource value: 0x7F03011B
-			public const int srcCompat = 2130903323;
+			public const int selectableItemBackground = 2130903323;
 			
 			// aapt resource value: 0x7F03011C
-			public const int stackFromEnd = 2130903324;
+			public const int selectableItemBackgroundBorderless = 2130903324;
 			
 			// aapt resource value: 0x7F03011D
-			public const int state_above_anchor = 2130903325;
+			public const int showAsAction = 2130903325;
 			
 			// aapt resource value: 0x7F03011E
-			public const int state_collapsed = 2130903326;
+			public const int showDividers = 2130903326;
 			
 			// aapt resource value: 0x7F03011F
-			public const int state_collapsible = 2130903327;
+			public const int showText = 2130903327;
 			
 			// aapt resource value: 0x7F030120
-			public const int statusBarBackground = 2130903328;
+			public const int showTitle = 2130903328;
 			
 			// aapt resource value: 0x7F030121
-			public const int statusBarScrim = 2130903329;
+			public const int singleChoiceItemLayout = 2130903329;
 			
 			// aapt resource value: 0x7F030122
-			public const int subMenuArrow = 2130903330;
+			public const int spanCount = 2130903330;
 			
 			// aapt resource value: 0x7F030123
-			public const int submitBackground = 2130903331;
+			public const int spinBars = 2130903331;
 			
 			// aapt resource value: 0x7F030124
-			public const int subtitle = 2130903332;
+			public const int spinnerDropDownItemStyle = 2130903332;
 			
 			// aapt resource value: 0x7F030125
-			public const int subtitleTextAppearance = 2130903333;
+			public const int spinnerStyle = 2130903333;
 			
 			// aapt resource value: 0x7F030126
-			public const int subtitleTextColor = 2130903334;
+			public const int splitTrack = 2130903334;
 			
 			// aapt resource value: 0x7F030127
-			public const int subtitleTextStyle = 2130903335;
+			public const int srcCompat = 2130903335;
 			
 			// aapt resource value: 0x7F030128
-			public const int suggestionRowLayout = 2130903336;
+			public const int stackFromEnd = 2130903336;
 			
 			// aapt resource value: 0x7F030129
-			public const int switchMinWidth = 2130903337;
+			public const int state_above_anchor = 2130903337;
 			
 			// aapt resource value: 0x7F03012A
-			public const int switchPadding = 2130903338;
+			public const int state_collapsed = 2130903338;
 			
 			// aapt resource value: 0x7F03012B
-			public const int switchStyle = 2130903339;
+			public const int state_collapsible = 2130903339;
 			
 			// aapt resource value: 0x7F03012C
-			public const int switchTextAppearance = 2130903340;
+			public const int statusBarBackground = 2130903340;
 			
 			// aapt resource value: 0x7F03012D
-			public const int tabBackground = 2130903341;
+			public const int statusBarScrim = 2130903341;
 			
 			// aapt resource value: 0x7F03012E
-			public const int tabContentStart = 2130903342;
+			public const int subMenuArrow = 2130903342;
 			
 			// aapt resource value: 0x7F03012F
-			public const int tabGravity = 2130903343;
+			public const int submitBackground = 2130903343;
 			
 			// aapt resource value: 0x7F030130
-			public const int tabIndicatorColor = 2130903344;
+			public const int subtitle = 2130903344;
 			
 			// aapt resource value: 0x7F030131
-			public const int tabIndicatorHeight = 2130903345;
+			public const int subtitleTextAppearance = 2130903345;
 			
 			// aapt resource value: 0x7F030132
-			public const int tabMaxWidth = 2130903346;
+			public const int subtitleTextColor = 2130903346;
 			
 			// aapt resource value: 0x7F030133
-			public const int tabMinWidth = 2130903347;
+			public const int subtitleTextStyle = 2130903347;
 			
 			// aapt resource value: 0x7F030134
-			public const int tabMode = 2130903348;
+			public const int suggestionRowLayout = 2130903348;
 			
 			// aapt resource value: 0x7F030135
-			public const int tabPadding = 2130903349;
+			public const int switchMinWidth = 2130903349;
 			
 			// aapt resource value: 0x7F030136
-			public const int tabPaddingBottom = 2130903350;
+			public const int switchPadding = 2130903350;
 			
 			// aapt resource value: 0x7F030137
-			public const int tabPaddingEnd = 2130903351;
+			public const int switchStyle = 2130903351;
 			
 			// aapt resource value: 0x7F030138
-			public const int tabPaddingStart = 2130903352;
+			public const int switchTextAppearance = 2130903352;
 			
 			// aapt resource value: 0x7F030139
-			public const int tabPaddingTop = 2130903353;
+			public const int tabBackground = 2130903353;
 			
 			// aapt resource value: 0x7F03013A
-			public const int tabSelectedTextColor = 2130903354;
+			public const int tabContentStart = 2130903354;
 			
 			// aapt resource value: 0x7F03013B
-			public const int tabTextAppearance = 2130903355;
+			public const int tabGravity = 2130903355;
 			
 			// aapt resource value: 0x7F03013C
-			public const int tabTextColor = 2130903356;
+			public const int tabIndicatorColor = 2130903356;
 			
 			// aapt resource value: 0x7F03013D
-			public const int textAllCaps = 2130903357;
+			public const int tabIndicatorHeight = 2130903357;
 			
 			// aapt resource value: 0x7F03013E
-			public const int textAppearanceLargePopupMenu = 2130903358;
+			public const int tabMaxWidth = 2130903358;
 			
 			// aapt resource value: 0x7F03013F
-			public const int textAppearanceListItem = 2130903359;
+			public const int tabMinWidth = 2130903359;
 			
 			// aapt resource value: 0x7F030140
-			public const int textAppearanceListItemSecondary = 2130903360;
+			public const int tabMode = 2130903360;
 			
 			// aapt resource value: 0x7F030141
-			public const int textAppearanceListItemSmall = 2130903361;
+			public const int tabPadding = 2130903361;
 			
 			// aapt resource value: 0x7F030142
-			public const int textAppearancePopupMenuHeader = 2130903362;
+			public const int tabPaddingBottom = 2130903362;
 			
 			// aapt resource value: 0x7F030143
-			public const int textAppearanceSearchResultSubtitle = 2130903363;
+			public const int tabPaddingEnd = 2130903363;
 			
 			// aapt resource value: 0x7F030144
-			public const int textAppearanceSearchResultTitle = 2130903364;
+			public const int tabPaddingStart = 2130903364;
 			
 			// aapt resource value: 0x7F030145
-			public const int textAppearanceSmallPopupMenu = 2130903365;
+			public const int tabPaddingTop = 2130903365;
 			
 			// aapt resource value: 0x7F030146
-			public const int textColorAlertDialogListItem = 2130903366;
+			public const int tabSelectedTextColor = 2130903366;
 			
 			// aapt resource value: 0x7F030147
-			public const int textColorError = 2130903367;
+			public const int tabTextAppearance = 2130903367;
 			
 			// aapt resource value: 0x7F030148
-			public const int textColorSearchUrl = 2130903368;
+			public const int tabTextColor = 2130903368;
 			
 			// aapt resource value: 0x7F030149
-			public const int theme = 2130903369;
+			public const int textAllCaps = 2130903369;
 			
 			// aapt resource value: 0x7F03014A
-			public const int thickness = 2130903370;
+			public const int textAppearanceLargePopupMenu = 2130903370;
 			
 			// aapt resource value: 0x7F03014B
-			public const int thumbTextPadding = 2130903371;
+			public const int textAppearanceListItem = 2130903371;
 			
 			// aapt resource value: 0x7F03014C
-			public const int thumbTint = 2130903372;
+			public const int textAppearanceListItemSecondary = 2130903372;
 			
 			// aapt resource value: 0x7F03014D
-			public const int thumbTintMode = 2130903373;
+			public const int textAppearanceListItemSmall = 2130903373;
 			
 			// aapt resource value: 0x7F03014E
-			public const int tickMark = 2130903374;
+			public const int textAppearancePopupMenuHeader = 2130903374;
 			
 			// aapt resource value: 0x7F03014F
-			public const int tickMarkTint = 2130903375;
+			public const int textAppearanceSearchResultSubtitle = 2130903375;
 			
 			// aapt resource value: 0x7F030150
-			public const int tickMarkTintMode = 2130903376;
+			public const int textAppearanceSearchResultTitle = 2130903376;
 			
 			// aapt resource value: 0x7F030151
-			public const int tint = 2130903377;
+			public const int textAppearanceSmallPopupMenu = 2130903377;
 			
 			// aapt resource value: 0x7F030152
-			public const int tintMode = 2130903378;
+			public const int textColorAlertDialogListItem = 2130903378;
 			
 			// aapt resource value: 0x7F030153
-			public const int title = 2130903379;
+			public const int textColorError = 2130903379;
 			
 			// aapt resource value: 0x7F030154
-			public const int titleEnabled = 2130903380;
+			public const int textColorSearchUrl = 2130903380;
 			
 			// aapt resource value: 0x7F030155
-			public const int titleMargin = 2130903381;
+			public const int theme = 2130903381;
 			
 			// aapt resource value: 0x7F030156
-			public const int titleMarginBottom = 2130903382;
+			public const int thickness = 2130903382;
 			
 			// aapt resource value: 0x7F030157
-			public const int titleMarginEnd = 2130903383;
-			
-			// aapt resource value: 0x7F03015A
-			public const int titleMargins = 2130903386;
+			public const int thumbTextPadding = 2130903383;
 			
 			// aapt resource value: 0x7F030158
-			public const int titleMarginStart = 2130903384;
+			public const int thumbTint = 2130903384;
 			
 			// aapt resource value: 0x7F030159
-			public const int titleMarginTop = 2130903385;
+			public const int thumbTintMode = 2130903385;
+			
+			// aapt resource value: 0x7F03015A
+			public const int tickMark = 2130903386;
 			
 			// aapt resource value: 0x7F03015B
-			public const int titleTextAppearance = 2130903387;
+			public const int tickMarkTint = 2130903387;
 			
 			// aapt resource value: 0x7F03015C
-			public const int titleTextColor = 2130903388;
+			public const int tickMarkTintMode = 2130903388;
 			
 			// aapt resource value: 0x7F03015D
-			public const int titleTextStyle = 2130903389;
+			public const int tint = 2130903389;
 			
 			// aapt resource value: 0x7F03015E
-			public const int toolbarId = 2130903390;
+			public const int tintMode = 2130903390;
 			
 			// aapt resource value: 0x7F03015F
-			public const int toolbarNavigationButtonStyle = 2130903391;
+			public const int title = 2130903391;
 			
 			// aapt resource value: 0x7F030160
-			public const int toolbarStyle = 2130903392;
+			public const int titleEnabled = 2130903392;
 			
 			// aapt resource value: 0x7F030161
-			public const int tooltipForegroundColor = 2130903393;
+			public const int titleMargin = 2130903393;
 			
 			// aapt resource value: 0x7F030162
-			public const int tooltipFrameBackground = 2130903394;
+			public const int titleMarginBottom = 2130903394;
 			
 			// aapt resource value: 0x7F030163
-			public const int tooltipText = 2130903395;
-			
-			// aapt resource value: 0x7F030164
-			public const int track = 2130903396;
-			
-			// aapt resource value: 0x7F030165
-			public const int trackTint = 2130903397;
+			public const int titleMarginEnd = 2130903395;
 			
 			// aapt resource value: 0x7F030166
-			public const int trackTintMode = 2130903398;
+			public const int titleMargins = 2130903398;
+			
+			// aapt resource value: 0x7F030164
+			public const int titleMarginStart = 2130903396;
+			
+			// aapt resource value: 0x7F030165
+			public const int titleMarginTop = 2130903397;
 			
 			// aapt resource value: 0x7F030167
-			public const int useCompatPadding = 2130903399;
+			public const int titleTextAppearance = 2130903399;
 			
 			// aapt resource value: 0x7F030168
-			public const int voiceIcon = 2130903400;
+			public const int titleTextColor = 2130903400;
 			
 			// aapt resource value: 0x7F030169
-			public const int windowActionBar = 2130903401;
+			public const int titleTextStyle = 2130903401;
 			
 			// aapt resource value: 0x7F03016A
-			public const int windowActionBarOverlay = 2130903402;
+			public const int toolbarId = 2130903402;
 			
 			// aapt resource value: 0x7F03016B
-			public const int windowActionModeOverlay = 2130903403;
+			public const int toolbarNavigationButtonStyle = 2130903403;
 			
 			// aapt resource value: 0x7F03016C
-			public const int windowFixedHeightMajor = 2130903404;
+			public const int toolbarStyle = 2130903404;
 			
 			// aapt resource value: 0x7F03016D
-			public const int windowFixedHeightMinor = 2130903405;
+			public const int tooltipForegroundColor = 2130903405;
 			
 			// aapt resource value: 0x7F03016E
-			public const int windowFixedWidthMajor = 2130903406;
+			public const int tooltipFrameBackground = 2130903406;
 			
 			// aapt resource value: 0x7F03016F
-			public const int windowFixedWidthMinor = 2130903407;
+			public const int tooltipText = 2130903407;
 			
 			// aapt resource value: 0x7F030170
-			public const int windowMinWidthMajor = 2130903408;
+			public const int track = 2130903408;
 			
 			// aapt resource value: 0x7F030171
-			public const int windowMinWidthMinor = 2130903409;
+			public const int trackTint = 2130903409;
 			
 			// aapt resource value: 0x7F030172
-			public const int windowNoTitle = 2130903410;
+			public const int trackTintMode = 2130903410;
+			
+			// aapt resource value: 0x7F030173
+			public const int useCompatPadding = 2130903411;
+			
+			// aapt resource value: 0x7F030174
+			public const int voiceIcon = 2130903412;
+			
+			// aapt resource value: 0x7F030175
+			public const int windowActionBar = 2130903413;
+			
+			// aapt resource value: 0x7F030176
+			public const int windowActionBarOverlay = 2130903414;
+			
+			// aapt resource value: 0x7F030177
+			public const int windowActionModeOverlay = 2130903415;
+			
+			// aapt resource value: 0x7F030178
+			public const int windowFixedHeightMajor = 2130903416;
+			
+			// aapt resource value: 0x7F030179
+			public const int windowFixedHeightMinor = 2130903417;
+			
+			// aapt resource value: 0x7F03017A
+			public const int windowFixedWidthMajor = 2130903418;
+			
+			// aapt resource value: 0x7F03017B
+			public const int windowFixedWidthMinor = 2130903419;
+			
+			// aapt resource value: 0x7F03017C
+			public const int windowMinWidthMajor = 2130903420;
+			
+			// aapt resource value: 0x7F03017D
+			public const int windowMinWidthMinor = 2130903421;
+			
+			// aapt resource value: 0x7F03017E
+			public const int windowNoTitle = 2130903422;
 			
 			static Attribute()
 			{
@@ -4374,628 +6416,640 @@ namespace SmartButler.Droid
 			public const int ic_dialog_close_light = 2131165284;
 			
 			// aapt resource value: 0x7F070065
-			public const int ic_group_collapse_00 = 2131165285;
+			public const int ic_errorstatus = 2131165285;
 			
 			// aapt resource value: 0x7F070066
-			public const int ic_group_collapse_01 = 2131165286;
+			public const int ic_group_collapse_00 = 2131165286;
 			
 			// aapt resource value: 0x7F070067
-			public const int ic_group_collapse_02 = 2131165287;
+			public const int ic_group_collapse_01 = 2131165287;
 			
 			// aapt resource value: 0x7F070068
-			public const int ic_group_collapse_03 = 2131165288;
+			public const int ic_group_collapse_02 = 2131165288;
 			
 			// aapt resource value: 0x7F070069
-			public const int ic_group_collapse_04 = 2131165289;
+			public const int ic_group_collapse_03 = 2131165289;
 			
 			// aapt resource value: 0x7F07006A
-			public const int ic_group_collapse_05 = 2131165290;
+			public const int ic_group_collapse_04 = 2131165290;
 			
 			// aapt resource value: 0x7F07006B
-			public const int ic_group_collapse_06 = 2131165291;
+			public const int ic_group_collapse_05 = 2131165291;
 			
 			// aapt resource value: 0x7F07006C
-			public const int ic_group_collapse_07 = 2131165292;
+			public const int ic_group_collapse_06 = 2131165292;
 			
 			// aapt resource value: 0x7F07006D
-			public const int ic_group_collapse_08 = 2131165293;
+			public const int ic_group_collapse_07 = 2131165293;
 			
 			// aapt resource value: 0x7F07006E
-			public const int ic_group_collapse_09 = 2131165294;
+			public const int ic_group_collapse_08 = 2131165294;
 			
 			// aapt resource value: 0x7F07006F
-			public const int ic_group_collapse_10 = 2131165295;
+			public const int ic_group_collapse_09 = 2131165295;
 			
 			// aapt resource value: 0x7F070070
-			public const int ic_group_collapse_11 = 2131165296;
+			public const int ic_group_collapse_10 = 2131165296;
 			
 			// aapt resource value: 0x7F070071
-			public const int ic_group_collapse_12 = 2131165297;
+			public const int ic_group_collapse_11 = 2131165297;
 			
 			// aapt resource value: 0x7F070072
-			public const int ic_group_collapse_13 = 2131165298;
+			public const int ic_group_collapse_12 = 2131165298;
 			
 			// aapt resource value: 0x7F070073
-			public const int ic_group_collapse_14 = 2131165299;
+			public const int ic_group_collapse_13 = 2131165299;
 			
 			// aapt resource value: 0x7F070074
-			public const int ic_group_collapse_15 = 2131165300;
+			public const int ic_group_collapse_14 = 2131165300;
 			
 			// aapt resource value: 0x7F070075
-			public const int ic_group_expand_00 = 2131165301;
+			public const int ic_group_collapse_15 = 2131165301;
 			
 			// aapt resource value: 0x7F070076
-			public const int ic_group_expand_01 = 2131165302;
+			public const int ic_group_expand_00 = 2131165302;
 			
 			// aapt resource value: 0x7F070077
-			public const int ic_group_expand_02 = 2131165303;
+			public const int ic_group_expand_01 = 2131165303;
 			
 			// aapt resource value: 0x7F070078
-			public const int ic_group_expand_03 = 2131165304;
+			public const int ic_group_expand_02 = 2131165304;
 			
 			// aapt resource value: 0x7F070079
-			public const int ic_group_expand_04 = 2131165305;
+			public const int ic_group_expand_03 = 2131165305;
 			
 			// aapt resource value: 0x7F07007A
-			public const int ic_group_expand_05 = 2131165306;
+			public const int ic_group_expand_04 = 2131165306;
 			
 			// aapt resource value: 0x7F07007B
-			public const int ic_group_expand_06 = 2131165307;
+			public const int ic_group_expand_05 = 2131165307;
 			
 			// aapt resource value: 0x7F07007C
-			public const int ic_group_expand_07 = 2131165308;
+			public const int ic_group_expand_06 = 2131165308;
 			
 			// aapt resource value: 0x7F07007D
-			public const int ic_group_expand_08 = 2131165309;
+			public const int ic_group_expand_07 = 2131165309;
 			
 			// aapt resource value: 0x7F07007E
-			public const int ic_group_expand_09 = 2131165310;
+			public const int ic_group_expand_08 = 2131165310;
 			
 			// aapt resource value: 0x7F07007F
-			public const int ic_group_expand_10 = 2131165311;
+			public const int ic_group_expand_09 = 2131165311;
 			
 			// aapt resource value: 0x7F070080
-			public const int ic_group_expand_11 = 2131165312;
+			public const int ic_group_expand_10 = 2131165312;
 			
 			// aapt resource value: 0x7F070081
-			public const int ic_group_expand_12 = 2131165313;
+			public const int ic_group_expand_11 = 2131165313;
 			
 			// aapt resource value: 0x7F070082
-			public const int ic_group_expand_13 = 2131165314;
+			public const int ic_group_expand_12 = 2131165314;
 			
 			// aapt resource value: 0x7F070083
-			public const int ic_group_expand_14 = 2131165315;
+			public const int ic_group_expand_13 = 2131165315;
 			
 			// aapt resource value: 0x7F070084
-			public const int ic_group_expand_15 = 2131165316;
+			public const int ic_group_expand_14 = 2131165316;
 			
 			// aapt resource value: 0x7F070085
-			public const int ic_media_pause_dark = 2131165317;
+			public const int ic_group_expand_15 = 2131165317;
 			
 			// aapt resource value: 0x7F070086
-			public const int ic_media_pause_light = 2131165318;
+			public const int ic_media_pause_dark = 2131165318;
 			
 			// aapt resource value: 0x7F070087
-			public const int ic_media_play_dark = 2131165319;
+			public const int ic_media_pause_light = 2131165319;
 			
 			// aapt resource value: 0x7F070088
-			public const int ic_media_play_light = 2131165320;
+			public const int ic_media_play_dark = 2131165320;
 			
 			// aapt resource value: 0x7F070089
-			public const int ic_media_stop_dark = 2131165321;
+			public const int ic_media_play_light = 2131165321;
 			
 			// aapt resource value: 0x7F07008A
-			public const int ic_media_stop_light = 2131165322;
+			public const int ic_media_stop_dark = 2131165322;
 			
 			// aapt resource value: 0x7F07008B
-			public const int ic_mr_button_connected_00_dark = 2131165323;
+			public const int ic_media_stop_light = 2131165323;
 			
 			// aapt resource value: 0x7F07008C
-			public const int ic_mr_button_connected_00_light = 2131165324;
+			public const int ic_mr_button_connected_00_dark = 2131165324;
 			
 			// aapt resource value: 0x7F07008D
-			public const int ic_mr_button_connected_01_dark = 2131165325;
+			public const int ic_mr_button_connected_00_light = 2131165325;
 			
 			// aapt resource value: 0x7F07008E
-			public const int ic_mr_button_connected_01_light = 2131165326;
+			public const int ic_mr_button_connected_01_dark = 2131165326;
 			
 			// aapt resource value: 0x7F07008F
-			public const int ic_mr_button_connected_02_dark = 2131165327;
+			public const int ic_mr_button_connected_01_light = 2131165327;
 			
 			// aapt resource value: 0x7F070090
-			public const int ic_mr_button_connected_02_light = 2131165328;
+			public const int ic_mr_button_connected_02_dark = 2131165328;
 			
 			// aapt resource value: 0x7F070091
-			public const int ic_mr_button_connected_03_dark = 2131165329;
+			public const int ic_mr_button_connected_02_light = 2131165329;
 			
 			// aapt resource value: 0x7F070092
-			public const int ic_mr_button_connected_03_light = 2131165330;
+			public const int ic_mr_button_connected_03_dark = 2131165330;
 			
 			// aapt resource value: 0x7F070093
-			public const int ic_mr_button_connected_04_dark = 2131165331;
+			public const int ic_mr_button_connected_03_light = 2131165331;
 			
 			// aapt resource value: 0x7F070094
-			public const int ic_mr_button_connected_04_light = 2131165332;
+			public const int ic_mr_button_connected_04_dark = 2131165332;
 			
 			// aapt resource value: 0x7F070095
-			public const int ic_mr_button_connected_05_dark = 2131165333;
+			public const int ic_mr_button_connected_04_light = 2131165333;
 			
 			// aapt resource value: 0x7F070096
-			public const int ic_mr_button_connected_05_light = 2131165334;
+			public const int ic_mr_button_connected_05_dark = 2131165334;
 			
 			// aapt resource value: 0x7F070097
-			public const int ic_mr_button_connected_06_dark = 2131165335;
+			public const int ic_mr_button_connected_05_light = 2131165335;
 			
 			// aapt resource value: 0x7F070098
-			public const int ic_mr_button_connected_06_light = 2131165336;
+			public const int ic_mr_button_connected_06_dark = 2131165336;
 			
 			// aapt resource value: 0x7F070099
-			public const int ic_mr_button_connected_07_dark = 2131165337;
+			public const int ic_mr_button_connected_06_light = 2131165337;
 			
 			// aapt resource value: 0x7F07009A
-			public const int ic_mr_button_connected_07_light = 2131165338;
+			public const int ic_mr_button_connected_07_dark = 2131165338;
 			
 			// aapt resource value: 0x7F07009B
-			public const int ic_mr_button_connected_08_dark = 2131165339;
+			public const int ic_mr_button_connected_07_light = 2131165339;
 			
 			// aapt resource value: 0x7F07009C
-			public const int ic_mr_button_connected_08_light = 2131165340;
+			public const int ic_mr_button_connected_08_dark = 2131165340;
 			
 			// aapt resource value: 0x7F07009D
-			public const int ic_mr_button_connected_09_dark = 2131165341;
+			public const int ic_mr_button_connected_08_light = 2131165341;
 			
 			// aapt resource value: 0x7F07009E
-			public const int ic_mr_button_connected_09_light = 2131165342;
+			public const int ic_mr_button_connected_09_dark = 2131165342;
 			
 			// aapt resource value: 0x7F07009F
-			public const int ic_mr_button_connected_10_dark = 2131165343;
+			public const int ic_mr_button_connected_09_light = 2131165343;
 			
 			// aapt resource value: 0x7F0700A0
-			public const int ic_mr_button_connected_10_light = 2131165344;
+			public const int ic_mr_button_connected_10_dark = 2131165344;
 			
 			// aapt resource value: 0x7F0700A1
-			public const int ic_mr_button_connected_11_dark = 2131165345;
+			public const int ic_mr_button_connected_10_light = 2131165345;
 			
 			// aapt resource value: 0x7F0700A2
-			public const int ic_mr_button_connected_11_light = 2131165346;
+			public const int ic_mr_button_connected_11_dark = 2131165346;
 			
 			// aapt resource value: 0x7F0700A3
-			public const int ic_mr_button_connected_12_dark = 2131165347;
+			public const int ic_mr_button_connected_11_light = 2131165347;
 			
 			// aapt resource value: 0x7F0700A4
-			public const int ic_mr_button_connected_12_light = 2131165348;
+			public const int ic_mr_button_connected_12_dark = 2131165348;
 			
 			// aapt resource value: 0x7F0700A5
-			public const int ic_mr_button_connected_13_dark = 2131165349;
+			public const int ic_mr_button_connected_12_light = 2131165349;
 			
 			// aapt resource value: 0x7F0700A6
-			public const int ic_mr_button_connected_13_light = 2131165350;
+			public const int ic_mr_button_connected_13_dark = 2131165350;
 			
 			// aapt resource value: 0x7F0700A7
-			public const int ic_mr_button_connected_14_dark = 2131165351;
+			public const int ic_mr_button_connected_13_light = 2131165351;
 			
 			// aapt resource value: 0x7F0700A8
-			public const int ic_mr_button_connected_14_light = 2131165352;
+			public const int ic_mr_button_connected_14_dark = 2131165352;
 			
 			// aapt resource value: 0x7F0700A9
-			public const int ic_mr_button_connected_15_dark = 2131165353;
+			public const int ic_mr_button_connected_14_light = 2131165353;
 			
 			// aapt resource value: 0x7F0700AA
-			public const int ic_mr_button_connected_15_light = 2131165354;
+			public const int ic_mr_button_connected_15_dark = 2131165354;
 			
 			// aapt resource value: 0x7F0700AB
-			public const int ic_mr_button_connected_16_dark = 2131165355;
+			public const int ic_mr_button_connected_15_light = 2131165355;
 			
 			// aapt resource value: 0x7F0700AC
-			public const int ic_mr_button_connected_16_light = 2131165356;
+			public const int ic_mr_button_connected_16_dark = 2131165356;
 			
 			// aapt resource value: 0x7F0700AD
-			public const int ic_mr_button_connected_17_dark = 2131165357;
+			public const int ic_mr_button_connected_16_light = 2131165357;
 			
 			// aapt resource value: 0x7F0700AE
-			public const int ic_mr_button_connected_17_light = 2131165358;
+			public const int ic_mr_button_connected_17_dark = 2131165358;
 			
 			// aapt resource value: 0x7F0700AF
-			public const int ic_mr_button_connected_18_dark = 2131165359;
+			public const int ic_mr_button_connected_17_light = 2131165359;
 			
 			// aapt resource value: 0x7F0700B0
-			public const int ic_mr_button_connected_18_light = 2131165360;
+			public const int ic_mr_button_connected_18_dark = 2131165360;
 			
 			// aapt resource value: 0x7F0700B1
-			public const int ic_mr_button_connected_19_dark = 2131165361;
+			public const int ic_mr_button_connected_18_light = 2131165361;
 			
 			// aapt resource value: 0x7F0700B2
-			public const int ic_mr_button_connected_19_light = 2131165362;
+			public const int ic_mr_button_connected_19_dark = 2131165362;
 			
 			// aapt resource value: 0x7F0700B3
-			public const int ic_mr_button_connected_20_dark = 2131165363;
+			public const int ic_mr_button_connected_19_light = 2131165363;
 			
 			// aapt resource value: 0x7F0700B4
-			public const int ic_mr_button_connected_20_light = 2131165364;
+			public const int ic_mr_button_connected_20_dark = 2131165364;
 			
 			// aapt resource value: 0x7F0700B5
-			public const int ic_mr_button_connected_21_dark = 2131165365;
+			public const int ic_mr_button_connected_20_light = 2131165365;
 			
 			// aapt resource value: 0x7F0700B6
-			public const int ic_mr_button_connected_21_light = 2131165366;
+			public const int ic_mr_button_connected_21_dark = 2131165366;
 			
 			// aapt resource value: 0x7F0700B7
-			public const int ic_mr_button_connected_22_dark = 2131165367;
+			public const int ic_mr_button_connected_21_light = 2131165367;
 			
 			// aapt resource value: 0x7F0700B8
-			public const int ic_mr_button_connected_22_light = 2131165368;
+			public const int ic_mr_button_connected_22_dark = 2131165368;
 			
 			// aapt resource value: 0x7F0700B9
-			public const int ic_mr_button_connected_23_dark = 2131165369;
+			public const int ic_mr_button_connected_22_light = 2131165369;
 			
 			// aapt resource value: 0x7F0700BA
-			public const int ic_mr_button_connected_23_light = 2131165370;
+			public const int ic_mr_button_connected_23_dark = 2131165370;
 			
 			// aapt resource value: 0x7F0700BB
-			public const int ic_mr_button_connected_24_dark = 2131165371;
+			public const int ic_mr_button_connected_23_light = 2131165371;
 			
 			// aapt resource value: 0x7F0700BC
-			public const int ic_mr_button_connected_24_light = 2131165372;
+			public const int ic_mr_button_connected_24_dark = 2131165372;
 			
 			// aapt resource value: 0x7F0700BD
-			public const int ic_mr_button_connected_25_dark = 2131165373;
+			public const int ic_mr_button_connected_24_light = 2131165373;
 			
 			// aapt resource value: 0x7F0700BE
-			public const int ic_mr_button_connected_25_light = 2131165374;
+			public const int ic_mr_button_connected_25_dark = 2131165374;
 			
 			// aapt resource value: 0x7F0700BF
-			public const int ic_mr_button_connected_26_dark = 2131165375;
+			public const int ic_mr_button_connected_25_light = 2131165375;
 			
 			// aapt resource value: 0x7F0700C0
-			public const int ic_mr_button_connected_26_light = 2131165376;
+			public const int ic_mr_button_connected_26_dark = 2131165376;
 			
 			// aapt resource value: 0x7F0700C1
-			public const int ic_mr_button_connected_27_dark = 2131165377;
+			public const int ic_mr_button_connected_26_light = 2131165377;
 			
 			// aapt resource value: 0x7F0700C2
-			public const int ic_mr_button_connected_27_light = 2131165378;
+			public const int ic_mr_button_connected_27_dark = 2131165378;
 			
 			// aapt resource value: 0x7F0700C3
-			public const int ic_mr_button_connected_28_dark = 2131165379;
+			public const int ic_mr_button_connected_27_light = 2131165379;
 			
 			// aapt resource value: 0x7F0700C4
-			public const int ic_mr_button_connected_28_light = 2131165380;
+			public const int ic_mr_button_connected_28_dark = 2131165380;
 			
 			// aapt resource value: 0x7F0700C5
-			public const int ic_mr_button_connected_29_dark = 2131165381;
+			public const int ic_mr_button_connected_28_light = 2131165381;
 			
 			// aapt resource value: 0x7F0700C6
-			public const int ic_mr_button_connected_29_light = 2131165382;
+			public const int ic_mr_button_connected_29_dark = 2131165382;
 			
 			// aapt resource value: 0x7F0700C7
-			public const int ic_mr_button_connected_30_dark = 2131165383;
+			public const int ic_mr_button_connected_29_light = 2131165383;
 			
 			// aapt resource value: 0x7F0700C8
-			public const int ic_mr_button_connected_30_light = 2131165384;
+			public const int ic_mr_button_connected_30_dark = 2131165384;
 			
 			// aapt resource value: 0x7F0700C9
-			public const int ic_mr_button_connecting_00_dark = 2131165385;
+			public const int ic_mr_button_connected_30_light = 2131165385;
 			
 			// aapt resource value: 0x7F0700CA
-			public const int ic_mr_button_connecting_00_light = 2131165386;
+			public const int ic_mr_button_connecting_00_dark = 2131165386;
 			
 			// aapt resource value: 0x7F0700CB
-			public const int ic_mr_button_connecting_01_dark = 2131165387;
+			public const int ic_mr_button_connecting_00_light = 2131165387;
 			
 			// aapt resource value: 0x7F0700CC
-			public const int ic_mr_button_connecting_01_light = 2131165388;
+			public const int ic_mr_button_connecting_01_dark = 2131165388;
 			
 			// aapt resource value: 0x7F0700CD
-			public const int ic_mr_button_connecting_02_dark = 2131165389;
+			public const int ic_mr_button_connecting_01_light = 2131165389;
 			
 			// aapt resource value: 0x7F0700CE
-			public const int ic_mr_button_connecting_02_light = 2131165390;
+			public const int ic_mr_button_connecting_02_dark = 2131165390;
 			
 			// aapt resource value: 0x7F0700CF
-			public const int ic_mr_button_connecting_03_dark = 2131165391;
+			public const int ic_mr_button_connecting_02_light = 2131165391;
 			
 			// aapt resource value: 0x7F0700D0
-			public const int ic_mr_button_connecting_03_light = 2131165392;
+			public const int ic_mr_button_connecting_03_dark = 2131165392;
 			
 			// aapt resource value: 0x7F0700D1
-			public const int ic_mr_button_connecting_04_dark = 2131165393;
+			public const int ic_mr_button_connecting_03_light = 2131165393;
 			
 			// aapt resource value: 0x7F0700D2
-			public const int ic_mr_button_connecting_04_light = 2131165394;
+			public const int ic_mr_button_connecting_04_dark = 2131165394;
 			
 			// aapt resource value: 0x7F0700D3
-			public const int ic_mr_button_connecting_05_dark = 2131165395;
+			public const int ic_mr_button_connecting_04_light = 2131165395;
 			
 			// aapt resource value: 0x7F0700D4
-			public const int ic_mr_button_connecting_05_light = 2131165396;
+			public const int ic_mr_button_connecting_05_dark = 2131165396;
 			
 			// aapt resource value: 0x7F0700D5
-			public const int ic_mr_button_connecting_06_dark = 2131165397;
+			public const int ic_mr_button_connecting_05_light = 2131165397;
 			
 			// aapt resource value: 0x7F0700D6
-			public const int ic_mr_button_connecting_06_light = 2131165398;
+			public const int ic_mr_button_connecting_06_dark = 2131165398;
 			
 			// aapt resource value: 0x7F0700D7
-			public const int ic_mr_button_connecting_07_dark = 2131165399;
+			public const int ic_mr_button_connecting_06_light = 2131165399;
 			
 			// aapt resource value: 0x7F0700D8
-			public const int ic_mr_button_connecting_07_light = 2131165400;
+			public const int ic_mr_button_connecting_07_dark = 2131165400;
 			
 			// aapt resource value: 0x7F0700D9
-			public const int ic_mr_button_connecting_08_dark = 2131165401;
+			public const int ic_mr_button_connecting_07_light = 2131165401;
 			
 			// aapt resource value: 0x7F0700DA
-			public const int ic_mr_button_connecting_08_light = 2131165402;
+			public const int ic_mr_button_connecting_08_dark = 2131165402;
 			
 			// aapt resource value: 0x7F0700DB
-			public const int ic_mr_button_connecting_09_dark = 2131165403;
+			public const int ic_mr_button_connecting_08_light = 2131165403;
 			
 			// aapt resource value: 0x7F0700DC
-			public const int ic_mr_button_connecting_09_light = 2131165404;
+			public const int ic_mr_button_connecting_09_dark = 2131165404;
 			
 			// aapt resource value: 0x7F0700DD
-			public const int ic_mr_button_connecting_10_dark = 2131165405;
+			public const int ic_mr_button_connecting_09_light = 2131165405;
 			
 			// aapt resource value: 0x7F0700DE
-			public const int ic_mr_button_connecting_10_light = 2131165406;
+			public const int ic_mr_button_connecting_10_dark = 2131165406;
 			
 			// aapt resource value: 0x7F0700DF
-			public const int ic_mr_button_connecting_11_dark = 2131165407;
+			public const int ic_mr_button_connecting_10_light = 2131165407;
 			
 			// aapt resource value: 0x7F0700E0
-			public const int ic_mr_button_connecting_11_light = 2131165408;
+			public const int ic_mr_button_connecting_11_dark = 2131165408;
 			
 			// aapt resource value: 0x7F0700E1
-			public const int ic_mr_button_connecting_12_dark = 2131165409;
+			public const int ic_mr_button_connecting_11_light = 2131165409;
 			
 			// aapt resource value: 0x7F0700E2
-			public const int ic_mr_button_connecting_12_light = 2131165410;
+			public const int ic_mr_button_connecting_12_dark = 2131165410;
 			
 			// aapt resource value: 0x7F0700E3
-			public const int ic_mr_button_connecting_13_dark = 2131165411;
+			public const int ic_mr_button_connecting_12_light = 2131165411;
 			
 			// aapt resource value: 0x7F0700E4
-			public const int ic_mr_button_connecting_13_light = 2131165412;
+			public const int ic_mr_button_connecting_13_dark = 2131165412;
 			
 			// aapt resource value: 0x7F0700E5
-			public const int ic_mr_button_connecting_14_dark = 2131165413;
+			public const int ic_mr_button_connecting_13_light = 2131165413;
 			
 			// aapt resource value: 0x7F0700E6
-			public const int ic_mr_button_connecting_14_light = 2131165414;
+			public const int ic_mr_button_connecting_14_dark = 2131165414;
 			
 			// aapt resource value: 0x7F0700E7
-			public const int ic_mr_button_connecting_15_dark = 2131165415;
+			public const int ic_mr_button_connecting_14_light = 2131165415;
 			
 			// aapt resource value: 0x7F0700E8
-			public const int ic_mr_button_connecting_15_light = 2131165416;
+			public const int ic_mr_button_connecting_15_dark = 2131165416;
 			
 			// aapt resource value: 0x7F0700E9
-			public const int ic_mr_button_connecting_16_dark = 2131165417;
+			public const int ic_mr_button_connecting_15_light = 2131165417;
 			
 			// aapt resource value: 0x7F0700EA
-			public const int ic_mr_button_connecting_16_light = 2131165418;
+			public const int ic_mr_button_connecting_16_dark = 2131165418;
 			
 			// aapt resource value: 0x7F0700EB
-			public const int ic_mr_button_connecting_17_dark = 2131165419;
+			public const int ic_mr_button_connecting_16_light = 2131165419;
 			
 			// aapt resource value: 0x7F0700EC
-			public const int ic_mr_button_connecting_17_light = 2131165420;
+			public const int ic_mr_button_connecting_17_dark = 2131165420;
 			
 			// aapt resource value: 0x7F0700ED
-			public const int ic_mr_button_connecting_18_dark = 2131165421;
+			public const int ic_mr_button_connecting_17_light = 2131165421;
 			
 			// aapt resource value: 0x7F0700EE
-			public const int ic_mr_button_connecting_18_light = 2131165422;
+			public const int ic_mr_button_connecting_18_dark = 2131165422;
 			
 			// aapt resource value: 0x7F0700EF
-			public const int ic_mr_button_connecting_19_dark = 2131165423;
+			public const int ic_mr_button_connecting_18_light = 2131165423;
 			
 			// aapt resource value: 0x7F0700F0
-			public const int ic_mr_button_connecting_19_light = 2131165424;
+			public const int ic_mr_button_connecting_19_dark = 2131165424;
 			
 			// aapt resource value: 0x7F0700F1
-			public const int ic_mr_button_connecting_20_dark = 2131165425;
+			public const int ic_mr_button_connecting_19_light = 2131165425;
 			
 			// aapt resource value: 0x7F0700F2
-			public const int ic_mr_button_connecting_20_light = 2131165426;
+			public const int ic_mr_button_connecting_20_dark = 2131165426;
 			
 			// aapt resource value: 0x7F0700F3
-			public const int ic_mr_button_connecting_21_dark = 2131165427;
+			public const int ic_mr_button_connecting_20_light = 2131165427;
 			
 			// aapt resource value: 0x7F0700F4
-			public const int ic_mr_button_connecting_21_light = 2131165428;
+			public const int ic_mr_button_connecting_21_dark = 2131165428;
 			
 			// aapt resource value: 0x7F0700F5
-			public const int ic_mr_button_connecting_22_dark = 2131165429;
+			public const int ic_mr_button_connecting_21_light = 2131165429;
 			
 			// aapt resource value: 0x7F0700F6
-			public const int ic_mr_button_connecting_22_light = 2131165430;
+			public const int ic_mr_button_connecting_22_dark = 2131165430;
 			
 			// aapt resource value: 0x7F0700F7
-			public const int ic_mr_button_connecting_23_dark = 2131165431;
+			public const int ic_mr_button_connecting_22_light = 2131165431;
 			
 			// aapt resource value: 0x7F0700F8
-			public const int ic_mr_button_connecting_23_light = 2131165432;
+			public const int ic_mr_button_connecting_23_dark = 2131165432;
 			
 			// aapt resource value: 0x7F0700F9
-			public const int ic_mr_button_connecting_24_dark = 2131165433;
+			public const int ic_mr_button_connecting_23_light = 2131165433;
 			
 			// aapt resource value: 0x7F0700FA
-			public const int ic_mr_button_connecting_24_light = 2131165434;
+			public const int ic_mr_button_connecting_24_dark = 2131165434;
 			
 			// aapt resource value: 0x7F0700FB
-			public const int ic_mr_button_connecting_25_dark = 2131165435;
+			public const int ic_mr_button_connecting_24_light = 2131165435;
 			
 			// aapt resource value: 0x7F0700FC
-			public const int ic_mr_button_connecting_25_light = 2131165436;
+			public const int ic_mr_button_connecting_25_dark = 2131165436;
 			
 			// aapt resource value: 0x7F0700FD
-			public const int ic_mr_button_connecting_26_dark = 2131165437;
+			public const int ic_mr_button_connecting_25_light = 2131165437;
 			
 			// aapt resource value: 0x7F0700FE
-			public const int ic_mr_button_connecting_26_light = 2131165438;
+			public const int ic_mr_button_connecting_26_dark = 2131165438;
 			
 			// aapt resource value: 0x7F0700FF
-			public const int ic_mr_button_connecting_27_dark = 2131165439;
+			public const int ic_mr_button_connecting_26_light = 2131165439;
 			
 			// aapt resource value: 0x7F070100
-			public const int ic_mr_button_connecting_27_light = 2131165440;
+			public const int ic_mr_button_connecting_27_dark = 2131165440;
 			
 			// aapt resource value: 0x7F070101
-			public const int ic_mr_button_connecting_28_dark = 2131165441;
+			public const int ic_mr_button_connecting_27_light = 2131165441;
 			
 			// aapt resource value: 0x7F070102
-			public const int ic_mr_button_connecting_28_light = 2131165442;
+			public const int ic_mr_button_connecting_28_dark = 2131165442;
 			
 			// aapt resource value: 0x7F070103
-			public const int ic_mr_button_connecting_29_dark = 2131165443;
+			public const int ic_mr_button_connecting_28_light = 2131165443;
 			
 			// aapt resource value: 0x7F070104
-			public const int ic_mr_button_connecting_29_light = 2131165444;
+			public const int ic_mr_button_connecting_29_dark = 2131165444;
 			
 			// aapt resource value: 0x7F070105
-			public const int ic_mr_button_connecting_30_dark = 2131165445;
+			public const int ic_mr_button_connecting_29_light = 2131165445;
 			
 			// aapt resource value: 0x7F070106
-			public const int ic_mr_button_connecting_30_light = 2131165446;
+			public const int ic_mr_button_connecting_30_dark = 2131165446;
 			
 			// aapt resource value: 0x7F070107
-			public const int ic_mr_button_disabled_dark = 2131165447;
+			public const int ic_mr_button_connecting_30_light = 2131165447;
 			
 			// aapt resource value: 0x7F070108
-			public const int ic_mr_button_disabled_light = 2131165448;
+			public const int ic_mr_button_disabled_dark = 2131165448;
 			
 			// aapt resource value: 0x7F070109
-			public const int ic_mr_button_disconnected_dark = 2131165449;
+			public const int ic_mr_button_disabled_light = 2131165449;
 			
 			// aapt resource value: 0x7F07010A
-			public const int ic_mr_button_disconnected_light = 2131165450;
+			public const int ic_mr_button_disconnected_dark = 2131165450;
 			
 			// aapt resource value: 0x7F07010B
-			public const int ic_mr_button_grey = 2131165451;
+			public const int ic_mr_button_disconnected_light = 2131165451;
 			
 			// aapt resource value: 0x7F07010C
-			public const int ic_vol_type_speaker_dark = 2131165452;
+			public const int ic_mr_button_grey = 2131165452;
 			
 			// aapt resource value: 0x7F07010D
-			public const int ic_vol_type_speaker_group_dark = 2131165453;
+			public const int ic_successstatus = 2131165453;
 			
 			// aapt resource value: 0x7F07010E
-			public const int ic_vol_type_speaker_group_light = 2131165454;
+			public const int ic_vol_type_speaker_dark = 2131165454;
 			
 			// aapt resource value: 0x7F07010F
-			public const int ic_vol_type_speaker_light = 2131165455;
+			public const int ic_vol_type_speaker_group_dark = 2131165455;
 			
 			// aapt resource value: 0x7F070110
-			public const int ic_vol_type_tv_dark = 2131165456;
+			public const int ic_vol_type_speaker_group_light = 2131165456;
 			
 			// aapt resource value: 0x7F070111
-			public const int ic_vol_type_tv_light = 2131165457;
+			public const int ic_vol_type_speaker_light = 2131165457;
 			
 			// aapt resource value: 0x7F070112
-			public const int mr_button_connected_dark = 2131165458;
+			public const int ic_vol_type_tv_dark = 2131165458;
 			
 			// aapt resource value: 0x7F070113
-			public const int mr_button_connected_light = 2131165459;
+			public const int ic_vol_type_tv_light = 2131165459;
 			
 			// aapt resource value: 0x7F070114
-			public const int mr_button_connecting_dark = 2131165460;
+			public const int mr_button_connected_dark = 2131165460;
 			
 			// aapt resource value: 0x7F070115
-			public const int mr_button_connecting_light = 2131165461;
+			public const int mr_button_connected_light = 2131165461;
 			
 			// aapt resource value: 0x7F070116
-			public const int mr_button_dark = 2131165462;
+			public const int mr_button_connecting_dark = 2131165462;
 			
 			// aapt resource value: 0x7F070117
-			public const int mr_button_light = 2131165463;
+			public const int mr_button_connecting_light = 2131165463;
 			
 			// aapt resource value: 0x7F070118
-			public const int mr_dialog_close_dark = 2131165464;
+			public const int mr_button_dark = 2131165464;
 			
 			// aapt resource value: 0x7F070119
-			public const int mr_dialog_close_light = 2131165465;
+			public const int mr_button_light = 2131165465;
 			
 			// aapt resource value: 0x7F07011A
-			public const int mr_dialog_material_background_dark = 2131165466;
+			public const int mr_dialog_close_dark = 2131165466;
 			
 			// aapt resource value: 0x7F07011B
-			public const int mr_dialog_material_background_light = 2131165467;
+			public const int mr_dialog_close_light = 2131165467;
 			
 			// aapt resource value: 0x7F07011C
-			public const int mr_group_collapse = 2131165468;
+			public const int mr_dialog_material_background_dark = 2131165468;
 			
 			// aapt resource value: 0x7F07011D
-			public const int mr_group_expand = 2131165469;
+			public const int mr_dialog_material_background_light = 2131165469;
 			
 			// aapt resource value: 0x7F07011E
-			public const int mr_media_pause_dark = 2131165470;
+			public const int mr_group_collapse = 2131165470;
 			
 			// aapt resource value: 0x7F07011F
-			public const int mr_media_pause_light = 2131165471;
+			public const int mr_group_expand = 2131165471;
 			
 			// aapt resource value: 0x7F070120
-			public const int mr_media_play_dark = 2131165472;
+			public const int mr_media_pause_dark = 2131165472;
 			
 			// aapt resource value: 0x7F070121
-			public const int mr_media_play_light = 2131165473;
+			public const int mr_media_pause_light = 2131165473;
 			
 			// aapt resource value: 0x7F070122
-			public const int mr_media_stop_dark = 2131165474;
+			public const int mr_media_play_dark = 2131165474;
 			
 			// aapt resource value: 0x7F070123
-			public const int mr_media_stop_light = 2131165475;
+			public const int mr_media_play_light = 2131165475;
 			
 			// aapt resource value: 0x7F070124
-			public const int mr_vol_type_audiotrack_dark = 2131165476;
+			public const int mr_media_stop_dark = 2131165476;
 			
 			// aapt resource value: 0x7F070125
-			public const int mr_vol_type_audiotrack_light = 2131165477;
+			public const int mr_media_stop_light = 2131165477;
 			
 			// aapt resource value: 0x7F070126
-			public const int navigation_empty_icon = 2131165478;
+			public const int mr_vol_type_audiotrack_dark = 2131165478;
 			
 			// aapt resource value: 0x7F070127
-			public const int notification_action_background = 2131165479;
+			public const int mr_vol_type_audiotrack_light = 2131165479;
 			
 			// aapt resource value: 0x7F070128
-			public const int notification_bg = 2131165480;
+			public const int navigation_empty_icon = 2131165480;
 			
 			// aapt resource value: 0x7F070129
-			public const int notification_bg_low = 2131165481;
+			public const int notification_action_background = 2131165481;
 			
 			// aapt resource value: 0x7F07012A
-			public const int notification_bg_low_normal = 2131165482;
+			public const int notification_bg = 2131165482;
 			
 			// aapt resource value: 0x7F07012B
-			public const int notification_bg_low_pressed = 2131165483;
+			public const int notification_bg_low = 2131165483;
 			
 			// aapt resource value: 0x7F07012C
-			public const int notification_bg_normal = 2131165484;
+			public const int notification_bg_low_normal = 2131165484;
 			
 			// aapt resource value: 0x7F07012D
-			public const int notification_bg_normal_pressed = 2131165485;
+			public const int notification_bg_low_pressed = 2131165485;
 			
 			// aapt resource value: 0x7F07012E
-			public const int notification_icon_background = 2131165486;
+			public const int notification_bg_normal = 2131165486;
 			
 			// aapt resource value: 0x7F07012F
-			public const int notification_template_icon_bg = 2131165487;
+			public const int notification_bg_normal_pressed = 2131165487;
 			
 			// aapt resource value: 0x7F070130
-			public const int notification_template_icon_low_bg = 2131165488;
+			public const int notification_icon_background = 2131165488;
 			
 			// aapt resource value: 0x7F070131
-			public const int notification_tile_bg = 2131165489;
+			public const int notification_template_icon_bg = 2131165489;
 			
 			// aapt resource value: 0x7F070132
-			public const int notify_panel_notification_icon_bg = 2131165490;
+			public const int notification_template_icon_low_bg = 2131165490;
 			
 			// aapt resource value: 0x7F070133
-			public const int tooltip_frame_dark = 2131165491;
+			public const int notification_tile_bg = 2131165491;
 			
 			// aapt resource value: 0x7F070134
-			public const int tooltip_frame_light = 2131165492;
+			public const int notify_panel_notification_icon_bg = 2131165492;
+			
+			// aapt resource value: 0x7F070135
+			public const int roundedbg = 2131165493;
+			
+			// aapt resource value: 0x7F070136
+			public const int roundedbgdark = 2131165494;
+			
+			// aapt resource value: 0x7F070137
+			public const int tooltip_frame_dark = 2131165495;
+			
+			// aapt resource value: 0x7F070138
+			public const int tooltip_frame_light = 2131165496;
 			
 			static Drawable()
 			{
@@ -5275,379 +7329,391 @@ namespace SmartButler.Droid
 			public const int list_item = 2131230810;
 			
 			// aapt resource value: 0x7F08005B
-			public const int main_appbar = 2131230811;
+			public const int loadingImage = 2131230811;
 			
 			// aapt resource value: 0x7F08005C
-			public const int main_tablayout = 2131230812;
+			public const int loadingProgressBar = 2131230812;
 			
 			// aapt resource value: 0x7F08005D
-			public const int main_toolbar = 2131230813;
+			public const int loadingProgressWheel = 2131230813;
 			
 			// aapt resource value: 0x7F08005E
-			public const int main_viewpager = 2131230814;
+			public const int main_appbar = 2131230814;
 			
 			// aapt resource value: 0x7F08005F
-			public const int masked = 2131230815;
+			public const int main_tablayout = 2131230815;
 			
 			// aapt resource value: 0x7F080060
-			public const int media_actions = 2131230816;
+			public const int main_toolbar = 2131230816;
 			
 			// aapt resource value: 0x7F080061
-			public const int message = 2131230817;
+			public const int main_viewpager = 2131230817;
+			
+			// aapt resource value: 0x7F080062
+			public const int masked = 2131230818;
+			
+			// aapt resource value: 0x7F080063
+			public const int media_actions = 2131230819;
+			
+			// aapt resource value: 0x7F080064
+			public const int message = 2131230820;
 			
 			// aapt resource value: 0x7F080003
 			public const int META = 2131230723;
 			
-			// aapt resource value: 0x7F080062
-			public const int middle = 2131230818;
-			
-			// aapt resource value: 0x7F080063
-			public const int mini = 2131230819;
-			
-			// aapt resource value: 0x7F080064
-			public const int mr_art = 2131230820;
-			
 			// aapt resource value: 0x7F080065
-			public const int mr_chooser_list = 2131230821;
+			public const int middle = 2131230821;
 			
 			// aapt resource value: 0x7F080066
-			public const int mr_chooser_route_desc = 2131230822;
+			public const int mini = 2131230822;
 			
 			// aapt resource value: 0x7F080067
-			public const int mr_chooser_route_icon = 2131230823;
+			public const int mr_art = 2131230823;
 			
 			// aapt resource value: 0x7F080068
-			public const int mr_chooser_route_name = 2131230824;
+			public const int mr_chooser_list = 2131230824;
 			
 			// aapt resource value: 0x7F080069
-			public const int mr_chooser_title = 2131230825;
+			public const int mr_chooser_route_desc = 2131230825;
 			
 			// aapt resource value: 0x7F08006A
-			public const int mr_close = 2131230826;
+			public const int mr_chooser_route_icon = 2131230826;
 			
 			// aapt resource value: 0x7F08006B
-			public const int mr_control_divider = 2131230827;
+			public const int mr_chooser_route_name = 2131230827;
 			
 			// aapt resource value: 0x7F08006C
-			public const int mr_control_playback_ctrl = 2131230828;
+			public const int mr_chooser_title = 2131230828;
 			
 			// aapt resource value: 0x7F08006D
-			public const int mr_control_subtitle = 2131230829;
+			public const int mr_close = 2131230829;
 			
 			// aapt resource value: 0x7F08006E
-			public const int mr_control_title = 2131230830;
+			public const int mr_control_divider = 2131230830;
 			
 			// aapt resource value: 0x7F08006F
-			public const int mr_control_title_container = 2131230831;
+			public const int mr_control_playback_ctrl = 2131230831;
 			
 			// aapt resource value: 0x7F080070
-			public const int mr_custom_control = 2131230832;
+			public const int mr_control_subtitle = 2131230832;
 			
 			// aapt resource value: 0x7F080071
-			public const int mr_default_control = 2131230833;
+			public const int mr_control_title = 2131230833;
 			
 			// aapt resource value: 0x7F080072
-			public const int mr_dialog_area = 2131230834;
+			public const int mr_control_title_container = 2131230834;
 			
 			// aapt resource value: 0x7F080073
-			public const int mr_expandable_area = 2131230835;
+			public const int mr_custom_control = 2131230835;
 			
 			// aapt resource value: 0x7F080074
-			public const int mr_group_expand_collapse = 2131230836;
+			public const int mr_default_control = 2131230836;
 			
 			// aapt resource value: 0x7F080075
-			public const int mr_media_main_control = 2131230837;
+			public const int mr_dialog_area = 2131230837;
 			
 			// aapt resource value: 0x7F080076
-			public const int mr_name = 2131230838;
+			public const int mr_expandable_area = 2131230838;
 			
 			// aapt resource value: 0x7F080077
-			public const int mr_playback_control = 2131230839;
+			public const int mr_group_expand_collapse = 2131230839;
 			
 			// aapt resource value: 0x7F080078
-			public const int mr_title_bar = 2131230840;
+			public const int mr_media_main_control = 2131230840;
 			
 			// aapt resource value: 0x7F080079
-			public const int mr_volume_control = 2131230841;
+			public const int mr_name = 2131230841;
 			
 			// aapt resource value: 0x7F08007A
-			public const int mr_volume_group_list = 2131230842;
+			public const int mr_playback_control = 2131230842;
 			
 			// aapt resource value: 0x7F08007B
-			public const int mr_volume_item_icon = 2131230843;
+			public const int mr_title_bar = 2131230843;
 			
 			// aapt resource value: 0x7F08007C
-			public const int mr_volume_slider = 2131230844;
+			public const int mr_volume_control = 2131230844;
 			
 			// aapt resource value: 0x7F08007D
-			public const int multiply = 2131230845;
+			public const int mr_volume_group_list = 2131230845;
 			
 			// aapt resource value: 0x7F08007E
-			public const int navigation_header_container = 2131230846;
+			public const int mr_volume_item_icon = 2131230846;
 			
 			// aapt resource value: 0x7F08007F
-			public const int never = 2131230847;
+			public const int mr_volume_slider = 2131230847;
 			
 			// aapt resource value: 0x7F080080
-			public const int none = 2131230848;
+			public const int multiply = 2131230848;
 			
 			// aapt resource value: 0x7F080081
-			public const int normal = 2131230849;
+			public const int navigation_header_container = 2131230849;
 			
 			// aapt resource value: 0x7F080082
-			public const int notification_background = 2131230850;
+			public const int never = 2131230850;
 			
 			// aapt resource value: 0x7F080083
-			public const int notification_main_column = 2131230851;
+			public const int none = 2131230851;
 			
 			// aapt resource value: 0x7F080084
-			public const int notification_main_column_container = 2131230852;
+			public const int normal = 2131230852;
 			
 			// aapt resource value: 0x7F080085
-			public const int parallax = 2131230853;
+			public const int notification_background = 2131230853;
 			
 			// aapt resource value: 0x7F080086
-			public const int parentPanel = 2131230854;
+			public const int notification_main_column = 2131230854;
 			
 			// aapt resource value: 0x7F080087
-			public const int parent_matrix = 2131230855;
+			public const int notification_main_column_container = 2131230855;
 			
 			// aapt resource value: 0x7F080088
-			public const int pin = 2131230856;
+			public const int parallax = 2131230856;
 			
 			// aapt resource value: 0x7F080089
-			public const int progress_circular = 2131230857;
+			public const int parentPanel = 2131230857;
 			
 			// aapt resource value: 0x7F08008A
-			public const int progress_horizontal = 2131230858;
+			public const int parent_matrix = 2131230858;
 			
 			// aapt resource value: 0x7F08008B
-			public const int radio = 2131230859;
+			public const int pin = 2131230859;
 			
 			// aapt resource value: 0x7F08008C
-			public const int right = 2131230860;
+			public const int progress_circular = 2131230860;
 			
 			// aapt resource value: 0x7F08008D
-			public const int right_icon = 2131230861;
+			public const int progress_horizontal = 2131230861;
 			
 			// aapt resource value: 0x7F08008E
-			public const int right_side = 2131230862;
+			public const int radio = 2131230862;
 			
 			// aapt resource value: 0x7F08008F
-			public const int save_image_matrix = 2131230863;
+			public const int right = 2131230863;
 			
 			// aapt resource value: 0x7F080090
-			public const int save_non_transition_alpha = 2131230864;
+			public const int right_icon = 2131230864;
 			
 			// aapt resource value: 0x7F080091
-			public const int save_scale_type = 2131230865;
+			public const int right_side = 2131230865;
 			
 			// aapt resource value: 0x7F080092
-			public const int screen = 2131230866;
+			public const int save_image_matrix = 2131230866;
 			
 			// aapt resource value: 0x7F080093
-			public const int scroll = 2131230867;
-			
-			// aapt resource value: 0x7F080097
-			public const int scrollable = 2131230871;
+			public const int save_non_transition_alpha = 2131230867;
 			
 			// aapt resource value: 0x7F080094
-			public const int scrollIndicatorDown = 2131230868;
+			public const int save_scale_type = 2131230868;
 			
 			// aapt resource value: 0x7F080095
-			public const int scrollIndicatorUp = 2131230869;
+			public const int screen = 2131230869;
 			
 			// aapt resource value: 0x7F080096
-			public const int scrollView = 2131230870;
-			
-			// aapt resource value: 0x7F080098
-			public const int search_badge = 2131230872;
-			
-			// aapt resource value: 0x7F080099
-			public const int search_bar = 2131230873;
+			public const int scroll = 2131230870;
 			
 			// aapt resource value: 0x7F08009A
-			public const int search_button = 2131230874;
+			public const int scrollable = 2131230874;
+			
+			// aapt resource value: 0x7F080097
+			public const int scrollIndicatorDown = 2131230871;
+			
+			// aapt resource value: 0x7F080098
+			public const int scrollIndicatorUp = 2131230872;
+			
+			// aapt resource value: 0x7F080099
+			public const int scrollView = 2131230873;
 			
 			// aapt resource value: 0x7F08009B
-			public const int search_close_btn = 2131230875;
+			public const int search_badge = 2131230875;
 			
 			// aapt resource value: 0x7F08009C
-			public const int search_edit_frame = 2131230876;
+			public const int search_bar = 2131230876;
 			
 			// aapt resource value: 0x7F08009D
-			public const int search_go_btn = 2131230877;
+			public const int search_button = 2131230877;
 			
 			// aapt resource value: 0x7F08009E
-			public const int search_mag_icon = 2131230878;
+			public const int search_close_btn = 2131230878;
 			
 			// aapt resource value: 0x7F08009F
-			public const int search_plate = 2131230879;
+			public const int search_edit_frame = 2131230879;
 			
 			// aapt resource value: 0x7F0800A0
-			public const int search_src_text = 2131230880;
+			public const int search_go_btn = 2131230880;
 			
 			// aapt resource value: 0x7F0800A1
-			public const int search_voice_btn = 2131230881;
+			public const int search_mag_icon = 2131230881;
 			
 			// aapt resource value: 0x7F0800A2
-			public const int select_dialog_listview = 2131230882;
+			public const int search_plate = 2131230882;
 			
 			// aapt resource value: 0x7F0800A3
-			public const int shellcontent_appbar = 2131230883;
+			public const int search_src_text = 2131230883;
 			
 			// aapt resource value: 0x7F0800A4
-			public const int shellcontent_toolbar = 2131230884;
+			public const int search_voice_btn = 2131230884;
+			
+			// aapt resource value: 0x7F0800A5
+			public const int select_dialog_listview = 2131230885;
+			
+			// aapt resource value: 0x7F0800A6
+			public const int shellcontent_appbar = 2131230886;
+			
+			// aapt resource value: 0x7F0800A7
+			public const int shellcontent_toolbar = 2131230887;
 			
 			// aapt resource value: 0x7F080004
 			public const int SHIFT = 2131230724;
 			
-			// aapt resource value: 0x7F0800A5
-			public const int shortcut = 2131230885;
-			
-			// aapt resource value: 0x7F0800A6
-			public const int showCustom = 2131230886;
-			
-			// aapt resource value: 0x7F0800A7
-			public const int showHome = 2131230887;
-			
 			// aapt resource value: 0x7F0800A8
-			public const int showTitle = 2131230888;
+			public const int shortcut = 2131230888;
 			
 			// aapt resource value: 0x7F0800A9
-			public const int sliding_tabs = 2131230889;
+			public const int showCustom = 2131230889;
 			
 			// aapt resource value: 0x7F0800AA
-			public const int smallLabel = 2131230890;
+			public const int showHome = 2131230890;
 			
 			// aapt resource value: 0x7F0800AB
-			public const int snackbar_action = 2131230891;
+			public const int showTitle = 2131230891;
 			
 			// aapt resource value: 0x7F0800AC
-			public const int snackbar_text = 2131230892;
+			public const int sliding_tabs = 2131230892;
 			
 			// aapt resource value: 0x7F0800AD
-			public const int snap = 2131230893;
+			public const int smallLabel = 2131230893;
 			
 			// aapt resource value: 0x7F0800AE
-			public const int spacer = 2131230894;
+			public const int snackbar_action = 2131230894;
 			
 			// aapt resource value: 0x7F0800AF
-			public const int split_action_bar = 2131230895;
+			public const int snackbar_text = 2131230895;
 			
 			// aapt resource value: 0x7F0800B0
-			public const int src_atop = 2131230896;
+			public const int snap = 2131230896;
 			
 			// aapt resource value: 0x7F0800B1
-			public const int src_in = 2131230897;
+			public const int spacer = 2131230897;
 			
 			// aapt resource value: 0x7F0800B2
-			public const int src_over = 2131230898;
+			public const int split_action_bar = 2131230898;
 			
 			// aapt resource value: 0x7F0800B3
-			public const int start = 2131230899;
+			public const int src_atop = 2131230899;
 			
 			// aapt resource value: 0x7F0800B4
-			public const int status_bar_latest_event_content = 2131230900;
+			public const int src_in = 2131230900;
 			
 			// aapt resource value: 0x7F0800B5
-			public const int submenuarrow = 2131230901;
+			public const int src_over = 2131230901;
 			
 			// aapt resource value: 0x7F0800B6
-			public const int submit_area = 2131230902;
+			public const int start = 2131230902;
+			
+			// aapt resource value: 0x7F0800B7
+			public const int status_bar_latest_event_content = 2131230903;
+			
+			// aapt resource value: 0x7F0800B8
+			public const int submenuarrow = 2131230904;
+			
+			// aapt resource value: 0x7F0800B9
+			public const int submit_area = 2131230905;
 			
 			// aapt resource value: 0x7F080005
 			public const int SYM = 2131230725;
 			
-			// aapt resource value: 0x7F0800B7
-			public const int tabMode = 2131230903;
-			
-			// aapt resource value: 0x7F0800B8
-			public const int tag_transition_group = 2131230904;
-			
-			// aapt resource value: 0x7F0800B9
-			public const int text = 2131230905;
-			
 			// aapt resource value: 0x7F0800BA
-			public const int text2 = 2131230906;
-			
-			// aapt resource value: 0x7F0800BE
-			public const int textinput_counter = 2131230910;
-			
-			// aapt resource value: 0x7F0800BF
-			public const int textinput_error = 2131230911;
+			public const int tabMode = 2131230906;
 			
 			// aapt resource value: 0x7F0800BB
-			public const int textSpacerNoButtons = 2131230907;
+			public const int tag_transition_group = 2131230907;
 			
 			// aapt resource value: 0x7F0800BC
-			public const int textSpacerNoTitle = 2131230908;
+			public const int text = 2131230908;
 			
 			// aapt resource value: 0x7F0800BD
-			public const int text_input_password_toggle = 2131230909;
-			
-			// aapt resource value: 0x7F0800C0
-			public const int time = 2131230912;
-			
-			// aapt resource value: 0x7F0800C1
-			public const int title = 2131230913;
+			public const int text2 = 2131230909;
 			
 			// aapt resource value: 0x7F0800C2
-			public const int titleDividerNoCustom = 2131230914;
+			public const int textinput_counter = 2131230914;
 			
 			// aapt resource value: 0x7F0800C3
-			public const int title_template = 2131230915;
+			public const int textinput_error = 2131230915;
+			
+			// aapt resource value: 0x7F0800BE
+			public const int textSpacerNoButtons = 2131230910;
+			
+			// aapt resource value: 0x7F0800BF
+			public const int textSpacerNoTitle = 2131230911;
+			
+			// aapt resource value: 0x7F0800C0
+			public const int textViewStatus = 2131230912;
+			
+			// aapt resource value: 0x7F0800C1
+			public const int text_input_password_toggle = 2131230913;
 			
 			// aapt resource value: 0x7F0800C4
-			public const int toolbar = 2131230916;
+			public const int time = 2131230916;
 			
 			// aapt resource value: 0x7F0800C5
-			public const int top = 2131230917;
+			public const int title = 2131230917;
 			
 			// aapt resource value: 0x7F0800C6
-			public const int topPanel = 2131230918;
+			public const int titleDividerNoCustom = 2131230918;
 			
 			// aapt resource value: 0x7F0800C7
-			public const int touch_outside = 2131230919;
+			public const int title_template = 2131230919;
 			
 			// aapt resource value: 0x7F0800C8
-			public const int transition_current_scene = 2131230920;
+			public const int toolbar = 2131230920;
 			
 			// aapt resource value: 0x7F0800C9
-			public const int transition_layout_save = 2131230921;
+			public const int top = 2131230921;
 			
 			// aapt resource value: 0x7F0800CA
-			public const int transition_position = 2131230922;
+			public const int topPanel = 2131230922;
 			
 			// aapt resource value: 0x7F0800CB
-			public const int transition_scene_layoutid_cache = 2131230923;
+			public const int touch_outside = 2131230923;
 			
 			// aapt resource value: 0x7F0800CC
-			public const int transition_transform = 2131230924;
+			public const int transition_current_scene = 2131230924;
 			
 			// aapt resource value: 0x7F0800CD
-			public const int uniform = 2131230925;
+			public const int transition_layout_save = 2131230925;
 			
 			// aapt resource value: 0x7F0800CE
-			public const int up = 2131230926;
+			public const int transition_position = 2131230926;
 			
 			// aapt resource value: 0x7F0800CF
-			public const int useLogo = 2131230927;
+			public const int transition_scene_layoutid_cache = 2131230927;
 			
 			// aapt resource value: 0x7F0800D0
-			public const int view_offset_helper = 2131230928;
+			public const int transition_transform = 2131230928;
 			
 			// aapt resource value: 0x7F0800D1
-			public const int visible = 2131230929;
+			public const int uniform = 2131230929;
 			
 			// aapt resource value: 0x7F0800D2
-			public const int volume_item_container = 2131230930;
+			public const int up = 2131230930;
 			
 			// aapt resource value: 0x7F0800D3
-			public const int withText = 2131230931;
+			public const int useLogo = 2131230931;
 			
 			// aapt resource value: 0x7F0800D4
-			public const int wrap_content = 2131230932;
+			public const int view_offset_helper = 2131230932;
+			
+			// aapt resource value: 0x7F0800D5
+			public const int visible = 2131230933;
+			
+			// aapt resource value: 0x7F0800D6
+			public const int volume_item_container = 2131230934;
+			
+			// aapt resource value: 0x7F0800D7
+			public const int withText = 2131230935;
+			
+			// aapt resource value: 0x7F0800D8
+			public const int wrap_content = 2131230936;
 			
 			static Id()
 			{
@@ -5860,94 +7926,103 @@ namespace SmartButler.Droid
 			public const int FlyoutContent = 2131427369;
 			
 			// aapt resource value: 0x7F0B002A
-			public const int mr_chooser_dialog = 2131427370;
+			public const int loading = 2131427370;
 			
 			// aapt resource value: 0x7F0B002B
-			public const int mr_chooser_list_item = 2131427371;
+			public const int loadingimage = 2131427371;
 			
 			// aapt resource value: 0x7F0B002C
-			public const int mr_controller_material_dialog_b = 2131427372;
+			public const int loadingprogress = 2131427372;
 			
 			// aapt resource value: 0x7F0B002D
-			public const int mr_controller_volume_item = 2131427373;
+			public const int mr_chooser_dialog = 2131427373;
 			
 			// aapt resource value: 0x7F0B002E
-			public const int mr_playback_control = 2131427374;
+			public const int mr_chooser_list_item = 2131427374;
 			
 			// aapt resource value: 0x7F0B002F
-			public const int mr_volume_control = 2131427375;
+			public const int mr_controller_material_dialog_b = 2131427375;
 			
 			// aapt resource value: 0x7F0B0030
-			public const int notification_action = 2131427376;
+			public const int mr_controller_volume_item = 2131427376;
 			
 			// aapt resource value: 0x7F0B0031
-			public const int notification_action_tombstone = 2131427377;
+			public const int mr_playback_control = 2131427377;
 			
 			// aapt resource value: 0x7F0B0032
-			public const int notification_media_action = 2131427378;
+			public const int mr_volume_control = 2131427378;
 			
 			// aapt resource value: 0x7F0B0033
-			public const int notification_media_cancel_action = 2131427379;
+			public const int notification_action = 2131427379;
 			
 			// aapt resource value: 0x7F0B0034
-			public const int notification_template_big_media = 2131427380;
+			public const int notification_action_tombstone = 2131427380;
 			
 			// aapt resource value: 0x7F0B0035
-			public const int notification_template_big_media_custom = 2131427381;
+			public const int notification_media_action = 2131427381;
 			
 			// aapt resource value: 0x7F0B0036
-			public const int notification_template_big_media_narrow = 2131427382;
+			public const int notification_media_cancel_action = 2131427382;
 			
 			// aapt resource value: 0x7F0B0037
-			public const int notification_template_big_media_narrow_custom = 2131427383;
+			public const int notification_template_big_media = 2131427383;
 			
 			// aapt resource value: 0x7F0B0038
-			public const int notification_template_custom_big = 2131427384;
+			public const int notification_template_big_media_custom = 2131427384;
 			
 			// aapt resource value: 0x7F0B0039
-			public const int notification_template_icon_group = 2131427385;
+			public const int notification_template_big_media_narrow = 2131427385;
 			
 			// aapt resource value: 0x7F0B003A
-			public const int notification_template_lines_media = 2131427386;
+			public const int notification_template_big_media_narrow_custom = 2131427386;
 			
 			// aapt resource value: 0x7F0B003B
-			public const int notification_template_media = 2131427387;
+			public const int notification_template_custom_big = 2131427387;
 			
 			// aapt resource value: 0x7F0B003C
-			public const int notification_template_media_custom = 2131427388;
+			public const int notification_template_icon_group = 2131427388;
 			
 			// aapt resource value: 0x7F0B003D
-			public const int notification_template_part_chronometer = 2131427389;
+			public const int notification_template_lines_media = 2131427389;
 			
 			// aapt resource value: 0x7F0B003E
-			public const int notification_template_part_time = 2131427390;
+			public const int notification_template_media = 2131427390;
 			
 			// aapt resource value: 0x7F0B003F
-			public const int RootLayout = 2131427391;
+			public const int notification_template_media_custom = 2131427391;
 			
 			// aapt resource value: 0x7F0B0040
-			public const int select_dialog_item_material = 2131427392;
+			public const int notification_template_part_chronometer = 2131427392;
 			
 			// aapt resource value: 0x7F0B0041
-			public const int select_dialog_multichoice_material = 2131427393;
+			public const int notification_template_part_time = 2131427393;
 			
 			// aapt resource value: 0x7F0B0042
-			public const int select_dialog_singlechoice_material = 2131427394;
+			public const int RootLayout = 2131427394;
 			
 			// aapt resource value: 0x7F0B0043
-			public const int ShellContent = 2131427395;
+			public const int select_dialog_item_material = 2131427395;
 			
 			// aapt resource value: 0x7F0B0044
-			public const int support_simple_spinner_dropdown_item = 2131427396;
+			public const int select_dialog_multichoice_material = 2131427396;
 			
 			// aapt resource value: 0x7F0B0045
-			public const int Tabbar = 2131427397;
+			public const int select_dialog_singlechoice_material = 2131427397;
 			
 			// aapt resource value: 0x7F0B0046
-			public const int Toolbar = 2131427398;
+			public const int ShellContent = 2131427398;
 			
 			// aapt resource value: 0x7F0B0047
-			public const int tooltip = 2131427399;
+			public const int support_simple_spinner_dropdown_item = 2131427399;
+			
+			// aapt resource value: 0x7F0B0048
+			public const int Tabbar = 2131427400;
+			
+			// aapt resource value: 0x7F0B0049
+			public const int Toolbar = 2131427401;
+			
+			// aapt resource value: 0x7F0B004A
+			public const int tooltip = 2131427402;
 			
 			static Layout()
 			{
@@ -6081,88 +8156,91 @@ namespace SmartButler.Droid
 			public const int character_counter_pattern = 2131558431;
 			
 			// aapt resource value: 0x7F0D0020
-			public const int mr_button_content_description = 2131558432;
+			public const int library_name = 2131558432;
 			
 			// aapt resource value: 0x7F0D0021
-			public const int mr_cast_button_connected = 2131558433;
+			public const int mr_button_content_description = 2131558433;
 			
 			// aapt resource value: 0x7F0D0022
-			public const int mr_cast_button_connecting = 2131558434;
+			public const int mr_cast_button_connected = 2131558434;
 			
 			// aapt resource value: 0x7F0D0023
-			public const int mr_cast_button_disconnected = 2131558435;
+			public const int mr_cast_button_connecting = 2131558435;
 			
 			// aapt resource value: 0x7F0D0024
-			public const int mr_chooser_searching = 2131558436;
+			public const int mr_cast_button_disconnected = 2131558436;
 			
 			// aapt resource value: 0x7F0D0025
-			public const int mr_chooser_title = 2131558437;
+			public const int mr_chooser_searching = 2131558437;
 			
 			// aapt resource value: 0x7F0D0026
-			public const int mr_controller_album_art = 2131558438;
+			public const int mr_chooser_title = 2131558438;
 			
 			// aapt resource value: 0x7F0D0027
-			public const int mr_controller_casting_screen = 2131558439;
+			public const int mr_controller_album_art = 2131558439;
 			
 			// aapt resource value: 0x7F0D0028
-			public const int mr_controller_close_description = 2131558440;
+			public const int mr_controller_casting_screen = 2131558440;
 			
 			// aapt resource value: 0x7F0D0029
-			public const int mr_controller_collapse_group = 2131558441;
+			public const int mr_controller_close_description = 2131558441;
 			
 			// aapt resource value: 0x7F0D002A
-			public const int mr_controller_disconnect = 2131558442;
+			public const int mr_controller_collapse_group = 2131558442;
 			
 			// aapt resource value: 0x7F0D002B
-			public const int mr_controller_expand_group = 2131558443;
+			public const int mr_controller_disconnect = 2131558443;
 			
 			// aapt resource value: 0x7F0D002C
-			public const int mr_controller_no_info_available = 2131558444;
+			public const int mr_controller_expand_group = 2131558444;
 			
 			// aapt resource value: 0x7F0D002D
-			public const int mr_controller_no_media_selected = 2131558445;
+			public const int mr_controller_no_info_available = 2131558445;
 			
 			// aapt resource value: 0x7F0D002E
-			public const int mr_controller_pause = 2131558446;
+			public const int mr_controller_no_media_selected = 2131558446;
 			
 			// aapt resource value: 0x7F0D002F
-			public const int mr_controller_play = 2131558447;
+			public const int mr_controller_pause = 2131558447;
 			
 			// aapt resource value: 0x7F0D0030
-			public const int mr_controller_stop = 2131558448;
+			public const int mr_controller_play = 2131558448;
 			
 			// aapt resource value: 0x7F0D0031
-			public const int mr_controller_stop_casting = 2131558449;
+			public const int mr_controller_stop = 2131558449;
 			
 			// aapt resource value: 0x7F0D0032
-			public const int mr_controller_volume_slider = 2131558450;
+			public const int mr_controller_stop_casting = 2131558450;
 			
 			// aapt resource value: 0x7F0D0033
-			public const int mr_system_route_name = 2131558451;
+			public const int mr_controller_volume_slider = 2131558451;
 			
 			// aapt resource value: 0x7F0D0034
-			public const int mr_user_route_category_name = 2131558452;
+			public const int mr_system_route_name = 2131558452;
 			
 			// aapt resource value: 0x7F0D0035
-			public const int password_toggle_content_description = 2131558453;
+			public const int mr_user_route_category_name = 2131558453;
 			
 			// aapt resource value: 0x7F0D0036
-			public const int path_password_eye = 2131558454;
+			public const int password_toggle_content_description = 2131558454;
 			
 			// aapt resource value: 0x7F0D0037
-			public const int path_password_eye_mask_strike_through = 2131558455;
+			public const int path_password_eye = 2131558455;
 			
 			// aapt resource value: 0x7F0D0038
-			public const int path_password_eye_mask_visible = 2131558456;
+			public const int path_password_eye_mask_strike_through = 2131558456;
 			
 			// aapt resource value: 0x7F0D0039
-			public const int path_password_strike_through = 2131558457;
+			public const int path_password_eye_mask_visible = 2131558457;
 			
 			// aapt resource value: 0x7F0D003A
-			public const int search_menu_title = 2131558458;
+			public const int path_password_strike_through = 2131558458;
 			
 			// aapt resource value: 0x7F0D003B
-			public const int status_bar_notification_info_overflow = 2131558459;
+			public const int search_menu_title = 2131558459;
+			
+			// aapt resource value: 0x7F0D003C
+			public const int status_bar_notification_info_overflow = 2131558460;
 			
 			static String()
 			{
@@ -7402,37 +9480,37 @@ namespace SmartButler.Droid
 		public partial class Styleable
 		{
 			
-			// aapt resource value: { 0x7F030031,0x7F030032,0x7F030033,0x7F030066,0x7F030067,0x7F030068,0x7F030069,0x7F03006A,0x7F03006B,0x7F030077,0x7F03007B,0x7F03007C,0x7F030087,0x7F0300A8,0x7F0300A9,0x7F0300AD,0x7F0300AE,0x7F0300AF,0x7F0300B4,0x7F0300BA,0x7F0300D5,0x7F0300EB,0x7F0300FB,0x7F0300FF,0x7F030100,0x7F030124,0x7F030127,0x7F030153,0x7F03015D }
+			// aapt resource value: { 0x7F03003D,0x7F03003E,0x7F03003F,0x7F030072,0x7F030073,0x7F030074,0x7F030075,0x7F030076,0x7F030077,0x7F030083,0x7F030087,0x7F030088,0x7F030093,0x7F0300B4,0x7F0300B5,0x7F0300B9,0x7F0300BA,0x7F0300BB,0x7F0300C0,0x7F0300C6,0x7F0300E1,0x7F0300F7,0x7F030107,0x7F03010B,0x7F03010C,0x7F030130,0x7F030133,0x7F03015F,0x7F030169 }
 			public static int[] ActionBar = new int[] {
-					2130903089,
-					2130903090,
-					2130903091,
-					2130903142,
-					2130903143,
-					2130903144,
-					2130903145,
-					2130903146,
-					2130903147,
+					2130903101,
+					2130903102,
+					2130903103,
+					2130903154,
+					2130903155,
+					2130903156,
+					2130903157,
+					2130903158,
 					2130903159,
-					2130903163,
-					2130903164,
+					2130903171,
 					2130903175,
-					2130903208,
-					2130903209,
-					2130903213,
-					2130903214,
-					2130903215,
+					2130903176,
+					2130903187,
 					2130903220,
+					2130903221,
+					2130903225,
 					2130903226,
-					2130903253,
-					2130903275,
-					2130903291,
-					2130903295,
-					2130903296,
-					2130903332,
-					2130903335,
-					2130903379,
-					2130903389};
+					2130903227,
+					2130903232,
+					2130903238,
+					2130903265,
+					2130903287,
+					2130903303,
+					2130903307,
+					2130903308,
+					2130903344,
+					2130903347,
+					2130903391,
+					2130903401};
 			
 			// aapt resource value: { 0x10100B3 }
 			public static int[] ActionBarLayout = new int[] {
@@ -7539,14 +9617,14 @@ namespace SmartButler.Droid
 			public static int[] ActionMenuView = new int[] {
 					-1};
 			
-			// aapt resource value: { 0x7F030031,0x7F030032,0x7F030054,0x7F0300A8,0x7F030127,0x7F03015D }
+			// aapt resource value: { 0x7F03003D,0x7F03003E,0x7F030060,0x7F0300B4,0x7F030133,0x7F030169 }
 			public static int[] ActionMode = new int[] {
-					2130903089,
-					2130903090,
-					2130903124,
-					2130903208,
-					2130903335,
-					2130903389};
+					2130903101,
+					2130903102,
+					2130903136,
+					2130903220,
+					2130903347,
+					2130903401};
 			
 			// aapt resource value: 0
 			public const int ActionMode_background = 0;
@@ -7566,10 +9644,10 @@ namespace SmartButler.Droid
 			// aapt resource value: 5
 			public const int ActionMode_titleTextStyle = 5;
 			
-			// aapt resource value: { 0x7F03008A,0x7F0300B5 }
+			// aapt resource value: { 0x7F030096,0x7F0300C1 }
 			public static int[] ActivityChooserView = new int[] {
-					2130903178,
-					2130903221};
+					2130903190,
+					2130903233};
 			
 			// aapt resource value: 0
 			public const int ActivityChooserView_expandActivityOverflowButtonDrawable = 0;
@@ -7577,15 +9655,15 @@ namespace SmartButler.Droid
 			// aapt resource value: 1
 			public const int ActivityChooserView_initialActivityCount = 1;
 			
-			// aapt resource value: { 0x10100F2,0x7F030046,0x7F0300CC,0x7F0300CD,0x7F0300E8,0x7F030114,0x7F030115 }
+			// aapt resource value: { 0x10100F2,0x7F030052,0x7F0300D8,0x7F0300D9,0x7F0300F4,0x7F030120,0x7F030121 }
 			public static int[] AlertDialog = new int[] {
 					16842994,
-					2130903110,
-					2130903244,
-					2130903245,
-					2130903272,
-					2130903316,
-					2130903317};
+					2130903122,
+					2130903256,
+					2130903257,
+					2130903284,
+					2130903328,
+					2130903329};
 			
 			// aapt resource value: 0
 			public const int AlertDialog_android_layout = 0;
@@ -7608,18 +9686,18 @@ namespace SmartButler.Droid
 			// aapt resource value: 6
 			public const int AlertDialog_singleChoiceItemLayout = 6;
 			
-			// aapt resource value: { 0x10100D4,0x101048F,0x1010540,0x7F030087,0x7F03008B }
+			// aapt resource value: { 0x10100D4,0x101048F,0x1010540,0x7F030093,0x7F030097 }
 			public static int[] AppBarLayout = new int[] {
 					16842964,
 					16843919,
 					16844096,
-					2130903175,
-					2130903179};
+					2130903187,
+					2130903191};
 			
-			// aapt resource value: { 0x7F03011E,0x7F03011F }
+			// aapt resource value: { 0x7F03012A,0x7F03012B }
 			public static int[] AppBarLayoutStates = new int[] {
-					2130903326,
-					2130903327};
+					2130903338,
+					2130903339};
 			
 			// aapt resource value: 0
 			public const int AppBarLayoutStates_state_collapsed = 0;
@@ -7642,10 +9720,10 @@ namespace SmartButler.Droid
 			// aapt resource value: 4
 			public const int AppBarLayout_expanded = 4;
 			
-			// aapt resource value: { 0x7F0300C8,0x7F0300C9 }
+			// aapt resource value: { 0x7F0300D4,0x7F0300D5 }
 			public static int[] AppBarLayout_Layout = new int[] {
-					2130903240,
-					2130903241};
+					2130903252,
+					2130903253};
 			
 			// aapt resource value: 0
 			public const int AppBarLayout_Layout_layout_scrollFlags = 0;
@@ -7653,12 +9731,12 @@ namespace SmartButler.Droid
 			// aapt resource value: 1
 			public const int AppBarLayout_Layout_layout_scrollInterpolator = 1;
 			
-			// aapt resource value: { 0x1010119,0x7F03011B,0x7F030151,0x7F030152 }
+			// aapt resource value: { 0x1010119,0x7F030127,0x7F03015D,0x7F03015E }
 			public static int[] AppCompatImageView = new int[] {
 					16843033,
-					2130903323,
-					2130903377,
-					2130903378};
+					2130903335,
+					2130903389,
+					2130903390};
 			
 			// aapt resource value: 0
 			public const int AppCompatImageView_android_src = 0;
@@ -7672,12 +9750,12 @@ namespace SmartButler.Droid
 			// aapt resource value: 3
 			public const int AppCompatImageView_tintMode = 3;
 			
-			// aapt resource value: { 0x1010142,0x7F03014E,0x7F03014F,0x7F030150 }
+			// aapt resource value: { 0x1010142,0x7F03015A,0x7F03015B,0x7F03015C }
 			public static int[] AppCompatSeekBar = new int[] {
 					16843074,
-					2130903374,
-					2130903375,
-					2130903376};
+					2130903386,
+					2130903387,
+					2130903388};
 			
 			// aapt resource value: 0
 			public const int AppCompatSeekBar_android_thumb = 0;
@@ -7722,16 +9800,16 @@ namespace SmartButler.Droid
 			// aapt resource value: 0
 			public const int AppCompatTextHelper_android_textAppearance = 0;
 			
-			// aapt resource value: { 0x1010034,0x7F03002C,0x7F03002D,0x7F03002E,0x7F03002F,0x7F030030,0x7F03009B,0x7F03013D }
+			// aapt resource value: { 0x1010034,0x7F030038,0x7F030039,0x7F03003A,0x7F03003B,0x7F03003C,0x7F0300A7,0x7F030149 }
 			public static int[] AppCompatTextView = new int[] {
 					16842804,
-					2130903084,
-					2130903085,
-					2130903086,
-					2130903087,
-					2130903088,
-					2130903195,
-					2130903357};
+					2130903096,
+					2130903097,
+					2130903098,
+					2130903099,
+					2130903100,
+					2130903207,
+					2130903369};
 			
 			// aapt resource value: 0
 			public const int AppCompatTextView_android_textAppearance = 0;
@@ -7757,7 +9835,7 @@ namespace SmartButler.Droid
 			// aapt resource value: 7
 			public const int AppCompatTextView_textAllCaps = 7;
 			
-			// aapt resource value: { 0x1010057,0x10100AE,0x7F030000,0x7F030001,0x7F030002,0x7F030003,0x7F030004,0x7F030005,0x7F030006,0x7F030007,0x7F030008,0x7F030009,0x7F03000A,0x7F03000B,0x7F03000C,0x7F03000E,0x7F03000F,0x7F030010,0x7F030011,0x7F030012,0x7F030013,0x7F030014,0x7F030015,0x7F030016,0x7F030017,0x7F030018,0x7F030019,0x7F03001A,0x7F03001B,0x7F03001C,0x7F03001D,0x7F03001E,0x7F030021,0x7F030022,0x7F030023,0x7F030024,0x7F030025,0x7F03002B,0x7F03003D,0x7F030040,0x7F030041,0x7F030042,0x7F030043,0x7F030044,0x7F030047,0x7F030048,0x7F030051,0x7F030052,0x7F03005A,0x7F03005B,0x7F03005C,0x7F03005D,0x7F03005E,0x7F03005F,0x7F030060,0x7F030061,0x7F030062,0x7F030063,0x7F030072,0x7F030079,0x7F03007A,0x7F03007D,0x7F03007F,0x7F030082,0x7F030083,0x7F030084,0x7F030085,0x7F030086,0x7F0300AD,0x7F0300B3,0x7F0300CA,0x7F0300CB,0x7F0300CE,0x7F0300CF,0x7F0300D0,0x7F0300D1,0x7F0300D2,0x7F0300D3,0x7F0300D4,0x7F0300F2,0x7F0300F3,0x7F0300F4,0x7F0300FA,0x7F0300FC,0x7F030103,0x7F030104,0x7F030105,0x7F030106,0x7F03010D,0x7F03010E,0x7F03010F,0x7F030110,0x7F030118,0x7F030119,0x7F03012B,0x7F03013E,0x7F03013F,0x7F030140,0x7F030141,0x7F030142,0x7F030143,0x7F030144,0x7F030145,0x7F030146,0x7F030148,0x7F03015F,0x7F030160,0x7F030161,0x7F030162,0x7F030169,0x7F03016A,0x7F03016B,0x7F03016C,0x7F03016D,0x7F03016E,0x7F03016F,0x7F030170,0x7F030171,0x7F030172 }
+			// aapt resource value: { 0x1010057,0x10100AE,0x7F030000,0x7F030001,0x7F030002,0x7F030003,0x7F030004,0x7F030005,0x7F030006,0x7F030007,0x7F030008,0x7F030009,0x7F03000A,0x7F03000B,0x7F03000C,0x7F03000E,0x7F03000F,0x7F030010,0x7F030011,0x7F030012,0x7F030013,0x7F030014,0x7F030015,0x7F030016,0x7F030017,0x7F030018,0x7F030019,0x7F03001A,0x7F03001B,0x7F03001C,0x7F03001D,0x7F03001E,0x7F030021,0x7F03002E,0x7F03002F,0x7F030030,0x7F030031,0x7F030037,0x7F030049,0x7F03004C,0x7F03004D,0x7F03004E,0x7F03004F,0x7F030050,0x7F030053,0x7F030054,0x7F03005D,0x7F03005E,0x7F030066,0x7F030067,0x7F030068,0x7F030069,0x7F03006A,0x7F03006B,0x7F03006C,0x7F03006D,0x7F03006E,0x7F03006F,0x7F03007E,0x7F030085,0x7F030086,0x7F030089,0x7F03008B,0x7F03008E,0x7F03008F,0x7F030090,0x7F030091,0x7F030092,0x7F0300B9,0x7F0300BF,0x7F0300D6,0x7F0300D7,0x7F0300DA,0x7F0300DB,0x7F0300DC,0x7F0300DD,0x7F0300DE,0x7F0300DF,0x7F0300E0,0x7F0300FE,0x7F0300FF,0x7F030100,0x7F030106,0x7F030108,0x7F03010F,0x7F030110,0x7F030111,0x7F030112,0x7F030119,0x7F03011A,0x7F03011B,0x7F03011C,0x7F030124,0x7F030125,0x7F030137,0x7F03014A,0x7F03014B,0x7F03014C,0x7F03014D,0x7F03014E,0x7F03014F,0x7F030150,0x7F030151,0x7F030152,0x7F030154,0x7F03016B,0x7F03016C,0x7F03016D,0x7F03016E,0x7F030175,0x7F030176,0x7F030177,0x7F030178,0x7F030179,0x7F03017A,0x7F03017B,0x7F03017C,0x7F03017D,0x7F03017E }
 			public static int[] AppCompatTheme = new int[] {
 					16842839,
 					16842926,
@@ -7792,92 +9870,92 @@ namespace SmartButler.Droid
 					2130903069,
 					2130903070,
 					2130903073,
-					2130903074,
-					2130903075,
-					2130903076,
-					2130903077,
-					2130903083,
-					2130903101,
-					2130903104,
-					2130903105,
-					2130903106,
-					2130903107,
-					2130903108,
-					2130903111,
-					2130903112,
-					2130903121,
-					2130903122,
-					2130903130,
-					2130903131,
-					2130903132,
+					2130903086,
+					2130903087,
+					2130903088,
+					2130903089,
+					2130903095,
+					2130903113,
+					2130903116,
+					2130903117,
+					2130903118,
+					2130903119,
+					2130903120,
+					2130903123,
+					2130903124,
 					2130903133,
 					2130903134,
-					2130903135,
-					2130903136,
-					2130903137,
-					2130903138,
-					2130903139,
-					2130903154,
-					2130903161,
-					2130903162,
-					2130903165,
-					2130903167,
-					2130903170,
-					2130903171,
-					2130903172,
+					2130903142,
+					2130903143,
+					2130903144,
+					2130903145,
+					2130903146,
+					2130903147,
+					2130903148,
+					2130903149,
+					2130903150,
+					2130903151,
+					2130903166,
 					2130903173,
 					2130903174,
-					2130903213,
-					2130903219,
-					2130903242,
-					2130903243,
-					2130903246,
-					2130903247,
-					2130903248,
-					2130903249,
-					2130903250,
-					2130903251,
-					2130903252,
-					2130903282,
-					2130903283,
-					2130903284,
-					2130903290,
-					2130903292,
-					2130903299,
-					2130903300,
-					2130903301,
+					2130903177,
+					2130903179,
+					2130903182,
+					2130903183,
+					2130903184,
+					2130903185,
+					2130903186,
+					2130903225,
+					2130903231,
+					2130903254,
+					2130903255,
+					2130903258,
+					2130903259,
+					2130903260,
+					2130903261,
+					2130903262,
+					2130903263,
+					2130903264,
+					2130903294,
+					2130903295,
+					2130903296,
 					2130903302,
-					2130903309,
-					2130903310,
+					2130903304,
 					2130903311,
 					2130903312,
-					2130903320,
+					2130903313,
+					2130903314,
 					2130903321,
-					2130903339,
-					2130903358,
-					2130903359,
-					2130903360,
-					2130903361,
-					2130903362,
-					2130903363,
-					2130903364,
-					2130903365,
-					2130903366,
-					2130903368,
-					2130903391,
-					2130903392,
-					2130903393,
-					2130903394,
-					2130903401,
-					2130903402,
+					2130903322,
+					2130903323,
+					2130903324,
+					2130903332,
+					2130903333,
+					2130903351,
+					2130903370,
+					2130903371,
+					2130903372,
+					2130903373,
+					2130903374,
+					2130903375,
+					2130903376,
+					2130903377,
+					2130903378,
+					2130903380,
 					2130903403,
 					2130903404,
 					2130903405,
 					2130903406,
-					2130903407,
-					2130903408,
-					2130903409,
-					2130903410};
+					2130903413,
+					2130903414,
+					2130903415,
+					2130903416,
+					2130903417,
+					2130903418,
+					2130903419,
+					2130903420,
+					2130903421,
+					2130903422};
 			
 			// aapt resource value: 2
 			public const int AppCompatTheme_actionBarDivider = 2;
@@ -8236,13 +10314,13 @@ namespace SmartButler.Droid
 			// aapt resource value: 118
 			public const int AppCompatTheme_windowNoTitle = 118;
 			
-			// aapt resource value: { 0x7F030087,0x7F0300B8,0x7F0300B9,0x7F0300BC,0x7F0300E7 }
+			// aapt resource value: { 0x7F030093,0x7F0300C4,0x7F0300C5,0x7F0300C8,0x7F0300F3 }
 			public static int[] BottomNavigationView = new int[] {
-					2130903175,
-					2130903224,
-					2130903225,
-					2130903228,
-					2130903271};
+					2130903187,
+					2130903236,
+					2130903237,
+					2130903240,
+					2130903283};
 			
 			// aapt resource value: 0
 			public const int BottomNavigationView_elevation = 0;
@@ -8259,11 +10337,11 @@ namespace SmartButler.Droid
 			// aapt resource value: 4
 			public const int BottomNavigationView_menu = 4;
 			
-			// aapt resource value: { 0x7F030038,0x7F03003A,0x7F03003B }
+			// aapt resource value: { 0x7F030044,0x7F030046,0x7F030047 }
 			public static int[] BottomSheetBehavior_Layout = new int[] {
-					2130903096,
-					2130903098,
-					2130903099};
+					2130903108,
+					2130903110,
+					2130903111};
 			
 			// aapt resource value: 0
 			public const int BottomSheetBehavior_Layout_behavior_hideable = 0;
@@ -8274,28 +10352,28 @@ namespace SmartButler.Droid
 			// aapt resource value: 2
 			public const int BottomSheetBehavior_Layout_behavior_skipCollapsed = 2;
 			
-			// aapt resource value: { 0x7F030026 }
+			// aapt resource value: { 0x7F030032 }
 			public static int[] ButtonBarLayout = new int[] {
-					2130903078};
+					2130903090};
 			
 			// aapt resource value: 0
 			public const int ButtonBarLayout_allowStacking = 0;
 			
-			// aapt resource value: { 0x101013F,0x1010140,0x7F03004B,0x7F03004C,0x7F03004D,0x7F03004E,0x7F03004F,0x7F030050,0x7F03006C,0x7F03006D,0x7F03006E,0x7F03006F,0x7F030070 }
+			// aapt resource value: { 0x101013F,0x1010140,0x7F030057,0x7F030058,0x7F030059,0x7F03005A,0x7F03005B,0x7F03005C,0x7F030078,0x7F030079,0x7F03007A,0x7F03007B,0x7F03007C }
 			public static int[] CardView = new int[] {
 					16843071,
 					16843072,
-					2130903115,
-					2130903116,
-					2130903117,
-					2130903118,
-					2130903119,
-					2130903120,
-					2130903148,
-					2130903149,
-					2130903150,
-					2130903151,
-					2130903152};
+					2130903127,
+					2130903128,
+					2130903129,
+					2130903130,
+					2130903131,
+					2130903132,
+					2130903160,
+					2130903161,
+					2130903162,
+					2130903163,
+					2130903164};
 			
 			// aapt resource value: 1
 			public const int CardView_android_minHeight = 1;
@@ -8336,24 +10414,24 @@ namespace SmartButler.Droid
 			// aapt resource value: 12
 			public const int CardView_contentPaddingTop = 12;
 			
-			// aapt resource value: { 0x7F030057,0x7F030058,0x7F030071,0x7F03008C,0x7F03008D,0x7F03008E,0x7F03008F,0x7F030090,0x7F030091,0x7F030092,0x7F030109,0x7F03010A,0x7F030121,0x7F030153,0x7F030154,0x7F03015E }
+			// aapt resource value: { 0x7F030063,0x7F030064,0x7F03007D,0x7F030098,0x7F030099,0x7F03009A,0x7F03009B,0x7F03009C,0x7F03009D,0x7F03009E,0x7F030115,0x7F030116,0x7F03012D,0x7F03015F,0x7F030160,0x7F03016A }
 			public static int[] CollapsingToolbarLayout = new int[] {
-					2130903127,
-					2130903128,
-					2130903153,
-					2130903180,
-					2130903181,
-					2130903182,
-					2130903183,
-					2130903184,
-					2130903185,
-					2130903186,
-					2130903305,
-					2130903306,
-					2130903329,
-					2130903379,
-					2130903380,
-					2130903390};
+					2130903139,
+					2130903140,
+					2130903165,
+					2130903192,
+					2130903193,
+					2130903194,
+					2130903195,
+					2130903196,
+					2130903197,
+					2130903198,
+					2130903317,
+					2130903318,
+					2130903341,
+					2130903391,
+					2130903392,
+					2130903402};
 			
 			// aapt resource value: 0
 			public const int CollapsingToolbarLayout_collapsedTitleGravity = 0;
@@ -8385,10 +10463,10 @@ namespace SmartButler.Droid
 			// aapt resource value: 9
 			public const int CollapsingToolbarLayout_expandedTitleTextAppearance = 9;
 			
-			// aapt resource value: { 0x7F0300C3,0x7F0300C4 }
+			// aapt resource value: { 0x7F0300CF,0x7F0300D0 }
 			public static int[] CollapsingToolbarLayout_Layout = new int[] {
-					2130903235,
-					2130903236};
+					2130903247,
+					2130903248};
 			
 			// aapt resource value: 0
 			public const int CollapsingToolbarLayout_Layout_layout_collapseMode = 0;
@@ -8414,11 +10492,11 @@ namespace SmartButler.Droid
 			// aapt resource value: 15
 			public const int CollapsingToolbarLayout_toolbarId = 15;
 			
-			// aapt resource value: { 0x10101A5,0x101031F,0x7F030027 }
+			// aapt resource value: { 0x10101A5,0x101031F,0x7F030033 }
 			public static int[] ColorStateListItem = new int[] {
 					16843173,
 					16843551,
-					2130903079};
+					2130903091};
 			
 			// aapt resource value: 2
 			public const int ColorStateListItem_alpha = 2;
@@ -8429,11 +10507,11 @@ namespace SmartButler.Droid
 			// aapt resource value: 0
 			public const int ColorStateListItem_android_color = 0;
 			
-			// aapt resource value: { 0x1010107,0x7F030049,0x7F03004A }
+			// aapt resource value: { 0x1010107,0x7F030055,0x7F030056 }
 			public static int[] CompoundButton = new int[] {
 					16843015,
-					2130903113,
-					2130903114};
+					2130903125,
+					2130903126};
 			
 			// aapt resource value: 0
 			public const int CompoundButton_android_button = 0;
@@ -8444,23 +10522,23 @@ namespace SmartButler.Droid
 			// aapt resource value: 2
 			public const int CompoundButton_buttonTintMode = 2;
 			
-			// aapt resource value: { 0x7F0300BD,0x7F030120 }
+			// aapt resource value: { 0x7F0300C9,0x7F03012C }
 			public static int[] CoordinatorLayout = new int[] {
-					2130903229,
-					2130903328};
+					2130903241,
+					2130903340};
 			
 			// aapt resource value: 0
 			public const int CoordinatorLayout_keylines = 0;
 			
-			// aapt resource value: { 0x10100B3,0x7F0300C0,0x7F0300C1,0x7F0300C2,0x7F0300C5,0x7F0300C6,0x7F0300C7 }
+			// aapt resource value: { 0x10100B3,0x7F0300CC,0x7F0300CD,0x7F0300CE,0x7F0300D1,0x7F0300D2,0x7F0300D3 }
 			public static int[] CoordinatorLayout_Layout = new int[] {
 					16842931,
-					2130903232,
-					2130903233,
-					2130903234,
-					2130903237,
-					2130903238,
-					2130903239};
+					2130903244,
+					2130903245,
+					2130903246,
+					2130903249,
+					2130903250,
+					2130903251};
 			
 			// aapt resource value: 0
 			public const int CoordinatorLayout_Layout_android_layout_gravity = 0;
@@ -8486,11 +10564,11 @@ namespace SmartButler.Droid
 			// aapt resource value: 1
 			public const int CoordinatorLayout_statusBarBackground = 1;
 			
-			// aapt resource value: { 0x7F03003E,0x7F03003F,0x7F030147 }
+			// aapt resource value: { 0x7F03004A,0x7F03004B,0x7F030153 }
 			public static int[] DesignTheme = new int[] {
-					2130903102,
-					2130903103,
-					2130903367};
+					2130903114,
+					2130903115,
+					2130903379};
 			
 			// aapt resource value: 0
 			public const int DesignTheme_bottomSheetDialogTheme = 0;
@@ -8501,16 +10579,16 @@ namespace SmartButler.Droid
 			// aapt resource value: 2
 			public const int DesignTheme_textColorError = 2;
 			
-			// aapt resource value: { 0x7F030029,0x7F03002A,0x7F030036,0x7F030059,0x7F030080,0x7F0300A5,0x7F030117,0x7F03014A }
+			// aapt resource value: { 0x7F030035,0x7F030036,0x7F030042,0x7F030065,0x7F03008C,0x7F0300B1,0x7F030123,0x7F030156 }
 			public static int[] DrawerArrowToggle = new int[] {
-					2130903081,
-					2130903082,
+					2130903093,
 					2130903094,
-					2130903129,
-					2130903168,
-					2130903205,
-					2130903319,
-					2130903370};
+					2130903106,
+					2130903141,
+					2130903180,
+					2130903217,
+					2130903331,
+					2130903382};
 			
 			// aapt resource value: 0
 			public const int DrawerArrowToggle_arrowHeadLength = 0;
@@ -8536,16 +10614,16 @@ namespace SmartButler.Droid
 			// aapt resource value: 7
 			public const int DrawerArrowToggle_thickness = 7;
 			
-			// aapt resource value: { 0x7F030034,0x7F030035,0x7F03003C,0x7F030087,0x7F030094,0x7F0300FE,0x7F030108,0x7F030167 }
+			// aapt resource value: { 0x7F030040,0x7F030041,0x7F030048,0x7F030093,0x7F0300A0,0x7F03010A,0x7F030114,0x7F030173 }
 			public static int[] FloatingActionButton = new int[] {
-					2130903092,
-					2130903093,
-					2130903100,
-					2130903175,
-					2130903188,
-					2130903294,
-					2130903304,
-					2130903399};
+					2130903104,
+					2130903105,
+					2130903112,
+					2130903187,
+					2130903200,
+					2130903306,
+					2130903316,
+					2130903411};
 			
 			// aapt resource value: 0
 			public const int FloatingActionButton_backgroundTint = 0;
@@ -8553,9 +10631,9 @@ namespace SmartButler.Droid
 			// aapt resource value: 1
 			public const int FloatingActionButton_backgroundTintMode = 1;
 			
-			// aapt resource value: { 0x7F030037 }
+			// aapt resource value: { 0x7F030043 }
 			public static int[] FloatingActionButton_Behavior_Layout = new int[] {
-					2130903095};
+					2130903107};
 			
 			// aapt resource value: 0
 			public const int FloatingActionButton_Behavior_Layout_behavior_autoHide = 0;
@@ -8578,23 +10656,23 @@ namespace SmartButler.Droid
 			// aapt resource value: 7
 			public const int FloatingActionButton_useCompatPadding = 7;
 			
-			// aapt resource value: { 0x7F03009C,0x7F03009D,0x7F03009E,0x7F03009F,0x7F0300A0,0x7F0300A1 }
+			// aapt resource value: { 0x7F0300A8,0x7F0300A9,0x7F0300AA,0x7F0300AB,0x7F0300AC,0x7F0300AD }
 			public static int[] FontFamily = new int[] {
-					2130903196,
-					2130903197,
-					2130903198,
-					2130903199,
-					2130903200,
-					2130903201};
+					2130903208,
+					2130903209,
+					2130903210,
+					2130903211,
+					2130903212,
+					2130903213};
 			
-			// aapt resource value: { 0x1010532,0x1010533,0x101053F,0x7F03009A,0x7F0300A2,0x7F0300A3 }
+			// aapt resource value: { 0x1010532,0x1010533,0x101053F,0x7F0300A6,0x7F0300AE,0x7F0300AF }
 			public static int[] FontFamilyFont = new int[] {
 					16844082,
 					16844083,
 					16844095,
-					2130903194,
-					2130903202,
-					2130903203};
+					2130903206,
+					2130903214,
+					2130903215};
 			
 			// aapt resource value: 0
 			public const int FontFamilyFont_android_font = 0;
@@ -8632,11 +10710,11 @@ namespace SmartButler.Droid
 			// aapt resource value: 5
 			public const int FontFamily_fontProviderQuery = 5;
 			
-			// aapt resource value: { 0x1010109,0x1010200,0x7F0300A4 }
+			// aapt resource value: { 0x1010109,0x1010200,0x7F0300B0 }
 			public static int[] ForegroundLinearLayout = new int[] {
 					16843017,
 					16843264,
-					2130903204};
+					2130903216};
 			
 			// aapt resource value: 0
 			public const int ForegroundLinearLayout_android_foreground = 0;
@@ -8647,17 +10725,17 @@ namespace SmartButler.Droid
 			// aapt resource value: 2
 			public const int ForegroundLinearLayout_foregroundInsidePadding = 2;
 			
-			// aapt resource value: { 0x10100AF,0x10100C4,0x1010126,0x1010127,0x1010128,0x7F03007C,0x7F03007E,0x7F0300D9,0x7F030112 }
+			// aapt resource value: { 0x10100AF,0x10100C4,0x1010126,0x1010127,0x1010128,0x7F030088,0x7F03008A,0x7F0300E5,0x7F03011E }
 			public static int[] LinearLayoutCompat = new int[] {
 					16842927,
 					16842948,
 					16843046,
 					16843047,
 					16843048,
-					2130903164,
-					2130903166,
-					2130903257,
-					2130903314};
+					2130903176,
+					2130903178,
+					2130903269,
+					2130903326};
 			
 			// aapt resource value: 2
 			public const int LinearLayoutCompat_android_baselineAligned = 2;
@@ -8716,12 +10794,12 @@ namespace SmartButler.Droid
 			// aapt resource value: 1
 			public const int ListPopupWindow_android_dropDownVerticalOffset = 1;
 			
-			// aapt resource value: { 0x101013F,0x1010140,0x7F030093,0x7F0300DC }
+			// aapt resource value: { 0x101013F,0x1010140,0x7F03009F,0x7F0300E8 }
 			public static int[] MediaRouteButton = new int[] {
 					16843071,
 					16843072,
-					2130903187,
-					2130903260};
+					2130903199,
+					2130903272};
 			
 			// aapt resource value: 1
 			public const int MediaRouteButton_android_minHeight = 1;
@@ -8762,7 +10840,7 @@ namespace SmartButler.Droid
 			// aapt resource value: 2
 			public const int MenuGroup_android_visible = 2;
 			
-			// aapt resource value: { 0x1010002,0x101000E,0x10100D0,0x1010106,0x1010194,0x10101DE,0x10101DF,0x10101E1,0x10101E2,0x10101E3,0x10101E4,0x10101E5,0x101026F,0x7F03000D,0x7F03001F,0x7F030020,0x7F030028,0x7F030065,0x7F0300B0,0x7F0300B1,0x7F0300EC,0x7F030111,0x7F030163 }
+			// aapt resource value: { 0x1010002,0x101000E,0x10100D0,0x1010106,0x1010194,0x10101DE,0x10101DF,0x10101E1,0x10101E2,0x10101E3,0x10101E4,0x10101E5,0x101026F,0x7F03000D,0x7F03001F,0x7F030020,0x7F030034,0x7F030071,0x7F0300BC,0x7F0300BD,0x7F0300F8,0x7F03011D,0x7F03016F }
 			public static int[] MenuItem = new int[] {
 					16842754,
 					16842766,
@@ -8780,13 +10858,13 @@ namespace SmartButler.Droid
 					2130903053,
 					2130903071,
 					2130903072,
-					2130903080,
-					2130903141,
-					2130903216,
-					2130903217,
-					2130903276,
-					2130903313,
-					2130903395};
+					2130903092,
+					2130903153,
+					2130903228,
+					2130903229,
+					2130903288,
+					2130903325,
+					2130903407};
 			
 			// aapt resource value: 13
 			public const int MenuItem_actionLayout = 13;
@@ -8857,7 +10935,7 @@ namespace SmartButler.Droid
 			// aapt resource value: 22
 			public const int MenuItem_tooltipText = 22;
 			
-			// aapt resource value: { 0x10100AE,0x101012C,0x101012D,0x101012E,0x101012F,0x1010130,0x1010131,0x7F0300FD,0x7F030122 }
+			// aapt resource value: { 0x10100AE,0x101012C,0x101012D,0x101012E,0x101012F,0x1010130,0x1010131,0x7F030109,0x7F03012E }
 			public static int[] MenuView = new int[] {
 					16842926,
 					16843052,
@@ -8866,8 +10944,8 @@ namespace SmartButler.Droid
 					16843055,
 					16843056,
 					16843057,
-					2130903293,
-					2130903330};
+					2130903305,
+					2130903342};
 			
 			// aapt resource value: 4
 			public const int MenuView_android_headerBackground = 4;
@@ -8896,18 +10974,18 @@ namespace SmartButler.Droid
 			// aapt resource value: 8
 			public const int MenuView_subMenuArrow = 8;
 			
-			// aapt resource value: { 0x10100D4,0x10100DD,0x101011F,0x7F030087,0x7F0300A7,0x7F0300B8,0x7F0300B9,0x7F0300BB,0x7F0300BC,0x7F0300E7 }
+			// aapt resource value: { 0x10100D4,0x10100DD,0x101011F,0x7F030093,0x7F0300B3,0x7F0300C4,0x7F0300C5,0x7F0300C7,0x7F0300C8,0x7F0300F3 }
 			public static int[] NavigationView = new int[] {
 					16842964,
 					16842973,
 					16843039,
-					2130903175,
-					2130903207,
-					2130903224,
-					2130903225,
-					2130903227,
-					2130903228,
-					2130903271};
+					2130903187,
+					2130903219,
+					2130903236,
+					2130903237,
+					2130903239,
+					2130903240,
+					2130903283};
 			
 			// aapt resource value: 0
 			public const int NavigationView_android_background = 0;
@@ -8939,15 +11017,15 @@ namespace SmartButler.Droid
 			// aapt resource value: 9
 			public const int NavigationView_menu = 9;
 			
-			// aapt resource value: { 0x1010176,0x10102C9,0x7F0300ED }
+			// aapt resource value: { 0x1010176,0x10102C9,0x7F0300F9 }
 			public static int[] PopupWindow = new int[] {
 					16843126,
 					16843465,
-					2130903277};
+					2130903289};
 			
-			// aapt resource value: { 0x7F03011D }
+			// aapt resource value: { 0x7F030129 }
 			public static int[] PopupWindowBackgroundState = new int[] {
-					2130903325};
+					2130903337};
 			
 			// aapt resource value: 0
 			public const int PopupWindowBackgroundState_state_above_anchor = 0;
@@ -8961,10 +11039,61 @@ namespace SmartButler.Droid
 			// aapt resource value: 2
 			public const int PopupWindow_overlapAnchor = 2;
 			
-			// aapt resource value: { 0x7F0300EE,0x7F0300F1 }
+			// aapt resource value: { 0x7F030022,0x7F030023,0x7F030024,0x7F030025,0x7F030026,0x7F030027,0x7F030028,0x7F030029,0x7F03002A,0x7F03002B,0x7F03002C,0x7F03002D }
+			public static int[] ProgressWheel = new int[] {
+					2130903074,
+					2130903075,
+					2130903076,
+					2130903077,
+					2130903078,
+					2130903079,
+					2130903080,
+					2130903081,
+					2130903082,
+					2130903083,
+					2130903084,
+					2130903085};
+			
+			// aapt resource value: 0
+			public const int ProgressWheel_ahBarColor = 0;
+			
+			// aapt resource value: 1
+			public const int ProgressWheel_ahBarLength = 1;
+			
+			// aapt resource value: 2
+			public const int ProgressWheel_ahBarWidth = 2;
+			
+			// aapt resource value: 3
+			public const int ProgressWheel_ahCircleColor = 3;
+			
+			// aapt resource value: 4
+			public const int ProgressWheel_ahDelayMillis = 4;
+			
+			// aapt resource value: 5
+			public const int ProgressWheel_ahRadius = 5;
+			
+			// aapt resource value: 6
+			public const int ProgressWheel_ahRimColor = 6;
+			
+			// aapt resource value: 7
+			public const int ProgressWheel_ahRimWidth = 7;
+			
+			// aapt resource value: 8
+			public const int ProgressWheel_ahSpinSpeed = 8;
+			
+			// aapt resource value: 9
+			public const int ProgressWheel_ahText = 9;
+			
+			// aapt resource value: 10
+			public const int ProgressWheel_ahTextColor = 10;
+			
+			// aapt resource value: 11
+			public const int ProgressWheel_ahTextSize = 11;
+			
+			// aapt resource value: { 0x7F0300FA,0x7F0300FD }
 			public static int[] RecycleListView = new int[] {
-					2130903278,
-					2130903281};
+					2130903290,
+					2130903293};
 			
 			// aapt resource value: 0
 			public const int RecycleListView_paddingBottomNoButtons = 0;
@@ -8972,19 +11101,19 @@ namespace SmartButler.Droid
 			// aapt resource value: 1
 			public const int RecycleListView_paddingTopNoTitle = 1;
 			
-			// aapt resource value: { 0x10100C4,0x10100F1,0x7F030095,0x7F030096,0x7F030097,0x7F030098,0x7F030099,0x7F0300BF,0x7F030107,0x7F030116,0x7F03011C }
+			// aapt resource value: { 0x10100C4,0x10100F1,0x7F0300A1,0x7F0300A2,0x7F0300A3,0x7F0300A4,0x7F0300A5,0x7F0300CB,0x7F030113,0x7F030122,0x7F030128 }
 			public static int[] RecyclerView = new int[] {
 					16842948,
 					16842993,
-					2130903189,
-					2130903190,
-					2130903191,
-					2130903192,
-					2130903193,
-					2130903231,
-					2130903303,
-					2130903318,
-					2130903324};
+					2130903201,
+					2130903202,
+					2130903203,
+					2130903204,
+					2130903205,
+					2130903243,
+					2130903315,
+					2130903330,
+					2130903336};
 			
 			// aapt resource value: 1
 			public const int RecyclerView_android_descendantFocusability = 1;
@@ -9019,39 +11148,39 @@ namespace SmartButler.Droid
 			// aapt resource value: 10
 			public const int RecyclerView_stackFromEnd = 10;
 			
-			// aapt resource value: { 0x7F0300B6 }
+			// aapt resource value: { 0x7F0300C2 }
 			public static int[] ScrimInsetsFrameLayout = new int[] {
-					2130903222};
+					2130903234};
 			
 			// aapt resource value: 0
 			public const int ScrimInsetsFrameLayout_insetForeground = 0;
 			
-			// aapt resource value: { 0x7F030039 }
+			// aapt resource value: { 0x7F030045 }
 			public static int[] ScrollingViewBehavior_Layout = new int[] {
-					2130903097};
+					2130903109};
 			
 			// aapt resource value: 0
 			public const int ScrollingViewBehavior_Layout_behavior_overlapTop = 0;
 			
-			// aapt resource value: { 0x10100DA,0x101011F,0x1010220,0x1010264,0x7F030053,0x7F030064,0x7F030078,0x7F0300A6,0x7F0300B2,0x7F0300BE,0x7F030101,0x7F030102,0x7F03010B,0x7F03010C,0x7F030123,0x7F030128,0x7F030168 }
+			// aapt resource value: { 0x10100DA,0x101011F,0x1010220,0x1010264,0x7F03005F,0x7F030070,0x7F030084,0x7F0300B2,0x7F0300BE,0x7F0300CA,0x7F03010D,0x7F03010E,0x7F030117,0x7F030118,0x7F03012F,0x7F030134,0x7F030174 }
 			public static int[] SearchView = new int[] {
 					16842970,
 					16843039,
 					16843296,
 					16843364,
-					2130903123,
-					2130903140,
-					2130903160,
-					2130903206,
+					2130903135,
+					2130903152,
+					2130903172,
 					2130903218,
 					2130903230,
-					2130903297,
-					2130903298,
-					2130903307,
-					2130903308,
-					2130903331,
-					2130903336,
-					2130903400};
+					2130903242,
+					2130903309,
+					2130903310,
+					2130903319,
+					2130903320,
+					2130903343,
+					2130903348,
+					2130903412};
 			
 			// aapt resource value: 0
 			public const int SearchView_android_focusable = 0;
@@ -9104,11 +11233,11 @@ namespace SmartButler.Droid
 			// aapt resource value: 16
 			public const int SearchView_voiceIcon = 16;
 			
-			// aapt resource value: { 0x101011F,0x7F030087,0x7F0300D7 }
+			// aapt resource value: { 0x101011F,0x7F030093,0x7F0300E3 }
 			public static int[] SnackbarLayout = new int[] {
 					16843039,
-					2130903175,
-					2130903255};
+					2130903187,
+					2130903267};
 			
 			// aapt resource value: 0
 			public const int SnackbarLayout_android_maxWidth = 0;
@@ -9119,13 +11248,13 @@ namespace SmartButler.Droid
 			// aapt resource value: 2
 			public const int SnackbarLayout_maxActionInlineWidth = 2;
 			
-			// aapt resource value: { 0x10100B2,0x1010176,0x101017B,0x1010262,0x7F0300FB }
+			// aapt resource value: { 0x10100B2,0x1010176,0x101017B,0x1010262,0x7F030107 }
 			public static int[] Spinner = new int[] {
 					16842930,
 					16843126,
 					16843131,
 					16843362,
-					2130903291};
+					2130903303};
 			
 			// aapt resource value: 3
 			public const int Spinner_android_dropDownWidth = 3;
@@ -9142,22 +11271,22 @@ namespace SmartButler.Droid
 			// aapt resource value: 4
 			public const int Spinner_popupTheme = 4;
 			
-			// aapt resource value: { 0x1010124,0x1010125,0x1010142,0x7F030113,0x7F03011A,0x7F030129,0x7F03012A,0x7F03012C,0x7F03014B,0x7F03014C,0x7F03014D,0x7F030164,0x7F030165,0x7F030166 }
+			// aapt resource value: { 0x1010124,0x1010125,0x1010142,0x7F03011F,0x7F030126,0x7F030135,0x7F030136,0x7F030138,0x7F030157,0x7F030158,0x7F030159,0x7F030170,0x7F030171,0x7F030172 }
 			public static int[] SwitchCompat = new int[] {
 					16843044,
 					16843045,
 					16843074,
-					2130903315,
-					2130903322,
-					2130903337,
-					2130903338,
-					2130903340,
-					2130903371,
-					2130903372,
-					2130903373,
-					2130903396,
-					2130903397,
-					2130903398};
+					2130903327,
+					2130903334,
+					2130903349,
+					2130903350,
+					2130903352,
+					2130903383,
+					2130903384,
+					2130903385,
+					2130903408,
+					2130903409,
+					2130903410};
 			
 			// aapt resource value: 1
 			public const int SwitchCompat_android_textOff = 1;
@@ -9216,24 +11345,24 @@ namespace SmartButler.Droid
 			// aapt resource value: 2
 			public const int TabItem_android_text = 2;
 			
-			// aapt resource value: { 0x7F03012D,0x7F03012E,0x7F03012F,0x7F030130,0x7F030131,0x7F030132,0x7F030133,0x7F030134,0x7F030135,0x7F030136,0x7F030137,0x7F030138,0x7F030139,0x7F03013A,0x7F03013B,0x7F03013C }
+			// aapt resource value: { 0x7F030139,0x7F03013A,0x7F03013B,0x7F03013C,0x7F03013D,0x7F03013E,0x7F03013F,0x7F030140,0x7F030141,0x7F030142,0x7F030143,0x7F030144,0x7F030145,0x7F030146,0x7F030147,0x7F030148 }
 			public static int[] TabLayout = new int[] {
-					2130903341,
-					2130903342,
-					2130903343,
-					2130903344,
-					2130903345,
-					2130903346,
-					2130903347,
-					2130903348,
-					2130903349,
-					2130903350,
-					2130903351,
-					2130903352,
 					2130903353,
 					2130903354,
 					2130903355,
-					2130903356};
+					2130903356,
+					2130903357,
+					2130903358,
+					2130903359,
+					2130903360,
+					2130903361,
+					2130903362,
+					2130903363,
+					2130903364,
+					2130903365,
+					2130903366,
+					2130903367,
+					2130903368};
 			
 			// aapt resource value: 0
 			public const int TabLayout_tabBackground = 0;
@@ -9283,7 +11412,7 @@ namespace SmartButler.Droid
 			// aapt resource value: 15
 			public const int TabLayout_tabTextColor = 15;
 			
-			// aapt resource value: { 0x1010095,0x1010096,0x1010097,0x1010098,0x101009A,0x101009B,0x1010161,0x1010162,0x1010163,0x1010164,0x10103AC,0x7F03009B,0x7F03013D }
+			// aapt resource value: { 0x1010095,0x1010096,0x1010097,0x1010098,0x101009A,0x101009B,0x1010161,0x1010162,0x1010163,0x1010164,0x10103AC,0x7F0300A7,0x7F030149 }
 			public static int[] TextAppearance = new int[] {
 					16842901,
 					16842902,
@@ -9296,8 +11425,8 @@ namespace SmartButler.Droid
 					16843107,
 					16843108,
 					16843692,
-					2130903195,
-					2130903357};
+					2130903207,
+					2130903369};
 			
 			// aapt resource value: 10
 			public const int TextAppearance_android_fontFamily = 10;
@@ -9338,24 +11467,24 @@ namespace SmartButler.Droid
 			// aapt resource value: 12
 			public const int TextAppearance_textAllCaps = 12;
 			
-			// aapt resource value: { 0x101009A,0x1010150,0x7F030073,0x7F030074,0x7F030075,0x7F030076,0x7F030088,0x7F030089,0x7F0300AA,0x7F0300AB,0x7F0300AC,0x7F0300F5,0x7F0300F6,0x7F0300F7,0x7F0300F8,0x7F0300F9 }
+			// aapt resource value: { 0x101009A,0x1010150,0x7F03007F,0x7F030080,0x7F030081,0x7F030082,0x7F030094,0x7F030095,0x7F0300B6,0x7F0300B7,0x7F0300B8,0x7F030101,0x7F030102,0x7F030103,0x7F030104,0x7F030105 }
 			public static int[] TextInputLayout = new int[] {
 					16842906,
 					16843088,
-					2130903155,
-					2130903156,
-					2130903157,
-					2130903158,
-					2130903176,
-					2130903177,
-					2130903210,
-					2130903211,
-					2130903212,
-					2130903285,
-					2130903286,
-					2130903287,
-					2130903288,
-					2130903289};
+					2130903167,
+					2130903168,
+					2130903169,
+					2130903170,
+					2130903188,
+					2130903189,
+					2130903222,
+					2130903223,
+					2130903224,
+					2130903297,
+					2130903298,
+					2130903299,
+					2130903300,
+					2130903301};
 			
 			// aapt resource value: 1
 			public const int TextInputLayout_android_hint = 1;
@@ -9405,37 +11534,37 @@ namespace SmartButler.Droid
 			// aapt resource value: 15
 			public const int TextInputLayout_passwordToggleTintMode = 15;
 			
-			// aapt resource value: { 0x10100AF,0x1010140,0x7F030045,0x7F030055,0x7F030056,0x7F030066,0x7F030067,0x7F030068,0x7F030069,0x7F03006A,0x7F03006B,0x7F0300D5,0x7F0300D6,0x7F0300D8,0x7F0300E9,0x7F0300EA,0x7F0300FB,0x7F030124,0x7F030125,0x7F030126,0x7F030153,0x7F030155,0x7F030156,0x7F030157,0x7F030158,0x7F030159,0x7F03015A,0x7F03015B,0x7F03015C }
+			// aapt resource value: { 0x10100AF,0x1010140,0x7F030051,0x7F030061,0x7F030062,0x7F030072,0x7F030073,0x7F030074,0x7F030075,0x7F030076,0x7F030077,0x7F0300E1,0x7F0300E2,0x7F0300E4,0x7F0300F5,0x7F0300F6,0x7F030107,0x7F030130,0x7F030131,0x7F030132,0x7F03015F,0x7F030161,0x7F030162,0x7F030163,0x7F030164,0x7F030165,0x7F030166,0x7F030167,0x7F030168 }
 			public static int[] Toolbar = new int[] {
 					16842927,
 					16843072,
-					2130903109,
-					2130903125,
-					2130903126,
-					2130903142,
-					2130903143,
-					2130903144,
-					2130903145,
-					2130903146,
-					2130903147,
-					2130903253,
-					2130903254,
-					2130903256,
-					2130903273,
-					2130903274,
-					2130903291,
-					2130903332,
-					2130903333,
-					2130903334,
-					2130903379,
-					2130903381,
-					2130903382,
-					2130903383,
-					2130903384,
-					2130903385,
-					2130903386,
-					2130903387,
-					2130903388};
+					2130903121,
+					2130903137,
+					2130903138,
+					2130903154,
+					2130903155,
+					2130903156,
+					2130903157,
+					2130903158,
+					2130903159,
+					2130903265,
+					2130903266,
+					2130903268,
+					2130903285,
+					2130903286,
+					2130903303,
+					2130903344,
+					2130903345,
+					2130903346,
+					2130903391,
+					2130903393,
+					2130903394,
+					2130903395,
+					2130903396,
+					2130903397,
+					2130903398,
+					2130903399,
+					2130903400};
 			
 			// aapt resource value: 0
 			public const int Toolbar_android_gravity = 0;
@@ -9524,19 +11653,19 @@ namespace SmartButler.Droid
 			// aapt resource value: 28
 			public const int Toolbar_titleTextColor = 28;
 			
-			// aapt resource value: { 0x1010000,0x10100DA,0x7F0300EF,0x7F0300F0,0x7F030149 }
+			// aapt resource value: { 0x1010000,0x10100DA,0x7F0300FB,0x7F0300FC,0x7F030155 }
 			public static int[] View = new int[] {
 					16842752,
 					16842970,
-					2130903279,
-					2130903280,
-					2130903369};
+					2130903291,
+					2130903292,
+					2130903381};
 			
-			// aapt resource value: { 0x10100D4,0x7F030034,0x7F030035 }
+			// aapt resource value: { 0x10100D4,0x7F030040,0x7F030041 }
 			public static int[] ViewBackgroundHelper = new int[] {
 					16842964,
-					2130903092,
-					2130903093};
+					2130903104,
+					2130903105};
 			
 			// aapt resource value: 0
 			public const int ViewBackgroundHelper_android_background = 0;
@@ -9583,6 +11712,22 @@ namespace SmartButler.Droid
 			}
 			
 			private Styleable()
+			{
+			}
+		}
+		
+		public partial class Xml
+		{
+			
+			// aapt resource value: 0x7F100000
+			public const int file_paths = 2131755008;
+			
+			static Xml()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Xml()
 			{
 			}
 		}
