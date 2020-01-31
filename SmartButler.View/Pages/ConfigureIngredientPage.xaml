@@ -30,7 +30,7 @@
 
             <StackLayout Orientation="Horizontal">
                 <Label Text="Ingredient name: "/>
-                <Entry Placeholder="Ingredient name" Text="{Binding IngredientName}" />
+                <Entry x:Name="IngredientName" Placeholder="Ingredient name" Text="{Binding IngredientName, Mode=TwoWay}" />
             </StackLayout>
 
             <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand">

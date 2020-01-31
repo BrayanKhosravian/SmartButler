@@ -25,9 +25,10 @@ namespace SmartButler.Logic.ViewModels
 			IDrinkRecipeBuilder drinkRecipeBuilder, 
 			INavigationService navigationService, 
 			IDrinkRecipesRepository drinkRecipesRepository,
+			ICrossMediaService crossMediaService,
 			ISelectionHost<DrinkIngredientViewModel> selectionHost,
 			DrinkRecipeViewModel drinkRecipeViewModel) 
-			: base(userInteraction, navigationService, drinkRecipeBuilder, selectionHost)
+			: base(userInteraction, navigationService, drinkRecipeBuilder, crossMediaService, selectionHost)
 		{
 			_userInteraction = userInteraction;
 			_drinkRecipeBuilder = drinkRecipeBuilder;
@@ -35,14 +36,16 @@ namespace SmartButler.Logic.ViewModels
 			_drinkIngredient = drinkRecipeViewModel;
 
 			DrinkName = drinkRecipeViewModel.Name;
+			ByteImage = drinkRecipeViewModel.ByteImage;
 			DrinkIngredients.AddRange(drinkRecipeViewModel.IngredientViewModels);
 		}
 
 		protected override async Task CompletedTemplateMethod(IDrinkRecipeBuilder drinkRecipeBuilder,
 			IList<DrinkIngredient> ingredients)
 		{
-			var drink = _drinkRecipeBuilder // TODO: Add ByteImage!
+			var drink = _drinkRecipeBuilder 
 				.TakeDefault(_drinkIngredient.DrinkRecipe)
+				.SetByteImage(ByteImage)
 				.ClearIngredients()
 				.SetName(DrinkName)
 				.AddIngredients(ingredients.ToArray())

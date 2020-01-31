@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Reactive.Disposables;
+using System.Reactive.Linq;
 using ReactiveUI;
+using SmartButler.Framework.Extensions;
 using SmartButler.Logic.ViewModels;
 using SmartButler.Logic.ViewModels.BaseViewModels;
 using Xamarin.Forms;
@@ -21,6 +24,11 @@ namespace SmartButler.View.Pages
 			{
 				var position = ViewModel.BottleIndex;
 				IngredientPositionPicker.SelectedIndex = position;
+
+				this.WhenAnyValue(view => view.IngredientName.Text)
+					.ObserveOn(RxApp.MainThreadScheduler)
+					.Subscribe(name => 
+						IngredientName.BackgroundColor = name.IsInputValid() ? Color.Default : Color.LightCoral);
 			});
 		}
 

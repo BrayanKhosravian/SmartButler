@@ -23,14 +23,12 @@
     </ContentPage.Resources>
 
     <ContentPage.Content>
-        <Grid>
+        <Grid BackgroundColor="White" >
             <StackLayout>
                 <ListView x:Name="IngredientCollectionView"
                           ItemsSource="{Binding Ingredients}"
-                          SelectedItem="{Binding SelectedDrinkIngredient}"
                           ItemTemplate="{StaticResource IngredientTemplateSelector}" 
-                          ItemSelected="IngredientSelected"
-                          CachingStrategy="RecycleElementAndDataTemplate"/>
+                          CachingStrategy="RecycleElementAndDataTemplate" SelectionMode="None" />
 
                 <Button Text="Add Ingredient" Command="{Binding AddIngredientCommand}" 
                         IsVisible="{Binding IsAddIngredientButtonVisible}"/>

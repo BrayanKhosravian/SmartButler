@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using Plugin.Media;
 using Plugin.Media.Abstractions;
 using ReactiveUI;
+using SmartButler.Framework.Extensions;
 using SmartButler.Logic.Common;
 using SmartButler.Logic.Interfaces;
 using SmartButler.Logic.ModelViewModels;
@@ -44,8 +45,8 @@ namespace SmartButler.Logic.ViewModels.BaseViewModels
 			var result = false;
 			var msgBuilder = new StringBuilder();
 
-			if (string.IsNullOrEmpty(IngredientName) || IngredientName.Length < 3 || IngredientName.Length > 255)
-				msgBuilder.Append("The name of the ingredient should have more then 3 or less then 255 characters!\n");
+			if (!IngredientName.IsInputValid())
+				msgBuilder.Append("The name of the ingredient should have more then 5 or less then 250 characters!\n");
 			else
 				result = true;
 
@@ -65,7 +66,7 @@ namespace SmartButler.Logic.ViewModels.BaseViewModels
 		public string IngredientName
 		{
 			get => _ingredientName?.Trim();
-			set => SetValue(ref _ingredientName, value?.Trim());
+			set => this.RaiseAndSetIfChanged(ref _ingredientName, value?.Trim());
 		}
 
 		public int SelectedBottleIndex

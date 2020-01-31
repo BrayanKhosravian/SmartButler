@@ -11,27 +11,37 @@
              Appearing="Cell_OnAppearing"
              Disappearing="Cell_OnDisappearing" PropertyChanged="IngredientViewCell_OnPropertyChanged">
 
-    <Grid BackgroundColor="{Binding IsAvailable, Converter={StaticResource BoolToColorConverter}}">
-        <Grid.Resources>
-            <converters:Converters/>
-        </Grid.Resources>
-        <Grid.GestureRecognizers>
-            <TapGestureRecognizer Tapped="IngredientTappedRecognizer"/>
-        </Grid.GestureRecognizers>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="150"/>
-            <ColumnDefinition Width="Auto"/>
-        </Grid.ColumnDefinitions>
+    <Frame CornerRadius="20" Margin="10,5" Padding="10"
+           BackgroundColor="{Binding IsAvailable, Converter={StaticResource BoolToColorConverter}}">
+        <Frame.Resources>
+            <converters:Converters />
+        </Frame.Resources>
+        <Grid >
+            <Grid.GestureRecognizers>
+                <TapGestureRecognizer Tapped="IngredientTappedRecognizer" />
+            </Grid.GestureRecognizers>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="75" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="75"/>
+            </Grid.RowDefinitions>
 
-        <Image
-            Source="{Binding ByteImage, Converter={StaticResource ByteArrayToImageSourceConverter}}"
-            HeightRequest="150" WidthRequest="150" />
+            <Frame BackgroundColor="White" Padding="2" CornerRadius="15" >
+                <Frame Padding="0" CornerRadius="15" IsClippedToBounds="True"
+                       HeightRequest="75" WidthRequest="75">
+                    <Image Source="{Binding ByteImage, Converter={StaticResource ByteArrayToImageSourceConverter}}"
+                           Aspect="AspectFill" BackgroundColor="White" />
+                </Frame>
+            </Frame>
 
-        <StackLayout Grid.Column="1">
-            <Label Text="{Binding Name, StringFormat='Name: {0}'}"/>
-            <Label Text="{Binding BottleIndex, Converter={StaticResource BottleIndexToStringConverter}}"/>
-            <Label Text="{Binding IsDefault, Converter={StaticResource IsDefaultToStringConverter}}" 
-                   Margin="0,15,0,0" FontSize="Micro"/>
-        </StackLayout>
+            <StackLayout Grid.Column="1">
+                <Label Text="{Binding Name, StringFormat='Name: {0}'}" />
+                <Label Text="{Binding BottleIndex, Converter={StaticResource BottleIndexToStringConverter}}" />
+                <Label Text="{Binding IsDefault, Converter={StaticResource IsDefaultToStringConverter}}"
+                       Margin="0,10,0,0" FontSize="Micro" />
+            </StackLayout>
         </Grid>
+    </Frame>
 </ViewCell>

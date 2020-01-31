@@ -75,8 +75,8 @@ namespace SmartButler.Bootstrapper
 	        pageRegistrar.Register<EditIngredientPageViewModel, ConfigureIngredientPage>();
 	        pageRegistrar.Register<AddIngredientPageViewModel, ConfigureIngredientPage>();
 
-	        pageRegistrar.Register<EditDrinkRecipePageViewModel, EditDrinkRecipePage>();
-	        pageRegistrar.Register<AddDrinkRecipePageViewModel, EditDrinkRecipePage>();
+	        pageRegistrar.Register<EditDrinkRecipePageViewModel, ConfigureDrinkRecipePage>();
+	        pageRegistrar.Register<AddDrinkRecipePageViewModel, ConfigureDrinkRecipePage>();
         }
 
         

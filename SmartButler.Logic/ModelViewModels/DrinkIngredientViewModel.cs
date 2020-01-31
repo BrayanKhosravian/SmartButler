@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Windows.Input;
 using Plugin.Media;
 using ReactiveUI;
 using SmartButler.DataAccess.Models;
+using SmartButler.Framework.Extensions;
 using SmartButler.Logic.Common;
 using SmartButler.Logic.EqualityComparer;
 using SmartButler.Logic.ViewModels;
@@ -17,6 +19,7 @@ namespace SmartButler.Logic.ModelViewModels
 		private int _bottleIndex;
 		private byte[] _byteImage;
 		private bool _isDefault;
+		private bool _isMilliliterValid;
 
 		public DrinkIngredientViewModel(Ingredient ingredient)
 		{
@@ -50,11 +53,16 @@ namespace SmartButler.Logic.ModelViewModels
 			get => _name;
 			set => SetValue(ref _name, value);
 		}
-
+		
 		public int Milliliter
 		{
 			get => _milliliter;
-			set => SetValue(ref _milliliter, value);
+			set 
+			{
+				this.SetValue(ref _milliliter, value);
+				IsMilliliterValid = Milliliter.IsInputValid();
+				base.OnPropertyChanged(nameof(IsMilliliterValid));
+			}
 		}
 
 		public int BottleIndex
@@ -77,6 +85,12 @@ namespace SmartButler.Logic.ModelViewModels
 			set => SetValue(ref _isDefault, value);
 		}
 
+		public bool IsMilliliterValid
+		{
+			get => _isMilliliterValid;
+			set => this.RaiseAndSetIfChanged(ref _isMilliliterValid, value);
+		}
+
 		public void UpdateIngredientModel()
 		{
 			Ingredient.Name = Name;
@@ -96,6 +110,7 @@ namespace SmartButler.Logic.ModelViewModels
 		}
 
 		public static IEqualityComparer<DrinkIngredientViewModel> DrinkIngredientViewModelComparer { get; } = new DrinkIngredientViewModelEqualityComparer();
+
 		internal static readonly ArrayEqualityComparer<byte> ByteArrayEqualityComparer = new ArrayEqualityComparer<byte>();
 
 		private sealed class DrinkIngredientViewModelEqualityComparer : IEqualityComparer<DrinkIngredientViewModel>

@@ -59,5 +59,10 @@ namespace SmartButler.Logic.Services
 
 			return BuilderInstance;
 		}
+		public TBuilder SetByteImage(byte[] byteImage)
+		{
+			ByteImage = byteImage;
+			return BuilderInstance;
+		}
 	}
 }
