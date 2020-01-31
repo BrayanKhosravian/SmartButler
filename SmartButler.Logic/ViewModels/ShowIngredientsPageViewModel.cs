@@ -24,9 +24,12 @@ namespace SmartButler.Logic.ViewModels
 		    IUserInteraction userInteraction) 
 		    : base(navigationService, ingredientsRepository)
 	    {
-		    this.WhenAnyValue(vm => vm.SelectedDrinkIngredient)
-			    .Where(ingredient => ingredient != null)
+		    
+		    this.WhenAnyObservable(vm => vm.Ingredients.ItemChanged)
 			    .ObserveOn(RxApp.MainThreadScheduler)
+			    .Where(arg => arg.PropertyName == nameof(DrinkIngredientViewModel.TickSelected))
+			    .Select(arg => (DrinkIngredientViewModel)arg.Sender)
+			    .Do(ingredient => SelectedDrinkIngredient = ingredient)
 			    .Subscribe(async ingredientViewModel =>
 			    {
 				    var selections = new List<string>(){"Edit"};

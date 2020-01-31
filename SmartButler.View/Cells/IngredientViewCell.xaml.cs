@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
+using System.Reactive;
 using System.Text;
 using System.Threading.Tasks;
 using ReactiveUI;
@@ -28,6 +29,8 @@ namespace SmartButler.View.Cells
 		{
 			var visual = sender as VisualElement;
 			if (visual is null) return;
+
+			ViewModel.TickSelected = Unit.Default;
 
 			await AnimationService.VisualElementClicked(visual);
 		}

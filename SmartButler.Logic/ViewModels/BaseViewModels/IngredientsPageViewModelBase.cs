@@ -24,7 +24,8 @@ namespace SmartButler.Logic.ViewModels.BaseViewModels
 				await navigationService.PushAsync<AddIngredientPageViewModel>());
 		}
 
-		public ReactiveList<DrinkIngredientViewModelBase> Ingredients { get; } = new ReactiveList<DrinkIngredientViewModelBase>();
+		public ReactiveList<DrinkIngredientViewModelBase> Ingredients { get; } = 
+			new ReactiveList<DrinkIngredientViewModelBase>(){ChangeTrackingEnabled = true};
 		public ReactiveCommand AddIngredientCommand { get; }
 
 		public abstract bool IsAddIngredientButtonVisible { get; }

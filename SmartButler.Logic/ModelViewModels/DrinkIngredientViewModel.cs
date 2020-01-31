@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.Reactive;
 using System.Windows.Input;
 using Plugin.Media;
 using ReactiveUI;
@@ -64,7 +65,6 @@ namespace SmartButler.Logic.ModelViewModels
 				base.OnPropertyChanged(nameof(IsMilliliterValid));
 			}
 		}
-
 		public int BottleIndex
 		{
 			get => _bottleIndex;
@@ -89,6 +89,13 @@ namespace SmartButler.Logic.ModelViewModels
 		{
 			get => _isMilliliterValid;
 			set => this.RaiseAndSetIfChanged(ref _isMilliliterValid, value);
+		}
+
+
+		public Unit TickSelected
+		{
+			get => Unit.Default;
+			set => this.RaisePropertyChanged();
 		}
 
 		public void UpdateIngredientModel()

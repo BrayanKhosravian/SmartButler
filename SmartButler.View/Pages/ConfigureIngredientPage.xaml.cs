@@ -23,7 +23,14 @@ namespace SmartButler.View.Pages
 			this.WhenActivated(cleaner =>
 			{
 				var position = ViewModel.BottleIndex;
-				IngredientPositionPicker.SelectedIndex = position;
+				try
+				{
+					IngredientPositionPicker.SelectedIndex = position;
+				}
+				catch (Exception e)
+				{
+					// android bug
+				}
 
 				this.WhenAnyValue(view => view.IngredientName.Text)
 					.ObserveOn(RxApp.MainThreadScheduler)

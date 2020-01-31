@@ -27,7 +27,7 @@ namespace SmartButler.UWP
             this.InitializeComponent();
         }
 
-        public async Task ActivateAsync()
+	    public async Task ActivateAsync()
         {
             var app = new SmartButler.App();
             var builder = new ContainerBuilder();

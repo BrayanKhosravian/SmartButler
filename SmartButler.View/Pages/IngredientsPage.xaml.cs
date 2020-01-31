@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Linq;
+using System.Reactive.Disposables;
+using System.Reactive.Linq;
 using ReactiveUI;
 using SmartButler.Logic.ModelViewModels;
 using SmartButler.Logic.ViewModels;
@@ -18,6 +21,14 @@ namespace SmartButler.View.Pages
 
 		    this.WhenActivated(  async closer =>
 		    {
+			    this.WhenAnyObservable(view => view.ViewModel.Ingredients.ItemChanged)
+				    .ObserveOn(RxApp.MainThreadScheduler)
+				    .Where(arg => arg.PropertyName == nameof(DrinkIngredientViewModel.TickSelected))
+				    .Select(arg => (DrinkIngredientViewModel)arg.Sender)
+				    .Do(selectedIngredient => ViewModel.SelectedDrinkIngredient = selectedIngredient)
+				    .Subscribe()
+				    .DisposeWith(closer);
+
 			    if (ViewModel != null) await ViewModel.ActivateAsync();
 		    });
 		}
