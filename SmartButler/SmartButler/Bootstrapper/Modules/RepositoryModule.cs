@@ -19,6 +19,7 @@ namespace SmartButler.Bootstrapper.Modules
 			builder.RegisterType<RepositoryComponent>().AsSelf().SingleInstance();
 
 			builder.RegisterType<DrinkRecipesRepository>().As<IDrinkRecipesRepository>();
+			builder.RegisterType<DrinkIngredientRepository>().As<IDrinkIngredientRepository>();
 			builder.RegisterType<IngredientsRepository>().As<IIngredientsRepository>();
 		}
 	}

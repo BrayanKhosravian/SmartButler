@@ -15,6 +15,7 @@ namespace SmartButler.DataAccess.Repositories
 		Task ConfigureAsync(IEnumerable<DrinkRecipe> drinkRecipes);
 		Task<bool> InsertWithChildrenAsync(DrinkRecipe ingredient);
 		Task UpdateWithChildrenAsync(DrinkRecipe ingredient);
+		Task UpsertWithChildrenAsync(DrinkRecipe ingredient);
 
 		Task DeleteAsync(DrinkRecipe drinkRecipe);
 		Task DeleteAsync(int id);
@@ -28,11 +29,14 @@ namespace SmartButler.DataAccess.Repositories
     {
 	    public const string TableName = TableNames.DrinkRecipeTable;
 
-		public RepositoryComponent Component { get; }
+	    public RepositoryComponent Component { get; }
+		private readonly IDrinkIngredientRepository _drinkIngredientRepository;
 
-	    public DrinkRecipesRepository(RepositoryComponent repositoryComponent)
+		public DrinkRecipesRepository(RepositoryComponent repositoryComponent, 
+			IDrinkIngredientRepository drinkIngredientRepository)
 	    {
 		    Component = repositoryComponent;
+		    _drinkIngredientRepository = drinkIngredientRepository;
 	    }
 
 	    public async Task ConfigureAsync(IEnumerable<DrinkRecipe> drinks)
@@ -49,7 +53,7 @@ namespace SmartButler.DataAccess.Repositories
 	    {
 		    if (await IsInserted(drink)) return false;
 
-			await Component.Connection.InsertWithChildrenAsync(drink, true);
+			await Component.Connection.InsertOrReplaceWithChildrenAsync(drink, true);
 			return true;
 	    }
 
@@ -57,6 +61,47 @@ namespace SmartButler.DataAccess.Repositories
 	    {
 		    return Component.Connection.UpdateWithChildrenAsync(drink);
 		}
+
+	    public async Task UpsertWithChildrenAsync(DrinkRecipe drink)
+	    {
+		    var drinkIngredients = drink.DrinkIngredients;
+		    foreach (var di in drinkIngredients)
+		    {
+			    di.DrinkId = drink.Id;
+		    }
+
+		    var dBIngredients = await Component.Connection.Table<DrinkIngredient>()
+			    .Where(di => di.DrinkId == drink.Id)
+			    .ToListAsync();
+		    
+			var shouldBeDeleted = dBIngredients.
+					Where(dbIngredient => drinkIngredients.All(di => di.IngredientId != dbIngredient.IngredientId))
+					.ToList();
+
+			await _drinkIngredientRepository.DeleteAsync(shouldBeDeleted);
+
+			foreach (var drinkIngredient in drinkIngredients)
+			{
+				var doesExist = dBIngredients.Any(di => di.IngredientId == drinkIngredient.IngredientId &&
+				                                        di.DrinkId == drinkIngredient.DrinkId);
+
+				if (doesExist)
+				    await _drinkIngredientRepository.UpdateAsync(drinkIngredient);
+			    else
+				    await _drinkIngredientRepository.InsertAsync(drinkIngredient);
+
+		    }
+
+			using var connection = new SQLiteConnection(Component.Connection.DatabasePath);
+		    var command = new SQLiteCommand(connection);
+
+			command.CommandText = $"update {TableNames.DrinkRecipeTable} set Name = @name, ByteImage = @byteImage " +
+			                      $"where Id = '{drink.Id}'";
+			command.Bind("@name", drink.Name);
+			command.Bind("@byteImage", drink.ByteImage);
+			command.ExecuteNonQuery();
+
+	    }
 
 	    public Task DeleteAsync(DrinkRecipe drink)
 	    {

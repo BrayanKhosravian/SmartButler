@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Autofac;
 using ReactiveUI;
 using SmartButler.DataAccess.Models;
+using SmartButler.DataAccess.Repositories;
 using SmartButler.Framework.Extensions;
 using SmartButler.Logic.Interfaces;
 using SmartButler.Logic.ModelViewModels;
@@ -52,6 +53,16 @@ namespace SmartButler.Logic.ViewModels.BaseViewModels
 
 			AbortCommand = ReactiveCommand.CreateFromTask(async _ => await _navigationService.PopAsync());
 
+			var completedCommandCanExecute = DrinkIngredients.CountChanged
+				.Select(count => count != 0);
+
+			completedCommandCanExecute
+				.Where(hasIngredients => !hasIngredients)
+				.Skip(1)
+				.Select(async _ =>
+					await _userInteraction.DisplayAlertAsync("Warning", "Add ingredients or abort the process!", "ok"))
+				.Subscribe(_ => {}, ex => throw ex);
+
 			CompleteCommand = ReactiveCommand.CreateFromTask(async _ =>
 			{
 				if (!IsDrinkValid(out StringBuilder msgBuilder))
@@ -60,19 +71,22 @@ namespace SmartButler.Logic.ViewModels.BaseViewModels
 					return;
 				}
 
-				var ingredients = DrinkIngredients.Select(ivm =>
-				{
-					ivm.UpdateDrinkIngredientModel();
-					return ivm.DrinkIngredient;
-				}).ToList();
+				var ingredients = DrinkIngredients
+					.Select(ivm => ivm.UpdateDrinkIngredientModel())
+					.ToList();
 
 				await CompletedTemplateMethod(drinkRecipeBuilder, ingredients);
 				await navigationService.PopAsync();
 
-			});
+			}, completedCommandCanExecute);
 			CompleteCommand.ThrownExceptions.Subscribe(exception => throw exception);
+
 			ByteImageTapRecognizerCommand = ReactiveCommand.CreateFromTask(async _ =>
-				ByteImage = await crossMediaService.GetPhotoAsync());
+				{
+					var photo = await crossMediaService.GetPhotoAsync();
+					if (photo != null)
+						ByteImage = photo;
+				});
 		}
 
 		protected abstract Task CompletedTemplateMethod(IDrinkRecipeBuilder drinkRecipeBuilder,
@@ -120,6 +134,15 @@ namespace SmartButler.Logic.ViewModels.BaseViewModels
 		{
 			get => _byteImage;
 			set => this.SetValue(ref _byteImage, value);
+		}
+
+		public async Task IngredientTappedAsync(DrinkIngredientViewModel drinkIngredient)
+		{
+			var result = await _userInteraction.DisplayActionSheetAsync("Selection", "Cancel", null, "Remove");
+
+			if (result.Equals("Remove"))
+				DrinkIngredients.Remove(drinkIngredient);
+
 		}
 	}
 }

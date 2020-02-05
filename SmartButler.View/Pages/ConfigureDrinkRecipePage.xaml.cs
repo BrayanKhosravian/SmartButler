@@ -25,16 +25,6 @@ namespace SmartButler.View.Pages
 					.Subscribe(name =>
 						DrinkName.BackgroundColor = name.IsInputValid() ? Color.Default : Color.LightCoral);
 
-				//this.WhenAnyObservable(view => view.ViewModel.DrinkIngredients.ItemChanged)
-				//	.ObserveOn(RxApp.MainThreadScheduler)
-				//	.Where(ingredientChanged =>
-				//		ingredientChanged.PropertyName.Equals(nameof(DrinkIngredientViewModel.Milliliter)))
-				//	.Select(ingredientChanged => ingredientChanged.Sender)
-				//	.Subscribe(ingredient => ingredient.IsMilliliterValid =
-				//		ingredient.Milliliter.ToString().IsMilliliterValid());
-
-
-
 			});
 		}
 
@@ -60,6 +50,20 @@ namespace SmartButler.View.Pages
 		{
 			ViewModel.OnDisappearing();
 			base.OnDisappearing();
+		}
+
+		private async void IngredientTappedRecognizer(object sender, EventArgs e)
+		{
+			try
+			{
+				if((sender as BindableObject)?.BindingContext is DrinkIngredientViewModel drinkIngredient)
+					await ViewModel.IngredientTappedAsync(drinkIngredient);
+			}
+			catch (Exception exception)
+			{
+				Console.WriteLine(exception);
+				throw;
+			}
 		}
 	}
 }

@@ -98,22 +98,26 @@ namespace SmartButler.Logic.ModelViewModels
 			set => this.RaisePropertyChanged();
 		}
 
-		public void UpdateIngredientModel()
+		public Ingredient UpdateIngredientModel()
 		{
 			Ingredient.Name = Name;
 			Ingredient.BottleIndex = BottleIndex;
 			Ingredient.ByteImage = ByteImage;
 			Ingredient.IsDefault = IsDefault;
+
+			return Ingredient;
 		}
 
-		public void UpdateDrinkIngredientModel()
+		public DrinkIngredient UpdateDrinkIngredientModel()
 		{
 			if(DrinkIngredient == null)
 				DrinkIngredient = new DrinkIngredient();
 			DrinkIngredient.Milliliter = Milliliter;
 			DrinkIngredient.Ingredient = Ingredient;
 			// map adapter table to adapter // adapter table = DrinkIngredient, adapter = Ingredient 
-			DrinkIngredient.IngredientId = Ingredient.Id; 
+			DrinkIngredient.IngredientId = Ingredient.Id;
+
+			return DrinkIngredient;
 		}
 
 		public static IEqualityComparer<DrinkIngredientViewModel> DrinkIngredientViewModelComparer { get; } = new DrinkIngredientViewModelEqualityComparer();

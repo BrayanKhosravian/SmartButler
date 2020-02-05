@@ -51,7 +51,7 @@ namespace SmartButler.Logic.ViewModels
 				.AddIngredients(ingredients.ToArray())
 				.Build();
 
-			await _drinkRecipesRepository.UpdateWithChildrenAsync(drink);
+			await _drinkRecipesRepository.UpsertWithChildrenAsync(drink);
 			await _userInteraction.DisplayAlertAsync("Info", "Drink updated in the Database!", "Ok");
 		}
 	}

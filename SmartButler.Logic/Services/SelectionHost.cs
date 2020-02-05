@@ -19,7 +19,6 @@ namespace SmartButler.Logic.Services
 		private T _selection;
 		public abstract bool IsAutoReset { get; set; }
 		public bool IsAvailable => _selection != null;
-
 		public virtual T Selection
 		{
 			get
@@ -33,7 +32,6 @@ namespace SmartButler.Logic.Services
 			}
 			set => _selection = value;
 		}
-
 		public virtual void Reset() => Selection = null;
 	}
 
