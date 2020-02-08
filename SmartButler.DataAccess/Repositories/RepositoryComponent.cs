@@ -34,7 +34,7 @@ namespace SmartButler.DataAccess.Repositories
 
 		internal async Task ConfigureAsync()
 		{
-#if DEBUG
+#if DEBUG && false
 			await Connection.DropTableAsync<Ingredient>();
 			await Connection.DropTableAsync<DrinkIngredient>();
 			await Connection.DropTableAsync<DrinkRecipe>();

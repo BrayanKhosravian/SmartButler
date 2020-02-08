@@ -23,6 +23,8 @@ namespace SmartButler.Logic.ViewModels
             IngredientsCommand = ReactiveCommand.CreateFromTask(async () => 
 	            await navigation.PushAsync<ShowIngredientsPageViewModel>());
 
+			IngredientsCommand.ThrownExceptions.Subscribe(ex => throw ex);
+
             DrinksCommand = ReactiveCommand.CreateFromTask(async () => 
 	            await navigation.PushAsync<DrinksPageViewModel>());
 

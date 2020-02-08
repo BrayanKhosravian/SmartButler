@@ -27,7 +27,7 @@ namespace Integration.Tests
 			await ingredientsRepository.ConfigureAsync(ingredientsFactory.GetDefaultIngredients());
 
 			var drinkRecipesFactory = new DrinkRecipeFactory(new DrinkRecipeBuilder());
-			var drinkRecipesRepository = new DrinkRecipesRepository(_repositoryComponent);
+			var drinkRecipesRepository = new DrinkRecipesRepository(_repositoryComponent, new DrinkIngredientRepository(_repositoryComponent));
 			await drinkRecipesRepository.ConfigureAsync(drinkRecipesFactory.GetDefaultDrinks());
 
 		}

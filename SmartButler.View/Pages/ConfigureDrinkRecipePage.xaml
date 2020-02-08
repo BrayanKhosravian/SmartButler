@@ -36,8 +36,8 @@
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
 
-                <Label Grid.Row="0" Text="Drink name"/>
-                <Entry Grid.Row="0" Grid.Column="1" x:Name="DrinkName" Text="{Binding DrinkName}"/>
+                <Label Grid.Row="0" Text="Drink name" VerticalTextAlignment="Center"/>
+                <Entry Grid.Row="0" Grid.Column="1" x:Name="DrinkName" Text="{Binding DrinkName}" VerticalTextAlignment="Center"/>
                 <Grid Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"/>
@@ -53,9 +53,8 @@
                                HeightRequest="100" WidthRequest="100" />
                     </Frame>
                 </Grid>
-               
 
-                <ListView Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"
+                <ListView Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" HasUnevenRows="True"
                           ItemsSource="{Binding DrinkIngredients}" x:Name="DrinkIngredients">
                     <ListView.ItemTemplate>
                         <DataTemplate>
@@ -73,10 +72,10 @@
                                         <ColumnDefinition/>
                                     </Grid.ColumnDefinitions>
 
-                                    <Label Text="Ingredient name" Grid.Row="0" Grid.Column="0"/>
-                                    <Label Text="Milliliter" Grid.Row="1" Grid.Column="0"/>
-                                    <Label Text="{Binding Name}" Grid.Row="0" Grid.Column="1"/>
-                                    <Entry Text="{Binding Milliliter}" Grid.Row="1" Grid.Column="1"
+                                    <Label Text="Ingredient name" Grid.Row="0" Grid.Column="0" VerticalTextAlignment="Center"/>
+                                    <Label Text="Milliliter" Grid.Row="1" Grid.Column="0" VerticalTextAlignment="Center"/>
+                                    <Label Text="{Binding Name}" Grid.Row="0" Grid.Column="1" VerticalTextAlignment="Center"/>
+                                    <Entry Text="{Binding Milliliter}" Grid.Row="1" Grid.Column="1" VerticalTextAlignment="Center"
                                            BackgroundColor="{Binding IsMilliliterValid, Converter={StaticResource IsInputValidColorConverter}, Mode=TwoWay}"/>
                                 </Grid>
                             </ViewCell>

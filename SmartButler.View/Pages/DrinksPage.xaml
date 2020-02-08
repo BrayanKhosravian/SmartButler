@@ -41,8 +41,12 @@
                                     </Grid.GestureRecognizers>
 
                                     <Label Text="{Binding Id}" VerticalOptions="Center" HorizontalOptions="Start"/>
-                                    <Image Source="{Binding ByteImage, Converter={StaticResource ByteArrayToImageSourceConverter}}"
-                                           Grid.Column="1" HeightRequest="150" WidthRequest="150" HorizontalOptions="Start" />
+                                    <controls:RoundImage RoundImageSource="{Binding ByteImage, Converter={StaticResource ByteArrayToImageSourceConverter}}"
+                                                         Grid.Column="1"
+                                                         RoundImageHeight="150"
+                                                         RoundImageWidth="200"
+                                                         HorizontalOptions="Start" 
+                                                         RoundImageBorderColor="White"/>
 
                                     <StackLayout Grid.Column="2">
                                         <Label Text="{Binding Name}"/>

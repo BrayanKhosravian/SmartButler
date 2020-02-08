@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:converters="clr-namespace:SmartButler.View.Converters;assembly=SmartButler.View"
+             mc:Ignorable="d"
+             x:Class="SmartButler.View.Controls.RoundImage"
+             x:Name="this">
+
+    <ContentView.Resources>
+        <converters:Converters />
+    </ContentView.Resources>
+
+    <ContentView.Content>
+        <Frame BackgroundColor="{Binding RoundImageBorderColor, Source={x:Reference this}}"
+             Padding="{Binding RoundImagePadding, Source={x:Reference this}}" 
+             CornerRadius="{Binding RoundImageCornerRadius, Source={x:Reference this}}">
+          <Frame Padding="0" CornerRadius="{Binding RoundImageCornerRadius, Source={x:Reference this}}"
+                 IsClippedToBounds="True"   
+                 HeightRequest="{Binding RoundImageWidth, Source={x:Reference this}}"
+                 WidthRequest="{Binding RoundImageWidth, Source={x:Reference this}}">       
+              <Image Source="{Binding RoundImageSource, Source={x:Reference this}}"
+                     BackgroundColor="{Binding RoundImageBorderColor, Source={x:Reference this}}"
+                     Aspect="AspectFill" />
+          </Frame>
+      </Frame>
+  </ContentView.Content>
+</ContentView>

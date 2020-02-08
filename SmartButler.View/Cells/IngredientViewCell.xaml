@@ -7,6 +7,7 @@
              x:Class="SmartButler.View.Cells.IngredientViewCell"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:modelViewModels="clr-namespace:SmartButler.Logic.ModelViewModels;assembly=SmartButler.Logic"
+             xmlns:controls="clr-namespace:SmartButler.View.Controls;assembly=SmartButler.View"
              d:DataContext="{d:DesignInstance modelViewModels:DrinkIngredientViewModel}"
              Appearing="Cell_OnAppearing"       
              Disappearing="Cell_OnDisappearing" 
@@ -29,13 +30,23 @@
                 <RowDefinition Height="75"/>
             </Grid.RowDefinitions>
 
-            <Frame BackgroundColor="White" Padding="2" CornerRadius="15" >
+            <controls:RoundImage RoundImageSource="{Binding ByteImage, Converter={StaticResource ByteArrayToImageSourceConverter}}"
+                                 RoundImageHeight="75"
+                                 RoundImageWidth="75"
+                                 RoundImageCornerRadius="14"
+                                 RoundImagePadding="2"
+                                 RoundImageBorderColor="White"/>
+           
+            
+
+            <!--<Frame BackgroundColor="White" Padding="2" CornerRadius="15">
                 <Frame Padding="0" CornerRadius="15" IsClippedToBounds="True"
                        HeightRequest="75" WidthRequest="75">
                     <Image Source="{Binding ByteImage, Converter={StaticResource ByteArrayToImageSourceConverter}}"
                            Aspect="AspectFill" BackgroundColor="White" />
                 </Frame>
-            </Frame>
+            </Frame>-->
+        
 
             <StackLayout Grid.Column="1">
                 <Label Text="{Binding Name, StringFormat='Name: {0}'}" />
