@@ -13,15 +13,16 @@
     </ContentView.Resources>
 
     <ContentView.Content>
-        <Frame BackgroundColor="{Binding RoundImageBorderColor, Source={x:Reference this}}"
-             Padding="{Binding RoundImagePadding, Source={x:Reference this}}" 
-             CornerRadius="{Binding RoundImageCornerRadius, Source={x:Reference this}}">
-          <Frame Padding="0" CornerRadius="{Binding RoundImageCornerRadius, Source={x:Reference this}}"
+        <Frame BindingContext="{x:Reference this}"
+               BackgroundColor="{Binding RoundImageBorderColor}"
+             Padding="{Binding RoundImagePadding}" 
+             CornerRadius="{Binding RoundImageCornerRadius}">
+          <Frame Padding="0" CornerRadius="{Binding RoundImageCornerRadius}"
                  IsClippedToBounds="True"   
-                 HeightRequest="{Binding RoundImageWidth, Source={x:Reference this}}"
-                 WidthRequest="{Binding RoundImageWidth, Source={x:Reference this}}">       
-              <Image Source="{Binding RoundImageSource, Source={x:Reference this}}"
-                     BackgroundColor="{Binding RoundImageBorderColor, Source={x:Reference this}}"
+                 HeightRequest="{Binding RoundImageWidth}"
+                 WidthRequest="{Binding RoundImageWidth}">       
+              <Image Source="{Binding RoundImageSource}"
+                     BackgroundColor="{Binding RoundImageBorderColor}"
                      Aspect="AspectFill" />
           </Frame>
       </Frame>

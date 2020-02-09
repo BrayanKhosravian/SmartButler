@@ -1,8 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using ReactiveUI;
 using SmartButler.Logic.ModelViewModels;
 using SmartButler.Logic.ViewModels;
+using SmartButler.View.Common;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -33,31 +35,28 @@ namespace SmartButler.View.Pages
             set => BindingContext = value as Logic.ViewModels.DrinksPageViewModel;
         }
 
-        private void ListView_OnItemSelected(object sender, SelectedItemChangedEventArgs e)
+        private async void IngredientTappedRecognizer(object sender, EventArgs e)
         {
-	        //ViewModel?.Transmit((DrinkRecipeViewModel)e.SelectedItem);
-        }
+	        if (!(sender is VisualElement visual)) return;
 
-        private async void DrinkTappedRecognizer(object sender, EventArgs e)
-        {
-            if(sender is null) return;
 	        var drinkRecipeViewModel = (DrinkRecipeViewModel)((BindableObject) sender).BindingContext;
-	        // await ViewModel.DrinkSelectedAsync(drinkIngredientViewModel);
-	        await ExecuteSafeASync(async () => await ViewModel.DrinkSelectedAsync(drinkRecipeViewModel));
 
-        }
-
-        private async Task ExecuteSafeASync(Func<Task> task)
-        {
 	        try
 	        {
-		        await task.Invoke();
+                var tasks = new Func<List<Task>>(() => new List<Task>()
+                {
+	                AnimationService.VisualElementClicked(visual),
+	                ViewModel.DrinkSelectedAsync(drinkRecipeViewModel)
+                });
+
+		        await Task.WhenAll(tasks.Invoke());
 	        }
-	        catch (Exception e)
+	        catch (Exception exception)
 	        {
-		        Console.WriteLine(e);
+		        Console.WriteLine(exception);
 		        throw;
 	        }
+
         }
     }
 }

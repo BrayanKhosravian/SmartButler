@@ -16,15 +16,16 @@ namespace SmartButler.View.Common
 
 			var animateInto = new Func<List<Task>>(() => new List<Task>()
 			{
-				visualElement.FadeTo(0.5, 300, Easing.SinIn),
-				visualElement.ScaleTo(0.95, 300, Easing.SinIn)
+			 	visualElement.FadeTo(0.5, 300, Easing.SinIn),
+			 	visualElement.ScaleTo(0.95, 300, Easing.SinIn)
 			});
 
 			var animateOut = new Func<List<Task>>(() => new List<Task>()
 			{
-				visualElement.FadeTo(1, 450, Easing.SinIn),
-				visualElement.ScaleTo(1, 450, Easing.SinIn)
+			 	visualElement.FadeTo(1, 450, Easing.SinIn),
+			 	visualElement.ScaleTo(1, 450, Easing.SinIn)
 			});
+
 			await Task.WhenAll(animateInto.Invoke());
 			await Task.WhenAll(animateOut.Invoke());
 		}
