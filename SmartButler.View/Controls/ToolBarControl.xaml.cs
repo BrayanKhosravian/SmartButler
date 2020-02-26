@@ -13,7 +13,7 @@ namespace SmartButler.View.Controls
 			InitializeComponent ();
 		}
 
-	    object IViewFor.ViewModel
+		object IViewFor.ViewModel
 	    {
 	        get => ViewModel;
 	        set => ViewModel = value as ToolbarControlViewModel;

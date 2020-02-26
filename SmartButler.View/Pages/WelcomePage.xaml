@@ -15,14 +15,13 @@
 
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Smart Butler"
-                       VerticalOptions="CenterAndExpand"
-                       HorizontalOptions="CenterAndExpand" />
+            <Label Text="Welcome to Smart Butler! &#10;Programmed by Brayan Khosravian. &#10;https://github.com/BrayanKhosravian/SmartButler &#10;&#10;Enjoy your custom drinks."
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="CenterAndExpand" />
 
             <Button Text="Bluetooth" Command="{Binding BluetoothCommand}" />
             <Button Text="Ingredients" Command="{Binding IngredientsCommand}" />
-            <Button Text="DrinkRecipes" Command="{Binding DrinksCommand}" />
-            <Button Text="Make Drink" Command="{Binding MakeDrinkCommand}" />
+            <Button Text="Drink recipes" Command="{Binding DrinksCommand}" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -38,7 +38,7 @@
                                     <Grid>
                                         <Grid.ColumnDefinitions>
                                             <ColumnDefinition Width="Auto" />
-                                            <ColumnDefinition Width="150" />
+                                            <ColumnDefinition Width="Auto" />
                                             <ColumnDefinition Width="*" />
                                         </Grid.ColumnDefinitions>
 
@@ -52,9 +52,10 @@
                                             RoundImageBorderColor="White" />
 
                                         <StackLayout Grid.Column="2">
-                                            <Label Text="{Binding Name}" />
-                                            <controls:RepeaterView
-                                                ItemsSource="{Binding IngredientViewModels, Mode=TwoWay}">
+                                            <Label Style="{StaticResource DrinkNameStyle}"
+                                                   Text="{Binding Name}"
+                                                   HorizontalOptions="Start"/>
+                                            <controls:RepeaterView ItemsSource="{Binding IngredientViewModels, Mode=TwoWay}">
                                                 <controls:RepeaterView.ItemTemplate>
                                                     <DataTemplate>
                                                         <ViewCell>

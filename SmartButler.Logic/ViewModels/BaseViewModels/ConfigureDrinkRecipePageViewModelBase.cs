@@ -92,6 +92,8 @@ namespace SmartButler.Logic.ViewModels.BaseViewModels
 		protected abstract Task CompletedTemplateMethod(IDrinkRecipeBuilder drinkRecipeBuilder,
 			IList<DrinkIngredient> ingredients);
 
+		public abstract string Title { get; }
+
 		public ReactiveList<DrinkIngredientViewModel> DrinkIngredients { get; set; } 
 			= new ReactiveList<DrinkIngredientViewModel>(){ChangeTrackingEnabled = true};
 
@@ -116,12 +118,6 @@ namespace SmartButler.Logic.ViewModels.BaseViewModels
 				msgBuilder.Append("'Milliliter' has to be between 15 and 500");
 
 			return msgBuilder.Length == 0;
-		}
-
-		public string Title
-		{
-			get => _title;
-			set => SetValue(ref _title, value);
 		}
 
 		public string DrinkName

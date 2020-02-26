@@ -20,10 +20,7 @@
 
     <ContentPage.Content>
         <StackLayout>
-
-            <Label Text="{Binding Title}"
-                VerticalOptions="Start" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Style="{x:StaticResource TitleStyle}" Text="{Binding Title}"/>
 
             <Grid MinimumHeightRequest="50">
                 <Grid.ColumnDefinitions>
@@ -32,8 +29,9 @@
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="Auto"/>
                     <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
 
                 <Label Grid.Row="0" Text="Drink name" VerticalTextAlignment="Center"/>
@@ -41,16 +39,17 @@
                 <Grid Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="Auto"/>
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
-                    <Frame BorderColor="Red" Grid.Column="1">
+
+                    <Frame BorderColor="Red" Grid.Column="1" Padding="5">
                         <Frame.GestureRecognizers>
                             <TapGestureRecognizer Command="{Binding ByteImageTapRecognizerCommand}"/>
                         </Frame.GestureRecognizers>
                         <Image Source="{Binding ByteImage, Converter={StaticResource ByteArrayToImageSourceConverter}}"
                                HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"
-                               HeightRequest="100" WidthRequest="100" />
+                               HeightRequest="150" WidthRequest="150" />
                     </Frame>
                 </Grid>
 
@@ -82,12 +81,18 @@
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
+
+                <Grid Grid.Row="3" Column="0" ColumnSpan="2" HeightRequest="60" CompressedLayout.IsHeadless="True">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button Grid.Column="0" Text="Add Ingredient" Command="{Binding AddIngredientCommand}" />
+                    <Button Grid.Column="1" Text="Complete" Command="{Binding CompleteCommand}"/>
+                    <Button Grid.Column="2" Text="Abort" Command="{Binding AbortCommand}"/>
+                </Grid>
             </Grid>
-
-            <Button Text="Add Ingredient" Command="{Binding AddIngredientCommand}"/>
-            <Button Text="Complete" Command="{Binding CompleteCommand}"/>
-            <Button Text="Abort" Command="{Binding AbortCommand}"/>
-
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

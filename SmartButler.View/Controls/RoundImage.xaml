@@ -15,8 +15,8 @@
     <ContentView.Content>
         <Frame BindingContext="{x:Reference this}"
                BackgroundColor="{Binding RoundImageBorderColor}"
-             Padding="{Binding RoundImagePadding}" 
-             CornerRadius="{Binding RoundImageCornerRadius}">
+               Padding="{Binding RoundImagePadding}" 
+               CornerRadius="{Binding RoundImageCornerRadius}">
           <Frame Padding="0" CornerRadius="{Binding RoundImageCornerRadius}"
                  IsClippedToBounds="True"   
                  HeightRequest="{Binding RoundImageWidth}"

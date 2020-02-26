@@ -15,6 +15,5 @@ namespace SmartButler.Logic.ViewModels
 
         public ReactiveCommand SettingsCommand { get; set; }
 
-
     }
 }

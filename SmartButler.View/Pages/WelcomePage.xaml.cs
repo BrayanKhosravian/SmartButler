@@ -13,7 +13,7 @@ namespace SmartButler.View.Pages
 
             this.WhenActivated(closer =>
             {
-                ViewModel?.Activate();
+               
             });
         }
 

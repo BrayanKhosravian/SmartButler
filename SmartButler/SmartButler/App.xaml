@@ -6,6 +6,25 @@
     <Application.Resources>
         <ResourceDictionary>
             
+            <Style TargetType="Label">
+                <Setter Property="FontSize" Value="Small"/>
+            </Style>
+
+            <Style x:Key="TitleStyle" TargetType="Label">
+                <Setter Property="VerticalOptions" Value="Start"/>
+                <Setter Property="HorizontalOptions" Value="CenterAndExpand"/>
+                <Setter Property="FontSize" Value="Large"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="TextColor" Value="Red"/>
+            </Style>
+
+            <Style x:Key="DrinkNameStyle" TargetType="Label">
+                <Setter Property="VerticalOptions" Value="Start"/>
+                <Setter Property="HorizontalOptions" Value="CenterAndExpand"/>
+                <Setter Property="FontSize" Value="Medium"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+            </Style>
+
         </ResourceDictionary>
     </Application.Resources>
 </Application>

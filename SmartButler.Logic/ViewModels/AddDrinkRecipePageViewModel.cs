@@ -43,5 +43,7 @@ namespace SmartButler.Logic.ViewModels
 			await _drinkRecipesRepository.InsertWithChildrenAsync(drink);
 			await _userInteraction.DisplayAlertAsync("Info", "Drink Added to the Database!", "Ok");
 		}
+
+		public override string Title => "Create your drink recipe!";
 	}
 }

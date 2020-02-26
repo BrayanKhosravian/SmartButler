@@ -28,20 +28,11 @@ namespace SmartButler.Logic.ViewModels
             DrinksCommand = ReactiveCommand.CreateFromTask(async () => 
 	            await navigation.PushAsync<DrinksPageViewModel>());
 
-            MakeDrinkCommand = new DelegateCommand(async _ => await navigation.PushAsync<MakeDrinkPageViewModel>(),
-	            _ => bluetoothService.IsConnected() || Settings.EnableCommands);
-
         }
 
         public ReactiveCommand BluetoothCommand { get; }
         public ReactiveCommand IngredientsCommand { get; }
         public ReactiveCommand DrinksCommand { get; }
-        public IDelegateCommand MakeDrinkCommand { get; }
-
-		public void Activate()
-		{
-			MakeDrinkCommand?.RaiseCanExecuteChanged();
-		}
 
 	}
 }
