@@ -54,7 +54,7 @@ namespace SmartButler.View.Pages
 	        catch (Exception exception)
 	        {
 		        Console.WriteLine(exception);
-		        throw;
+		        await DisplayAlert("Exception!", $"{exception.Message}\n\n Try it again or restart the app!", "Ok");
 	        }
 
         }
