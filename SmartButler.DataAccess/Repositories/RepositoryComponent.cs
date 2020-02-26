@@ -34,7 +34,7 @@ namespace SmartButler.DataAccess.Repositories
 
 		internal async Task ConfigureAsync()
 		{
-#if DEBUG && false
+#if DEBUG && false // set "false" to "true" when u want a default tables from startup
 			await Connection.DropTableAsync<Ingredient>();
 			await Connection.DropTableAsync<DrinkIngredient>();
 			await Connection.DropTableAsync<DrinkRecipe>();

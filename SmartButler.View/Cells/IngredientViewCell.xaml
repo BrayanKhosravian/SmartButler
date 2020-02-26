@@ -41,8 +41,6 @@
             <StackLayout Grid.Column="1">
                 <Label Text="{Binding Name, StringFormat='Name: {0}'}" />
                 <Label Text="{Binding BottleIndex, Converter={StaticResource BottleIndexToStringConverter}}" />
-                <Label Text="{Binding IsDefault, Converter={StaticResource IsDefaultToStringConverter}}"
-                       Margin="0,10,0,0" FontSize="Micro" />
             </StackLayout>
         </Grid>
     </controls:RoundView>

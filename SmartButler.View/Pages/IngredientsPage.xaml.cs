@@ -45,26 +45,5 @@ namespace SmartButler.View.Pages
 	        set => BindingContext = value as IngredientsPageViewModelBase;
 	    }
 
-	    private void IngredientSelected(object sender, SelectedItemChangedEventArgs e)
-	    {
-			if(e is null) return;
-
-			//EditIngredientView.IsVisible = true;
-
-			// TODO: Uncomment if animating didnt work
-			var ingredientViewModel = e.SelectedItem as DrinkIngredientViewModel;
-
-			ViewModel.SelectedDrinkIngredient = ingredientViewModel;
-
-			((ListView)sender).SelectedItem = null;
-
-
-		}
-
-
-	    //private void TapGestureRecognizer_OnTapped(object sender, EventArgs e)
-	    //{
-		   // EditIngredientView.IsVisible = false;
-	    //}
 	}
 }

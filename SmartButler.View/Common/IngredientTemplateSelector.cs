@@ -15,8 +15,6 @@ namespace SmartButler.View.Common
 		{
 			switch (item)
 			{
-				case DrinkIngredientViewModelInfo _:
-					return DrinkIngredientInfoTemplate;
 				case DrinkIngredientViewModel _:
 					return DrinkIngredientTemplate;
 				default:
@@ -25,6 +23,5 @@ namespace SmartButler.View.Common
 		}
 
 		public DataTemplate DrinkIngredientTemplate => new DataTemplate(typeof(IngredientViewCell));
-		public DataTemplate DrinkIngredientInfoTemplate => new DataTemplate(typeof(IngredientInfoViewCell));
 	}
 }

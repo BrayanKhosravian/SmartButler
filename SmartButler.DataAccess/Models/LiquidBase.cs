@@ -15,7 +15,5 @@ namespace SmartButler.DataAccess.Models
 
 	    public virtual byte[] ByteImage { get; set; }
 
-	    public virtual bool IsDefault { get; set; }
-
-	}
+    }
 }

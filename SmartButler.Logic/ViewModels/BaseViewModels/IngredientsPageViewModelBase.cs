@@ -40,13 +40,12 @@ namespace SmartButler.Logic.ViewModels.BaseViewModels
 
 				var ingredientViewModels = FilterIngredientsTemplateMethod(ingredients);
 
-				var orderedIngredients = ingredientViewModels.OrderBy(i => i.IsDefault).ToList();
+				var orderedIngredients = ingredientViewModels
+					.OrderBy(i => !i.IsAvailable)
+					.ThenBy(i => i.BottleIndex)
+					.ToList();
 
-				Ingredients.Add(new DrinkIngredientViewModelInfo() {InfoText = "Default Ingredients"});
-				Ingredients.AddRange(orderedIngredients.Where(i => i.IsDefault));
-
-				Ingredients.Add(new DrinkIngredientViewModelInfo() {InfoText = "Custom Ingredients"});
-				Ingredients.AddRange(orderedIngredients.Where(i => !i.IsDefault));
+				Ingredients.AddRange(orderedIngredients);
 			}
 		}
 

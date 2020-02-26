@@ -16,9 +16,7 @@
 
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="{Binding Title}"
-                VerticalOptions="StartAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Style="{StaticResource TitleStyle}" Text="{Binding Title}"/>
 
             <Frame BorderColor="Red">
                 <Frame.GestureRecognizers>
@@ -38,10 +36,11 @@
                 <Picker x:Name="IngredientPositionPicker"
                         SelectedItem="{Binding SelectedBottleIndex}"
                         ItemDisplayBinding="{Binding Value}"
-                        SelectedIndexChanged="IngredientPosition_OnSelectedIndexChanged"/>
+                        SelectedIndexChanged="IngredientPosition_OnSelectedIndexChanged"
+                        HorizontalOptions="StartAndExpand" WidthRequest="150"/>
             </StackLayout>
             
-            <StackLayout Orientation="Horizontal">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
                 <Button Text="Abort" Command="{Binding AbortCommand.Value}"/>
                 <Button Text="Accept" Command="{Binding AcceptCommand}"/>
             </StackLayout>

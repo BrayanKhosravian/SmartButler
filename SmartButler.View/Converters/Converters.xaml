@@ -4,8 +4,6 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:converters="clr-namespace:SmartButler.View.Converters;assembly=SmartButler.View"
-             xmlns:converters1="clr-namespace:SmartButler.View.Converters;assembly=SmartButler.View"
-             xmlns:converters2="clr-namespace:SmartButler.View.Converters;assembly=SmartButler.View"
              mc:Ignorable="d"
              x:Class="SmartButler.View.Converters.Converters">
 
@@ -13,7 +11,6 @@
     <converters:ByteArrayToImageSourceConverter x:Key="ByteArrayToImageSourceConverter"/>
     <converters:BottleIndexToStringConverter x:Key="BottleIndexToStringConverter"/>
     <converters:BoolToColorConverter x:Key="BoolToColorConverter"/>
-    <converters:IsDefaultToStringConverter x:Key="IsDefaultToStringConverter"/>
     <converters:IsInputValidColorConverter x:Key="IsInputValidColorConverter"/>
 
 </ResourceDictionary>

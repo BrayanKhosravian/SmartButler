@@ -30,7 +30,6 @@ namespace SmartButler.Logic.ModelViewModels
 			BottleIndex = ingredient.BottleIndex;
 			ByteImage = ingredient.ByteImage;
 
-			IsDefault = ingredient.IsDefault;
 		}
 
 		public DrinkIngredientViewModel(Ingredient ingredient, DrinkIngredient drinkIngredient)
@@ -43,7 +42,6 @@ namespace SmartButler.Logic.ModelViewModels
 			ByteImage = ingredient.ByteImage;
 
 			Milliliter = drinkIngredient.Milliliter;
-			IsDefault = ingredient.IsDefault;
 		}
 
 		public Ingredient Ingredient { get; }
@@ -103,7 +101,6 @@ namespace SmartButler.Logic.ModelViewModels
 			Ingredient.Name = Name;
 			Ingredient.BottleIndex = BottleIndex;
 			Ingredient.ByteImage = ByteImage;
-			Ingredient.IsDefault = IsDefault;
 
 			return Ingredient;
 		}

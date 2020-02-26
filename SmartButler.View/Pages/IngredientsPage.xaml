@@ -28,7 +28,8 @@
                 <ListView x:Name="IngredientCollectionView"
                           ItemsSource="{Binding Ingredients}"
                           ItemTemplate="{StaticResource IngredientTemplateSelector}" 
-                          CachingStrategy="RecycleElementAndDataTemplate" SelectionMode="None" HasUnevenRows="True"/>
+                          CachingStrategy="RecycleElementAndDataTemplate"
+                          SelectionMode="None" HasUnevenRows="True"/>
 
                 <Button Text="Add Ingredient" Command="{Binding AddIngredientCommand}" 
                         IsVisible="{Binding IsAddIngredientButtonVisible}"/>

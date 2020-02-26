@@ -30,7 +30,6 @@ namespace SmartButler.Logic.ModelViewModels
 			Id = drinkRecipe.Id;
 			Name = drinkRecipe.Name;
 			ByteImage = drinkRecipe.ByteImage;
-			IsDefault = drinkRecipe.IsDefault;
 
 			DrinkRecipe = drinkRecipe;
 

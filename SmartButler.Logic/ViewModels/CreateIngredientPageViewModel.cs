@@ -35,6 +35,6 @@ namespace SmartButler.Logic.ViewModels
 			});
 		}
 
-		public override string Title => "Create an Ingredient!";
+		public override string Title => "Add your Ingredient!";
 	}
 }

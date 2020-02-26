@@ -22,7 +22,6 @@ namespace SmartButler.Logic.Services
 		{
 			Name = liquidBase.Name;
 			ByteImage = liquidBase.ByteImage;
-			_isDefault = liquidBase.IsDefault;
 
 			return BuilderInstance;
 		}

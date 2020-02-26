@@ -42,21 +42,18 @@ namespace SmartButler.Logic.Services
 				.AddIngredient(new DrinkIngredient(160) {Ingredient = new CranberryJuice()})
 				.AddIngredient(new DrinkIngredient(30){Ingredient = new OrangeJuice()})
 				.Build();
-			madras.IsDefault = true;
 			yield return madras;
 
 			var screwdriver = _drinkRecipeBuilder.Default(DrinkNames.Screwdriver, Paths.Drinks.Screwdriver)
 				.AddIngredient(new DrinkIngredient(160) {Ingredient = new Vodka()})
 				.AddIngredient(new DrinkIngredient(120){Ingredient = new OrangeJuice()})
 				.Build();
-			screwdriver.IsDefault = true;
 			yield return screwdriver;
 
 			var lemonDrop = _drinkRecipeBuilder.Default(DrinkNames.LemonDrop, Paths.Drinks.Lemondrop)
 				.AddIngredient(new DrinkIngredient(160) {Ingredient = new Vodka()})
 				.AddIngredient(new DrinkIngredient(30){Ingredient = new LemonJuice()})
 				.Build();
-			lemonDrop.IsDefault = true;
 			yield return lemonDrop;
 
 			var whiskySour = _drinkRecipeBuilder.Default(DrinkNames.WhiskySour, Paths.Drinks.WhiskySour)
@@ -64,7 +61,6 @@ namespace SmartButler.Logic.Services
 				.AddIngredient(new DrinkIngredient(15) {Ingredient = new OrangeJuice()})
 				.AddIngredient(new DrinkIngredient(30){Ingredient = new LemonJuice()})
 				.Build();
-			whiskySour.IsDefault = true;
 			yield return whiskySour;
 
 			var blizzard = _drinkRecipeBuilder.Default(DrinkNames.Blizzard, Paths.Drinks.Blizzard)
@@ -72,21 +68,18 @@ namespace SmartButler.Logic.Services
 				.AddIngredient(new DrinkIngredient(30) {Ingredient = new CranberryJuice()})
 				.AddIngredient(new DrinkIngredient(15) {Ingredient = new LemonJuice()})
 				.Build();
-			blizzard.IsDefault = true;
 			yield return blizzard;
 
 			var capeCod = _drinkRecipeBuilder.Default(DrinkNames.CapeCod, Paths.Drinks.CapeCod)
 				.AddIngredient(new DrinkIngredient(160) {Ingredient = new Vodka()})
 				.AddIngredient(new DrinkIngredient(120) {Ingredient = new CranberryJuice()})
 				.Build();
-			capeCod.IsDefault = true;
 			yield return capeCod;
 			
 			var hotToddy = _drinkRecipeBuilder.Default(DrinkNames.HotToddy, Paths.Drinks.HotToddy)
 				.AddIngredient(new DrinkIngredient(160) {Ingredient = new Whisky()})
 				.AddIngredient(new DrinkIngredient(15) {Ingredient = new LemonJuice()})
 				.Build();
-			hotToddy.IsDefault = true;
 			yield return hotToddy;
 
 			var bourbonSquash = _drinkRecipeBuilder.Default(DrinkNames.BourbonSquash, Paths.Drinks.BourbonSquash)
@@ -94,19 +87,7 @@ namespace SmartButler.Logic.Services
 				.AddIngredient(new DrinkIngredient(30) {Ingredient = new OrangeJuice()})
 				.AddIngredient(new DrinkIngredient(15){Ingredient = new LemonJuice()})
 				.Build();
-			bourbonSquash.IsDefault = true;
 			yield return bourbonSquash;
-
-			//yield return Get<Madras>();
-			//yield return Get<Screwdriver>();
-			//yield return Get<LemonDrop>();
-			//yield return Get<WhiskySour>();
-			//yield return Get<Blizzard>();
-			//yield return Get<CapeCod>();
-			//yield return Get<HotToddy>();
-			//yield return Get<BourbonSquash>();
-
-
 
 		}
 	}

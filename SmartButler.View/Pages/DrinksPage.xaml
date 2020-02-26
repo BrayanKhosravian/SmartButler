@@ -83,7 +83,7 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-            <Button Text="AddRecipe" Command="{Binding AddRecipeCommand}" />
+            <Button Text="Add drink recipe" Command="{Binding AddRecipeCommand}" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
