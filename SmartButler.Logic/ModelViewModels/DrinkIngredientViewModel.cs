@@ -19,7 +19,6 @@ namespace SmartButler.Logic.ModelViewModels
 		private int _milliliter;
 		private int _bottleIndex;
 		private byte[] _byteImage;
-		private bool _isDefault;
 		private bool _isMilliliterValid;
 
 		public DrinkIngredientViewModel(Ingredient ingredient)
@@ -76,13 +75,6 @@ namespace SmartButler.Logic.ModelViewModels
 		}
 
 		public bool IsAvailable => _bottleIndex != 0;
-
-		public bool IsDefault
-		{
-			get => _isDefault;
-			set => SetValue(ref _isDefault, value);
-		}
-
 		public bool IsMilliliterValid
 		{
 			get => _isMilliliterValid;
@@ -130,8 +122,7 @@ namespace SmartButler.Logic.ModelViewModels
 				if (ReferenceEquals(y, null)) return false;
 				if (x.GetType() != y.GetType()) return false;
 				return x._name == y._name &&
-				       ByteArrayEqualityComparer.Equals(x.ByteImage, y.ByteImage) && 
-				       x._isDefault == y._isDefault;
+				       ByteArrayEqualityComparer.Equals(x.ByteImage, y.ByteImage);
 			}
 
 			public int GetHashCode(DrinkIngredientViewModel obj)
@@ -140,7 +131,6 @@ namespace SmartButler.Logic.ModelViewModels
 				{
 					var hashCode = (obj._name != null ? obj._name.GetHashCode() : 0);
 					hashCode = (hashCode * 397) ^ ByteArrayEqualityComparer.GetHashCode(obj.ByteImage);
-					hashCode = (hashCode * 397) ^ obj._isDefault.GetHashCode();
 					return hashCode;
 				}
 			}

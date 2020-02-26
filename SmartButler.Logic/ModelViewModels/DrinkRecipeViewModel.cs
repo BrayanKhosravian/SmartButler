@@ -15,7 +15,6 @@ namespace SmartButler.Logic.ModelViewModels
 		private string _name;
 		private int _id;
 		private byte[] _byteImage;
-		private bool _isDefault;
 
 		public DrinkRecipeViewModel(DrinkRecipe drinkRecipe)
 		{
@@ -57,12 +56,6 @@ namespace SmartButler.Logic.ModelViewModels
 		{
 			get => _byteImage;
 			set => SetValue(ref _byteImage, value);
-		}
-
-		public bool IsDefault
-		{
-			get => _isDefault;
-			set => SetValue(ref _isDefault, value);
 		}
 
 		public DrinkRecipe DrinkRecipe { get; }

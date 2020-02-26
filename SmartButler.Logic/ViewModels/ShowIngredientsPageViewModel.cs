@@ -32,9 +32,7 @@ namespace SmartButler.Logic.ViewModels
 			    .Do(ingredient => SelectedDrinkIngredient = ingredient)
 			    .Subscribe(async ingredientViewModel =>
 			    {
-				    var selections = new List<string>(){"Edit"};
-				    if (!ingredientViewModel.IsDefault)
-					    selections.Add("Delete");
+				    var selections = new List<string>(){"Edit", "Delete"};
 
 				    var result = await userInteraction.DisplayActionSheetAsync(
 					    $"{ingredientViewModel.Name} selected!",

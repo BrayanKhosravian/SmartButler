@@ -12,7 +12,6 @@ namespace SmartButler.Logic.Services
 
 		protected string Name;
 		protected byte[] ByteImage;
-		private bool _isDefault;
 
 		public abstract TLiquidBase Build();
 

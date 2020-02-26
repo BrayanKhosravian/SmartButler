@@ -53,20 +53,11 @@ namespace SmartButler.Logic.ViewModels
 	        }
         }
 
-        public void Transmit(DrinkRecipe drink)
-		{
-			//var data = drink.ToByteArray();
-			if (_bluetoothService.IsConnected())
-				_bluetoothService.WriteAsync(new byte[]{0xFF}, 0, 0);
-		}
-
         public async Task DrinkSelectedAsync(DrinkRecipeViewModel drinkRecipeViewModel)
         {
-			var selection = new List<string>(){"Edit"};
-            if(!drinkRecipeViewModel.IsDefault)
-                selection.Add("Delete");
+			var selection = new List<string>(){"Edit", "Delete", "Make drink"};
 
-            var result = await _userInteraction.DisplayActionSheetAsync($"{drinkRecipeViewModel.Name} selected!",
+			var result = await _userInteraction.DisplayActionSheetAsync($"{drinkRecipeViewModel.Name} selected!",
 	            "Cancel", null, selection.ToArray());
 
             if (result == null) return;
@@ -80,6 +71,30 @@ namespace SmartButler.Logic.ViewModels
 	            await _drinkRecipeRepository.DeleteAsync(drinkRecipeViewModel.DrinkRecipe);
 	            Drinks.Remove(drinkRecipeViewModel);
             }
+            else if (result.Equals("Make drink"))
+	        {
+		        if (!_bluetoothService.IsConnected())
+		        {
+			        await _userInteraction
+				        .DisplayAlertAsync("Info", "Cannot send data to the cocktail machine. \n" + 
+						"You are not connected with the bluetooth module of the cocktail machine. \n" +
+						"Navigate back to the welcomepage and connect with the device!", "Ok");
+			        return;
+		        }
+
+				await TransmitAsync(drinkRecipeViewModel);
+
+	        }
         }
+
+        public Task TransmitAsync(DrinkRecipeViewModel drink)
+        {
+	        var data = drink.ToByteArray();
+	        if (_bluetoothService.IsConnected())
+		        return _bluetoothService.WriteAsync(data, 0, 0);
+
+	        return Task.CompletedTask;
+        }
+
     }
 }

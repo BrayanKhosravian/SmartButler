@@ -63,10 +63,6 @@
       <SubType>Code</SubType>
       <DependentUpon>%(Filename)</DependentUpon>
     </Compile>
-    <Compile Update="Pages\MakeDrinkPage.xaml.cs">
-      <SubType>Code</SubType>
-      <DependentUpon>%(Filename)</DependentUpon>
-    </Compile>
     <Compile Update="Pages\SettingsPage.xaml.cs">
       <SubType>Code</SubType>
       <DependentUpon>%(Filename)</DependentUpon>

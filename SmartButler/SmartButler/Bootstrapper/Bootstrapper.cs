@@ -67,7 +67,6 @@ namespace SmartButler.Bootstrapper
 	        pageRegistrar.Register<SettingsPageViewModel, SettingsPage>();
 	        pageRegistrar.Register<BluetoothPageViewModel, BluetoothPage>();
 	        pageRegistrar.Register<DrinksPageViewModel, DrinksPage>();
-	        pageRegistrar.Register<MakeDrinkPageViewModel, MakeDrinkPage>();
 
 	        pageRegistrar.Register<ShowIngredientsPageViewModel, IngredientsPage>();
 	        pageRegistrar.Register<SelectIngredientsPageViewModel, IngredientsPage>();

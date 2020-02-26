@@ -28,10 +28,7 @@ namespace SmartButler.Bootstrapper.Modules
             builder.RegisterType<ShowIngredientsPageViewModel>();
             builder.RegisterType<SelectIngredientsPageViewModel>();
 
-            builder.RegisterType<MakeDrinkPage>();
-            builder.RegisterType<MakeDrinkPageViewModel>();
-
-	        builder.RegisterType<ConfigureIngredientPage>();
+            builder.RegisterType<ConfigureIngredientPage>();
             builder.RegisterType<EditIngredientPageViewModel>();
             builder.RegisterType<AddIngredientPageViewModel>();
 
