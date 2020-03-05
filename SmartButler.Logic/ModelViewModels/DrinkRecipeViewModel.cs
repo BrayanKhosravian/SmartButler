@@ -89,16 +89,23 @@ namespace SmartButler.Logic.ModelViewModels
 				if (drinkIngredient == null) break;
 
 				var ml = drinkIngredient.Milliliter;
-				byte[] mlBytes = BitConverter.GetBytes(ml);
-				Array.Reverse(mlBytes);
-				if (mlBytes[2] == 0xFF)
-					mlBytes[2] =  (byte)(mlBytes[2] - 1);
-				if (mlBytes[3] == 0xFF)
-					mlBytes[3] = (byte)(mlBytes[2] - 1);
+				if(ml > 500) throw new ArgumentException();
+
+				int ml1, ml2;
+				if (ml > 250)
+				{
+					ml1 = 250;
+					ml2 = ml - 250;
+				}
+				else
+				{
+					ml1 = ml;
+					ml2 = 0;
+				}
 
 				result[i] = (byte) drinkIngredient.BottleIndex;
-				result[++i] = mlBytes[2];
-				result[++i] = mlBytes[3];
+				result[++i] = (byte) ml2;
+				result[++i] = (byte) ml1;
 
 				ingredientCount++;
 			}
