@@ -9,7 +9,7 @@ This receipts can also be created, edited, deleted and selected to mix a real co
 
 ## Principles 
 
-Onion Architectrue pattern: https://alexdunn.org/2017/01/09/onionizing-xamarin-part-1/
+Onion Architectrue pattern: https://alexdunn.org/2017/01/09/onionizing-xamarin-part-1/ <br/>
 SOLID: https://www.c-sharpcorner.com/UploadFile/damubetha/solid-principles-in-C-Sharp/
 
 ## Design patterns 
